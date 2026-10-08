@@ -65,6 +65,11 @@ defaults:
       class: page-template
       subclass: 'post page'
 
+# Publish posts dated in the future as well. Builds run in UTC, so a post
+# created through the CMS with a local (UTC+7) timestamp would otherwise be
+# treated as "future" and silently dropped from the site.
+future: true
+
 safe: False
 lsi: False
 
