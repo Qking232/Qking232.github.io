@@ -1,10 +1,11 @@
-# Pages CMS configuration
-# Docs: https://pagescms.org/docs/configuration/
-# This file tells the admin UI (app.pagescms.org) what content is editable in this repo.
+# Pages CMS configuration — https://pagescms.org/docs/configuration/
+# Tells the admin UI (app.pagescms.org) what content is editable in this repo.
 
 media:
+  # Written without a leading slash on purpose: Jasper2 prefixes covers with
+  # {{ site.baseurl }}, so a leading slash would produce a "//assets/..." URL.
   input: assets/images
-  output: /assets/images
+  output: assets/images
 
 content:
   # ---------------------------------------------------------------- Blog posts
@@ -13,17 +14,13 @@ content:
     type: collection
     path: _posts
     filename:
-      template: "{year}-{month}-{day}-{primary}.markdown"
+      template: "{year}-{month}-{day}-{primary}.md"
       field: create
     view:
       primary: title
       sort: date
       order: desc
     fields:
-      - name: layout
-        label: Layout
-        type: string
-        default: post
       - name: title
         label: Title
         type: string
@@ -31,10 +28,16 @@ content:
       - name: date
         label: Published
         type: date
-      - name: categories
-        label: Categories
+      - name: author
+        label: Author
+        type: string
+      - name: tags
+        label: Tags
         type: string
         list: true
+      - name: cover
+        label: Cover image
+        type: image
       - name: body
         label: Body
         type: rich-text
@@ -44,70 +47,24 @@ content:
     label: Pages
     type: group
     items:
-      - name: home
-        label: Home
-        type: file
-        path: index.markdown
-        fields:
-          - name: layout
-            label: Layout
-            type: string
-          - name: title
-            label: Title
-            type: string
-          - name: body
-            label: Body
-            type: rich-text
       - name: about
         label: About
         type: file
-        path: about.markdown
+        path: about/index.md
         fields:
-          - name: layout
-            label: Layout
-            type: string
           - name: title
             label: Title
-            type: string
-          - name: permalink
-            label: Permalink
             type: string
           - name: body
             label: Body
             type: rich-text
 
-  # ------------------------------------------------------------ Site settings
+  # --------------------------------------------- Site settings (advanced / YAML)
+  # Edited as raw YAML on purpose: _config.yml carries the build settings
+  # (plugins, front-matter defaults, permalinks) and must not be rewritten
+  # field-by-field, which would drop the keys the theme depends on.
   - name: site
-    label: Site settings
+    label: Site settings (advanced)
     type: file
     path: _config.yml
-    format: yaml
-    fields:
-      - name: title
-        label: Site title
-        type: string
-      - name: email
-        label: Contact email
-        type: string
-      - name: description
-        label: Site description
-        type: text
-      - name: url
-        label: Site URL
-        type: string
-      - name: baseurl
-        label: Base URL
-        type: string
-      - name: github_username
-        label: GitHub username
-        type: string
-      - name: twitter_username
-        label: Twitter username
-        type: string
-      - name: theme
-        label: Theme
-        type: string
-      - name: plugins
-        label: Plugins
-        type: string
-        list: true
+    format: code

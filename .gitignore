@@ -1,5 +1,18 @@
-_site
-.sass-cache
-.jekyll-cache
+# OS
+.DS_Store
+
+# Jekyll build output
+_site/
+.jekyll-cache/
+.sass-cache/
 .jekyll-metadata
+
+# Bundler — root vendor only, so map/vendor/ stays tracked
 /vendor
+.bundle
+Gemfile.lock
+
+# Editors / misc
+.idea/
+*.swp
+node_modules
