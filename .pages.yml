@@ -1,0 +1,113 @@
+# Pages CMS configuration
+# Docs: https://pagescms.org/docs/configuration/
+# This file tells the admin UI (app.pagescms.org) what content is editable in this repo.
+
+media:
+  input: assets/images
+  output: /assets/images
+
+content:
+  # ---------------------------------------------------------------- Blog posts
+  - name: posts
+    label: Blog posts
+    type: collection
+    path: _posts
+    filename:
+      template: "{year}-{month}-{day}-{primary}.markdown"
+      field: create
+    view:
+      primary: title
+      sort: date
+      order: desc
+    fields:
+      - name: layout
+        label: Layout
+        type: string
+        default: post
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Published
+        type: date
+      - name: categories
+        label: Categories
+        type: string
+        list: true
+      - name: body
+        label: Body
+        type: rich-text
+
+  # --------------------------------------------------------------------- Pages
+  - name: pages
+    label: Pages
+    type: group
+    items:
+      - name: home
+        label: Home
+        type: file
+        path: index.markdown
+        fields:
+          - name: layout
+            label: Layout
+            type: string
+          - name: title
+            label: Title
+            type: string
+          - name: body
+            label: Body
+            type: rich-text
+      - name: about
+        label: About
+        type: file
+        path: about.markdown
+        fields:
+          - name: layout
+            label: Layout
+            type: string
+          - name: title
+            label: Title
+            type: string
+          - name: permalink
+            label: Permalink
+            type: string
+          - name: body
+            label: Body
+            type: rich-text
+
+  # ------------------------------------------------------------ Site settings
+  - name: site
+    label: Site settings
+    type: file
+    path: _config.yml
+    format: yaml
+    fields:
+      - name: title
+        label: Site title
+        type: string
+      - name: email
+        label: Contact email
+        type: string
+      - name: description
+        label: Site description
+        type: text
+      - name: url
+        label: Site URL
+        type: string
+      - name: baseurl
+        label: Base URL
+        type: string
+      - name: github_username
+        label: GitHub username
+        type: string
+      - name: twitter_username
+        label: Twitter username
+        type: string
+      - name: theme
+        label: Theme
+        type: string
+      - name: plugins
+        label: Plugins
+        type: string
+        list: true
