@@ -15,8 +15,8 @@ url: "https://qking232.github.io"
 baseurl: "/"
 
 # Website info
-title: Qking232
-description: Personal website.
+title: Renewable Vietnam
+description: Viet Nam's renewable energy transition — progress, projects and outlook to 2030.
 cover: assets/images/blog-cover.jpg
 logo:
 logo_dark:
@@ -55,7 +55,7 @@ defaults:
       navigation: true
       class: post-template
       subclass: 'post'
-      author: qking232
+      author: renewablevietnam
   - scope:
       path: "about"
     values:
