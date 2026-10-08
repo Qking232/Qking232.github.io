@@ -1,52 +1,84 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# Jekyll configuration for qking232.github.io
+# Theme: Jasper2 — https://github.com/jekyllt/jasper2 (MIT)
 
+markdown: kramdown
+highlighter: rouge
+paginate: 5
+language: 'en-uk'
+words_per_minute: 200
+
+# This is a root user site, so baseurl must be "/". The theme writes asset and
+# navigation links as "{{ site.baseurl }}assets/...", which only resolve
+# correctly (on nested pages like /about/ and /tag/x/) when baseurl carries a
+# leading slash. An empty baseurl would make those links relative and 404.
+url: "https://qking232.github.io"
+baseurl: "/"
+
+# Website info
 title: Qking232
-email:
 description: Personal website.
-baseurl: ""
-url: "https://Qking232.github.io"
-twitter_username:
-github_username: Qking232
+cover: assets/images/blog-cover.jpg
+logo:
+logo_dark:
+favicon: assets/images/favicon.png
 
-# Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+# Social info (blank = hidden)
+navigation: True
+subscribers: True
+twitter:
+facebook:
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Disqus / Google Analytics (disabled)
+disqus: False
+disqus_shortname:
+google_analytics:
+
+# Permalinks
+permalink: /:title
+
+# Plugins (Jasper2 ships Ruby plugins in _plugins/ for tag & author pages)
+plugins_dir: [_plugins]
+plugins: [jekyll-paginate, jekyll-feed]
+
+feed:
+  path: feed.xml
+
+# Front matter defaults, so the theme's required front matter survives editing
+# through the CMS even if the CMS writes only the fields it knows about.
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      current: post
+      navigation: true
+      class: post-template
+      subclass: 'post'
+      author: qking232
+  - scope:
+      path: "about"
+    values:
+      layout: page
+      current: about
+      navigation: true
+      class: page-template
+      subclass: 'post page'
+
+safe: False
+lsi: False
+
+exclude:
+  - assets/css
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - gulpfile.js
+  - script.py
+  - "*.Rmd"
+  - .git*
