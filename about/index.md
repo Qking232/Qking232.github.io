@@ -1,12 +1,6 @@
 ---
-layout: page
-current: about
-title: About
-navigation: true
-class: page-template
-subclass: 'post page'
+title: Renewable Viet Nam
 ---
-
 Welcome — this is my personal site.
 
 The text on this page lives in `about/index.md` in the repository. To change it
