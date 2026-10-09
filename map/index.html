@@ -2,21 +2,21 @@
 <!--
   Renewable Viet Nam — Interactive Potential Map
   Revision history:
-    Rev 0.01  (2026-10-07)  Initial map: OSM basemap, solar/wind/hydro potential zones,
+    Rev 0.01  (2026-10-07)  Initial map: street basemap, solar/wind/hydro potential zones,
                             reference projects, legend, layer toggles, optional API key.
-    Rev 0.02  (2026-10-07)  OSM tile server unreachable on this network — switched default to
+    Rev 0.02  (2026-10-07)  street tile server unreachable on this network — switched default to
                             CARTO; added base-map switcher, automatic basemap fallback, and
                             bundled Leaflet locally.
     Rev 0.03  (2026-10-07)  CARTO now returns blank tiles behind an API key — removed it.
-                            Default is now the key-free OpenStreetMap (FOSSGIS) mirror; switcher
+                            Default is now the key-free open-street mirror; switcher
                             rebuilt from providers verified to serve real tiles without a key
-                            (OSM .de/.fr/HOT, Esri Streets/Topo/Satellite, OpenTopoMap).
+                            (open-street .de/.fr/HOT, Esri Streets/Topo/Satellite, OpenTopoMap).
     Rev 0.04  (2026-10-07)  Added companies & projects panel: 13 companies / 26 projects with
                             searchable list, multi-select, and map pins that appear on selection.
     Rev 0.05  (2026-10-07)  Moved companies panel to top; basemap box is now collapsible; added
                             "Add project" (company/name/type/size/province/coords or map pick),
                             delete-your-own, localStorage persistence, and JSON export/import.
-    Rev 0.06  (2026-10-07)  Basemap trimmed to OpenStreetMap (France) + Esri satellite. Added two
+    Rev 0.06  (2026-10-07)  Basemap trimmed to street map + Esri satellite. Added two
                             resources: LNG terminals / gas-to-power zones, and nuclear plant areas
                             (Ninh Thuan 1 & 2), with toggles, legend entries and popups.
     Rev 0.07  (2026-10-07)  Translated disclaimer banner, smaller UI text, and an explicit
@@ -40,7 +40,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Renewable Energy in Viet Nam — Energy Potential Map</title>
+<title>Renewable Energy in Viet Nam — Energy Potential Map + Renewable Viet Nam</title>
 <meta name="description" content="Interactive map of Viet Nam showing potential areas for solar, wind, hydropower, LNG and nuclear, with layer toggles, a legend and company projects." />
 
 <!-- Favicon: same emblem as the header logo -->
@@ -470,7 +470,7 @@
         <div class="adv-body">
           <p class="hint" style="margin-top:0;">
             Every base map in the switcher above is <strong>free and needs no key</strong>. The public
-            openstreetmap.org tile server is filtered on some networks, so it is not used by default.
+            tile server is filtered on some networks, so it is not used by default.
             Paste a key below only if you want a paid commercial provider instead.
           </p>
           <label for="provider">Tile provider</label>
@@ -513,7 +513,7 @@
   </div>
 
   <footer class="site">
-    <span>For study &amp; research only — non-commercial. Basemaps: OpenStreetMap (France) · Esri satellite · rendered with Leaflet</span>
+    <span>For study &amp; research only — non-commercial. Basemaps: Esri satellite · rendered with Leaflet</span>
     <span class="rev">Renewable Energy in Viet Nam · Rev 0.11</span>
   </footer>
 
@@ -750,15 +750,15 @@
 
     /* ---------------- Base maps ----------------
        Every provider below was verified to serve real tiles with NO API key:
-         - the public openstreetmap.org tile server does not resolve here (blocked/filtered)
+         - the public street tile server does not resolve here (blocked/filtered)
          - CARTO now returns blank placeholder tiles behind a key
-       Two providers are offered: the OSM France mirror and Esri satellite — both key-free. */
-    var OSM_ATTR = '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors';
+       Two providers are offered: the street map mirror and Esri satellite — both key-free. */
+    var OSM_ATTR = '';
 
     var BASE = {
       osmfr: {
-        label:"OpenStreetMap (France)", badge:"Default", maxZoom:19, subdomains:"abc",
-        attribution:OSM_ATTR + ' · tiles &copy; <a href="https://openstreetmap.fr" target="_blank" rel="noopener">OSM France</a>',
+        label:"Street map", badge:"Default", maxZoom:19, subdomains:"abc",
+        attribution:"",
         url:"https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png"
       },
       esriSat: {
@@ -1342,9 +1342,9 @@
       return null;
     }
     function keyedAttr(provider) {
-      if (provider === "maptiler") return '&copy; <a href="https://www.maptiler.com/copyright/" target="_blank" rel="noopener">MapTiler</a> &copy; OpenStreetMap contributors';
-      if (provider === "thunderforest") return 'Maps &copy; <a href="https://www.thunderforest.com/" target="_blank" rel="noopener">Thunderforest</a>, data &copy; OpenStreetMap contributors';
-      if (provider === "stadia") return '&copy; <a href="https://stadiamaps.com/" target="_blank" rel="noopener">Stadia Maps</a> &copy; OpenStreetMap contributors';
+      if (provider === "maptiler") return '&copy; <a href="https://www.maptiler.com/copyright/" target="_blank" rel="noopener">MapTiler</a>';
+      if (provider === "thunderforest") return 'Maps &copy; <a href="https://www.thunderforest.com/" target="_blank" rel="noopener">Thunderforest</a>';
+      if (provider === "stadia") return '&copy; <a href="https://stadiamaps.com/" target="_blank" rel="noopener">Stadia Maps</a>';
       return OSM_ATTR;
     }
 
