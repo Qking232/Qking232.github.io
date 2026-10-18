@@ -754,27 +754,36 @@ async function checkFacebookStatus() {
 
 async function runQuantScan() {
   const btn = document.getElementById("runScanBtn");
-  btn.disabled = true;
-  btn.textContent = "Scanning Binance...";
-  try {
-    const res = await fetch(API_BASE + "/api/quant/scan");
-    const data = await res.json();
-    if (data.success && data.flash) {
-      currentScan = data;
-    } else {
-      throw new Error(data.error || "Backend returned unsuccessful");
-    }
-  } catch (e) {
-    console.warn("Backend unavailable, using client-side quant engine:", e.message);
-    currentScan = getClientQuantScan();
+  if (btn) {
+    btn.disabled = true;
+    btn.textContent = "Scanning Binance...";
   }
-  renderVerdict(currentScan.flash);
-  renderLeaderboard(currentScan.leaderboard);
-  await regenerateCard();
-  await generateCaption();
-  updateDocumentText(); finally {
-    btn.disabled = false;
-    btn.textContent = "⚡ Run Live Scan";
+  try {
+    try {
+      const res = await fetch(API_BASE + "/api/quant/scan");
+      const data = await res.json();
+      if (data.success && data.flash) {
+        currentScan = data;
+      } else {
+        throw new Error(data.error || "Backend returned unsuccessful");
+      }
+    } catch (e) {
+      console.warn("Backend unavailable, using client-side quant engine:", e.message);
+      currentScan = getClientQuantScan();
+    }
+    renderVerdict(currentScan.flash);
+    renderLeaderboard(currentScan.leaderboard);
+    await regenerateCard();
+    await generateCaption();
+    updateDocumentText();
+  } catch (err) {
+    console.error("Scan error:", err);
+    showToast("Scan error: " + err.message);
+  } finally {
+    if (btn) {
+      btn.disabled = false;
+      btn.textContent = "⚡ Run Live Scan";
+    }
   }
 }
 
@@ -792,23 +801,28 @@ async function suggestAnotherCoin() {
   if (curSym) form.append("current_symbol", curSym);
 
   try {
-    const res = await fetch(API_BASE + "/api/quant/suggest-alternative", { method: "POST", body: form });
-    const data = await res.json();
-    if (data.success && data.flash) {
-      currentScan = data;
-    } else {
-      throw new Error(data.error || "Could not find alternative");
+    try {
+      const res = await fetch(API_BASE + "/api/quant/suggest-alternative", { method: "POST", body: form });
+      const data = await res.json();
+      if (data.success && data.flash) {
+        currentScan = data;
+      } else {
+        throw new Error(data.error || "Could not find alternative");
+      }
+    } catch (err) {
+      console.warn("Backend suggest unavailable, using client-side alternative:", err.message);
+      currentScan = getClientAlternative(curSym);
     }
+    renderVerdict(currentScan.flash);
+    if (currentScan.leaderboard) renderLeaderboard(currentScan.leaderboard);
+    showToast(`🎯 Alternative Found: ${currentScan.flash.symbol} (${currentScan.flash.price_formatted})`);
+    await regenerateCard();
+    await generateCaption();
+    updateDocumentText();
   } catch (err) {
-    console.warn("Backend suggest unavailable, using client-side alternative:", err.message);
-    currentScan = getClientAlternative(curSym);
-  }
-  renderVerdict(currentScan.flash);
-  if (currentScan.leaderboard) renderLeaderboard(currentScan.leaderboard);
-  showToast(`🎯 Alternative Found: ${currentScan.flash.symbol} (${currentScan.flash.price_formatted})`);
-  await regenerateCard();
-  await generateCaption();
-  updateDocumentText(); finally {
+    console.error("Suggest error:", err);
+    showToast("Error suggesting coin: " + err.message);
+  } finally {
     if (btn) {
       btn.disabled = false;
       btn.innerHTML = origText;
@@ -1264,11 +1278,19 @@ function openPopupModal(isError = false, reasonHtml = "") {
       : document.getElementById("docFirstComment").value;
   }
 
-  document.getElementById("popupModal").classList.add("open");
+  const m = document.getElementById("popupModal");
+  if (m) {
+    m.classList.add("open");
+    m.style.display = "grid";
+  }
 }
 
 function closePopupModal() {
-  document.getElementById("popupModal").classList.remove("open");
+  const m = document.getElementById("popupModal");
+  if (m) {
+    m.classList.remove("open");
+    m.style.display = "none";
+  }
 }
 
 function openFacebookComposer() {
@@ -1325,8 +1347,20 @@ async function savePopupToken() {
   }
 }
 
-function openSettingsModal() { document.getElementById("settingsModal").classList.add("open"); }
-function closeSettingsModal() { document.getElementById("settingsModal").classList.remove("open"); }
+function openSettingsModal() { 
+  const m = document.getElementById("settingsModal");
+  if (m) {
+    m.classList.add("open");
+    m.style.display = "grid";
+  }
+}
+function closeSettingsModal() { 
+  const m = document.getElementById("settingsModal");
+  if (m) {
+    m.classList.remove("open");
+    m.style.display = "none";
+  }
+}
 
 async function verifyCmdKey() {
   const key = document.getElementById("settingCmdKey").value;
