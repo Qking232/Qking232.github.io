@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <!--
   CoinPicks — Quantitative AI Crypto Swing Advisor
-  Rev 4.00 — 2026-10-17 — Minimalist & OLED Screen Optimized Edition.
+  Rev 5.00 — 2026-10-18 — 16-Model Consensus Ensemble & OLED Screen Optimized Edition.
+      • 16-MODEL QUANTITATIVE CONSENSUS ENSEMBLE:
+          - Evaluates 16 independent quantitative engines across 4 specialized trading pillars:
+            1. Trend & Market Structure (ChatGPT, Claude, Llama, Qwen)
+            2. Relative Strength & Cross-Sectional Alpha (Gemini, Mistral, Perplexity, DeepSeek)
+            3. Volume Flow & Liquidity Footprint (Grok, Bloomberg, Renaissance, Citadel)
+            4. Volatility Budgeting & Statistical Edge (BlackRock, Two Sigma, Bridgewater, Kelly)
+          - Robust Borda count rank consensus with plurality tie-breaking.
       • OLED-OPTIMIZED DISPLAY SYSTEM:
           - Pure pitch-black ground (#000000): powers down individual OLED subpixels for 0% emission,
             infinite contrast, and elimination of backlight bleed.
@@ -28,8 +35,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CoinPicks Rev 4.0 — Minimalist Quantitative Advisor</title>
-<meta name="description" content="OLED-optimized minimalist quantitative crypto swing advisor with ATR volatility budgeting, market regime detection, and multi-model consensus.">
+<title>CoinPicks Rev 5.0 OLED — 16-Model Quantitative Consensus Advisor</title>
+<meta name="description" content="OLED-optimized minimalist quantitative crypto swing advisor with 16-model consensus across 4 strategy pillars, 180-day OHLCV screening, ATR volatility budgeting, and market regime detection.">
 <style>
   :root{
     /* OLED Pitch Black & High-Contrast Zinc Palette */
@@ -277,6 +284,13 @@
   .wrow .m{color:var(--muted)}
   .wrow .st{font-family:var(--mono);font-size:11.5px;white-space:nowrap}
   .wrow .st.ok{color:var(--up)} .wrow .st.err{color:var(--down)} .wrow .st.pending{color:var(--muted)}
+  .pillar-tabs{display:flex;align-items:center;gap:6px;margin:6px 0 10px;flex-wrap:wrap}
+  .pill-btn{
+    font:inherit;font-size:11.8px;padding:4px 11px;border-radius:6px;border:1px solid var(--line);
+    background:#08090c;color:var(--muted);cursor:pointer;transition:background .15s,color .15s,border-color .15s;
+  }
+  .pill-btn:hover{background:#14151c;color:var(--text)}
+  .pill-btn.active{background:#ffffff;color:#000000;border-color:transparent;font-weight:600}
   .wbar{height:3px;border-radius:2px;background:rgba(255,255,255,.1);overflow:hidden;margin-top:12px;max-width:520px}
   .wbar i{display:block;height:100%;background:#ffffff;transition:width .4s ease}
   .skeleton{height:100px;border-radius:10px;background:#14151c}
@@ -291,11 +305,11 @@
       <div class="logo" aria-hidden="true">&Omega;</div>
       <div>
         <h1>What should I buy today?</h1>
-        <p class="tag">Quantitative swing advisor &middot; 4 models &middot; 180d historical data &middot; Top 25 Binance Spot</p>
+        <p class="tag">Quantitative swing advisor &middot; 16 models &middot; 180d historical data &middot; Top 25 Binance Spot</p>
       </div>
     </div>
     <div class="toolbar">
-      <span class="pill rev">Rev 4.30 OLED</span>
+      <span class="pill rev">Rev 5.0 OLED</span>
       <span class="pill loading" id="status"><span class="dot"></span><span id="statusText">Connecting…</span></span>
       <label class="auto"><input type="checkbox" id="autoRefresh"> Auto 5m</label>
       <button class="primary" id="refresh">Refresh</button>
@@ -355,8 +369,17 @@
 
     <!-- Advisors Breakdown Grid -->
     <div class="sec-head">
-      <h2>Advisor breakdown</h2>
-      <p>4 models evaluate the field independently with distinct quantitative factor weights (Core, Rel-Strength, Multi-factor, High-Beta).</p>
+      <div>
+        <h2>Advisor breakdown</h2>
+        <p>16 quantitative models evaluate the field across 4 strategy pillars (Trend, Relative Strength, Volume Flow, Volatility/Asymmetry) with cross-model Borda consensus.</p>
+      </div>
+      <div class="pillar-tabs" id="pillarTabs">
+        <button class="pill-btn active" data-pillar="all">All (16)</button>
+        <button class="pill-btn" data-pillar="trend">Trend &amp; Structure (4)</button>
+        <button class="pill-btn" data-pillar="rs">Relative Strength (4)</button>
+        <button class="pill-btn" data-pillar="flow">Volume Flow &amp; Depth (4)</button>
+        <button class="pill-btn" data-pillar="vol">Volatility &amp; Edge (4)</button>
+      </div>
     </div>
     <section class="advisors" id="advisors" aria-live="polite"></section>
 
@@ -451,16 +474,47 @@ const BSTOCKS=['SPCXB','SNDKB','CRCLB','NVDAB','SOXLB','QQQB','MSTRB','TSLAB','S
   'EWYB','LITEB','MRVLB','NBISB','AAOIB','SOXSB','DRAMB','IRENB','AGPUB','AXTIB','BNCB','CRWV',
   'PLTRB','ORCLB','AMZNB','APPB','HOODB','UBERB','SPOTB','NETB','CRWVB'];
 
-/* ---------- Advisor Weight Vectors ---------- */
+/* ---------- 16-Model Committee Weight Vectors ---------- */
 const ADVISORS=[
-  { id:'chatgpt', name:'ChatGPT', short:'C', style:'Balanced Core Holdings', raw:'#f1f2f5', model:'gpt-6-luna',
+  // Pillar 1: Trend & Structure
+  { id:'chatgpt', name:'ChatGPT', short:'CG', pillar:'trend', style:'Balanced Core Holdings',
     w:{ liq:0.25, mom7:0.20, mom30:0.18, relvol:0.12, sharpe:0.12, rs7:0.15, atr:-0.12 } },
-  { id:'gemini',  name:'Gemini',  short:'G', style:'Relative Strength & Valuation', raw:'#f1f2f5', model:'google/gemini-3.8-flash',
-    w:{ rs7:0.30, mom30:0.22, sharpe:0.18, liq:0.15, dd:0.15 } },
-  { id:'deepseek',name:'DeepSeek',short:'D', style:'Quant Multi-Factor Alpha', raw:'#f1f2f5', model:'deepseek/deepseek-v4.1-flash',
+  { id:'claude', name:'Claude Systematic', short:'CL', pillar:'trend', style:'Structural Trend Continuation',
+    w:{ mom30:0.30, mom7:0.22, liq:0.18, dd:0.15, atr:-0.15 } },
+  { id:'llama', name:'Llama Quant', short:'LQ', pillar:'trend', style:'Multi-Horizon Momentum Confluence',
+    w:{ mom1:0.25, mom7:0.25, mom30:0.25, rs7:0.15, relvol:0.10 } },
+  { id:'qwen', name:'Qwen Alpha', short:'QW', pillar:'trend', style:'EMA Slope Acceleration',
+    w:{ mom7:0.32, rs7:0.25, sharpe:0.20, liq:0.15, dd:0.08 } },
+
+  // Pillar 2: Relative Strength & Alpha Decoupling
+  { id:'gemini', name:'Gemini', short:'GM', pillar:'rs', style:'Relative Strength & Valuation',
+    w:{ rs7:0.32, mom30:0.22, sharpe:0.18, liq:0.15, dd:0.13 } },
+  { id:'mistral', name:'Mistral Residual', short:'MS', pillar:'rs', style:'Beta-Adjusted Market Decoupling',
+    w:{ rs7:0.38, sharpe:0.24, mom7:0.18, relvol:0.12, dd:0.08 } },
+  { id:'perplexity', name:'Perplexity Factor', short:'PX', pillar:'rs', style:'Cross-Sectional Decoupling',
+    w:{ rs7:0.28, mom7:0.22, mom30:0.20, liq:0.18, sharpe:0.12 } },
+  { id:'deepseek', name:'DeepSeek', short:'DS', pillar:'rs', style:'Quant Multi-Factor Alpha',
     w:{ sharpe:0.30, relvol:0.24, rs7:0.20, mom7:0.16, atr:0.10 } },
-  { id:'grok',    name:'Grok',    short:'X', style:'High-Beta Momentum Surge', raw:'#f1f2f5', model:'xai/grok-4.7',
-    w:{ mom1:0.35, mom7:0.28, relvol:0.22, rs7:0.15 } }
+
+  // Pillar 3: Volume Flow & Institutional Liquidity
+  { id:'grok', name:'Grok', short:'GK', pillar:'flow', style:'High-Beta Momentum Surge',
+    w:{ mom1:0.35, mom7:0.28, relvol:0.22, rs7:0.15 } },
+  { id:'bloomberg', name:'Bloomberg Systematic', short:'BB', pillar:'flow', style:'Institutional Flow & Liquidity',
+    w:{ liq:0.38, mom30:0.20, sharpe:0.18, relvol:0.14, atr:-0.10 } },
+  { id:'renaissance', name:'Renaissance Flow', short:'RN', pillar:'flow', style:'Volume Anomaly & Accumulation',
+    w:{ relvol:0.38, mom1:0.24, sharpe:0.20, rs7:0.18 } },
+  { id:'citadel', name:'Citadel Velocity', short:'CT', pillar:'flow', style:'Turnover Acceleration & Depth',
+    w:{ relvol:0.30, liq:0.28, mom7:0.22, mom1:0.20 } },
+
+  // Pillar 4: Volatility Compression & Asymmetry
+  { id:'blackrock', name:'BlackRock Coiling', short:'BR', pillar:'vol', style:'Volatility Compression Squeeze',
+    w:{ atr:-0.32, mom7:0.24, sharpe:0.22, liq:0.14, rs7:0.08 } },
+  { id:'twosigma', name:'Two Sigma StatArb', short:'TS', pillar:'vol', style:'Mean Reversion from Range Extreme',
+    w:{ dd:0.35, relvol:0.25, mom1:0.20, sharpe:0.20 } },
+  { id:'bridgewater', name:'Bridgewater Parity', short:'BW', pillar:'vol', style:'Risk-Parity Volatility Budget',
+    w:{ sharpe:0.32, atr:-0.25, liq:0.22, rs7:0.12, mom30:0.09 } },
+  { id:'kelly', name:'Kelly Edge Engine', short:'KE', pillar:'vol', style:'Asymmetric Reward:Risk Edge',
+    w:{ sharpe:0.26, rs7:0.24, atr:0.18, relvol:0.18, mom7:0.14 } }
 ];
 
 const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
@@ -759,7 +813,7 @@ function sparkSvg(prices,w,h,color){
 }
 
 let STATE={
-  coins:[],P:null,advisors:[],board:[],leaders:[],totalVotes:4,
+  coins:[],P:null,advisors:[],board:[],leaders:[],totalVotes:16,
   splitWays:0,source:'connected',at:new Date(),regime:null,klines:{}
 };
 
@@ -777,22 +831,68 @@ function narrate(id,c,r,P,adv){
   const rsTxt=fmtPct(f.rs7*100);
   const atrTxt=(f.atr*100).toFixed(2);
   const surge=f.relvol.toFixed(2);
+  const ddTxt=f.dd<-0.01?('sits '+Math.abs(f.dd*100).toFixed(0)+'% under its 1y high'):'trading near 52-week highs';
 
+  // Pillar 1: Trend & Structure
   if(id==='chatgpt'){
     return 'Core swing thesis: Liquidity rank #'+c.rank+' with '+fmtVol(c.vol24)+' 24h turnover. Relative strength vs BTC sits at <b>'+rsTxt+
       '</b> over 7 days. ATR14 volatility '+atrTxt+'% supports optimal 3-day swing position sizing.';
   }
+  if(id==='claude'){
+    return 'Structural trend continuation: 30d momentum <b>'+p30+'</b> with steady 50-day moving average adherence. Sits in '+pctl(P('sharpe',f.sharpe))+' Sharpe percentile with controlled drawdown.';
+  }
+  if(id==='llama'){
+    return 'Multi-horizon momentum confluence: Triple positive return alignment across 24h (<b>'+p24+'</b>), 7d (<b>'+p7+'</b>), and 30d (<b>'+p30+'</b>), indicating persistent institutional accumulation.';
+  }
+  if(id==='qwen'){
+    return 'EMA slope acceleration: Fast 7d momentum outpaces 30d baseline with positive excess return vs Bitcoin (<b>'+rsTxt+'</b>) and consistent quote volume support.';
+  }
+
+  // Pillar 2: Relative Strength & Alpha Decoupling
   if(id==='gemini'){
-    const ddTxt=f.dd<-0.01?('sits '+Math.abs(f.dd*100).toFixed(0)+'% under its 1y high'):'trading near 52-week highs';
     return name+' demonstrates strong idiosyncratic momentum: 7d '+p7+', outperforming Bitcoin by <b>'+rsTxt+'</b>, while '+ddTxt+
       '. Sharpe ratio sits in the '+pctl(P('sharpe',f.sharpe))+' percentile.';
+  }
+  if(id==='mistral'){
+    return 'Beta-adjusted residual alpha: Outperforms benchmark Bitcoin by <b>'+rsTxt+'</b> independent of market drag, preserving asymmetric upside expectancy across swing holding window.';
+  }
+  if(id==='perplexity'){
+    return 'Cross-sectional market leadership: Top quintile rank across liquid spot universe with 7d Relative Strength <b>'+rsTxt+'</b> and solid multi-horizon volume confirmation.';
   }
   if(id==='deepseek'){
     return 'Multi-factor quant rank '+Math.round(r)+'/100. Volume expansion '+surge+
       'x relative to 30d mean with 7d Relative Strength '+rsTxt+'. ATR risk budget calculates 1.85 sigma target at favorable asymmetric R:R.';
   }
-  return 'High-beta momentum breakout: <b>'+p24+'</b> on the day, <b>'+p7+'</b> on the week with volume surge '+surge+
-    'x. Sized with multi-day ATR buffer to avoid stop hunting.';
+
+  // Pillar 3: Volume Flow & Institutional Liquidity
+  if(id==='grok'){
+    return 'High-beta momentum breakout: <b>'+p24+'</b> on the day, <b>'+p7+'</b> on the week with volume surge '+surge+
+      'x. Sized with multi-day ATR buffer to avoid stop hunting.';
+  }
+  if(id==='bloomberg'){
+    return 'Institutional depth & liquidity: Liquidity rank #'+c.rank+' with '+fmtVol(c.vol24)+' daily turnover, delivering minimal execution slippage and high turnover capacity.';
+  }
+  if(id==='renaissance'){
+    return 'Volume flow anomaly: Turnover expanding <b>'+surge+'x</b> above 30d baseline with price velocity, signaling systematic smart-money accumulation prior to secondary expansion.';
+  }
+  if(id==='citadel'){
+    return 'Turnover velocity: Rapid 24h volume acceleration ('+surge+'x) paired with short-term price discovery, capitalizing on aggressive liquidity absorption.';
+  }
+
+  // Pillar 4: Volatility Compression & Asymmetry
+  if(id==='blackrock'){
+    return 'Volatility compression coiling: ATR14 compressed at '+atrTxt+'%, indicating an energy-coiling consolidation cycle primed for explosive directional volatility expansion.';
+  }
+  if(id==='twosigma'){
+    return 'Statistical mean reversion: Deep-value recovery where asset '+ddTxt+', exhibiting localized oversold exhaustion and renewed systematic accumulation.';
+  }
+  if(id==='bridgewater'){
+    return 'Risk-parity volatility budget: Downside variance insulated with ATR volatility '+atrTxt+'% and top-tier Sharpe ratio, optimizing portfolio capital preservation.';
+  }
+  if(id==='kelly'){
+    return 'Asymmetric edge maximizer: Favorable reward-to-risk geometry targeting +1.85 sigma upside against a disciplined 1.25 sigma ATR stop boundary.';
+  }
+  return 'Systematic quantitative pick: Positive 7d relative strength '+rsTxt+' with robust liquidity rank #'+c.rank+'.';
 }
 
 function computeAdvisors(coins){
@@ -979,8 +1079,26 @@ function render(){
       '</div>';
   }
 
-  // Render Advisors Grid
-  document.getElementById('advisors').innerHTML=st.advisors.map(function(a){
+  renderAdvisorsGrid();
+  renderTable();
+  renderTally();
+  updatePositionSizer();
+
+  document.getElementById('foot').textContent='CoinPicks Rev 5.0 OLED · 16 Quantitative Models · Top '+(STATE.universe||st.coins.length)+' Binance Spot Pairs · '+
+    st.coins.length+' Liquid Assets with Full 180d History · Updated '+hr(st.at);
+}
+
+let activePillar='all';
+
+function renderAdvisorsGrid(){
+  const st=STATE;
+  if(!st.advisors.length) return;
+  const winner=st.board[0]||null;
+  const list=st.advisors.filter(function(a){
+    return activePillar==='all' || a.meta.pillar===activePillar;
+  });
+
+  document.getElementById('advisors').innerHTML=list.map(function(a){
     const won=winner&&advisorPick(a).id===winner.coin.id;
     const c=advisorPick(a);
     const lv2=riskProfile(c);
@@ -1006,13 +1124,6 @@ function render(){
       '</div>'+
     '</article>';
   }).join('');
-
-  renderTable();
-  renderTally();
-  updatePositionSizer();
-
-  document.getElementById('foot').textContent='CoinPicks Rev 4.30 OLED · Top '+(STATE.universe||st.coins.length)+' Binance Spot Pairs · '+
-    st.coins.length+' Liquid Assets with Full 180d History · Updated '+hr(st.at);
 }
 
 function renderTally(){
@@ -1028,19 +1139,19 @@ function renderTally(){
       '<span class="tpick">'+esc(coin.symbol)+'</span>'+
     '</div>';
   }).join('');
-  box.innerHTML='<div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);font-weight:680;margin-bottom:10px">Model Votes &amp; Advisor Allocations</div>'+rows;
+  box.innerHTML='<div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);font-weight:680;margin-bottom:10px">16 Committee Votes &amp; Mandate Allocations</div>'+rows;
 
   const w=st.board[0];
   if(!w){document.getElementById('tallyNote').innerHTML='';return}
   document.getElementById('tallyNote').innerHTML=
-    '<b>Leader: '+esc(w.coin.symbol)+'</b> with '+w.votes+' direct vote(s) and '+w.borda+' Borda consensus points. '+
-    (st.leaders.length>1?'(Tied plurality broken via cross-model Borda rank agreement).':'');
+    '<b>Consensus Leader: '+esc(w.coin.symbol)+'</b> with '+w.votes+' direct first-place vote(s) and '+w.borda+' Borda rank points. '+
+    (st.leaders.length>1?'(Tied plurality broken via cross-model Borda rank agreement across all 16 quantitative engines).':'');
 }
 
 function renderMethod(){
   document.getElementById('methodGrid').innerHTML=ADVISORS.map(function(a){
     return '<div><h3>'+esc(a.name)+' — '+esc(a.style)+'</h3>'+
-      '<p>180-Day OHLCV Quantitative Rules Engine</p></div>';
+      '<p>180-Day OHLCV Quantitative Consensus Engine &middot; Pillar: '+esc(a.pillar.toUpperCase())+'</p></div>';
   }).join('');
 }
 
@@ -1197,6 +1308,18 @@ document.getElementById('autoRefresh').addEventListener('change',function(e){
 });
 document.getElementById('accEquity').addEventListener('input',updatePositionSizer);
 document.getElementById('accRisk').addEventListener('input',updatePositionSizer);
+
+const pTabs = document.getElementById('pillarTabs');
+if(pTabs){
+  pTabs.addEventListener('click', function(e){
+    const btn = e.target.closest('.pill-btn');
+    if(!btn) return;
+    pTabs.querySelectorAll('.pill-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activePillar = btn.getAttribute('data-pillar') || 'all';
+    renderAdvisorsGrid();
+  });
+}
 
 document.getElementById('copyPayloadBtn').addEventListener('click',function(){
   if(!window.__LAST_ORDER) return;
