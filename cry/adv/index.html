@@ -450,7 +450,13 @@
 'use strict';
 
 /* ---------- Host Failover & Endpoint Configuration ---------- */
-const BINANCE_HOSTS=['https://data-api.binance.vision','https://api.binance.com','https://api-gcp.binance.com'];
+const BINANCE_HOSTS=[
+  'https://api.binance.com',
+  'https://api-gcp.binance.com',
+  'https://api.binance.me',
+  'https://api1.binance.com',
+  'https://api3.binance.com'
+];
 const TOP_N=25;
 const KLINE_DAYS=180;
 let BINANCE_IDX=0;
@@ -461,7 +467,7 @@ async function bGet(path){
     const host=BINANCE_HOSTS[(BINANCE_IDX+i)%BINANCE_HOSTS.length];
     try{
       const ctrl=new AbortController();
-      const t=setTimeout(function(){ctrl.abort()},20000);
+      const t=setTimeout(function(){ctrl.abort()},4000);
       const r=await fetch(host+'/api/v3'+path,{signal:ctrl.signal});
       clearTimeout(t);
       if(!r.ok) throw new Error('HTTP '+r.status);
@@ -1478,89 +1484,7 @@ async function load(){
   btn.disabled=false;
 }
 
-/* ---------- Model Config Wire ---------- */
-let ALL_MODELS=[];
-const staged={};
-function setLiveState(kind,msg){
-  const el=document.getElementById('cmdState');
-  el.className='livestate'+(kind?' '+kind:'');
-  el.innerHTML=msg;
-}
-function renderModelPicker(){
-  const box=document.getElementById('modelPicker');
-  if(!liveKey){box.innerHTML='';return}
-  const dirty=Object.keys(staged).some(k=>staged[k]!==undefined);
-  box.innerHTML=
-    '<div class="keyrow">'+ADVISORS.map(function(a){
-      const cur=staged[a.id]!==undefined?staged[a.id]:a.model;
-      const list=ALL_MODELS.slice();
-      if(cur&&!list.some(m=>m.id===cur)) list.unshift({id:cur,name:cur});
-      const opts=['<option value=""'+(cur?'':' selected')+'>— None (Quant Rule) —</option>'].concat(
-        list.map(m=>'<option value="'+esc(m.id)+'"'+(m.id===cur?' selected':'')+'>'+esc(m.id)+'</option>')
-      ).join('');
-      return '<label class="mselWrap"><span>'+esc(a.name)+'</span><select data-adv="'+esc(a.id)+'" class="modelSel">'+opts+'</select></label>';
-    }).join('')+'</div>'+
-    '<div class="keyrow" style="margin-top:10px">'+
-      '<button class="primary" id="modelSave"'+(dirty?'':' disabled')+'>Save Models</button>'+
-      '<span class="livestate">'+(ALL_MODELS.length?ALL_MODELS.length+' models available':'Catalog ready')+'</span>'+
-    '</div>';
-}
-async function refreshModelList(key){
-  ALL_MODELS=await ccListModels(key);
-  renderModelPicker();
-  return ALL_MODELS.length;
-}
-function applyStagedModels(){
-  let changed=false;
-  Object.keys(staged).forEach(function(id){
-    const a=ADVISORS.filter(x=>x.id===id)[0];
-    if(!a) return;
-    a.model=staged[id];
-    store.set('coinpicks.model.'+id,staged[id]);
-    delete staged[id];
-    changed=true;
-  });
-  renderModelPicker();
-  if(changed) run(STATE.coins);
-}
-async function connectKey(key){
-  setLiveState('busy','Connecting to Command Code API…');
-  try{
-    const count=await refreshModelList(key);
-    liveKey=key;
-    store.set(LS_KEY,key);
-    setLiveState('ok','Key accepted · '+count+' models available.');
-    renderModelPicker();
-    run(STATE.coins);
-  }catch(e){
-    liveKey='';
-    store.del(LS_KEY);
-    setLiveState('err','Could not connect: '+esc(e.message));
-  }
-}
-
 /* ---------- Event Listeners & Boot ---------- */
-document.getElementById('liveToggle').addEventListener('click',function(){
-  document.getElementById('livePanel').classList.toggle('open');
-});
-document.getElementById('cmdSave').addEventListener('click',function(){
-  const k=document.getElementById('cmdKey').value.trim();
-  if(!k){setLiveState('err','Paste an API key first.');return}
-  connectKey(k);
-});
-document.getElementById('cmdClear').addEventListener('click',function(){
-  liveKey='';store.del(LS_KEY);document.getElementById('cmdKey').value='';
-  renderModelPicker();setLiveState('','Key cleared.');run(STATE.coins);
-});
-document.getElementById('modelPicker').addEventListener('change',function(e){
-  const sel=e.target.closest('.modelSel');
-  if(!sel) return;
-  staged[sel.getAttribute('data-adv')]=sel.value;
-  renderModelPicker();
-});
-document.getElementById('modelPicker').addEventListener('click',function(e){
-  if(e.target.closest('#modelSave')) applyStagedModels();
-});
 document.getElementById('refresh').addEventListener('click',load);
 document.getElementById('coinSearch').addEventListener('input',function(e){
   searchFilter=e.target.value;
@@ -1583,20 +1507,7 @@ document.getElementById('copyPayloadBtn').addEventListener('click',function(){
   });
 });
 
-ADVISORS.forEach(function(a){
-  const saved=store.get('coinpicks.model.'+a.id);
-  if(saved) a.model=saved;
-});
 renderMethod();
-
-if(liveKey){
-  document.getElementById('livePanel').classList.add('open');
-  renderModelPicker();
-  refreshModelList(liveKey).catch(()=>{});
-} else {
-  renderModelPicker();
-}
-
 snapshotToState();
 load();
 })();
