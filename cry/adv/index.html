@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
   CoinPicks — Quantitative AI Crypto Swing Advisor
-  Rev 5.00 — 2026-10-18 — 16-Model Consensus Ensemble & OLED Screen Optimized Edition.
+  Rev 5.10 — 2026-10-18 — 16-Model Consensus Ensemble Edition.
       • 16-MODEL QUANTITATIVE CONSENSUS ENSEMBLE:
           - Evaluates 16 independent quantitative engines across 4 specialized trading pillars:
             1. Trend & Market Structure (ChatGPT, Claude, Llama, Qwen)
@@ -35,8 +35,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CoinPicks Rev 5.0 OLED — 16-Model Quantitative Consensus Advisor</title>
-<meta name="description" content="OLED-optimized minimalist quantitative crypto swing advisor with 16-model consensus across 4 strategy pillars, 180-day OHLCV screening, ATR volatility budgeting, and market regime detection.">
+<title>CoinPicks Rev 5.1 — 16-Model Quantitative Consensus Advisor</title>
+<meta name="description" content="Minimalist quantitative crypto swing advisor with 16-model consensus across 4 strategy pillars, 180-day OHLCV screening, ATR volatility budgeting, and market regime detection.">
 <style>
   :root{
     /* OLED Pitch Black & High-Contrast Zinc Palette */
@@ -309,7 +309,7 @@
       </div>
     </div>
     <div class="toolbar">
-      <span class="pill rev">Rev 5.0 OLED</span>
+      <span class="pill rev">Rev 5.1</span>
       <span class="pill loading" id="status"><span class="dot"></span><span id="statusText">Connecting…</span></span>
       <label class="auto"><input type="checkbox" id="autoRefresh"> Auto 5m</label>
       <button class="primary" id="refresh">Refresh</button>
@@ -430,7 +430,7 @@
     </section>
   </main>
 
-  <footer id="foot">CoinPicks Rev 4.30 OLED · Loading data…</footer>
+  <footer id="foot">CoinPicks Rev 5.1 · Loading data…</footer>
 </div>
 
 <script>
@@ -1084,7 +1084,7 @@ function render(){
   renderTally();
   updatePositionSizer();
 
-  document.getElementById('foot').textContent='CoinPicks Rev 5.0 OLED · 16 Quantitative Models · Top '+(STATE.universe||st.coins.length)+' Binance Spot Pairs · '+
+  document.getElementById('foot').textContent='CoinPicks Rev 5.1 · 16 Quantitative Models · Top '+(STATE.universe||st.coins.length)+' Binance Spot Pairs · '+
     st.coins.length+' Liquid Assets with Full 180d History · Updated '+hr(st.at);
 }
 
