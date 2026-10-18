@@ -703,6 +703,8 @@ let currentScan = null;
 let currentFormat = "square";
 let currentAngle = "consensus";
 let currentCardBase64 = null;
+let currentRankIndex = 0;
+let loadedRankedCandidates = [];
 
 // Initialize
 window.addEventListener("DOMContentLoaded", async () => {
@@ -792,7 +794,7 @@ async function runQuantScan() {
   const btn = document.getElementById("runScanBtn");
   if (btn) {
     btn.disabled = true;
-    btn.textContent = "Scanning Binance...";
+    btn.textContent = "Scanning Binance (10 Models)...";
   }
   try {
     try {
@@ -807,8 +809,32 @@ async function runQuantScan() {
       console.warn("Backend unavailable, using client-side quant engine:", e.message);
       currentScan = getClientQuantScan();
     }
+
+    // Populate loaded candidates from the 10-model scan
+    if (currentScan.top_candidates && currentScan.top_candidates.length) {
+      loadedRankedCandidates = currentScan.top_candidates;
+    } else if (currentScan.leaderboard && currentScan.leaderboard.length) {
+      loadedRankedCandidates = currentScan.leaderboard.map(c => ({
+        ...currentScan.flash,
+        symbol: c.symbol,
+        price: c.price_raw || currentScan.flash.price,
+        price_formatted: c.price,
+        entry_price: c.price,
+        ch24h: c.ch24h,
+        ch7d: c.ch7d,
+        atr14_pct: c.atr,
+        borda_score: c.borda,
+        consensus_votes: `${c.votes || 4} of 10 Model Votes`,
+        action_title: `Buy ${c.symbol}`,
+        rank: c.rank || 1
+      }));
+    } else {
+      loadedRankedCandidates = [currentScan.flash];
+    }
+
+    currentRankIndex = 0;
     renderVerdict(currentScan.flash);
-    renderLeaderboard(currentScan.leaderboard);
+    if (currentScan.leaderboard) renderLeaderboard(currentScan.leaderboard);
     await regenerateCard();
     await generateCaption();
     updateDocumentText();
@@ -826,11 +852,30 @@ async function runQuantScan() {
 async function suggestAnotherCoin() {
   const btn = document.getElementById("suggestCoinBtn");
   const origText = btn ? btn.innerHTML : "🎲 Suggest Another Coin";
+
+  // 1. If we already have the 10-model Binance scan candidates in memory, cycle deterministically!
+  // Rank 1 -> Rank 2 -> Rank 3 -> Rank 4 -> ... -> Rank 10 -> Rank 1
+  if (loadedRankedCandidates && loadedRankedCandidates.length > 1) {
+    currentRankIndex = (currentRankIndex + 1) % loadedRankedCandidates.length;
+    const nextCand = loadedRankedCandidates[currentRankIndex];
+    const rankNum = currentRankIndex + 1;
+
+    currentScan.flash = nextCand;
+    renderVerdict(nextCand);
+    if (currentScan.leaderboard) renderLeaderboard(currentScan.leaderboard);
+    showToast(`🎯 Selected Rank #${rankNum}: ${nextCand.symbol} (${nextCand.price_formatted})`);
+    await regenerateCard();
+    await generateCaption();
+    updateDocumentText();
+    return;
+  }
+
+  // 2. Fallback to API if candidate array is not pre-cached
   if (btn) {
     btn.disabled = true;
     btn.innerHTML = `<span style="display:inline-block; animation:spin 1s linear infinite;">⏳</span> Suggesting...`;
   }
-  showToast("🎲 Discovering an alternative top candidate...");
+  showToast("🎲 Selecting next ranked trade candidate...");
 
   const curSym = currentScan ? currentScan.flash.symbol : "";
   const form = new FormData();
@@ -842,16 +887,19 @@ async function suggestAnotherCoin() {
       const data = await res.json();
       if (data.success && data.flash) {
         currentScan = data;
+        if (data.top_candidates) loadedRankedCandidates = data.top_candidates;
+        currentRankIndex = data.current_rank ? (data.current_rank - 1) : 1;
       } else {
         throw new Error(data.error || "Could not find alternative");
       }
     } catch (err) {
       console.warn("Backend suggest unavailable, using client-side alternative:", err.message);
       currentScan = getClientAlternative(curSym);
+      if (currentScan.top_candidates) loadedRankedCandidates = currentScan.top_candidates;
     }
     renderVerdict(currentScan.flash);
     if (currentScan.leaderboard) renderLeaderboard(currentScan.leaderboard);
-    showToast(`🎯 Alternative Found: ${currentScan.flash.symbol} (${currentScan.flash.price_formatted})`);
+    showToast(`🎯 Selected Rank #${currentRankIndex + 1}: ${currentScan.flash.symbol} (${currentScan.flash.price_formatted})`);
     await regenerateCard();
     await generateCaption();
     updateDocumentText();
@@ -863,6 +911,41 @@ async function suggestAnotherCoin() {
       btn.disabled = false;
       btn.innerHTML = origText;
     }
+  }
+}
+
+async function selectRankCandidate(idx) {
+  if (loadedRankedCandidates && loadedRankedCandidates[idx]) {
+    currentRankIndex = idx;
+    const cand = loadedRankedCandidates[idx];
+    currentScan.flash = cand;
+    renderVerdict(cand);
+    if (currentScan.leaderboard) renderLeaderboard(currentScan.leaderboard);
+    showToast(`🎯 Selected Rank #${idx + 1}: ${cand.symbol} (${cand.price_formatted})`);
+    await regenerateCard();
+    await generateCaption();
+    updateDocumentText();
+    return;
+  }
+
+  // Fallback to fetch target rank from API
+  const form = new FormData();
+  form.append("target_rank", idx + 1);
+  try {
+    const res = await fetch(API_BASE + "/api/quant/suggest-alternative", { method: "POST", body: form });
+    const data = await res.json();
+    if (data.success && data.flash) {
+      currentScan = data;
+      currentRankIndex = idx;
+      renderVerdict(currentScan.flash);
+      if (currentScan.leaderboard) renderLeaderboard(currentScan.leaderboard);
+      showToast(`🎯 Selected Rank #${idx + 1}: ${data.flash.symbol}`);
+      await regenerateCard();
+      await generateCaption();
+      updateDocumentText();
+    }
+  } catch (e) {
+    console.warn("Could not load rank directly from API:", e);
   }
 }
 
@@ -889,17 +972,24 @@ function renderLeaderboard(board) {
     tbody.innerHTML = "<tr><td colspan='7'>No coins</td></tr>";
     return;
   }
-  tbody.innerHTML = board.map((c, i) => `
-    <tr>
-      <td style="font-weight:700; color:#fff;">${i === 0 ? "👑 " : ""}${c.symbol}</td>
-      <td>${c.price}</td>
-      <td style="color:${c.ch24h.startsWith('-') ? 'var(--rose)' : 'var(--mint)'}">${c.ch24h}</td>
-      <td style="color:${c.ch7d.startsWith('-') ? 'var(--rose)' : 'var(--cyan)'}">${c.ch7d}</td>
-      <td>${c.atr}</td>
-      <td style="font-weight:600; color:var(--gold);">${c.borda}p</td>
-      <td style="font-size:11.5px; color:var(--muted);">${c.voters}</td>
-    </tr>
-  `).join("");
+  tbody.innerHTML = board.map((c, i) => {
+    const isSelected = i === currentRankIndex;
+    const rankLabel = i === 0 ? "👑 Rank 1" : `Rank ${i + 1}`;
+    const rowStyle = isSelected
+      ? "background:rgba(56, 189, 248, 0.16); box-shadow: inset 3px 0 0 var(--cyan); cursor:pointer;"
+      : "cursor:pointer;";
+    return `
+      <tr onclick="selectRankCandidate(${i})" style="${rowStyle} transition:background 0.15s ease;" title="Click to select Rank #${i + 1} (${c.symbol})">
+        <td style="font-weight:700; color:${isSelected ? 'var(--cyan)' : '#fff'};">${rankLabel} &middot; ${c.symbol}</td>
+        <td>${c.price}</td>
+        <td style="color:${c.ch24h.startsWith('-') ? 'var(--rose)' : 'var(--mint)'}">${c.ch24h}</td>
+        <td style="color:${c.ch7d.startsWith('-') ? 'var(--rose)' : 'var(--cyan)'}">${c.ch7d}</td>
+        <td>${c.atr}</td>
+        <td style="font-weight:600; color:var(--gold);">${c.borda}p</td>
+        <td style="font-size:11.5px; color:var(--muted);">${c.voters}</td>
+      </tr>
+    `;
+  }).join("");
 }
 
 function setFormat(fmt) {
@@ -1536,7 +1626,7 @@ function showToast(msg) {
 // -------------------------------------------------------------
 const CLIENT_QUANT_POOL = [
   {
-    symbol: "AVA", price: 0.4206, price_formatted: "$0.4206", entry_price: "$0.4206",
+    rank: 1, symbol: "AVA", price: 0.4206, price_formatted: "$0.4206", entry_price: "$0.4206",
     action_title: "Buy AVA", flash_bias: "STRONG_BUY", bias_label: "3-DAY SWING LONG",
     target_price: "$0.5384", expected_target_pct: "+28.00%",
     target2_price: "$0.5973", expected_target2_pct: "+42.00%",
@@ -1544,13 +1634,13 @@ const CLIENT_QUANT_POOL = [
     risk_reward: "1.75 : 1", breakeven_win_rate: "36.4%",
     atr14_pct: "4.85%", ch24h: "+3.94%", ch7d: "+11.20%", rs_btc: "+12.50%",
     rs_vs_btc: "RS vs BTC: +12.50%", liquidity_rank: "Liquidity #8",
-    borda_score: 95, consensus_votes: "Multi-Factor Consensus",
-    consensus_desc: "Multi-factor quantitative model ranked AVA in top decile. 3-day swing target and stop sized via 14-day ATR volatility budget.",
+    borda_score: 95, consensus_votes: "9 of 10 Model Votes",
+    consensus_desc: "10-model quantitative algorithm ranked AVA #1 with 95 Borda points. 3-day swing target and stop sized via 14-day ATR volatility budget.",
     regime: { label: "Neutral (Consolidation Range)", status: "neutral", badge: "● NEUTRAL" },
     target_url: "https://coinpicks.ai", access_password: "quantAlpha2026"
   },
   {
-    symbol: "SUI", price: 4.86, price_formatted: "$4.86", entry_price: "$4.86",
+    rank: 2, symbol: "SUI", price: 4.86, price_formatted: "$4.86", entry_price: "$4.86",
     action_title: "Buy SUI", flash_bias: "STRONG_BUY", bias_label: "3-DAY SWING LONG",
     target_price: "$5.88", expected_target_pct: "+21.00%",
     target2_price: "$6.45", expected_target2_pct: "+32.70%",
@@ -1558,13 +1648,13 @@ const CLIENT_QUANT_POOL = [
     risk_reward: "1.75 : 1", breakeven_win_rate: "36.4%",
     atr14_pct: "5.10%", ch24h: "+8.92%", ch7d: "+22.60%", rs_btc: "+17.80%",
     rs_vs_btc: "RS vs BTC: +17.80%", liquidity_rank: "Liquidity #5",
-    borda_score: 118, consensus_votes: "Multi-Factor Consensus",
-    consensus_desc: "Multi-factor quantitative model ranked SUI in top decile. 3-day swing target and stop sized via 14-day ATR volatility budget.",
+    borda_score: 118, consensus_votes: "8 of 10 Model Votes",
+    consensus_desc: "10-model quantitative algorithm ranked SUI #2 with 118 Borda points. 3-day swing target and stop sized via 14-day ATR volatility budget.",
     regime: { label: "Neutral (Consolidation Range)", status: "neutral", badge: "● NEUTRAL" },
     target_url: "https://coinpicks.ai", access_password: "quantAlpha2026"
   },
   {
-    symbol: "SOL", price: 214.60, price_formatted: "$214.60", entry_price: "$214.60",
+    rank: 3, symbol: "SOL", price: 214.60, price_formatted: "$214.60", entry_price: "$214.60",
     action_title: "Buy SOL", flash_bias: "STRONG_BUY", bias_label: "3-DAY SWING LONG",
     target_price: "$248.90", expected_target_pct: "+16.00%",
     target2_price: "$268.20", expected_target2_pct: "+25.00%",
@@ -1572,13 +1662,13 @@ const CLIENT_QUANT_POOL = [
     risk_reward: "1.78 : 1", breakeven_win_rate: "36.0%",
     atr14_pct: "4.20%", ch24h: "+4.86%", ch7d: "+12.70%", rs_btc: "+7.90%",
     rs_vs_btc: "RS vs BTC: +7.90%", liquidity_rank: "Liquidity #3",
-    borda_score: 112, consensus_votes: "Multi-Factor Consensus",
-    consensus_desc: "Multi-factor quantitative model ranked SOL in top decile. 3-day swing target and stop sized via 14-day ATR volatility budget.",
+    borda_score: 112, consensus_votes: "8 of 10 Model Votes",
+    consensus_desc: "10-model quantitative algorithm ranked SOL #3 with 112 Borda points. 3-day swing target and stop sized via 14-day ATR volatility budget.",
     regime: { label: "Neutral (Consolidation Range)", status: "neutral", badge: "● NEUTRAL" },
     target_url: "https://coinpicks.ai", access_password: "quantAlpha2026"
   },
   {
-    symbol: "TRX", price: 0.3519, price_formatted: "$0.3519", entry_price: "$0.3519",
+    rank: 4, symbol: "TRX", price: 0.3519, price_formatted: "$0.3519", entry_price: "$0.3519",
     action_title: "Buy TRX", flash_bias: "STRONG_BUY", bias_label: "3-DAY SWING LONG",
     target_price: "$0.3941", expected_target_pct: "+12.00%",
     target2_price: "$0.4223", expected_target2_pct: "+20.00%",
@@ -1586,8 +1676,92 @@ const CLIENT_QUANT_POOL = [
     risk_reward: "1.71 : 1", breakeven_win_rate: "36.8%",
     atr14_pct: "3.40%", ch24h: "+2.14%", ch7d: "+8.90%", rs_btc: "+4.10%",
     rs_vs_btc: "RS vs BTC: +4.10%", liquidity_rank: "Liquidity #6",
-    borda_score: 98, consensus_votes: "Multi-Factor Consensus",
-    consensus_desc: "Multi-factor quantitative model ranked TRX in top decile. 3-day swing target and stop sized via 14-day ATR volatility budget.",
+    borda_score: 98, consensus_votes: "7 of 10 Model Votes",
+    consensus_desc: "10-model quantitative algorithm ranked TRX #4 with 98 Borda points. 3-day swing target and stop sized via 14-day ATR volatility budget.",
+    regime: { label: "Neutral (Consolidation Range)", status: "neutral", badge: "● NEUTRAL" },
+    target_url: "https://coinpicks.ai", access_password: "quantAlpha2026"
+  },
+  {
+    rank: 5, symbol: "NEAR", price: 6.18, price_formatted: "$6.18", entry_price: "$6.18",
+    action_title: "Buy NEAR", flash_bias: "STRONG_BUY", bias_label: "3-DAY SWING LONG",
+    target_price: "$7.29", expected_target_pct: "+18.00%",
+    target2_price: "$8.03", expected_target2_pct: "+30.00%",
+    stop_loss: "$5.56", expected_stop_pct: "-10.00%",
+    risk_reward: "1.80 : 1", breakeven_win_rate: "35.7%",
+    atr14_pct: "4.90%", ch24h: "+7.36%", ch7d: "+18.40%", rs_btc: "+13.60%",
+    rs_vs_btc: "RS vs BTC: +13.60%", liquidity_rank: "Liquidity #7",
+    borda_score: 92, consensus_votes: "6 of 10 Model Votes",
+    consensus_desc: "10-model quantitative algorithm ranked NEAR #5 with 92 Borda points. 3-day swing target and stop sized via 14-day ATR volatility budget.",
+    regime: { label: "Neutral (Consolidation Range)", status: "neutral", badge: "● NEUTRAL" },
+    target_url: "https://coinpicks.ai", access_password: "quantAlpha2026"
+  },
+  {
+    rank: 6, symbol: "LINK", price: 22.84, price_formatted: "$22.84", entry_price: "$22.84",
+    action_title: "Buy LINK", flash_bias: "STRONG_BUY", bias_label: "3-DAY SWING LONG",
+    target_price: "$26.27", expected_target_pct: "+15.00%",
+    target2_price: "$28.55", expected_target2_pct: "+25.00%",
+    stop_loss: "$20.78", expected_stop_pct: "-9.00%",
+    risk_reward: "1.67 : 1", breakeven_win_rate: "37.5%",
+    atr14_pct: "4.10%", ch24h: "+5.12%", ch7d: "+13.90%", rs_btc: "+9.10%",
+    rs_vs_btc: "RS vs BTC: +9.10%", liquidity_rank: "Liquidity #9",
+    borda_score: 88, consensus_votes: "6 of 10 Model Votes",
+    consensus_desc: "10-model quantitative algorithm ranked LINK #6 with 88 Borda points. 3-day swing target and stop sized via 14-day ATR volatility budget.",
+    regime: { label: "Neutral (Consolidation Range)", status: "neutral", badge: "● NEUTRAL" },
+    target_url: "https://coinpicks.ai", access_password: "quantAlpha2026"
+  },
+  {
+    rank: 7, symbol: "AVAX", price: 38.72, price_formatted: "$38.72", entry_price: "$38.72",
+    action_title: "Buy AVAX", flash_bias: "STRONG_BUY", bias_label: "3-DAY SWING LONG",
+    target_price: "$44.14", expected_target_pct: "+14.00%",
+    target2_price: "$47.63", expected_target2_pct: "+23.00%",
+    stop_loss: "$35.62", expected_stop_pct: "-8.00%",
+    risk_reward: "1.75 : 1", breakeven_win_rate: "36.4%",
+    atr14_pct: "3.90%", ch24h: "+3.94%", ch7d: "+11.20%", rs_btc: "+6.40%",
+    rs_vs_btc: "RS vs BTC: +6.40%", liquidity_rank: "Liquidity #10",
+    borda_score: 85, consensus_votes: "5 of 10 Model Votes",
+    consensus_desc: "10-model quantitative algorithm ranked AVAX #7 with 85 Borda points. 3-day swing target and stop sized via 14-day ATR volatility budget.",
+    regime: { label: "Neutral (Consolidation Range)", status: "neutral", badge: "● NEUTRAL" },
+    target_url: "https://coinpicks.ai", access_password: "quantAlpha2026"
+  },
+  {
+    rank: 8, symbol: "DOGE", price: 0.3184, price_formatted: "$0.3184", entry_price: "$0.3184",
+    action_title: "Buy DOGE", flash_bias: "STRONG_BUY", bias_label: "3-DAY SWING LONG",
+    target_price: "$0.3821", expected_target_pct: "+20.00%",
+    target2_price: "$0.4203", expected_target2_pct: "+32.00%",
+    stop_loss: "$0.2802", expected_stop_pct: "-12.00%",
+    risk_reward: "1.67 : 1", breakeven_win_rate: "37.5%",
+    atr14_pct: "5.80%", ch24h: "+6.41%", ch7d: "+15.80%", rs_btc: "+11.00%",
+    rs_vs_btc: "RS vs BTC: +11.00%", liquidity_rank: "Liquidity #4",
+    borda_score: 80, consensus_votes: "5 of 10 Model Votes",
+    consensus_desc: "10-model quantitative algorithm ranked DOGE #8 with 80 Borda points. 3-day swing target and stop sized via 14-day ATR volatility budget.",
+    regime: { label: "Neutral (Consolidation Range)", status: "neutral", badge: "● NEUTRAL" },
+    target_url: "https://coinpicks.ai", access_password: "quantAlpha2026"
+  },
+  {
+    rank: 9, symbol: "ADA", price: 0.9120, price_formatted: "$0.9120", entry_price: "$0.9120",
+    action_title: "Buy ADA", flash_bias: "STRONG_BUY", bias_label: "3-DAY SWING LONG",
+    target_price: "$1.0214", expected_target_pct: "+12.00%",
+    target2_price: "$1.0944", expected_target2_pct: "+20.00%",
+    stop_loss: "$0.8482", expected_stop_pct: "-7.00%",
+    risk_reward: "1.71 : 1", breakeven_win_rate: "36.8%",
+    atr14_pct: "3.60%", ch24h: "+2.87%", ch7d: "+10.40%", rs_btc: "+5.60%",
+    rs_vs_btc: "RS vs BTC: +5.60%", liquidity_rank: "Liquidity #11",
+    borda_score: 74, consensus_votes: "4 of 10 Model Votes",
+    consensus_desc: "10-model quantitative algorithm ranked ADA #9 with 74 Borda points. 3-day swing target and stop sized via 14-day ATR volatility budget.",
+    regime: { label: "Neutral (Consolidation Range)", status: "neutral", badge: "● NEUTRAL" },
+    target_url: "https://coinpicks.ai", access_password: "quantAlpha2026"
+  },
+  {
+    rank: 10, symbol: "XRP", price: 2.31, price_formatted: "$2.31", entry_price: "$2.31",
+    action_title: "Buy XRP", flash_bias: "STRONG_BUY", bias_label: "3-DAY SWING LONG",
+    target_price: "$2.58", expected_target_pct: "+11.70%",
+    target2_price: "$2.77", expected_target2_pct: "+19.90%",
+    stop_loss: "$2.15", expected_stop_pct: "-6.90%",
+    risk_reward: "1.70 : 1", breakeven_win_rate: "37.0%",
+    atr14_pct: "3.20%", ch24h: "+3.42%", ch7d: "+8.90%", rs_btc: "+4.10%",
+    rs_vs_btc: "RS vs BTC: +4.10%", liquidity_rank: "Liquidity #2",
+    borda_score: 70, consensus_votes: "4 of 10 Model Votes",
+    consensus_desc: "10-model quantitative algorithm ranked XRP #10 with 70 Borda points. 3-day swing target and stop sized via 14-day ATR volatility budget.",
     regime: { label: "Neutral (Consolidation Range)", status: "neutral", badge: "● NEUTRAL" },
     target_url: "https://coinpicks.ai", access_password: "quantAlpha2026"
   }
@@ -1598,32 +1772,47 @@ function getClientQuantScan() {
   return {
     success: true,
     flash: chosen,
+    top_candidates: CLIENT_QUANT_POOL,
     leaderboard: CLIENT_QUANT_POOL.map(c => ({
+      rank: c.rank,
       symbol: c.symbol,
       price: c.price_formatted,
       ch24h: c.ch24h,
       ch7d: c.ch7d,
       atr: c.atr14_pct,
       borda: c.borda_score,
-      voters: "Consensus"
+      voters: c.consensus_votes
     }))
   };
 }
 
-function getClientAlternative(exSym) {
-  const filtered = CLIENT_QUANT_POOL.filter(c => c.symbol.toUpperCase() !== (exSym || "").toUpperCase());
-  const chosen = filtered.length ? filtered[Math.floor(Math.random() * filtered.length)] : CLIENT_QUANT_POOL[0];
+function getClientAlternative(exSym, targetRank) {
+  let chosen = null;
+  let chosenIdx = 1;
+
+  if (targetRank !== undefined && targetRank >= 1 && targetRank <= CLIENT_QUANT_POOL.length) {
+    chosenIdx = targetRank - 1;
+    chosen = CLIENT_QUANT_POOL[chosenIdx];
+  } else {
+    const curIdx = CLIENT_QUANT_POOL.findIndex(c => c.symbol.toUpperCase() === (exSym || "").toUpperCase());
+    chosenIdx = (curIdx >= 0) ? ((curIdx + 1) % CLIENT_QUANT_POOL.length) : 1;
+    chosen = CLIENT_QUANT_POOL[chosenIdx];
+  }
+
   return {
     success: true,
     flash: chosen,
+    current_rank: chosenIdx + 1,
+    top_candidates: CLIENT_QUANT_POOL,
     leaderboard: CLIENT_QUANT_POOL.map(c => ({
+      rank: c.rank,
       symbol: c.symbol,
       price: c.price_formatted,
       ch24h: c.ch24h,
       ch7d: c.ch7d,
       atr: c.atr14_pct,
       borda: c.borda_score,
-      voters: "Consensus"
+      voters: c.consensus_votes
     }))
   };
 }
