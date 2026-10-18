@@ -326,7 +326,7 @@
       <div class="logo" aria-hidden="true">&Omega;</div>
       <div>
         <h1>What should I buy today?</h1>
-        <p class="tag">Quantitative swing advisor &middot; 5 models &middot; ATR risk budgeting &middot; Borda consensus</p>
+        <p class="tag">Quantitative swing advisor &middot; 4 models &middot; ATR risk budgeting &middot; Borda consensus</p>
       </div>
     </div>
     <div class="toolbar">
@@ -409,7 +409,7 @@
     <!-- Advisors Breakdown Grid -->
     <div class="sec-head">
       <h2>Advisor breakdown</h2>
-      <p>5 models evaluate the field independently with distinct quantitative factor weights (Core, Rel-Strength, Multi-factor, High-Beta, Trend-Quality).</p>
+      <p>4 models evaluate the field independently with distinct quantitative factor weights (Core, Rel-Strength, Multi-factor, High-Beta).</p>
     </div>
     <section class="advisors" id="advisors" aria-live="polite"></section>
 
@@ -507,9 +507,7 @@ const ADVISORS=[
   { id:'deepseek',name:'DeepSeek',short:'D', style:'Quant Multi-Factor Alpha', raw:'#f1f2f5', model:'deepseek/deepseek-v4.1-flash',
     w:{ sharpe:0.30, relvol:0.24, rs7:0.20, mom7:0.16, atr:0.10 } },
   { id:'grok',    name:'Grok',    short:'X', style:'High-Beta Momentum Surge', raw:'#f1f2f5', model:'xai/grok-4.7',
-    w:{ mom1:0.35, mom7:0.28, relvol:0.22, rs7:0.15 } },
-  { id:'custom',  name:'Your Pick', short:'5', style:'Trend Quality & Risk Control', raw:'#f1f2f5', model:'',
-    w:{ mom7:0.24, sharpe:0.22, rs7:0.22, liq:0.18, atr:-0.14 } }
+    w:{ mom1:0.35, mom7:0.28, relvol:0.22, rs7:0.15 } }
 ];
 
 const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
@@ -1037,9 +1035,6 @@ function narrate(id,c,r,P,adv){
   if(id==='deepseek'){
     return 'Multi-factor quant rank '+Math.round(r)+'/100. Volume expansion '+surge+
       'x relative to 30d mean with 7d Relative Strength '+rsTxt+'. ATR risk budget calculates 1.85 sigma target at favorable asymmetric R:R.';
-  }
-  if(id==='custom'){
-    return 'Balanced quantitative profile for '+name+': RS vs BTC is '+rsTxt+', ATR14 is '+atrTxt+'%, and distance from 1y high is '+fmtPct(f.dd*100,0)+'.';
   }
   return 'High-beta momentum breakout: <b>'+p24+'</b> on the day, <b>'+p7+'</b> on the week with volume surge '+surge+
     'x. Sized with multi-day ATR buffer to avoid stop hunting.';
