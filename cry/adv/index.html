@@ -326,11 +326,11 @@
       <div class="logo" aria-hidden="true">&Omega;</div>
       <div>
         <h1>What should I buy today?</h1>
-        <p class="tag">Quantitative swing advisor &middot; 4 models &middot; ATR risk budgeting &middot; Borda consensus</p>
+        <p class="tag">Quantitative swing advisor &middot; 4 models &middot; 180d historical data &middot; Top 25 Binance Spot</p>
       </div>
     </div>
     <div class="toolbar">
-      <span class="pill rev">Rev 4.10 OLED</span>
+      <span class="pill rev">Rev 4.30 OLED</span>
       <span class="pill loading" id="status"><span class="dot"></span><span id="statusText">Connecting…</span></span>
       <label class="auto"><input type="checkbox" id="autoRefresh"> Auto 5m</label>
       <button class="primary" id="refresh">Refresh</button>
@@ -347,24 +347,6 @@
   </section>
 
   <div class="banner" id="banner"><span aria-hidden="true">⚠</span><div id="bannerText"></div></div>
-
-  <!-- Live Model Configuration Panel -->
-  <section class="live" id="livePanel">
-    <div class="live-top">
-      <h2>Live model advice</h2>
-      <p class="hlp">Optionally replace built-in quantitative scoring rules with real models via the Command Code Provider API. Cards show <span class="chip sim">RULE</span> or <span class="chip live">LIVE</span>.</p>
-      <button id="liveToggle" style="margin-left:auto">Configure</button>
-    </div>
-    <div class="live-body">
-      <div class="keyrow">
-        <input type="password" id="cmdKey" placeholder="Command Code API key" autocomplete="off" spellcheck="false">
-        <button id="cmdSave" class="primary">Save &amp; fetch models</button>
-        <button id="cmdClear">Forget key</button>
-      </div>
-      <div class="livestate" id="cmdState">No key stored — all advisors run as built-in quantitative scoring rules.</div>
-      <div id="modelPicker" style="margin-top:12px"></div>
-    </div>
-  </section>
 
   <main>
     <!-- Hero / Top Verdict -->
@@ -426,8 +408,8 @@
     <!-- Ranked Field Table -->
     <div class="sec-head" style="align-items:center">
       <div>
-        <h2>Screened candidates by votes &amp; relative strength</h2>
-        <p>Top candidate pool with 14d ATR volatility and Relative Strength vs Bitcoin (RS 7d).</p>
+        <h2>Top 25 Screened Binance Spot Candidates by Votes &amp; Relative Strength</h2>
+        <p>Top 25 liquid spot assets evaluated over 180-day OHLCV history with 14d ATR volatility and Relative Strength vs Bitcoin (RS 7d).</p>
       </div>
       <div class="table-search-wrap">
         <input type="text" id="coinSearch" placeholder="Search asset (e.g. SOL, SUI, DOGE)…" autocomplete="off" spellcheck="false">
@@ -460,7 +442,7 @@
     </section>
   </main>
 
-  <footer id="foot">CoinPicks Rev 4.10 OLED · Loading data…</footer>
+  <footer id="foot">CoinPicks Rev 4.30 OLED · Loading data…</footer>
 </div>
 
 <script>
@@ -469,8 +451,8 @@
 
 /* ---------- Host Failover & Endpoint Configuration ---------- */
 const BINANCE_HOSTS=['https://data-api.binance.vision','https://api.binance.com','https://api-gcp.binance.com'];
-const KLINE_N=100;
-const PROMPT_N=50;
+const TOP_N=25;
+const KLINE_DAYS=180;
 let BINANCE_IDX=0;
 
 async function bGet(path){
@@ -704,7 +686,7 @@ async function fetchKlines(rows, onProgress){
     const batch=rows.slice(i,i+CONC);
     await Promise.all(batch.map(async function(r){
       try{
-        const k=await bGet('/klines?symbol='+r.symbol+'USDT&interval=1d&limit=365');
+        const k=await bGet('/klines?symbol='+r.symbol+'USDT&interval=1d&limit='+KLINE_DAYS);
         out[r.symbol]=Array.isArray(k)?k.map(function(b){
           return {o:+b[1], h:+b[2], l:+b[3], c:+b[4], q:+b[7]};
         }):null;
@@ -1312,9 +1294,9 @@ function render(){
   renderTally();
   updatePositionSizer();
 
-  document.getElementById('foot').textContent='CoinPicks Rev 4.10 OLED · '+
-    (st.source==='live'?('Live Binance Data · '+(STATE.universe||'?')+' USDT Pairs'):'Bundled Snapshot')+' · '+
-    st.coins.length+' Liquid Assets with Full 365d History · Updated '+hr(st.at);
+  document.getElementById('foot').textContent='CoinPicks Rev 4.30 OLED · '+
+    (st.source==='live'?('Live Binance Data · Top '+(STATE.universe||'?')+' Spot Pairs'):'Bundled Snapshot')+' · '+
+    st.coins.length+' Liquid Assets with Full 180d History · Updated '+hr(st.at);
 }
 
 function renderTally(){
@@ -1372,7 +1354,7 @@ function renderTable(){
              (e.voters&&e.voters.some(v=>v.toLowerCase().includes(q)));
     });
   } else {
-    pool=pool.slice(0,18);
+    pool=pool.slice(0,TOP_N);
   }
 
   const countEl=document.getElementById('searchCount');
@@ -1464,27 +1446,30 @@ async function load(){
   }
 
   const rows=tickerToRows(tick);
-  let deep=rows.slice(0,KLINE_N);
+  let deep=rows.slice(0,TOP_N);
   if(!deep.some(r=>r.symbol==='BTC')){
     const btcRow = rows.filter(r=>r.symbol==='BTC')[0];
-    if(btcRow) deep.push(btcRow);
+    if(btcRow) {
+      deep.pop();
+      deep.unshift(btcRow);
+    }
   }
 
   banner('');
-  setStatus('loading','Fetching OHLCV daily history for top '+deep.length+' assets…');
+  setStatus('loading','Fetching 180d OHLCV history for Top '+deep.length+' Binance spot assets…');
   let klines={};
   try{
     klines=await fetchKlines(deep,function(done,total){
-      setStatus('loading','Ingesting klines: '+done+' / '+total);
+      setStatus('loading','Ingesting 180d klines: '+done+' / '+total);
     });
   }catch(e){err=e;}
 
   STATE.klines=klines;
-  const coins=buildCoins(rows,klines);
+  const coins=buildCoins(deep,klines);
   if(coins.length>=8){
-    STATE.universe=rows.length;
+    STATE.universe=deep.length;
     STATE.source='live';STATE.at=new Date();
-    setStatus('live','Binance · '+rows.length+' pairs · '+hr(STATE.at));
+    setStatus('live','Binance Spot · Top '+coins.length+' · 180d OHLCV · '+hr(STATE.at));
     run(coins);
   } else {
     banner('<b>Insufficient history returned</b>, showing bundled snapshot.');
