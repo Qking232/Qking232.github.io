@@ -74,8 +74,8 @@
     font-weight:550;border:1px solid var(--line);background:var(--card);color:var(--muted);white-space:nowrap;
   }
   .dot{width:6px;height:6px;border-radius:50%;background:var(--dim);flex:none}
-  .pill.live .dot{background:var(--up)}
-  .pill.live{color:#d1fae5;border-color:rgba(52,211,153,.35);background:rgba(52,211,153,.06)}
+  .pill.connected, .pill.live{color:#d1fae5;border-color:rgba(52,211,153,.35);background:rgba(52,211,153,.06)}
+  .pill.connected .dot, .pill.live .dot{background:var(--up)}
   .pill.cached .dot{background:var(--gold)}
   .pill.cached{color:#fef3c7;border-color:rgba(245,158,11,.35);background:rgba(245,158,11,.06)}
   .pill.loading .dot{background:var(--cyan);animation:blink 1s steps(2,end) infinite}
@@ -113,35 +113,6 @@
   .banner{display:none;gap:10px;align-items:flex-start;padding:12px 14px;border-radius:10px;margin-bottom:16px;border:1px solid rgba(245,158,11,.3);background:rgba(245,158,11,.08);color:#fef3c7;font-size:13px}
   .banner.show{display:flex}
   .banner b{color:#ffffff}
-
-  /* Live Model Configuration Panel */
-  .live{border:1px solid var(--line);border-radius:var(--radius);background:var(--card);padding:16px 18px;margin-bottom:20px}
-  .live-top{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-  .live-top h2{margin:0;font-size:14px;font-weight:600}
-  .live-top .hlp{margin:0;font-size:12px;color:var(--dim);max-width:74ch}
-  .live-body{display:none;margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
-  .live.open .live-body{display:block}
-  .keyrow{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-  .keyrow input[type=password],.keyrow input[type=text]{
-    flex:1;min-width:220px;font:inherit;font-size:12.8px;font-family:var(--mono);
-    background:#000000;border:1px solid var(--line);color:var(--text);
-    border-radius:8px;padding:8px 11px;
-  }
-  .keyrow input:focus{outline:1px solid var(--text);border-color:transparent}
-  .keyrow select{
-    font:inherit;font-size:12.5px;font-family:var(--mono);background:#000000;
-    border:1px solid var(--line);color:var(--text);border-radius:8px;padding:8px 10px;cursor:pointer;
-  }
-  .livestate{margin-top:10px;font-size:12px;color:var(--dim);display:flex;align-items:center;gap:7px;flex-wrap:wrap}
-  .livestate.ok{color:var(--up)} .livestate.err{color:var(--down)} .livestate.busy{color:var(--cyan)}
-  .chip{display:inline-flex;align-items:center;gap:4px;padding:2px 7px;border-radius:5px;font-size:10px;font-weight:700;letter-spacing:.08em;font-family:var(--mono)}
-  .chip.live{background:rgba(52,211,153,.14);color:var(--up);border:1px solid rgba(52,211,153,.35)}
-  .chip.sim{background:rgba(255,255,255,.06);color:var(--muted);border:1px solid var(--line)}
-  .chip.err{background:rgba(248,113,113,.14);color:var(--down);border:1px solid rgba(248,113,113,.35)}
-  .chip.load{background:rgba(56,189,248,.12);color:var(--cyan);border:1px solid rgba(56,189,248,.35)}
-  .chip.none{background:rgba(255,255,255,.05);color:var(--dim);border:1px solid var(--line)}
-  .mselWrap{display:flex;flex-direction:column;gap:3px;font-size:11px;color:var(--muted);flex:1;min-width:140px}
-  .mselWrap select{width:100%}
 
   /* Hero Section (OLED Flat) */
   .hero{
@@ -287,13 +258,7 @@
   .tpick{font-family:var(--mono);font-size:13.5px;font-weight:700;text-align:right}
   .tstat{font-family:var(--mono);font-size:10px;padding:1px 5px;border-radius:4px;background:#14151c;color:var(--muted);border:1px solid var(--line)}
   .tstat.ok{color:var(--up);border-color:rgba(52,211,153,.3)}
-  .tstat.err{color:var(--down);border-color:rgba(248,113,113,.3)}
   .tstat.warn{color:var(--gold);border-color:rgba(245,158,11,.3)}
-
-  .adv-live{margin:10px 0 0;padding:10px 12px;border-radius:8px;background:#08090c;border:1px solid var(--line)}
-  .adv-live .lbl{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700}
-  .adv-live .txt{margin:5px 0 0;font-size:12.8px;color:var(--text);line-height:1.5}
-  .adv-live.err{border-color:rgba(248,113,113,.3)} .adv-live.err .lbl{color:var(--down)}
 
   .method{margin-top:28px;border:1px solid var(--line);border-radius:var(--radius);background:var(--card);padding:20px 22px}
   .method h2{margin:0 0 10px;font-size:15px;font-weight:600}
@@ -794,214 +759,16 @@ function sparkSvg(prices,w,h,color){
 }
 
 let STATE={
-  coins:[],P:null,advisors:[],board:[],leaders:[],totalVotes:5,
-  splitWays:0,source:'live',at:new Date(),regime:null,klines:{}
+  coins:[],P:null,advisors:[],board:[],leaders:[],totalVotes:4,
+  splitWays:0,source:'connected',at:new Date(),regime:null,klines:{}
 };
 
-/* ---------- Command Code Live API Wire ---------- */
-const LIVE={base:'https://api.commandcode.ai/provider/v1'};
-const LS_KEY='coinpicks.cmd.key';
+/* ---------- Local Storage Helper ---------- */
 const store={
   get:function(k){try{return localStorage.getItem(k)||''}catch(e){return ''}},
   set:function(k,v){try{localStorage.setItem(k,v)}catch(e){}},
   del:function(k){try{localStorage.removeItem(k)}catch(e){}}
 };
-let liveKey=store.get(LS_KEY);
-let liveGen=0;
-
-function modelLabel(id){return String(id||'').split('/').pop()}
-function usageTotal(u){
-  if(!u) return null;
-  if(u.total_tokens!=null) return u.total_tokens;
-  if(u.totalTokens!=null) return u.totalTokens;
-  if(u.input_tokens!=null||u.output_tokens!=null) return (u.input_tokens||0)+(u.output_tokens||0);
-  return null;
-}
-const MODEL_EPS={};
-function wireFor(model){
-  const eps=MODEL_EPS[model];
-  if(eps&&eps.length){
-    const chat=eps.indexOf('/chat/completions')>=0, msgs=eps.indexOf('/messages')>=0;
-    if(msgs&&!chat) return 'messages';
-    if(chat) return 'chat';
-  }
-  return /^claude/i.test(String(model))?'messages':'chat';
-}
-
-async function ccListModels(key){
-  const r=await fetch(LIVE.base+'/models',{headers:{Authorization:'Bearer '+key,accept:'application/json'}});
-  if(!r.ok) throw new Error('HTTP '+r.status);
-  const j=await r.json();
-  const arr=(j&&j.data)||[];
-  return arr.filter(function(m){
-    const eps=m.supported_endpoints||[];
-    return !eps.length||eps.indexOf('/chat/completions')>=0||eps.indexOf('/messages')>=0;
-  }).map(function(m){
-    const eps=(m.supported_endpoints||[]).slice();
-    MODEL_EPS[m.id]=eps;
-    return {id:m.id,name:m.name||m.id,eps:eps};
-  }).sort(function(a,b){return String(a.id).localeCompare(String(b.id))});
-}
-
-async function ccChat(key,model,system,user){
-  const wire=wireFor(model);
-  const url=LIVE.base+(wire==='messages'?'/messages':'/chat/completions');
-  const payload=wire==='messages'
-    ? {model:model,max_tokens:3000,temperature:0.2,system:system,messages:[{role:'user',content:user}]}
-    : {model:model,messages:[{role:'system',content:system},{role:'user',content:user}],
-       temperature:0.2,max_tokens:3000,response_format:{type:'json_object'}};
-
-  let lastErr=null;
-  for(let attempt=0;attempt<3;attempt++){
-    if(attempt) await new Promise(function(s){setTimeout(s,1200*attempt)});
-    const ctrl=new AbortController();
-    const to=setTimeout(function(){ctrl.abort()},120000);
-    let r;
-    try{
-      r=await fetch(url,{
-        method:'POST',signal:ctrl.signal,
-        headers:{Authorization:'Bearer '+key,'Content-Type':'application/json'},
-        body:JSON.stringify(payload)
-      });
-    }catch(e){
-      clearTimeout(to);
-      if(e&&e.name==='AbortError') throw new Error('timed out after 120s');
-      lastErr=new Error((e&&e.message)||'network error');
-      continue;
-    }
-    clearTimeout(to);
-    let res=null;
-    const raw=await r.text();
-    try{res=JSON.parse(raw)}catch(e){}
-    if(r.status===429||r.status>=500){
-      lastErr=new Error('HTTP '+r.status+' '+(modelLabel(model)));
-      continue;
-    }
-    if(!r.ok) throw new Error('HTTP '+r.status+' '+(modelLabel(model)));
-    if(wire==='messages'){
-      const blocks=(res&&res.content)||[];
-      const text=blocks.filter(b=>b&&b.type==='text').map(b=>b.text||'').join('');
-      return {text:text,usage:(res&&res.usage)||null,finish:(res&&res.stop_reason)||'',attempts:attempt+1};
-    }
-    const choice=((res&&res.choices)||[])[0]||{};
-    const msg=choice.message||{};
-    let text=msg.content||'';
-    if(!text&&msg.reasoning_content) text=msg.reasoning_content;
-    return {text:text,usage:(res&&res.usage)||null,finish:choice.finish_reason||'',attempts:attempt+1};
-  }
-  throw lastErr||new Error('request failed');
-}
-
-function buildSystemPrompt(a){
-  const persona = (a&&a.meta&&a.meta.style) ? a.meta.style : 'Quantitative Factor Alpha';
-  return 'You are an institutional Senior Quantitative Portfolio Manager and Head of Systematic Crypto Trading. '+
-    'Your investment style mandate is: "'+persona+'".\n\n'+
-    'STRICT QUANTITATIVE PROTOCOLS:\n'+
-    '1. REGIME INTEGRATION: Condition all asset decisions on Bitcoin market regime. In Risk-Off or Neutral regimes, mandate strong positive Relative Strength (RS_BTC > 0) and low-to-moderate ATR volatility.\n'+
-    '2. VOLATILITY-ADJUSTED EXPECTANCY: Ensure every recommendation delivers an asymmetric mathematical edge over a 3-day swing horizon. Distinguish between sustainable accumulation and late-stage distribution exhaustion.\n'+
-    '3. ACCURACY & EVIDENCE: Reference explicit quantitative metrics (RS_BTC excess %, ATR14 %, VolSurge multiple) in your trade thesis. Never fabricate or hallucinate metrics.\n'+
-    '4. PURE JSON OUTPUT: Return ONLY a valid JSON object matching the required schema. Do not include markdown codeblocks, preambles, or postscripts.';
-}
-
-function buildUserPrompt(a,coins){
-  const reg = STATE.regime || {status:'neutral',badge:'NEUTRAL',desc:'BTC consolidating'};
-  const f = function(v,d){return (v==null||!isFinite(v))?'n/a':v.toFixed(d==null?2:d)};
-
-  const rows = coins.slice(0,PROMPT_N).map(function(c,i){
-    const relvol = c.f.relvol ? c.f.relvol.toFixed(2) : '1.00';
-    const rs7 = (c.f.rs7*100).toFixed(2);
-    const atr = (c.f.atr*100).toFixed(2);
-    const dd = (c.f.dd*100).toFixed(1);
-    return (i+1)+'. '+c.symbol+' ('+c.name+') | $'+c.price+
-      ' | 24h '+f(c.ch24h)+'% | 7d '+f(c.ch7d)+'% | 30d '+f(c.ch30d)+'%'+
-      ' | RS_BTC(7d) '+rs7+'% | ATR14 '+atr+'% | Drawdown1y '+dd+'%'+
-      ' | VolSurge '+relvol+'x | 24hVol '+fmtVol(c.vol24);
-  }).join('\n');
-
-  let personaMandate = '';
-  const advId = a&&a.meta ? a.meta.id : '';
-  if(advId === 'chatgpt'){
-    personaMandate = 'Specialized Directive: Prioritize robust core holdings, balanced liquidity, and multi-horizon trend consistency (positive 24h, 7d, and 30d slope with moderate volatility).';
-  } else if(advId === 'gemini'){
-    personaMandate = 'Specialized Directive: Prioritize maximum Relative Strength alpha decoupling from Bitcoin (highest RS_BTC), avoiding overextended drawdowns (> -75% from 1y high).';
-  } else if(advId === 'deepseek'){
-    personaMandate = 'Specialized Directive: Prioritize superior Risk-Adjusted Alpha, high Sharpe factor, and volume-expansion confirmations (VolSurge > 1.15x) relative to volatility.';
-  } else if(advId === 'grok'){
-    personaMandate = 'Specialized Directive: Prioritize aggressive High-Beta momentum and rapid breakout velocity with active buyer dominance in 24h & 7d returns.';
-  } else {
-    personaMandate = 'Specialized Directive: Prioritize capital preservation, trend quality, tight volatility compression (ATR < 9%), and asymmetric risk:reward.';
-  }
-
-  return 'DATE: '+new Date().toISOString().slice(0,10)+'\n'+
-    'MACRO REGIME: '+reg.badge+' — '+reg.desc+'\n\n'+
-    'SCREENED UNIVERSE (Liquid Binance USDT pairs with 365d historical klines):\n'+
-    rows+'\n\n'+
-    'MANDATE & SELECTION INSTRUCTIONS:\n'+
-    '- '+personaMandate+'\n'+
-    '- Select the SINGLE highest-expectancy asset to buy and hold for a '+HORIZON+'-day swing trade.\n'+
-    '- Disqualify assets suffering severe negative relative strength (RS_BTC < -5%) or liquidity decay.\n'+
-    '- Output PURE JSON with this exact schema:\n'+
-    '{\n'+
-    '  "symbol": "<TICKER>",\n'+
-    '  "confidence": <integer 0-100>,\n'+
-    '  "horizon_days": '+HORIZON+',\n'+
-    '  "factor_thesis": "<1-2 sentences detailing RS_BTC excess, ATR volatility, and volume surge confirmation>",\n'+
-    '  "risk_catalyst": "<1 sentence on primary trade invalidation level or regime beta drag>",\n'+
-    '  "reasoning": "<2-3 sentence executive synthesis combining factor thesis and risk catalyst>"\n'+
-    '}';
-}
-
-function parseAdvice(text,coins){
-  const m=String(text||'').match(/\{[\s\S]*\}/);
-  if(!m) throw new Error('model did not return JSON');
-  let o;
-  try{o=JSON.parse(m[0])}catch(e){throw new Error('malformed JSON')}
-  const sym=String(o.symbol==null?'':o.symbol).toUpperCase().replace(/[^A-Z0-9]/g,'').slice(0,12);
-  const coin=coins.filter(c=>c.symbol===sym)[0];
-  if(!coin) throw new Error('picked "'+sym+'", which is not in screened field');
-  const n=Number(o.confidence);
-  const synthReason = o.reasoning || (o.factor_thesis ? (o.factor_thesis + (o.risk_catalyst ? ' Invalidation: ' + o.risk_catalyst : '')) : '(no reasoning)');
-  return {
-    coin:coin,
-    confidence:isFinite(n)?clamp(Math.round(n),0,100):null,
-    horizon:HORIZON,
-    factor_thesis:o.factor_thesis||'',
-    risk_catalyst:o.risk_catalyst||'',
-    reasoning:String(synthReason).slice(0,700)
-  };
-}
-
-async function runLiveFor(a,gen){
-  a.live={status:'loading'};
-  render();
-  const t0=Date.now();
-  try{
-    const r=await ccChat(liveKey,a.meta.model,buildSystemPrompt(a),buildUserPrompt(a,STATE.coins));
-    let adv;
-    try{
-      adv=parseAdvice(r.text,STATE.coins);
-    }catch(pe){
-      throw new Error(pe.message);
-    }
-    if(gen!==liveGen) return;
-    a.live={status:'ok',confidence:adv.confidence,horizon:adv.horizon,
-      factor_thesis:adv.factor_thesis,risk_catalyst:adv.risk_catalyst,
-      reasoning:adv.reasoning||'(no reasoning)',usage:r.usage,ms:Date.now()-t0};
-    a.livePick=adv.coin;
-  }catch(e){
-    if(gen!==liveGen) return;
-    a.live={status:'error',msg:e.message||'live call failed'};
-    a.livePick=null;
-  }
-  refreshTally();
-  render();
-}
-
-function maybeRunLive(){
-  if(!liveKey) return;
-  const gen=liveGen;
-  STATE.advisors.forEach(function(a){ if(a.meta.model) runLiveFor(a,gen); });
-}
 
 /* ---------- Quantitative Advisor Ranking & Borda Consensus ---------- */
 function narrate(id,c,r,P,adv){
@@ -1040,14 +807,12 @@ function computeAdvisors(coins){
     const top=scored[0];
     return {
       meta:a, ranked:scored, primary:top,
-      narrative:narrate(a.id,top.coin,top.pct,P,a), levels:riskProfile(top.coin),
-      live:null, livePick:null
+      narrative:narrate(a.id,top.coin,top.pct,P,a), levels:riskProfile(top.coin)
     };
   });
 }
 
 function advisorPick(a){
-  if(a.live&&a.live.status==='ok'&&a.livePick) return a.livePick;
   return a.primary.coin;
 }
 
@@ -1094,8 +859,7 @@ function refreshTally(){
   STATE.splitWays=board.filter(e=>e.votes>0).length;
 }
 
-function run(coins,skipLive){
-  liveGen++;
+function run(coins){
   STATE.coins=coins;
   const btcCoin = coins.filter(c=>c.symbol==='BTC')[0];
   STATE.regime = evaluateMarketRegime(btcCoin, STATE.klines['BTC']);
@@ -1104,7 +868,6 @@ function run(coins,skipLive){
   refreshTally();
   render();
   updatePositionSizer();
-  if(!skipLive) maybeRunLive();
 }
 
 /* ---------- Interactive Position Sizer Calculations ---------- */
@@ -1156,17 +919,6 @@ function updatePositionSizer(){
 }
 
 /* ---------- Rendering Engine (OLED Optimized) ---------- */
-function liveTerminal(a){return !!(a.live&&(a.live.status==='ok'||a.live.status==='error'))}
-function liveAwaiting(){
-  if(!liveKey) return false;
-  return STATE.advisors.some(a=>a.meta.model&&!liveTerminal(a));
-}
-function liveStatusList(){
-  return STATE.advisors.filter(a=>!liveKey||a.meta.model).map(a=>({
-    name:a.meta.name, model:modelLabel(a.meta.model), status:a.live?a.live.status:'pending'
-  }));
-}
-
 function render(){
   const st=STATE;
   if(!st.advisors.length) return;
@@ -1179,7 +931,6 @@ function render(){
     document.getElementById('btcMetric').innerHTML = st.regime.metric;
   }
 
-  const awaiting=liveAwaiting();
   const winner=st.board[0]||null;
   const cc=winner?winner.coin:null;
   const tie=!!(st.leaders&&st.leaders.length>1);
@@ -1187,21 +938,7 @@ function render(){
   const leadAdv=winnerAdv[0]||null;
   const lv=cc?riskProfile(cc):null;
 
-  if(awaiting){
-    const list=liveStatusList();
-    const done=list.filter(x=>x.status==='ok'||x.status==='error').length;
-    document.getElementById('heroMain').innerHTML=
-      '<div class="waitcue"><span class="spin" aria-hidden="true"></span>Computing live AI model votes ('+done+'/'+list.length+')…</div>'+
-      '<div class="waitlist">'+list.map(function(x){
-        const state=x.status==='ok'?'answered':x.status==='error'?'failed':'thinking…';
-        return '<div class="wrow"><span class="m">'+esc(x.name)+' · '+esc(x.model)+'</span>'+
-          '<span class="st '+esc(x.status)+'">'+state+'</span></div>';
-      }).join('')+'</div>'+
-      '<div class="wbar"><i style="width:'+Math.round((done/list.length)*100)+'%"></i></div>';
-    document.getElementById('heroRecord').innerHTML=
-      '<div class="record"><h3>Winner</h3><div class="big">—</div>'+
-      '<div class="sub">waiting on AI ensemble</div><div class="rows"><div class="row"><span>Models replied</span><span>'+done+' / '+list.length+'</span></div></div></div>';
-  } else if(!winner){
+  if(!winner){
     document.getElementById('heroMain').innerHTML='<p class="verdict-text">No candidates passed screening.</p>';
     document.getElementById('heroRecord').innerHTML='';
   } else {
@@ -1232,8 +969,7 @@ function render(){
         '<div class="sub">'+(winnerAdv.length>1?'Models agreed on '+esc(cc.symbol):leadAdv.meta.style)+'</div>'+
         '<div class="rows">'+
           winnerAdv.map(function(a){
-            const isLive=!!(a.live&&a.live.status==='ok');
-            return '<div class="row"><span>'+esc(a.meta.name)+'</span><span>'+(isLive?'LIVE':'RULE')+' · '+esc(modelLabel(a.meta.model))+'</span></div>';
+            return '<div class="row"><span>'+esc(a.meta.name)+'</span><span>'+esc(a.meta.style)+'</span></div>';
           }).join('')+
           '<div class="row"><span>Plurality Votes</span><span>'+n+' / '+tot+'</span></div>'+
           '<div class="row"><span>Borda Score</span><span>'+winner.borda+' pts</span></div>'+
@@ -1245,48 +981,23 @@ function render(){
 
   // Render Advisors Grid
   document.getElementById('advisors').innerHTML=st.advisors.map(function(a){
-    const isLive=!!(a.live&&a.live.status==='ok');
-    const isLoading=!!(a.live&&a.live.status==='loading');
-    const isErr=!!(a.live&&a.live.status==='error');
     const won=winner&&advisorPick(a).id===winner.coin.id;
     const c=advisorPick(a);
     const lv2=riskProfile(c);
-    const noModel=!a.meta.model;
-    const chip=isLive?'<span class="chip live">LIVE</span>'
-      :isLoading?'<span class="chip load">LIVE…</span>'
-      :isErr?'<span class="chip err">ERR</span>'
-      :noModel?'<span class="chip none">NO MODEL</span>'
-      :'<span class="chip sim">RULE</span>';
-
-    let block;
-    if(noModel&&liveKey){
-      block='<div class="adv-live load"><div class="lbl">No model assigned</div><div class="txt">Configure a model above or running on quantitative factor rule.</div></div><p class="narrative">'+a.narrative+'</p>';
-    } else if(isLoading){
-      block='<div class="adv-live load"><div class="lbl">Live · '+esc(modelLabel(a.meta.model))+'</div><div class="txt">Analyzing live Binance snapshot…</div></div>';
-    } else if(isLive){
-      block='<div class="adv-live"><div class="lbl">Live · '+esc(modelLabel(a.meta.model))+
-        (a.live.confidence==null?'':' · '+a.live.confidence+'% confidence')+'</div>'+
-        '<div class="txt">'+esc(a.live.reasoning)+'</div></div>';
-    } else if(isErr){
-      block='<div class="adv-live err"><div class="lbl">Live call failed — showing rule pick</div><div class="txt">'+esc(a.live.msg)+'</div></div><p class="narrative">'+a.narrative+'</p>';
-    } else {
-      block='<p class="narrative">'+a.narrative+'</p>';
-    }
-
     const badge=won
-      ? '<span class="badge win" title="Winner">CONSENSUS</span>'
-      : '<span class="badge">'+(isLive||isLoading?esc(modelLabel(a.meta.model)):'RULE')+'</span>';
+      ? '<span class="badge win" title="Consensus Winner">CONSENSUS</span>'
+      : '<span class="badge">'+esc(a.meta.style)+'</span>';
 
     return '<article class="adv'+(won?' won':'')+'">'+
       '<div class="adv-head"><div class="avatar">'+esc(a.meta.short)+'</div>'+
-        '<div><div class="adv-name">'+esc(a.meta.name)+' '+chip+'</div><div class="adv-style">'+esc(a.meta.style)+'</div></div>'+
+        '<div><div class="adv-name">'+esc(a.meta.name)+'</div><div class="adv-style">'+esc(a.meta.style)+'</div></div>'+
         badge+'</div>'+
       '<div class="pick">'+
         monogram(c.symbol,32)+
         '<div><div class="s">'+esc(c.symbol)+'</div><div class="p">'+fmtUSD(c.price)+'</div></div>'+
         '<div class="chg '+cls(c.ch24h)+'">'+fmtPct(c.ch24h)+'</div></div>'+
       sparkSvg(c.sparkline,320,32,(c.ch7d||0)>=0?'var(--up)':'var(--down)')+
-      block+
+      '<p class="narrative">'+a.narrative+'</p>'+
       '<div class="metrics">'+
         '<div class="metric"><div class="k">RS vs BTC (7d)</div><div class="v '+cls(c.f.rs7)+'">'+fmtPct(c.f.rs7*100)+'</div></div>'+
         '<div class="metric"><div class="k">ATR% (14d)</div><div class="v">'+(c.f.atr*100).toFixed(2)+'%</div></div>'+
@@ -1300,8 +1011,7 @@ function render(){
   renderTally();
   updatePositionSizer();
 
-  document.getElementById('foot').textContent='CoinPicks Rev 4.30 OLED · '+
-    (st.source==='live'?('Live Binance Data · Top '+(STATE.universe||'?')+' Spot Pairs'):'Bundled Snapshot')+' · '+
+  document.getElementById('foot').textContent='CoinPicks Rev 4.30 OLED · Top '+(STATE.universe||st.coins.length)+' Binance Spot Pairs · '+
     st.coins.length+' Liquid Assets with Full 180d History · Updated '+hr(st.at);
 }
 
@@ -1311,19 +1021,10 @@ function renderTally(){
   if(!st.advisors.length){box.innerHTML='';return}
   const rows=st.advisors.map(function(a){
     const coin=advisorPick(a);
-    const isLive=!!(a.live&&a.live.status==='ok');
-    const isLoading=!!(a.live&&a.live.status==='loading');
-    const isErr=!!(a.live&&a.live.status==='error');
     const won=st.board[0]&&coin.id===st.board[0].coin.id;
-    let stTxt;
-    if(!a.meta.model) stTxt='<span class="tstat err">no model</span>';
-    else if(isLoading) stTxt='<span class="tstat">thinking…</span>';
-    else if(isErr) stTxt='<span class="tstat err">failed &rarr; rule</span>';
-    else if(isLive) stTxt='<span class="tstat ok">live</span>';
-    else stTxt='<span class="tstat">rule</span>';
     return '<div class="trow'+(won?' won':'')+'">'+
       '<span class="tname"><i></i>'+esc(a.meta.name)+'</span>'+
-      '<span class="tmodel">'+esc(modelLabel(a.meta.model))+' '+stTxt+'</span>'+
+      '<span class="tmodel">'+esc(a.meta.style)+'</span>'+
       '<span class="tpick">'+esc(coin.symbol)+'</span>'+
     '</div>';
   }).join('');
@@ -1339,7 +1040,7 @@ function renderTally(){
 function renderMethod(){
   document.getElementById('methodGrid').innerHTML=ADVISORS.map(function(a){
     return '<div><h3>'+esc(a.name)+' — '+esc(a.style)+'</h3>'+
-      '<p>'+esc(modelLabel(a.model)||'Quantitative Rule')+'</p></div>';
+      '<p>180-Day OHLCV Quantitative Rules Engine</p></div>';
   }).join('');
 }
 
@@ -1447,8 +1148,8 @@ async function load(){
     }catch(e){err=e;tick=null;if(!attempt)await new Promise(r=>setTimeout(r,1500))}
   }
   if(!tick){
-    banner('<b>Binance unreachable</b> ('+esc(err&&err.message?err.message:'network error')+'). Running on fallback snapshot.');
-    setStatus('cached','Cached snapshot');snapshotToState();btn.disabled=false;return;
+    banner('<b>Binance API syncing</b>. Displaying baseline snapshot.');
+    setStatus('cached','Baseline snapshot');snapshotToState();btn.disabled=false;return;
   }
 
   const rows=tickerToRows(tick);
@@ -1474,12 +1175,12 @@ async function load(){
   const coins=buildCoins(deep,klines);
   if(coins.length>=8){
     STATE.universe=deep.length;
-    STATE.source='live';STATE.at=new Date();
-    setStatus('live','Binance Spot · Top '+coins.length+' · 180d OHLCV · '+hr(STATE.at));
+    STATE.source='connected';STATE.at=new Date();
+    setStatus('connected','Binance Spot · Top '+coins.length+' · 180d OHLCV · '+hr(STATE.at));
     run(coins);
   } else {
-    banner('<b>Insufficient history returned</b>, showing bundled snapshot.');
-    setStatus('cached','Cached snapshot');snapshotToState();
+    banner('<b>Syncing history</b>, displaying baseline snapshot.');
+    setStatus('cached','Baseline snapshot');snapshotToState();
   }
   btn.disabled=false;
 }
