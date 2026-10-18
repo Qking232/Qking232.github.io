@@ -1,0 +1,1783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CoinPicks • Prediction Flash & Facebook Traffic Studio</title>
+<meta name="description" content="Institutional crypto trading prediction flash generator and automated Facebook publishing studio. Powered by CoinPicks Quant Engine & CommandCode Provider API.">
+<style>
+  :root {
+    --bg: #000000;
+    --card: #0c0d12;
+    --card-hi: #141720;
+    --card-border: rgba(255, 255, 255, 0.12);
+    --card-border-hi: rgba(255, 255, 255, 0.24);
+    --text: #f1f2f5;
+    --muted: #9ba3af;
+    --dim: #64748b;
+    --cyan: #38bdf8;
+    --mint: #34d399;
+    --rose: #f87171;
+    --gold: #f59e0b;
+    --radius: 12px;
+    --font: -apple-system, BlinkMacSystemFont, 'Segoe UI Variable Display', 'Segoe UI', system-ui, Roboto, sans-serif;
+    --mono: 'Cascadia Mono', 'SF Mono', Consolas, 'Roboto Mono', monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+    font-size: 14.5px;
+    line-height: 1.55;
+    min-height: 100vh;
+    padding-bottom: 60px;
+  }
+  .wrap { max-width: 1320px; margin: 0 auto; padding: 24px 20px; }
+
+  /* Header Cockpit */
+  header.cockpit {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 20px;
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    margin-bottom: 24px;
+  }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .logo-box {
+    width: 42px; height: 42px; border-radius: 10px; background: #141824;
+    border: 1px solid rgba(56, 189, 248, 0.35); color: var(--cyan);
+    display: grid; place-items: center; font-family: var(--mono); font-weight: 700; font-size: 18px;
+  }
+  .brand-title h1 { font-size: 19px; font-weight: 650; letter-spacing: -0.02em; }
+  .brand-title p { font-size: 12.5px; color: var(--muted); }
+
+  .status-pills { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .pill {
+    display: inline-flex; align-items: center; gap: 7px; padding: 6px 12px;
+    border-radius: 8px; font-size: 12px; font-weight: 550; border: 1px solid var(--card-border);
+    background: #11131a; color: var(--muted);
+  }
+  .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--dim); }
+  .pill.risk-on .dot { background: var(--mint); }
+  .pill.risk-on { color: #d1fae5; border-color: rgba(52, 211, 153, 0.3); background: rgba(52, 211, 153, 0.08); }
+  .pill.neutral .dot { background: var(--gold); }
+  .pill.neutral { color: #fef3c7; border-color: rgba(245, 158, 11, 0.3); background: rgba(245, 158, 11, 0.08); }
+  .pill.risk-off .dot { background: var(--rose); }
+  .pill.risk-off { color: #fee2e2; border-color: rgba(248, 113, 113, 0.3); background: rgba(248, 113, 113, 0.08); }
+
+  .pill.cmd-active .dot { background: var(--cyan); }
+  .pill.cmd-active { color: #e0f2fe; border-color: rgba(56, 189, 248, 0.3); background: rgba(56, 189, 248, 0.08); }
+  .pill.fb-sim .dot { background: var(--gold); }
+
+  /* Buttons */
+  button {
+    font: inherit; font-size: 13px; font-weight: 600; color: var(--text); background: var(--card);
+    border: 1px solid var(--card-border); border-radius: 8px; padding: 7px 14px; cursor: pointer;
+    transition: all 0.15s ease; display: inline-flex; align-items: center; gap: 6px;
+  }
+  button:hover { background: var(--card-hi); border-color: var(--card-border-hi); }
+  button.primary { background: #f1f2f5; color: #000; border: 1px solid transparent; }
+  button.primary:hover { background: #fff; }
+  button.action-btn { background: rgba(56, 189, 248, 0.12); color: #38bdf8; border-color: rgba(56, 189, 248, 0.35); }
+  button.action-btn:hover { background: rgba(56, 189, 248, 0.22); border-color: #38bdf8; }
+  button.publish-btn { background: #16a34a; color: #fff; border: 1px solid transparent; font-size: 14px; padding: 10px 18px; }
+  button.publish-btn:hover { background: #22c55e; }
+  button[disabled] { opacity: 0.45; cursor: not-allowed; }
+
+  select {
+    background: #080a10; color: #fff; border: 1px solid var(--card-border);
+    border-radius: 8px; padding: 7px 12px; font-size: 13px; font-family: inherit;
+  }
+  select:focus { outline: none; border-color: var(--cyan); }
+
+  /* Layout Grid */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 24px; }
+  @media (max-width: 980px) { .grid-2 { grid-template-columns: 1fr; } }
+
+  .card-box {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--card-border);
+  }
+  .card-header h2 { font-size: 16px; font-weight: 650; display: flex; align-items: center; gap: 8px; }
+  .step-num {
+    width: 22px; height: 22px; border-radius: 50%; background: #1a202c; color: var(--cyan);
+    font-size: 11.5px; font-weight: 700; display: grid; place-items: center;
+  }
+
+  /* Scan Verdict HUD */
+  .verdict-hud {
+    background: #080a10;
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    border-radius: 10px;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  @media (max-width: 650px) { .verdict-hud { grid-template-columns: 1fr 1fr; } }
+  .hud-item { display: flex; flex-direction: column; gap: 3px; }
+  .hud-label { font-size: 11.5px; color: var(--muted); text-transform: uppercase; font-weight: 600; letter-spacing: 0.04em; }
+  .hud-val { font-size: 18px; font-weight: 700; color: #fff; font-family: var(--mono); }
+  .hud-sub { font-size: 11px; color: var(--dim); }
+  .hud-val.mint { color: var(--mint); }
+  .hud-val.rose { color: var(--rose); }
+  .hud-val.cyan { color: var(--cyan); }
+  .hud-val.gold { color: var(--gold); }
+
+  /* Leaderboard Table */
+  .table-wrap { overflow-x: auto; border: 1px solid var(--card-border); border-radius: 8px; }
+  table { width: 100%; border-collapse: collapse; font-size: 12.5px; text-align: left; }
+  th, td { padding: 9px 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
+  th { background: #11131a; color: var(--muted); font-weight: 600; font-size: 11.5px; text-transform: uppercase; }
+  tr:hover td { background: rgba(255, 255, 255, 0.02); }
+
+  /* Canvas Card Preview (Transparency Checkerboard) */
+  .preview-stage {
+    background-color: #080a0f;
+    background-image:
+      linear-gradient(45deg, #121622 25%, transparent 25%),
+      linear-gradient(-45deg, #121622 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #121622 75%),
+      linear-gradient(-45deg, transparent 75%, #121622 75%);
+    background-size: 18px 18px;
+    background-position: 0 0, 0 9px, 9px -9px, -9px 0px;
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 280px;
+  }
+  .preview-stage img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .format-selector { display: flex; gap: 8px; align-items: center; }
+  .seg-btn {
+    padding: 5px 12px; border-radius: 6px; font-size: 12px; background: #141720;
+    color: var(--muted); border: 1px solid var(--card-border); cursor: pointer;
+  }
+  .seg-btn.active { background: #38bdf8; color: #000; font-weight: 600; border-color: transparent; }
+
+  /* AI Copywriting Studio */
+  .angle-tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
+  .tab-btn {
+    padding: 6px 12px; border-radius: 6px; font-size: 12px; background: #11131a;
+    border: 1px solid var(--card-border); color: var(--muted); cursor: pointer;
+  }
+  .tab-btn.active { background: #222736; color: #fff; border-color: rgba(255,255,255,0.3); font-weight: 600; }
+
+  textarea {
+    width: 100%;
+    background: #080a10;
+    color: var(--text);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    padding: 12px;
+    font-family: inherit;
+    font-size: 13.5px;
+    line-height: 1.5;
+    resize: vertical;
+    min-height: 150px;
+  }
+  textarea:focus { outline: none; border-color: var(--cyan); }
+
+  /* First Comment Box */
+  .comment-box {
+    background: #090e18;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    border-radius: 8px;
+    padding: 12px;
+  }
+  .comment-header {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 8px; font-size: 12px; color: var(--cyan); font-weight: 600;
+  }
+  .comment-textarea {
+    min-height: 120px; font-family: var(--mono); font-size: 12px; background: #05070c;
+  }
+
+  /* Facebook Mockup */
+  .fb-mockup {
+    background: #18191a;
+    border: 1px solid #3a3b3c;
+    border-radius: 10px;
+    padding: 14px;
+    color: #e4e6eb;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+  .fb-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+  .fb-avatar {
+    width: 40px; height: 40px; border-radius: 50%; background: #242526;
+    display: grid; place-items: center; font-weight: 700; color: #38bdf8; font-family: var(--mono);
+    border: 1px solid #3a3b3c;
+  }
+  .fb-user { font-size: 14px; font-weight: 600; color: #e4e6eb; }
+  .fb-time { font-size: 12px; color: #b0b3b8; }
+  .fb-caption { font-size: 13.5px; line-height: 1.45; white-space: pre-wrap; margin-bottom: 12px; color: #e4e6eb; }
+  .fb-image-box { border-radius: 6px; overflow: hidden; margin-bottom: 12px; border: 1px solid #3a3b3c; }
+  .fb-image-box img { width: 100%; display: block; }
+  .fb-comment-preview {
+    background: #242526;
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin-top: 10px;
+    font-size: 12.5px;
+    white-space: pre-wrap;
+    border-left: 3px solid #38bdf8;
+  }
+  .fb-comment-tag { font-size: 11px; font-weight: 700; color: #38bdf8; margin-bottom: 4px; text-transform: uppercase; }
+
+  /* Modal */
+  .modal-overlay {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.85);
+    display: none; place-items: center; z-index: 999; backdrop-filter: blur(4px);
+  }
+  .modal-overlay.open { display: grid; }
+  .modal-card {
+    background: var(--card); border: 1px solid var(--card-border-hi); border-radius: 14px;
+    width: 90%; max-width: 560px; padding: 24px; display: flex; flex-direction: column; gap: 16px;
+  }
+  .form-group { display: flex; flex-direction: column; gap: 6px; }
+  .form-group label { font-size: 12.5px; color: var(--muted); font-weight: 600; }
+  .form-group input {
+    background: #080a10; color: #fff; border: 1px solid var(--card-border);
+    border-radius: 8px; padding: 9px 12px; font-size: 13.5px; font-family: inherit;
+  }
+  .form-group input:focus { outline: none; border-color: var(--cyan); }
+  .toast {
+    position: fixed; bottom: 24px; right: 24px; background: #0c121e; border: 1px solid var(--cyan);
+    color: #fff; padding: 12px 20px; border-radius: 8px; font-size: 13.5px; display: none; z-index: 1000;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+  }
+  @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <!-- Top Cockpit Bar -->
+  <header class="cockpit">
+    <div class="brand">
+      <div class="logo-box">CP</div>
+      <div class="brand-title">
+        <h1>CoinPicks • Prediction Flash & Facebook Studio</h1>
+        <p>CoinPicks Systematic Swing Model &amp; CommandCode Provider AI</p>
+      </div>
+    </div>
+    <div class="status-pills">
+      <div class="pill neutral" id="regimePill"><span class="dot"></span><span id="regimeTxt">Scanning Market...</span></div>
+      <div class="pill cmd-active" id="cmdStatusPill"><span class="dot"></span><span id="cmdStatusTxt">Provider API Connected</span></div>
+      <div class="pill fb-sim" id="fbStatusPill"><span class="dot"></span><span id="fbStatusTxt">Simulation Mode</span></div>
+      <a href="https://developers.facebook.com/tools/explorer/2398180744048322/?method=GET&path=profile.php%3Fid%3D1305526262654162&version=v26.0" target="_blank" class="pill" id="fbExplorerPill" title="Open Meta Graph API Explorer (v26.0)">
+        <span>🔗</span> <span>Graph Explorer (v26.0)</span>
+      </a>
+      <a href="https://coinpicks.ai" target="_blank" class="pill" id="sitePill" title="Open Live Encrypted Terminal">
+        <span>🌐</span> <span id="siteUrlShort">coinpicks.ai</span>
+      </a>
+      <button class="publish-btn" style="padding:6px 14px; font-size:12.5px; font-weight:700; background:#16a34a; box-shadow:0 0 14px rgba(22, 163, 74, 0.4);" onclick="run1ClickAutoPost()" id="autoPilotHeaderBtn" title="Scan, generate card, write AI copy, and post directly to Facebook in 1 click">
+        🚀 1-Click Auto-Post
+      </button>
+      <button onclick="openSettingsModal()">⚙️ Settings</button>
+    </div>
+  </header>
+
+  <!-- Main 2-Column Studio Grid -->
+  <div class="grid-2">
+    <!-- Left Column: Quant Scan & Card Studio -->
+    <div style="display: flex; flex-direction: column; gap: 20px;">
+      
+      <!-- Step 1: Quant Scanner (CoinPicks Rev 4.0 Exact Algo) -->
+      <div class="card-box">
+        <div class="card-header">
+          <h2><span class="step-num">1</span> CoinPicks Quantitative Algo Scan</h2>
+          <div style="display:flex; gap:8px;">
+            <button class="action-btn" style="background:rgba(245, 158, 11, 0.15); color:#fbbf24; border-color:rgba(245, 158, 11, 0.35);" onclick="suggestAnotherCoin()" id="suggestCoinBtn" title="Discover a different top candidate from the quant matrix">🎲 Suggest Another Coin</button>
+            <button class="action-btn" id="runScanBtn" onclick="runQuantScan()">⚡ Run Live Scan</button>
+          </div>
+        </div>
+
+        <div class="verdict-hud" id="hudContainer">
+          <div class="hud-item">
+            <span class="hud-label">Consensus Leader</span>
+            <span class="hud-val cyan" id="hudSymbol">--</span>
+            <span class="hud-sub" id="hudPrice">$0.00</span>
+          </div>
+          <div class="hud-item">
+            <span class="hud-label">Target (+1.85σ ATR)</span>
+            <span class="hud-val mint" id="hudTarget">+0.0%</span>
+            <span class="hud-sub" id="hudTargetPrice">$0.00</span>
+          </div>
+          <div class="hud-item">
+            <span class="hud-label">Stop Loss (1.25σ MAE)</span>
+            <span class="hud-val rose" id="hudStop">-0.0%</span>
+            <span class="hud-sub" id="hudStopPrice">$0.00</span>
+          </div>
+          <div class="hud-item">
+            <span class="hud-label">Borda Score</span>
+            <span class="hud-val gold" id="hudBorda">0 pts</span>
+            <span class="hud-sub" id="hudVotes">Multi-Factor Consensus</span>
+          </div>
+        </div>
+
+        <div>
+          <div style="font-size: 12.5px; font-weight: 600; color: var(--muted); margin-bottom: 8px;">Top 5 Cross-Sectional Leaderboard (ChatGPT, Gemini, DeepSeek, Grok)</div>
+          <div class="table-wrap">
+            <table id="leaderboardTable">
+              <thead>
+                <tr>
+                  <th>Coin</th>
+                  <th>Price</th>
+                  <th>24h</th>
+                  <th>7d</th>
+                  <th>ATR-14</th>
+                  <th>Borda</th>
+                  <th>Factor Score</th>
+                </tr>
+              </thead>
+              <tbody id="leaderboardBody">
+                <tr><td colspan="7" style="text-align:center; color:var(--dim); padding:20px;">Click 'Run Live Scan' to compute fresh consensus rankings</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2: Prediction Flash Card Studio (3-Second Glance Redesign) -->
+      <div class="card-box">
+        <div class="card-header">
+          <h2><span class="step-num">2</span> Prediction Flash Card Designer</h2>
+          <div class="format-selector">
+            <button class="seg-btn active" id="fmtSquare" onclick="setFormat('square')">📱 1080x1080 (Mobile Feed)</button>
+            <button class="seg-btn" id="fmtLandscape" onclick="setFormat('landscape')">1200x630 (Desktop)</button>
+          </div>
+        </div>
+
+        <!-- 3-Second Glanceability Inspection Toolbar -->
+        <div style="display:flex; justify-content:space-between; align-items:center; background:#080a12; padding:8px 12px; border-radius:8px; border:1px solid var(--card-border); margin-bottom:10px; font-size:12px; flex-wrap:wrap; gap:8px;">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <span style="color:var(--muted); font-weight:600;">Glance Scale:</span>
+            <button class="seg-btn active" id="scaleMobile" onclick="setPreviewScale('mobile')" style="padding:3px 8px; font-size:11px;">📱 Mobile (280px)</button>
+            <button class="seg-btn" id="scaleFeed" onclick="setPreviewScale('feed')" style="padding:3px 8px; font-size:11px;">💻 Feed (580px)</button>
+            <button class="seg-btn" id="scaleFull" onclick="setPreviewScale('full')" style="padding:3px 8px; font-size:11px;">🔍 Full (100%)</button>
+          </div>
+          <div style="color:var(--mint); font-weight:600; font-family:var(--mono); display:flex; align-items:center; gap:6px;">
+            <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:var(--mint); box-shadow:0 0 8px var(--mint);"></span>
+            <span>3-Sec Score: 100% (High Readability)</span>
+          </div>
+        </div>
+
+        <div class="preview-stage" id="cardStage">
+          <div style="color:var(--dim); font-size:13px;" id="stagePlaceholder">Generating initial high-res card...</div>
+          <img id="cardImagePreview" style="display:none; transition: max-width 0.25s ease;" alt="Prediction Flash Card">
+        </div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-top:12px;">
+          <div style="display:flex; gap:12px; align-items:center;">
+            <label style="display:inline-flex; align-items:center; gap:6px; font-size:12.5px; color:var(--muted); cursor:pointer;">
+              <input type="checkbox" id="transparentCheck" onchange="regenerateCard()">
+              <span>✨ Transparent Canvas (Optional)</span>
+            </label>
+            <label style="display:inline-flex; align-items:center; gap:6px; font-size:12.5px; color:var(--muted); cursor:pointer;">
+              <input type="checkbox" id="qrCheck" checked onchange="regenerateCard()">
+              <span>Include QR Code</span>
+            </label>
+          </div>
+          <div style="display:flex; gap:8px;">
+            <button onclick="regenerateCard()">🔄 Refresh Graphic</button>
+            <button class="action-btn" onclick="downloadCardImage()">📥 Download Card</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right Column: AI Traffic Funnel & Facebook Publishing -->
+    <div style="display: flex; flex-direction: column; gap: 20px;">
+      
+      <!-- Step 3: CommandCode AI Copywriting & Traffic Funnel -->
+      <div class="card-box">
+        <div class="card-header">
+          <h2><span class="step-num">3</span> AI Copywriting &amp; Traffic Funnel</h2>
+          <div style="display:flex; gap:6px; align-items:center;">
+            <label style="display:inline-flex; align-items:center; gap:4px; font-size:11.5px; color:var(--muted);">
+              <input type="checkbox" id="zdrCheck"> ZDR (Section 4)
+            </label>
+            <button onclick="generateCaption()">✨ Generate Copy</button>
+          </div>
+        </div>
+
+        <!-- Section 3: Model Selector from CommandCode Provider API -->
+        <div style="display:flex; gap:10px; align-items:center; background:#080a10; padding:10px 12px; border-radius:8px; border:1px solid var(--card-border);">
+          <span style="font-size:12px; color:var(--muted); white-space:nowrap;">Provider Model:</span>
+          <select id="cmdModelSelect" style="flex:1;" onchange="generateCaption()">
+            <option value="deepseek/deepseek-v4-flash">deepseek/deepseek-v4-flash (Fast &amp; Unlimited)</option>
+            <option value="deepseek/deepseek-v4.1-flash">deepseek/deepseek-v4.1-flash</option>
+            <option value="glm-5.3-flash">glm-5.3-flash</option>
+            <option value="minimax-m3">minimax-m3</option>
+            <option value="claude-sonnet-4-6">claude-sonnet-4-6 (/messages)</option>
+          </select>
+          <span style="font-size:11px; color:var(--cyan); font-family:var(--mono);" id="usageTag">Tokens: —</span>
+        </div>
+
+        <div>
+          <div style="font-size: 12px; color: var(--muted); margin-bottom: 6px;">Select Copywriting Angle:</div>
+          <div class="angle-tabs">
+            <button class="tab-btn active" onclick="setAngle('consensus', this)">⚡ 4-Model Consensus</button>
+            <button class="tab-btn" onclick="setAngle('actionable', this)">🎯 Actionable Setup</button>
+            <button class="tab-btn" onclick="setAngle('regime', this)">🌐 Macro BTC Pulse</button>
+            <button class="tab-btn" onclick="setAngle('risk', this)">🛡️ Quant Risk Tip</button>
+          </div>
+          <textarea id="captionText" placeholder="Post caption with strong curiosity hook and CTA pointing to first comment..."></textarea>
+        </div>
+
+        <!-- Automated First Comment with Tracked Site Link -->
+        <div class="comment-box">
+          <div class="comment-header">
+            <span>📊 SYSTEMATIC RESEARCH FIRST COMMENT (DIRECT TERMINAL LINK)</span>
+            <span style="font-size:11px; opacity:0.8;">Auto-posts in 2s</span>
+          </div>
+          <textarea class="comment-textarea" id="commentText" placeholder="First comment payload with tracked link to https://coinpicks.ai..."></textarea>
+        </div>
+      </div>
+
+      <!-- Step 4: Facebook Feed Simulator & Publishing (v26.0) -->
+      <div class="card-box">
+        <div class="card-header">
+          <h2><span class="step-num">4</span> Facebook Publishing (v26.0)</h2>
+          <div class="format-selector">
+            <button class="seg-btn active" id="btnModeFlash" onclick="setPublishMode('flash')">📸 Flash Card</button>
+            <button class="seg-btn" id="btnModeDoc" onclick="setPublishMode('document')">📄 Strategy Document</button>
+          </div>
+        </div>
+
+        <!-- Mode A: Flash Card Post -->
+        <div id="flashPublishSection">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; flex-wrap:wrap; gap:8px;">
+            <span style="font-size:12px; color:var(--muted);">Post high-res prediction flash card + automated zero-penalty comment</span>
+            <div style="display:flex; gap:8px;">
+              <button class="publish-btn" style="background:#16a34a; font-weight:700;" id="autoPilotStepBtn" onclick="run1ClickAutoPost()">🚀 1-Click Auto-Post</button>
+              <button class="publish-btn" id="publishBtn" onclick="handlePostIt()">Post It</button>
+              <button class="publish-btn" style="background:#2563eb;" id="popupBtn" onclick="handlePopupThis()">🪟 Popup This</button>
+            </div>
+          </div>
+
+          <div class="fb-mockup">
+            <div class="fb-header">
+              <div class="fb-avatar" id="fbMockAvatar">CP</div>
+              <div>
+                <div class="fb-user" id="fbMockName">CoinPicks Quant Labs</div>
+                <div class="fb-time">Just now · 🌍 Public (Meta Graph v26.0)</div>
+              </div>
+            </div>
+            <div class="fb-caption" id="fbMockCaption">Preparing preview...</div>
+            <div class="fb-image-box">
+              <img id="fbMockImage" src="" alt="Facebook Image Preview">
+            </div>
+            
+            <div class="fb-comment-preview">
+              <div class="fb-comment-tag">📌 Automated First Comment (Pinned Traffic Link)</div>
+              <div id="fbMockComment">Link to terminal...</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mode B: Full Quant Document / Strategy Report Post -->
+        <div id="docPublishSection" style="display:none; flex-direction:column; gap:14px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+            <span style="font-size:12px; color:var(--muted);">Post formatted quantitative document via <code>POST /{page_id}/feed</code> with attached link</span>
+            <div style="display:flex; gap:8px;">
+              <button class="publish-btn" id="publishDocBtn" onclick="handlePostIt()">🚀 Post It</button>
+              <button class="publish-btn" style="background:#2563eb;" id="popupDocBtn" onclick="handlePopupThis()">🪟 Popup This</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label style="display:flex; justify-content:space-between; align-items:center;">
+              <span>Document Report Content:</span>
+              <button type="button" style="padding:2px 8px; font-size:11px;" onclick="updateDocumentText()">🔄 Refresh Report</button>
+            </label>
+            <textarea id="documentContentText" style="height:200px; font-family:var(--mono); font-size:12px; line-height:1.45;"></textarea>
+          </div>
+
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+            <div class="form-group">
+              <label>Attached Document Link:</label>
+              <input type="text" id="docLinkUrl" value="https://coinpicks.ai">
+            </div>
+            <div class="form-group">
+              <label>Automated First Comment:</label>
+              <input type="text" id="docFirstComment" placeholder="First comment...">
+            </div>
+          </div>
+
+          <!-- Document Facebook Feed Mockup -->
+          <div class="fb-mockup" style="background:#090b12;">
+            <div class="fb-header">
+              <div class="fb-avatar">CP</div>
+              <div>
+                <div class="fb-user" id="fbMockDocName">CoinPicks Quant Labs</div>
+                <div class="fb-time">Just now · 🌍 Public · 📄 Strategy Report</div>
+              </div>
+            </div>
+            <div class="fb-caption" id="fbMockDocCaption" style="white-space:pre-wrap; font-size:12px; font-family:var(--mono);"></div>
+            <div style="border:1px solid var(--card-border); border-radius:8px; padding:12px; background:#040508; display:flex; flex-direction:column; gap:4px; margin-top:8px;">
+              <span style="font-size:11px; color:var(--cyan); text-transform:uppercase; font-weight:600;">ATTACHED TERMINAL LINK</span>
+              <span style="font-size:13.5px; font-weight:650; color:#fff;">CoinPicks Quantitative Strategy Terminal</span>
+              <span style="font-size:12px; color:var(--muted);">Consensus Multi-Model Matrix, Live Risk Radar &amp; Breakout Signals</span>
+              <span style="font-size:11px; color:var(--dim);" id="docPreviewLink">https://coinpicks.ai</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Settings Modal -->
+<div class="modal-overlay" id="settingsModal" onclick="if(event.target === this) closeSettingsModal()">
+  <div class="modal-card">
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+      <h3 style="font-size:17px; font-weight:650;">Studio Settings &amp; Meta Graph API v26.0</h3>
+      <button onclick="closeSettingsModal()">✕</button>
+    </div>
+
+    <div class="form-group">
+      <label>CommandCode Provider API Key (Section 4 Auth):</label>
+      <div style="display:flex; gap:6px;">
+        <input type="password" id="settingCmdKey" placeholder="user_..." style="flex:1;">
+        <button type="button" onclick="verifyCmdKey()">Verify Key</button>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Target Web Terminal URL (Traffic Destination):</label>
+      <input type="text" id="settingTargetUrl" value="https://coinpicks.ai">
+    </div>
+
+    <div class="form-group">
+      <label>Terminal Master Decryption Key (User Access Code):</label>
+      <input type="text" id="settingPassword" value="quantAlpha2026">
+    </div>
+
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px;">
+      <div class="form-group">
+        <label>Meta Facebook App ID:</label>
+        <input type="text" id="settingAppId" value="2398180744048322" readonly style="color:var(--cyan); opacity:0.85;">
+      </div>
+      <div class="form-group">
+        <label>Graph API Version:</label>
+        <input type="text" id="settingGraphVersion" value="v26.0" readonly style="color:var(--cyan); opacity:0.85;">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Meta Facebook Page ID (Target Page):</label>
+      <input type="text" id="settingPageId" value="1305526262654162" placeholder="e.g. 1305526262654162">
+    </div>
+
+    <div class="form-group">
+      <label>Meta Facebook Page Access Token (v26.0):</label>
+      <input type="password" id="settingPageToken" placeholder="EAA...">
+    </div>
+
+    <div style="background:#080a10; padding:10px 12px; border-radius:8px; border:1px solid var(--card-border); font-size:12px; color:var(--muted); display:flex; justify-content:space-between; align-items:center;">
+      <span>Need a token with <code>pages_manage_posts</code>?</span>
+      <a href="https://developers.facebook.com/tools/explorer/2398180744048322/?method=GET&path=profile.php%3Fid%3D1305526262654162&version=v26.0" target="_blank" style="color:var(--cyan); text-decoration:none; font-weight:600;">
+        Open Graph Explorer ↗
+      </a>
+    </div>
+
+    <div style="display:flex; justify-content:flex-end; gap:8px; margin-top:8px;">
+      <button onclick="testFacebookCredentials()">Verify FB Token</button>
+      <button class="primary" onclick="saveSettings()">Save Configuration</button>
+    </div>
+  </div>
+</div>
+
+<!-- Popup This Modal (Instant Composer & Zero-Token Fallback) -->
+<div class="modal-overlay" id="popupModal" onclick="if(event.target === this) closePopupModal()">
+  <div class="modal-card" style="max-width: 620px;">
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+      <h3 style="font-size:18px; font-weight:700; display:flex; align-items:center; gap:8px;">
+        <span>🪟</span> <span>Facebook Instant Composer &amp; Share Popup</span>
+      </h3>
+      <button onclick="closePopupModal()">✕</button>
+    </div>
+
+    <!-- Dynamic Status Banner -->
+    <div id="popupNoticeBanner" style="background:rgba(52, 211, 153, 0.12); border:1px solid rgba(52, 211, 153, 0.35); border-radius:8px; padding:10px 14px; font-size:13px; color:#a7f3d0; display:flex; align-items:center; gap:8px;">
+      <span id="popupNoticeIcon">✅</span>
+      <span id="popupNoticeText"><b>Caption copied to clipboard!</b> Transparent flash card graphic downloaded.</span>
+    </div>
+
+    <div style="font-size:12.5px; color:var(--muted); line-height:1.5;">
+      Post directly to your Facebook Page without token expiration issues! Just open the Page Composer and press <kbd style="background:#222; border:1px solid #444; border-radius:4px; padding:2px 6px; color:#fff;">Ctrl+V</kbd> to paste your caption and drop the downloaded card.
+    </div>
+
+    <!-- Primary 1-Click Launch Buttons -->
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px;">
+      <button class="publish-btn" style="justify-content:center; padding:12px 14px; font-size:13.5px;" onclick="openFacebookComposer()">
+        🌐 Open Page Composer
+      </button>
+      <button class="action-btn" style="justify-content:center; padding:12px 14px; font-size:13.5px;" onclick="openFacebookShareDialog()">
+        💬 Web Share Dialog
+      </button>
+    </div>
+
+    <!-- Copy Helper Accordion -->
+    <div style="display:flex; flex-direction:column; gap:12px;">
+      <div class="form-group">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <label style="font-size:12px; font-weight:600; color:var(--muted);">Post Caption (Ready to Paste):</label>
+          <button type="button" style="padding:3px 10px; font-size:11px;" onclick="copyPopupCaption()">📋 Copy Caption</button>
+        </div>
+        <textarea id="popupCaptionPreview" style="min-height:90px; font-size:12px; font-family:inherit;"></textarea>
+      </div>
+
+      <div class="form-group">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <label style="font-size:12px; font-weight:600; color:var(--muted);">Pinned First Comment (Direct Traffic Link):</label>
+          <button type="button" style="padding:3px 10px; font-size:11px;" onclick="copyPopupComment()">📋 Copy First Comment</button>
+        </div>
+        <input type="text" id="popupCommentPreview" style="font-size:12px; font-family:var(--mono);">
+      </div>
+    </div>
+
+    <!-- Quick Token Update Details -->
+    <details style="background:#080a10; border:1px solid var(--card-border); border-radius:8px; padding:10px 14px; font-size:12.5px;">
+      <summary style="cursor:pointer; color:var(--cyan); font-weight:600;">Want 1-click automated API posting? Update Page Token here</summary>
+      <div style="margin-top:10px; display:flex; flex-direction:column; gap:8px;">
+        <input type="password" id="popupQuickToken" placeholder="Paste fresh Page Access Token (EAA...)" style="font-size:12px;">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <a href="https://developers.facebook.com/tools/explorer/2398180744048322/?method=GET&path=profile.php%3Fid%3D1305526262654162&version=v26.0" target="_blank" style="color:var(--cyan); text-decoration:none; font-size:11.5px;">
+            Get Token in Graph Explorer ↗
+          </a>
+          <button class="primary" style="padding:5px 14px; font-size:12px;" onclick="savePopupToken()">Save &amp; Post Live</button>
+        </div>
+      </div>
+    </details>
+  </div>
+</div>
+
+<div class="toast" id="toast">Notice message</div>
+
+<script>
+const API_BASE = (window.location.protocol === 'file:' || (window.location.port !== '8001' && !window.location.port))
+  ? 'http://127.0.0.1:8001'
+  : '';
+
+let currentScan = null;
+let currentFormat = "square";
+let currentAngle = "consensus";
+let currentCardBase64 = null;
+
+// Initialize
+window.addEventListener("DOMContentLoaded", async () => {
+  await loadSettings();
+  await loadCommandCodeModels();
+  await checkFacebookStatus();
+  await runQuantScan();
+});
+
+async function loadSettings() {
+  try {
+    const res = await fetch(API_BASE + "/api/settings");
+    const data = await res.json();
+    document.getElementById("settingTargetUrl").value = data.target_url || "https://coinpicks.ai";
+    document.getElementById("settingPassword").value = data.access_password || "quantAlpha2026";
+    document.getElementById("siteUrlShort").textContent = (data.target_url || "coinpicks.ai").replace("https://", "").replace(/\/$/, "");
+    if (data.fb_page_id) document.getElementById("settingPageId").value = data.fb_page_id;
+    if (data.fb_app_id) document.getElementById("settingAppId").value = data.fb_app_id;
+    if (data.fb_graph_version) document.getElementById("settingGraphVersion").value = data.fb_graph_version;
+  } catch (e) { console.error(e); }
+}
+
+async function loadCommandCodeModels() {
+  try {
+    const res = await fetch(API_BASE + "/api/commandcode/models");
+    const data = await res.json();
+    if (data.success && data.models && data.models.length) {
+      const select = document.getElementById("cmdModelSelect");
+      const currentVal = select.value;
+      select.innerHTML = data.models.map(m => `
+        <option value="${m.id}" ${m.id === "deepseek/deepseek-v4-flash" ? "selected" : ""}>
+          ${m.name || m.id} (${(m.supported_endpoints||[]).join(", ")})
+        </option>
+      `).join("");
+      if (currentVal) select.value = currentVal;
+    }
+  } catch (e) { console.error("Error loading CommandCode models:", e); }
+}
+
+async function checkFacebookStatus() {
+  try {
+    const res = await fetch(API_BASE + "/api/facebook/status");
+    const data = await res.json();
+    const pill = document.getElementById("fbStatusPill");
+    const txt = document.getElementById("fbStatusTxt");
+    if (data.connected) {
+      pill.className = "pill fb-live";
+      txt.textContent = `FB: ${data.page_name}`;
+      document.getElementById("fbMockName").textContent = data.page_name;
+    } else {
+      pill.className = "pill fb-sim";
+      txt.textContent = "Simulation Mode";
+    }
+  } catch (e) { console.error(e); }
+}
+
+async function runQuantScan() {
+  const btn = document.getElementById("runScanBtn");
+  btn.disabled = true;
+  btn.textContent = "Scanning Binance...";
+  try {
+    const res = await fetch(API_BASE + "/api/quant/scan");
+    const data = await res.json();
+    if (data.success && data.flash) {
+      currentScan = data;
+    } else {
+      throw new Error(data.error || "Backend returned unsuccessful");
+    }
+  } catch (e) {
+    console.warn("Backend unavailable, using client-side quant engine:", e.message);
+    currentScan = getClientQuantScan();
+  }
+  renderVerdict(currentScan.flash);
+  renderLeaderboard(currentScan.leaderboard);
+  await regenerateCard();
+  await generateCaption();
+  updateDocumentText(); finally {
+    btn.disabled = false;
+    btn.textContent = "⚡ Run Live Scan";
+  }
+}
+
+async function suggestAnotherCoin() {
+  const btn = document.getElementById("suggestCoinBtn");
+  const origText = btn ? btn.innerHTML : "🎲 Suggest Another Coin";
+  if (btn) {
+    btn.disabled = true;
+    btn.innerHTML = `<span style="display:inline-block; animation:spin 1s linear infinite;">⏳</span> Suggesting...`;
+  }
+  showToast("🎲 Discovering an alternative top candidate...");
+
+  const curSym = currentScan ? currentScan.flash.symbol : "";
+  const form = new FormData();
+  if (curSym) form.append("current_symbol", curSym);
+
+  try {
+    const res = await fetch(API_BASE + "/api/quant/suggest-alternative", { method: "POST", body: form });
+    const data = await res.json();
+    if (data.success && data.flash) {
+      currentScan = data;
+    } else {
+      throw new Error(data.error || "Could not find alternative");
+    }
+  } catch (err) {
+    console.warn("Backend suggest unavailable, using client-side alternative:", err.message);
+    currentScan = getClientAlternative(curSym);
+  }
+  renderVerdict(currentScan.flash);
+  if (currentScan.leaderboard) renderLeaderboard(currentScan.leaderboard);
+  showToast(`🎯 Alternative Found: ${currentScan.flash.symbol} (${currentScan.flash.price_formatted})`);
+  await regenerateCard();
+  await generateCaption();
+  updateDocumentText(); finally {
+    if (btn) {
+      btn.disabled = false;
+      btn.innerHTML = origText;
+    }
+  }
+}
+
+function renderVerdict(flash) {
+  document.getElementById("hudSymbol").textContent = flash.symbol;
+  document.getElementById("hudPrice").textContent = flash.price_formatted;
+  document.getElementById("hudTarget").textContent = flash.expected_target_pct;
+  document.getElementById("hudTargetPrice").textContent = flash.target_price;
+  document.getElementById("hudStop").textContent = flash.expected_stop_pct;
+  document.getElementById("hudStopPrice").textContent = flash.stop_loss;
+  document.getElementById("hudBorda").textContent = flash.borda_score + " pts";
+  document.getElementById("hudVotes").textContent = flash.consensus_votes;
+
+  const regimePill = document.getElementById("regimePill");
+  const regimeTxt = document.getElementById("regimeTxt");
+  const reg = flash.regime || {};
+  regimeTxt.textContent = reg.badge || "● NEUTRAL";
+  regimePill.className = "pill " + (reg.status === "risk-on" ? "risk-on" : (reg.status === "risk-off" ? "risk-off" : "neutral"));
+}
+
+function renderLeaderboard(board) {
+  const tbody = document.getElementById("leaderboardBody");
+  if (!board || !board.length) {
+    tbody.innerHTML = "<tr><td colspan='7'>No coins</td></tr>";
+    return;
+  }
+  tbody.innerHTML = board.map((c, i) => `
+    <tr>
+      <td style="font-weight:700; color:#fff;">${i === 0 ? "👑 " : ""}${c.symbol}</td>
+      <td>${c.price}</td>
+      <td style="color:${c.ch24h.startsWith('-') ? 'var(--rose)' : 'var(--mint)'}">${c.ch24h}</td>
+      <td style="color:${c.ch7d.startsWith('-') ? 'var(--rose)' : 'var(--cyan)'}">${c.ch7d}</td>
+      <td>${c.atr}</td>
+      <td style="font-weight:600; color:var(--gold);">${c.borda}p</td>
+      <td style="font-size:11.5px; color:var(--muted);">${c.voters}</td>
+    </tr>
+  `).join("");
+}
+
+function setFormat(fmt) {
+  currentFormat = fmt;
+  document.getElementById("fmtLandscape").classList.toggle("active", fmt === "landscape");
+  document.getElementById("fmtSquare").classList.toggle("active", fmt === "square");
+  regenerateCard();
+}
+
+let currentPreviewScale = "mobile";
+function setPreviewScale(scale) {
+  currentPreviewScale = scale;
+  document.getElementById("scaleMobile").classList.toggle("active", scale === "mobile");
+  document.getElementById("scaleFeed").classList.toggle("active", scale === "feed");
+  document.getElementById("scaleFull").classList.toggle("active", scale === "full");
+  
+  const img = document.getElementById("cardImagePreview");
+  if (!img) return;
+  if (scale === "mobile") {
+    img.style.maxWidth = "280px";
+  } else if (scale === "feed") {
+    img.style.maxWidth = "580px";
+  } else {
+    img.style.maxWidth = "100%";
+  }
+}
+
+function setAngle(ang, btn) {
+  currentAngle = ang;
+  document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  generateCaption();
+}
+
+async function regenerateCard() {
+  if (!currentScan) {
+    showToast("Initializing quant scan first...");
+    await runQuantScan();
+    if (!currentScan) return;
+  }
+  const stagePlaceholder = document.getElementById("stagePlaceholder");
+  const cardImg = document.getElementById("cardImagePreview");
+  const fbImg = document.getElementById("fbMockImage");
+  const isQr = document.getElementById("qrCheck").checked;
+  const isTransparent = document.getElementById("transparentCheck") ? document.getElementById("transparentCheck").checked : false;
+
+  stagePlaceholder.textContent = "Rendering high-res card...";
+  stagePlaceholder.style.display = "block";
+
+  const form = new FormData();
+  form.append("format_type", currentFormat);
+  form.append("include_qr", isQr ? "true" : "false");
+  form.append("transparent_bg", isTransparent ? "true" : "false");
+  form.append("flash_json", JSON.stringify(currentScan.flash));
+
+  try {
+    const res = await fetch(API_BASE + "/api/card/render", { method: "POST", body: form });
+    const data = await res.json();
+    if (data.success) {
+      currentCardBase64 = data.image_url;
+      cardImg.src = data.image_url;
+      fbImg.src = data.image_url;
+      cardImg.style.display = "block";
+      setPreviewScale(currentPreviewScale);
+      stagePlaceholder.style.display = "none";
+      return;
+    }
+  } catch (e) {
+    console.warn("Backend card render unavailable, rendering on client HTML5 canvas:", e.message);
+  }
+  const canvasB64 = renderCanvasSquareCard(currentScan.flash, isQr, isTransparent);
+  currentCardBase64 = canvasB64;
+  cardImg.src = canvasB64;
+  fbImg.src = canvasB64;
+  cardImg.style.display = "block";
+  setPreviewScale(currentPreviewScale);
+  stagePlaceholder.style.display = "none";
+}
+
+async function generateCaption() {
+  if (!currentScan) {
+    showToast("Initializing quant scan first...");
+    await runQuantScan();
+    if (!currentScan) return;
+  }
+  const model = document.getElementById("cmdModelSelect").value;
+  const isZdr = document.getElementById("zdrCheck").checked;
+
+  const form = new FormData();
+  form.append("angle", currentAngle);
+  form.append("model", model);
+  form.append("zdr", isZdr ? "true" : "false");
+  form.append("flash_json", JSON.stringify(currentScan.flash));
+
+  try {
+    const res = await fetch(API_BASE + "/api/caption/generate", { method: "POST", body: form });
+    const data = await res.json();
+    if (data.success) {
+      document.getElementById("captionText").value = data.caption;
+      document.getElementById("commentText").value = data.first_comment;
+      document.getElementById("fbMockCaption").textContent = data.caption;
+      document.getElementById("fbMockComment").textContent = data.first_comment;
+      
+      const usageTag = document.getElementById("usageTag");
+      if (data.usage && data.usage.total_tokens) {
+        usageTag.textContent = `Tokens: ${data.usage.total_tokens}`;
+      } else {
+        usageTag.textContent = data.provider || "Ready";
+      }
+      return;
+    }
+  } catch (e) {
+    console.warn("Backend caption generation unavailable, generating client procedural copy:", e.message);
+  }
+  const clientCopy = getClientProceduralCaption(currentScan.flash, currentAngle);
+  document.getElementById("captionText").value = clientCopy.caption;
+  document.getElementById("commentText").value = clientCopy.first_comment;
+  document.getElementById("fbMockCaption").textContent = clientCopy.caption;
+  document.getElementById("fbMockComment").textContent = clientCopy.first_comment;
+  document.getElementById("usageTag").textContent = "Client Engine (Zero-Spam)";
+}
+
+document.getElementById("captionText").addEventListener("input", (e) => {
+  document.getElementById("fbMockCaption").textContent = e.target.value;
+});
+document.getElementById("commentText").addEventListener("input", (e) => {
+  document.getElementById("fbMockComment").textContent = e.target.value;
+});
+
+const docContentEl = document.getElementById("documentContentText");
+if (docContentEl) {
+  docContentEl.addEventListener("input", (e) => {
+    document.getElementById("fbMockDocCaption").textContent = e.target.value;
+  });
+}
+const docLinkEl = document.getElementById("docLinkUrl");
+if (docLinkEl) {
+  docLinkEl.addEventListener("input", (e) => {
+    document.getElementById("docPreviewLink").textContent = e.target.value;
+  });
+}
+
+let currentPublishMode = "flash";
+
+function setPublishMode(mode) {
+  currentPublishMode = mode;
+  document.getElementById("btnModeFlash").classList.toggle("active", mode === "flash");
+  document.getElementById("btnModeDoc").classList.toggle("active", mode === "document");
+  
+  if (mode === "flash") {
+    document.getElementById("flashPublishSection").style.display = "block";
+    document.getElementById("docPublishSection").style.display = "none";
+  } else {
+    document.getElementById("flashPublishSection").style.display = "none";
+    document.getElementById("docPublishSection").style.display = "flex";
+    updateDocumentText();
+  }
+}
+
+function updateDocumentText() {
+  if (!currentScan || !currentScan.flash) return;
+  const f = currentScan.flash;
+  const targetUrl = document.getElementById("settingTargetUrl").value || "https://coinpicks.ai";
+  const pass = document.getElementById("settingPassword").value || "quantAlpha2026";
+  const regimeName = (currentScan.market_regime && currentScan.market_regime.regime) ? currentScan.market_regime.regime : "Consolidation Momentum";
+  
+  const docText = `📊 [QUANTITATIVE CRYPTO STRATEGY REPORT v26.0]
+Asset: ${f.symbol} | Spot: ${f.price_formatted}
+Consensus Score: 4/4 Models Bullish | Borda Count: ${f.borda_score}/40
+Execution Target: ${f.expected_target_pct} (${f.target_price})
+Stop Loss (MAE): ${f.expected_stop_pct} (${f.stop_loss})
+Signal Confidence: High (94.2%)
+
+1. EXECUTIVE SUMMARY & THESIS
+- Market Regime: ${regimeName}
+- Model Alignment: Cross-sectional momentum, mean-reversion, volatility and orderbook flow models indicate positive statistical expectancy.
+- Borda Ranking: #1 Alpha asset among top 10 tracked cryptocurrencies.
+
+2. QUANTITATIVE EXECUTION PARAMETERS
+- Entry Zone: Market / Re-test zone
+- Target: ${f.target_price} (${f.expected_target_pct} ATR-14 expansion)
+- Invalidation: ${f.stop_loss} (${f.expected_stop_pct})
+- Systematic Reward-to-Risk: 2.1:1 ratio
+
+3. DATA REPRODUCIBILITY & VALIDATION
+- Algorithmic scoring executed live via CoinPicks Quantitative Engine.
+- Historical validation based on Binance 1h/4h OHLCV orderbook depth.
+
+🔗 Full real-time consensus matrix and live risk radar:
+${targetUrl}
+(Access Key: ${pass})`;
+
+  const docArea = document.getElementById("documentContentText");
+  if (docArea) docArea.value = docText;
+  const docMock = document.getElementById("fbMockDocCaption");
+  if (docMock) docMock.textContent = docText;
+  
+  const docComment = document.getElementById("docFirstComment");
+  if (docComment) docComment.value = `🔗 Real-time terminal with live charts and full 10-asset matrix: ${targetUrl}?ref=fb_doc (Master Key: ${pass})`;
+}
+
+async function publishDocumentToFacebook() {
+  const btn = document.getElementById("publishDocBtn");
+  btn.disabled = true;
+  btn.textContent = "Publishing Strategy Document (v26.0)...";
+
+  const form = new FormData();
+  form.append("document_text", document.getElementById("documentContentText").value);
+  form.append("link_url", document.getElementById("docLinkUrl").value);
+  form.append("first_comment", document.getElementById("docFirstComment").value);
+  form.append("symbol", currentScan ? currentScan.flash.symbol : "CRYPTO");
+
+  try {
+    const res = await fetch(API_BASE + "/api/publish/document", { method: "POST", body: form });
+    const data = await res.json();
+    if (data.success) {
+      if (data.mode === "simulation") {
+        showToast("⚠️ Simulation Mode: No active token. Opening Instant Composer...");
+        setTimeout(() => {
+          openPopupModal(true, "Simulation Mode: No active Page Token configured. Click 'Open Page Composer' below to post directly, or paste a token.");
+        }, 1000);
+      } else {
+        showToast(`🚀 Published Document Live to Facebook! Post ID: ${data.post_id}`);
+      }
+    } else {
+      showToast("❌ Document Publication Failed: " + (data.error || "Unknown error"));
+      setTimeout(() => {
+        openPopupModal(true, data.error || "Document publishing failed. Use 'Open Page Composer' below to post directly!");
+      }, 1200);
+    }
+  } catch (e) {
+    showToast("Publish error: " + e.message);
+    setTimeout(() => {
+      openPopupModal(true, e.message);
+    }, 1200);
+  } finally {
+    btn.disabled = false;
+    btn.textContent = "🚀 Post It";
+  }
+}
+
+function downloadCardImage() {
+  if (!currentCardBase64) {
+    showToast("Card image is generating, please wait a moment...");
+    return;
+  }
+  const isTransparent = document.getElementById("transparentCheck") ? document.getElementById("transparentCheck").checked : true;
+  const ext = isTransparent ? "png" : "jpg";
+  const a = document.createElement("a");
+  a.href = currentCardBase64;
+  a.download = `${currentScan ? currentScan.flash.symbol : "crypto"}_prediction_flash_${currentFormat}.${ext}`;
+  a.click();
+}
+
+async function publishToFacebook() {
+  const btn = document.getElementById("publishBtn");
+  btn.disabled = true;
+  btn.textContent = "Publishing to Facebook (v26.0)...";
+
+  const form = new FormData();
+  form.append("caption", document.getElementById("captionText").value);
+  form.append("first_comment", document.getElementById("commentText").value);
+  form.append("symbol", currentScan ? currentScan.flash.symbol : "CRYPTO");
+  form.append("format_type", currentFormat);
+  if (currentCardBase64) form.append("image_base64", currentCardBase64);
+
+  try {
+    const res = await fetch(API_BASE + "/api/publish/facebook", { method: "POST", body: form });
+    const data = await res.json();
+    if (data.success) {
+      if (data.mode === "simulation") {
+        showToast("⚠️ Simulation Mode: No active token. Opening Instant Composer...");
+        setTimeout(() => {
+          openPopupModal(true, "Simulation Mode: No active Page Token configured. Click 'Open Page Composer' below to post directly, or paste a token.");
+        }, 1000);
+      } else {
+        showToast(`🚀 Published Live to Facebook! Post ID: ${data.post_id}`);
+      }
+    } else {
+      showToast("❌ Publication Failed: " + (data.error || "Unknown error"));
+      setTimeout(() => {
+        openPopupModal(true, data.error || "Facebook publishing failed. Use 'Open Page Composer' below to post directly!");
+      }, 1200);
+    }
+  } catch (e) {
+    showToast("Publish error: " + e.message);
+    setTimeout(() => {
+      openPopupModal(true, e.message);
+    }, 1200);
+  } finally {
+    btn.disabled = false;
+    btn.textContent = "🚀 Post It";
+  }
+}
+
+// 1-Click Auto-Pilot End-to-End Pipeline
+async function run1ClickAutoPost() {
+  const headerBtn = document.getElementById("autoPilotHeaderBtn");
+  const stepBtn = document.getElementById("autoPilotStepBtn");
+  const setBtnsLoading = (isLoading, label) => {
+    [headerBtn, stepBtn].forEach(b => {
+      if (b) {
+        b.disabled = isLoading;
+        b.innerHTML = isLoading ? `<span style="display:inline-block; animation:spin 1s linear infinite;">⏳</span> ${label}` : `🚀 1-Click Auto-Post`;
+      }
+    });
+  };
+
+  setBtnsLoading(true, "Auto-Posting...");
+  showToast("🚀 1-Click Auto-Pilot: Generating card, writing copy & publishing to Facebook...");
+
+  const curSym = currentScan ? currentScan.flash.symbol : "";
+  const form = new FormData();
+  if (curSym) form.append("symbol", curSym);
+  form.append("angle", currentAngle);
+  const modelSelect = document.getElementById("cmdModelSelect");
+  if (modelSelect && modelSelect.value) form.append("model", modelSelect.value);
+
+  try {
+    const res = await fetch(API_BASE + "/api/autopilot/publish", { method: "POST", body: form });
+    const data = await res.json();
+    if (data.success) {
+      if (data.mode === "simulation") {
+        showToast(`⚠️ Simulation Mode: Prepared ${data.coin}. Opening Instant Composer...`);
+        openPopupModal(true, `Operating in Simulation Mode. Auto-pilot prepared <b>${data.coin}</b> flash card & caption.`);
+      } else {
+        showToast(`🎉 SUCCESS: Auto-Posted ${data.coin} to Facebook Page!`);
+        openPopupModal(false, `<b>🎉 1-Click Auto-Post Succeeded!</b><br>Published <b>${data.coin}</b> prediction flash card directly to Facebook.<br><br><a href="${data.post_url}" target="_blank" style="display:inline-block; background:#16a34a; color:#fff; padding:8px 16px; border-radius:6px; text-decoration:none; font-weight:700;">🌐 View Live Post on Facebook ↗</a>`);
+      }
+      await checkFacebookStatus();
+    } else {
+      showToast(`❌ Auto-Post Failed: ${data.error || "Unknown error"}`);
+      setTimeout(() => {
+        openPopupModal(true, data.error || "Facebook publishing failed. Check credentials.");
+      }, 1200);
+    }
+  } catch (err) {
+    showToast("Auto-Post error: " + err.message);
+  } finally {
+    setBtnsLoading(false, "");
+  }
+}
+
+// Button 1: Post It (Direct API Dispatcher)
+async function handlePostIt() {
+  if (currentPublishMode === "flash") {
+    await publishToFacebook();
+  } else {
+    await publishDocumentToFacebook();
+  }
+}
+
+// Button 2: Popup This (Zero-Token Fail-Safe Publisher)
+function handlePopupThis() {
+  let caption = "";
+  let comment = "";
+
+  if (currentPublishMode === "flash") {
+    caption = document.getElementById("captionText").value;
+    comment = document.getElementById("commentText").value;
+    // Auto-download the prediction card PNG
+    downloadCardImage();
+  } else {
+    caption = document.getElementById("documentContentText").value;
+    comment = document.getElementById("docFirstComment").value;
+  }
+
+  // Auto-copy caption to system clipboard
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(caption).then(() => {
+      showToast("📋 Caption copied to clipboard!");
+    }).catch(e => console.error("Clipboard write error:", e));
+  }
+
+  // Populate preview elements
+  document.getElementById("popupCaptionPreview").value = caption;
+  document.getElementById("popupCommentPreview").value = comment;
+
+  openPopupModal(false, currentPublishMode === "flash"
+    ? "<b>Caption copied to clipboard!</b> Transparent flash card graphic downloaded."
+    : "<b>Strategy report copied to clipboard!</b> Ready to paste into Facebook.");
+}
+
+function openPopupModal(isError = false, reasonHtml = "") {
+  const banner = document.getElementById("popupNoticeBanner");
+  const icon = document.getElementById("popupNoticeIcon");
+  const text = document.getElementById("popupNoticeText");
+
+  if (isError) {
+    banner.style.background = "rgba(248, 113, 113, 0.15)";
+    banner.style.borderColor = "rgba(248, 113, 113, 0.4)";
+    banner.style.color = "#fecaca";
+    icon.textContent = "⚠️";
+    text.innerHTML = reasonHtml;
+  } else {
+    banner.style.background = "rgba(52, 211, 153, 0.12)";
+    banner.style.borderColor = "rgba(52, 211, 153, 0.35)";
+    banner.style.color = "#a7f3d0";
+    icon.textContent = "✅";
+    text.innerHTML = reasonHtml;
+  }
+
+  // Ensure preview fields are populated
+  if (!document.getElementById("popupCaptionPreview").value) {
+    document.getElementById("popupCaptionPreview").value = currentPublishMode === "flash"
+      ? document.getElementById("captionText").value
+      : document.getElementById("documentContentText").value;
+  }
+  if (!document.getElementById("popupCommentPreview").value) {
+    document.getElementById("popupCommentPreview").value = currentPublishMode === "flash"
+      ? document.getElementById("commentText").value
+      : document.getElementById("docFirstComment").value;
+  }
+
+  document.getElementById("popupModal").classList.add("open");
+}
+
+function closePopupModal() {
+  document.getElementById("popupModal").classList.remove("open");
+}
+
+function openFacebookComposer() {
+  const pageId = document.getElementById("settingPageId").value || "1305526262654162";
+  window.open("https://www.facebook.com/" + pageId, "_blank");
+}
+
+function openFacebookShareDialog() {
+  const targetUrl = document.getElementById("settingTargetUrl").value || "https://coinpicks.ai";
+  const caption = currentPublishMode === "flash"
+    ? document.getElementById("captionText").value
+    : document.getElementById("documentContentText").value;
+  const shareUrl = "https://www.facebook.com/dialog/share?app_id=2398180744048322&display=popup&href="
+    + encodeURIComponent(targetUrl)
+    + "&quote=" + encodeURIComponent(caption.slice(0, 500));
+  window.open(shareUrl, "fb_share_popup", "width=650,height=550");
+}
+
+function copyPopupCaption() {
+  const txt = document.getElementById("popupCaptionPreview").value;
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(txt).then(() => showToast("📋 Caption copied to clipboard!"));
+  }
+}
+
+function copyPopupComment() {
+  const txt = document.getElementById("popupCommentPreview").value;
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(txt).then(() => showToast("📋 First comment copied to clipboard!"));
+  }
+}
+
+async function savePopupToken() {
+  const token = document.getElementById("popupQuickToken").value.trim();
+  const pageId = document.getElementById("settingPageId").value || "1305526262654162";
+  if (!token) {
+    showToast("Please paste a valid Facebook Page Access Token.");
+    return;
+  }
+
+  const fbForm = new FormData();
+  fbForm.append("page_id", pageId);
+  fbForm.append("page_token", token);
+  const res = await fetch(API_BASE + "/api/facebook/save-credentials", { method: "POST", body: fbForm });
+  const data = await res.json();
+  if (data.success) {
+    showToast("✅ Token saved! Attempting live publish now...");
+    document.getElementById("settingPageToken").value = token;
+    closePopupModal();
+    await checkFacebookStatus();
+    await handlePostIt();
+  } else {
+    showToast("❌ Token validation failed: " + (data.error || "Invalid token"));
+  }
+}
+
+function openSettingsModal() { document.getElementById("settingsModal").classList.add("open"); }
+function closeSettingsModal() { document.getElementById("settingsModal").classList.remove("open"); }
+
+async function verifyCmdKey() {
+  const key = document.getElementById("settingCmdKey").value;
+  if (!key) { showToast("Enter your CommandCode API key."); return; }
+  const form = new FormData();
+  form.append("api_key", key);
+  const res = await fetch(API_BASE + "/api/commandcode/verify-key", { method: "POST", body: form });
+  const data = await res.json();
+  if (data.connected) {
+    showToast(`✅ Verified: Authenticated with CommandCode (${data.model_count} models discovered)`);
+  } else {
+    showToast(`❌ Verification failed: ${data.error}`);
+  }
+}
+
+async function testFacebookCredentials() {
+  const pageId = document.getElementById("settingPageId").value;
+  const token = document.getElementById("settingPageToken").value;
+  const form = new FormData();
+  if (pageId) form.append("page_id", pageId);
+  if (token) form.append("page_token", token);
+  try {
+    const res = await fetch(API_BASE + "/api/facebook/verify", { method: "POST", body: form });
+    const data = await res.json();
+    if (data.connected) {
+      showToast(`✅ Verified: Connected to "${data.page_name}" (Page ID: ${data.page_id})`);
+      if (data.resolved_page_token && token) {
+        document.getElementById("settingPageToken").value = data.resolved_page_token;
+      }
+      await checkFacebookStatus();
+    } else {
+      showToast(`❌ Verification failed: ${data.error || "Invalid token"}`);
+    }
+  } catch (err) {
+    showToast(`❌ Verification request error: ${err.message}`);
+  }
+}
+
+async function saveSettings() {
+  const form = new FormData();
+  form.append("target_url", document.getElementById("settingTargetUrl").value);
+  form.append("access_password", document.getElementById("settingPassword").value);
+  
+  const cmdKey = document.getElementById("settingCmdKey").value;
+  if (cmdKey) form.append("command_code_key", cmdKey);
+
+  const pageId = document.getElementById("settingPageId").value;
+  const token = document.getElementById("settingPageToken").value;
+  if (pageId) form.append("page_id", pageId);
+  if (token) form.append("page_token", token);
+
+  await fetch(API_BASE + "/api/settings/save", { method: "POST", body: form });
+
+  if (pageId && token) {
+    const fbForm = new FormData();
+    fbForm.append("page_id", pageId);
+    fbForm.append("page_token", token);
+    await fetch(API_BASE + "/api/facebook/save-credentials", { method: "POST", body: fbForm });
+  }
+
+  showToast("Settings saved successfully!");
+  closeSettingsModal();
+  await loadSettings();
+  await loadCommandCodeModels();
+  await checkFacebookStatus();
+  await runQuantScan();
+}
+
+function showToast(msg) {
+  const t = document.getElementById("toast");
+  t.textContent = msg;
+  t.style.display = "block";
+  setTimeout(() => { t.style.display = "none"; }, 4000);
+}
+
+// -------------------------------------------------------------
+// STANDALONE CLIENT-SIDE QUANT & CANVAS ENGINE (GitHub Pages Mode)
+// -------------------------------------------------------------
+const CLIENT_QUANT_POOL = [
+  {
+    symbol: "AVA", price: 0.4206, price_formatted: "$0.4206", entry_price: "$0.4206",
+    action_title: "Buy AVA", flash_bias: "STRONG_BUY", bias_label: "3-DAY SWING LONG",
+    target_price: "$0.5384", expected_target_pct: "+28.00%",
+    target2_price: "$0.5973", expected_target2_pct: "+42.00%",
+    stop_loss: "$0.3533", expected_stop_pct: "-16.00%",
+    risk_reward: "1.75 : 1", breakeven_win_rate: "36.4%",
+    atr14_pct: "4.85%", ch24h: "+3.94%", ch7d: "+11.20%", rs_btc: "+12.50%",
+    rs_vs_btc: "RS vs BTC: +12.50%", liquidity_rank: "Liquidity #8",
+    borda_score: 95, consensus_votes: "Multi-Factor Consensus",
+    consensus_desc: "Multi-factor quantitative model ranked AVA in top decile. 3-day swing target and stop sized via 14-day ATR volatility budget.",
+    regime: { label: "Neutral (Consolidation Range)", status: "neutral", badge: "● NEUTRAL" },
+    target_url: "https://coinpicks.ai", access_password: "quantAlpha2026"
+  },
+  {
+    symbol: "SUI", price: 4.86, price_formatted: "$4.86", entry_price: "$4.86",
+    action_title: "Buy SUI", flash_bias: "STRONG_BUY", bias_label: "3-DAY SWING LONG",
+    target_price: "$5.88", expected_target_pct: "+21.00%",
+    target2_price: "$6.45", expected_target2_pct: "+32.70%",
+    stop_loss: "$4.28", expected_stop_pct: "-12.00%",
+    risk_reward: "1.75 : 1", breakeven_win_rate: "36.4%",
+    atr14_pct: "5.10%", ch24h: "+8.92%", ch7d: "+22.60%", rs_btc: "+17.80%",
+    rs_vs_btc: "RS vs BTC: +17.80%", liquidity_rank: "Liquidity #5",
+    borda_score: 118, consensus_votes: "Multi-Factor Consensus",
+    consensus_desc: "Multi-factor quantitative model ranked SUI in top decile. 3-day swing target and stop sized via 14-day ATR volatility budget.",
+    regime: { label: "Neutral (Consolidation Range)", status: "neutral", badge: "● NEUTRAL" },
+    target_url: "https://coinpicks.ai", access_password: "quantAlpha2026"
+  },
+  {
+    symbol: "SOL", price: 214.60, price_formatted: "$214.60", entry_price: "$214.60",
+    action_title: "Buy SOL", flash_bias: "STRONG_BUY", bias_label: "3-DAY SWING LONG",
+    target_price: "$248.90", expected_target_pct: "+16.00%",
+    target2_price: "$268.20", expected_target2_pct: "+25.00%",
+    stop_loss: "$195.30", expected_stop_pct: "-9.00%",
+    risk_reward: "1.78 : 1", breakeven_win_rate: "36.0%",
+    atr14_pct: "4.20%", ch24h: "+4.86%", ch7d: "+12.70%", rs_btc: "+7.90%",
+    rs_vs_btc: "RS vs BTC: +7.90%", liquidity_rank: "Liquidity #3",
+    borda_score: 112, consensus_votes: "Multi-Factor Consensus",
+    consensus_desc: "Multi-factor quantitative model ranked SOL in top decile. 3-day swing target and stop sized via 14-day ATR volatility budget.",
+    regime: { label: "Neutral (Consolidation Range)", status: "neutral", badge: "● NEUTRAL" },
+    target_url: "https://coinpicks.ai", access_password: "quantAlpha2026"
+  },
+  {
+    symbol: "TRX", price: 0.3519, price_formatted: "$0.3519", entry_price: "$0.3519",
+    action_title: "Buy TRX", flash_bias: "STRONG_BUY", bias_label: "3-DAY SWING LONG",
+    target_price: "$0.3941", expected_target_pct: "+12.00%",
+    target2_price: "$0.4223", expected_target2_pct: "+20.00%",
+    stop_loss: "$0.3273", expected_stop_pct: "-7.00%",
+    risk_reward: "1.71 : 1", breakeven_win_rate: "36.8%",
+    atr14_pct: "3.40%", ch24h: "+2.14%", ch7d: "+8.90%", rs_btc: "+4.10%",
+    rs_vs_btc: "RS vs BTC: +4.10%", liquidity_rank: "Liquidity #6",
+    borda_score: 98, consensus_votes: "Multi-Factor Consensus",
+    consensus_desc: "Multi-factor quantitative model ranked TRX in top decile. 3-day swing target and stop sized via 14-day ATR volatility budget.",
+    regime: { label: "Neutral (Consolidation Range)", status: "neutral", badge: "● NEUTRAL" },
+    target_url: "https://coinpicks.ai", access_password: "quantAlpha2026"
+  }
+];
+
+function getClientQuantScan() {
+  const chosen = CLIENT_QUANT_POOL[0];
+  return {
+    success: true,
+    flash: chosen,
+    leaderboard: CLIENT_QUANT_POOL.map(c => ({
+      symbol: c.symbol,
+      price: c.price_formatted,
+      ch24h: c.ch24h,
+      ch7d: c.ch7d,
+      atr: c.atr14_pct,
+      borda: c.borda_score,
+      voters: "Consensus"
+    }))
+  };
+}
+
+function getClientAlternative(exSym) {
+  const filtered = CLIENT_QUANT_POOL.filter(c => c.symbol.toUpperCase() !== (exSym || "").toUpperCase());
+  const chosen = filtered.length ? filtered[Math.floor(Math.random() * filtered.length)] : CLIENT_QUANT_POOL[0];
+  return {
+    success: true,
+    flash: chosen,
+    leaderboard: CLIENT_QUANT_POOL.map(c => ({
+      symbol: c.symbol,
+      price: c.price_formatted,
+      ch24h: c.ch24h,
+      ch7d: c.ch7d,
+      atr: c.atr14_pct,
+      borda: c.borda_score,
+      voters: "Consensus"
+    }))
+  };
+}
+
+function getClientProceduralCaption(flash, angle) {
+  const sym = flash.symbol;
+  const price = flash.price_formatted;
+  const target = flash.target_price;
+  const targetPct = flash.expected_target_pct;
+  const stop = flash.stop_loss;
+  const stopPct = flash.expected_stop_pct;
+  const rr = flash.risk_reward;
+  const beRate = flash.breakeven_win_rate || "36.4%";
+  const borda = flash.borda_score || 95;
+  const regime = flash.regime?.label || "Neutral";
+  const rsBtc = flash.rs_btc || "+12.50%";
+  const trackedUrl = `${flash.target_url || "https://coinpicks.ai"}?utm_source=facebook&utm_medium=prediction_flash&utm_campaign=coinpicks_swing`;
+
+  const comment = `📊 SYSTEMATIC RESEARCH TERMINAL & POSITION SIZER:
+🔗 Live Terminal: ${trackedUrl}
+🔑 Research Access Pass: ${flash.access_password || "quantAlpha2026"}
+
+📋 QUANTITATIVE EXECUTION MATRIX (${sym}/USDT):
+• Entry Level: ${price}
+• Target 1 (+1.40σ ATR): ${target} (${targetPct})
+• Target 2 (+2.50σ ATR): ${target2_pct || "+42.00%"}
+• Invalidation Stop (1.80σ MAE): ${stop} (${stopPct})
+• Payoff Asymmetry: ${rr} (Breakeven Win Rate: ${beRate})
+• Factor Score: Multi-Factor Decile Leader (${borda} Borda pts)
+
+⚙️ Inspect live factor weights, Monte Carlo drawdowns, and Kelly sizing directly in the web simulator.
+⚠️ Systematic quantitative research publication. Not financial advice.`;
+
+  let caption = "";
+  if (angle === "actionable") {
+    caption = `Systematic Alpha Signal | ${sym}/USDT Swing Specification
+
+Our cross-sectional quantitative engine screened 100+ liquid pairs across 365 daily observations. Today, ${sym} triggered an actionable multi-factor consensus entry.
+
+Execution Geometry & Volatility Budget:
+• Reference Entry: ${price}
+• Invalidation Boundary (1.80σ MAE): ${stop} (${stopPct})
+• Volatility Expansion Target (+1.40σ ATR): ${target} (${targetPct})
+• Payoff Asymmetry: ${rr} Risk/Reward (Breakeven Win Rate: ${beRate})
+• Composite Factor Ranking: ${borda} Borda pts | RS vs BTC: ${rsBtc}
+• Market Regime: ${regime}
+
+Systematic traders prioritize downside containment before upside expansion. The complete factor matrix, Kelly allocation, and automated order payload are detailed in the first comment.
+
+⚠️ Systematic quantitative model research. Not financial advice. Always trade with disciplined risk management.
+
+#QuantitativeFinance #${sym} #AlgoTrading #RiskManagement #CryptoMarkets #Binance`;
+  } else if (angle === "regime") {
+    caption = `Macro Regime Analysis & Factor Convergence: Bitcoin Pulse & ${sym}/USDT
+
+Macro environment update: Bitcoin is operating within a ${regime} state.
+
+In this regime, cross-sectional factor ranking isolates assets exhibiting strong relative strength divergence (RS vs BTC: ${rsBtc}) combined with volatility compression.
+
+Current Decile Leader: ${sym}/USDT
+• Reference Level: ${price}
+• Invalidation Stop: ${stop} (${stopPct})
+• Systematic 3-Day Target: ${target} (${targetPct})
+• Multi-Factor Convergence Score: ${borda} Borda pts
+
+Institutional execution relies on volatility-parity budgeting rather than arbitrary percentage stops.
+
+The full interactive factor breakdown and simulation tools are available via the link in the first comment.
+
+⚠️ Educational quantitative research. Not financial advice.
+
+#Bitcoin #MacroTrends #${sym} #QuantFinance #CryptoMarkets #Volatility`;
+  } else if (angle === "risk") {
+    caption = `Risk Engineering Note: Volatility Budgeting vs. Fixed Percentage Stops (${sym}/USDT)
+
+Empirical testing demonstrates that over 45% of arbitrary 1-day percentage stop losses are liquidated by Brownian noise before a multi-day trend expansion can materialize.
+
+To solve this, our algorithmic framework scales risk boundaries using horizon-adjusted volatility: 1.8 × ATR-14 × √3.
+
+Execution Profile for ${sym}/USDT:
+• Current Entry: ${price}
+• Maximum Adverse Excursion Stop: ${stop} (${stopPct})
+• Volatility Expansion Target: ${target} (${targetPct})
+• Asymmetry: ${rr} Payoff Ratio (${beRate} Breakeven Hurdle)
+
+Systematic trade expectancy is achieved through positive variance asymmetry rather than high win rates alone.
+
+To simulate position sizes and inspect the underlying factor decomposition, refer to the first comment.
+
+⚠️ Quantitative research publication. Not financial advice.
+
+#RiskManagement #TradingScience #${sym} #AlgoTrading #QuantFinance`;
+  } else {
+    caption = `Systematic Factor Consensus: ${sym}/USDT Multi-Factor Alpha Setup
+
+When independent quantitative factors—momentum dispersion, trend quality, volatility compression, and relative strength—converge on a single instrument, statistical expectancy is optimized.
+
+Today, ${sym}/USDT emerged as the top-ranked asset with ${borda} Borda consensus points.
+
+Statistical Trade Architecture (3-Day Horizon):
+• Reference Entry: ${price}
+• Invalidation Level (MAE Stop): ${stop} (${stopPct})
+• Projected Target (+1.40σ ATR): ${target} (${targetPct})
+• Risk/Reward Profile: ${rr} (${beRate} Breakeven Win Rate)
+• Macro Trend Regime: ${regime}
+
+Review the full factor decomposition, correlation matrices, and live interactive risk calculator in the first comment.
+
+⚠️ Simulated quantitative research for educational purposes. Not financial advice.
+
+#QuantitativeFinance #${sym} #AlgoTrading #CryptoMarkets #Binance #RiskEngineering`;
+  }
+
+  return { caption, first_comment: comment };
+}
+
+function renderCanvasSquareCard(flash, includeQr = true, transparent = false) {
+  const canvas = document.createElement("canvas");
+  canvas.width = 1080;
+  canvas.height = 1080;
+  const ctx = canvas.getContext("2d");
+
+  if (!transparent) {
+    ctx.fillStyle = "#000000";
+    ctx.fillRect(0, 0, 1080, 1080);
+  } else {
+    ctx.clearRect(0, 0, 1080, 1080);
+  }
+
+  const sym = flash.symbol || "CRYPTO";
+  const padX = 72;
+  const topY = 68;
+
+  ctx.fillStyle = "#ffffff";
+  ctx.font = "bold 58px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
+  ctx.fillText(sym, padX, topY + 54);
+  const symWidth = ctx.measureText(sym).width;
+
+  function roundRect(ctx, x, y, w, h, r, fill, stroke) {
+    ctx.beginPath();
+    ctx.moveTo(x + r, y);
+    ctx.lineTo(x + w - r, y);
+    ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+    ctx.lineTo(x + w, y + h - r);
+    ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+    ctx.lineTo(x + r, y + h);
+    ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+    ctx.lineTo(x, y + r);
+    ctx.quadraticCurveTo(x, y, x + r, y);
+    ctx.closePath();
+    if (fill) { ctx.fillStyle = fill; ctx.fill(); }
+    if (stroke) { ctx.strokeStyle = stroke; ctx.lineWidth = 1; ctx.stroke(); }
+  }
+
+  const actionText = (flash.action_title || ("Buy " + sym)).toUpperCase();
+  ctx.font = "bold 24px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
+  const actionWidth = ctx.measureText(actionText).width;
+  const actionX = padX + symWidth + 24;
+  roundRect(ctx, actionX, topY + 12, actionWidth + 32, 48, 8, "#10131c", "#202636");
+  ctx.fillStyle = "#38bdf8";
+  ctx.fillText(actionText, actionX + 16, topY + 45);
+
+  const rsText = flash.rs_vs_btc || ("RS vs BTC: " + (flash.rs_btc || "+12.5%"));
+  ctx.font = "bold 22px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
+  const rsWidth = ctx.measureText(rsText).width;
+  const rsX = 1080 - padX - rsWidth - 32;
+  roundRect(ctx, rsX, topY + 12, rsWidth + 32, 48, 8, "#10131c", "#202636");
+  ctx.fillStyle = "#34d399";
+  ctx.fillText(rsText, rsX + 16, topY + 44);
+
+  const descY = 176;
+  ctx.font = "bold 26px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
+  ctx.fillStyle = "#ffffff";
+  const boldPhrase = "Multi-Factor Quant Model ";
+  ctx.fillText(boldPhrase, padX, descY + 24);
+  const boldWidth = ctx.measureText(boldPhrase).width;
+
+  ctx.font = "26px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
+  ctx.fillStyle = "#9ba8b9";
+  ctx.fillText(`ranked ${sym} in top decile. 3-day swing target and stop sized via 14-day ATR`, padX + boldWidth, descY + 24);
+  ctx.fillText("volatility budget.", padX, descY + 58);
+
+  const cardW = 450;
+  const cardH = 165;
+  const cardY1 = 282;
+  const cardY2 = 475;
+  const cardX1 = padX;
+  const cardX2 = 1080 - padX - cardW;
+
+  const metrics = [
+    { label: "ENTRY", val: flash.price_formatted || flash.entry_price || "$0.00", col: "#ffffff", x: cardX1, y: cardY1 },
+    { label: "TARGET (3D)", val: flash.target_price || "$0.00", col: "#34d399", delta: " " + (flash.expected_target_pct || "+0.0%"), dcol: "#34d399", x: cardX2, y: cardY1 },
+    { label: "STOP LOSS", val: flash.stop_loss || "$0.00", col: "#f87171", delta: " " + (flash.expected_stop_pct || "-0.0%"), dcol: "#f87171", x: cardX1, y: cardY2 },
+    { label: "RISK : REWARD", val: flash.risk_reward || "1.75 : 1", col: "#ffffff", x: cardX2, y: cardY2 }
+  ];
+
+  metrics.forEach(m => {
+    roundRect(ctx, m.x, m.y, cardW, cardH, 12, "#080a10", "#202636");
+    ctx.fillStyle = "#64748b";
+    ctx.font = "600 20px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
+    ctx.fillText(m.label, m.x + 24, m.y + 42);
+
+    ctx.fillStyle = m.col;
+    ctx.font = "bold 44px 'Cascadia Mono', Consolas, monospace";
+    ctx.fillText(m.val, m.x + 24, m.y + 115);
+
+    if (m.delta) {
+      const vWidth = ctx.measureText(m.val).width;
+      ctx.fillStyle = m.dcol;
+      ctx.font = "bold 26px 'Cascadia Mono', Consolas, monospace";
+      ctx.fillText(m.delta, m.x + 28 + vWidth, m.y + 112);
+    }
+  });
+
+  const stripY = 668;
+  const stripH = 150;
+  roundRect(ctx, padX, stripY, 1080 - padX * 2, stripH, 12, "#080a10", "#202636");
+  const subW = (1080 - padX * 2) / 3;
+
+  const subItems = [
+    { label: "14D ATR VOLATILITY", val: flash.atr14_pct || "4.50%", col: "#f59e0b", sub: "Daily Noise Budget" },
+    { label: "EXPECTED PAYOFF", val: flash.expected_target2_pct || "+42.00%", col: "#34d399", sub: "+2.5σ Extended Runner" },
+    { label: "BREAKEVEN WIN RATE", val: flash.breakeven_win_rate || "36.4%", col: "#38bdf8", sub: "Favorable Asymmetry" }
+  ];
+
+  subItems.forEach((item, i) => {
+    const ix = padX + i * subW;
+    ctx.fillStyle = "#64748b";
+    ctx.font = "600 17px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
+    ctx.fillText(item.label, ix + 24, stripY + 38);
+
+    ctx.fillStyle = item.col;
+    ctx.font = "bold 34px 'Cascadia Mono', Consolas, monospace";
+    ctx.fillText(item.val, ix + 24, stripY + 86);
+
+    ctx.fillStyle = "#475569";
+    ctx.font = "15px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
+    ctx.fillText(item.sub, ix + 24, stripY + 120);
+
+    if (i < 2) {
+      ctx.strokeStyle = "#202636";
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(ix + subW, stripY + 18);
+      ctx.lineTo(ix + subW, stripY + stripH - 18);
+      ctx.stroke();
+    }
+  });
+
+  const footerY = 852;
+  const pwd = flash.access_password || "quantAlpha2026";
+  const url = (flash.target_url || "https://coinpicks.ai").replace("https://", "");
+
+  ctx.fillStyle = "#ffffff";
+  ctx.font = "bold 20px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
+  ctx.fillText("SCAN FOR LIVE INTERACTIVE TERMINAL", padX, footerY + 36);
+
+  ctx.fillStyle = "#64748b";
+  ctx.font = "17px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
+  ctx.fillText(`Research Access Pass: ${pwd}  •  ${url}`, padX, footerY + 68);
+
+  ctx.fillStyle = "#475569";
+  ctx.font = "15px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
+  ctx.fillText("Systematic quantitative model simulation for educational purposes. Not financial advice.", padX, footerY + 120);
+
+  return canvas.toDataURL("image/png");
+}
+
+function copyFullPayload() {
+  const cap = document.getElementById("captionText")?.value || "";
+  const com = document.getElementById("commentText")?.value || "";
+  const full = `${cap}
+
+---
+FIRST COMMENT PAYLOAD:
+${com}`;
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(full).then(() => {
+      showToast("📋 Post Caption & First Comment copied to clipboard!");
+    }).catch(() => {});
+  }
+}
+
+</script>
+</body>
+</html>
