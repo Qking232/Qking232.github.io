@@ -571,6 +571,7 @@
       <label>CommandCode Provider API Key (Section 4 Auth):</label>
       <div style="display:flex; gap:6px;">
         <input type="password" id="settingCmdKey" placeholder="user_..." style="flex:1;">
+        <button type="button" onclick="toggleKeyVisibility('settingCmdKey', this)" title="Show/Hide Key" style="padding:7px 10px;">👁️</button>
         <button type="button" onclick="verifyCmdKey()">Verify Key</button>
       </div>
     </div>
@@ -603,7 +604,10 @@
 
     <div class="form-group">
       <label>Meta Facebook Page Access Token (v26.0):</label>
-      <input type="password" id="settingPageToken" placeholder="EAA...">
+      <div style="display:flex; gap:6px;">
+        <input type="password" id="settingPageToken" placeholder="EAA..." style="flex:1;">
+        <button type="button" onclick="toggleKeyVisibility('settingPageToken', this)" title="Show/Hide Token" style="padding:7px 10px;">👁️</button>
+      </div>
     </div>
 
     <div style="background:#080a10; padding:10px 12px; border-radius:8px; border:1px solid var(--card-border); font-size:12px; color:var(--muted); display:flex; justify-content:space-between; align-items:center;">
@@ -613,9 +617,12 @@
       </a>
     </div>
 
-    <div style="display:flex; justify-content:flex-end; gap:8px; margin-top:8px;">
-      <button onclick="testFacebookCredentials()">Verify FB Token</button>
-      <button class="primary" onclick="saveSettings()">Save Configuration</button>
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-top:8px;">
+      <button type="button" style="color:var(--rose); border-color:rgba(248, 113, 113, 0.35);" onclick="clearSavedKeys()">🗑️ Clear Saved Keys</button>
+      <div style="display:flex; gap:8px;">
+        <button onclick="testFacebookCredentials()">Verify FB Token</button>
+        <button class="primary" onclick="saveSettings()">Save Configuration</button>
+      </div>
     </div>
   </div>
 </div>
@@ -706,16 +713,45 @@ window.addEventListener("DOMContentLoaded", async () => {
 });
 
 async function loadSettings() {
+  // 1. Try local backend first
   try {
     const res = await fetch(API_BASE + "/api/settings");
     const data = await res.json();
-    document.getElementById("settingTargetUrl").value = data.target_url || "https://coinpicks.ai";
-    document.getElementById("settingPassword").value = data.access_password || "quantAlpha2026";
-    document.getElementById("siteUrlShort").textContent = (data.target_url || "coinpicks.ai").replace("https://", "").replace(/\/$/, "");
+    if (data.target_url) document.getElementById("settingTargetUrl").value = data.target_url;
+    if (data.access_password) document.getElementById("settingPassword").value = data.access_password;
     if (data.fb_page_id) document.getElementById("settingPageId").value = data.fb_page_id;
     if (data.fb_app_id) document.getElementById("settingAppId").value = data.fb_app_id;
     if (data.fb_graph_version) document.getElementById("settingGraphVersion").value = data.fb_graph_version;
-  } catch (e) { console.error(e); }
+    if (data.target_url) document.getElementById("siteUrlShort").textContent = data.target_url.replace("https://", "").replace(/\/$/, "");
+  } catch (e) {
+    console.log("Local backend settings not reachable, checking browser localStorage vault...");
+  }
+
+  // 2. Read from personal browser localStorage vault (Safe for GitHub Pages)
+  const localCmdKey = localStorage.getItem("coinpicks_cmd_key");
+  const localFbToken = localStorage.getItem("coinpicks_fb_token");
+  const localPageId = localStorage.getItem("coinpicks_page_id");
+  const localTargetUrl = localStorage.getItem("coinpicks_target_url");
+  const localPassword = localStorage.getItem("coinpicks_password");
+
+  if (localCmdKey) {
+    document.getElementById("settingCmdKey").value = localCmdKey;
+    document.getElementById("cmdStatusPill").className = "pill cmd-active";
+    document.getElementById("cmdStatusTxt").textContent = "API Key Saved (Vault)";
+  }
+  if (localFbToken) {
+    document.getElementById("settingPageToken").value = localFbToken;
+  }
+  if (localPageId) {
+    document.getElementById("settingPageId").value = localPageId;
+  }
+  if (localTargetUrl) {
+    document.getElementById("settingTargetUrl").value = localTargetUrl;
+    document.getElementById("siteUrlShort").textContent = localTargetUrl.replace("https://", "").replace(/\/$/, "");
+  }
+  if (localPassword) {
+    document.getElementById("settingPassword").value = localPassword;
+  }
 }
 
 async function loadCommandCodeModels() {
@@ -1399,34 +1435,93 @@ async function testFacebookCredentials() {
   }
 }
 
-async function saveSettings() {
-  const form = new FormData();
-  form.append("target_url", document.getElementById("settingTargetUrl").value);
-  form.append("access_password", document.getElementById("settingPassword").value);
+function toggleKeyVisibility(inputId, btn) {
+  const el = document.getElementById(inputId);
+  if (!el) return;
+  if (el.type === "password") {
+    el.type = "text";
+    if (btn) btn.textContent = "🙈";
+  } else {
+    el.type = "password";
+    if (btn) btn.textContent = "👁️";
+  }
+}
+
+function clearSavedKeys() {
+  if (!confirm("Are you sure you want to clear your saved API keys and tokens from this browser vault?")) return;
+  localStorage.removeItem("coinpicks_cmd_key");
+  localStorage.removeItem("coinpicks_fb_token");
+  localStorage.removeItem("coinpicks_page_id");
+  localStorage.removeItem("coinpicks_target_url");
+  localStorage.removeItem("coinpicks_password");
+
+  document.getElementById("settingCmdKey").value = "";
+  document.getElementById("settingPageToken").value = "";
   
-  const cmdKey = document.getElementById("settingCmdKey").value;
-  if (cmdKey) form.append("command_code_key", cmdKey);
+  const pill = document.getElementById("cmdStatusPill");
+  if (pill) {
+    pill.className = "pill cmd-inactive";
+    const txt = document.getElementById("cmdStatusTxt");
+    if (txt) txt.textContent = "No API Key";
+  }
+  showToast("🗑️ Saved keys cleared from browser vault.");
+}
 
-  const pageId = document.getElementById("settingPageId").value;
-  const token = document.getElementById("settingPageToken").value;
-  if (pageId) form.append("page_id", pageId);
-  if (token) form.append("page_token", token);
+async function saveSettings() {
+  const targetUrl = document.getElementById("settingTargetUrl").value.trim();
+  const password = document.getElementById("settingPassword").value.trim();
+  const cmdKey = document.getElementById("settingCmdKey").value.trim();
+  const pageId = document.getElementById("settingPageId").value.trim();
+  const token = document.getElementById("settingPageToken").value.trim();
 
-  await fetch(API_BASE + "/api/settings/save", { method: "POST", body: form });
-
-  if (pageId && token) {
-    const fbForm = new FormData();
-    fbForm.append("page_id", pageId);
-    fbForm.append("page_token", token);
-    await fetch(API_BASE + "/api/facebook/save-credentials", { method: "POST", body: fbForm });
+  // 1. Always persist safely to private client-side browser vault (localStorage)
+  // This allows persistent usage on GitHub Pages without leaking keys into Git commits!
+  if (cmdKey) {
+    localStorage.setItem("coinpicks_cmd_key", cmdKey);
+    const pill = document.getElementById("cmdStatusPill");
+    if (pill) {
+      pill.className = "pill cmd-active";
+      const txt = document.getElementById("cmdStatusTxt");
+      if (txt) txt.textContent = "API Key Saved (Vault)";
+    }
+  } else {
+    localStorage.removeItem("coinpicks_cmd_key");
   }
 
-  showToast("Settings saved successfully!");
+  if (token) localStorage.setItem("coinpicks_fb_token", token);
+  else localStorage.removeItem("coinpicks_fb_token");
+
+  if (pageId) localStorage.setItem("coinpicks_page_id", pageId);
+  if (targetUrl) localStorage.setItem("coinpicks_target_url", targetUrl);
+  if (password) localStorage.setItem("coinpicks_password", password);
+
+  // 2. If local python backend is active, also sync to .env file
+  try {
+    const form = new FormData();
+    form.append("target_url", targetUrl);
+    form.append("access_password", password);
+    if (cmdKey) form.append("command_code_key", cmdKey);
+    if (pageId) form.append("page_id", pageId);
+    if (token) form.append("page_token", token);
+
+    await fetch(API_BASE + "/api/settings/save", { method: "POST", body: form });
+
+    if (pageId && token) {
+      const fbForm = new FormData();
+      fbForm.append("page_id", pageId);
+      fbForm.append("page_token", token);
+      await fetch(API_BASE + "/api/facebook/save-credentials", { method: "POST", body: fbForm });
+    }
+  } catch (err) {
+    console.log("Local backend offline - settings successfully preserved in Browser Vault.");
+  }
+
+  showToast("✅ Settings & Keys saved in secure browser vault!");
   closeSettingsModal();
   await loadSettings();
-  await loadCommandCodeModels();
-  await checkFacebookStatus();
-  await runQuantScan();
+  try { await loadCommandCodeModels(); } catch(e){}
+  try { await checkFacebookStatus(); } catch(e){}
+  try { await runQuantScan(); } catch(e){}
 }
 
 function showToast(msg) {
