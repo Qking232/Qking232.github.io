@@ -8,30 +8,29 @@
 <style>
   :root {
     --bg: #000000;
-    --card: #0c0d12;
-    --card-hi: #141720;
-    --card-border: rgba(255, 255, 255, 0.12);
-    --card-border-hi: rgba(255, 255, 255, 0.24);
-    --text: #f1f2f5;
-    --muted: #9ba3af;
-    --dim: #64748b;
-    --cyan: #38bdf8;
-    --mint: #34d399;
-    --rose: #f87171;
-    --gold: #f59e0b;
+    --card: #08080a;
+    --card-hi: #121215;
+    --card-border: #18181c;
+    --card-border-hi: #27272e;
+    --text: #fafafa;
+    --muted: #88888e;
+    --dim: #505056;
+    --mint: #10b981;
+    --rose: #f43f5e;
     --radius: 12px;
-    --font: -apple-system, BlinkMacSystemFont, 'Segoe UI Variable Display', 'Segoe UI', system-ui, Roboto, sans-serif;
+    --font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, Roboto, sans-serif;
     --mono: 'Cascadia Mono', 'SF Mono', Consolas, 'Roboto Mono', monospace;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
-    background-color: var(--bg);
+    background-color: #000000;
     color: var(--text);
     font-family: var(--font);
-    font-size: 14.5px;
-    line-height: 1.55;
+    font-size: 14px;
+    line-height: 1.5;
     min-height: 100vh;
     padding-bottom: 60px;
+    -webkit-font-smoothing: antialiased;
   }
   .wrap { max-width: 1320px; margin: 0 auto; padding: 24px 20px; }
 
@@ -43,58 +42,58 @@
     justify-content: space-between;
     gap: 16px;
     padding: 16px 20px;
-    background: var(--card);
+    background: #08080a;
     border: 1px solid var(--card-border);
     border-radius: var(--radius);
     margin-bottom: 24px;
   }
-  .brand { display: flex; align-items: center; gap: 14px; }
+  .brand { display: flex; align-items: center; gap: 12px; }
   .logo-box {
-    width: 42px; height: 42px; border-radius: 10px; background: #141824;
-    border: 1px solid rgba(56, 189, 248, 0.35); color: var(--cyan);
-    display: grid; place-items: center; font-family: var(--mono); font-weight: 700; font-size: 18px;
+    width: 38px; height: 38px; border-radius: 8px; background: #000000;
+    border: 1px solid var(--card-border); color: #ffffff;
+    display: grid; place-items: center; font-family: var(--mono); font-weight: 700; font-size: 16px;
   }
-  .brand-title h1 { font-size: 19px; font-weight: 650; letter-spacing: -0.02em; }
-  .brand-title p { font-size: 12.5px; color: var(--muted); }
+  .brand-title h1 { font-size: 17px; font-weight: 600; letter-spacing: -0.01em; color: #ffffff; }
+  .brand-title p { font-size: 12px; color: var(--muted); }
 
-  .status-pills { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .status-pills { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
   .pill {
-    display: inline-flex; align-items: center; gap: 7px; padding: 6px 12px;
-    border-radius: 8px; font-size: 12px; font-weight: 550; border: 1px solid var(--card-border);
-    background: #11131a; color: var(--muted);
+    display: inline-flex; align-items: center; gap: 6px; padding: 5px 11px;
+    border-radius: 6px; font-size: 11.5px; font-weight: 500; border: 1px solid var(--card-border);
+    background: #000000; color: var(--muted); text-decoration: none; transition: border-color 0.15s;
   }
-  .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--dim); }
+  .pill:hover { border-color: var(--card-border-hi); color: var(--text); }
+  .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--dim); }
   .pill.risk-on .dot { background: var(--mint); }
-  .pill.risk-on { color: #d1fae5; border-color: rgba(52, 211, 153, 0.3); background: rgba(52, 211, 153, 0.08); }
-  .pill.neutral .dot { background: var(--gold); }
-  .pill.neutral { color: #fef3c7; border-color: rgba(245, 158, 11, 0.3); background: rgba(245, 158, 11, 0.08); }
+  .pill.risk-on { color: #ffffff; }
+  .pill.neutral .dot { background: #e4e4e7; }
+  .pill.neutral { color: #ffffff; }
   .pill.risk-off .dot { background: var(--rose); }
-  .pill.risk-off { color: #fee2e2; border-color: rgba(248, 113, 113, 0.3); background: rgba(248, 113, 113, 0.08); }
-
-  .pill.cmd-active .dot { background: var(--cyan); }
-  .pill.cmd-active { color: #e0f2fe; border-color: rgba(56, 189, 248, 0.3); background: rgba(56, 189, 248, 0.08); }
-  .pill.fb-sim .dot { background: var(--gold); }
+  .pill.risk-off { color: #ffffff; }
+  .pill.cmd-active .dot { background: #ffffff; }
+  .pill.cmd-active { color: #ffffff; }
+  .pill.fb-sim .dot { background: #e4e4e7; }
 
   /* Buttons */
   button {
-    font: inherit; font-size: 13px; font-weight: 600; color: var(--text); background: var(--card);
-    border: 1px solid var(--card-border); border-radius: 8px; padding: 7px 14px; cursor: pointer;
+    font: inherit; font-size: 12.5px; font-weight: 500; color: var(--text); background: #000000;
+    border: 1px solid var(--card-border); border-radius: 6px; padding: 6px 13px; cursor: pointer;
     transition: all 0.15s ease; display: inline-flex; align-items: center; gap: 6px;
   }
-  button:hover { background: var(--card-hi); border-color: var(--card-border-hi); }
-  button.primary { background: #f1f2f5; color: #000; border: 1px solid transparent; }
-  button.primary:hover { background: #fff; }
-  button.action-btn { background: rgba(56, 189, 248, 0.12); color: #38bdf8; border-color: rgba(56, 189, 248, 0.35); }
-  button.action-btn:hover { background: rgba(56, 189, 248, 0.22); border-color: #38bdf8; }
-  button.publish-btn { background: #16a34a; color: #fff; border: 1px solid transparent; font-size: 14px; padding: 10px 18px; }
-  button.publish-btn:hover { background: #22c55e; }
-  button[disabled] { opacity: 0.45; cursor: not-allowed; }
+  button:hover { background: var(--card-hi); border-color: var(--card-border-hi); color: #ffffff; }
+  button.primary { background: #ffffff; color: #000000; border: 1px solid transparent; font-weight: 600; }
+  button.primary:hover { background: #e5e5e5; }
+  button.action-btn { background: #000000; color: #ffffff; border-color: var(--card-border); }
+  button.action-btn:hover { background: #121215; border-color: var(--card-border-hi); }
+  button.publish-btn { background: #ffffff; color: #000000; border: 1px solid transparent; font-size: 13px; font-weight: 600; padding: 7px 16px; border-radius: 6px; }
+  button.publish-btn:hover { background: #e5e5e5; }
+  button[disabled] { opacity: 0.35; cursor: not-allowed; }
 
   select {
-    background: #080a10; color: #fff; border: 1px solid var(--card-border);
-    border-radius: 8px; padding: 7px 12px; font-size: 13px; font-family: inherit;
+    background: #000000; color: #ffffff; border: 1px solid var(--card-border);
+    border-radius: 6px; padding: 6px 11px; font-size: 12.5px; font-family: inherit;
   }
-  select:focus { outline: none; border-color: var(--cyan); }
+  select:focus { outline: none; border-color: var(--card-border-hi); }
 
   /* Layout Grid */
   .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 24px; }
@@ -116,52 +115,45 @@
     padding-bottom: 12px;
     border-bottom: 1px solid var(--card-border);
   }
-  .card-header h2 { font-size: 16px; font-weight: 650; display: flex; align-items: center; gap: 8px; }
+  .card-header h2 { font-size: 15px; font-weight: 600; display: flex; align-items: center; gap: 8px; color: #ffffff; }
   .step-num {
-    width: 22px; height: 22px; border-radius: 50%; background: #1a202c; color: var(--cyan);
-    font-size: 11.5px; font-weight: 700; display: grid; place-items: center;
+    width: 22px; height: 22px; border-radius: 5px; background: #000000; color: #88888e; border: 1px solid var(--card-border);
+    font-size: 11px; font-weight: 600; display: grid; place-items: center; font-family: var(--mono);
   }
 
-  /* Scan Verdict HUD */
+  /* Scan Verdict HUD - Pure OLED Grid */
   .verdict-hud {
-    background: #080a10;
-    border: 1px solid rgba(56, 189, 248, 0.25);
-    border-radius: 10px;
-    padding: 16px;
+    background: #000000;
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    padding: 14px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 12px;
   }
   @media (max-width: 650px) { .verdict-hud { grid-template-columns: 1fr 1fr; } }
-  .hud-item { display: flex; flex-direction: column; gap: 3px; }
-  .hud-label { font-size: 11.5px; color: var(--muted); text-transform: uppercase; font-weight: 600; letter-spacing: 0.04em; }
-  .hud-val { font-size: 18px; font-weight: 700; color: #fff; font-family: var(--mono); }
+  .hud-item { display: flex; flex-direction: column; gap: 2px; }
+  .hud-label { font-size: 11px; color: var(--dim); text-transform: uppercase; font-weight: 600; letter-spacing: 0.05em; }
+  .hud-val { font-size: 17px; font-weight: 600; color: #ffffff; font-family: var(--mono); }
   .hud-sub { font-size: 11px; color: var(--dim); }
   .hud-val.mint { color: var(--mint); }
   .hud-val.rose { color: var(--rose); }
-  .hud-val.cyan { color: var(--cyan); }
-  .hud-val.gold { color: var(--gold); }
+  .hud-val.cyan { color: #ffffff; }
+  .hud-val.gold { color: #ffffff; }
 
   /* Leaderboard Table */
-  .table-wrap { overflow-x: auto; border: 1px solid var(--card-border); border-radius: 8px; }
+  .table-wrap { overflow-x: auto; border: 1px solid var(--card-border); border-radius: 8px; background: #000000; }
   table { width: 100%; border-collapse: collapse; font-size: 12.5px; text-align: left; }
-  th, td { padding: 9px 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
-  th { background: #11131a; color: var(--muted); font-weight: 600; font-size: 11.5px; text-transform: uppercase; }
-  tr:hover td { background: rgba(255, 255, 255, 0.02); }
+  th, td { padding: 9px 12px; border-bottom: 1px solid var(--card-border); }
+  th { background: #000000; color: var(--dim); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; }
+  tr:hover td { background: #0a0a0d; }
 
-  /* Canvas Card Preview (Transparency Checkerboard) */
+  /* Canvas Card Preview - Pure OLED Pitch Black Stage */
   .preview-stage {
-    background-color: #080a0f;
-    background-image:
-      linear-gradient(45deg, #121622 25%, transparent 25%),
-      linear-gradient(-45deg, #121622 25%, transparent 25%),
-      linear-gradient(45deg, transparent 75%, #121622 75%),
-      linear-gradient(-45deg, transparent 75%, #121622 75%);
-    background-size: 18px 18px;
-    background-position: 0 0, 0 9px, 9px -9px, -9px 0px;
+    background-color: #000000;
     border: 1px solid var(--card-border);
-    border-radius: 10px;
-    padding: 12px;
+    border-radius: 8px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,107 +163,109 @@
   .preview-stage img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
-    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 6px;
+    box-shadow: 0 12px 36px rgba(0,0,0,0.95);
+    border: 1px solid var(--card-border);
   }
-  .format-selector { display: flex; gap: 8px; align-items: center; }
+  .format-selector { display: flex; gap: 6px; align-items: center; }
   .seg-btn {
-    padding: 5px 12px; border-radius: 6px; font-size: 12px; background: #141720;
-    color: var(--muted); border: 1px solid var(--card-border); cursor: pointer;
+    padding: 5px 11px; border-radius: 5px; font-size: 11.5px; background: #000000;
+    color: var(--muted); border: 1px solid var(--card-border); cursor: pointer; transition: all 0.15s ease;
   }
-  .seg-btn.active { background: #38bdf8; color: #000; font-weight: 600; border-color: transparent; }
+  .seg-btn:hover { color: #ffffff; border-color: var(--card-border-hi); }
+  .seg-btn.active { background: #ffffff; color: #000000; font-weight: 600; border-color: transparent; }
 
   /* AI Copywriting Studio */
   .angle-tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
   .tab-btn {
-    padding: 6px 12px; border-radius: 6px; font-size: 12px; background: #11131a;
-    border: 1px solid var(--card-border); color: var(--muted); cursor: pointer;
+    padding: 5px 11px; border-radius: 5px; font-size: 11.5px; background: #000000;
+    border: 1px solid var(--card-border); color: var(--muted); cursor: pointer; transition: all 0.15s ease;
   }
-  .tab-btn.active { background: #222736; color: #fff; border-color: rgba(255,255,255,0.3); font-weight: 600; }
+  .tab-btn:hover { color: #ffffff; border-color: var(--card-border-hi); }
+  .tab-btn.active { background: #121215; color: #ffffff; border-color: var(--card-border-hi); font-weight: 600; }
 
   textarea {
     width: 100%;
-    background: #080a10;
+    background: #000000;
     color: var(--text);
     border: 1px solid var(--card-border);
-    border-radius: 8px;
+    border-radius: 6px;
     padding: 12px;
     font-family: inherit;
-    font-size: 13.5px;
+    font-size: 13px;
     line-height: 1.5;
     resize: vertical;
     min-height: 150px;
   }
-  textarea:focus { outline: none; border-color: var(--cyan); }
+  textarea:focus { outline: none; border-color: var(--card-border-hi); }
 
   /* First Comment Box */
   .comment-box {
-    background: #090e18;
-    border: 1px solid rgba(56, 189, 248, 0.3);
+    background: #000000;
+    border: 1px solid var(--card-border);
     border-radius: 8px;
     padding: 12px;
   }
   .comment-header {
     display: flex; align-items: center; justify-content: space-between;
-    margin-bottom: 8px; font-size: 12px; color: var(--cyan); font-weight: 600;
+    margin-bottom: 8px; font-size: 11px; color: var(--dim); font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em;
   }
   .comment-textarea {
-    min-height: 120px; font-family: var(--mono); font-size: 12px; background: #05070c;
+    min-height: 110px; font-family: var(--mono); font-size: 12px; background: #000000;
   }
 
   /* Facebook Mockup */
   .fb-mockup {
-    background: #18191a;
-    border: 1px solid #3a3b3c;
-    border-radius: 10px;
+    background: #000000;
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
     padding: 14px;
-    color: #e4e6eb;
+    color: #e4e4e7;
     font-family: system-ui, -apple-system, sans-serif;
   }
   .fb-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
   .fb-avatar {
-    width: 40px; height: 40px; border-radius: 50%; background: #242526;
-    display: grid; place-items: center; font-weight: 700; color: #38bdf8; font-family: var(--mono);
-    border: 1px solid #3a3b3c;
+    width: 38px; height: 38px; border-radius: 50%; background: #0a0a0d;
+    display: grid; place-items: center; font-weight: 700; color: #ffffff; font-family: var(--mono);
+    border: 1px solid var(--card-border);
   }
-  .fb-user { font-size: 14px; font-weight: 600; color: #e4e6eb; }
-  .fb-time { font-size: 12px; color: #b0b3b8; }
-  .fb-caption { font-size: 13.5px; line-height: 1.45; white-space: pre-wrap; margin-bottom: 12px; color: #e4e6eb; }
-  .fb-image-box { border-radius: 6px; overflow: hidden; margin-bottom: 12px; border: 1px solid #3a3b3c; }
+  .fb-user { font-size: 13.5px; font-weight: 600; color: #ffffff; }
+  .fb-time { font-size: 11.5px; color: var(--dim); }
+  .fb-caption { font-size: 13px; line-height: 1.45; white-space: pre-wrap; margin-bottom: 12px; color: #e4e4e7; }
+  .fb-image-box { border-radius: 6px; overflow: hidden; margin-bottom: 12px; border: 1px solid var(--card-border); }
   .fb-image-box img { width: 100%; display: block; }
   .fb-comment-preview {
-    background: #242526;
-    border-radius: 8px;
+    background: #08080a;
+    border-radius: 6px;
     padding: 10px 12px;
     margin-top: 10px;
-    font-size: 12.5px;
+    font-size: 12px;
     white-space: pre-wrap;
-    border-left: 3px solid #38bdf8;
+    border: 1px solid var(--card-border);
   }
-  .fb-comment-tag { font-size: 11px; font-weight: 700; color: #38bdf8; margin-bottom: 4px; text-transform: uppercase; }
+  .fb-comment-tag { font-size: 10.5px; font-weight: 600; color: var(--muted); margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.04em; }
 
   /* Modal */
   .modal-overlay {
-    position: fixed; inset: 0; background: rgba(0,0,0,0.85);
-    display: none; place-items: center; z-index: 999; backdrop-filter: blur(4px);
+    position: fixed; inset: 0; background: rgba(0,0,0,0.88);
+    display: none; place-items: center; z-index: 999; backdrop-filter: blur(6px);
   }
   .modal-overlay.open { display: grid; }
   .modal-card {
-    background: var(--card); border: 1px solid var(--card-border-hi); border-radius: 14px;
+    background: #08080a; border: 1px solid var(--card-border-hi); border-radius: 12px;
     width: 90%; max-width: 560px; padding: 24px; display: flex; flex-direction: column; gap: 16px;
   }
-  .form-group { display: flex; flex-direction: column; gap: 6px; }
-  .form-group label { font-size: 12.5px; color: var(--muted); font-weight: 600; }
+  .form-group { display: flex; flex-direction: column; gap: 5px; }
+  .form-group label { font-size: 12px; color: var(--muted); font-weight: 500; }
   .form-group input {
-    background: #080a10; color: #fff; border: 1px solid var(--card-border);
-    border-radius: 8px; padding: 9px 12px; font-size: 13.5px; font-family: inherit;
+    background: #000000; color: #ffffff; border: 1px solid var(--card-border);
+    border-radius: 6px; padding: 8px 11px; font-size: 13px; font-family: inherit;
   }
-  .form-group input:focus { outline: none; border-color: var(--cyan); }
+  .form-group input:focus { outline: none; border-color: var(--card-border-hi); }
   .toast {
-    position: fixed; bottom: 24px; right: 24px; background: #0c121e; border: 1px solid var(--cyan);
-    color: #fff; padding: 12px 20px; border-radius: 8px; font-size: 13.5px; display: none; z-index: 1000;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    position: fixed; bottom: 24px; right: 24px; background: #08080a; border: 1px solid var(--card-border-hi);
+    color: #ffffff; padding: 10px 18px; border-radius: 6px; font-size: 13px; display: none; z-index: 1000;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.9);
   }
   @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 </style>
@@ -282,10 +276,10 @@
   <!-- Top Cockpit Bar -->
   <header class="cockpit">
     <div class="brand">
-      <div class="logo-box">CP</div>
+      <div class="logo-box">◆</div>
       <div class="brand-title">
-        <h1>CoinPicks • Prediction Flash & Facebook Studio</h1>
-        <p>CoinPicks Systematic Swing Model &amp; CommandCode Provider AI</p>
+        <h1>QUANT ALGO STUDIO</h1>
+        <p>10-Model Systematic Consensus &amp; Meta Publishing</p>
       </div>
     </div>
     <div class="status-pills">
@@ -299,8 +293,8 @@
       <a href="#" target="_blank" class="pill" id="referralHeaderPill" title="Click to test your Referral Link">
         <span>🔗</span> <span id="referralHeaderTxt">Add Referral Link</span>
       </a>
-      <button class="publish-btn" style="padding:6px 14px; font-size:12.5px; font-weight:700; background:#16a34a; box-shadow:0 0 14px rgba(22, 163, 74, 0.4);" onclick="run1ClickAutoPost()" id="autoPilotHeaderBtn" title="Scan, generate card, write AI copy, and post directly to Facebook in 1 click">
-        🚀 1-Click Auto-Post
+      <button class="publish-btn" onclick="run1ClickAutoPost()" id="autoPilotHeaderBtn" title="Scan, generate card, write AI copy, and post directly to Facebook in 1 click">
+        ⚡ 1-Click Auto-Post
       </button>
       <button onclick="openSettingsModal()">⚙️ Settings</button>
     </div>
@@ -311,12 +305,12 @@
     <!-- Left Column: Quant Scan & Card Studio -->
     <div style="display: flex; flex-direction: column; gap: 20px;">
       
-      <!-- Step 1: Quant Scanner (CoinPicks Rev 4.0 Exact Algo) -->
+      <!-- Step 1: Quant Scanner (10-Model Consensus) -->
       <div class="card-box">
         <div class="card-header">
-          <h2><span class="step-num">1</span> CoinPicks Quantitative Algo Scan</h2>
+          <h2><span class="step-num">01</span> 10-Model Quantitative Algo Scan</h2>
           <div style="display:flex; gap:8px;">
-            <button class="action-btn" style="background:rgba(245, 158, 11, 0.15); color:#fbbf24; border-color:rgba(245, 158, 11, 0.35);" onclick="suggestAnotherCoin()" id="suggestCoinBtn" title="Discover a different top candidate from the quant matrix">🎲 Suggest Another Coin</button>
+            <button class="action-btn" onclick="suggestAnotherCoin()" id="suggestCoinBtn" title="Discover a different top candidate from the quant matrix">🎲 Suggest Another Coin</button>
             <button class="action-btn" id="runScanBtn" onclick="runQuantScan()">⚡ Run Live Scan</button>
           </div>
         </div>
@@ -368,9 +362,10 @@
       </div>
 
       <!-- Step 2: Prediction Flash Card Studio (3-Second Glance Redesign) -->
+      <!-- Step 2: Prediction Flash Card Studio (3-Second Glance Redesign) -->
       <div class="card-box">
         <div class="card-header">
-          <h2><span class="step-num">2</span> Prediction Flash Card Designer</h2>
+          <h2><span class="step-num">02</span> Flash Card Studio</h2>
           <div class="format-selector">
             <button class="seg-btn active" id="fmtSquare" onclick="setFormat('square')">📱 1080x1080 (Mobile Feed)</button>
             <button class="seg-btn" id="fmtLandscape" onclick="setFormat('landscape')">1200x630 (Desktop)</button>
@@ -378,16 +373,16 @@
         </div>
 
         <!-- 3-Second Glanceability Inspection Toolbar -->
-        <div style="display:flex; justify-content:space-between; align-items:center; background:#080a12; padding:8px 12px; border-radius:8px; border:1px solid var(--card-border); margin-bottom:10px; font-size:12px; flex-wrap:wrap; gap:8px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; background:#000000; padding:8px 12px; border-radius:6px; border:1px solid var(--card-border); margin-bottom:10px; font-size:12px; flex-wrap:wrap; gap:8px;">
           <div style="display:flex; align-items:center; gap:8px;">
-            <span style="color:var(--muted); font-weight:600;">Glance Scale:</span>
+            <span style="color:var(--dim); font-weight:600; text-transform:uppercase; font-size:11px; letter-spacing:0.04em;">Glance Scale:</span>
             <button class="seg-btn active" id="scaleMobile" onclick="setPreviewScale('mobile')" style="padding:3px 8px; font-size:11px;">📱 Mobile (280px)</button>
             <button class="seg-btn" id="scaleFeed" onclick="setPreviewScale('feed')" style="padding:3px 8px; font-size:11px;">💻 Feed (580px)</button>
             <button class="seg-btn" id="scaleFull" onclick="setPreviewScale('full')" style="padding:3px 8px; font-size:11px;">🔍 Full (100%)</button>
           </div>
-          <div style="color:var(--mint); font-weight:600; font-family:var(--mono); display:flex; align-items:center; gap:6px;">
-            <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:var(--mint); box-shadow:0 0 8px var(--mint);"></span>
-            <span>3-Sec Score: 100% (High Readability)</span>
+          <div style="color:var(--text); font-weight:500; font-family:var(--mono); display:flex; align-items:center; gap:6px; font-size:11.5px;">
+            <span style="display:inline-block; width:6px; height:6px; border-radius:50%; background:var(--mint);"></span>
+            <span>Glance Score: 100% (High Readability)</span>
           </div>
         </div>
 
@@ -422,7 +417,7 @@
       <!-- Step 3: CommandCode AI Copywriting & Traffic Funnel -->
       <div class="card-box">
         <div class="card-header">
-          <h2><span class="step-num">3</span> AI Copywriting &amp; Traffic Funnel</h2>
+          <h2><span class="step-num">03</span> AI Copywriting &amp; Traffic Funnel</h2>
           <div style="display:flex; gap:6px; align-items:center;">
             <label style="display:inline-flex; align-items:center; gap:4px; font-size:11.5px; color:var(--muted);">
               <input type="checkbox" id="zdrCheck"> ZDR (Section 4)
@@ -432,7 +427,7 @@
         </div>
 
         <!-- Section 3: Model Selector from CommandCode Provider API -->
-        <div style="display:flex; gap:10px; align-items:center; background:#080a10; padding:10px 12px; border-radius:8px; border:1px solid var(--card-border);">
+        <div style="display:flex; gap:10px; align-items:center; background:#000000; padding:10px 12px; border-radius:8px; border:1px solid var(--card-border);">
           <span style="font-size:12px; color:var(--muted); white-space:nowrap;">Provider Model:</span>
           <select id="cmdModelSelect" style="flex:1;" onchange="generateCaption()">
             <option value="deepseek/deepseek-v4-flash">deepseek/deepseek-v4-flash (Fast &amp; Unlimited)</option>
@@ -441,7 +436,7 @@
             <option value="minimax-m3">minimax-m3</option>
             <option value="claude-sonnet-4-6">claude-sonnet-4-6 (/messages)</option>
           </select>
-          <span style="font-size:11px; color:var(--cyan); font-family:var(--mono);" id="usageTag">Tokens: —</span>
+          <span style="font-size:11px; color:var(--text); font-family:var(--mono);" id="usageTag">Tokens: —</span>
         </div>
 
         <div>
@@ -474,7 +469,7 @@
       <!-- Step 4: Facebook Feed Simulator & Publishing (v26.0) -->
       <div class="card-box">
         <div class="card-header">
-          <h2><span class="step-num">4</span> Facebook Publishing (v26.0)</h2>
+          <h2><span class="step-num">04</span> Facebook Publishing (v26.0)</h2>
           <div class="format-selector">
             <button class="seg-btn active" id="btnModeFlash" onclick="setPublishMode('flash')">📸 Flash Card</button>
             <button class="seg-btn" id="btnModeDoc" onclick="setPublishMode('document')">📄 Strategy Document</button>
@@ -486,17 +481,17 @@
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; flex-wrap:wrap; gap:8px;">
             <span style="font-size:12px; color:var(--muted);">Post high-res prediction flash card + automated zero-penalty comment</span>
             <div style="display:flex; gap:8px;">
-              <button class="publish-btn" style="background:#16a34a; font-weight:700;" id="autoPilotStepBtn" onclick="run1ClickAutoPost()">🚀 1-Click Auto-Post</button>
-              <button class="publish-btn" id="publishBtn" onclick="handlePostIt()">Post It</button>
-              <button class="publish-btn" style="background:#2563eb;" id="popupBtn" onclick="handlePopupThis()">🪟 Popup This</button>
+              <button class="publish-btn" id="autoPilotStepBtn" onclick="run1ClickAutoPost()">⚡ 1-Click Auto-Post</button>
+              <button class="action-btn" id="publishBtn" onclick="handlePostIt()">Post It</button>
+              <button class="action-btn" id="popupBtn" onclick="handlePopupThis()">🪟 Popup This</button>
             </div>
           </div>
 
           <div class="fb-mockup">
             <div class="fb-header">
-              <div class="fb-avatar" id="fbMockAvatar">CP</div>
+              <div class="fb-avatar" id="fbMockAvatar">◆</div>
               <div>
-                <div class="fb-user" id="fbMockName">CoinPicks Quant Labs</div>
+                <div class="fb-user" id="fbMockName">Quant Algo Studio</div>
                 <div class="fb-time">Just now · 🌍 Public (Meta Graph v26.0)</div>
               </div>
             </div>
@@ -2474,16 +2469,16 @@ function renderCanvasSquareCard(flash, includeQr = true, transparent = false) {
   ctx.font = "bold 24px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
   const actionWidth = ctx.measureText(actionText).width;
   const actionX = padX + symWidth + 24;
-  roundRect(ctx, actionX, topY + 12, actionWidth + 32, 48, 8, "#10131c", "#202636");
-  ctx.fillStyle = "#38bdf8";
+  roundRect(ctx, actionX, topY + 12, actionWidth + 32, 48, 8, "#070709", "#18181c");
+  ctx.fillStyle = "#fafafa";
   ctx.fillText(actionText, actionX + 16, topY + 45);
 
   const rsText = flash.rs_vs_btc || ("RS vs BTC: " + (flash.rs_btc || "+12.5%"));
   ctx.font = "bold 22px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
   const rsWidth = ctx.measureText(rsText).width;
   const rsX = 1080 - padX - rsWidth - 32;
-  roundRect(ctx, rsX, topY + 12, rsWidth + 32, 48, 8, "#10131c", "#202636");
-  ctx.fillStyle = "#34d399";
+  roundRect(ctx, rsX, topY + 12, rsWidth + 32, 48, 8, "#070709", "#18181c");
+  ctx.fillStyle = "#10b981";
   ctx.fillText(rsText, rsX + 16, topY + 44);
 
   const descY = 176;
@@ -2494,7 +2489,7 @@ function renderCanvasSquareCard(flash, includeQr = true, transparent = false) {
   const boldWidth = ctx.measureText(boldPhrase).width;
 
   ctx.font = "26px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
-  ctx.fillStyle = "#9ba8b9";
+  ctx.fillStyle = "#88888e";
   ctx.fillText(`ranked ${sym} in top decile. 3-day swing target and stop sized via 14-day ATR`, padX + boldWidth, descY + 24);
   ctx.fillText("volatility budget.", padX, descY + 58);
 
@@ -2507,14 +2502,14 @@ function renderCanvasSquareCard(flash, includeQr = true, transparent = false) {
 
   const metrics = [
     { label: "ENTRY", val: flash.price_formatted || flash.entry_price || "$0.00", col: "#ffffff", x: cardX1, y: cardY1 },
-    { label: "TARGET (3D)", val: flash.target_price || "$0.00", col: "#34d399", delta: " " + (flash.expected_target_pct || "+0.0%"), dcol: "#34d399", x: cardX2, y: cardY1 },
-    { label: "STOP LOSS", val: flash.stop_loss || "$0.00", col: "#f87171", delta: " " + (flash.expected_stop_pct || "-0.0%"), dcol: "#f87171", x: cardX1, y: cardY2 },
+    { label: "TARGET (3D)", val: flash.target_price || "$0.00", col: "#10b981", delta: " " + (flash.expected_target_pct || "+0.0%"), dcol: "#10b981", x: cardX2, y: cardY1 },
+    { label: "STOP LOSS", val: flash.stop_loss || "$0.00", col: "#f43f5e", delta: " " + (flash.expected_stop_pct || "-0.0%"), dcol: "#f43f5e", x: cardX1, y: cardY2 },
     { label: "RISK : REWARD", val: flash.risk_reward || "1.75 : 1", col: "#ffffff", x: cardX2, y: cardY2 }
   ];
 
   metrics.forEach(m => {
-    roundRect(ctx, m.x, m.y, cardW, cardH, 12, "#080a10", "#202636");
-    ctx.fillStyle = "#64748b";
+    roundRect(ctx, m.x, m.y, cardW, cardH, 12, "#070709", "#18181c");
+    ctx.fillStyle = "#88888e";
     ctx.font = "600 20px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
     ctx.fillText(m.label, m.x + 24, m.y + 42);
 
@@ -2532,18 +2527,18 @@ function renderCanvasSquareCard(flash, includeQr = true, transparent = false) {
 
   const stripY = 668;
   const stripH = 150;
-  roundRect(ctx, padX, stripY, 1080 - padX * 2, stripH, 12, "#080a10", "#202636");
+  roundRect(ctx, padX, stripY, 1080 - padX * 2, stripH, 12, "#070709", "#18181c");
   const subW = (1080 - padX * 2) / 3;
 
   const subItems = [
-    { label: "14D ATR VOLATILITY", val: flash.atr14_pct || "4.50%", col: "#f59e0b", sub: "Daily Noise Budget" },
-    { label: "EXPECTED PAYOFF", val: flash.expected_target2_pct || "+42.00%", col: "#34d399", sub: "+2.5σ Extended Runner" },
-    { label: "BREAKEVEN WIN RATE", val: flash.breakeven_win_rate || "36.4%", col: "#38bdf8", sub: "Favorable Asymmetry" }
+    { label: "14D ATR VOLATILITY", val: flash.atr14_pct || "4.50%", col: "#fafafa", sub: "Daily Noise Budget" },
+    { label: "EXPECTED PAYOFF", val: flash.expected_target2_pct || "+42.00%", col: "#10b981", sub: "+2.5σ Extended Runner" },
+    { label: "BREAKEVEN WIN RATE", val: flash.breakeven_win_rate || "36.4%", col: "#fafafa", sub: "Favorable Asymmetry" }
   ];
 
   subItems.forEach((item, i) => {
     const ix = padX + i * subW;
-    ctx.fillStyle = "#64748b";
+    ctx.fillStyle = "#88888e";
     ctx.font = "600 17px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
     ctx.fillText(item.label, ix + 24, stripY + 38);
 
@@ -2551,12 +2546,12 @@ function renderCanvasSquareCard(flash, includeQr = true, transparent = false) {
     ctx.font = "bold 34px 'Cascadia Mono', Consolas, monospace";
     ctx.fillText(item.val, ix + 24, stripY + 86);
 
-    ctx.fillStyle = "#475569";
+    ctx.fillStyle = "#505056";
     ctx.font = "15px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
     ctx.fillText(item.sub, ix + 24, stripY + 120);
 
     if (i < 2) {
-      ctx.strokeStyle = "#202636";
+      ctx.strokeStyle = "#18181c";
       ctx.lineWidth = 1;
       ctx.beginPath();
       ctx.moveTo(ix + subW, stripY + 18);
@@ -2569,18 +2564,18 @@ function renderCanvasSquareCard(flash, includeQr = true, transparent = false) {
   const refUrl = flash.referral_url || localStorage.getItem("coinpicks_referral_url") || "";
   const refCode = flash.referral_code || localStorage.getItem("coinpicks_referral_code") || "";
 
-  roundRect(ctx, padX, footerY, 1080 - padX * 2, 160, 16, "#0b0e16", "#1a2030");
+  roundRect(ctx, padX, footerY, 1080 - padX * 2, 160, 16, "#070709", "#18181c");
 
   ctx.fillStyle = "#ffffff";
   ctx.font = "bold 26px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
   ctx.fillText("QUANT ALGO STUDIO", padX + 28, footerY + 48);
 
-  ctx.fillStyle = "#94a3b8";
+  ctx.fillStyle = "#88888e";
   ctx.font = "18px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
   const subText = refCode ? `10-Model Quantitative Consensus  •  Referral Code: ${refCode}` : "10-Model Quantitative Consensus  •  Scan to Trade";
   ctx.fillText(subText, padX + 28, footerY + 84);
 
-  ctx.fillStyle = "#475569";
+  ctx.fillStyle = "#505056";
   ctx.font = "14px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
   ctx.fillText("Systematic quantitative model simulation for educational purposes. Not financial advice.", padX + 28, footerY + 124);
 
