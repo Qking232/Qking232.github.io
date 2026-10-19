@@ -445,9 +445,15 @@
         </div>
 
         <div>
-          <div style="font-size: 12px; color: var(--muted); margin-bottom: 6px;">Select Copywriting Angle:</div>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 6px; flex-wrap:wrap; gap:6px;">
+            <div style="font-size: 12px; color: var(--muted);">Select Copywriting Angle:</div>
+            <div style="display:flex; gap:6px;">
+              <button class="seg-btn active" id="btnStyleViral" onclick="setCaptionStyle('viral', this)" style="font-size:11px; padding:3px 8px;">⚡ Viral Flash (&lt;450 chars)</button>
+              <button class="seg-btn" id="btnStyleBrief" onclick="setCaptionStyle('brief', this)" style="font-size:11px; padding:3px 8px;">📑 Institutional (~650 chars)</button>
+            </div>
+          </div>
           <div class="angle-tabs">
-            <button class="tab-btn active" onclick="setAngle('consensus', this)">⚡ 4-Model Consensus</button>
+            <button class="tab-btn active" onclick="setAngle('consensus', this)">⚡ 10-Model Consensus</button>
             <button class="tab-btn" onclick="setAngle('actionable', this)">🎯 Actionable Setup</button>
             <button class="tab-btn" onclick="setAngle('regime', this)">🌐 Macro BTC Pulse</button>
             <button class="tab-btn" onclick="setAngle('risk', this)">🛡️ Quant Risk Tip</button>
@@ -1318,6 +1324,16 @@ function setPreviewScale(scale) {
   }
 }
 
+let currentCaptionStyle = "viral";
+
+function setCaptionStyle(style, btn) {
+  currentCaptionStyle = style;
+  document.getElementById("btnStyleViral")?.classList.remove("active");
+  document.getElementById("btnStyleBrief")?.classList.remove("active");
+  if (btn) btn.classList.add("active");
+  generateCaption();
+}
+
 function setAngle(ang, btn) {
   currentAngle = ang;
   document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
@@ -1383,6 +1399,7 @@ async function generateCaption() {
   form.append("angle", currentAngle);
   form.append("model", model);
   form.append("zdr", isZdr ? "true" : "false");
+  form.append("style", currentCaptionStyle);
   form.append("flash_json", JSON.stringify(currentScan.flash));
 
   try {
@@ -1405,7 +1422,7 @@ async function generateCaption() {
   } catch (e) {
     console.warn("Backend caption generation unavailable, generating client procedural copy:", e.message);
   }
-  const clientCopy = getClientProceduralCaption(currentScan.flash, currentAngle);
+  const clientCopy = getClientProceduralCaption(currentScan.flash, currentAngle, currentCaptionStyle);
   document.getElementById("captionText").value = clientCopy.caption;
   document.getElementById("commentText").value = clientCopy.first_comment;
   document.getElementById("fbMockCaption").textContent = clientCopy.caption;
@@ -2316,19 +2333,21 @@ function getClientAlternative(exSym, targetRank) {
   };
 }
 
-function getClientProceduralCaption(flash, angle) {
-  const sym = flash.symbol;
+function getClientProceduralCaption(flash, angle, style = "viral") {
+  const sym = flash.symbol || "CRYPTO";
   const price = flash.price_formatted || flash.entry_price || "$0.00";
   const target = flash.target_price || "$0.00";
   const targetPct = flash.expected_target_pct || "+0.0%";
   const target2Pct = flash.expected_target2_pct || "+42.00%";
   const stop = flash.stop_loss || "$0.00";
   const stopPct = flash.expected_stop_pct || "-0.0%";
-  const rr = flash.risk_reward || "1.75 : 1";
+  let rr = flash.risk_reward || "1.75 : 1";
+  if (!rr.endsWith(": 1")) rr = rr + " : 1";
   const beRate = flash.breakeven_win_rate || "36.4%";
   const borda = flash.borda_score || 95;
   const regime = flash.regime?.label || "Neutral";
   const rsBtc = flash.rs_btc || "+12.50%";
+  const atrPct = flash.atr14_pct || "4.50%";
   const refUrl = flash.referral_url || localStorage.getItem("coinpicks_referral_url") || "";
   const refCode = flash.referral_code || localStorage.getItem("coinpicks_referral_code") || "";
 
@@ -2353,82 +2372,61 @@ ${refSection}⚠️ Systematic quantitative model research for educational purpo
 
   let caption = "";
   if (angle === "actionable") {
-    caption = `Systematic Alpha Signal | ${sym}/USDT Swing Specification
-
-Our cross-sectional quantitative engine screened 100+ liquid pairs across 365 daily observations. Today, ${sym} triggered an actionable multi-factor consensus entry.
+    caption = `$${sym} triggered an actionable multi-factor consensus entry today across our 10-model quantitative screen.
 
 Execution Geometry & Volatility Budget:
-• Reference Entry: ${price}
-• Invalidation Boundary (1.80σ MAE): ${stop} (${stopPct})
-• Volatility Expansion Target (+1.40σ ATR): ${target} (${targetPct})
-• Payoff Asymmetry: ${rr} Risk/Reward (Breakeven Win Rate: ${beRate})
-• Composite Factor Ranking: ${borda} Borda pts | RS vs BTC: ${rsBtc}
-• Market Regime: ${regime}
+• Invalidation Boundary (MAE Stop): ${stop} (${stopPct})
+• Volatility Target (+1.40σ ATR): ${target} (${targetPct})
+• Asymmetry: ${rr} Risk/Reward (${beRate} Breakeven Hurdle)
+• Decile Score: ${borda} Borda pts | RS vs BTC: ${rsBtc}
 
-Systematic traders prioritize downside containment before upside expansion. The complete factor matrix, Kelly allocation, and automated order payload are detailed in the first comment.
+14-day ATR budgeting protects positions against Brownian market noise before trend expansion.
 
-⚠️ Systematic quantitative model research. Not financial advice. Always trade with disciplined risk management.
+👇 Full execution matrix & fee rebate signup in the first comment.
 
-#QuantitativeFinance #${sym} #AlgoTrading #RiskManagement #CryptoMarkets #Binance`;
+#CryptoTrading #${sym} #AlgoTrading #QuantFinance #Binance`;
   } else if (angle === "regime") {
-    caption = `Macro Regime Analysis & Factor Convergence: Bitcoin Pulse & ${sym}/USDT
+    caption = `Macro Regime Pulse: Bitcoin is in a ${regime} state, but $${sym} is decoupling with strong relative strength (${rsBtc}).
 
-Macro environment update: Bitcoin is operating within a ${regime} state.
-
-In this regime, cross-sectional factor ranking isolates assets exhibiting strong relative strength divergence (RS vs BTC: ${rsBtc}) combined with volatility compression.
-
-Current Decile Leader: ${sym}/USDT
-• Reference Level: ${price}
+Systematic Setup Geometry (${sym}/USDT):
 • Invalidation Stop: ${stop} (${stopPct})
 • Systematic 3-Day Target: ${target} (${targetPct})
-• Multi-Factor Convergence Score: ${borda} Borda pts
+• Payoff Ratio: ${rr} (Breakeven Win Rate: ${beRate})
+• Factor Convergence: ${borda} Borda pts (Decile Leader)
 
-Institutional execution relies on volatility-parity budgeting rather than arbitrary percentage stops.
+In consolidation regimes, volatility-parity sizing outperforms fixed percentage stops.
 
-The full interactive factor breakdown and simulation tools are available via the link in the first comment.
+👇 Full interactive factor breakdown & trading link in the first comment.
 
-⚠️ Educational quantitative research. Not financial advice.
-
-#Bitcoin #MacroTrends #${sym} #QuantFinance #CryptoMarkets #Volatility`;
+#Bitcoin #${sym} #MacroRegime #QuantTrading #Binance`;
   } else if (angle === "risk") {
-    caption = `Risk Engineering Note: Volatility Budgeting vs. Fixed Percentage Stops (${sym}/USDT)
+    caption = `Why 45% of crypto stop-outs are pure noise: empirical testing shows arbitrary percentage stops liquidate before trends develop. $${sym} risk profile:
 
-Empirical testing demonstrates that over 45% of arbitrary 1-day percentage stop losses are liquidated by Brownian noise before a multi-day trend expansion can materialize.
-
-To solve this, our algorithmic framework scales risk boundaries using horizon-adjusted volatility: 1.8 × ATR-14 × √3.
-
-Execution Profile for ${sym}/USDT:
-• Current Entry: ${price}
+Volatility-Adjusted Risk Boundaries:
 • Maximum Adverse Excursion Stop: ${stop} (${stopPct})
-• Volatility Expansion Target: ${target} (${targetPct})
-• Asymmetry: ${rr} Payoff Ratio (${beRate} Breakeven Hurdle)
+• Expansion Target: ${target} (${targetPct})
+• Expectancy Asymmetry: ${rr} (${beRate} Breakeven Hurdle)
+• 14-Day ATR Noise Budget: ${atrPct}
 
-Systematic trade expectancy is achieved through positive variance asymmetry rather than high win rates alone.
+Systematic expectancy comes from positive payoff asymmetry, not high win rates alone.
 
-To simulate position sizes and inspect the underlying factor decomposition, refer to the first comment.
+👇 Position sizing simulator & fee rebate signup in the first comment.
 
-⚠️ Quantitative research publication. Not financial advice.
-
-#RiskManagement #TradingScience #${sym} #AlgoTrading #QuantFinance`;
+#RiskManagement #${sym} #TradingMath #AlgoTrading #Binance`;
   } else {
-    caption = `Systematic Factor Consensus: ${sym}/USDT Multi-Factor Alpha Setup
+    caption = `$${sym} ranked #1 in cross-sectional factor convergence today, scoring ${borda} Borda points across 10 algorithmic models.
 
-When independent quantitative factors—momentum dispersion, trend quality, volatility compression, and relative strength—converge on a single instrument, statistical expectancy is optimized.
-
-Today, ${sym}/USDT emerged as the top-ranked asset with ${borda} Borda consensus points.
-
-Statistical Trade Architecture (3-Day Horizon):
-• Reference Entry: ${price}
+3-Day Swing Architecture:
 • Invalidation Level (MAE Stop): ${stop} (${stopPct})
 • Projected Target (+1.40σ ATR): ${target} (${targetPct})
 • Risk/Reward Profile: ${rr} (${beRate} Breakeven Win Rate)
-• Macro Trend Regime: ${regime}
+• RS vs BTC: ${rsBtc} | Regime: ${regime}
 
-Review the full factor decomposition, correlation matrices, and live interactive risk calculator in the first comment.
+Downside containment is budgeted via 14-day ATR volatility before upside exposure.
 
-⚠️ Simulated quantitative research for educational purposes. Not financial advice.
+👇 Complete factor matrix & fee rebate signup in the first comment.
 
-#QuantitativeFinance #${sym} #AlgoTrading #CryptoMarkets #Binance #RiskEngineering`;
+#QuantitativeFinance #${sym} #AlgoTrading #CryptoSignals #Binance`;
   }
 
   return { caption, first_comment: comment };
