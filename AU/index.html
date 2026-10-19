@@ -296,8 +296,8 @@
       <a href="https://developers.facebook.com/tools/explorer/2398180744048322/?method=GET&path=profile.php%3Fid%3D1305526262654162&version=v26.0" target="_blank" class="pill" id="fbExplorerPill" title="Open Meta Graph API Explorer (v26.0)">
         <span>🔗</span> <span>Graph Explorer (v26.0)</span>
       </a>
-      <a href="https://coinpicks.ai" target="_blank" class="pill" id="sitePill" title="Open Live Encrypted Terminal">
-        <span>🌐</span> <span id="siteUrlShort">coinpicks.ai</span>
+      <a href="#" target="_blank" class="pill" id="referralHeaderPill" title="Click to test your Referral Link">
+        <span>🔗</span> <span id="referralHeaderTxt">Add Referral Link</span>
       </a>
       <button class="publish-btn" style="padding:6px 14px; font-size:12.5px; font-weight:700; background:#16a34a; box-shadow:0 0 14px rgba(22, 163, 74, 0.4);" onclick="run1ClickAutoPost()" id="autoPilotHeaderBtn" title="Scan, generate card, write AI copy, and post directly to Facebook in 1 click">
         🚀 1-Click Auto-Post
@@ -461,7 +461,7 @@
             <span>📊 SYSTEMATIC RESEARCH FIRST COMMENT (DIRECT TERMINAL LINK)</span>
             <span style="font-size:11px; opacity:0.8;">Auto-posts in 2s</span>
           </div>
-          <textarea class="comment-textarea" id="commentText" placeholder="First comment payload with tracked link to https://coinpicks.ai..."></textarea>
+          <textarea class="comment-textarea" id="commentText" placeholder="First comment payload with referral trading link & quantitative matrix..."></textarea>
         </div>
       </div>
 
@@ -526,8 +526,8 @@
 
           <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
             <div class="form-group">
-              <label>Attached Document Link:</label>
-              <input type="text" id="docLinkUrl" value="https://coinpicks.ai">
+              <label>Attached Referral / Target Link:</label>
+              <input type="text" id="docLinkUrl" placeholder="https://accounts.binance.com/register?ref=...">
             </div>
             <div class="form-group">
               <label>Automated First Comment:</label>
@@ -538,18 +538,18 @@
           <!-- Document Facebook Feed Mockup -->
           <div class="fb-mockup" style="background:#090b12;">
             <div class="fb-header">
-              <div class="fb-avatar">CP</div>
+              <div class="fb-avatar">QS</div>
               <div>
-                <div class="fb-user" id="fbMockDocName">CoinPicks Quant Labs</div>
+                <div class="fb-user" id="fbMockDocName">Quant Algo Studio</div>
                 <div class="fb-time">Just now · 🌍 Public · 📄 Strategy Report</div>
               </div>
             </div>
             <div class="fb-caption" id="fbMockDocCaption" style="white-space:pre-wrap; font-size:12px; font-family:var(--mono);"></div>
             <div style="border:1px solid var(--card-border); border-radius:8px; padding:12px; background:#040508; display:flex; flex-direction:column; gap:4px; margin-top:8px;">
-              <span style="font-size:11px; color:var(--cyan); text-transform:uppercase; font-weight:600;">ATTACHED TERMINAL LINK</span>
-              <span style="font-size:13.5px; font-weight:650; color:#fff;">CoinPicks Quantitative Strategy Terminal</span>
-              <span style="font-size:12px; color:var(--muted);">Consensus Multi-Model Matrix, Live Risk Radar &amp; Breakout Signals</span>
-              <span style="font-size:11px; color:var(--dim);" id="docPreviewLink">https://coinpicks.ai</span>
+              <span style="font-size:11px; color:var(--cyan); text-transform:uppercase; font-weight:600;">ATTACHED REFERRAL LINK</span>
+              <span style="font-size:13.5px; font-weight:650; color:#fff;">Institutional Quantitative Strategy Brief</span>
+              <span style="font-size:12px; color:var(--muted);">10-Model Quant Consensus, Risk Radar &amp; Volatility Breakout Signals</span>
+              <span style="font-size:11px; color:var(--dim);" id="docPreviewLink">https://accounts.binance.com</span>
             </div>
           </div>
         </div>
@@ -577,14 +577,45 @@
       </div>
     </div>
 
-    <div class="form-group">
-      <label>Target Web Terminal URL (Traffic Destination):</label>
-      <input type="text" id="settingTargetUrl" value="https://coinpicks.ai">
-    </div>
+    <!-- Clean Exchange Referral & Affiliate Settings -->
+    <div style="background:#090d16; border:1px solid #1e293b; border-radius:10px; padding:12px; margin-bottom:12px;">
+      <div style="font-size:13px; font-weight:700; color:#38bdf8; margin-bottom:10px; display:flex; align-items:center; gap:6px;">
+        <span>🔗</span> <span>Exchange Referral &amp; Affiliate Settings</span>
+      </div>
 
-    <div class="form-group">
-      <label>Terminal Master Decryption Key (User Access Code):</label>
-      <input type="text" id="settingPassword" value="quantAlpha2026">
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px; margin-bottom:10px;">
+        <div class="form-group" style="margin-bottom:0;">
+          <label>Exchange Platform:</label>
+          <select id="settingReferralExchange" onchange="onExchangeChange(this.value)" style="width:100%; background:#0e131f; color:#fff; border:1px solid #2d3748; padding:8px 10px; border-radius:6px; font-size:12.5px;">
+            <option value="Binance">🟡 Binance</option>
+            <option value="BingX">🔵 BingX (BingBong)</option>
+            <option value="OKX">⚫ OKX</option>
+            <option value="Bybit">🟣 Bybit</option>
+            <option value="Custom">🌐 Custom Link</option>
+          </select>
+        </div>
+        <div class="form-group" style="margin-bottom:0;">
+          <label>Referral / Promo Code (Optional):</label>
+          <input type="text" id="settingReferralCode" placeholder="e.g. VIP20 or 20% Fee Discount" style="width:100%;">
+        </div>
+      </div>
+
+      <div class="form-group" style="margin-bottom:10px;">
+        <label>Your Personal Referral Link (For Card QR &amp; Captions):</label>
+        <input type="text" id="settingReferralUrl" placeholder="https://accounts.binance.com/register?ref=..." style="width:100%;">
+      </div>
+
+      <div class="form-group" style="margin-bottom:0;">
+        <label>Attach Custom Referral QR / Affiliate Image (Optional):</label>
+        <div style="display:flex; gap:10px; align-items:center;">
+          <input type="file" id="settingReferralImage" accept="image/*" onchange="handleReferralImageUpload(event)" style="font-size:12px; color:var(--muted); flex:1;">
+          <button type="button" onclick="clearReferralImage()" id="clearReferralImgBtn" style="padding:6px 10px; font-size:11px; display:none;">✕ Remove Image</button>
+        </div>
+        <div id="referralImgPreviewContainer" style="margin-top:6px; display:none; align-items:center; gap:10px;">
+          <img id="referralImgThumb" src="" alt="Referral QR Preview" style="width:48px; height:48px; object-fit:contain; border-radius:6px; border:1px solid #334155; background:#000;">
+          <span style="font-size:11px; color:#34d399;">✓ Custom QR / Image loaded</span>
+        </div>
+      </div>
     </div>
 
     <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px;">
@@ -890,26 +921,106 @@ window.addEventListener("DOMContentLoaded", async () => {
   await runQuantScan();
 });
 
+function onExchangeChange(val) {
+  const urlInput = document.getElementById("settingReferralUrl");
+  if (!urlInput) return;
+  const currentVal = urlInput.value.trim();
+  if (!currentVal || currentVal.includes("binance.com") || currentVal.includes("bingx.com") || currentVal.includes("okx.com") || currentVal.includes("bybit.com")) {
+    if (val === "Binance") urlInput.placeholder = "https://accounts.binance.com/register?ref=...";
+    else if (val === "BingX") urlInput.placeholder = "https://bingx.com/invite/...";
+    else if (val === "OKX") urlInput.placeholder = "https://okx.com/join/...";
+    else if (val === "Bybit") urlInput.placeholder = "https://partner.bybit.com/b/...";
+    else urlInput.placeholder = "https://...";
+  }
+}
+
+function handleReferralImageUpload(event) {
+  const file = event.target.files && event.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    const base64 = e.target.result;
+    localStorage.setItem("coinpicks_referral_qr", base64);
+    document.getElementById("referralImgThumb").src = base64;
+    document.getElementById("referralImgPreviewContainer").style.display = "flex";
+    document.getElementById("clearReferralImgBtn").style.display = "inline-block";
+    showToast("✅ Custom referral image / QR code loaded!");
+    regenerateCard();
+  };
+  reader.readAsDataURL(file);
+}
+
+function clearReferralImage() {
+  localStorage.removeItem("coinpicks_referral_qr");
+  const fileInput = document.getElementById("settingReferralImage");
+  if (fileInput) fileInput.value = "";
+  document.getElementById("referralImgPreviewContainer").style.display = "none";
+  document.getElementById("clearReferralImgBtn").style.display = "none";
+  showToast("Custom referral image cleared.");
+  regenerateCard();
+}
+
+function updateReferralHeaderUI(exchange, url) {
+  const pill = document.getElementById("referralHeaderPill");
+  const txt = document.getElementById("referralHeaderTxt");
+  if (!pill || !txt) return;
+  if (url) {
+    pill.style.display = "inline-flex";
+    pill.href = url;
+    txt.textContent = `${exchange} Referral`;
+  } else {
+    pill.style.display = "inline-flex";
+    pill.href = "javascript:openSettingsModal()";
+    txt.textContent = "Add Referral Link";
+  }
+}
+
 async function loadSettings() {
+  let refExch = "Binance";
+  let refUrl = "";
+  let refCode = "";
+
   // 1. Try local backend first
   try {
     const res = await fetch(API_BASE + "/api/settings");
     const data = await res.json();
-    if (data.target_url) document.getElementById("settingTargetUrl").value = data.target_url;
-    if (data.access_password) document.getElementById("settingPassword").value = data.access_password;
+    if (data.referral_exchange) refExch = data.referral_exchange;
+    if (data.referral_url) refUrl = data.referral_url;
+    if (data.referral_code) refCode = data.referral_code;
     if (data.fb_page_id) document.getElementById("settingPageId").value = data.fb_page_id;
     if (data.fb_app_id) document.getElementById("settingAppId").value = data.fb_app_id;
     if (data.fb_graph_version) document.getElementById("settingGraphVersion").value = data.fb_graph_version;
-    if (data.target_url) document.getElementById("siteUrlShort").textContent = data.target_url.replace("https://", "").replace(/\/$/, "");
   } catch (e) {
-    console.log("Local backend settings not reachable, checking browser localStorage vault...");
+    console.log("Local backend settings not reachable, checking browser vault...");
   }
 
-  // 2. Read from personal browser vault (Safe for GitHub Pages & cross-session)
+  // 2. Read from personal browser vault (Safe for GitHub Pages)
+  const localRefExchange = localStorage.getItem("coinpicks_referral_exchange");
+  const localRefUrl = localStorage.getItem("coinpicks_referral_url");
+  const localRefCode = localStorage.getItem("coinpicks_referral_code");
+  const localRefQr = localStorage.getItem("coinpicks_referral_qr");
   const localCmdKey = localStorage.getItem("coinpicks_cmd_key");
   const sess = getSessionState();
-  const localTargetUrl = localStorage.getItem("coinpicks_target_url");
-  const localPassword = localStorage.getItem("coinpicks_password");
+
+  if (localRefExchange) refExch = localRefExchange;
+  if (localRefUrl) refUrl = localRefUrl;
+  if (localRefCode) refCode = localRefCode;
+
+  if (document.getElementById("settingReferralExchange")) document.getElementById("settingReferralExchange").value = refExch;
+  if (document.getElementById("settingReferralUrl")) document.getElementById("settingReferralUrl").value = refUrl;
+  if (document.getElementById("settingReferralCode")) document.getElementById("settingReferralCode").value = refCode;
+  if (document.getElementById("docLinkUrl")) document.getElementById("docLinkUrl").value = refUrl;
+
+  if (localRefQr) {
+    const thumb = document.getElementById("referralImgThumb");
+    const container = document.getElementById("referralImgPreviewContainer");
+    const clearBtn = document.getElementById("clearReferralImgBtn");
+    if (thumb) thumb.src = localRefQr;
+    if (container) container.style.display = "flex";
+    if (clearBtn) clearBtn.style.display = "inline-block";
+  }
+
+  updateReferralHeaderUI(refExch, refUrl);
 
   if (localCmdKey) {
     document.getElementById("settingCmdKey").value = localCmdKey;
@@ -921,13 +1032,6 @@ async function loadSettings() {
   }
   if (sess.pageId) {
     document.getElementById("settingPageId").value = sess.pageId;
-  }
-  if (localTargetUrl) {
-    document.getElementById("settingTargetUrl").value = localTargetUrl;
-    document.getElementById("siteUrlShort").textContent = localTargetUrl.replace("https://", "").replace(/\/$/, "");
-  }
-  if (localPassword) {
-    document.getElementById("settingPassword").value = localPassword;
   }
 
   updateSessionUI();
@@ -1349,35 +1453,35 @@ function setPublishMode(mode) {
 function updateDocumentText() {
   if (!currentScan || !currentScan.flash) return;
   const f = currentScan.flash;
-  const targetUrl = document.getElementById("settingTargetUrl").value || "https://coinpicks.ai";
-  const pass = document.getElementById("settingPassword").value || "quantAlpha2026";
+  const refUrl = (document.getElementById("settingReferralUrl")?.value || localStorage.getItem("coinpicks_referral_url") || "").trim();
+  const refCode = (document.getElementById("settingReferralCode")?.value || localStorage.getItem("coinpicks_referral_code") || "").trim();
   const regimeName = (currentScan.market_regime && currentScan.market_regime.regime) ? currentScan.market_regime.regime : "Consolidation Momentum";
   
-  const docText = `📊 [QUANTITATIVE CRYPTO STRATEGY REPORT v26.0]
+  const linkSection = refUrl
+    ? `\n🔗 Trading Execution & Fee Rebate:\n${refUrl}${refCode ? ` (Code: ${refCode})` : ""}`
+    : "";
+
+  const docText = `📊 [QUANTITATIVE CRYPTO STRATEGY REPORT]
 Asset: ${f.symbol} | Spot: ${f.price_formatted}
-Consensus Score: 4/4 Models Bullish | Borda Count: ${f.borda_score}/40
+Consensus Score: 10-Model Quant Alignment | Borda Count: ${f.borda_score} pts
 Execution Target: ${f.expected_target_pct} (${f.target_price})
 Stop Loss (MAE): ${f.expected_stop_pct} (${f.stop_loss})
 Signal Confidence: High (94.2%)
 
 1. EXECUTIVE SUMMARY & THESIS
 - Market Regime: ${regimeName}
-- Model Alignment: Cross-sectional momentum, mean-reversion, volatility and orderbook flow models indicate positive statistical expectancy.
-- Borda Ranking: #1 Alpha asset among top 10 tracked cryptocurrencies.
+- Model Alignment: Multi-factor momentum, volatility compression, and orderbook flow indicate positive statistical expectancy.
+- Ranking: #1 Alpha asset among top 10 tracked cryptocurrencies.
 
 2. QUANTITATIVE EXECUTION PARAMETERS
-- Entry Zone: Market / Re-test zone
+- Reference Level: ${f.entry_price || f.price_formatted}
 - Target: ${f.target_price} (${f.expected_target_pct} ATR-14 expansion)
 - Invalidation: ${f.stop_loss} (${f.expected_stop_pct})
-- Systematic Reward-to-Risk: 2.1:1 ratio
+- Systematic Reward-to-Risk: ${f.risk_reward || "2.1:1"}
 
 3. DATA REPRODUCIBILITY & VALIDATION
-- Algorithmic scoring executed live via CoinPicks Quantitative Engine.
-- Historical validation based on Binance 1h/4h OHLCV orderbook depth.
-
-🔗 Full real-time consensus matrix and live risk radar:
-${targetUrl}
-(Access Key: ${pass})`;
+- Algorithmic scoring executed live via 10-Model Quantitative Engine.
+- Historical validation based on Binance 1h/4h OHLCV orderbook depth.${linkSection}`;
 
   const docArea = document.getElementById("documentContentText");
   if (docArea) docArea.value = docText;
@@ -1385,7 +1489,11 @@ ${targetUrl}
   if (docMock) docMock.textContent = docText;
   
   const docComment = document.getElementById("docFirstComment");
-  if (docComment) docComment.value = `🔗 Real-time terminal with live charts and full 10-asset matrix: ${targetUrl}?ref=fb_doc (Master Key: ${pass})`;
+  if (docComment) {
+    docComment.value = refUrl
+      ? `👉 Fee rebate & trading signup: ${refUrl}${refCode ? ` (Code: ${refCode})` : ""}`
+      : `📊 Quantitative trading research brief for ${f.symbol}.`;
+  }
 }
 
 // Direct Meta Graph API publishing helpers (Browser-native for GitHub Pages)
@@ -1770,7 +1878,7 @@ function openFacebookComposer() {
 }
 
 function openFacebookShareDialog() {
-  const targetUrl = document.getElementById("settingTargetUrl").value || "https://coinpicks.ai";
+  const targetUrl = (document.getElementById("settingReferralUrl")?.value) || localStorage.getItem("coinpicks_referral_url") || "https://accounts.binance.com";
   const caption = currentPublishMode === "flash"
     ? document.getElementById("captionText").value
     : document.getElementById("documentContentText").value;
@@ -1906,14 +2014,20 @@ function clearSavedKeys() {
   localStorage.removeItem("coinpicks_fb_token");
   localStorage.removeItem("coinpicks_page_id");
   localStorage.removeItem("coinpicks_fb_session_expiry");
-  localStorage.removeItem("coinpicks_target_url");
-  localStorage.removeItem("coinpicks_password");
+  localStorage.removeItem("coinpicks_referral_exchange");
+  localStorage.removeItem("coinpicks_referral_url");
+  localStorage.removeItem("coinpicks_referral_code");
+  localStorage.removeItem("coinpicks_referral_qr");
 
   deleteSessionCookie("coinpicks_fb_token");
   deleteSessionCookie("coinpicks_page_id");
 
   document.getElementById("settingCmdKey").value = "";
   document.getElementById("settingPageToken").value = "";
+  if (document.getElementById("settingReferralUrl")) document.getElementById("settingReferralUrl").value = "";
+  if (document.getElementById("settingReferralCode")) document.getElementById("settingReferralCode").value = "";
+  if (document.getElementById("settingReferralExchange")) document.getElementById("settingReferralExchange").value = "binance";
+  clearReferralImage();
   
   const pill = document.getElementById("cmdStatusPill");
   if (pill) {
@@ -1922,19 +2036,20 @@ function clearSavedKeys() {
     if (txt) txt.textContent = "No API Key";
   }
   updateSessionUI();
+  updateReferralHeaderUI();
   checkFacebookStatus();
-  showToast("🗑️ Saved keys cleared from browser vault.");
+  showToast("🗑️ Saved keys and referral settings cleared from browser vault.");
 }
 
 async function saveSettings() {
-  const targetUrl = document.getElementById("settingTargetUrl").value.trim();
-  const password = document.getElementById("settingPassword").value.trim();
+  const refExchange = document.getElementById("settingReferralExchange")?.value || "binance";
+  const refUrl = document.getElementById("settingReferralUrl")?.value.trim() || "";
+  const refCode = document.getElementById("settingReferralCode")?.value.trim() || "";
   const cmdKey = document.getElementById("settingCmdKey").value.trim();
   const pageId = document.getElementById("settingPageId").value.trim();
   const token = document.getElementById("settingPageToken").value.trim();
 
   // 1. Always persist safely to private client-side browser vault (localStorage + Cookie)
-  // This allows persistent usage on GitHub Pages without leaking keys into Git commits!
   if (cmdKey) {
     localStorage.setItem("coinpicks_cmd_key", cmdKey);
     const pill = document.getElementById("cmdStatusPill");
@@ -1960,8 +2075,9 @@ async function saveSettings() {
     setSessionCookie("coinpicks_page_id", pageId, 30);
   }
 
-  if (targetUrl) localStorage.setItem("coinpicks_target_url", targetUrl);
-  if (password) localStorage.setItem("coinpicks_password", password);
+  localStorage.setItem("coinpicks_referral_exchange", refExchange);
+  localStorage.setItem("coinpicks_referral_url", refUrl);
+  localStorage.setItem("coinpicks_referral_code", refCode);
 
   // Extend 30-day session
   renewSession(30);
@@ -1969,8 +2085,9 @@ async function saveSettings() {
   // 2. If local python backend is active, also sync to .env file
   try {
     const form = new FormData();
-    form.append("target_url", targetUrl);
-    form.append("access_password", password);
+    form.append("referral_exchange", refExchange);
+    form.append("referral_url", refUrl);
+    form.append("referral_code", refCode);
     if (cmdKey) form.append("command_code_key", cmdKey);
     if (pageId) form.append("page_id", pageId);
     if (token) form.append("page_token", token);
@@ -1989,6 +2106,7 @@ async function saveSettings() {
 
   showToast("✅ Settings & Keys saved in 30-day secure browser vault!");
   closeSettingsModal();
+  updateReferralHeaderUI();
   await loadSettings();
   try { await loadCommandCodeModels(); } catch(e){}
   try { await checkFacebookStatus(); } catch(e){}
@@ -2018,7 +2136,7 @@ const CLIENT_QUANT_POOL = [
     borda_score: 95, consensus_votes: "9 of 10 Model Votes",
     consensus_desc: "10-model quantitative algorithm ranked AVA #1 with 95 Borda points. 3-day swing target and stop sized via 14-day ATR volatility budget.",
     regime: { label: "Neutral (Consolidation Range)", status: "neutral", badge: "● NEUTRAL" },
-    target_url: "https://coinpicks.ai", access_password: "quantAlpha2026"
+    referral_exchange: "binance", referral_url: "https://accounts.binance.com", referral_code: "ALPHASWINGS"
   },
   {
     rank: 2, symbol: "SUI", price: 4.86, price_formatted: "$4.86", entry_price: "$4.86",
@@ -2032,7 +2150,7 @@ const CLIENT_QUANT_POOL = [
     borda_score: 118, consensus_votes: "8 of 10 Model Votes",
     consensus_desc: "10-model quantitative algorithm ranked SUI #2 with 118 Borda points. 3-day swing target and stop sized via 14-day ATR volatility budget.",
     regime: { label: "Neutral (Consolidation Range)", status: "neutral", badge: "● NEUTRAL" },
-    target_url: "https://coinpicks.ai", access_password: "quantAlpha2026"
+    referral_exchange: "binance", referral_url: "https://accounts.binance.com", referral_code: "ALPHASWINGS"
   },
   {
     rank: 3, symbol: "SOL", price: 214.60, price_formatted: "$214.60", entry_price: "$214.60",
@@ -2046,7 +2164,7 @@ const CLIENT_QUANT_POOL = [
     borda_score: 112, consensus_votes: "8 of 10 Model Votes",
     consensus_desc: "10-model quantitative algorithm ranked SOL #3 with 112 Borda points. 3-day swing target and stop sized via 14-day ATR volatility budget.",
     regime: { label: "Neutral (Consolidation Range)", status: "neutral", badge: "● NEUTRAL" },
-    target_url: "https://coinpicks.ai", access_password: "quantAlpha2026"
+    referral_exchange: "binance", referral_url: "https://accounts.binance.com", referral_code: "ALPHASWINGS"
   },
   {
     rank: 4, symbol: "TRX", price: 0.3519, price_formatted: "$0.3519", entry_price: "$0.3519",
@@ -2060,7 +2178,7 @@ const CLIENT_QUANT_POOL = [
     borda_score: 98, consensus_votes: "7 of 10 Model Votes",
     consensus_desc: "10-model quantitative algorithm ranked TRX #4 with 98 Borda points. 3-day swing target and stop sized via 14-day ATR volatility budget.",
     regime: { label: "Neutral (Consolidation Range)", status: "neutral", badge: "● NEUTRAL" },
-    target_url: "https://coinpicks.ai", access_password: "quantAlpha2026"
+    referral_exchange: "binance", referral_url: "https://accounts.binance.com", referral_code: "ALPHASWINGS"
   },
   {
     rank: 5, symbol: "NEAR", price: 6.18, price_formatted: "$6.18", entry_price: "$6.18",
@@ -2074,7 +2192,7 @@ const CLIENT_QUANT_POOL = [
     borda_score: 92, consensus_votes: "6 of 10 Model Votes",
     consensus_desc: "10-model quantitative algorithm ranked NEAR #5 with 92 Borda points. 3-day swing target and stop sized via 14-day ATR volatility budget.",
     regime: { label: "Neutral (Consolidation Range)", status: "neutral", badge: "● NEUTRAL" },
-    target_url: "https://coinpicks.ai", access_password: "quantAlpha2026"
+    referral_exchange: "binance", referral_url: "https://accounts.binance.com", referral_code: "ALPHASWINGS"
   },
   {
     rank: 6, symbol: "LINK", price: 22.84, price_formatted: "$22.84", entry_price: "$22.84",
@@ -2088,7 +2206,7 @@ const CLIENT_QUANT_POOL = [
     borda_score: 88, consensus_votes: "6 of 10 Model Votes",
     consensus_desc: "10-model quantitative algorithm ranked LINK #6 with 88 Borda points. 3-day swing target and stop sized via 14-day ATR volatility budget.",
     regime: { label: "Neutral (Consolidation Range)", status: "neutral", badge: "● NEUTRAL" },
-    target_url: "https://coinpicks.ai", access_password: "quantAlpha2026"
+    referral_exchange: "binance", referral_url: "https://accounts.binance.com", referral_code: "ALPHASWINGS"
   },
   {
     rank: 7, symbol: "AVAX", price: 38.72, price_formatted: "$38.72", entry_price: "$38.72",
@@ -2102,7 +2220,7 @@ const CLIENT_QUANT_POOL = [
     borda_score: 85, consensus_votes: "5 of 10 Model Votes",
     consensus_desc: "10-model quantitative algorithm ranked AVAX #7 with 85 Borda points. 3-day swing target and stop sized via 14-day ATR volatility budget.",
     regime: { label: "Neutral (Consolidation Range)", status: "neutral", badge: "● NEUTRAL" },
-    target_url: "https://coinpicks.ai", access_password: "quantAlpha2026"
+    referral_exchange: "binance", referral_url: "https://accounts.binance.com", referral_code: "ALPHASWINGS"
   },
   {
     rank: 8, symbol: "DOGE", price: 0.3184, price_formatted: "$0.3184", entry_price: "$0.3184",
@@ -2116,7 +2234,7 @@ const CLIENT_QUANT_POOL = [
     borda_score: 80, consensus_votes: "5 of 10 Model Votes",
     consensus_desc: "10-model quantitative algorithm ranked DOGE #8 with 80 Borda points. 3-day swing target and stop sized via 14-day ATR volatility budget.",
     regime: { label: "Neutral (Consolidation Range)", status: "neutral", badge: "● NEUTRAL" },
-    target_url: "https://coinpicks.ai", access_password: "quantAlpha2026"
+    referral_exchange: "binance", referral_url: "https://accounts.binance.com", referral_code: "ALPHASWINGS"
   },
   {
     rank: 9, symbol: "ADA", price: 0.9120, price_formatted: "$0.9120", entry_price: "$0.9120",
@@ -2130,7 +2248,7 @@ const CLIENT_QUANT_POOL = [
     borda_score: 74, consensus_votes: "4 of 10 Model Votes",
     consensus_desc: "10-model quantitative algorithm ranked ADA #9 with 74 Borda points. 3-day swing target and stop sized via 14-day ATR volatility budget.",
     regime: { label: "Neutral (Consolidation Range)", status: "neutral", badge: "● NEUTRAL" },
-    target_url: "https://coinpicks.ai", access_password: "quantAlpha2026"
+    referral_exchange: "binance", referral_url: "https://accounts.binance.com", referral_code: "ALPHASWINGS"
   },
   {
     rank: 10, symbol: "XRP", price: 2.31, price_formatted: "$2.31", entry_price: "$2.31",
@@ -2144,7 +2262,7 @@ const CLIENT_QUANT_POOL = [
     borda_score: 70, consensus_votes: "4 of 10 Model Votes",
     consensus_desc: "10-model quantitative algorithm ranked XRP #10 with 70 Borda points. 3-day swing target and stop sized via 14-day ATR volatility budget.",
     regime: { label: "Neutral (Consolidation Range)", status: "neutral", badge: "● NEUTRAL" },
-    target_url: "https://coinpicks.ai", access_password: "quantAlpha2026"
+    referral_exchange: "binance", referral_url: "https://accounts.binance.com", referral_code: "ALPHASWINGS"
   }
 ];
 
@@ -2200,32 +2318,38 @@ function getClientAlternative(exSym, targetRank) {
 
 function getClientProceduralCaption(flash, angle) {
   const sym = flash.symbol;
-  const price = flash.price_formatted;
-  const target = flash.target_price;
-  const targetPct = flash.expected_target_pct;
-  const stop = flash.stop_loss;
-  const stopPct = flash.expected_stop_pct;
-  const rr = flash.risk_reward;
+  const price = flash.price_formatted || flash.entry_price || "$0.00";
+  const target = flash.target_price || "$0.00";
+  const targetPct = flash.expected_target_pct || "+0.0%";
+  const target2Pct = flash.expected_target2_pct || "+42.00%";
+  const stop = flash.stop_loss || "$0.00";
+  const stopPct = flash.expected_stop_pct || "-0.0%";
+  const rr = flash.risk_reward || "1.75 : 1";
   const beRate = flash.breakeven_win_rate || "36.4%";
   const borda = flash.borda_score || 95;
   const regime = flash.regime?.label || "Neutral";
   const rsBtc = flash.rs_btc || "+12.50%";
-  const trackedUrl = `${flash.target_url || "https://coinpicks.ai"}?utm_source=facebook&utm_medium=prediction_flash&utm_campaign=coinpicks_swing`;
+  const refUrl = flash.referral_url || localStorage.getItem("coinpicks_referral_url") || "";
+  const refCode = flash.referral_code || localStorage.getItem("coinpicks_referral_code") || "";
 
-  const comment = `📊 SYSTEMATIC RESEARCH TERMINAL & POSITION SIZER:
-🔗 Live Terminal: ${trackedUrl}
-🔑 Research Access Pass: ${flash.access_password || "quantAlpha2026"}
+  let refSection = "";
+  if (refUrl) {
+    refSection = `👉 Fee rebate & trading signup: ${refUrl}\n`;
+    if (refCode) {
+      refSection += `🎟️ Code / Promo: ${refCode}\n`;
+    }
+    refSection += "\n";
+  }
 
-📋 QUANTITATIVE EXECUTION MATRIX (${sym}/USDT):
-• Entry Level: ${price}
+  const comment = `📋 QUANTITATIVE EXECUTION MATRIX (${sym}/USDT):
+• Reference Level: ${price}
 • Target 1 (+1.40σ ATR): ${target} (${targetPct})
-• Target 2 (+2.50σ ATR): ${target2_pct || "+42.00%"}
+• Target 2 (+2.50σ ATR): ${target2Pct}
 • Invalidation Stop (1.80σ MAE): ${stop} (${stopPct})
-• Payoff Asymmetry: ${rr} (Breakeven Win Rate: ${beRate})
+• Risk:Reward: ${rr} (Breakeven Win Rate: ${beRate})
 • Factor Score: Multi-Factor Decile Leader (${borda} Borda pts)
 
-⚙️ Inspect live factor weights, Monte Carlo drawdowns, and Kelly sizing directly in the web simulator.
-⚠️ Systematic quantitative research publication. Not financial advice.`;
+${refSection}⚠️ Systematic quantitative model research for educational purposes. Not financial advice.`;
 
   let caption = "";
   if (angle === "actionable") {
@@ -2444,20 +2568,34 @@ function renderCanvasSquareCard(flash, includeQr = true, transparent = false) {
   });
 
   const footerY = 852;
-  const pwd = flash.access_password || "quantAlpha2026";
-  const url = (flash.target_url || "https://coinpicks.ai").replace("https://", "");
+  const refUrl = flash.referral_url || localStorage.getItem("coinpicks_referral_url") || "";
+  const refCode = flash.referral_code || localStorage.getItem("coinpicks_referral_code") || "";
+
+  roundRect(ctx, padX, footerY, 1080 - padX * 2, 160, 16, "#0b0e16", "#1a2030");
 
   ctx.fillStyle = "#ffffff";
-  ctx.font = "bold 20px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
-  ctx.fillText("SCAN FOR LIVE INTERACTIVE TERMINAL", padX, footerY + 36);
+  ctx.font = "bold 26px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
+  ctx.fillText("QUANT ALGO STUDIO", padX + 28, footerY + 48);
 
-  ctx.fillStyle = "#64748b";
-  ctx.font = "17px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
-  ctx.fillText(`Research Access Pass: ${pwd}  •  ${url}`, padX, footerY + 68);
+  ctx.fillStyle = "#94a3b8";
+  ctx.font = "18px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
+  const subText = refCode ? `10-Model Quantitative Consensus  •  Referral Code: ${refCode}` : "10-Model Quantitative Consensus  •  Scan to Trade";
+  ctx.fillText(subText, padX + 28, footerY + 84);
 
   ctx.fillStyle = "#475569";
-  ctx.font = "15px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
-  ctx.fillText("Systematic quantitative model simulation for educational purposes. Not financial advice.", padX, footerY + 120);
+  ctx.font = "14px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
+  ctx.fillText("Systematic quantitative model simulation for educational purposes. Not financial advice.", padX + 28, footerY + 124);
+
+  const customQr = localStorage.getItem("coinpicks_referral_qr");
+  if (customQr && includeQr) {
+    try {
+      const qrImg = new Image();
+      qrImg.src = customQr;
+      if (qrImg.complete && qrImg.naturalWidth > 0) {
+        ctx.drawImage(qrImg, 1080 - padX - 130, footerY + 15, 110, 110);
+      }
+    } catch(e) {}
+  }
 
   return canvas.toDataURL("image/png");
 }
