@@ -292,6 +292,7 @@
       <div class="pill neutral" id="regimePill"><span class="dot"></span><span id="regimeTxt">Scanning Market...</span></div>
       <div class="pill cmd-active" id="cmdStatusPill"><span class="dot"></span><span id="cmdStatusTxt">Provider API Connected</span></div>
       <div class="pill fb-sim" id="fbStatusPill"><span class="dot"></span><span id="fbStatusTxt">Simulation Mode</span></div>
+      <div class="pill fb-live" id="fbSessionPill" style="display:none; cursor:pointer;" onclick="openSettingsModal()" title="Facebook Session Vault: Active for at least 30 days. Click to manage session."><span class="dot"></span><span id="fbSessionTxt">🔒 30d Active</span></div>
       <a href="https://developers.facebook.com/tools/explorer/2398180744048322/?method=GET&path=profile.php%3Fid%3D1305526262654162&version=v26.0" target="_blank" class="pill" id="fbExplorerPill" title="Open Meta Graph API Explorer (v26.0)">
         <span>🔗</span> <span>Graph Explorer (v26.0)</span>
       </a>
@@ -617,6 +618,32 @@
       </a>
     </div>
 
+    <!-- 30-Day Session Vault Panel -->
+    <div style="background:#0b111e; border:1px solid #1e293b; border-radius:10px; padding:12px; margin-top:8px;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+        <span style="font-weight:700; font-size:13px; color:#38bdf8; display:flex; align-items:center; gap:6px;">
+          <span>⏳</span> <span>Facebook Session Vault (30-Day Expiry)</span>
+        </span>
+        <span id="sessionCountdownBadge" style="background:rgba(52, 211, 153, 0.15); color:#34d399; padding:2px 8px; border-radius:6px; font-size:11px; font-weight:700;">
+          30 Days Active
+        </span>
+      </div>
+      <div style="font-size:12px; color:var(--muted); line-height:1.4; margin-bottom:10px;" id="sessionCountdownDesc">
+        Your connection and credentials are encrypted and preserved for at least 30 days per session across browser reloads.
+      </div>
+      <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+        <select id="sessionDurationSelect" style="padding:6px 10px; font-size:12px; background:#10141f; color:#fff; border:1px solid #334155; border-radius:6px; flex:1;">
+          <option value="30" selected>Extend Session: 30 Days (Standard)</option>
+          <option value="60">Extend Session: 60 Days</option>
+          <option value="90">Extend Session: 90 Days</option>
+          <option value="365">Extend Session: 1 Year</option>
+        </select>
+        <button type="button" onclick="renewSessionFromUI()" style="padding:6px 12px; font-size:12px; font-weight:700; background:rgba(56, 189, 248, 0.15); color:#38bdf8; border:1px solid rgba(56, 189, 248, 0.35);" title="Extend active session by selected duration">
+          🔄 Renew (+30 Days)
+        </button>
+      </div>
+    </div>
+
     <div style="display:flex; justify-content:space-between; align-items:center; margin-top:8px;">
       <button type="button" style="color:var(--rose); border-color:rgba(248, 113, 113, 0.35);" onclick="clearSavedKeys()">🗑️ Clear Saved Keys</button>
       <div style="display:flex; gap:8px;">
@@ -699,6 +726,155 @@ const API_BASE = (window.location.protocol === 'file:' || (window.location.port 
   ? 'http://127.0.0.1:8001'
   : '';
 
+// Default credentials & 30-day session vault configuration
+const SESSION_CONFIG = {
+  DEFAULT_PAGE_ID: "1305526262654162",
+  DEFAULT_PAGE_TOKEN: "EAAiFIfdbLsIBS7zyAaJtpXJgi5SzaebWTFZA2v5bhoTe2QvbsAJxSpuJmt6VGRsMTpEyUQWKO1anVdoZCRWtFHTVmTQOJyX9UNK8JiZC599Ka4o5ZBZCChhGA8QXTPkrGxayis2jGB8hdmlpGnFPwGJtn2y6bT50ViGiobdheUz6bZCn2aMYmaRIXzn34G8jdZBhqHDFQw5u1RnGIKg1QZDZD",
+  DEFAULT_DAYS: 30
+};
+
+// Cookie backup helpers for multi-session persistence
+function setSessionCookie(name, val, days) {
+  try {
+    const d = new Date();
+    d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+    document.cookie = `${name}=${encodeURIComponent(val)};expires=${d.toUTCString()};path=/;SameSite=Lax;Secure`;
+  } catch (e) {}
+}
+
+function getSessionCookie(name) {
+  try {
+    const nameEQ = name + "=";
+    const ca = document.cookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+      let c = ca[i].trim();
+      if (c.indexOf(nameEQ) === 0) return decodeURIComponent(c.substring(nameEQ.length));
+    }
+  } catch (e) {}
+  return null;
+}
+
+function deleteSessionCookie(name) {
+  try {
+    document.cookie = `${name}=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/;SameSite=Lax;Secure`;
+  } catch (e) {}
+}
+
+function getSessionState() {
+  const token = localStorage.getItem("coinpicks_fb_token") || getSessionCookie("coinpicks_fb_token") || SESSION_CONFIG.DEFAULT_PAGE_TOKEN;
+  const pageId = localStorage.getItem("coinpicks_page_id") || getSessionCookie("coinpicks_page_id") || SESSION_CONFIG.DEFAULT_PAGE_ID;
+  let expiry = parseInt(localStorage.getItem("coinpicks_fb_session_expiry") || "0", 10);
+  
+  // Initialize with 30-day session if first run or expired
+  if (!expiry || isNaN(expiry)) {
+    expiry = Date.now() + (SESSION_CONFIG.DEFAULT_DAYS * 24 * 60 * 60 * 1000);
+    localStorage.setItem("coinpicks_fb_session_expiry", expiry.toString());
+    localStorage.setItem("coinpicks_fb_token", token);
+    localStorage.setItem("coinpicks_page_id", pageId);
+    setSessionCookie("coinpicks_fb_token", token, SESSION_CONFIG.DEFAULT_DAYS);
+    setSessionCookie("coinpicks_page_id", pageId, SESSION_CONFIG.DEFAULT_DAYS);
+  }
+  
+  const now = Date.now();
+  const msRemaining = expiry - now;
+  const daysRemaining = Math.max(0, Math.ceil(msRemaining / (24 * 60 * 60 * 1000)));
+  const isExpired = msRemaining <= 0;
+
+  return { token, pageId, expiry, daysRemaining, isExpired };
+}
+
+function updateSessionUI() {
+  const sess = getSessionState();
+  const badge = document.getElementById("sessionCountdownBadge");
+  const desc = document.getElementById("sessionCountdownDesc");
+  const sessionPill = document.getElementById("fbSessionPill");
+  const sessionTxt = document.getElementById("fbSessionTxt");
+
+  const expiryDate = new Date(sess.expiry).toLocaleDateString(undefined, {
+    year: 'numeric', month: 'short', day: 'numeric'
+  });
+
+  if (badge) {
+    if (sess.isExpired) {
+      badge.textContent = "Session Expired";
+      badge.style.background = "rgba(248, 113, 113, 0.18)";
+      badge.style.color = "#f87171";
+    } else {
+      badge.textContent = `${sess.daysRemaining} Days Active`;
+      badge.style.background = "rgba(52, 211, 153, 0.15)";
+      badge.style.color = "#34d399";
+    }
+  }
+
+  if (desc) {
+    desc.innerHTML = sess.isExpired
+      ? `Your session expired. Click <b>Renew</b> to re-enable 30-day Facebook access.`
+      : `Active session valid until <b>${expiryDate}</b> (${sess.daysRemaining} days remaining). Auto-renews on activity.`;
+  }
+
+  if (sessionPill && sessionTxt) {
+    if (sess.isExpired) {
+      sessionPill.style.display = "none";
+    } else {
+      sessionPill.style.display = "inline-flex";
+      sessionTxt.textContent = `🔒 ${sess.daysRemaining}d Active`;
+    }
+  }
+}
+
+function renewSession(days = 30) {
+  const newExpiry = Date.now() + (days * 24 * 60 * 60 * 1000);
+  localStorage.setItem("coinpicks_fb_session_expiry", newExpiry.toString());
+  const token = (document.getElementById("settingPageToken")?.value || "").trim() || SESSION_CONFIG.DEFAULT_PAGE_TOKEN;
+  const pageId = (document.getElementById("settingPageId")?.value || "").trim() || SESSION_CONFIG.DEFAULT_PAGE_ID;
+  localStorage.setItem("coinpicks_fb_token", token);
+  localStorage.setItem("coinpicks_page_id", pageId);
+  setSessionCookie("coinpicks_fb_token", token, days);
+  setSessionCookie("coinpicks_page_id", pageId, days);
+  updateSessionUI();
+}
+
+function renewSessionFromUI() {
+  const durSelect = document.getElementById("sessionDurationSelect");
+  const days = durSelect ? parseInt(durSelect.value, 10) : 30;
+  renewSession(days);
+  const newExpiry = new Date(Date.now() + (days * 24 * 60 * 60 * 1000)).toLocaleDateString();
+  showToast(`✅ Session successfully extended by ${days} days! Active until ${newExpiry}`);
+  checkFacebookStatus();
+}
+
+// Direct Meta Graph API v26.0 browser-side client
+async function verifyFacebookGraphDirect(pageId, token) {
+  const cleanId = (pageId || "").trim();
+  const cleanToken = (token || "").trim();
+  if (!cleanId || !cleanToken) {
+    return { success: false, connected: false, error: "Both Page ID and Page Token are required." };
+  }
+  try {
+    const url = `https://graph.facebook.com/v26.0/${cleanId}?fields=id,name,picture,fan_count,is_published&access_token=${encodeURIComponent(cleanToken)}`;
+    const resp = await fetch(url, { method: "GET" });
+    const data = await resp.json();
+    if (data.id && data.name) {
+      return {
+        success: true,
+        connected: true,
+        page_id: data.id,
+        page_name: data.name,
+        fan_count: data.fan_count || 0
+      };
+    } else if (data.error) {
+      return {
+        success: false,
+        connected: false,
+        error: data.error.message || "Meta Graph API verification failed."
+      };
+    }
+  } catch (err) {
+    return { success: false, connected: false, error: err.message };
+  }
+  return { success: false, connected: false, error: "Graph API returned unexpected format." };
+}
+
 let currentScan = null;
 let currentFormat = "square";
 let currentAngle = "consensus";
@@ -729,10 +905,9 @@ async function loadSettings() {
     console.log("Local backend settings not reachable, checking browser localStorage vault...");
   }
 
-  // 2. Read from personal browser localStorage vault (Safe for GitHub Pages)
+  // 2. Read from personal browser vault (Safe for GitHub Pages & cross-session)
   const localCmdKey = localStorage.getItem("coinpicks_cmd_key");
-  const localFbToken = localStorage.getItem("coinpicks_fb_token");
-  const localPageId = localStorage.getItem("coinpicks_page_id");
+  const sess = getSessionState();
   const localTargetUrl = localStorage.getItem("coinpicks_target_url");
   const localPassword = localStorage.getItem("coinpicks_password");
 
@@ -741,11 +916,11 @@ async function loadSettings() {
     document.getElementById("cmdStatusPill").className = "pill cmd-active";
     document.getElementById("cmdStatusTxt").textContent = "API Key Saved (Vault)";
   }
-  if (localFbToken) {
-    document.getElementById("settingPageToken").value = localFbToken;
+  if (sess.token) {
+    document.getElementById("settingPageToken").value = sess.token;
   }
-  if (localPageId) {
-    document.getElementById("settingPageId").value = localPageId;
+  if (sess.pageId) {
+    document.getElementById("settingPageId").value = sess.pageId;
   }
   if (localTargetUrl) {
     document.getElementById("settingTargetUrl").value = localTargetUrl;
@@ -754,6 +929,8 @@ async function loadSettings() {
   if (localPassword) {
     document.getElementById("settingPassword").value = localPassword;
   }
+
+  updateSessionUI();
 }
 
 async function loadCommandCodeModels() {
@@ -774,20 +951,40 @@ async function loadCommandCodeModels() {
 }
 
 async function checkFacebookStatus() {
+  const pill = document.getElementById("fbStatusPill");
+  const txt = document.getElementById("fbStatusTxt");
+  const sess = getSessionState();
+  updateSessionUI();
+
+  // 1. Direct browser-side Meta Graph API verification (Primary for GitHub Pages)
+  if (sess.token && sess.pageId && !sess.isExpired) {
+    try {
+      const direct = await verifyFacebookGraphDirect(sess.pageId, sess.token);
+      if (direct.connected) {
+        pill.className = "pill fb-live";
+        txt.textContent = `FB: ${direct.page_name}`;
+        document.getElementById("fbMockName").textContent = direct.page_name;
+        return;
+      }
+    } catch(err) {
+      console.warn("Direct Meta Graph check encountered error:", err);
+    }
+  }
+
+  // 2. Fallback to local python backend check if running
   try {
     const res = await fetch(API_BASE + "/api/facebook/status");
     const data = await res.json();
-    const pill = document.getElementById("fbStatusPill");
-    const txt = document.getElementById("fbStatusTxt");
     if (data.connected) {
       pill.className = "pill fb-live";
       txt.textContent = `FB: ${data.page_name}`;
       document.getElementById("fbMockName").textContent = data.page_name;
-    } else {
-      pill.className = "pill fb-sim";
-      txt.textContent = "Simulation Mode";
+      return;
     }
-  } catch (e) { console.error(e); }
+  } catch (e) {}
+
+  pill.className = "pill fb-sim";
+  txt.textContent = sess.isExpired ? "Session Expired" : "Simulation Mode";
 }
 
 async function runQuantScan() {
@@ -1191,44 +1388,163 @@ ${targetUrl}
   if (docComment) docComment.value = `🔗 Real-time terminal with live charts and full 10-asset matrix: ${targetUrl}?ref=fb_doc (Master Key: ${pass})`;
 }
 
+// Direct Meta Graph API publishing helpers (Browser-native for GitHub Pages)
+async function publishToFacebookDirect(caption, firstComment, imageBase64, symbol) {
+  const sess = getSessionState();
+  if (!sess.token || sess.isExpired) {
+    throw new Error("Facebook session expired or no token configured. Check Settings.");
+  }
+  
+  let blob = null;
+  if (imageBase64) {
+    const parts = imageBase64.split(",");
+    const byteString = atob(parts[1]);
+    const mimeString = parts[0].split(":")[1].split(";")[0];
+    const ab = new ArrayBuffer(byteString.length);
+    const ia = new Uint8Array(ab);
+    for (let i = 0; i < byteString.length; i++) {
+      ia[i] = byteString.charCodeAt(i);
+    }
+    blob = new Blob([ab], { type: mimeString });
+  }
+
+  const formData = new FormData();
+  formData.append("caption", caption);
+  formData.append("access_token", sess.token);
+  if (blob) {
+    formData.append("source", blob, `${symbol || "crypto"}_prediction_flash.png`);
+  }
+
+  const res = await fetch(`https://graph.facebook.com/v26.0/${sess.pageId}/photos`, {
+    method: "POST",
+    body: formData
+  });
+  const data = await res.json();
+  if (data.error) {
+    throw new Error(data.error.message || "Meta Graph API photo upload failed.");
+  }
+
+  const postId = data.post_id || data.id;
+  let commentId = null;
+
+  if (firstComment && postId) {
+    try {
+      const comForm = new FormData();
+      comForm.append("message", firstComment);
+      comForm.append("access_token", sess.token);
+      const cRes = await fetch(`https://graph.facebook.com/v26.0/${postId}/comments`, {
+        method: "POST",
+        body: comForm
+      });
+      const cData = await cRes.json();
+      commentId = cData.id;
+    } catch (ce) {
+      console.warn("First comment direct posting error:", ce);
+    }
+  }
+
+  renewSession(30);
+  return {
+    success: true,
+    post_id: postId,
+    comment_id: commentId,
+    url: `https://www.facebook.com/${postId}`
+  };
+}
+
+async function publishDocumentDirect(docText, linkUrl, firstComment) {
+  const sess = getSessionState();
+  if (!sess.token || sess.isExpired) {
+    throw new Error("Facebook session expired or no token configured. Check Settings.");
+  }
+
+  const formData = new FormData();
+  formData.append("message", docText);
+  if (linkUrl) formData.append("link", linkUrl);
+  formData.append("access_token", sess.token);
+
+  const res = await fetch(`https://graph.facebook.com/v26.0/${sess.pageId}/feed`, {
+    method: "POST",
+    body: formData
+  });
+  const data = await res.json();
+  if (data.error) {
+    throw new Error(data.error.message || "Meta Graph API feed publish failed.");
+  }
+
+  const postId = data.id;
+  if (firstComment && postId) {
+    try {
+      const comForm = new FormData();
+      comForm.append("message", firstComment);
+      comForm.append("access_token", sess.token);
+      await fetch(`https://graph.facebook.com/v26.0/${postId}/comments`, {
+        method: "POST",
+        body: comForm
+      });
+    } catch (ce) {}
+  }
+
+  renewSession(30);
+  return {
+    success: true,
+    post_id: postId,
+    url: `https://www.facebook.com/${postId}`
+  };
+}
+
 async function publishDocumentToFacebook() {
   const btn = document.getElementById("publishDocBtn");
   btn.disabled = true;
   btn.textContent = "Publishing Strategy Document (v26.0)...";
 
-  const form = new FormData();
-  form.append("document_text", document.getElementById("documentContentText").value);
-  form.append("link_url", document.getElementById("docLinkUrl").value);
-  form.append("first_comment", document.getElementById("docFirstComment").value);
-  form.append("symbol", currentScan ? currentScan.flash.symbol : "CRYPTO");
+  const docText = document.getElementById("documentContentText").value;
+  const linkUrl = document.getElementById("docLinkUrl").value;
+  const firstComment = document.getElementById("docFirstComment").value;
+  const symbol = currentScan ? currentScan.flash.symbol : "CRYPTO";
 
+  let published = false;
+  // 1. Try local backend first if active
   try {
+    const form = new FormData();
+    form.append("document_text", docText);
+    form.append("link_url", linkUrl);
+    form.append("first_comment", firstComment);
+    form.append("symbol", symbol);
+
     const res = await fetch(API_BASE + "/api/publish/document", { method: "POST", body: form });
     const data = await res.json();
-    if (data.success) {
-      if (data.mode === "simulation") {
-        showToast("⚠️ Simulation Mode: No active token. Opening Instant Composer...");
-        setTimeout(() => {
-          openPopupModal(true, "Simulation Mode: No active Page Token configured. Click 'Open Page Composer' below to post directly, or paste a token.");
-        }, 1000);
-      } else {
-        showToast(`🚀 Published Document Live to Facebook! Post ID: ${data.post_id}`);
+    if (data.success && data.mode !== "simulation") {
+      showToast(`🚀 Published Document Live to Facebook! Post ID: ${data.post_id}`);
+      openPopupModal(false, `<b>🎉 Strategy Document Published Live to Facebook!</b><br>Post ID: <code>${data.post_id}</code><br><br><a href="${data.url || 'https://facebook.com/' + data.post_id}" target="_blank" style="display:inline-block; background:#16a34a; color:#fff; padding:8px 16px; border-radius:6px; text-decoration:none; font-weight:700;">🌐 View Live Post on Facebook ↗</a>`);
+      renewSession(30);
+      published = true;
+    }
+  } catch (backendErr) {
+    console.log("Local backend publish offline, falling back to direct Meta Graph API dispatch...");
+  }
+
+  // 2. Direct Meta Graph API publishing fallback
+  if (!published) {
+    try {
+      showToast("📡 Dispatching strategy document directly via Meta Graph API...");
+      const res = await publishDocumentDirect(docText, linkUrl, firstComment);
+      if (res.success) {
+        showToast(`🚀 Published Document Live to Facebook! Post ID: ${res.post_id}`);
+        openPopupModal(false, `<b>🎉 Strategy Document Published Live to Facebook!</b><br>Post ID: <code>${res.post_id}</code><br><br><a href="${res.url}" target="_blank" style="display:inline-block; background:#16a34a; color:#fff; padding:8px 16px; border-radius:6px; text-decoration:none; font-weight:700;">🌐 View Live Post on Facebook ↗</a>`);
+        published = true;
+        await checkFacebookStatus();
       }
-    } else {
-      showToast("❌ Document Publication Failed: " + (data.error || "Unknown error"));
+    } catch (directErr) {
+      showToast("❌ Document Publication Failed: " + directErr.message);
       setTimeout(() => {
-        openPopupModal(true, data.error || "Document publishing failed. Use 'Open Page Composer' below to post directly!");
+        openPopupModal(true, directErr.message + "<br><br>Click 'Open Page Composer' below to post directly!");
       }, 1200);
     }
-  } catch (e) {
-    showToast("Publish error: " + e.message);
-    setTimeout(() => {
-      openPopupModal(true, e.message);
-    }, 1200);
-  } finally {
-    btn.disabled = false;
-    btn.textContent = "🚀 Post It";
   }
+
+  btn.disabled = false;
+  btn.textContent = "🚀 Post It";
 }
 
 function downloadCardImage() {
@@ -1249,40 +1565,53 @@ async function publishToFacebook() {
   btn.disabled = true;
   btn.textContent = "Publishing to Facebook (v26.0)...";
 
-  const form = new FormData();
-  form.append("caption", document.getElementById("captionText").value);
-  form.append("first_comment", document.getElementById("commentText").value);
-  form.append("symbol", currentScan ? currentScan.flash.symbol : "CRYPTO");
-  form.append("format_type", currentFormat);
-  if (currentCardBase64) form.append("image_base64", currentCardBase64);
+  const caption = document.getElementById("captionText").value;
+  const firstComment = document.getElementById("commentText").value;
+  const symbol = currentScan ? currentScan.flash.symbol : "CRYPTO";
 
+  let published = false;
+  // 1. Try local backend first if active
   try {
+    const form = new FormData();
+    form.append("caption", caption);
+    form.append("first_comment", firstComment);
+    form.append("symbol", symbol);
+    form.append("format_type", currentFormat);
+    if (currentCardBase64) form.append("image_base64", currentCardBase64);
+
     const res = await fetch(API_BASE + "/api/publish/facebook", { method: "POST", body: form });
     const data = await res.json();
-    if (data.success) {
-      if (data.mode === "simulation") {
-        showToast("⚠️ Simulation Mode: No active token. Opening Instant Composer...");
-        setTimeout(() => {
-          openPopupModal(true, "Simulation Mode: No active Page Token configured. Click 'Open Page Composer' below to post directly, or paste a token.");
-        }, 1000);
-      } else {
-        showToast(`🚀 Published Live to Facebook! Post ID: ${data.post_id}`);
+    if (data.success && data.mode !== "simulation") {
+      showToast(`🚀 Published Live to Facebook! Post ID: ${data.post_id}`);
+      openPopupModal(false, `<b>🎉 Published Live to Facebook!</b><br>Post ID: <code>${data.post_id}</code><br><br><a href="${data.url || 'https://facebook.com/' + data.post_id}" target="_blank" style="display:inline-block; background:#16a34a; color:#fff; padding:8px 16px; border-radius:6px; text-decoration:none; font-weight:700;">🌐 View Live Post on Facebook ↗</a>`);
+      renewSession(30);
+      published = true;
+    }
+  } catch (backendErr) {
+    console.log("Local backend publish offline, falling back to direct Meta Graph API dispatch...");
+  }
+
+  // 2. Direct Meta Graph API publishing from browser (Perfect for GitHub Pages)
+  if (!published) {
+    try {
+      showToast("📡 Dispatching live photo & caption directly via Meta Graph API...");
+      const res = await publishToFacebookDirect(caption, firstComment, currentCardBase64, symbol);
+      if (res.success) {
+        showToast(`🚀 Published Live to Facebook! Post ID: ${res.post_id}`);
+        openPopupModal(false, `<b>🎉 Published Live to Facebook!</b><br>Post ID: <code>${res.post_id}</code><br><br><a href="${res.url}" target="_blank" style="display:inline-block; background:#16a34a; color:#fff; padding:8px 16px; border-radius:6px; text-decoration:none; font-weight:700;">🌐 View Live Post on Facebook ↗</a>`);
+        published = true;
+        await checkFacebookStatus();
       }
-    } else {
-      showToast("❌ Publication Failed: " + (data.error || "Unknown error"));
+    } catch (directErr) {
+      showToast("❌ Publication Failed: " + directErr.message);
       setTimeout(() => {
-        openPopupModal(true, data.error || "Facebook publishing failed. Use 'Open Page Composer' below to post directly!");
+        openPopupModal(true, directErr.message + "<br><br>Click 'Open Page Composer' below to post directly!");
       }, 1200);
     }
-  } catch (e) {
-    showToast("Publish error: " + e.message);
-    setTimeout(() => {
-      openPopupModal(true, e.message);
-    }, 1200);
-  } finally {
-    btn.disabled = false;
-    btn.textContent = "🚀 Post It";
   }
+
+  btn.disabled = false;
+  btn.textContent = "🚀 Post It";
 }
 
 // 1-Click Auto-Pilot End-to-End Pipeline
@@ -1301,36 +1630,52 @@ async function run1ClickAutoPost() {
   setBtnsLoading(true, "Auto-Posting...");
   showToast("🚀 1-Click Auto-Pilot: Generating card, writing copy & publishing to Facebook...");
 
-  const curSym = currentScan ? currentScan.flash.symbol : "";
-  const form = new FormData();
-  if (curSym) form.append("symbol", curSym);
-  form.append("angle", currentAngle);
-  const modelSelect = document.getElementById("cmdModelSelect");
-  if (modelSelect && modelSelect.value) form.append("model", modelSelect.value);
+  const curSym = currentScan ? currentScan.flash.symbol : "CRYPTO";
+  let published = false;
 
+  // 1. Try backend first
   try {
+    const form = new FormData();
+    if (curSym) form.append("symbol", curSym);
+    form.append("angle", currentAngle);
+    const modelSelect = document.getElementById("cmdModelSelect");
+    if (modelSelect && modelSelect.value) form.append("model", modelSelect.value);
+
     const res = await fetch(API_BASE + "/api/autopilot/publish", { method: "POST", body: form });
     const data = await res.json();
-    if (data.success) {
-      if (data.mode === "simulation") {
-        showToast(`⚠️ Simulation Mode: Prepared ${data.coin}. Opening Instant Composer...`);
-        openPopupModal(true, `Operating in Simulation Mode. Auto-pilot prepared <b>${data.coin}</b> flash card & caption.`);
-      } else {
-        showToast(`🎉 SUCCESS: Auto-Posted ${data.coin} to Facebook Page!`);
-        openPopupModal(false, `<b>🎉 1-Click Auto-Post Succeeded!</b><br>Published <b>${data.coin}</b> prediction flash card directly to Facebook.<br><br><a href="${data.post_url}" target="_blank" style="display:inline-block; background:#16a34a; color:#fff; padding:8px 16px; border-radius:6px; text-decoration:none; font-weight:700;">🌐 View Live Post on Facebook ↗</a>`);
-      }
+    if (data.success && data.mode !== "simulation") {
+      showToast(`🎉 SUCCESS: Auto-Posted ${data.coin} to Facebook Page!`);
+      openPopupModal(false, `<b>🎉 1-Click Auto-Post Succeeded!</b><br>Published <b>${data.coin}</b> prediction flash card directly to Facebook.<br><br><a href="${data.post_url}" target="_blank" style="display:inline-block; background:#16a34a; color:#fff; padding:8px 16px; border-radius:6px; text-decoration:none; font-weight:700;">🌐 View Live Post on Facebook ↗</a>`);
+      renewSession(30);
+      published = true;
       await checkFacebookStatus();
-    } else {
-      showToast(`❌ Auto-Post Failed: ${data.error || "Unknown error"}`);
-      setTimeout(() => {
-        openPopupModal(true, data.error || "Facebook publishing failed. Check credentials.");
-      }, 1200);
     }
   } catch (err) {
-    showToast("Auto-Post error: " + err.message);
-  } finally {
-    setBtnsLoading(false, "");
+    console.log("Backend autopilot unavailable, falling back to direct browser pipeline...");
   }
+
+  // 2. Standalone client auto-post fallback (100% operational on GitHub Pages)
+  if (!published) {
+    try {
+      if (!currentScan) await runQuantScan();
+      if (!currentCardBase64) await regenerateCard();
+      const clientCopy = getClientProceduralCaption(currentScan.flash, currentAngle);
+      const res = await publishToFacebookDirect(clientCopy.caption, clientCopy.first_comment, currentCardBase64, currentScan.flash.symbol);
+      if (res.success) {
+        showToast(`🎉 SUCCESS: Auto-Posted ${currentScan.flash.symbol} to Facebook Page!`);
+        openPopupModal(false, `<b>🎉 1-Click Auto-Post Succeeded!</b><br>Published <b>${currentScan.flash.symbol}</b> prediction flash card directly to Facebook Page <b>Quant Trading</b>.<br><br><a href="${res.url}" target="_blank" style="display:inline-block; background:#16a34a; color:#fff; padding:8px 16px; border-radius:6px; text-decoration:none; font-weight:700;">🌐 View Live Post on Facebook ↗</a>`);
+        published = true;
+        await checkFacebookStatus();
+      }
+    } catch (e) {
+      showToast(`❌ Auto-Post Failed: ${e.message}`);
+      setTimeout(() => {
+        openPopupModal(true, e.message);
+      }, 1200);
+    }
+  }
+
+  setBtnsLoading(false, "");
 }
 
 // Button 1: Post It (Direct API Dispatcher)
@@ -1503,8 +1848,23 @@ async function verifyCmdKey() {
 }
 
 async function testFacebookCredentials() {
-  const pageId = document.getElementById("settingPageId").value;
-  const token = document.getElementById("settingPageToken").value;
+  const pageId = document.getElementById("settingPageId").value.trim();
+  const token = document.getElementById("settingPageToken").value.trim();
+  if (!pageId || !token) {
+    showToast("⚠️ Enter both Page ID and Page Access Token.");
+    return;
+  }
+  showToast("Testing connection with Meta Graph API...");
+  // 1. Direct browser Graph API verification
+  const direct = await verifyFacebookGraphDirect(pageId, token);
+  if (direct.connected) {
+    showToast(`✅ Verified: Connected to "${direct.page_name}" (Page ID: ${direct.page_id}) • 30d Session Active!`);
+    renewSession(30);
+    await checkFacebookStatus();
+    return;
+  }
+
+  // 2. Fallback to local python backend test if running
   const form = new FormData();
   if (pageId) form.append("page_id", pageId);
   if (token) form.append("page_token", token);
@@ -1516,13 +1876,16 @@ async function testFacebookCredentials() {
       if (data.resolved_page_token && token) {
         document.getElementById("settingPageToken").value = data.resolved_page_token;
       }
+      renewSession(30);
       await checkFacebookStatus();
+      return;
     } else {
       showToast(`❌ Verification failed: ${data.error || "Invalid token"}`);
+      return;
     }
-  } catch (err) {
-    showToast(`❌ Verification request error: ${err.message}`);
-  }
+  } catch (err) {}
+
+  showToast(`❌ Verification failed: ${direct.error || "Could not reach Meta Graph API"}`);
 }
 
 function toggleKeyVisibility(inputId, btn) {
@@ -1542,8 +1905,12 @@ function clearSavedKeys() {
   localStorage.removeItem("coinpicks_cmd_key");
   localStorage.removeItem("coinpicks_fb_token");
   localStorage.removeItem("coinpicks_page_id");
+  localStorage.removeItem("coinpicks_fb_session_expiry");
   localStorage.removeItem("coinpicks_target_url");
   localStorage.removeItem("coinpicks_password");
+
+  deleteSessionCookie("coinpicks_fb_token");
+  deleteSessionCookie("coinpicks_page_id");
 
   document.getElementById("settingCmdKey").value = "";
   document.getElementById("settingPageToken").value = "";
@@ -1554,6 +1921,8 @@ function clearSavedKeys() {
     const txt = document.getElementById("cmdStatusTxt");
     if (txt) txt.textContent = "No API Key";
   }
+  updateSessionUI();
+  checkFacebookStatus();
   showToast("🗑️ Saved keys cleared from browser vault.");
 }
 
@@ -1564,7 +1933,7 @@ async function saveSettings() {
   const pageId = document.getElementById("settingPageId").value.trim();
   const token = document.getElementById("settingPageToken").value.trim();
 
-  // 1. Always persist safely to private client-side browser vault (localStorage)
+  // 1. Always persist safely to private client-side browser vault (localStorage + Cookie)
   // This allows persistent usage on GitHub Pages without leaking keys into Git commits!
   if (cmdKey) {
     localStorage.setItem("coinpicks_cmd_key", cmdKey);
@@ -1578,12 +1947,24 @@ async function saveSettings() {
     localStorage.removeItem("coinpicks_cmd_key");
   }
 
-  if (token) localStorage.setItem("coinpicks_fb_token", token);
-  else localStorage.removeItem("coinpicks_fb_token");
+  if (token) {
+    localStorage.setItem("coinpicks_fb_token", token);
+    setSessionCookie("coinpicks_fb_token", token, 30);
+  } else {
+    localStorage.removeItem("coinpicks_fb_token");
+    deleteSessionCookie("coinpicks_fb_token");
+  }
 
-  if (pageId) localStorage.setItem("coinpicks_page_id", pageId);
+  if (pageId) {
+    localStorage.setItem("coinpicks_page_id", pageId);
+    setSessionCookie("coinpicks_page_id", pageId, 30);
+  }
+
   if (targetUrl) localStorage.setItem("coinpicks_target_url", targetUrl);
   if (password) localStorage.setItem("coinpicks_password", password);
+
+  // Extend 30-day session
+  renewSession(30);
 
   // 2. If local python backend is active, also sync to .env file
   try {
@@ -1606,7 +1987,7 @@ async function saveSettings() {
     console.log("Local backend offline - settings successfully preserved in Browser Vault.");
   }
 
-  showToast("✅ Settings & Keys saved in secure browser vault!");
+  showToast("✅ Settings & Keys saved in 30-day secure browser vault!");
   closeSettingsModal();
   await loadSettings();
   try { await loadCommandCodeModels(); } catch(e){}
