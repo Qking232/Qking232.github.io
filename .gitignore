@@ -16,3 +16,7 @@ Gemfile.lock
 .idea/
 *.swp
 node_modules
+
+# Temporary revision drafts
+*rev*.html
+*_rev*.html
