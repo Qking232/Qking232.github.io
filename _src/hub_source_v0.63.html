@@ -702,64 +702,109 @@
   }
 </style>
 
-<script>
-  // Dark is the default theme. A saved choice (the header toggle) still wins.
-  (function () {
-    var t = null;
-    try { t = localStorage.getItem('theme'); } catch (e) { /* storage may be unavailable */ }
-    if (t !== 'dark' && t !== 'light') t = 'dark';
-    document.documentElement.setAttribute('data-theme', t);
-  })();
-</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            alabaster: '#F9FBFB',
+            obsidian: '#0B0F19',
+            darkSurface: '#111827',
+            darkCard: '#151E32',
+            darkBorder: '#1F293D',
+            borderSlate: '#E2E8F0',
+            inkPrimary: '#0F172A',
+            inkMuted: '#64748B',
+            textDarkPrimary: '#F1F5F9',
+            textDarkMuted: '#94A3B8'
+          }
+        }
+      }
+    };
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (t !== 'dark' && t !== 'light') t = 'dark';
+      document.documentElement.setAttribute('data-theme', t);
+      if (t === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    })();
+  </script>
 </head>
 <body>
 
-  <header class="top" style="position: sticky; top: 0; z-index: 40; background: #090B0E; border-bottom: 1px solid #232834; display: flex; flex-direction: column; gap: 6px; padding: 8px 18px;">
-    <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
-      <div style="display: flex; align-items: center; gap: 20px;">
-        <a href="/" class="flex items-center gap-2.5 sm:gap-3 group shrink-0" aria-label="Renewable Vietnam — home">
+    <header class="sticky top-0 z-40 w-full bg-alabaster/95 dark:bg-obsidian/95 backdrop-blur-md border-b border-borderSlate dark:border-darkBorder px-3 sm:px-6 lg:px-8 transition-colors shadow-sm">
+    <div class="w-full max-w-7xl mx-auto flex flex-col gap-2 py-2.5 sm:py-3.5">
+      <!-- Top Row: Brand, Desktop Nav, and Header CTAs -->
+      <div class="flex items-center justify-between w-full">
+        <div class="flex items-center gap-6">
+          <a href="/" class="flex items-center gap-2.5 sm:gap-3 group shrink-0" aria-label="Renewable Vietnam — home">
             <img src="/assets/images/logo.svg" alt="Renewable Viet Nam Mark" width="34" height="34" class="w-8 h-8 sm:w-8.5 sm:h-8.5 rounded-lg shrink-0 shadow-sm" />
-            <span class="text-[11px] sm:text-xs font-mono uppercase tracking-[0.14em] sm:tracking-[0.24em] text-white font-semibold">
+            <span class="text-[11px] sm:text-xs font-mono uppercase tracking-[0.14em] sm:tracking-[0.24em] text-inkPrimary dark:text-textDarkPrimary font-semibold">
               RENEWABLE INFRASTRUCTURE
             </span>
           </a>
-        <nav class="hidden md:flex items-center gap-1 font-mono text-[11px] tracking-wider text-slate-400">
-            <a href="/livewire/" class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-slate-400 hover:text-teal-400 hover:bg-slate-800/40 transition-colors">
-              <span class="relative flex h-1.5 w-1.5 shrink-0">
+
+          <!-- Quick Inter-Domain Jump Navigation (Desktop) -->
+          <nav class="hidden md:flex items-center gap-1 font-mono text-[11px] tracking-wider text-inkMuted dark:text-textDarkMuted">
+            <a href="/livewire/" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md hover:text-teal-600 dark:hover:text-teal-400 hover:bg-slate-100 dark:hover:bg-darkCard transition-colors group">
+              <span class="relative flex h-2 w-2 shrink-0">
                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
               </span>
               <span>Live Wire</span>
-            </a> <span class="text-slate-600">&middot;</span> <a href="/" class="px-2.5 py-1 rounded-md text-slate-400 hover:text-teal-400 hover:bg-slate-800/40 transition-colors">Green Industrial</a> <span class="text-slate-600">&middot;</span> <a href="/projectenergy/" class="px-2.5 py-1 rounded-md text-slate-400 hover:text-emerald-400 hover:bg-slate-800/40 transition-colors">PDP8 Energy</a> <span class="text-slate-600">&middot;</span> <a href="/evcharging/" class="px-2.5 py-1 rounded-md text-slate-400 hover:text-amber-400 hover:bg-slate-800/40 transition-colors">EV Tech</a> <span class="text-slate-600">&middot;</span> <a href="/calculator/" class="px-2.5 py-1 rounded-md text-slate-400 hover:text-teal-400 hover:bg-slate-800/40 transition-colors">Tool</a> <span class="text-slate-600">&middot;</span> <a href="/hub/" class="px-2.5 py-1 rounded-md text-white font-semibold bg-white/10 border border-white/40 shadow-sm transition-all">Legal Framework</a>
+            </a>
+            <span class="text-slate-300 dark:text-slate-700">&middot;</span>
+            <a href="/" class="px-2.5 py-1 rounded-md hover:text-teal-600 dark:hover:text-teal-400 hover:bg-slate-100 dark:hover:bg-darkCard transition-colors">Green Industrial</a>
+            <span class="text-slate-300 dark:text-slate-700">&middot;</span>
+            <a href="/projectenergy/" class="px-2.5 py-1 rounded-md hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-slate-100 dark:hover:bg-darkCard transition-colors">PDP8 Energy</a>
+            <span class="text-slate-300 dark:text-slate-700">&middot;</span>
+            <a href="/evcharging/" class="px-2.5 py-1 rounded-md hover:text-inkPrimary dark:hover:text-textDarkPrimary hover:bg-slate-100 dark:hover:bg-darkCard transition-colors">EV Tech</a>
+            <span class="text-slate-300 dark:text-slate-700">&middot;</span>
+            <a href="/calculator/" class="px-2.5 py-1 rounded-md hover:text-teal-600 dark:hover:text-teal-400 hover:bg-slate-100 dark:hover:bg-darkCard transition-colors">Tool</a>
+            <span class="text-slate-300 dark:text-slate-700">&middot;</span>
+            <a href="/hub/" class="px-2.5 py-1 rounded-md text-sky-600 dark:text-sky-400 font-semibold bg-sky-500/10 dark:bg-sky-400/10 border border-sky-500/20">Legal Framework</a>
           </nav>
+        </div>
+
+        <!-- Right Controls -->
+        <div class="flex items-center gap-1.5 sm:gap-2">
+          <!-- Hidden legacy hooks so internal script doesn't break -->
+          <button class="hidden" id="keyBtn" type="button"></button>
+          <button class="hidden" id="keyReBtn" type="button"></button>
+
+          <button id="themeToggleBtn" aria-label="Toggle Theme" class="flex items-center justify-center w-8.5 h-8.5 rounded-lg bg-white dark:bg-darkSurface border border-borderSlate dark:border-darkBorder shadow-sm hover:border-slate-400 dark:hover:border-slate-500 text-inkMuted dark:text-textDarkMuted transition-all cursor-pointer">
+            <svg id="sunIcon" class="hidden w-4 h-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+            </svg>
+            <svg id="moonIcon" class="w-4 h-4 text-slate-700 dark:text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+            </svg>
+          </button>
+        </div>
       </div>
-      <div class="top-actions" style="display: flex; align-items: center; gap: 8px;">
-        <button class="btn small" id="keyBtn" type="button" title="Sign up with a name, email and private key">Sign Up</button>
-        <button class="btn small" id="keyReBtn" type="button" title="Sign in with the email and private key you registered">Sign in</button>
-        <button class="icon-btn" id="themeBtn" type="button" aria-label="Toggle light / dark theme">
-          <svg id="iconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="display:none">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
-          </svg>
-          <svg id="iconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
-          </svg>
-        </button>
-      </div>
-    </div>
-    <nav class="flex md:hidden items-center gap-1.5 overflow-x-auto no-scrollbar pt-1.5 pb-0.5 font-mono text-[11px] tracking-wider whitespace-nowrap">
-        <a href="/livewire/" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-slate-400 hover:text-white bg-white/5 border border-white/10 shrink-0">
-          <span class="relative flex h-1.5 w-1.5 shrink-0">
+
+      <!-- Mobile Touch Navigation Carousel (Visible ONLY on mobile < 768px) -->
+      <nav class="flex md:hidden items-center gap-1.5 overflow-x-auto no-scrollbar pt-1.5 pb-0.5 font-mono text-[11px] tracking-wider whitespace-nowrap w-full -mx-3 px-3 sm:mx-0 sm:px-0">
+        <a href="/livewire/" class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-inkMuted dark:text-textDarkMuted hover:text-teal-500 bg-white/60 dark:bg-darkSurface/60 border border-borderSlate dark:border-darkBorder shrink-0">
+          <span class="relative flex h-2 w-2 shrink-0">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
           </span>
           <span>Live Wire</span>
         </a>
-        <a href="/" class="px-2.5 py-1.5 rounded-lg text-slate-400 hover:text-white bg-white/5 border border-white/10 shrink-0">Green Industrial</a>
-        <a href="/projectenergy/" class="px-2.5 py-1.5 rounded-lg text-slate-400 hover:text-white bg-white/5 border border-white/10 shrink-0">PDP8 Energy</a>
-        <a href="/evcharging/" class="px-2.5 py-1.5 rounded-lg text-slate-400 hover:text-white bg-white/5 border border-white/10 shrink-0">EV Tech</a>
-        <a href="/calculator/" class="px-2.5 py-1.5 rounded-lg text-slate-400 hover:text-white bg-white/5 border border-white/10 shrink-0">Tool</a>
-        <a href="/hub/" class="px-2.5 py-1.5 rounded-lg text-white font-semibold bg-white/10 border border-white/40 shrink-0">Legal Framework</a>
+        <a href="/" class="px-2.5 py-1.5 rounded-lg text-inkMuted dark:text-textDarkMuted hover:text-teal-500 bg-white/60 dark:bg-darkSurface/60 border border-borderSlate dark:border-darkBorder shrink-0">Green Industrial</a>
+        <a href="/projectenergy/" class="px-2.5 py-1.5 rounded-lg text-inkMuted dark:text-textDarkMuted hover:text-emerald-500 bg-white/60 dark:bg-darkSurface/60 border border-borderSlate dark:border-darkBorder shrink-0">PDP8 Energy</a>
+        <a href="/evcharging/" class="px-2.5 py-1.5 rounded-lg text-inkMuted dark:text-textDarkMuted hover:text-amber-500 bg-white/60 dark:bg-darkSurface/60 border border-borderSlate dark:border-darkBorder shrink-0">EV Tech</a>
+        <a href="/calculator/" class="px-2.5 py-1.5 rounded-lg text-inkMuted dark:text-textDarkMuted hover:text-teal-500 bg-white/60 dark:bg-darkSurface/60 border border-borderSlate dark:border-darkBorder shrink-0">Tool</a>
+        <a href="/hub/" class="px-2.5 py-1.5 rounded-lg text-sky-600 dark:text-sky-400 font-semibold bg-sky-500/10 dark:bg-sky-400/10 border border-sky-500/20 shrink-0">Legal Framework</a>
       </nav>
+    </div>
   </header>
 
   <main class="wrap">
@@ -2875,21 +2920,35 @@
      there with the admin key, so the public shelf carries no delete control.
      ========================================================================= */
 
-  /* =========================================================================
+    /* =========================================================================
      THEME
      ========================================================================= */
   var sun = document.getElementById("iconSun"), moon = document.getElementById("iconMoon");
+  var sunIcon = document.getElementById("sunIcon"), moonIcon = document.getElementById("moonIcon");
   function paintIcons() {
     var dark = document.documentElement.getAttribute("data-theme") === "dark";
-    sun.style.display = dark ? "" : "none";
-    moon.style.display = dark ? "none" : "";
+    if (sun) sun.style.display = dark ? "" : "none";
+    if (moon) moon.style.display = dark ? "none" : "";
+    if (sunIcon) sunIcon.classList.toggle("hidden", dark);
+    if (moonIcon) moonIcon.classList.toggle("hidden", !dark);
   }
-  document.getElementById("themeBtn").addEventListener("click", function () {
-    var next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  function toggleTheme() {
+    var current = document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
+    var next = current === "dark" ? "light" : "dark";
     document.documentElement.setAttribute("data-theme", next);
+    if (next === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
     try { localStorage.setItem("theme", next); } catch (e) {}
     paintIcons();
-  });
+  }
+  var themeBtn = document.getElementById("themeBtn");
+  if (themeBtn) themeBtn.addEventListener("click", toggleTheme);
+  var themeToggleBtn = document.getElementById("themeToggleBtn");
+  if (themeToggleBtn) themeToggleBtn.addEventListener("click", toggleTheme);
+  paintIcons();
 
   /* =========================================================================
      FAVOURITES — signed-in, private per person, synced across devices
@@ -3087,7 +3146,8 @@
         .catch(function () { /* users store not installed yet */ });
     });
   }
-  document.getElementById("keyBtn").addEventListener("click", function () {
+  var keyBtnEl = document.getElementById("keyBtn");
+  if (keyBtnEl) keyBtnEl.addEventListener("click", function () {
     if (keyForm.hidden) openKeyPanel(); else closeKeyPanel();
   });
   function signOut() {
@@ -3096,7 +3156,8 @@
     toast("Signed out — download links hidden");
   }
   // One button: it opens sign-in while signed out, and signs you out when signed in.
-  document.getElementById("keyReBtn").addEventListener("click", function () {
+  var keyReBtnEl = document.getElementById("keyReBtn");
+  if (keyReBtnEl) keyReBtnEl.addEventListener("click", function () {
     if (unlocked()) { signOut(); return; }
     if (!reForm.hidden) { closeRePanel(); return; }
     openRePanel();
