@@ -404,7 +404,7 @@
   .split { display:block; }
   .split[hidden] { display:none; }
 
-  .docs { width:100%; border-collapse:collapse; table-layout:fixed; font-size:12.5px; }
+  .docs { width:100% !important; border-collapse:collapse; table-layout:fixed !important; font-size:12.5px; }
   .docs thead th { position:relative; text-align:left; font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--faint); font-weight:700; padding:9px 10px; border-bottom:1px solid var(--line-strong); white-space:nowrap; cursor:pointer; user-select:none; }
   .docs thead th:hover { color:var(--text); }
   .docs thead th .lbl { display:inline-block; max-width:calc(100% - 12px); overflow:hidden; text-overflow:ellipsis; vertical-align:bottom; }
@@ -414,23 +414,18 @@
   .docs thead th .grip:hover, .docs thead th .grip.on { background:var(--accent); opacity:.3; }
   body.colresize { cursor:col-resize; user-select:none; }
   .docs th.num, .docs td.num { text-align:center; font-variant-numeric:tabular-nums; }
-  /* Every column is centred except the title (the tick box, Type, Collection,
-     Creator, Update, Rev, Views and Links all sit mid-cell) */
-  .docs thead th:not(.pick):not([data-sort="title"]), .docs tbody td.dim, .docs td.lnk { text-align:center; }
+  /* Align columns */
+  .docs thead th:not([data-sort="title"]), .docs tbody td.dim, .docs td.lnk, .docs td.favc { text-align:center; }
   .docs tbody tr { border-bottom:1px solid var(--line); }
   .docs tbody tr:hover { background:var(--surface-2); }
-  .docs tbody td { padding:9px 10px; vertical-align:top; overflow:hidden; text-overflow:ellipsis; }
+  .docs tbody td { padding:9px 10px; vertical-align:top; white-space:normal !important; word-break:break-word !important; overflow-wrap:anywhere !important; }
   .docs td.idx, .docs td.dim { color:var(--faint); }
-  /* multi-select column */
-  .docs th.pick, .docs td.pick { text-align:center; cursor:default; }
-  .docs th.pick .lbl { display:none; }
-  .docs input[type=checkbox] { width:14px; height:14px; accent-color:var(--accent); vertical-align:middle; }
-  .docs tbody tr.picked { background:var(--accent-soft); }
-  .docs .c-title { display:flex; gap:9px; align-items:flex-start; }
-  .docs .c-title a { color:var(--text); font-weight:600; text-decoration:none; line-height:1.3; }
+  .docs td.favc, .docs thead th.favc { width:44px; text-align:center; cursor:default; padding:9px 4px; }
+  .docs .c-title { display:flex; gap:9px; align-items:flex-start; min-width:0; }
+  .docs .c-title a { color:var(--text); font-weight:600; text-decoration:none; line-height:1.35; white-space:normal !important; word-break:break-word !important; overflow-wrap:anywhere !important; display:inline-block; }
   .docs .c-title a:hover { color:var(--accent); }
-  .docs .c-title .snip { margin-top:3px; font-size:11px; color:var(--muted); font-weight:300; display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical; overflow:hidden; }
-  .docs .c-title > span { min-width:0; }
+  .docs .c-title .snip { margin-top:3px; font-size:11px; color:var(--muted); font-weight:300; white-space:normal !important; word-break:break-word !important; overflow-wrap:anywhere !important; display:block; }
+  .docs .c-title > span { min-width:0; flex:1 1 auto; word-break:break-word; overflow-wrap:anywhere; }
   /* Secondary details — shown inline in the title cell on small screens */
   .c-meta { display:none; }
   .badge { font-size:9.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; padding:2px 7px; border-radius:var(--radius); color:var(--tone); background:var(--tone-soft); border:1px solid var(--tone-border); white-space:nowrap; }
@@ -647,19 +642,17 @@
        columns (and the Links column, which moves under the Title) are hidden.
        visibility:hidden keeps every cell in its column slot so the colgroup
        widths stay by true index — display:none re-flows the remaining cells. */
-    .docs colgroup col:nth-child(1) { width:32px !important; }
+    .docs colgroup col:nth-child(1) { width:36px !important; }
     .docs colgroup col:nth-child(2) { width:auto !important; }
     .docs colgroup col:nth-child(3), .docs colgroup col:nth-child(4), .docs colgroup col:nth-child(5),
-    .docs colgroup col:nth-child(6), .docs colgroup col:nth-child(7), .docs colgroup col:nth-child(9),
-    .docs colgroup col:nth-child(10) { width:0 !important; }
-    .docs colgroup col:nth-child(8) { width:46px !important; }
+    .docs colgroup col:nth-child(6), .docs colgroup col:nth-child(7), .docs colgroup col:nth-child(9) { width:0 !important; }
+    .docs colgroup col:nth-child(8) { width:48px !important; }
     .docs thead th:nth-child(3), .docs tbody td:nth-child(3),
     .docs thead th:nth-child(4), .docs tbody td:nth-child(4),
     .docs thead th:nth-child(5), .docs tbody td:nth-child(5),
     .docs thead th:nth-child(6), .docs tbody td:nth-child(6),
     .docs thead th:nth-child(7), .docs tbody td:nth-child(7),
-    .docs thead th:nth-child(9), .docs tbody td:nth-child(9),
-    .docs thead th:nth-child(10), .docs tbody td:nth-child(10) { visibility:hidden; padding:0; }
+    .docs thead th:nth-child(9), .docs tbody td:nth-child(9) { visibility:hidden !important; padding:0 !important; width:0 !important; }
     .docs td, .docs thead th { padding:9px 6px; }
     .linkbtn.mob { display:inline-flex; margin:7px 0 0; }
     .docs .c-title { flex-wrap:wrap; }
@@ -1750,19 +1743,17 @@
   function buildHead() {
     var cg = docsTable.querySelector("colgroup");
     if (!cg) { cg = document.createElement("colgroup"); docsTable.insertBefore(cg, docsTable.firstChild); }
-    cg.innerHTML = '<col data-col="pick">' + COLS.map(function (c) { return '<col data-col="' + c.key + '">'; }).join("");
+    cg.innerHTML = COLS.map(function (c) { return '<col data-col="' + c.key + '">'; }).join("");
     docsTable.querySelector("thead").innerHTML = '<tr>' +
-      '<th class="pick"><input type="checkbox" id="pickAll" title="Select all shown" aria-label="Select all shown"></th>' +
       COLS.map(function (c) {
-        return '<th' + (c.nosort ? '' : ' data-sort="' + c.key + '"') + (c.num ? ' class="num"' : '') + '>' +
+        return '<th' + (c.nosort ? '' : ' data-sort="' + c.key + '"') + (c.num ? ' class="num"' : '') + (c.key === 'fav' ? ' class="favc"' : '') + '>' +
           '<span class="lbl">' + esc(c.label) + '</span><span class="ar"></span>' +
-          '<span class="grip" data-col="' + c.key + '" title="Drag to resize"></span></th>';
+          (c.key !== 'fav' ? '<span class="grip" data-col="' + c.key + '" title="Drag to resize"></span>' : '') + '</th>';
       }).join("") + '</tr>';
     applyColWidths();
   }
   function colDefault(key) {
-    if (key === "pick") return 44;
-    for (var i=0;i<COLS.length;i++) if (COLS[i].key === key) return COLS[i].w;
+    for (var i = 0; i < COLS.length; i++) if (COLS[i].key === key) return COLS[i].w;
     return 0;
   }
   function applyColWidths() {
@@ -1907,15 +1898,15 @@
   }
   // Table columns (order matches the header). num = right-aligned.
   var COLS = [
-    { key:"title",      label:"Title",                w:360 },
-    { key:"type",       label:"Type",                 w:96  },
+    { key:"fav",        label:"",                     w:44, nosort:true },
+    { key:"title",      label:"Title",                w:380 },
+    { key:"type",       label:"Type",                 w:100 },
     { key:"collection", label:"Collection",           w:150 },
     { key:"creator",    label:"Creator",              w:150 },
     { key:"update",     label:"Update",               w:168 },
     { key:"rev",        label:"Rev",        num:true, w:56  },
     { key:"views",      label:"Views",      num:true, w:66  },
-    { key:"links",      label:"Links",      w:88, nosort:true },
-    { key:"fav",        label:"",           w:44, nosort:true }
+    { key:"links",      label:"Links",      w:88, nosort:true }
   ];
   function colValue(d, key) {
     switch (key) {
@@ -1999,7 +1990,7 @@
       var id = idOf(d);
       var lk = linksOf(d);
       return '<tr data-id="' + esc(id) + '" class="' + (picked[id] ? "picked" : "") + '" style="' + toneVars(d.collection) + '">' +
-        '<td class="pick"><input type="checkbox" data-pick="' + esc(id) + '"' + (picked[id] ? " checked" : "") + ' aria-label="Select ' + esc(d.title) + '"></td>' +
+        '<td class="favc"><button type="button" class="favbtn' + (isFav(id) ? " on" : "") + '" data-fav="' + esc(id) + '" title="' + (isFav(id) ? "Remove from favourites" : "Add to favourites") + '" aria-label="Favourite">' + (isFav(id) ? "\u2605" : "\u2606") + '</button></td>' +
         '<td><div class="c-title">' +
           '<span><a href="' + esc(docHref(id)) + '" target="_blank" rel="noopener">' + esc(d.title) + '</a>' +
           '<span class="c-meta">' + esc(typeLabel(d.type)) + ' · ' + esc(collectionLabel(d.collection)) +
@@ -2024,7 +2015,6 @@
           ? '<button class="linkbtn" type="button" data-links="' + esc(id) + '" title="Show the download links" aria-label="Show the download links">Links' +
             (lk.length ? ' <span class="n">' + lk.length + '</span>' : '') + '</button>'
           : '') + '</td>' +
-        '<td class="favc"><button type="button" class="favbtn' + (isFav(id) ? " on" : "") + '" data-fav="' + esc(id) + '" title="' + (isFav(id) ? "Remove from favourites" : "Add to favourites") + '" aria-label="Favourite">' + (isFav(id) ? "\u2605" : "\u2606") + '</button></td>' +
       '</tr>';
     }).join("");
 
@@ -2864,7 +2854,8 @@
     URL.revokeObjectURL(a.href);
   }
   // Export the links of the selected documents (plus each document's own share link).
-  document.getElementById("exportLinksBtn").addEventListener("click", function () {
+  var exportBtnEl = document.getElementById("exportLinksBtn");
+  if (exportBtnEl) exportBtnEl.addEventListener("click", function () {
     var docs = all().filter(function (d) { return picked[idOf(d)]; });
     if (!docs.length) { toast("Tick some documents first"); return; }
     if (!unlocked()) { toast("Enter your private key first"); requestKey("Enter your private key to export download links."); return; }
