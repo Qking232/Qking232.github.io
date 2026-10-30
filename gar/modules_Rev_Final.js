@@ -1,6 +1,6 @@
 /**
  * Executive Portal Module Manifest - Rev_Final
- * Target: Hirdaramani Regional Engineering & Capital Projects Portal
+ * Target: Garments Company Regional Engineering & Capital Projects Portal
  */
 window.PORTAL_MODULES = [
   {
