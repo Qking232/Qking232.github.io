@@ -152,9 +152,10 @@
         </div>
       </div>
 
-      <!-- FLAT HORIZONTAL TAB NAVIGATION -->
+      <!-- FLAT HORIZONTAL TAB NAVIGATION (10 TABS) -->
       <nav class="flex flex-wrap items-center gap-1.5 border-b border-slate-200 pb-2 text-xs font-semibold">
         <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors bg-sky-700 text-white" data-target="tab-overview">Overview Cockpit</button>
+        <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100" data-target="tab-stage-process">Stage Process &amp; Workflow</button>
         <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100" data-target="tab-legal">1. Legal &amp; Permitting</button>
         <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100" data-target="tab-schedule">2. Schedule &amp; CPM</button>
         <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100" data-target="tab-budget">3. Budget &amp; EVM</button>
@@ -220,7 +221,7 @@
               </g>
               <!-- 8 Outer Governance Pillar Cards -->
 
-              <g class="pillar-card cursor-pointer" filter="url(#cardShadow)">
+              <g class="pillar-card cursor-pointer" data-target="tab-legal" filter="url(#cardShadow)">
                 <rect x="360.0" y="15.0" width="180" height="46" rx="7" fill="#151e32" stroke="#f59e0b" stroke-width="1.6" />
                 <circle cx="380.0" cy="38" r="11" fill="#f59e0b" />
                 <text x="380.0" y="42" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">1</text>
@@ -228,7 +229,7 @@
                 <text x="396.0" y="48" fill="#94a3b8" font-size="8" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">LURC | TKCS | PCCC | GPMT</text>
               </g>
 
-              <g class="pillar-card cursor-pointer" filter="url(#cardShadow)">
+              <g class="pillar-card cursor-pointer" data-target="tab-schedule" filter="url(#cardShadow)">
                 <rect x="552.5" y="49.0" width="175" height="46" rx="7" fill="#151e32" stroke="#06b6d4" stroke-width="1.6" />
                 <circle cx="572.5" cy="72" r="11" fill="#06b6d4" />
                 <text x="572.5" y="76" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">2</text>
@@ -236,15 +237,15 @@
                 <text x="588.5" y="82" fill="#94a3b8" font-size="8" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">GPXD Móng Fast-Track</text>
               </g>
 
-              <g class="pillar-card cursor-pointer" filter="url(#cardShadow)">
+              <g class="pillar-card cursor-pointer" data-target="tab-budget" filter="url(#cardShadow)">
                 <rect x="642.5" y="157.0" width="175" height="46" rx="7" fill="#151e32" stroke="#10b981" stroke-width="1.6" />
                 <circle cx="662.5" cy="180" r="11" fill="#10b981" />
                 <text x="662.5" y="184" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">3</text>
-                <text x="678.5" y="176" fill="#f8fafc" font-size="10" font-weight="bold" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">$14.50M BAC & EVM</text>
+                <text x="678.5" y="176" fill="#f8fafc" font-size="10" font-weight="bold" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">$14.50M BAC &amp; EVM</text>
                 <text x="678.5" y="190" fill="#94a3b8" font-size="8" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">19.82% IRR | 7-Yr DCF</text>
               </g>
 
-              <g class="pillar-card cursor-pointer" filter="url(#cardShadow)">
+              <g class="pillar-card cursor-pointer" data-target="tab-technical" filter="url(#cardShadow)">
                 <rect x="552.5" y="265.0" width="175" height="46" rx="7" fill="#151e32" stroke="#3b82f6" stroke-width="1.6" />
                 <circle cx="572.5" cy="288" r="11" fill="#3b82f6" />
                 <text x="572.5" y="292" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">4</text>
@@ -252,7 +253,7 @@
                 <text x="588.5" y="298" fill="#94a3b8" font-size="8" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">35k m² | 15 TPH | 35 ACH</text>
               </g>
 
-              <g class="pillar-card cursor-pointer" filter="url(#cardShadow)">
+              <g class="pillar-card cursor-pointer" data-target="tab-contracts" filter="url(#cardShadow)">
                 <rect x="357.5" y="299.0" width="185" height="46" rx="7" fill="#151e32" stroke="#a855f7" stroke-width="1.6" />
                 <circle cx="377.5" cy="322" r="11" fill="#a855f7" />
                 <text x="377.5" y="326" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">5</text>
@@ -260,32 +261,32 @@
                 <text x="393.5" y="332" fill="#94a3b8" font-size="8" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">Red / Yellow / Silver | 2-Stage</text>
               </g>
 
-              <g class="pillar-card cursor-pointer" filter="url(#cardShadow)">
+              <g class="pillar-card cursor-pointer" data-target="tab-risk" filter="url(#cardShadow)">
                 <rect x="172.5" y="265.0" width="175" height="46" rx="7" fill="#151e32" stroke="#ef4444" stroke-width="1.6" />
                 <circle cx="192.5" cy="288" r="11" fill="#ef4444" />
                 <text x="192.5" y="292" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">6</text>
-                <text x="208.5" y="284" fill="#f8fafc" font-size="10" font-weight="bold" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">Risk & HSE Controls</text>
+                <text x="208.5" y="284" fill="#f8fafc" font-size="10" font-weight="bold" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">Risk &amp; HSE Controls</text>
                 <text x="208.5" y="298" fill="#94a3b8" font-size="8" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">LTIFR=0.00 | Soil/Rain DOA</text>
               </g>
 
-              <g class="pillar-card cursor-pointer" filter="url(#cardShadow)">
+              <g class="pillar-card cursor-pointer" data-target="tab-commissioning" filter="url(#cardShadow)">
                 <rect x="82.5" y="157.0" width="175" height="46" rx="7" fill="#151e32" stroke="#14b8a6" stroke-width="1.6" />
                 <circle cx="102.5" cy="180" r="11" fill="#14b8a6" />
                 <text x="102.5" y="184" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">7</text>
-                <text x="118.5" y="176" fill="#f8fafc" font-size="10" font-weight="bold" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">T&C & Black Start</text>
-                <text x="118.5" y="190" fill="#94a3b8" font-size="8" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">Cold/Hot T&C | Decree 06</text>
+                <text x="118.5" y="176" fill="#f8fafc" font-size="10" font-weight="bold" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">T&amp;C &amp; Black Start</text>
+                <text x="118.5" y="190" fill="#94a3b8" font-size="8" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">Cold/Hot T&amp;C | Decree 06</text>
               </g>
 
-              <g class="pillar-card cursor-pointer" filter="url(#cardShadow)">
+              <g class="pillar-card cursor-pointer" data-target="tab-defense" filter="url(#cardShadow)">
                 <rect x="172.5" y="49.0" width="175" height="46" rx="7" fill="#151e32" stroke="#84cc16" stroke-width="1.6" />
                 <circle cx="192.5" cy="72" r="11" fill="#84cc16" />
                 <text x="192.5" y="76" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">8</text>
-                <text x="208.5" y="68" fill="#f8fafc" font-size="10" font-weight="bold" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">ESG & LEED Platinum</text>
+                <text x="208.5" y="68" fill="#f8fafc" font-size="10" font-weight="bold" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">ESG &amp; LEED Platinum</text>
                 <text x="208.5" y="82" fill="#94a3b8" font-size="8" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">84 Pts | 2.80 MWp Solar</text>
               </g>
 
               <!-- Central Core Hub (Top Layer) -->
-              <g class="central-core">
+              <g class="central-core cursor-pointer" data-target="tab-stage-process">
                 <!-- Outer Ring Halo -->
                 <circle cx="450" cy="180" r="77" fill="none" stroke="#0284c7" stroke-width="1.5" stroke-opacity="0.5" stroke-dasharray="8,5" />
                 <!-- Solid Core Disc -->
@@ -295,7 +296,7 @@
                 <text x="450" y="177" fill="#38bdf8" font-size="9.5" font-weight="bold" letter-spacing="0.5" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">CAPITAL GOVERNANCE</text>
                 <line x1="405" y1="184" x2="495" y2="184" stroke="#334155" stroke-width="1" />
                 <text x="450" y="196" fill="#fde68a" font-size="8.5" font-weight="bold" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">THE &quot;5+3&quot; SYSTEM</text>
-                <text x="450" y="208" fill="#34d399" font-size="8" font-weight="600" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">5 Core + 3 Anchors</text>
+                <text x="450" y="208" fill="#34d399" font-size="8" font-weight="600" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">Click: Stage Process &amp; Workflow</text>
               </g>
             </svg>
           </div>
@@ -386,6 +387,371 @@
             </table>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- TAB: STAGE PROCESS & WORKFLOW -->
+    <div id="tab-stage-process" class="tab-panel hidden space-y-6">
+      <div class="space-y-4">
+        <h2 class="text-lg font-bold text-slate-900 border-b border-slate-100 pb-2">
+          Capital Delivery Stage-Gate Process, Decision Gates &amp; Operational RACI Workflow
+        </h2>
+        <p class="text-xs text-slate-500 mt-0.5">
+          Standardized industrial capital project lifecycle: 6 sequential stages, 5 formal decision gates, and cross-functional RACI accountability:
+        </p>
+
+        
+        <!-- 6-STAGE GATE CAPITAL DELIVERY FLOWCHART -->
+        <div class="rounded-lg border border-slate-200 bg-white p-4 space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+            <div>
+              <span class="text-[10px] uppercase font-bold text-sky-700 tracking-wider">Project Lifecycle Architecture</span>
+              <h3 class="text-sm font-bold text-slate-900">End-to-End 6-Stage Industrial Capital Delivery Process (Stage-Gate Model)</h3>
+            </div>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-200 font-semibold">
+              Stages 0 to 5 | 5 Formal Board Gates
+            </span>
+          </div>
+
+          <div class="w-full overflow-hidden bg-slate-950 rounded-lg p-3 border border-slate-800">
+            <svg viewBox="0 0 1000 270" class="w-full h-auto select-none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <marker id="gateArr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+                  <path d="M0,0 L6,3 L0,6 Z" fill="#38bdf8" />
+                </marker>
+                <filter id="boxGlow" x="-10%" y="-10%" width="120%" height="120%">
+                  <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+                </filter>
+              </defs>
+
+              <!-- STAGE 0: ORIGINATION -->
+              <g transform="translate(15, 30)">
+                <rect x="0" y="0" width="135" height="110" rx="6" fill="#1e293b" stroke="#64748b" stroke-width="1.5" />
+                <rect x="0" y="0" width="135" height="24" rx="6" fill="#334155" />
+                <text x="67" y="16" fill="#f8fafc" font-size="9" font-weight="bold" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif">STAGE 0: FEASIBILITY</text>
+                <text x="10" y="42" fill="#94a3b8" font-size="7.5" font-family="monospace">Month -3 to 0</text>
+                <text x="10" y="58" fill="#cbd5e1" font-size="8" font-family="'Segoe UI', Roboto, sans-serif">• IP Site Selection</text>
+                <text x="10" y="72" fill="#cbd5e1" font-size="8" font-family="'Segoe UI', Roboto, sans-serif">• Geotech Due Diligence</text>
+                <text x="10" y="86" fill="#cbd5e1" font-size="8" font-family="'Segoe UI', Roboto, sans-serif">• Initial Business Case</text>
+                <text x="10" y="100" fill="#34d399" font-size="7.5" font-weight="bold" font-family="monospace">CAPEX Model $14.5M</text>
+              </g>
+
+              <!-- GATE 0 DECISION -->
+              <path d="M 150,85 L 175,85" stroke="#38bdf8" stroke-width="2" marker-end="url(#gateArr)" />
+              <g transform="translate(185, 85)">
+                <polygon points="0,-18 18,0 0,18 -18,0" fill="#f59e0b" stroke="#ffffff" stroke-width="1.2" />
+                <text x="0" y="3.5" fill="#ffffff" font-size="8" font-weight="bold" text-anchor="middle" font-family="system-ui">G0</text>
+                <text x="0" y="28" fill="#fde68a" font-size="7.5" font-weight="bold" text-anchor="middle" font-family="system-ui">Board Approval</text>
+              </g>
+              <path d="M 203,85 L 228,85" stroke="#38bdf8" stroke-width="2" marker-end="url(#gateArr)" />
+
+              <!-- STAGE 1: STATUTORY CONCEPT -->
+              <g transform="translate(235, 30)">
+                <rect x="0" y="0" width="140" height="110" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" />
+                <rect x="0" y="0" width="140" height="24" rx="6" fill="#78350f" />
+                <text x="70" y="16" fill="#fde68a" font-size="9" font-weight="bold" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif">STAGE 1: STATUTORY</text>
+                <text x="10" y="42" fill="#94a3b8" font-size="7.5" font-family="monospace">Month 1 to 3.5</text>
+                <text x="10" y="58" fill="#cbd5e1" font-size="8" font-family="'Segoe UI', Roboto, sans-serif">• 1/500 Detailed Plan</text>
+                <text x="10" y="72" fill="#cbd5e1" font-size="8" font-family="'Segoe UI', Roboto, sans-serif">• TKCS Basic Design</text>
+                <text x="10" y="86" fill="#cbd5e1" font-size="8" font-family="'Segoe UI', Roboto, sans-serif">• C07 Fire Appraisal</text>
+                <text x="10" y="100" fill="#38bdf8" font-size="7.5" font-weight="bold" font-family="monospace">GPMT License Filing</text>
+              </g>
+
+              <!-- GATE 1 DECISION -->
+              <path d="M 375,85 L 395,85" stroke="#38bdf8" stroke-width="2" marker-end="url(#gateArr)" />
+              <g transform="translate(405, 85)">
+                <polygon points="0,-18 18,0 0,18 -18,0" fill="#06b6d4" stroke="#ffffff" stroke-width="1.2" />
+                <text x="0" y="3.5" fill="#ffffff" font-size="8" font-weight="bold" text-anchor="middle" font-family="system-ui">G1</text>
+                <text x="0" y="28" fill="#67e8f9" font-size="7.5" font-weight="bold" text-anchor="middle" font-family="system-ui">Concept Freeze</text>
+              </g>
+              <path d="M 423,85 L 443,85" stroke="#38bdf8" stroke-width="2" marker-end="url(#gateArr)" />
+
+              <!-- STAGE 2: TENDER & PROCUREMENT -->
+              <g transform="translate(450, 30)">
+                <rect x="0" y="0" width="140" height="110" rx="6" fill="#1e293b" stroke="#a855f7" stroke-width="1.5" />
+                <rect x="0" y="0" width="140" height="24" rx="6" fill="#581c87" />
+                <text x="70" y="16" fill="#d8b4fe" font-size="9" font-weight="bold" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif">STAGE 2: PROCUREMENT</text>
+                <text x="10" y="42" fill="#94a3b8" font-size="7.5" font-family="monospace">Month 2 to 5</text>
+                <text x="10" y="58" fill="#cbd5e1" font-size="8" font-family="'Segoe UI', Roboto, sans-serif">• FIDIC Red/Yellow Specs</text>
+                <text x="10" y="72" fill="#cbd5e1" font-size="8" font-family="'Segoe UI', Roboto, sans-serif">• 2-Stage Tender Evaluation</text>
+                <text x="10" y="86" fill="#cbd5e1" font-size="8" font-family="'Segoe UI', Roboto, sans-serif">• Long-Lead Orders (22kV)</text>
+                <text x="10" y="100" fill="#a855f7" font-size="7.5" font-weight="bold" font-family="monospace">Boiler &amp; Chiller FAT</text>
+              </g>
+
+              <!-- GATE 2 DECISION -->
+              <path d="M 590,85 L 610,85" stroke="#38bdf8" stroke-width="2" marker-end="url(#gateArr)" />
+              <g transform="translate(620, 85)">
+                <polygon points="0,-18 18,0 0,18 -18,0" fill="#10b981" stroke="#ffffff" stroke-width="1.2" />
+                <text x="0" y="3.5" fill="#ffffff" font-size="8" font-weight="bold" text-anchor="middle" font-family="system-ui">G2</text>
+                <text x="0" y="28" fill="#6ee7b7" font-size="7.5" font-weight="bold" text-anchor="middle" font-family="system-ui">Contract Award</text>
+              </g>
+              <path d="M 638,85 L 658,85" stroke="#38bdf8" stroke-width="2" marker-end="url(#gateArr)" />
+
+              <!-- STAGE 3: CONSTRUCTION -->
+              <g transform="translate(665, 30)">
+                <rect x="0" y="0" width="145" height="110" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" />
+                <rect x="0" y="0" width="145" height="24" rx="6" fill="#1e3a8a" />
+                <text x="72" y="16" fill="#93c5fd" font-size="9" font-weight="bold" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif">STAGE 3: CONSTRUCTION</text>
+                <text x="10" y="42" fill="#94a3b8" font-size="7.5" font-family="monospace">Month 4 to 12</text>
+                <text x="10" y="58" fill="#cbd5e1" font-size="8" font-family="'Segoe UI', Roboto, sans-serif">• 1,850 Spun Piles (Móng)</text>
+                <text x="10" y="72" fill="#cbd5e1" font-size="8" font-family="'Segoe UI', Roboto, sans-serif">• 35,000 m² PEB Frame</text>
+                <text x="10" y="86" fill="#cbd5e1" font-size="8" font-family="'Segoe UI', Roboto, sans-serif">• Roof &amp; Envelope Closure</text>
+                <text x="10" y="100" fill="#38bdf8" font-size="7.5" font-weight="bold" font-family="monospace">Utilities Skids Install</text>
+              </g>
+
+              <!-- GATE 3 DECISION -->
+              <path d="M 810,85 L 830,85" stroke="#38bdf8" stroke-width="2" marker-end="url(#gateArr)" />
+              <g transform="translate(840, 85)">
+                <polygon points="0,-18 18,0 0,18 -18,0" fill="#38bdf8" stroke="#ffffff" stroke-width="1.2" />
+                <text x="0" y="3.5" fill="#ffffff" font-size="8" font-weight="bold" text-anchor="middle" font-family="system-ui">G3</text>
+                <text x="0" y="28" fill="#38bdf8" font-size="7.5" font-weight="bold" text-anchor="middle" font-family="system-ui">Energization</text>
+              </g>
+              <path d="M 858,85 L 878,85" stroke="#38bdf8" stroke-width="2" marker-end="url(#gateArr)" />
+
+              <!-- STAGE 4: T&C & COD -->
+              <g transform="translate(885, 30)">
+                <rect x="0" y="0" width="100" height="110" rx="6" fill="#064e3b" stroke="#34d399" stroke-width="1.8" />
+                <rect x="0" y="0" width="100" height="24" rx="6" fill="#065f46" />
+                <text x="50" y="16" fill="#a7f3d0" font-size="9" font-weight="bold" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif">STAGE 4: COD</text>
+                <text x="8" y="42" fill="#34d399" font-size="7.5" font-family="monospace">Month 12 - 14</text>
+                <text x="8" y="58" fill="#ffffff" font-size="8" font-family="'Segoe UI', Roboto, sans-serif">• Tier 1/2/3 T&amp;C</text>
+                <text x="8" y="72" fill="#ffffff" font-size="8" font-family="'Segoe UI', Roboto, sans-serif">• C07 Acceptance</text>
+                <text x="8" y="86" fill="#ffffff" font-size="8" font-family="'Segoe UI', Roboto, sans-serif">• Decree 06 Handover</text>
+                <text x="8" y="100" fill="#fde68a" font-size="7.5" font-weight="bold" font-family="monospace">Commercial COD</text>
+              </g>
+
+              <!-- BOTTOM FAST-TRACK OVERLAP & STAGE 5 ARCHITECTURE -->
+              <rect x="15" y="155" width="970" height="95" rx="6" fill="#0f172a" stroke="#334155" />
+              
+              <!-- Fast Track Decoupled Piling Indicator -->
+              <rect x="30" y="168" width="450" height="32" rx="4" fill="#1e293b" stroke="#06b6d4" stroke-width="1.2" />
+              <text x="42" y="184" fill="#67e8f9" font-size="8.5" font-weight="bold" font-family="'Segoe UI', Roboto, sans-serif">Fast-Track Permitting Overlap (GPXD Móng):</text>
+              <text x="42" y="194" fill="#cbd5e1" font-size="7.5" font-family="monospace">Piling executed under Foundation Permit while Superstructure reviews conclude (-45 days).</text>
+
+              <!-- Stage 5: Post-COD Ramp-Up & Asset Capitalization -->
+              <rect x="500" y="168" width="470" height="32" rx="4" fill="#1e293b" stroke="#84cc16" stroke-width="1.2" />
+              <text x="512" y="184" fill="#bef264" font-size="8.5" font-weight="bold" font-family="'Segoe UI', Roboto, sans-serif">STAGE 5: Operational Ramp-Up &amp; Closeout (Months 14 to 26):</text>
+              <text x="512" y="194" fill="#cbd5e1" font-size="7.5" font-family="monospace">12-Mo DLP Warranty -> 5% Retention Release -> Asset Title Registration (Hoàn Công Sổ Đỏ).</text>
+
+              <text x="35" y="222" fill="#fde68a" font-size="8" font-weight="bold" font-family="'Segoe UI', Roboto, sans-serif">Governance Rule:</text>
+              <text x="120" y="222" fill="#94a3b8" font-size="7.5" font-family="monospace">No stage may proceed past a decision diamond without formal Stage-Gate Sign-Off signed by the designated Executive Gatekeeper.</text>
+              <text x="35" y="238" fill="#38bdf8" font-size="8" font-weight="bold" font-family="'Segoe UI', Roboto, sans-serif">Gatekeepers:</text>
+              <text x="105" y="238" fill="#cbd5e1" font-size="7.5" font-family="monospace">Gate 0 (Board Investment Committee) | Gate 1 (Executive Committee &amp; CFO) | Gate 2 &amp; 3 (Regional Head of Engineering) | Gate 4 &amp; 5 (CEO &amp; Board).</text>
+            </svg>
+          </div>
+        </div>
+
+
+        <!-- DETAILED STAGE-BY-STAGE GATE SPECIFICATIONS -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 text-xs">
+          
+          <div class="p-3.5 rounded-lg bg-slate-50 border border-slate-200 space-y-2">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-1">
+              <strong class="text-slate-900 font-bold">Stage 0: Site &amp; Feasibility</strong>
+              <span class="font-mono text-[10px] px-1.5 py-0.5 rounded bg-slate-200 text-slate-800 font-bold">Months -3 to 0</span>
+            </div>
+            <p class="text-slate-600 text-[11px] leading-relaxed">
+              Industrial Park site selection, geotechnical core drilling (12 exploratory boreholes), preliminary environmental due diligence, and capital DCF financial modeling.
+            </p>
+            <div class="text-[10px] font-mono text-amber-700 font-semibold border-t border-slate-200 pt-1">
+              Gate 0 Gatekeeper: Board Investment Committee (Approval to spend due diligence capital).
+            </div>
+          </div>
+
+          <div class="p-3.5 rounded-lg bg-slate-50 border border-slate-200 space-y-2">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-1">
+              <strong class="text-slate-900 font-bold">Stage 1: Statutory Concept</strong>
+              <span class="font-mono text-[10px] px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 font-bold">Months 1 to 3.5</span>
+            </div>
+            <p class="text-slate-600 text-[11px] leading-relaxed">
+              1/500 detailed site master planning, Basic Design (TKCS) under Decree 15/2021, C07 Police Fire Design Appraisal, and Single Environmental License (GPMT) filing.
+            </p>
+            <div class="text-[10px] font-mono text-cyan-700 font-semibold border-t border-slate-200 pt-1">
+              Gate 1 Gatekeeper: Executive Committee &amp; CFO (Baseline budget freeze at $14.50M BAC).
+            </div>
+          </div>
+
+          <div class="p-3.5 rounded-lg bg-slate-50 border border-slate-200 space-y-2">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-1">
+              <strong class="text-slate-900 font-bold">Stage 2: Tender &amp; Procurement</strong>
+              <span class="font-mono text-[10px] px-1.5 py-0.5 rounded bg-purple-100 text-purple-800 font-bold">Months 2 to 5</span>
+            </div>
+            <p class="text-slate-600 text-[11px] leading-relaxed">
+              FIDIC tender dossier compilation (Red Book Civil, Yellow Book MEP), 2-stage procurement (Technical Envelope 1 -> Commercial Envelope 2), and long-lead FAT orders.
+            </p>
+            <div class="text-[10px] font-mono text-emerald-700 font-semibold border-t border-slate-200 pt-1">
+              Gate 2 Gatekeeper: Regional Head of Engineering &amp; CFO (Contract awards &amp; securities).
+            </div>
+          </div>
+
+          <div class="p-3.5 rounded-lg bg-slate-50 border border-slate-200 space-y-2">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-1">
+              <strong class="text-slate-900 font-bold">Stage 3: Physical Construction</strong>
+              <span class="font-mono text-[10px] px-1.5 py-0.5 rounded bg-blue-100 text-blue-800 font-bold">Months 4 to 12</span>
+            </div>
+            <p class="text-slate-600 text-[11px] leading-relaxed">
+              Fast-track piling (1,850 spun piles under GPXD Móng), 35,000 m² PEB steel erection, building envelope weather-tight closure, and industrial utility equipment placement.
+            </p>
+            <div class="text-[10px] font-mono text-blue-700 font-semibold border-t border-slate-200 pt-1">
+              Gate 3 Gatekeeper: Regional Head of Engineering (Energization &amp; weather-tight release).
+            </div>
+          </div>
+
+          <div class="p-3.5 rounded-lg bg-slate-50 border border-slate-200 space-y-2">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-1">
+              <strong class="text-slate-900 font-bold">Stage 4: T&amp;C &amp; Commercial COD</strong>
+              <span class="font-mono text-[10px] px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-800 font-bold">Months 12 to 14</span>
+            </div>
+            <p class="text-slate-600 text-[11px] leading-relaxed">
+              Tier 1 Cold T&amp;C, Tier 2 Hot T&amp;C (boiler/chillers), Tier 3 Integrated Black Start (10s ATS transfer), C07 PCCC Acceptance, and Decree 06/2021 State Handover Approval.
+            </p>
+            <div class="text-[10px] font-mono text-rose-700 font-semibold border-t border-slate-200 pt-1">
+              Gate 4 Gatekeeper: CEO &amp; Board of Directors (Commercial Operation Date - COD declaration).
+            </div>
+          </div>
+
+          <div class="p-3.5 rounded-lg bg-slate-50 border border-slate-200 space-y-2">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-1">
+              <strong class="text-slate-900 font-bold">Stage 5: Closeout &amp; Capitalization</strong>
+              <span class="font-mono text-[10px] px-1.5 py-0.5 rounded bg-lime-100 text-lime-800 font-bold">Months 14 to 26</span>
+            </div>
+            <p class="text-slate-600 text-[11px] leading-relaxed">
+              Operational ramp-up to 48 sewing lines, 12-month Defect Liability Period (DLP) warranty audit, 5% retention money release, and Land Use Certificate asset registration (Hoàn công).
+            </p>
+            <div class="text-[10px] font-mono text-purple-700 font-semibold border-t border-slate-200 pt-1">
+              Gate 5 Gatekeeper: Board of Directors &amp; CFO (Final Closeout &amp; Capitalization).
+            </div>
+          </div>
+
+        </div>
+
+        <!-- OPERATIONAL RACI GOVERNANCE MATRIX TABLE -->
+        <div class="rounded-lg border border-slate-200 bg-white p-4 space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+            <div>
+              <span class="text-[10px] uppercase font-bold text-sky-700 tracking-wider">Stakeholder Governance Architecture</span>
+              <h3 class="text-sm font-bold text-slate-900">Operational RACI Governance Matrix Across Project Lifecycle</h3>
+            </div>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-semibold border border-slate-200">
+              R = Responsible | A = Accountable | C = Consulted | I = Informed
+            </span>
+          </div>
+
+          <div class="overflow-hidden">
+            <table class="gov-table text-xs text-left">
+              <thead>
+                <tr class="bg-slate-50 border-b border-slate-200 text-slate-700 font-bold uppercase tracking-wider text-[10px]">
+                  <th>Lifecycle Milestone / Decision Gate</th>
+                  <th>Board / CEO</th>
+                  <th>Regional Head (Eng)</th>
+                  <th>Site Project Dir</th>
+                  <th>EPC / MEP Contractors</th>
+                  <th>Authorities (SXD/C07)</th>
+                  <th>Factory Operations</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100 text-[11px]">
+                <tr class="hover:bg-slate-50">
+                  <td class="font-bold text-slate-900">Stage 0: Site Sublease &amp; $14.5M Business Case</td>
+                  <td class="font-bold text-rose-700 font-mono">A</td>
+                  <td class="font-bold text-sky-700 font-mono">R</td>
+                  <td class="text-slate-500 font-mono">C</td>
+                  <td class="text-slate-400 font-mono">-</td>
+                  <td class="text-slate-500 font-mono">I</td>
+                  <td class="text-slate-500 font-mono">C</td>
+                </tr>
+                <tr class="hover:bg-slate-50">
+                  <td class="font-bold text-slate-900">Stage 1: TKCS Basic Design, C07 Fire &amp; GPMT License</td>
+                  <td class="text-slate-500 font-mono">I</td>
+                  <td class="font-bold text-rose-700 font-mono">A</td>
+                  <td class="font-bold text-sky-700 font-mono">R</td>
+                  <td class="text-slate-500 font-mono">C</td>
+                  <td class="font-bold text-rose-700 font-mono">A / R</td>
+                  <td class="text-slate-500 font-mono">I</td>
+                </tr>
+                <tr class="hover:bg-slate-50">
+                  <td class="font-bold text-slate-900">Stage 2: FIDIC Tenders &amp; 2-Stage Contract Award</td>
+                  <td class="font-bold text-rose-700 font-mono">A (&gt;$300k)</td>
+                  <td class="font-bold text-sky-700 font-mono">R</td>
+                  <td class="text-slate-500 font-mono">C</td>
+                  <td class="text-slate-500 font-mono">C</td>
+                  <td class="text-slate-400 font-mono">-</td>
+                  <td class="text-slate-500 font-mono">I</td>
+                </tr>
+                <tr class="hover:bg-slate-50">
+                  <td class="font-bold text-slate-900">Stage 3: Fast-Track Piling &amp; PEB Steel Erection</td>
+                  <td class="text-slate-500 font-mono">I</td>
+                  <td class="font-bold text-rose-700 font-mono">A</td>
+                  <td class="font-bold text-sky-700 font-mono">R</td>
+                  <td class="font-bold text-sky-700 font-mono">R</td>
+                  <td class="text-slate-500 font-mono">I</td>
+                  <td class="text-slate-500 font-mono">I</td>
+                </tr>
+                <tr class="hover:bg-slate-50">
+                  <td class="font-bold text-slate-900">Stage 3: Scope Changes / Variation Orders (&gt;$100k)</td>
+                  <td class="font-bold text-rose-700 font-mono">A</td>
+                  <td class="font-bold text-sky-700 font-mono">R</td>
+                  <td class="text-slate-500 font-mono">C</td>
+                  <td class="text-slate-500 font-mono">C</td>
+                  <td class="text-slate-400 font-mono">-</td>
+                  <td class="text-slate-400 font-mono">-</td>
+                </tr>
+                <tr class="hover:bg-slate-50">
+                  <td class="font-bold text-slate-900">Stage 4: Tier 1/2/3 T&amp;C &amp; 10s ATS Black Start</td>
+                  <td class="text-slate-500 font-mono">I</td>
+                  <td class="font-bold text-rose-700 font-mono">A</td>
+                  <td class="font-bold text-sky-700 font-mono">R</td>
+                  <td class="font-bold text-sky-700 font-mono">R</td>
+                  <td class="text-slate-500 font-mono">I</td>
+                  <td class="text-slate-500 font-mono">C</td>
+                </tr>
+                <tr class="hover:bg-slate-50">
+                  <td class="font-bold text-slate-900">Stage 4: C07 Acceptance &amp; Decree 06 Handover (COD)</td>
+                  <td class="font-bold text-rose-700 font-mono">A</td>
+                  <td class="font-bold text-sky-700 font-mono">R</td>
+                  <td class="font-bold text-sky-700 font-mono">R</td>
+                  <td class="text-slate-500 font-mono">C</td>
+                  <td class="font-bold text-rose-700 font-mono">A</td>
+                  <td class="text-slate-500 font-mono">C</td>
+                </tr>
+                <tr class="hover:bg-slate-50">
+                  <td class="font-bold text-slate-900">Stage 5: 12-Month DLP Closeout &amp; Retention Release</td>
+                  <td class="font-bold text-rose-700 font-mono">A</td>
+                  <td class="font-bold text-sky-700 font-mono">R</td>
+                  <td class="text-slate-500 font-mono">C</td>
+                  <td class="text-slate-500 font-mono">C</td>
+                  <td class="text-slate-400 font-mono">-</td>
+                  <td class="text-slate-500 font-mono">C</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- OPERATIONAL EXECUTION CADENCES -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-3 text-xs">
+          <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 space-y-1">
+            <span class="text-[10px] uppercase font-bold text-rose-700 font-mono">Daily Cadence</span>
+            <div class="font-bold text-slate-900">HSE Permit-to-Work (PTW)</div>
+            <p class="text-slate-600 text-[11px]">Daily 07:00 AM joint site toolbox briefing and electronic PTW validation for hot work, heights, and electrical isolation.</p>
+          </div>
+          <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 space-y-1">
+            <span class="text-[10px] uppercase font-bold text-sky-700 font-mono">Weekly Cadence</span>
+            <div class="font-bold text-slate-900">3-Week Lookahead CPM</div>
+            <p class="text-slate-600 text-[11px]">Weekly contractor progress audit reviewing actual vs planned daily productivity, crane logistics, and material arrivals.</p>
+          </div>
+          <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 space-y-1">
+            <span class="text-[10px] uppercase font-bold text-amber-700 font-mono">Bi-Weekly Cadence</span>
+            <div class="font-bold text-slate-900">EVM S-Curve Audit</div>
+            <p class="text-slate-600 text-[11px]">Measurement of CPI and SPI against cost baselines; validation of contractor progress payment certificates against actual work.</p>
+          </div>
+          <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 space-y-1">
+            <span class="text-[10px] uppercase font-bold text-emerald-700 font-mono">Monthly Cadence</span>
+            <div class="font-bold text-slate-900">Board Executive Dashboard</div>
+            <p class="text-slate-600 text-[11px]">Monthly capital performance briefing to C-suite covering milestone tracking, cash flow drawdown, and contingency status.</p>
+          </div>
+        </div>
+
       </div>
     </div>
 
@@ -1309,7 +1675,20 @@
 
           document.querySelectorAll('.tab-panel').forEach(p => p.classList.add('hidden'));
           const targetPanel = document.getElementById(target);
-          if (targetPanel) targetPanel.classList.remove('hidden');
+          if (targetPanel) {
+            targetPanel.classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }
+        });
+      });
+
+      // SVG Architecture Wheel Card & Hub Navigation Engine
+      document.querySelectorAll('.pillar-card, .central-core').forEach(card => {
+        card.addEventListener('click', () => {
+          const target = card.getAttribute('data-target');
+          if (!target) return;
+          const btn = document.querySelector(`.tab-btn[data-target="${target}"]`);
+          if (btn) btn.click();
         });
       });
 
