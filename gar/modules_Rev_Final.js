@@ -6,49 +6,49 @@ window.PORTAL_MODULES = [
   {
     id: "master_governance",
     category: "Executive Governance",
-    title: "Master Project Governance Framework",
-    description: "The '5+3' Capital Delivery System: Statutory Legal Triad, 14-Mo CPM, $14.50M BAC, Technical Scope, FIDIC Contracts, Risk/HSE, T&C, and Boardroom Defenses.",
-    badge: "Flagship Framework",
+    title: "Master Capital Delivery System",
+    description: "The '5+3' Capital Delivery System: 6-Stage Gate Process, 10-Role RACI Matrix, and 8 Integrated Execution Pillars.",
+    badge: "Governance",
     file: "modules/master_project_governance.html"
   },
   {
     id: "domain1_permitting",
     category: "Statutory Compliance",
-    title: "Domain 1: Permitting & PCCC Fire Codes",
-    description: "Vietnam QCVN 06:2022/BXD fire safety, GPXD construction, and GPMT environmental licensing.",
-    badge: "Regulatory",
+    title: "Domain 1: Statutory Compliance & Approvals",
+    description: "Vietnam Land Use Right (Sổ Đỏ), 1/500 Master Plan, TKCS Basic Design, QCVN 06:2022 Fire Safety, Phased GPXD Móng/Thân, and GPMT Licensing.",
+    badge: "Statutory",
     file: "modules/domain1_pccc_permitting.html"
   },
   {
     id: "domain2_utilities",
     category: "Core Engineering",
-    title: "Domain 2: Industrial Utilities & Decarbonization",
-    description: "Biomass steam (15 TPH), VFD compressed air (1,573 CFM), 35 ACH HVAC, 1,200 m³/d ETP ZLD, and 22kV substation.",
+    title: "Domain 2: Facility Engineering & Infrastructure",
+    description: "35,000 m² 2.5D Isometric Plant Map, 15 TPH Biomass Steam, 1,573 CFM VFD Compressed Air, 35 ACH Celdek HVAC, and 1,200 m³/d ZLD ETP.",
     badge: "Engineering",
     file: "modules/domain2_utilities_engineering.html"
   },
   {
     id: "domain3_esg",
     category: "Sustainability & Energy",
-    title: "Domain 3: ESG, LEED Platinum & Rooftop Solar",
-    description: "2.80 MWp rooftop solar PV, PPA vs CAPEX financial model, LEED v4.1 Platinum scorecard (84 pts), and Scope 1 & 2 decarbonization.",
+    title: "Domain 3: Energy Transition & Sustainability",
+    description: "2.80 MWp Rooftop Solar PV, -10,838 tCO₂e/yr Net Carbon Abatement, LEED v4 BD+C Platinum (84 Pts), and Higg FEM 4.0 Standards.",
     badge: "Sustainability",
     file: "modules/domain3_esg_leed_solar.html"
   },
   {
     id: "domain4_capex",
-    category: "Financial & Governance",
-    title: "Domain 4: CAPEX Calsheet & Contracts",
-    description: "$14.50M USD greenfield factory master calsheet, EVM controls, 7-year DCF, and FIDIC contract administration.",
-    badge: "Active Calsheet",
+    category: "Commercial & Controls",
+    title: "Domain 4: Capital Cost & Commercial Governance",
+    description: "$14.50M BAC Breakdown, EVM S-Curve Progress Verification, 7-Year Operating DCF Valuation ($1.85M NPV, 15.65% IRR), and FIDIC Risk Allocation.",
+    badge: "Commercial",
     file: "modules/domain4_capex_calsheet.html"
   },
   {
     id: "bod_charter",
-    category: "Executive Governance",
-    title: "Greenfield Factory BOD CAPEX Report",
-    description: "End-to-end $14.50M greenfield garment factory proposal, engineering sizing, DCF, and 14-month lifecycle.",
-    badge: "Board Charter",
+    category: "Executive Authorization",
+    title: "Capital Investment Charter & Board Dossier",
+    description: "Executive Capital Authorization Dossier: Technical Sizing, Financial Sensitivity Stress Testing, and Formal Board Resolution.",
+    badge: "Board Dossier",
     file: "modules/bod_capex_charter_report.html"
   }
 ];
