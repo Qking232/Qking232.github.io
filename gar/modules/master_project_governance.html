@@ -152,7 +152,7 @@
         </div>
       </div>
 
-      <!-- FLAT HORIZONTAL TAB NAVIGATION (10 TABS) -->
+      <!-- FLAT HORIZONTAL TAB NAVIGATION (11 TABS) -->
       <nav class="flex flex-wrap items-center gap-1.5 border-b border-slate-200 pb-2 text-xs font-semibold">
         <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors bg-sky-700 text-white" data-target="tab-overview">Overview Cockpit</button>
         <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100" data-target="tab-stage-process">Stage Process &amp; Workflow</button>
@@ -163,7 +163,8 @@
         <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100" data-target="tab-contracts">5. FIDIC Contracts</button>
         <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100" data-target="tab-risk">6. HSE &amp; Risk DOA</button>
         <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100" data-target="tab-commissioning">7. T&amp;C Handover</button>
-        <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100" data-target="tab-defense">8. STAR Playbook</button>
+        <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100" data-target="tab-esg">8. ESG &amp; LEED Platinum</button>
+        <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100" data-target="tab-defense">9. STAR Playbook</button>
       </nav>
     </header>
 
@@ -277,7 +278,7 @@
                 <text x="118.5" y="190" fill="#94a3b8" font-size="8" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">Cold/Hot T&amp;C | Decree 06</text>
               </g>
 
-              <g class="pillar-card cursor-pointer" data-target="tab-defense" filter="url(#cardShadow)">
+              <g class="pillar-card cursor-pointer" data-target="tab-esg" filter="url(#cardShadow)">
                 <rect x="172.5" y="49.0" width="175" height="46" rx="7" fill="#151e32" stroke="#84cc16" stroke-width="1.6" />
                 <circle cx="192.5" cy="72" r="11" fill="#84cc16" />
                 <text x="192.5" y="76" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">8</text>
@@ -1580,11 +1581,209 @@
       </div>
     </div>
 
+    <!-- TAB 8: ESG & LEED PLATINUM -->
+    <div id="tab-esg" class="tab-panel hidden space-y-6">
+      <div class="space-y-4">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+          <div>
+            <span class="text-[10px] uppercase font-bold text-lime-700 tracking-wider">Pillar 8: Sustainable Industrial Architecture</span>
+            <h2 class="text-lg font-bold text-slate-900">Pillar 8: ESG, LEED Platinum &amp; Industrial Decarbonization</h2>
+          </div>
+          <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-lime-50 text-lime-800 border border-lime-200 font-semibold">
+            LEED v4 BD+C / Higg FEM 4.0 / ZDHC Level 3
+          </span>
+        </div>
+        <p class="text-xs text-slate-600 leading-relaxed">
+          The Hirdaramani flagship facility is engineered as an institutional ESG showcase, achieving LEED v4 BD+C Platinum certification (84 Points), Higg Index FEM 4.0 verification (&ge;92.4/100), and Zero Liquid Discharge (ZLD) water recycling, yielding -10,838 tCO₂e/yr in verified carbon abatement.
+        </p>
+
+        <!-- ESG EXECUTIVE KPI COCKPIT -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs">
+          <div class="p-3.5 rounded-lg bg-lime-50/70 border border-lime-200 space-y-1">
+            <span class="text-[10px] uppercase font-bold text-lime-800">LEED v4 BD+C Rating</span>
+            <div class="text-xl font-bold font-mono text-lime-700">
+              <span class="calc-cell" 
+                data-metric="LEED v4 BD+C Scorecard" 
+                data-formula="EA (31) + WE (11) + EQ (14) + SS (16) + MR (6) + ID (6)" 
+                data-calc="84 Total Points (Threshold: 80 Points for Platinum)" 
+                data-desc="Top 1% of industrial manufacturing facilities in Southeast Asia.">
+                84 Pts (Platinum)
+              </span>
+            </div>
+            <div class="text-[11px] text-slate-600">Threshold: 80 Pts for Platinum</div>
+          </div>
+
+          <div class="p-3.5 rounded-lg bg-emerald-50/70 border border-emerald-200 space-y-1">
+            <span class="text-[10px] uppercase font-bold text-emerald-800">Rooftop Solar PV</span>
+            <div class="text-xl font-bold font-mono text-emerald-700">
+              <span class="calc-cell" 
+                data-metric="Rooftop Solar PV Installation" 
+                data-formula="4,375 Tier-1 N-Type TOPCon Panels × 640 Wp" 
+                data-calc="2.80 MWp (3,920,000 kWh/yr Generation)" 
+                data-desc="100% factory daytime self-consumption offsetting $352,800/yr in grid electricity.">
+                2.80 MWp
+              </span>
+            </div>
+            <div class="text-[11px] text-slate-600">3,920,000 kWh/yr Generation</div>
+          </div>
+
+          <div class="p-3.5 rounded-lg bg-sky-50/70 border border-sky-200 space-y-1">
+            <span class="text-[10px] uppercase font-bold text-sky-800">Carbon Abatement</span>
+            <div class="text-xl font-bold font-mono text-sky-700">
+              <span class="calc-cell" 
+                data-metric="Scope 1 &amp; 2 Carbon Reduction" 
+                data-formula="Biomass Abatement (-7,702 t) + Solar Abatement (-3,136 t)" 
+                data-calc="-10,838 tCO₂e/yr Net Abatement" 
+                data-desc="Directly qualifies Hirdaramani for Tier-1 apparel brand sustainability vendor preferences.">
+                -10,838 tCO₂e/yr
+              </span>
+            </div>
+            <div class="text-[11px] text-slate-600">Scope 1: -7,702 | Scope 2: -3,136</div>
+          </div>
+
+          <div class="p-3.5 rounded-lg bg-teal-50/70 border border-teal-200 space-y-1">
+            <span class="text-[10px] uppercase font-bold text-teal-800">Water Stewardship</span>
+            <div class="text-xl font-bold font-mono text-teal-700">
+              <span class="calc-cell" 
+                data-metric="Water Efficiency &amp; ZLD Permeate" 
+                data-formula="1,200 m³/d ETP ZLD × 85% Recovery + Rainwater" 
+                data-calc="48.5% Potable Water Reduction vs Baseline" 
+                data-desc="Meets ZDHC Level 3 MRSL conformance and Higg FEM 4.0 standards.">
+                1,200 m³/d ZLD
+              </span>
+            </div>
+            <div class="text-[11px] text-slate-600">85% Permeate Recovery Rate</div>
+          </div>
+        </div>
+
+        <!-- LEED PLATINUM SCORECARD (84 POINTS) TABLE -->
+        <div class="rounded-lg border border-slate-200 bg-white p-4 space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+            <div>
+              <span class="text-[10px] uppercase font-bold text-lime-700 tracking-wider">USGBC Verification</span>
+              <h3 class="text-sm font-bold text-slate-900">LEED v4 BD+C Platinum Point Allocation Matrix (84 Points)</h3>
+            </div>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-lime-100 text-lime-800 font-bold">Platinum Verified</span>
+          </div>
+
+          <div class="overflow-x-auto text-xs">
+            <table class="w-full border-collapse">
+              <thead>
+                <tr class="bg-slate-100/80 border-b border-slate-200 text-slate-700 font-bold">
+                  <th class="p-2.5 text-left border-r border-slate-200">LEED Category</th>
+                  <th class="p-2.5 text-center border-r border-slate-200 w-24">Points Achieved</th>
+                  <th class="p-2.5 text-center border-r border-slate-200 w-20">Max Points</th>
+                  <th class="p-2.5 text-left border-r border-slate-200">Key Engineering &amp; Design Strategies</th>
+                  <th class="p-2.5 text-left">Compliance Standard</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100 font-sans">
+                <tr class="hover:bg-slate-50">
+                  <td class="p-2.5 font-bold text-slate-900 border-r border-slate-200">Energy &amp; Atmosphere (EA)</td>
+                  <td class="p-2.5 text-center font-mono font-bold text-emerald-700 border-r border-slate-200">31</td>
+                  <td class="p-2.5 text-center font-mono text-slate-500 border-r border-slate-200">33</td>
+                  <td class="p-2.5 border-r border-slate-200 text-slate-700">2.80 MWp rooftop solar PV; 15 TPH biomass boiler replacing fossil oil; 42.8% modeled energy cost reduction vs ASHRAE baseline; IE4 VFD compressors with heat recovery.</td>
+                  <td class="p-2.5 font-mono text-slate-600">ASHRAE 90.1-2016 / Title 24</td>
+                </tr>
+                <tr class="hover:bg-slate-50">
+                  <td class="p-2.5 font-bold text-slate-900 border-r border-slate-200">Water Efficiency (WE)</td>
+                  <td class="p-2.5 text-center font-mono font-bold text-emerald-700 border-r border-slate-200">11</td>
+                  <td class="p-2.5 text-center font-mono text-slate-500 border-r border-slate-200">12</td>
+                  <td class="p-2.5 border-r border-slate-200 text-slate-700">48.5% potable water reduction; 450 m³ stormwater collection tank; ultra-low flow sensor fixtures; 1,200 m³/d ETP ZLD permeate reused for boiler feed and toilet flushing.</td>
+                  <td class="p-2.5 font-mono text-slate-600">LEED WE Prerequisite / ZDHC</td>
+                </tr>
+                <tr class="hover:bg-slate-50">
+                  <td class="p-2.5 font-bold text-slate-900 border-r border-slate-200">Indoor Environmental Quality (EQ)</td>
+                  <td class="p-2.5 text-center font-mono font-bold text-emerald-700 border-r border-slate-200">14</td>
+                  <td class="p-2.5 text-center font-mono text-slate-500 border-r border-slate-200">16</td>
+                  <td class="p-2.5 border-r border-slate-200 text-slate-700">35 ACH positive-pressure Celdek evaporative cooling keeping sewing hall at 28°C &plusmn; 1°C; MERV 13 filtration; low-VOC adhesives and architectural coatings; 78% daylight autonomy.</td>
+                  <td class="p-2.5 font-mono text-slate-600">ASHRAE 62.1-2016 / EN 16798</td>
+                </tr>
+                <tr class="hover:bg-slate-50">
+                  <td class="p-2.5 font-bold text-slate-900 border-r border-slate-200">Sustainable Sites &amp; Location (SS)</td>
+                  <td class="p-2.5 text-center font-mono font-bold text-emerald-700 border-r border-slate-200">16</td>
+                  <td class="p-2.5 text-center font-mono text-slate-500 border-r border-slate-200">16</td>
+                  <td class="p-2.5 border-r border-slate-200 text-slate-700">Industrial park location with access to multi-modal transit; high-albedo cool roof (SRI &gt; 82) to mitigate heat island effect; 24 EV charging stations; permeable pavement drainage.</td>
+                  <td class="p-2.5 font-mono text-slate-600">LEED SS Credit Guidelines</td>
+                </tr>
+                <tr class="hover:bg-slate-50">
+                  <td class="p-2.5 font-bold text-slate-900 border-r border-slate-200">Materials &amp; Resources (MR)</td>
+                  <td class="p-2.5 text-center font-mono font-bold text-emerald-700 border-r border-slate-200">6</td>
+                  <td class="p-2.5 text-center font-mono text-slate-500 border-r border-slate-200">13</td>
+                  <td class="p-2.5 border-r border-slate-200 text-slate-700">86.4% construction waste diverted from landfill; building product disclosure with verified Environmental Product Declarations (EPDs); regional structural steel and cement within 500 km.</td>
+                  <td class="p-2.5 font-mono text-slate-600">ISO 14025 / EN 15804</td>
+                </tr>
+                <tr class="hover:bg-slate-50">
+                  <td class="p-2.5 font-bold text-slate-900 border-r border-slate-200">Innovation &amp; Regional Priority (ID/RP)</td>
+                  <td class="p-2.5 text-center font-mono font-bold text-emerald-700 border-r border-slate-200">6</td>
+                  <td class="p-2.5 text-center font-mono text-slate-500 border-r border-slate-200">6</td>
+                  <td class="p-2.5 border-r border-slate-200 text-slate-700">Exemplary performance in renewable power (100% daytime load); comprehensive ergonomics program for 3,500 apparel workers; zero single-use plastics factory campus policy.</td>
+                  <td class="p-2.5 font-mono text-slate-600">USGBC Innovation Catalog</td>
+                </tr>
+                <tr class="bg-lime-50/70 font-bold border-t-2 border-lime-300">
+                  <td class="p-2.5 text-slate-900 uppercase">TOTAL VERIFIED LEED PLATINUM SCORE</td>
+                  <td class="p-2.5 text-center font-mono text-lime-900 text-sm">84</td>
+                  <td class="p-2.5 text-center font-mono text-slate-700">110</td>
+                  <td colspan="2" class="p-2.5 text-slate-700 font-sans font-normal">Exceeds 80-point Platinum threshold by +4 buffer points, assuring formal USGBC certificate issuance.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- INDUSTRIAL CARBON & UTILITY SAVINGS DECOMPOSITION -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+          
+          <div class="rounded-lg border border-slate-200 bg-white p-4 space-y-3">
+            <span class="text-[10px] uppercase font-bold text-emerald-700 tracking-wider">Carbon Abatement Engineering</span>
+            <h4 class="text-xs font-bold text-slate-900">Scope 1 &amp; Scope 2 Decarbonization Mechanism</h4>
+            
+            <div class="space-y-2 text-slate-600 leading-relaxed text-[11px]">
+              <div class="p-2.5 rounded bg-slate-50 border-l-2 border-emerald-500 space-y-1">
+                <div class="font-bold text-slate-800">Scope 1 Thermal Fuel Switch: -7,702 tCO₂e/yr</div>
+                <p>Replacing heavy fuel oil (HFO #6) with certified biomass agricultural briquettes/pellets at 15 TPH steam output reduces lifecycle fossil emissions by 92.5%, saving $775,000/yr in thermal energy costs.</p>
+              </div>
+              <div class="p-2.5 rounded bg-slate-50 border-l-2 border-sky-500 space-y-1">
+                <div class="font-bold text-slate-800">Scope 2 Grid Electricity Offset: -3,136 tCO₂e/yr</div>
+                <p>The 2.80 MWp rooftop solar system generates 3,920,000 kWh/yr. Displacing Vietnam national grid power (0.80 kg CO₂e/kWh) offsets 3,136 tCO₂e/yr and reduces OPEX by $352,800/yr.</p>
+              </div>
+              <div class="p-2.5 rounded bg-lime-50/70 border border-lime-200 space-y-1">
+                <div class="font-bold text-lime-900">Total Certified Abatement: -10,838 tCO₂e/yr</div>
+                <p class="text-lime-800">Directly secures Tier-1 preferred vendor allocation for carbon-audited brands (Nike, Patagonia, Lululemon, PVH).</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-lg border border-slate-200 bg-white p-4 space-y-3">
+            <span class="text-[10px] uppercase font-bold text-sky-700 tracking-wider">Global Brand Certifications</span>
+            <h4 class="text-xs font-bold text-slate-900">Apparel Industry ESG &amp; Chemical Compliance</h4>
+            
+            <div class="space-y-2 text-slate-600 leading-relaxed text-[11px]">
+              <div class="p-2.5 rounded bg-slate-50 border-l-2 border-sky-500 space-y-1">
+                <div class="font-bold text-slate-800">Higg Index FEM 4.0 (&ge;92.4 Score)</div>
+                <p>Comprehensive third-party verification across Environmental Management System, Energy/GHG, Water, Wastewater, Air, and Chemical Management modules.</p>
+              </div>
+              <div class="p-2.5 rounded bg-slate-50 border-l-2 border-teal-500 space-y-1">
+                <div class="font-bold text-slate-800">ZDHC Gateway &amp; MRSL Level 3 Conformance</div>
+                <p>Zero Discharge of Hazardous Chemicals standard achieved across all textile wet processing and laundry operations; electronic chemical inventory tracking via InCheck.</p>
+              </div>
+              <div class="p-2.5 rounded bg-slate-50 border-l-2 border-amber-500 space-y-1">
+                <div class="font-bold text-slate-800">ISO 14001:2015 &amp; ISO 50001:2018 Standards</div>
+                <p>Environmental Management System and Energy Management System audited and accredited by Month 16 as part of operational asset handover.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
     <!-- TAB 8: STAR PLAYBOOK -->
     <div id="tab-defense" class="tab-panel hidden space-y-6">
       <div class="space-y-4">
         <h2 class="text-lg font-bold text-slate-900 border-b border-slate-100 pb-2">
-          Pillar 8: Boardroom STAR Interview Defense Playbook (Executive Scenarios)
+          Boardroom STAR Interview Defense Playbook (Executive Scenarios)
         </h2>
         <p class="text-xs text-slate-500 mt-0.5">
           High-stakes C-suite interview defense scripts structured under the Situation-Task-Action-Result (STAR) methodology:
