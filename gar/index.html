@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hirdaramani Engineering & Projects Portal (Rev_Final)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --bg-page: #f8fafc;
+      --bg-card: #ffffff;
+      --border-subtle: #e2e8f0;
+      --text-main: #0f172a;
+      --text-body: #334155;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+    }
+
+    * {
+      user-select: text !important;
+      -webkit-user-select: text !important;
+    }
+
+    button, .nav-btn, .tab-item {
+      user-select: none !important;
+      -webkit-user-select: none !important;
+    }
+
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-body);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    /* Seamless Iframe without outer box borders */
+    .module-frame {
+      width: 100%;
+      border: none;
+      min-height: 1100px;
+      transition: opacity 0.2s ease-in-out;
+      background-color: transparent;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased">
+
+  <!-- Master Top Navigation Bar -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-2xs">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+      <div>
+        <div class="text-[11px] uppercase tracking-wider font-bold text-slate-500">
+          Hirdaramani Group | Regional Engineering Competency Framework
+        </div>
+        <h1 class="text-xl font-bold text-slate-900 mt-0.5">
+          Regional Head of Engineering & Capital Projects Portal
+        </h1>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="text-xs font-mono bg-slate-100 text-slate-700 font-semibold px-3 py-1.5 border border-slate-200 rounded-md">
+          Release: Rev_Final
+        </span>
+      </div>
+    </div>
+
+    <!-- Clean Tab Navigation Row -->
+    <div class="max-w-7xl mx-auto px-6 border-t border-slate-100 overflow-x-auto">
+      <nav id="module-nav-bar" class="flex gap-2 py-2.5">
+        <!-- Rendered dynamically -->
+      </nav>
+    </div>
+
+    <!-- Active Viewport Toolbar (Open & Minimal) -->
+    <div class="bg-slate-50/70 border-t border-slate-200 px-6 py-2 text-xs">
+      <div class="max-w-7xl mx-auto flex items-center justify-between text-slate-600">
+        <div class="flex items-center gap-2">
+          <span class="text-slate-400 uppercase font-semibold text-[10px]">Active Module:</span>
+          <strong id="active-module-title" class="text-slate-900 font-bold">Loading...</strong>
+        </div>
+        <a id="open-standalone-link" href="#" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-white border border-slate-200 text-sky-700 font-medium hover:bg-sky-50 transition-colors shadow-2xs">
+          <span>Open Module in Full Window</span>
+          <span class="text-[11px]">↗</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Module Content Container (Completely De-Boxed: No outer container borders) -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 py-4">
+    <iframe id="module-viewport" class="module-frame" src="modules/bod_capex_charter_report.html" title="Engineering Module Viewport"></iframe>
+  </main>
+
+  <!-- Master Footer -->
+  <footer class="bg-white border-t border-slate-200 py-4 text-center text-xs text-slate-500">
+    Hirdaramani Regional Engineering & Capital Projects Architecture | Multi-Site Governance (Vietnam & Sri Lanka)
+  </footer>
+
+  <!-- Include External Manifest if present -->
+  <script src="modules_Rev_Final.js"></script>
+
+  <!-- Dynamic Shell Controller with Built-in Resilient Fallback -->
+  <script>
+    if (!window.PORTAL_MODULES || window.PORTAL_MODULES.length === 0) {
+      window.PORTAL_MODULES = [
+        {
+          id: "domain1_permitting",
+          category: "Statutory Compliance",
+          title: "Domain 1: Permitting & PCCC Fire Codes",
+          description: "Vietnam QCVN 06:2022/BXD fire safety, GPXD construction, and GPMT environmental licensing.",
+          badge: "Regulatory",
+          file: "modules/domain1_pccc_permitting.html"
+        },
+        {
+          id: "domain2_utilities",
+          category: "Core Engineering",
+          title: "Domain 2: Industrial Utilities & Decarbonization",
+          description: "Biomass steam (15 TPH), VFD compressed air (1,573 CFM), 35 ACH HVAC, 1,200 m³/d ETP ZLD, and 22kV substation.",
+          badge: "Engineering",
+          file: "modules/domain2_utilities_engineering.html"
+        },
+        {
+          id: "domain3_esg",
+          category: "Sustainability & Energy",
+          title: "Domain 3: ESG, LEED Platinum & Rooftop Solar",
+          description: "2.80 MWp rooftop solar PV, PPA vs CAPEX financial model, LEED v4.1 Platinum scorecard (84 pts), and Scope 1 & 2 decarbonization.",
+          badge: "Sustainability",
+          file: "modules/domain3_esg_leed_solar.html"
+        },
+        {
+          id: "domain4_capex",
+          category: "Financial & Governance",
+          title: "Domain 4: CAPEX Calsheet & Contracts",
+          description: "$14.50M USD greenfield factory master calsheet, EVM controls, 7-year DCF, and FIDIC contract administration.",
+          badge: "Active Calsheet",
+          file: "modules/domain4_capex_calsheet.html"
+        },
+        {
+          id: "bod_charter",
+          category: "Executive Governance",
+          title: "Greenfield Factory BOD CAPEX Report",
+          description: "End-to-end $14.50M greenfield garment factory proposal, engineering sizing, DCF, and 14-month lifecycle.",
+          badge: "Board Charter",
+          file: "modules/bod_capex_charter_report.html"
+        }
+      ];
+    }
+
+    let activeModuleId = null;
+
+    function renderModuleNavigation() {
+      const navBar = document.getElementById('module-nav-bar');
+      navBar.innerHTML = '';
+
+      window.PORTAL_MODULES.forEach((mod, index) => {
+        const btn = document.createElement('button');
+        btn.id = 'nav-mod-' + mod.id;
+        btn.className = 'tab-item px-4 py-2 rounded-lg text-xs font-semibold flex items-center gap-2 border transition-all cursor-pointer ' +
+          (index === 0 
+            ? 'bg-sky-700 text-white border-transparent shadow-xs' 
+            : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50 hover:text-slate-900');
+        
+        btn.innerHTML = `<span>${mod.title}</span>` + 
+          (mod.badge ? `<span class="text-[10px] font-mono px-1.5 py-0.5 rounded font-bold ${index === 0 ? 'bg-sky-800 text-sky-100' : 'bg-slate-100 text-slate-600 border border-slate-200'}">${mod.badge}</span>` : '');
+        
+        btn.onclick = () => loadModule(mod.id);
+        navBar.appendChild(btn);
+      });
+
+      if (window.PORTAL_MODULES.length > 0) {
+        loadModule(window.PORTAL_MODULES[0].id);
+      }
+    }
+
+    function loadModule(moduleId) {
+      const targetMod = window.PORTAL_MODULES.find(m => m.id === moduleId);
+      if (!targetMod) return;
+
+      activeModuleId = moduleId;
+
+      document.getElementById('active-module-title').innerText = targetMod.title;
+      const standaloneLink = document.getElementById('open-standalone-link');
+      standaloneLink.href = targetMod.file;
+
+      window.PORTAL_MODULES.forEach(m => {
+        const btn = document.getElementById('nav-mod-' + m.id);
+        if (btn) {
+          const badgeSpan = btn.querySelector('span:nth-child(2)');
+          if (m.id === moduleId) {
+            btn.className = 'tab-item px-4 py-2 rounded-lg text-xs font-semibold flex items-center gap-2 border bg-sky-700 text-white border-transparent shadow-xs';
+            if (badgeSpan) badgeSpan.className = 'text-[10px] font-mono px-1.5 py-0.5 rounded font-bold bg-sky-800 text-sky-100';
+          } else {
+            btn.className = 'tab-item px-4 py-2 rounded-lg text-xs font-semibold flex items-center gap-2 border bg-white text-slate-600 border-slate-200 hover:bg-slate-50 hover:text-slate-900';
+            if (badgeSpan) badgeSpan.className = 'text-[10px] font-mono px-1.5 py-0.5 rounded font-bold bg-slate-100 text-slate-600 border border-slate-200';
+          }
+        }
+      });
+
+      const viewport = document.getElementById('module-viewport');
+      viewport.style.opacity = '0.3';
+      viewport.src = targetMod.file;
+      viewport.onload = () => {
+        viewport.style.opacity = '1';
+        try {
+          const doc = viewport.contentDocument || viewport.contentWindow.document;
+          if (doc && doc.body) {
+            const contentHeight = Math.max(doc.body.scrollHeight + 40, 1100);
+            viewport.style.minHeight = contentHeight + 'px';
+          }
+        } catch (e) {
+          viewport.style.minHeight = '1200px';
+        }
+      };
+    }
+
+    document.addEventListener('DOMContentLoaded', renderModuleNavigation);
+  </script>
+</body>
+</html>
