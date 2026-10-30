@@ -157,23 +157,23 @@
     </header>
 
     <!-- Sub-navigation tabs -->
-    <nav class="flex flex-wrap border-b border-slate-200 gap-6 text-xs">
-      <button onclick="showTab('lifecycle')" id="btn-tab-lifecycle" class="tab-btn pb-3 font-bold border-b-2 border-sky-700 text-sky-800 focus:outline-none transition-colors">
+    <nav class="flex border-b border-slate-200 gap-4 sm:gap-6 text-xs overflow-x-auto flex-nowrap whitespace-nowrap scrollbar-thin">
+      <button onclick="showTab('lifecycle')" id="btn-tab-lifecycle" class="tab-btn pb-3 shrink-0 font-bold border-b-2 border-sky-700 text-sky-800 focus:outline-none transition-colors">
         1. 14-Month Permitting Lifecycle &amp; Gantt
       </button>
-      <button onclick="showTab('fire-code')" id="btn-tab-fire-code" class="tab-btn pb-3 font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-900 focus:outline-none transition-colors">
+      <button onclick="showTab('fire-code')" id="btn-tab-fire-code" class="tab-btn pb-3 shrink-0 font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-900 focus:outline-none transition-colors">
         2. QCVN 06:2022 &amp; Circular 09 Standards
       </button>
-      <button onclick="showTab('hydraulics')" id="btn-tab-hydraulics" class="tab-btn pb-3 font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-900 focus:outline-none transition-colors">
+      <button onclick="showTab('hydraulics')" id="btn-tab-hydraulics" class="tab-btn pb-3 shrink-0 font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-900 focus:outline-none transition-colors">
         3. ESFR Hydraulics &amp; Fire Pump House
       </button>
-      <button onclick="showTab('smoke-alarms')" id="btn-tab-smoke-alarms" class="tab-btn pb-3 font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-900 focus:outline-none transition-colors">
+      <button onclick="showTab('smoke-alarms')" id="btn-tab-smoke-alarms" class="tab-btn pb-3 shrink-0 font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-900 focus:outline-none transition-colors">
         4. Smoke Extraction &amp; Addressable Alarms
       </button>
-      <button onclick="showTab('gpmt')" id="btn-tab-gpmt" class="tab-btn pb-3 font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-900 focus:outline-none transition-colors">
+      <button onclick="showTab('gpmt')" id="btn-tab-gpmt" class="tab-btn pb-3 shrink-0 font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-900 focus:outline-none transition-colors">
         5. Environmental Licensing (GPMT)
       </button>
-      <button onclick="showTab('risk-defense')" id="btn-tab-risk-defense" class="tab-btn pb-3 font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-900 focus:outline-none transition-colors">
+      <button onclick="showTab('risk-defense')" id="btn-tab-risk-defense" class="tab-btn pb-3 shrink-0 font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-900 focus:outline-none transition-colors">
         6. Statutory Risk Matrix
       </button>
     </nav>
@@ -201,8 +201,10 @@
             </span>
           </div>
 
-          <div class="w-full overflow-hidden bg-slate-950 rounded-lg p-2 border border-slate-800">
-            <svg viewBox="0 0 1000 300" class="w-full h-auto select-none" xmlns="http://www.w3.org/2000/svg">
+          <div class="flex items-center justify-between text-[11px] text-slate-500 md:hidden px-1"><span class="font-mono text-[10px]">Permitting Sequence</span><span class="font-mono text-[9.5px] bg-sky-50 text-sky-800 border border-sky-200 px-2 py-0.5 rounded">Swipe to view ➔</span></div>
+          <div class="w-full overflow-x-auto scrollbar-thin bg-slate-950 rounded-lg p-2 border border-slate-800">
+            <div class="min-w-[850px] w-full">
+              <svg viewBox="0 0 1000 300" class="w-full h-auto select-none" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <marker id="arrS" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#38bdf8" /></marker>
                 <marker id="arrR" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#f43f5e" /></marker>
@@ -360,7 +362,7 @@
           <div class="text-xs font-bold text-slate-900 uppercase tracking-wide">
             Statutory Permitting Work Breakdown Structure &amp; Agency Matrix
           </div>
-          <div class="rounded-lg border border-slate-200 overflow-hidden w-full">
+          <div class="rounded-lg border border-slate-200 overflow-x-auto scrollbar-thin w-full">
             <table class="pccc-table w-full text-left text-[11px] border-collapse">
               <thead class="bg-slate-50 text-slate-700 uppercase border-b border-slate-200 font-semibold text-[10px] tracking-wider">
                 <tr>
@@ -505,7 +507,7 @@
           <div class="text-xs font-bold text-slate-900 uppercase tracking-wide">
             QCVN 06:2022/BXD Structural Fire Engineering Parameters
           </div>
-          <div class="rounded-lg border border-slate-200 overflow-hidden w-full">
+          <div class="rounded-lg border border-slate-200 overflow-x-auto scrollbar-thin w-full">
             <table class="pccc-table w-full text-left text-[11px] border-collapse">
               <thead class="bg-slate-50 text-slate-700 uppercase border-b border-slate-200 font-semibold text-[10px] tracking-wider">
                 <tr>
@@ -589,8 +591,10 @@
             </span>
           </div>
 
-          <div class="w-full overflow-hidden bg-slate-950 rounded-lg p-2 border border-slate-800">
-            <svg viewBox="0 0 1000 280" class="w-full h-auto select-none" xmlns="http://www.w3.org/2000/svg">
+          <div class="flex items-center justify-between text-[11px] text-slate-500 md:hidden px-1"><span class="font-mono text-[10px]">Hydraulics Diagram</span><span class="font-mono text-[9.5px] bg-sky-50 text-sky-800 border border-sky-200 px-2 py-0.5 rounded">Swipe to view ➔</span></div>
+          <div class="w-full overflow-x-auto scrollbar-thin bg-slate-950 rounded-lg p-2 border border-slate-800">
+            <div class="min-w-[850px] w-full">
+              <svg viewBox="0 0 1000 280" class="w-full h-auto select-none" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <marker id="pArr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#ef4444" /></marker>
               </defs>
@@ -889,7 +893,7 @@
           <div class="text-xs font-bold text-slate-900 uppercase tracking-wide">
             Top 6 Vietnam Statutory Permitting Bottlenecks &amp; Counter-Measures
           </div>
-          <div class="rounded-lg border border-slate-200 overflow-hidden w-full">
+          <div class="rounded-lg border border-slate-200 overflow-x-auto scrollbar-thin w-full">
             <table class="pccc-table w-full text-left text-[11px] border-collapse">
               <thead class="bg-slate-50 text-slate-700 uppercase border-b border-slate-200 font-semibold text-[10px] tracking-wider">
                 <tr>

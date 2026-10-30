@@ -111,7 +111,7 @@
 
         <div class="p-3.5 rounded-lg bg-emerald-50 border border-emerald-100">
           <div class="text-[10px] uppercase font-bold text-emerald-800">Unlevered Return (IRR)</div>
-          <div class="text-xl font-bold font-mono text-emerald-700 mt-0.5">
+          <div class="text-base sm:text-xl font-bold font-mono text-emerald-700 mt-0.5">
             <span class="calc-cell" 
               data-metric="7-Year Unlevered Project IRR" 
               data-formula="Σ PV Inflows ($16.345M) - Initial Outlay ($14.50M)" 
@@ -125,7 +125,7 @@
 
         <div class="p-3.5 rounded-lg bg-amber-50 border border-amber-100">
           <div class="text-[10px] uppercase font-bold text-amber-800">FIDIC Contract Framework</div>
-          <div class="text-xl font-bold font-mono text-amber-700 mt-0.5">
+          <div class="text-base sm:text-xl font-bold font-mono text-amber-700 mt-0.5">
             <span class="calc-cell" 
               data-metric="FIDIC Contract Risk Allocation" 
               data-formula="Red Book (Civil) + Yellow Book (MEP) + Silver/PPA (Solar)" 
@@ -139,7 +139,7 @@
 
         <div class="p-3.5 rounded-lg bg-sky-50 border border-sky-100">
           <div class="text-[10px] uppercase font-bold text-sky-800">HSE &amp; Green Benchmark</div>
-          <div class="text-xl font-bold font-mono text-sky-700 mt-0.5">
+          <div class="text-base sm:text-xl font-bold font-mono text-sky-700 mt-0.5">
             <span class="calc-cell" 
               data-metric="HSE & ESG Performance" 
               data-formula="LTIFR = 0.00 | LEED Platinum: 84 Points" 
@@ -152,18 +152,18 @@
         </div>
       </div>
 
-      <!-- FLAT HORIZONTAL TAB NAVIGATION (10 TABS) -->
-      <nav class="flex flex-wrap items-center gap-1.5 border-b border-slate-200 pb-2 text-xs font-semibold">
-        <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors bg-sky-700 text-white" data-target="tab-overview">Overview Cockpit</button>
-        <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100" data-target="tab-stage-process">Stage Process &amp; Workflow</button>
-        <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100" data-target="tab-legal">1. Legal &amp; Permitting</button>
-        <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100" data-target="tab-schedule">2. Schedule &amp; CPM</button>
-        <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100" data-target="tab-budget">3. Budget &amp; EVM</button>
-        <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100" data-target="tab-technical">4. Technical Scope</button>
-        <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100" data-target="tab-contracts">5. FIDIC Contracts</button>
-        <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100" data-target="tab-risk">6. HSE &amp; Risk DOA</button>
-        <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100" data-target="tab-commissioning">7. T&amp;C Handover</button>
-        <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100" data-target="tab-esg">8. ESG &amp; LEED Platinum</button>
+      <!-- FLAT HORIZONTAL TAB NAVIGATION (10 TABS - TOUCH SWIPEABLE) -->
+      <nav class="flex items-center gap-1.5 border-b border-slate-200 pb-2 text-xs font-semibold overflow-x-auto flex-nowrap whitespace-nowrap scrollbar-thin">
+        <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors bg-sky-700 text-white shrink-0" data-target="tab-overview">Overview Cockpit</button>
+        <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100 shrink-0" data-target="tab-stage-process">Stage Process &amp; Workflow</button>
+        <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100 shrink-0" data-target="tab-legal">1. Legal &amp; Permitting</button>
+        <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100 shrink-0" data-target="tab-schedule">2. Schedule &amp; CPM</button>
+        <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100 shrink-0" data-target="tab-budget">3. Budget &amp; EVM</button>
+        <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100 shrink-0" data-target="tab-technical">4. Technical Scope</button>
+        <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100 shrink-0" data-target="tab-contracts">5. FIDIC Contracts</button>
+        <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100 shrink-0" data-target="tab-risk">6. HSE &amp; Risk DOA</button>
+        <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100 shrink-0" data-target="tab-commissioning">7. T&amp;C Handover</button>
+        <button type="button" class="tab-btn px-3 py-1.5 rounded-md transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100 shrink-0" data-target="tab-esg">8. ESG &amp; LEED Platinum</button>
       </nav>
     </header>
 
@@ -190,8 +190,14 @@
             </span>
           </div>
 
-          <div class="w-full overflow-hidden bg-slate-900 rounded-lg p-2 border border-slate-800 flex justify-center">
-            <svg viewBox="0 0 900 360" class="w-full max-w-4xl h-auto select-none" xmlns="http://www.w3.org/2000/svg">
+          <div class="flex items-center justify-between text-[11px] text-slate-500 md:hidden px-1">
+            <span class="font-mono text-[10px]">Architecture Wheel</span>
+            <span class="font-mono text-[9.5px] bg-sky-50 text-sky-800 border border-sky-200 px-2 py-0.5 rounded">Swipe to view ➔</span>
+          </div>
+
+          <div class="w-full overflow-x-auto scrollbar-thin bg-slate-900 rounded-lg p-2 border border-slate-800 flex justify-start md:justify-center">
+            <div class="min-w-[720px] md:min-w-0 w-full max-w-4xl flex justify-center">
+              <svg viewBox="0 0 900 360" class="w-full h-auto select-none" xmlns="http://www.w3.org/2000/svg">
 
               <defs>
                 <radialGradient id="hubHalo" cx="50%" cy="50%" r="50%">
@@ -298,7 +304,8 @@
                 <text x="450" y="196" fill="#fde68a" font-size="8.5" font-weight="bold" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">THE &quot;5+3&quot; SYSTEM</text>
                 <text x="450" y="208" fill="#34d399" font-size="8" font-weight="600" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">Click: Stage Process &amp; Workflow</text>
               </g>
-            </svg>
+              </svg>
+            </div>
           </div>
         </div>
 
@@ -413,8 +420,14 @@
             </span>
           </div>
 
-          <div class="w-full overflow-hidden bg-slate-950 rounded-lg p-3 border border-slate-800">
-            <svg viewBox="0 0 1000 270" class="w-full h-auto select-none" xmlns="http://www.w3.org/2000/svg">
+          <div class="flex items-center justify-between text-[11px] text-slate-500 md:hidden px-1">
+            <span class="font-mono text-[10px]">Interactive Flowchart</span>
+            <span class="font-mono text-[9.5px] bg-sky-50 text-sky-800 border border-sky-200 px-2 py-0.5 rounded">Swipe to view stages ➔</span>
+          </div>
+
+          <div class="w-full overflow-x-auto scrollbar-thin bg-slate-950 rounded-lg p-2 sm:p-3 border border-slate-800">
+            <div class="min-w-[850px] w-full">
+              <svg viewBox="0 0 1000 270" class="w-full h-auto select-none" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <marker id="gateArr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
                   <path d="M0,0 L6,3 L0,6 Z" fill="#38bdf8" />
@@ -538,6 +551,7 @@
               <text x="35" y="238" fill="#38bdf8" font-size="8" font-weight="bold" font-family="'Segoe UI', Roboto, sans-serif">Gatekeepers:</text>
               <text x="105" y="238" fill="#cbd5e1" font-size="7.5" font-family="monospace">Gate 0 (Board Investment Committee) | Gate 1 (Executive Committee &amp; CFO) | Gate 2 &amp; 3 (Regional Head of Engineering) | Gate 4 &amp; 5 (CEO &amp; Board).</text>
             </svg>
+            </div>
           </div>
         </div>
 

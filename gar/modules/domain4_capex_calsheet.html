@@ -166,20 +166,20 @@
     </header>
 
     <!-- Sub-navigation tabs (No Enclosing Box) -->
-    <nav class="flex flex-wrap border-b border-slate-200 gap-6 text-xs">
-      <button onclick="showTab('calsheet')" id="btn-tab-calsheet" class="tab-btn pb-3 font-bold border-b-2 border-sky-700 text-sky-800 focus:outline-none transition-colors">
+    <nav class="flex border-b border-slate-200 gap-4 sm:gap-6 text-xs overflow-x-auto flex-nowrap whitespace-nowrap scrollbar-thin">
+      <button onclick="showTab('calsheet')" id="btn-tab-calsheet" class="tab-btn pb-3 shrink-0 font-bold border-b-2 border-sky-700 text-sky-800 focus:outline-none transition-colors">
         1. Greenfield Calculation Sheet (WBS & EVM)
       </button>
-      <button onclick="showTab('financial-model')" id="btn-tab-financial-model" class="tab-btn pb-3 font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-900 focus:outline-none transition-colors">
+      <button onclick="showTab('financial-model')" id="btn-tab-financial-model" class="tab-btn pb-3 shrink-0 font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-900 focus:outline-none transition-colors">
         2. Financial Appraisal & 7-Year DCF
       </button>
-      <button onclick="showTab('parametric-sizing')" id="btn-tab-parametric-sizing" class="tab-btn pb-3 font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-900 focus:outline-none transition-colors">
+      <button onclick="showTab('parametric-sizing')" id="btn-tab-parametric-sizing" class="tab-btn pb-3 shrink-0 font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-900 focus:outline-none transition-colors">
         3. Parametric Sizing to CAPEX Correlation
       </button>
-      <button onclick="showTab('fidic')" id="btn-tab-fidic" class="tab-btn pb-3 font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-900 focus:outline-none transition-colors">
+      <button onclick="showTab('fidic')" id="btn-tab-fidic" class="tab-btn pb-3 shrink-0 font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-900 focus:outline-none transition-colors">
         4. FIDIC Contract Standards & Commercial Controls
       </button>
-      <button onclick="showTab('scenarios')" id="btn-tab-scenarios" class="tab-btn pb-3 font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-900 focus:outline-none transition-colors">
+      <button onclick="showTab('scenarios')" id="btn-tab-scenarios" class="tab-btn pb-3 shrink-0 font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-900 focus:outline-none transition-colors">
         5. Executive Scenario Defenses
       </button>
     </nav>
@@ -233,7 +233,7 @@
           </div>
         </div>
 
-        <div class="rounded-lg border border-slate-200 overflow-hidden w-full">
+        <div class="rounded-lg border border-slate-200 overflow-x-auto scrollbar-thin w-full">
           <table class="wbs-table w-full text-left text-[11px] border-collapse">
             <thead class="bg-slate-50 text-slate-700 uppercase border-b border-slate-200 font-semibold text-[10px] tracking-wider">
               <tr>
@@ -692,7 +692,7 @@
           <div class="text-xs font-bold text-slate-900 uppercase tracking-wide">
             Discounted Cash Flow Model (7-Year Horizon, 10.0% WACC)
           </div>
-          <div class="rounded-lg border border-slate-200 overflow-hidden w-full">
+          <div class="rounded-lg border border-slate-200 overflow-x-auto scrollbar-thin w-full">
             <table class="dcf-table w-full text-left text-[11px] border-collapse">
               <thead class="bg-slate-50 text-slate-600 uppercase border-b border-slate-200 font-semibold">
                 <tr>
@@ -860,7 +860,7 @@
           <div class="text-xs font-bold text-slate-900 uppercase tracking-wide">
             Financial Sensitivity & Downside Stress Test Matrix
           </div>
-          <div class="rounded-lg border border-slate-200 overflow-hidden w-full">
+          <div class="rounded-lg border border-slate-200 overflow-x-auto scrollbar-thin w-full">
             <table class="dcf-table w-full text-left text-[11px] border-collapse">
               <thead class="bg-slate-50 text-slate-600 uppercase border-b border-slate-200 font-semibold">
                 <tr>
@@ -1056,7 +1056,7 @@
           </div>
 
           <!-- 2-Way Grid Table (25 Coordinates) -->
-          <div class="rounded-lg border border-slate-200 overflow-hidden w-full">
+          <div class="rounded-lg border border-slate-200 overflow-x-auto scrollbar-thin w-full">
             <table class="sens-table w-full text-center text-[11px] border-collapse font-mono">
               <thead class="bg-slate-50 text-slate-700 font-semibold border-b border-slate-200">
                 <tr>

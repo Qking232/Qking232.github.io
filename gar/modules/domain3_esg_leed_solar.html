@@ -157,20 +157,20 @@
     </header>
 
     <!-- Sub-navigation tabs -->
-    <nav class="flex flex-wrap border-b border-slate-200 gap-6 text-xs">
-      <button onclick="showTab('solar-eng')" id="btn-tab-solar-eng" class="tab-btn pb-3 font-bold border-b-2 border-sky-700 text-sky-800 focus:outline-none transition-colors">
+    <nav class="flex border-b border-slate-200 gap-4 sm:gap-6 text-xs overflow-x-auto flex-nowrap whitespace-nowrap scrollbar-thin">
+      <button onclick="showTab('solar-eng')" id="btn-tab-solar-eng" class="tab-btn pb-3 shrink-0 font-bold border-b-2 border-sky-700 text-sky-800 focus:outline-none transition-colors">
         1. 2.8 MWp Solar PV Engineering &amp; Sizing
       </button>
-      <button onclick="showTab('peb-structure')" id="btn-tab-peb-structure" class="tab-btn pb-3 font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-900 focus:outline-none transition-colors">
+      <button onclick="showTab('peb-structure')" id="btn-tab-peb-structure" class="tab-btn pb-3 shrink-0 font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-900 focus:outline-none transition-colors">
         2. PEB Roof Dead-Load &amp; Wind Uplift
       </button>
-      <button onclick="showTab('ppa-capex')" id="btn-tab-ppa-capex" class="tab-btn pb-3 font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-900 focus:outline-none transition-colors">
+      <button onclick="showTab('ppa-capex')" id="btn-tab-ppa-capex" class="tab-btn pb-3 shrink-0 font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-900 focus:outline-none transition-colors">
         3. PPA vs. Direct CAPEX Appraisal
       </button>
-      <button onclick="showTab('leed-scorecard')" id="btn-tab-leed-scorecard" class="tab-btn pb-3 font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-900 focus:outline-none transition-colors">
+      <button onclick="showTab('leed-scorecard')" id="btn-tab-leed-scorecard" class="tab-btn pb-3 shrink-0 font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-900 focus:outline-none transition-colors">
         4. LEED Platinum v4.1 Scorecard (84 Pts)
       </button>
-      <button onclick="showTab('decarb-scope')" id="btn-tab-decarb-scope" class="tab-btn pb-3 font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-900 focus:outline-none transition-colors">
+      <button onclick="showTab('decarb-scope')" id="btn-tab-decarb-scope" class="tab-btn pb-3 shrink-0 font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-900 focus:outline-none transition-colors">
         5. Scope 1, 2, 3 Decarbonization &amp; Circularity
       </button>
     </nav>
@@ -198,8 +198,10 @@
             </span>
           </div>
 
-          <div class="w-full overflow-hidden bg-slate-950 rounded-lg p-2 border border-slate-800">
-            <svg viewBox="0 0 1000 270" class="w-full h-auto select-none" xmlns="http://www.w3.org/2000/svg">
+          <div class="flex items-center justify-between text-[11px] text-slate-500 md:hidden px-1"><span class="font-mono text-[10px]">Solar Generation Curves</span><span class="font-mono text-[9.5px] bg-sky-50 text-sky-800 border border-sky-200 px-2 py-0.5 rounded">Swipe to view ➔</span></div>
+          <div class="w-full overflow-x-auto scrollbar-thin bg-slate-950 rounded-lg p-2 border border-slate-800">
+            <div class="min-w-[800px] w-full">
+              <svg viewBox="0 0 1000 270" class="w-full h-auto select-none" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <marker id="sArr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"></marker>
               </defs>
@@ -468,7 +470,7 @@
           <div class="text-xs font-bold text-slate-900 uppercase tracking-wide">
             Strategic Financial Comparison: Direct CAPEX vs. Solar PPA
           </div>
-          <div class="rounded-lg border border-slate-200 overflow-hidden w-full">
+          <div class="rounded-lg border border-slate-200 overflow-x-auto scrollbar-thin w-full">
             <table class="esg-table w-full text-left text-[11px] border-collapse">
               <thead class="bg-slate-50 text-slate-700 uppercase border-b border-slate-200 font-semibold text-[10px] tracking-wider">
                 <tr>
@@ -540,8 +542,10 @@
             </span>
           </div>
 
-          <div class="w-full overflow-hidden bg-slate-950 rounded-lg p-2 border border-slate-800">
-            <svg viewBox="0 0 1000 240" class="w-full h-auto select-none" xmlns="http://www.w3.org/2000/svg">
+          <div class="flex items-center justify-between text-[11px] text-slate-500 md:hidden px-1"><span class="font-mono text-[10px]">LEED Platinum Scorecard</span><span class="font-mono text-[9.5px] bg-sky-50 text-sky-800 border border-sky-200 px-2 py-0.5 rounded">Swipe to view ➔</span></div>
+          <div class="w-full overflow-x-auto scrollbar-thin bg-slate-950 rounded-lg p-2 border border-slate-800">
+            <div class="min-w-[800px] w-full">
+              <svg viewBox="0 0 1000 240" class="w-full h-auto select-none" xmlns="http://www.w3.org/2000/svg">
               <!-- Category 1: Energy & Atmosphere (31/33) -->
               <rect x="20" y="30" width="220" height="90" rx="5" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" />
               <text x="32" y="50" fill="#fde68a" font-size="10" font-weight="bold">Energy &amp; Atmosphere (EA)</text>
@@ -611,7 +615,7 @@
           <div class="text-xs font-bold text-slate-900 uppercase tracking-wide">
             LEED Platinum v4.1 Credit Audit Breakdown (84 Points Targeted)
           </div>
-          <div class="rounded-lg border border-slate-200 overflow-hidden w-full">
+          <div class="rounded-lg border border-slate-200 overflow-x-auto scrollbar-thin w-full">
             <table class="esg-table w-full text-left text-[11px] border-collapse">
               <thead class="bg-slate-50 text-slate-700 uppercase border-b border-slate-200 font-semibold text-[10px] tracking-wider">
                 <tr>

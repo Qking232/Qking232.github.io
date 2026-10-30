@@ -202,7 +202,7 @@
       </div>
 
             <!-- INTERACTIVE 2.5D ISOMETRIC 3D PLANT MAP VIEWPORT -->
-      <div id="map-container" class="relative w-full overflow-hidden bg-slate-100 rounded-lg border border-slate-300 shadow-inner" style="height: 620px; cursor: grab;">
+      <div id="map-container" class="relative w-full overflow-hidden bg-slate-100 rounded-lg border border-slate-300 shadow-inner" style="height: clamp(400px, 62vh, 620px); cursor: grab;">
         <!-- Floating HUD Control Bar -->
         <div class="absolute top-4 right-4 z-20 flex flex-col gap-1.5 bg-white/95 border border-slate-300 shadow-md backdrop-blur-sm p-1.5 rounded-lg shadow-xl backdrop-blur-sm select-none">
           <button id="btn-zoom-in" type="button" title="Zoom In (+)" class="w-8 h-8 flex items-center justify-center rounded bg-slate-100 hover:bg-sky-600 text-slate-700 hover:text-white border border-slate-200 hover:text-white font-bold text-base transition-colors cursor-pointer">+</button>
@@ -214,7 +214,7 @@
         <!-- Floating Instructions Badge -->
         <div class="absolute bottom-3 left-3 z-20 px-3 py-1.5 rounded-md bg-white/90 border border-slate-300 text-[11px] font-mono text-slate-600 shadow-sm pointer-events-none flex items-center gap-2 shadow-md">
           <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-          <span>Hold &amp; Drag to Pan | Scroll Wheel to Zoom | Double-Click to Center</span>
+          <span class="hidden sm:inline">Hold &amp; Drag to Pan | Scroll to Zoom | Double-Click to Center</span><span class="sm:hidden">Touch to Pan | Pinch or +/- to Zoom</span>
         </div>
 
         <!-- Current Zoom Indicator Badge -->
@@ -2290,7 +2290,7 @@
     </g>
     
 
-    <!-- PIN 3: 22kV Substation & Chillers -->
+    <!-- PIN 3: 22kV Substation &amp; Chillers -->
     <g class="map-pin cursor-pointer" data-zone="3">
       <ellipse cx="305.2" cy="213.8" rx="6" ry="3" fill="#000000" opacity="0.2" />
       <line x1="305.2" y1="213.8" x2="305.2" y2="169.4" stroke="#16a34a" stroke-width="1.8" stroke-dasharray="3,2" />
@@ -2299,12 +2299,12 @@
       <g transform="translate(315.2, 160.4)">
         <rect x="0" y="0" width="155" height="19" rx="5" fill="#ffffff" stroke="#16a34a" stroke-width="1.4" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.12))" />
         <circle cx="9" cy="9.5" r="3" fill="#16a34a" />
-        <text x="17" y="13" fill="#0f172a" font-size="8.5" font-weight="bold" font-family="system-ui">22kV Substation & Chillers</text>
+        <text x="17" y="13" fill="#0f172a" font-size="8.5" font-weight="bold" font-family="system-ui">22kV Substation &amp; Chillers</text>
       </g>
     </g>
     
 
-    <!-- PIN 4: ETP & RO Recycling (1,200 m3/d) -->
+    <!-- PIN 4: ETP &amp; RO Recycling (1,200 m3/d) -->
     <g class="map-pin cursor-pointer" data-zone="4">
       <ellipse cx="401.3" cy="272.3" rx="6" ry="3" fill="#000000" opacity="0.2" />
       <line x1="401.3" y1="272.3" x2="401.3" y2="227.9" stroke="#0d9488" stroke-width="1.8" stroke-dasharray="3,2" />
@@ -2313,7 +2313,7 @@
       <g transform="translate(411.3, 218.9)">
         <rect x="0" y="0" width="165" height="19" rx="5" fill="#ffffff" stroke="#0d9488" stroke-width="1.4" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.12))" />
         <circle cx="9" cy="9.5" r="3" fill="#0d9488" />
-        <text x="17" y="13" fill="#0f172a" font-size="8.5" font-weight="bold" font-family="system-ui">ETP & RO Recycling (1,200 m3/d)</text>
+        <text x="17" y="13" fill="#0f172a" font-size="8.5" font-weight="bold" font-family="system-ui">ETP &amp; RO Recycling (1,200 m3/d)</text>
       </g>
     </g>
     
@@ -2332,7 +2332,7 @@
     </g>
     
 
-    <!-- PIN 6: Spreading & CNC Cutting -->
+    <!-- PIN 6: Spreading &amp; CNC Cutting -->
     <g class="map-pin cursor-pointer" data-zone="6">
       <ellipse cx="612.8" cy="169.4" rx="6" ry="3" fill="#000000" opacity="0.2" />
       <line x1="612.8" y1="169.4" x2="612.8" y2="121.3" stroke="#0284c7" stroke-width="1.8" stroke-dasharray="3,2" />
@@ -2341,12 +2341,12 @@
       <g transform="translate(622.8, 112.3)">
         <rect x="0" y="0" width="150" height="19" rx="5" fill="#ffffff" stroke="#0284c7" stroke-width="1.4" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.12))" />
         <circle cx="9" cy="9.5" r="3" fill="#0284c7" />
-        <text x="17" y="13" fill="#0f172a" font-size="8.5" font-weight="bold" font-family="system-ui">Spreading & CNC Cutting</text>
+        <text x="17" y="13" fill="#0f172a" font-size="8.5" font-weight="bold" font-family="system-ui">Spreading &amp; CNC Cutting</text>
       </g>
     </g>
     
 
-    <!-- PIN 7: Washing & Tumblers (16) -->
+    <!-- PIN 7: Washing &amp; Tumblers (16) -->
     <g class="map-pin cursor-pointer" data-zone="7">
       <ellipse cx="901.2" cy="350.7" rx="6" ry="3" fill="#000000" opacity="0.2" />
       <line x1="901.2" y1="350.7" x2="901.2" y2="302.6" stroke="#ea580c" stroke-width="1.8" stroke-dasharray="3,2" />
@@ -2355,7 +2355,7 @@
       <g transform="translate(911.2, 293.6)">
         <rect x="0" y="0" width="150" height="19" rx="5" fill="#ffffff" stroke="#ea580c" stroke-width="1.4" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.12))" />
         <circle cx="9" cy="9.5" r="3" fill="#ea580c" />
-        <text x="17" y="13" fill="#0f172a" font-size="8.5" font-weight="bold" font-family="system-ui">Washing & Tumblers (16)</text>
+        <text x="17" y="13" fill="#0f172a" font-size="8.5" font-weight="bold" font-family="system-ui">Washing &amp; Tumblers (16)</text>
       </g>
     </g>
     
@@ -2388,7 +2388,7 @@
     </g>
     
 
-    <!-- PIN 10: ASRS Warehouse & Docks -->
+    <!-- PIN 10: ASRS Warehouse &amp; Docks -->
     <g class="map-pin cursor-pointer" data-zone="10">
       <ellipse cx="625.6" cy="391.4" rx="6" ry="3" fill="#000000" opacity="0.2" />
       <line x1="625.6" y1="391.4" x2="625.6" y2="339.6" stroke="#0284c7" stroke-width="1.8" stroke-dasharray="3,2" />
@@ -2397,7 +2397,7 @@
       <g transform="translate(635.6, 330.6)">
         <rect x="0" y="0" width="155" height="19" rx="5" fill="#ffffff" stroke="#0284c7" stroke-width="1.4" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.12))" />
         <circle cx="9" cy="9.5" r="3" fill="#0284c7" />
-        <text x="17" y="13" fill="#0f172a" font-size="8.5" font-weight="bold" font-family="system-ui">ASRS Warehouse & Docks</text>
+        <text x="17" y="13" fill="#0f172a" font-size="8.5" font-weight="bold" font-family="system-ui">ASRS Warehouse &amp; Docks</text>
       </g>
     </g>
     
@@ -2615,7 +2615,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 text-xs">
 
-          <!-- Card 6: Auto Spreading & CNC Cutting -->
+          <!-- Card 6: Auto Spreading &amp; CNC Cutting -->
           <div data-zone-card="6" class="zone-card transition-all duration-200 p-3.5 rounded-lg bg-slate-50 border-l-4 border-slate-600 space-y-2">
             <div class="flex items-center justify-between">
               <strong class="text-slate-900 font-bold">6. Auto Spreading &amp; CNC Cutting</strong>
@@ -2632,7 +2632,7 @@
             </div>
           </div>
 
-          <!-- Card 7: Industrial Washing & Tumblers -->
+          <!-- Card 7: Industrial Washing &amp; Tumblers -->
           <div data-zone-card="7" class="zone-card transition-all duration-200 p-3.5 rounded-lg bg-slate-50 border-l-4 border-rose-500 space-y-2">
             <div class="flex items-center justify-between">
               <strong class="text-slate-900 font-bold">7. Industrial Washing &amp; Tumbler Area</strong>
@@ -2858,7 +2858,7 @@
 
               <!-- Node 8: Deaerator & Feedwater Tank (Bottom Loop) -->
               <rect x="330" y="200" width="140" height="55" rx="4" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2" />
-              <text x="338" y="218" fill="#7dd3fc" font-size="9" font-weight="bold">Deaerator & Storage</text>
+              <text x="338" y="218" fill="#7dd3fc" font-size="9" font-weight="bold">Deaerator &amp; Storage</text>
               <text x="338" y="231" fill="#cbd5e1" font-size="8" font-family="monospace">105°C / 0.2 bar (O2 &lt; 0.005 ppm)</text>
               <text x="338" y="244" fill="#34d399" font-size="8" font-family="monospace">82% Condensate Return Loop</text>
 
@@ -2922,7 +2922,7 @@
           <div class="text-xs font-bold text-slate-900 uppercase tracking-wide">
             Biomass Steam Boiler Plant Technical Specifications
           </div>
-          <div class="rounded-lg border border-slate-200 overflow-hidden w-full">
+          <div class="rounded-lg border border-slate-200 overflow-x-auto scrollbar-thin w-full">
             <table class="util-table w-full text-left text-[11px] border-collapse">
               <thead class="bg-slate-50 text-slate-700 uppercase border-b border-slate-200 font-semibold text-[10px] tracking-wider">
                 <tr>
@@ -3148,7 +3148,7 @@
           <div class="text-xs font-bold text-slate-900 uppercase tracking-wide">
             Compressed Air System Technical Specifications
           </div>
-          <div class="rounded-lg border border-slate-200 overflow-hidden w-full">
+          <div class="rounded-lg border border-slate-200 overflow-x-auto scrollbar-thin w-full">
             <table class="util-table w-full text-left text-[11px] border-collapse">
               <thead class="bg-slate-50 text-slate-700 uppercase border-b border-slate-200 font-semibold text-[10px] tracking-wider">
                 <tr>
@@ -3342,7 +3342,7 @@
           <div class="text-xs font-bold text-slate-900 uppercase tracking-wide">
             Factory Ventilation & Precision AHU Specifications
           </div>
-          <div class="rounded-lg border border-slate-200 overflow-hidden w-full">
+          <div class="rounded-lg border border-slate-200 overflow-x-auto scrollbar-thin w-full">
             <table class="util-table w-full text-left text-[11px] border-collapse">
               <thead class="bg-slate-50 text-slate-700 uppercase border-b border-slate-200 font-semibold text-[10px] tracking-wider">
                 <tr>
@@ -3519,7 +3519,7 @@
           <div class="text-xs font-bold text-slate-900 uppercase tracking-wide">
             ETP Water Quality Influent vs. Effluent Parameters
           </div>
-          <div class="rounded-lg border border-slate-200 overflow-hidden w-full">
+          <div class="rounded-lg border border-slate-200 overflow-x-auto scrollbar-thin w-full">
             <table class="util-table w-full text-left text-[11px] border-collapse">
               <thead class="bg-slate-50 text-slate-700 uppercase border-b border-slate-200 font-semibold text-[10px] tracking-wider">
                 <tr>
@@ -3727,7 +3727,7 @@
           <div class="text-xs font-bold text-slate-900 uppercase tracking-wide">
             Substation & Power Infrastructure Technical Specifications
           </div>
-          <div class="rounded-lg border border-slate-200 overflow-hidden w-full">
+          <div class="rounded-lg border border-slate-200 overflow-x-auto scrollbar-thin w-full">
             <table class="util-table w-full text-left text-[11px] border-collapse">
               <thead class="bg-slate-50 text-slate-700 uppercase border-b border-slate-200 font-semibold text-[10px] tracking-wider">
                 <tr>
