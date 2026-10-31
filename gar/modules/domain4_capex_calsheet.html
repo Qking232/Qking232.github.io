@@ -1006,11 +1006,48 @@
                 </p>
               </div>
 
-              <div class="p-2.5 rounded bg-white border border-slate-200">
-                <span class="font-bold text-slate-900 block">C. 4-Month Commercial Launch Delay (COD Month 14 → 18):</span>
-                <p class="text-slate-600 mt-0.5 leading-relaxed">
-                  <strong>Impact:</strong> NPV drops to +$962,800; IRR remains strong at 12.91%.<br>
-                  <strong>Executive Takeaway:</strong> Schedule slippage carries lower terminal damage than margin deflation because production cash flows are deferred rather than permanently lost.
+                            <div class="p-3 rounded bg-white border border-slate-200 space-y-2.5">
+                <div class="flex items-center justify-between">
+                  <span class="font-bold text-slate-900">C. 4-Month Commercial Launch Delay (COD Month 14 → 18):</span>
+                  <span class="font-mono text-[10.5px] font-bold px-2 py-0.5 rounded bg-sky-100 text-sky-800 border border-sky-200">
+                    NPV: +$962,800 | IRR: 12.91%
+                  </span>
+                </div>
+                
+                <p class="text-slate-600 leading-relaxed text-[11px]">
+                  <strong>Impact:</strong> NPV contracts by -$882,400 to +$962,800; project IRR remains robust at 12.91% (safely above the 10.0% WACC hurdle).
+                </p>
+
+                <!-- Step-by-Step Simple Math Breakdown Card -->
+                <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 space-y-2 font-mono text-[11px]">
+                  <div class="font-bold text-slate-900 font-sans text-xs border-b border-slate-200 pb-1.5 flex items-center justify-between">
+                    <span>Simple 3-Step Math: How the -$882,400 Delay Cost is Calculated</span>
+                    <span class="text-[10px] text-sky-700 font-mono font-semibold">10% WACC Discounted</span>
+                  </div>
+                  
+                  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pt-0.5">
+                    <span class="text-slate-600 font-sans">Step 1: Monthly Cash Run-Rate</span>
+                    <span class="text-slate-900 font-semibold">$3,030,000 (Year 1 Cash) ÷ 12 Mos = <strong class="text-sky-700">$252,500 / mo</strong></span>
+                  </div>
+                  
+                  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                    <span class="text-slate-600 font-sans">Step 2: 4 Months of Delayed Income</span>
+                    <span class="text-slate-900 font-semibold">4 Months × $252,500 = <strong class="text-amber-700">$1,010,000 delayed cash</strong></span>
+                  </div>
+                  
+                  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-t border-slate-200 pt-1.5">
+                    <span class="text-slate-600 font-sans">Step 3: Discounted Net Loss (Today's Value)</span>
+                    <span class="text-slate-900 font-sans font-semibold">Adjusted for late arrival &amp; 7-year recovery = <strong class="text-emerald-700 font-mono text-xs">-$882,400</strong></span>
+                  </div>
+
+                  <div class="text-[10.5px] text-slate-500 font-sans border-t border-slate-200 pt-1.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                    <span>• Marginal Delay Cost: -$882,400 ÷ 4 Months = <strong>-$220,600 / Month</strong></span>
+                    <span class="font-mono text-slate-700 font-semibold">(~$7,350 / day)</span>
+                  </div>
+                </div>
+
+                <p class="text-slate-600 text-[11px] leading-relaxed">
+                  <strong>Executive Takeaway:</strong> Schedule slippage carries lower terminal damage than margin deflation because production cash flows are deferred rather than permanently lost. The project can absorb up to <strong>+8.5 Months of launch delay</strong> before project NPV breaches zero.
                 </p>
               </div>
             </div>
