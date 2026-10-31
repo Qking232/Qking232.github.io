@@ -68,9 +68,9 @@
       </div>
     </div>
 
-    <!-- Clean Tab Navigation Row -->
-    <div class="max-w-7xl mx-auto px-3 sm:px-6 border-t border-slate-100 overflow-x-auto no-scrollbar">
-      <nav id="module-nav-bar" class="flex gap-1.5 sm:gap-2 py-2 flex-nowrap whitespace-nowrap">
+    <!-- Executive 6-Segment Grid Navigation (Simultaneous Visibility Across All Screens) -->
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 border-t border-slate-100 py-2.5">
+      <nav id="module-nav-bar" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
         <!-- Rendered dynamically -->
       </nav>
     </div>
@@ -109,6 +109,8 @@
       window.PORTAL_MODULES = [
   {
     id: "master_governance",
+    tag: "FRAMEWORK",
+    shortTitle: "Project Delivery",
     category: "Executive Governance",
     title: "Project Delivery Framework",
     description: "The '5+3' Capital Delivery System: 6-Stage Gate Process, 10-Role RACI Matrix, and 8 Integrated Execution Pillars.",
@@ -117,6 +119,8 @@
   },
   {
     id: "domain1_permitting",
+    tag: "DOMAIN 1",
+    shortTitle: "Permits & Legal",
     category: "Statutory Compliance",
     title: "Domain 1: Permits & Legal Approvals",
     description: "Vietnam Land Use Right (Sổ Đỏ), 1/500 Master Plan, TKCS Basic Design, QCVN 06:2022 Fire Safety, Phased GPXD Móng/Thân, and GPMT Licensing.",
@@ -125,6 +129,8 @@
   },
   {
     id: "domain2_utilities",
+    tag: "DOMAIN 2",
+    shortTitle: "Plant & Utilities",
     category: "Core Engineering",
     title: "Domain 2: Plant Engineering & Utilities",
     description: "35,000 m² 2.5D Isometric Plant Map, 15 TPH Biomass Steam, 1,573 CFM VFD Compressed Air, 35 ACH Celdek HVAC, and 1,200 m³/d ZLD ETP.",
@@ -133,6 +139,8 @@
   },
   {
     id: "domain3_esg",
+    tag: "DOMAIN 3",
+    shortTitle: "Green & Solar",
     category: "Sustainability & Energy",
     title: "Domain 3: Green Energy & Sustainability",
     description: "2.80 MWp Rooftop Solar PV, -10,838 tCO₂e/yr Net Carbon Abatement, LEED v4 BD+C Platinum (84 Pts), and Higg FEM 4.0 Standards.",
@@ -141,6 +149,8 @@
   },
   {
     id: "domain4_capex",
+    tag: "DOMAIN 4",
+    shortTitle: "Cost & Contracts",
     category: "Commercial & Controls",
     title: "Domain 4: Project Cost & Contracts",
     description: "$14.50M BAC Breakdown, EVM S-Curve Progress Verification, 7-Year Operating DCF Valuation ($1.85M NPV, 15.65% IRR), and FIDIC Risk Allocation.",
@@ -149,6 +159,8 @@
   },
   {
     id: "bod_charter",
+    tag: "BOARD DOSSIER",
+    shortTitle: "Board Report",
     category: "Executive Authorization",
     title: "Board Report & Project Charter",
     description: "Executive Capital Authorization Dossier: Technical Sizing, Financial Sensitivity Stress Testing, and Formal Board Resolution.",
@@ -167,13 +179,19 @@
       window.PORTAL_MODULES.forEach((mod, index) => {
         const btn = document.createElement('button');
         btn.id = 'nav-mod-' + mod.id;
-        btn.className = 'tab-item px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg text-xs font-semibold flex items-center gap-1.5 sm:gap-2 border whitespace-nowrap shrink-0 transition-all cursor-pointer ' +
+        btn.type = 'button';
+        btn.className = 'text-left p-2 sm:p-2.5 rounded-lg border transition-all cursor-pointer flex flex-col justify-between ' +
           (index === 0 
-            ? 'bg-sky-700 text-white border-transparent shadow-xs' 
-            : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50 hover:text-slate-900');
+            ? 'bg-sky-700 text-white border-sky-800 shadow-xs ring-1 ring-sky-600/30' 
+            : 'bg-white text-slate-800 border-slate-200 hover:bg-slate-50 hover:border-slate-300');
         
-        btn.innerHTML = `<span>${mod.title}</span>` + 
-          (mod.badge ? `<span class="text-[10px] font-mono px-1.5 py-0.5 rounded font-bold ${index === 0 ? 'bg-sky-800 text-sky-100' : 'bg-slate-100 text-slate-600 border border-slate-200'}">${mod.badge}</span>` : '');
+        btn.innerHTML = `
+          <div class="flex items-center justify-between gap-1 mb-0.5">
+            <span class="text-[9px] sm:text-[9.5px] font-mono uppercase tracking-wider font-bold ${index === 0 ? 'text-sky-200' : 'text-slate-400'}">${mod.tag || 'MODULE'}</span>
+            <span class="text-[8.5px] font-mono px-1 py-0.2 rounded font-semibold ${index === 0 ? 'bg-sky-800 text-sky-100' : 'bg-slate-100 text-slate-500'}">${mod.badge || ''}</span>
+          </div>
+          <div class="text-[11.5px] sm:text-xs font-bold leading-tight truncate">${mod.shortTitle || mod.title}</div>
+        `;
         
         btn.onclick = () => loadModule(mod.id);
         navBar.appendChild(btn);
@@ -197,13 +215,16 @@
       window.PORTAL_MODULES.forEach(m => {
         const btn = document.getElementById('nav-mod-' + m.id);
         if (btn) {
+          const tagSpan = btn.querySelector('span:nth-child(1)');
           const badgeSpan = btn.querySelector('span:nth-child(2)');
           if (m.id === moduleId) {
-            btn.className = 'tab-item px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg text-xs font-semibold flex items-center gap-1.5 sm:gap-2 border bg-sky-700 text-white border-transparent shadow-xs whitespace-nowrap shrink-0';
-            if (badgeSpan) badgeSpan.className = 'text-[10px] font-mono px-1.5 py-0.5 rounded font-bold bg-sky-800 text-sky-100';
+            btn.className = 'text-left p-2 sm:p-2.5 rounded-lg border transition-all cursor-pointer flex flex-col justify-between bg-sky-700 text-white border-sky-800 shadow-xs ring-1 ring-sky-600/30';
+            if (tagSpan) tagSpan.className = 'text-[9px] sm:text-[9.5px] font-mono uppercase tracking-wider font-bold text-sky-200';
+            if (badgeSpan) badgeSpan.className = 'text-[8.5px] font-mono px-1 py-0.2 rounded font-semibold bg-sky-800 text-sky-100';
           } else {
-            btn.className = 'tab-item px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg text-xs font-semibold flex items-center gap-1.5 sm:gap-2 border bg-white text-slate-600 border-slate-200 hover:bg-slate-50 hover:text-slate-900 whitespace-nowrap shrink-0';
-            if (badgeSpan) badgeSpan.className = 'text-[10px] font-mono px-1.5 py-0.5 rounded font-bold bg-slate-100 text-slate-600 border border-slate-200';
+            btn.className = 'text-left p-2 sm:p-2.5 rounded-lg border transition-all cursor-pointer flex flex-col justify-between bg-white text-slate-800 border-slate-200 hover:bg-slate-50 hover:border-slate-300';
+            if (tagSpan) tagSpan.className = 'text-[9px] sm:text-[9.5px] font-mono uppercase tracking-wider font-bold text-slate-400';
+            if (badgeSpan) badgeSpan.className = 'text-[8.5px] font-mono px-1 py-0.2 rounded font-semibold bg-slate-100 text-slate-500';
           }
         }
       });
