@@ -222,6 +222,51 @@
           100%
         </div>
 
+        <!-- SLIDE-OVER ZONE SPECIFICATION DRAWER -->
+        <div id="zone-spec-drawer" class="absolute top-0 right-0 h-full w-full sm:w-[390px] md:w-[440px] bg-white/95 backdrop-blur-md border-l border-slate-300 shadow-2xl z-30 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col pointer-events-auto select-text">
+          <!-- Drawer Header -->
+          <div class="p-4 border-b border-slate-200 bg-slate-50/90 flex items-start justify-between gap-3 shrink-0">
+            <div class="space-y-1">
+              <div class="flex items-center gap-2">
+                <span id="drawer-zone-badge" class="text-[10px] font-mono uppercase font-bold px-2 py-0.5 rounded bg-sky-100 text-sky-800 border border-sky-200">
+                  Zone Spec
+                </span>
+                <span id="drawer-zone-capacity" class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-200 text-slate-700 font-bold">
+                  Capacity
+                </span>
+              </div>
+              <h3 id="drawer-zone-title" class="text-sm font-bold text-slate-900 leading-snug">
+                Zone Title
+              </h3>
+            </div>
+            <button id="btn-close-drawer" type="button" title="Close Panel (Esc)" class="w-8 h-8 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-800 flex items-center justify-center font-bold text-base transition-colors cursor-pointer shrink-0">
+              ✕
+            </button>
+          </div>
+
+          <!-- Drawer Body (Scrollable) -->
+          <div id="drawer-zone-body" class="flex-1 overflow-y-auto p-4 space-y-4 text-xs overscroll-contain">
+            <!-- Dynamic Content Injected Here -->
+          </div>
+
+          <!-- Drawer Footer -->
+          <div class="p-3 border-t border-slate-200 bg-slate-50/95 flex items-center justify-between gap-2 text-xs shrink-0">
+            <div class="flex items-center gap-1.5">
+              <button id="btn-prev-zone" type="button" class="px-2.5 py-1.5 rounded border border-slate-200 bg-white hover:bg-slate-100 font-semibold text-slate-700 transition-colors flex items-center gap-1 cursor-pointer">
+                <span>◀</span> Prev
+              </button>
+              <button id="btn-next-zone" type="button" class="px-2.5 py-1.5 rounded border border-slate-200 bg-white hover:bg-slate-100 font-semibold text-slate-700 transition-colors flex items-center gap-1 cursor-pointer">
+                Next <span>▶</span>
+              </button>
+            </div>
+            <button id="btn-jump-tab" type="button" class="px-3 py-1.5 rounded bg-sky-700 hover:bg-sky-800 text-white font-semibold transition-colors flex items-center gap-1.5 cursor-pointer shadow-sm">
+              <span>View Engineering Tab</span>
+              <span>→</span>
+            </button>
+          </div>
+        </div>
+
+
         <!-- Calibrated Isometric SVG Canvas -->
         <svg id="iso-map-svg" viewBox="0 0 1200 650" class="w-full h-full select-none" xmlns="http://www.w3.org/2000/svg">
   <defs>
@@ -4071,6 +4116,376 @@
     // =========================================================================
     // BI-DIRECTIONAL MAP & DIRECTORY HOVER SYNCHRONIZATION
     // =========================================================================
+        // =========================================================================
+    // ZONE SPECIFICATION SIDEBAR ENGINE & INTERACTIVE HIGHLIGHTING
+    // =========================================================================
+    const ZONE_SPECS = {
+      "1": {
+        num: 1,
+        title: "1. Biomass Boiler Station & Fuel Silo",
+        category: "Thermal Generation & Abatement",
+        badge: "Steam: 15 TPH",
+        badgeColor: "bg-rose-100 text-rose-800 border-rose-200",
+        tabId: "boiler",
+        tabName: "Biomass Steam Plant (15 TPH)",
+        opFunction: "Generates saturated high-pressure steam at 14.0 bar (198.3°C) to supply factory garment washing, conditioning tunnels, and 48 ironing lines. Operates at an 80% continuous sweet spot (12.05 TPH peak plant demand).",
+        specs: [
+          { label: "Design Capacity", val: "15.0 metric tons/hour (saturated)" },
+          { label: "Working Pressure", val: "14.0 bar(g) / 198.3°C saturation temp" },
+          { label: "Primary Fuel", val: "Agricultural pellets (LHV 4,200 kcal/kg, $115/t)" },
+          { label: "Fuel Storage", val: "150-ton weatherproof silo with rotary feeder" },
+          { label: "Flue Abatement", val: "Multi-cyclone + pulse-jet baghouse (<42 mg/Nm³)" },
+          { label: "Chimney Stack", val: "35m self-supporting steel with CEMS telemetry" },
+          { label: "Thermal OPEX", val: "-$780,000 USD/year savings vs. HFO" }
+        ],
+        utilityLink: "DN150 Welded Seamless Steam Header | 82% Condensate Return Loop",
+        safeguards: "Triple safety relief valves, continuous blowdown heat recovery, NFPA 85 flame safeguard."
+      },
+      "2": {
+        num: 2,
+        title: "2. Central Air Compressor Station",
+        category: "Pneumatics & Automation",
+        badge: "Air: 1,573 CFM",
+        badgeColor: "bg-sky-100 text-sky-800 border-sky-200",
+        tabId: "compressed-air",
+        tabName: "VFD Compressed Air (1,573 CFM)",
+        opFunction: "Supplies continuous ISO 8573-1 Class 1.2.1 oil-free dry compressed air at 7.50 ±0.05 bar for automated thread trimming, CNC cutters, and garment bagging machines.",
+        specs: [
+          { label: "Free Air Delivery", val: "1,573 CFM (44.5 m³/min) @ 7.5 bar" },
+          { label: "Compressor Units", val: "4x 90kW oil-free rotary screw (3 Duty + 1 Standby)" },
+          { label: "Pressure Regulation", val: "Master VFD cascade regulation (±0.05 bar)" },
+          { label: "Buffer Receivers", val: "5.0 m³ wet receiver + 5.0 m³ dry buffer receiver" },
+          { label: "Desiccant Dryers", val: "Twin-tower heatless (-40°C Pressure Dew Point)" },
+          { label: "Power Savings", val: "-$82,000 USD/year (380,000 kWh/yr avoided idle load)" }
+        ],
+        utilityLink: "DN100 AIRnet Anodized Aluminum Loop Header with top-takeoff swan necks (≤0.12 bar loss)",
+        safeguards: "Automatic condensate drain traps, dual pre/after-filters, acoustic canopy (<72 dBA)."
+      },
+      "3": {
+        num: 3,
+        title: "3. 22kV Substation & Generator Yard",
+        category: "Electrical Infrastructure",
+        badge: "Power: 6,300 kVA",
+        badgeColor: "bg-amber-100 text-amber-800 border-amber-200",
+        tabId: "electrical",
+        tabName: "22kV Substation & Power Quality",
+        opFunction: "Steps down 22kV utility power from EVN grid to 400V 3-phase low-voltage distribution, compensates reactive power, and provides 100% emergency backup.",
+        specs: [
+          { label: "Grid Incomer", val: "Dual 22kV underground feeds into 24kV SF6 RMU" },
+          { label: "Transformers", val: "2x 3,150 kVA cast-resin dry-type (N+1 redundancy)" },
+          { label: "Main Switchgear", val: "MDB-1 & MDB-2 (3,200A Cu) with auto bus tie" },
+          { label: "Power Factor", val: "2x 900 kVAR detuned capacitor banks (PF ≥ 0.98)" },
+          { label: "Emergency Backup", val: "2,000 kVA Cummins diesel generator with 10s ATS" }
+        ],
+        utilityLink: "Dual 3,200A Sandwich Copper Busway Risers to Production Halls",
+        safeguards: "Arc-flash containment, digital earth-leakage relays, SF6 pressure interlocks."
+      },
+      "4": {
+        num: 4,
+        title: "4. ETP & RO Water Circularity Plant",
+        category: "Wastewater & Circularity",
+        badge: "Capacity: 1,200 m³/d",
+        badgeColor: "bg-teal-100 text-teal-800 border-teal-200",
+        tabId: "etp",
+        tabName: "ETP & Water Circularity (1,200m³/d)",
+        opFunction: "Multi-barrier biological and membrane treatment of raw industrial washing/dyeing effluent (COD 1,200 mg/L) with closed-loop recycling to manufacturing.",
+        specs: [
+          { label: "Hydraulic Inflow", val: "1,200 m³/day raw industrial washing effluent" },
+          { label: "Biological Stage", val: "Equalization + Anoxic/Aerobic MBBR + Clarifier" },
+          { label: "Membrane Recovery", val: "Ultrafiltration (UF) + 2-Stage Reverse Osmosis" },
+          { label: "Recycled Water", val: "780 m³/day (65% circular reuse back to washing)" },
+          { label: "Discharge Standard", val: "QCVN 40:2011/BTNMT Column A compliant (<30 mg/L COD)" }
+        ],
+        utilityLink: "Closed-Loop RO Permeate Line directly feeding Washing & Conditioning Hall",
+        safeguards: "Continuous online COD/TSS/pH telemetry, emergency holding basin (600 m³)."
+      },
+      "5": {
+        num: 5,
+        title: "5. Water Reservoirs & Fire Pump House",
+        category: "Hydraulics & Life Safety",
+        badge: "Storage: 2,300 m³",
+        badgeColor: "bg-blue-100 text-blue-800 border-blue-200",
+        tabId: "etp",
+        tabName: "ETP & Water Circularity (1,200m³/d)",
+        opFunction: "Dual-compartment ground concrete reservoirs providing 48-hour continuous manufacturing autonomy and 100% dedicated emergency fire suppression reserve.",
+        specs: [
+          { label: "Raw Water Buffer", val: "800 m³ municipal/well water intake" },
+          { label: "Treated Process Tank", val: "500 m³ softened RO water buffer" },
+          { label: "Dedicated Fire Reserve", val: "1,000 m³ NFPA 20 compliant reserve (untouchable)" },
+          { label: "Fire Pump Suite", val: "Duty Electric (2,500 GPM) + Diesel Standby + Jockey" },
+          { label: "Autonomy Period", val: "48 continuous operating hours during supply cutoff" }
+        ],
+        utilityLink: "Underground Fire Main Loop (DN250 Ductile Iron) & Process Supply Headers",
+        safeguards: "Redundant level transmitters, automatic high/low telemetry, anti-vortex plates."
+      },
+      "6": {
+        num: 6,
+        title: "6. Automated Spreading & CNC Cutting",
+        category: "Pre-Assembly Fabrication",
+        badge: "Throughput: 120k pcs/d",
+        badgeColor: "bg-slate-100 text-slate-800 border-slate-200",
+        tabId: "compressed-air",
+        tabName: "VFD Compressed Air (1,573 CFM)",
+        opFunction: "Automated computerized fabric roll spreading, relaxation tables, and multi-ply CNC reciprocating knife cutters feeding cut parts directly to sewing modules.",
+        specs: [
+          { label: "Daily Throughput", val: "120,000 garment cut parts/day" },
+          { label: "Machinery Fleet", val: "12 CNC reciprocating cutters + 18 tensionless spreaders" },
+          { label: "Pneumatics Demand", val: "80 CFM dry air @ 6.5 bar for vacuum table hold-down" },
+          { label: "Electrical Load", val: "320 kW total connected active motor load" },
+          { label: "Waste Segregation", val: "Automated vacuum scrap extraction to recycling baler" }
+        ],
+        utilityLink: "Dedicated Air Drops (DN25) & Overhead Task Busways",
+        safeguards: "Light curtains on spreader tracks, blade break safety interlocks."
+      },
+      "7": {
+        num: 7,
+        title: "7. Industrial Washing & Drying Tumblers",
+        category: "Wet Finishing & Laundry",
+        badge: "Washers: 16 Units",
+        badgeColor: "bg-orange-100 text-orange-800 border-orange-200",
+        tabId: "boiler",
+        tabName: "Biomass Steam Plant (15 TPH)",
+        opFunction: "Enzyme washing, garment softening, ozone discoloration, and steam-heated tumbler drying with closed-loop lint collection and effluent drainage to ETP.",
+        specs: [
+          { label: "Washing Extractors", val: "16x 250kg open-pocket industrial washing extractors" },
+          { label: "Tumbler Dryers", val: "12x high-efficiency steam tumblers (recirculating air)" },
+          { label: "Steam Demand", val: "5.80 TPH peak saturated steam (14 bar stepped to 4 bar)" },
+          { label: "Water Demand", val: "480 m³/day (supplied via 65% ETP recycled RO water)" },
+          { label: "Energy Recovery", val: "Effluent-to-freshwater plate heat exchanger (+18°C preheat)" }
+        ],
+        utilityLink: "Steam Supply (DN100) & Gravity ETP Waste Trench (DN200)",
+        safeguards: "Auto steam shut-off valves, vibration cutoff switches on extractors."
+      },
+      "8": {
+        num: 8,
+        title: "8. Main Production Sewing Hall",
+        category: "Assembly & Manufacturing",
+        badge: "Lines: 48 Lines",
+        badgeColor: "bg-pink-100 text-pink-800 border-pink-200",
+        tabId: "hvac",
+        tabName: "Industrial HVAC (35 ACH)",
+        opFunction: "48 lean production sewing lines equipped with servo-direct-drive machines, automated overhead hanger transit systems, and 35 ACH evaporative cooling.",
+        specs: [
+          { label: "Assembly Capacity", val: "48 modular flexible lines (2,880 active operators)" },
+          { label: "Cooling & Air Quality", val: "35 ACH indirect/direct evaporative cooling (28±1°C)" },
+          { label: "Lighting Intensity", val: "750 Lux shadowless LED task lighting (CRI > 85)" },
+          { label: "Connected Motor Load", val: "1,824 kW (48 lines x 38 kW connected)" },
+          { label: "Pneumatic Supply", val: "240 CFM dry air for automated thread trimmer knives" }
+        ],
+        utilityLink: "Double-Loop Compressed Air Ring & Overhead 400V Busway Grid",
+        safeguards: "ESFR ceiling sprinklers, addressable optical smoke detectors, push-bar emergency egress doors."
+      },
+      "9": {
+        num: 9,
+        title: "9. Bonding & Heat-Seal Cleanroom",
+        category: "Technical Outerwear",
+        badge: "Pressure: +15 Pa",
+        badgeColor: "bg-purple-100 text-purple-800 border-purple-200",
+        tabId: "hvac",
+        tabName: "Industrial HVAC (35 ACH)",
+        opFunction: "Ultrasonic fabric welding, laser pocket cutting, and continuous hot-air seam-sealing tape bonding for waterproof outerwear and high-end activewear.",
+        specs: [
+          { label: "Cleanroom HVAC", val: "Dedicated DX AHU maintaining 23.0 ±1.0°C and 50 ±5% RH" },
+          { label: "Pressure Cascade", val: "+15 Pa positive pressure preventing sewing lint entry" },
+          { label: "Air Cleanliness", val: "ISO 8573-1 Class 1.2.1 oil-free dry compressed air" },
+          { label: "Quality Lock", val: "Zero moisture interference for polyurethane film adhesion" }
+        ],
+        utilityLink: "Dedicated Clean Compressed Air Drops & Chilled Water Loop",
+        safeguards: "Interlocked airlocks, digital differential pressure manometers with alarm telemetry."
+      },
+      "10": {
+        num: 10,
+        title: "10. Finishing, QC & ASRS Warehouse",
+        category: "Automated Logistics",
+        badge: "Storage: 24,000 Slots",
+        badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200",
+        tabId: "defense-scenarios",
+        tabName: "Executive Scenario Defenses",
+        opFunction: "Continuous tunnel steaming, automated bagging, and high-bay Automated Storage & Retrieval System (ASRS) serving containerized export docks.",
+        specs: [
+          { label: "ASRS Clear Height", val: "12.2m structural high-bay racking" },
+          { label: "Storage Capacity", val: "24,000 pallet slots / 1.5M packaged garment units" },
+          { label: "Automation Fleet", val: "8 automated stacker cranes + 12 autonomous mobile robots" },
+          { label: "Fire Protection", val: "ESFR K25 ceiling sprinklers (no in-rack heads needed)" },
+          { label: "Shipping Docks", val: "4 hydraulic dock levelers with inflatable shelter seals" }
+        ],
+        utilityLink: "High-Volume ESFR Fire Main (DN200) & Dedicated WMS UPS Feeder",
+        safeguards: "Automatic fire shutters, laser safety perimeter scanners on stacker cranes."
+      },
+      "gate-1": {
+        num: "G1",
+        title: "Gate 1: Inbound Heavy Logistics",
+        category: "Material Logistics",
+        badge: "Raw Materials Intake",
+        badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200",
+        tabId: "defense-scenarios",
+        tabName: "Executive Scenario Defenses",
+        opFunction: "Dedicated heavy transport entrance for 40ft container chassis delivering raw fabrics, trims, biomass fuel pellets, and water treatment chemicals.",
+        specs: [
+          { label: "Weighbridge", val: "80-ton electronic pitless weighbridge with optical OCR" },
+          { label: "Turning Radius", val: "18m articulated heavy vehicle clearance" },
+          { label: "Pavement Rating", val: "Rigid heavy-duty concrete pavement (axle load 12t)" },
+          { label: "Traffic Flow", val: "Strictly segregated from pedestrian workforce circulation" }
+        ],
+        utilityLink: "Perimeter High-Mast LED Lighting & CCTV Telemetry",
+        safeguards: "Automated hydraulic rising bollards, security guard station with ANPR."
+      },
+      "gate-2": {
+        num: "G2",
+        title: "Gate 2: Worker Transit & Administration",
+        category: "Personnel & Security",
+        badge: "3,200 Shift Capacity",
+        badgeColor: "bg-sky-100 text-sky-800 border-sky-200",
+        tabId: "defense-scenarios",
+        tabName: "Executive Scenario Defenses",
+        opFunction: "Pedestrian entrance with biometric turnstiles, executive administration lobby, covered motorbike parking (2,500 bays), and medical center.",
+        specs: [
+          { label: "Turnstile Lanes", val: "16 bi-directional optical turnstiles with facial recognition" },
+          { label: "Throughput", val: "Clears 3,200 workers in under 12 minutes per shift change" },
+          { label: "Motorbike Sheds", val: "2,500 bays with rooftop solar canopy" },
+          { label: "Life Safety", val: "Directly opposite plant emergency medical station" }
+        ],
+        utilityLink: "Worker Restroom Utility Header & EV Bike Charging Hub",
+        safeguards: "Biometric access control, panic-breakaway turnstile gates."
+      },
+      "gate-3": {
+        num: "G3",
+        title: "Gate 3: Finished Goods Export Dock",
+        category: "Export Operations",
+        badge: "Finished Goods Outbound",
+        badgeColor: "bg-orange-100 text-orange-800 border-orange-200",
+        tabId: "defense-scenarios",
+        tabName: "Executive Scenario Defenses",
+        opFunction: "Outbound container dispatch gate connecting high-bay ASRS warehouse docks to national expressway network for port transit.",
+        specs: [
+          { label: "Container Staging", val: "Staging capacity for 8 prime movers with 40ft containers" },
+          { label: "Loading Docks", val: "4 covered docks with hydraulic levelers and dock shelters" },
+          { label: "Customs Inspection", val: "Designated customs seal verification and bonding lane" },
+          { label: "Port Transit", val: "Expressway link to Cai Mep / Cat Lai international ports" }
+        ],
+        utilityLink: "Dock Leveler 3-Phase Hydraulic Power Feeder",
+        safeguards: "Wheel restraint locks on dock positions, red/green traffic dock signal lights."
+      }
+    };
+
+    let activeZoneKey = "1";
+
+    function renderZoneSidebar(key) {
+      const spec = ZONE_SPECS[key];
+      if (!spec) return;
+
+      activeZoneKey = key;
+
+      const badgeEl = document.getElementById("drawer-zone-badge");
+      const capEl = document.getElementById("drawer-zone-capacity");
+      const titleEl = document.getElementById("drawer-zone-title");
+      const bodyEl = document.getElementById("drawer-zone-body");
+      const jumpBtn = document.getElementById("btn-jump-tab");
+
+      if (badgeEl) {
+        badgeEl.textContent = spec.category;
+      }
+      if (capEl) {
+        capEl.textContent = spec.badge;
+      }
+      if (titleEl) {
+        titleEl.textContent = spec.title;
+      }
+
+      if (jumpBtn) {
+        jumpBtn.onclick = function() {
+          closeZoneSidebar();
+          if (typeof showTab === 'function') {
+            showTab(spec.tabId);
+            const targetSec = document.getElementById(`tab-${spec.tabId}`);
+            if (targetSec) {
+              targetSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }
+        };
+      }
+
+      if (bodyEl) {
+        let specsHtml = spec.specs.map(s => `
+          <div class="flex items-start justify-between gap-2 py-1 border-b border-slate-100">
+            <span class="text-slate-500 font-medium">${s.label}:</span>
+            <span class="text-slate-900 font-semibold text-right font-mono">${s.val}</span>
+          </div>
+        `).join('');
+
+        bodyEl.innerHTML = `
+          <!-- Section 1: Operational Role -->
+          <div class="space-y-1.5 bg-slate-50 p-3 rounded-lg border border-slate-200">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Operational Function</span>
+            <p class="text-slate-700 leading-relaxed text-[11.5px]">${spec.opFunction}</p>
+          </div>
+
+          <!-- Section 2: Technical Specifications -->
+          <div class="space-y-2">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Engineering Parameters</span>
+            <div class="bg-white rounded-lg border border-slate-200 p-2.5 text-[11px]">
+              ${specsHtml}
+            </div>
+          </div>
+
+          <!-- Section 3: Utility Interfaces -->
+          <div class="space-y-1.5 bg-sky-50/70 p-3 rounded-lg border border-sky-100">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-sky-800">Utility Corridors & Piping</span>
+            <p class="text-slate-800 font-mono text-[11px] leading-relaxed">${spec.utilityLink}</p>
+          </div>
+
+          <!-- Section 4: Safety & Quality -->
+          <div class="space-y-1.5 bg-slate-50 p-3 rounded-lg border border-slate-200">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Safety, PCCC & Compliance</span>
+            <p class="text-slate-700 text-[11px] leading-relaxed">${spec.safeguards}</p>
+          </div>
+        `;
+      }
+
+      // Update active highlight on map pins
+      document.querySelectorAll('.map-pin').forEach(p => {
+        if (p.getAttribute('data-zone') === String(key)) {
+          p.classList.add('is-active');
+          const circle = p.querySelector('circle');
+          if (circle) circle.setAttribute('stroke-width', '4');
+        } else {
+          p.classList.remove('is-active');
+          const circle = p.querySelector('circle');
+          if (circle) circle.setAttribute('stroke-width', '2');
+        }
+      });
+    }
+
+    function openZoneSidebar(key) {
+      const drawer = document.getElementById("zone-spec-drawer");
+      if (!drawer) return;
+      renderZoneSidebar(key);
+      drawer.classList.remove("translate-x-full");
+      drawer.classList.add("translate-x-0");
+    }
+
+    function closeZoneSidebar() {
+      const drawer = document.getElementById("zone-spec-drawer");
+      if (!drawer) return;
+      drawer.classList.remove("translate-x-0");
+      drawer.classList.add("translate-x-full");
+      document.querySelectorAll('.map-pin').forEach(p => {
+        p.classList.remove('is-active');
+        const circle = p.querySelector('circle');
+        if (circle) circle.setAttribute('stroke-width', '2');
+      });
+    }
+
+    // Step to Next/Prev Zone
+    const zoneKeys = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "gate-1", "gate-2", "gate-3"];
+
+    function stepZone(delta) {
+      let idx = zoneKeys.indexOf(String(activeZoneKey));
+      if (idx === -1) idx = 0;
+      let nextIdx = (idx + delta + zoneKeys.length) % zoneKeys.length;
+      openZoneSidebar(zoneKeys[nextIdx]);
+    }
+
     (function initMapCardLinkage() {
       const pins = document.querySelectorAll('.map-pin');
       const cards = document.querySelectorAll('.zone-card');
@@ -4087,19 +4502,62 @@
         });
 
         pin.addEventListener('mouseleave', () => {
-          pin.classList.remove('is-active');
+          const drawer = document.getElementById("zone-spec-drawer");
+          const isDrawerOpen = drawer && drawer.classList.contains("translate-x-0");
+          if (!isDrawerOpen || activeZoneKey !== String(zoneId)) {
+            pin.classList.remove('is-active');
+          }
           if (targetCard) {
             targetCard.classList.remove('ring-2', 'ring-sky-500', 'bg-sky-50', 'shadow-md');
           }
         });
 
-        pin.addEventListener('click', () => {
-          if (targetCard) {
-            targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            targetCard.classList.add('ring-4', 'ring-amber-500');
-            setTimeout(() => targetCard.classList.remove('ring-4', 'ring-amber-500'), 1500);
+        pin.addEventListener('click', (e) => {
+          e.stopPropagation();
+          openZoneSidebar(zoneId);
+        });
+      });
+
+      // Close drawer controls & listeners
+      const closeBtn = document.getElementById("btn-close-drawer");
+      if (closeBtn) {
+        closeBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          closeZoneSidebar();
+        });
+      }
+
+      const prevBtn = document.getElementById("btn-prev-zone");
+      if (prevBtn) {
+        prevBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          stepZone(-1);
+        });
+      }
+
+      const nextBtn = document.getElementById("btn-next-zone");
+      if (nextBtn) {
+        nextBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          stepZone(1);
+        });
+      }
+
+      // Close on outside map click
+      const mapContainer = document.getElementById("map-container");
+      if (mapContainer) {
+        mapContainer.addEventListener("click", (e) => {
+          if (!e.target.closest("#zone-spec-drawer") && !e.target.closest(".map-pin") && !e.target.closest("button")) {
+            closeZoneSidebar();
           }
         });
+      }
+
+      // Close on Escape key
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          closeZoneSidebar();
+        }
       });
 
       cards.forEach(card => {
