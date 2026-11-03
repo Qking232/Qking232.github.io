@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
   <script>
-    if (window.location.hostname === 'renewablevietnam.com' || window.location.hostname === 'wind.renewablevietnam.com') {
+    if (window.location.hostname === 'renewablevietnam.com' || window.location.hostname === 'windustrial.renewablevietnam.com') {
       var targetPath = window.location.pathname.replace(/^\/projectenergy/, '') || '/';
       window.location.replace('https://energy.renewablevietnam.com' + targetPath + window.location.search + window.location.hash);
     }
@@ -42,6 +42,7 @@
 
   <!-- Tailwind CSS Play CDN & Institutional Color Palette Configuration -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -124,20 +125,37 @@
       cursor: pointer;
       transition: transform 0.18s ease;
     }
+        /* Animated directional power flow along 500kV Backbone */
+    @keyframes dashFlow {
+      to {
+        stroke-dashoffset: -32;
+      }
+    }
+    .grid-flow-500kv {
+      stroke-dasharray: 10, 6 !important;
+      animation: dashFlow 1.5s linear infinite !important;
+    }
+    .grid-flow-220kv {
+      stroke-dasharray: 8, 6 !important;
+      animation: dashFlow 2.2s linear infinite !important;
+    }
     .project-marker-pin:hover {
       transform: scale(1.18);
       z-index: 1000 !important;
     }
   </style>
 
-  <script>
-    const savedTheme = localStorage.getItem('rvn-theme');
-    if (savedTheme === 'light') {
-      document.documentElement.classList.remove('dark');
-    } else {
-      document.documentElement.classList.add('dark');
-      if (!savedTheme) localStorage.setItem('rvn-theme', 'dark');
-    }
+    <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rvn_theme_v2');
+        if (savedTheme === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      } catch (e) {}
+    })();
   </script>
 
   <script type="application/ld+json">
@@ -178,6 +196,10 @@
   }
 }
   </script>
+  <!-- Leaflet GIS Cartography Engine (Official CDN & Root Fallback) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
 </head>
 
 <body class="min-h-screen text-inkPrimary dark:text-textDarkPrimary antialiased bg-alabaster dark:bg-obsidian font-sans selection:bg-teal-500 selection:text-white dark:selection:bg-teal-400 dark:selection:text-obsidian transition-colors duration-500 flex flex-col justify-between">
@@ -185,67 +207,66 @@
   <!-- ==================================================================== -->
   <!-- TOP EXECUTIVE NAVIGATION BAR                                        -->
   <!-- ==================================================================== -->
-  <header class="sticky top-0 z-40 w-full bg-alabaster/95 dark:bg-obsidian/95 backdrop-blur-md border-b border-borderSlate dark:border-darkBorder px-3 sm:px-6 lg:px-8 transition-colors shadow-sm">
-    <div class="w-full max-w-7xl mx-auto flex flex-col gap-2 py-2.5 sm:py-3.5">
-      <!-- Top Row: Brand, Desktop Nav, and Header CTAs -->
-      <div class="flex items-center justify-between w-full">
-        <div class="flex items-center gap-6">
-          <a href="https://renewablevietnam.com/" class="flex items-center gap-2.5 sm:gap-3 group shrink-0" aria-label="Renewable Vietnam — home">
-            <img src="/assets/images/logo.svg" alt="Renewable Viet Nam Mark" width="34" height="34" class="w-8 h-8 sm:w-8.5 sm:h-8.5 rounded-lg shrink-0 shadow-sm" />
-            <span class="text-[11px] sm:text-xs font-mono uppercase tracking-[0.14em] sm:tracking-[0.24em] text-inkPrimary dark:text-textDarkPrimary font-semibold">
-              RENEWABLE INFRASTRUCTURE
+    <header class="sticky top-0 z-50 w-full bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200/70 dark:border-slate-800 px-3 sm:px-6 lg:px-8 transition-colors shadow-xs">
+    <div class="w-full max-w-[1920px] 2xl:max-w-full mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 flex items-center justify-between py-2.5 sm:py-3">
+      <div class="flex items-center gap-6">
+        <a href="https://renewablevietnam.com/" class="flex items-center gap-2.5 group shrink-0" aria-label="Renewable Vietnam home">
+          <img src="/assets/images/logo.svg" alt="Renewable Viet Nam Mark" width="28" height="28" class="w-7 h-7 rounded-lg shrink-0 opacity-90 group-hover:opacity-100 transition-opacity" />
+          <div class="flex flex-col">
+            <span class="text-[12px] font-mono uppercase tracking-[0.16em] text-slate-800 dark:text-slate-200 font-semibold leading-tight">
+              RENEWABLE VIETNAM
             </span>
-          </a>
+            <span class="text-[9px] font-mono tracking-wider text-slate-500 dark:text-slate-400 uppercase">
+              Energy Infrastructure
+            </span>
+          </div>
+        </a>
 
-          <!-- Quick Inter-Domain Jump Navigation (Desktop) -->
-          <nav class="hidden md:flex items-center gap-1 font-mono text-[11px] tracking-wider text-inkMuted dark:text-textDarkMuted">
-            <a href="https://renewablevietnam.com/" class="px-2.5 py-1 rounded-md hover:text-teal-600 dark:hover:text-teal-400 hover:bg-slate-100 dark:hover:bg-darkCard transition-colors">Master Dashboard</a>
-            <span class="text-slate-300 dark:text-slate-700">&middot;</span>
-            <a href="https://energy.renewablevietnam.com/" class="px-2.5 py-1 rounded-md text-teal-600 dark:text-teal-400 font-semibold bg-teal-500/10 dark:bg-teal-400/10 border border-teal-500/20 transition-colors">PDP8 Energy</a>
-            <span class="text-slate-300 dark:text-slate-700">&middot;</span>
-            <a href="https://ind.renewablevietnam.com/" class="px-2.5 py-1 rounded-md hover:text-teal-600 dark:hover:text-teal-400 hover:bg-slate-100 dark:hover:bg-darkCard transition-colors">Green Industrial</a>
-            <span class="text-slate-300 dark:text-slate-700">&middot;</span>
-            <a href="https://ev.renewablevietnam.com/" class="px-2.5 py-1 rounded-md hover:text-teal-600 dark:hover:text-teal-400 hover:bg-slate-100 dark:hover:bg-darkCard transition-colors">EV Tech</a>
-            <span class="text-slate-300 dark:text-slate-700">&middot;</span>
-            <a href="https://legal.renewablevietnam.com/" class="px-2.5 py-1 rounded-md hover:text-teal-600 dark:hover:text-teal-400 hover:bg-slate-100 dark:hover:bg-darkCard transition-colors">Legal Framework</a>
-            <span class="text-slate-300 dark:text-slate-700">&middot;</span>
-            <a href="https://invest.renewablevietnam.com/" class="px-2.5 py-1 rounded-md hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-darkCard transition-colors">Investment M&A</a>
-            <span class="text-slate-300 dark:text-slate-700">&middot;</span>
-            <a href="https://project.renewablevietnam.com/" class="px-2.5 py-1 rounded-md hover:text-purple-600 dark:hover:text-purple-400 hover:bg-slate-100 dark:hover:bg-darkCard transition-colors">Project Delivery</a>
-          </nav>
-        </div>
-
-        <!-- Right Controls -->
-        <div class="flex items-center gap-1.5 sm:gap-2">
-
-          <button id="themeToggleBtn" aria-label="Toggle Theme" class="flex items-center justify-center w-8.5 h-8.5 rounded-lg bg-white dark:bg-darkSurface border border-borderSlate dark:border-darkBorder shadow-sm hover:border-slate-400 dark:hover:border-slate-500 text-inkMuted dark:text-textDarkMuted transition-all cursor-pointer">
-            <svg id="sunIcon" class="hidden w-4 h-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
-            </svg>
-            <svg id="moonIcon" class="w-4 h-4 text-slate-700 dark:text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
-            </svg>
-          </button>
-        </div>
+        <!-- Desktop Quick Jump Navigation -->
+        <nav class="hidden md:flex items-center gap-1 font-mono text-[11px] text-slate-600 dark:text-slate-400">
+          <a href="https://renewablevietnam.com/" class="px-2.5 py-1 rounded-md hover:text-slate-900 dark:hover:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">Cockpit</a>
+          <span class="text-slate-300 dark:text-slate-700">&middot;</span>
+          <a href="https://energy.renewablevietnam.com/" class="px-2.5 py-1 rounded-md text-teal-700 dark:text-teal-300 font-medium bg-slate-100 dark:bg-slate-800 transition-colors">Energy</a>
+          <span class="text-slate-300 dark:text-slate-700">&middot;</span>
+          <a href="https://industrial.renewablevietnam.com/" class="px-2.5 py-1 rounded-md hover:text-slate-900 dark:hover:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">Industrial</a>
+          <span class="text-slate-300 dark:text-slate-700">&middot;</span>
+          <a href="https://ev.renewablevietnam.com/" class="px-2.5 py-1 rounded-md hover:text-slate-900 dark:hover:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">EV Tech</a>
+          <span class="text-slate-300 dark:text-slate-700">&middot;</span>
+          <a href="https://legal.renewablevietnam.com/" class="px-2.5 py-1 rounded-md hover:text-slate-900 dark:hover:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">Legal</a>
+        </nav>
       </div>
 
-      <!-- Mobile Touch Navigation Carousel (Visible ONLY on mobile < 768px) -->
-      <nav class="flex md:hidden items-center gap-1.5 overflow-x-auto no-scrollbar pt-1.5 pb-0.5 font-mono text-[11px] tracking-wider whitespace-nowrap w-full -mx-3 px-3 sm:mx-0 sm:px-0">
-        <a href="https://renewablevietnam.com/" class="px-2.5 py-1.5 rounded-lg text-inkMuted dark:text-textDarkMuted hover:text-teal-500 bg-white/60 dark:bg-darkSurface/60 border border-borderSlate dark:border-darkBorder shrink-0">Dashboard</a>
-        <a href="https://energy.renewablevietnam.com/" class="px-2.5 py-1.5 rounded-lg text-teal-600 dark:text-teal-400 font-semibold bg-teal-500/10 dark:bg-teal-400/10 border border-teal-500/20 shrink-0">PDP8 Energy</a>
-        <a href="https://ind.renewablevietnam.com/" class="px-2.5 py-1.5 rounded-lg text-inkMuted dark:text-textDarkMuted hover:text-teal-500 bg-white/60 dark:bg-darkSurface/60 border border-borderSlate dark:border-darkBorder shrink-0">Green Industrial</a>
-        <a href="https://ev.renewablevietnam.com/" class="px-2.5 py-1.5 rounded-lg text-inkMuted dark:text-textDarkMuted hover:text-teal-500 bg-white/60 dark:bg-darkSurface/60 border border-borderSlate dark:border-darkBorder shrink-0">EV Tech</a>
-        <a href="https://legal.renewablevietnam.com/" class="px-2.5 py-1.5 rounded-lg text-inkMuted dark:text-textDarkMuted hover:text-teal-500 bg-white/60 dark:bg-darkSurface/60 border border-borderSlate dark:border-darkBorder shrink-0">Legal Framework</a>
-        <a href="https://invest.renewablevietnam.com/" class="px-2.5 py-1.5 rounded-lg text-inkMuted dark:text-textDarkMuted hover:text-blue-500 bg-white/60 dark:bg-darkSurface/60 border border-borderSlate dark:border-darkBorder shrink-0">Investment M&A</a>
-        <a href="https://project.renewablevietnam.com/" class="px-2.5 py-1.5 rounded-lg text-inkMuted dark:text-textDarkMuted hover:text-purple-500 bg-white/60 dark:bg-darkSurface/60 border border-borderSlate dark:border-darkBorder shrink-0">Project Delivery</a>
-      </nav>
+      <!-- Controls & Theme -->
+      <div class="flex items-center gap-2">
+        <div class="hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800 border border-slate-200/60 dark:border-slate-700/50 font-mono text-[10px] text-slate-600 dark:text-slate-400">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+          <span>4 Edge Gateways Live</span>
+        </div>
+
+        <button id="themeToggleBtn" aria-label="Toggle Theme" class="flex items-center justify-center w-8 h-8 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 shadow-xs hover:bg-slate-50 dark:hover:bg-slate-700/60 transition-all cursor-pointer">
+          <svg id="sunIcon" class="hidden w-4 h-4 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+          </svg>
+          <svg id="moonIcon" class="w-4 h-4 text-slate-600 dark:text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Quick Navigation Ribbon -->
+    <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar md:hidden px-4 pb-2 pt-1 border-t border-slate-100 dark:border-slate-800 font-mono text-[10px]">
+      <a href="https://renewablevietnam.com/" class="px-2.5 py-1 rounded-md text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/50 shrink-0">Cockpit</a>
+      <a href="https://energy.renewablevietnam.com/" class="px-2.5 py-1 rounded-md text-teal-700 dark:text-teal-300 font-semibold bg-slate-100 dark:bg-slate-800 border border-teal-500/20 shrink-0">Energy</a>
+      <a href="https://industrial.renewablevietnam.com/" class="px-2.5 py-1 rounded-md text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/50 shrink-0">Industrial</a>
+      <a href="https://ev.renewablevietnam.com/" class="px-2.5 py-1 rounded-md text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/50 shrink-0">EV Tech</a>
+      <a href="https://legal.renewablevietnam.com/" class="px-2.5 py-1 rounded-md text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/50 shrink-0">Legal</a>
     </div>
   </header>
 
   <!-- ==================================================================== -->
   <!-- MAIN 50/50 SPLIT-SCREEN TELEMETRY COCKPIT                            -->
   <!-- ==================================================================== -->
-  <main class="relative z-10 flex-1 w-full max-w-[1720px] mx-auto px-3 sm:px-5 lg:px-6 py-4 sm:py-5 space-y-4">
+  <main class="relative z-10 flex-1 w-full max-w-[1920px] 2xl:max-w-full mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-4 sm:py-5 space-y-4">
 
     <!-- COMPACT HERO TELEMETRY STRIP -->
     <section class="space-y-2.5">
@@ -274,7 +295,7 @@
       </div>
 
       <!-- 4-Metric Compact Grid -->
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3 pt-0.5">
+      <div class="grid grid-cols-2 lg:grid-cols-5 gap-2.5 sm:gap-3 pt-0.5">
         <div class="p-3 rounded-xl bg-white dark:bg-darkCard border border-borderSlate dark:border-darkBorder shadow-sm space-y-0.5">
           <span class="font-mono text-[9px] sm:text-[10px] uppercase tracking-wider text-inkMuted dark:text-textDarkMuted">Clean Baseload</span>
           <div class="text-lg sm:text-xl font-bold font-mono text-inkPrimary dark:text-textDarkPrimary">80,612 <span class="text-xs text-teal-600 dark:text-teal-400 font-normal">MW</span></div>
@@ -299,6 +320,14 @@
           <p class="text-[9px] sm:text-[10px] text-inkMuted dark:text-textDarkMuted">Mandated for 2026-2030 COD</p>
         </div>
       </div>
+
+        <div class="p-3 rounded-xl bg-white dark:bg-darkCard border border-borderSlate dark:border-darkBorder shadow-sm space-y-0.5">
+          <span class="font-mono text-[9px] sm:text-[10px] uppercase tracking-wider text-inkMuted dark:text-textDarkMuted">Transmission Grid</span>
+          <div class="text-lg sm:text-xl font-bold font-mono text-rose-600 dark:text-rose-400">65,566 <span class="text-xs font-normal">km</span></div>
+          <p class="text-[9px] sm:text-[10px] text-inkMuted dark:text-textDarkMuted">1,915 Substations (500/220/110kV)</p>
+        </div>
+      </div>
+
     </section>
     <!-- ==================================================================== -->
     <!-- PDP8 STATUTORY SECTOR TARGETS & FUEL TRANSITION MATRIX TABLE         -->
@@ -837,6 +866,135 @@
 
 
 
+
+    <!-- INTERACTIVE PROVINCIAL CAPACITY & ASSET LIFECYCLE CHARTS -->
+    <section class="p-4 sm:p-5 rounded-2xl bg-white dark:bg-darkSurface border border-borderSlate dark:border-darkBorder shadow-sm space-y-3.5">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-borderSlate/60 dark:border-darkBorder/60 pb-2.5">
+        <div>
+          <h2 class="text-sm sm:text-base font-bold text-inkPrimary dark:text-textDarkPrimary flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-teal-500 animate-pulse"></span>
+            Provincial Capacity Intelligence &amp; Asset Lifecycle Analytics
+          </h2>
+          <p class="text-xs text-inkMuted dark:text-textDarkMuted font-light mt-0.5">
+            Interactive multi-fuel generation analytics across 960+ assets. Click any province bar or status slice to filter the table below.
+          </p>
+        </div>
+        <span class="font-mono text-[10px] text-teal-600 dark:text-teal-400 bg-teal-500/10 px-2 py-0.5 rounded border border-teal-500/20 self-start sm:self-auto">
+          Interactive Cross-Filter Enabled
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
+        <!-- Chart 1: Top 10 Energy Provinces (8 cols) -->
+        <div class="lg:col-span-8 p-3 rounded-xl bg-slate-50/70 dark:bg-darkCard/60 border border-borderSlate dark:border-darkBorder space-y-2">
+          <div class="flex items-center justify-between font-mono text-[10px] text-inkMuted dark:text-textDarkMuted">
+            <span class="font-bold text-inkPrimary dark:text-textDarkPrimary uppercase tracking-wider">Top 10 Energy Provinces (MW Capacity)</span>
+            <span class="text-teal-600 dark:text-teal-400">Click bar &rarr; Filter Table</span>
+          </div>
+          <div class="relative h-56">
+            <canvas id="energyTopProvincesChart"></canvas>
+          </div>
+        </div>
+
+        <!-- Chart 2: Asset Status Lifecycle (4 cols) -->
+        <div class="lg:col-span-4 p-3 rounded-xl bg-slate-50/70 dark:bg-darkCard/60 border border-borderSlate dark:border-darkBorder space-y-2 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between font-mono text-[10px] text-inkMuted dark:text-textDarkMuted mb-1">
+              <span class="font-bold text-inkPrimary dark:text-textDarkPrimary uppercase tracking-wider">Commercial Status</span>
+              <span class="text-teal-600 dark:text-teal-400">Click &rarr; Filter</span>
+            </div>
+            <div class="relative h-48 flex items-center justify-center">
+              <canvas id="energyStatusDoughnutChart"></canvas>
+            </div>
+          </div>
+          <div class="pt-2 border-t border-borderSlate/60 dark:border-darkBorder/60 flex items-center justify-between font-mono text-[10px] text-slate-400">
+            <span>Operational Baselines</span>
+            <span>PDP8 Quota Target</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- ==================================================================== -->
+    <!-- INTERACTIVE GIS TRANSMISSION & RENEWABLE POWER FLOW COCKPIT          -->
+    <!-- ==================================================================== -->
+    <section id="flowCockpitSection" class="p-4 sm:p-5 rounded-2xl bg-white dark:bg-darkSurface border border-borderSlate dark:border-darkBorder shadow-sm space-y-3.5">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 pb-2.5 border-b border-borderSlate/60 dark:border-darkBorder/60">
+        <div class="space-y-0.5">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-rose-500 animate-ping"></span>
+            <span class="font-mono text-[10px] sm:text-[11px] uppercase tracking-wider text-rose-600 dark:text-rose-400 font-semibold">
+              Decision 500/QĐ-TTg &middot; 500kV Supergrid Backbone &middot; Inter-Regional Wheeling Flow
+            </span>
+          </div>
+          <h2 class="text-base sm:text-lg font-bold text-inkPrimary dark:text-textDarkPrimary">
+            National Electrical Transmission Spine &amp; Clean Energy Power Flow
+          </h2>
+          <p class="text-xs text-inkMuted dark:text-textDarkMuted font-light max-w-4xl">
+            Live geospatial topology visualizing North-South power wheeling corridors between Central/Southern renewable hubs and Northern load centers across 65,566 km of AC circuits and 1,915 substations.
+          </p>
+        </div>
+
+        <!-- Quick Flow Telemetry Metrics -->
+        <div class="flex flex-wrap items-center gap-2 font-mono text-[11px] shrink-0">
+          <div class="px-2.5 py-1.5 rounded-lg bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800/40 text-rose-700 dark:text-rose-400 font-semibold flex items-center gap-1.5 shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+            <span>500kV Flow: 15,888 km (180 Circuits)</span>
+          </div>
+          <div class="px-2.5 py-1.5 rounded-lg bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/40 text-amber-700 dark:text-amber-400 font-semibold flex items-center gap-1.5 shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+            <span>220kV Grid: 27,007 km (780 Circuits)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Leaflet Flow Map Container -->
+      <div class="relative w-full h-[460px] sm:h-[520px] rounded-xl border border-borderSlate dark:border-darkBorder overflow-hidden shadow-inner bg-slate-950">
+        <div id="mainEnergyFlowMap" class="w-full h-full z-10"></div>
+
+        <!-- Top Right Layer Filter Pills -->
+        <div class="absolute top-3 right-3 z-20 flex items-center gap-1.5 p-1.5 rounded-xl bg-white/95 dark:bg-darkSurface/95 backdrop-blur-md border border-borderSlate dark:border-darkBorder shadow-lg font-mono text-[10px]">
+          <button id="mapToggleFlow500Btn" class="px-2.5 py-1 rounded-lg bg-rose-600 text-white font-semibold transition-all cursor-pointer">
+            500kV Spine Flow
+          </button>
+          <button id="mapToggleGrid220Btn" class="px-2.5 py-1 rounded-lg bg-white dark:bg-darkCard text-inkMuted dark:text-textDarkMuted hover:text-amber-600 border border-borderSlate dark:border-darkBorder transition-all cursor-pointer">
+            220kV Grid
+          </button>
+          <button id="mapToggleAssetsBtn" class="px-2.5 py-1 rounded-lg bg-white dark:bg-darkCard text-inkMuted dark:text-textDarkMuted hover:text-teal-600 border border-borderSlate dark:border-darkBorder transition-all cursor-pointer">
+            Clean Plants (960)
+          </button>
+          <button id="mapToggleResetViewBtn" class="px-2 py-1 rounded-lg bg-slate-100 dark:bg-darkCard hover:bg-slate-200 text-slate-600 dark:text-slate-300 transition-all cursor-pointer" title="Reset Vietnam View">
+            Reset ⟲
+          </button>
+        </div>
+
+        <!-- Bottom Left Interactive Flow Telemetry Legend -->
+        <div class="absolute bottom-3 left-3 z-20 p-3 rounded-xl bg-white/95 dark:bg-darkSurface/95 backdrop-blur-md border border-borderSlate dark:border-darkBorder shadow-lg font-mono text-[10px] space-y-1.5 max-w-xs">
+          <div class="font-bold text-inkPrimary dark:text-textDarkPrimary uppercase tracking-wider text-[11px] flex items-center justify-between">
+            <span>Transmission Corridor Flow</span>
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-4 h-1 rounded-full bg-rose-500 shadow-sm"></span>
+            <span class="text-inkPrimary dark:text-textDarkPrimary font-semibold">500kV North-South Spine (Directional Flow)</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-4 h-1 rounded-full bg-amber-500"></span>
+            <span class="text-inkPrimary dark:text-textDarkPrimary">220kV Intertie Regional Corridors</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 border border-white"></span>
+            <span class="text-inkPrimary dark:text-textDarkPrimary">Operational Generation Plants (Solar/Wind/Hydro)</span>
+          </div>
+          <div class="pt-1.5 border-t border-borderSlate/60 dark:border-darkBorder/60 flex items-center justify-between text-[9px] text-slate-400">
+            <span>Model: NSMO Vietnam 2025</span>
+            <span>65,566 km Circuits</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <!-- FULL-WIDTH ASSET DOSSIER & PDP8 PIPELINE WORKSPACE -->
     <section id="cockpitContainer" class="w-full flex flex-col min-h-[640px] lg:h-[calc(100vh-230px)]">
       
@@ -848,11 +1006,14 @@
           <!-- 2-Tab View Navigation Switcher (Assets Dossier & PDP8 Priority) -->
           <div class="flex items-center justify-between gap-2">
             <div class="flex items-center gap-1 p-0.5 rounded-lg bg-slate-200/60 dark:bg-darkSurface border border-borderSlate dark:border-darkBorder font-mono text-[11px] w-full sm:w-auto">
-              <button id="tabAssetsBtn" class="flex-1 sm:flex-initial px-3 py-1 rounded-md bg-teal-600 text-white font-semibold transition-all cursor-pointer">
+                            <button id="tabAssetsBtn" class="flex-1 sm:flex-initial px-3 py-1 rounded-md bg-teal-600 text-white font-semibold transition-all cursor-pointer">
                 Assets Dossier (<span id="totalAssetsCount">960</span>)
               </button>
               <button id="tabPipelineBtn" class="flex-1 sm:flex-initial px-3 py-1 rounded-md text-inkMuted dark:text-textDarkMuted hover:text-inkPrimary dark:hover:text-white transition-all cursor-pointer">
                 PDP8 Priority (<span id="pipelineCount">10</span>)
+              </button>
+              <button id="tabGridBtn" class="flex-1 sm:flex-initial px-3 py-1 rounded-md text-inkMuted dark:text-textDarkMuted hover:text-inkPrimary dark:hover:text-white transition-all cursor-pointer">
+                National Grid (<span id="totalGridSubstationsCount">1,915</span>)
               </button>
             </div>
 
@@ -860,7 +1021,7 @@
               <svg id="viewModeIcon" class="w-3.5 h-3.5 text-slate-400 group-hover:text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
                 </svg>
-              <span id="viewModeText">Table</span>
+              <span id="viewModeText">Cards</span>
             </button>
           </div>
 
@@ -898,7 +1059,7 @@
           <!-- VIEW 1: ASSETS DOSSIER (CARDS & TABLE) -->
           <div id="viewAssetsDossier" class="space-y-2.5">
             <!-- Cards Container -->
-            <div id="dossierCardsList" class="space-y-2">
+            <div id="dossierCardsList" class="hidden space-y-2">
               <!-- Dynamically rendered via renderAssetsDossier() -->
               <div class="p-8 text-center text-slate-400 font-mono text-xs">
                 Loading Clean Energy Assets Telemetry...
@@ -906,7 +1067,7 @@
             </div>
 
             <!-- Table Container (Hidden by default, toggled via tableOrCardsToggleBtn) -->
-            <div id="dossierTableContainer" class="hidden rounded-xl border border-borderSlate dark:border-darkBorder overflow-hidden">
+            <div id="dossierTableContainer" class="rounded-xl border border-borderSlate dark:border-darkBorder overflow-hidden">
               <div class="overflow-x-auto">
                 <table class="w-full text-left border-collapse text-xs">
                   <thead>
@@ -935,6 +1096,117 @@
             </div>
             <div id="pdp8ProjectsGrid" class="space-y-2.5">
               <!-- Populated dynamically from pdp8_targets.json priority_projects -->
+            </div>
+          </div>
+
+          <!-- VIEW 3: NATIONAL ELECTRICAL GRID NETWORK (NSMO 2025 MODEL) -->
+          <div id="viewGridContainer" class="hidden space-y-3">
+            <!-- Grid Navigation Sub-Bar & Voltage Filters -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 p-3 rounded-xl bg-slate-50/80 dark:bg-darkCard/60 border border-borderSlate dark:border-darkBorder">
+              <div class="flex items-center gap-1 font-mono text-[11px]">
+                <button id="gridSubViewMapBtn" class="px-2.5 py-1 rounded-md bg-rose-600 text-white font-semibold cursor-pointer">
+                  Topology Map
+                </button>
+                <button id="gridSubViewSubstationsBtn" class="px-2.5 py-1 rounded-md bg-white dark:bg-darkSurface border border-borderSlate dark:border-darkBorder text-inkMuted dark:text-textDarkMuted hover:text-rose-600 cursor-pointer">
+                  Substations (1,915)
+                </button>
+                <button id="gridSubViewLinesBtn" class="px-2.5 py-1 rounded-md bg-white dark:bg-darkSurface border border-borderSlate dark:border-darkBorder text-inkMuted dark:text-textDarkMuted hover:text-rose-600 cursor-pointer">
+                  Transmission Lines (2,877)
+                </button>
+              </div>
+
+              <!-- Voltage Selector Pills -->
+              <div class="flex items-center gap-1 font-mono text-[10px] overflow-x-auto no-scrollbar">
+                <span class="text-slate-400 uppercase tracking-wider mr-1 shrink-0">Voltage:</span>
+                <button data-v="ALL" class="grid-v-pill px-2 py-0.5 rounded bg-rose-600 text-white font-semibold cursor-pointer">All</button>
+                <button data-v="500" class="grid-v-pill px-2 py-0.5 rounded bg-white dark:bg-darkSurface border border-rose-300 dark:border-rose-800 text-rose-600 dark:text-rose-400 cursor-pointer">500 kV (92)</button>
+                <button data-v="220" class="grid-v-pill px-2 py-0.5 rounded bg-white dark:bg-darkSurface border border-amber-300 dark:border-amber-800 text-amber-600 dark:text-amber-400 cursor-pointer">220 kV (326)</button>
+                <button data-v="110" class="grid-v-pill px-2 py-0.5 rounded bg-white dark:bg-darkSurface border border-sky-300 dark:border-sky-800 text-sky-600 dark:text-sky-400 cursor-pointer">110 kV (1,497)</button>
+              </div>
+            </div>
+
+            <!-- SUB-VIEW A: LEAFLET GIS TOPOLOGY MAP -->
+            <div id="gridSubViewMap" class="space-y-2">
+              <div class="relative w-full h-[540px] rounded-xl border border-borderSlate dark:border-darkBorder overflow-hidden shadow-inner bg-slate-900">
+                <div id="gridTopologyMap" class="w-full h-full z-10"></div>
+                <!-- Interactive Floating Legend -->
+                <div class="absolute bottom-3 left-3 z-20 p-2.5 rounded-lg bg-white/90 dark:bg-darkSurface/90 backdrop-blur-md border border-borderSlate dark:border-darkBorder shadow-md font-mono text-[10px] space-y-1">
+                  <div class="font-bold text-inkPrimary dark:text-textDarkPrimary uppercase tracking-wider mb-1">Grid Corridors</div>
+                  <div class="flex items-center gap-2">
+                    <span class="w-3.5 h-1 rounded-full bg-rose-500"></span>
+                    <span class="text-inkPrimary dark:text-textDarkPrimary font-semibold">500 kV Supergrid (15,888 km)</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="w-3.5 h-1 rounded-full bg-amber-500"></span>
+                    <span class="text-inkPrimary dark:text-textDarkPrimary font-semibold">220 kV Regional Grid (27,007 km)</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="w-3.5 h-1 rounded-full bg-cyan-500"></span>
+                    <span class="text-inkPrimary dark:text-textDarkPrimary font-semibold">110 kV Interties (22,672 km)</span>
+                  </div>
+                  <div class="pt-1 border-t border-borderSlate/60 dark:border-darkBorder/60 text-[9px] text-slate-400">
+                    Source: NSMO Model Vietnam 2025
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SUB-VIEW B: SUBSTATIONS DIRECTORY TABLE -->
+            <div id="gridSubViewSubstations" class="hidden space-y-2.5">
+              <div class="flex items-center gap-2">
+                <input type="text" id="gridSubstationSearchInput" placeholder="Search substations by name, province, or bay code..." class="flex-1 px-3 py-1.5 rounded-lg bg-white dark:bg-darkSurface border border-borderSlate dark:border-darkBorder text-inkPrimary dark:text-textDarkPrimary text-xs font-mono focus:outline-none focus:border-rose-500" />
+                <span id="gridSubstationCountBadge" class="font-mono text-[11px] text-inkMuted dark:text-textDarkMuted px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-darkCard border border-borderSlate dark:border-darkBorder whitespace-nowrap">
+                  Showing 1,915 Substations
+                </span>
+              </div>
+              <div class="rounded-xl border border-borderSlate dark:border-darkBorder overflow-hidden">
+                <div class="overflow-x-auto max-h-[500px]">
+                  <table class="w-full text-left border-collapse text-xs">
+                    <thead class="sticky top-0 z-10 bg-slate-100 dark:bg-darkCard font-mono text-[10px] uppercase text-inkMuted dark:text-textDarkMuted border-b border-borderSlate dark:border-darkBorder">
+                      <tr>
+                        <th class="p-2.5">Substation Name</th>
+                        <th class="p-2.5 text-center">Voltage Class</th>
+                        <th class="p-2.5 text-right">Transformers</th>
+                        <th class="p-2.5 text-right">Generation</th>
+                        <th class="p-2.5">Location / Province</th>
+                        <th class="p-2.5 text-right">Technical Dossier</th>
+                      </tr>
+                    </thead>
+                    <tbody id="gridSubstationsTableBody" class="divide-y divide-borderSlate dark:divide-darkBorder font-mono">
+                      <!-- Populated dynamically via renderGridSubstationsTable() -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- SUB-VIEW C: TRANSMISSION LINES DIRECTORY TABLE -->
+            <div id="gridSubViewLines" class="hidden space-y-2.5">
+              <div class="flex items-center gap-2">
+                <input type="text" id="gridLineSearchInput" placeholder="Search transmission lines by corridor, substation, or conductor..." class="flex-1 px-3 py-1.5 rounded-lg bg-white dark:bg-darkSurface border border-borderSlate dark:border-darkBorder text-inkPrimary dark:text-textDarkPrimary text-xs font-mono focus:outline-none focus:border-rose-500" />
+                <span id="gridLineCountBadge" class="font-mono text-[11px] text-inkMuted dark:text-textDarkMuted px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-darkCard border border-borderSlate dark:border-darkBorder whitespace-nowrap">
+                  Showing 2,877 Circuits
+                </span>
+              </div>
+              <div class="rounded-xl border border-borderSlate dark:border-darkBorder overflow-hidden">
+                <div class="overflow-x-auto max-h-[500px]">
+                  <table class="w-full text-left border-collapse text-xs">
+                    <thead class="sticky top-0 z-10 bg-slate-100 dark:bg-darkCard font-mono text-[10px] uppercase text-inkMuted dark:text-textDarkMuted border-b border-borderSlate dark:border-darkBorder">
+                      <tr>
+                        <th class="p-2.5">Circuit Corridor (From - To)</th>
+                        <th class="p-2.5 text-center">Voltage</th>
+                        <th class="p-2.5">Conductor</th>
+                        <th class="p-2.5 text-right">R (Ω)</th>
+                        <th class="p-2.5 text-right">X (Ω)</th>
+                        <th class="p-2.5 text-right">Length (km)</th>
+                      </tr>
+                    </thead>
+                    <tbody id="gridLinesTableBody" class="divide-y divide-borderSlate dark:divide-darkBorder font-mono">
+                      <!-- Populated dynamically via renderGridLinesTable() -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1021,11 +1293,67 @@
     </div>
   </div>
 
+    <!-- ==================================================================== -->
+  <!-- SUBSTATION TECHNICAL DOSSIER MODAL                                   -->
+  <!-- ==================================================================== -->
+  <div id="substationModalOverlay" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 hidden">
+    <div class="bg-white dark:bg-darkCard border border-borderSlate dark:border-darkBorder rounded-2xl max-w-xl w-full p-6 shadow-2xl space-y-5 animate-in fade-in duration-200">
+      <div class="flex items-start justify-between pb-3 border-b border-borderSlate dark:border-darkBorder">
+        <div>
+          <span id="substationModalVoltageBadge" class="px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase bg-rose-500/10 text-rose-600 border border-rose-500/20">
+            500 kV Substation
+          </span>
+          <h3 id="substationModalName" class="text-xl font-bold text-inkPrimary dark:text-textDarkPrimary mt-1">
+            Substation Name
+          </h3>
+          <p id="substationModalPlace" class="text-xs text-inkMuted dark:text-textDarkMuted font-mono">Location, Vietnam</p>
+        </div>
+        <button id="closeSubstationModalBtn" class="text-slate-400 hover:text-slate-700 dark:hover:text-white p-1 rounded-lg cursor-pointer">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="space-y-4 font-mono text-xs">
+        <div class="grid grid-cols-2 gap-3">
+          <div class="p-3 rounded-lg bg-slate-50 dark:bg-darkSurface border border-borderSlate dark:border-darkBorder space-y-0.5">
+            <span class="text-slate-400 text-[10px] uppercase">Installed Transformers</span>
+            <div id="substationModalTx" class="text-sm font-bold text-inkPrimary dark:text-textDarkPrimary">-- Units / -- MVA</div>
+          </div>
+          <div class="p-3 rounded-lg bg-slate-50 dark:bg-darkSurface border border-borderSlate dark:border-darkBorder space-y-0.5">
+            <span class="text-slate-400 text-[10px] uppercase">Connected Generation</span>
+            <div id="substationModalGen" class="text-sm font-bold text-rose-600 dark:text-rose-400">-- Units / -- MW</div>
+          </div>
+        </div>
+
+        <div class="p-3 rounded-lg bg-slate-50 dark:bg-darkSurface border border-borderSlate dark:border-darkBorder space-y-1">
+          <span class="text-slate-400 text-[10px] uppercase">Substation Bay Codes &amp; Feeders</span>
+          <div id="substationModalBays" class="text-xs text-inkPrimary dark:text-textDarkPrimary font-mono break-all">--</div>
+        </div>
+
+        <div class="p-3 rounded-lg bg-slate-50 dark:bg-darkSurface border border-borderSlate dark:border-darkBorder space-y-1">
+          <span class="text-slate-400 text-[10px] uppercase">Geospatial Telemetry (WGS84)</span>
+          <div id="substationModalCoords" class="text-xs text-inkMuted dark:text-textDarkMuted">Lat: --, Lng: --</div>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-end gap-2 pt-2 border-t border-borderSlate dark:border-darkBorder">
+        <a id="substationModalGmapsLink" href="#" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-lg bg-rose-600 hover:bg-rose-500 text-white font-mono text-xs font-semibold flex items-center gap-1.5 transition-colors">
+          <span>Satellite Inspection</span>
+          <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
   <!-- ==================================================================== -->
   <!-- INSTITUTIONAL FOOTER                                                 -->
   <!-- ==================================================================== -->
   <footer class="mt-8 pt-6 pb-6 border-t border-borderSlate dark:border-darkBorder text-xs text-inkMuted dark:text-textDarkMuted font-mono px-4 sm:px-6 lg:px-8">
-    <div class="max-w-[1720px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+    <div class="w-full max-w-[1920px] 2xl:max-w-full mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 flex flex-col sm:flex-row items-center justify-between gap-4">
       <div class="flex items-center gap-2">
         <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
         <span>Renewable Vietnam &middot; National Clean Energy Registry &middot; Decision 500/QĐ-TTg</span>
@@ -1064,7 +1392,7 @@
       themeBtn.addEventListener("click", () => {
         document.documentElement.classList.toggle("dark");
         const isDark = document.documentElement.classList.contains("dark");
-        localStorage.setItem("rvn-theme", isDark ? "dark" : "light");
+        localStorage.setItem("rvn_theme_v2", isDark ? "dark" : "light");
         updateIcons();
       });
     }
@@ -1077,7 +1405,7 @@
     let selectedFuel = "ALL";
     let selectedProvince = "ALL";
     let searchQuery = "";
-    let activeDossierView = "cards"; // "cards" or "table"
+    let activeDossierView = "table"; // "cards" or "table"
     let activeTab = "assets"; // "assets", "pipeline", "gauges"
     let pdp8Dataset = null;
 
@@ -1097,18 +1425,26 @@
       'Nuclear': 'bg-slate-700'
     };
 
-    // 3. Load External Projects Data
+    // 3. Load External Projects Data (Normalized Schema)
     function normalizeProjects(list) {
-      return (list || []).map(p => ({
-        ...p,
-        name: p.name || "Unnamed Facility",
-        company: p.company || p.developer || "MOIT / Provincial EPC Allocation",
-        developer: p.company || p.developer || "MOIT / Provincial EPC Allocation",
-        capacity: p.capacity || p.cap || (p.capacity_mw ? `${p.capacity_mw} MW` : "Planned"),
-        location: p.location || p.loc || p.province || "Vietnam",
-        lat: p.lat || null,
-        lon: p.lon || p.lng || null
-      }));
+      return (list || []).map(p => {
+        const parsedCap = parseFloat(p.capacity || p.cap || p.capacity_mw) || 0;
+        const prov = p.province || p.location || p.loc || "Vietnam";
+        return {
+          ...p,
+          name: p.name || "Unnamed Facility",
+          company: p.company || p.developer || "MOIT / Provincial EPC Allocation",
+          developer: p.company || p.developer || "MOIT / Provincial EPC Allocation",
+          capacity: p.capacity || (parsedCap ? `${parsedCap} MW` : "Planned"),
+          capacity_mw: parsedCap,
+          location: prov,
+          province: prov,
+          status: p.status || p.cod_status || "Operational (COD)",
+          type: p.type || p.fuel || "Renewable",
+          lat: p.lat || null,
+          lon: p.lon || p.lng || null
+        };
+      });
     }
 
     async function loadProjectsData() {
@@ -1121,7 +1457,10 @@
           if (Array.isArray(raw) && raw.length > 0) {
             ALL_PROJECTS = normalizeProjects(raw);
             initDirectory();
-            return;
+          initEnergyCharts();
+          initMainFlowMap();
+          renderMainFlowVectors();
+          return;
           }
         }
         const res = await fetch("/data/vietnam_clean_energy_projects.json?v=" + Date.now());
@@ -1129,6 +1468,9 @@
           const jsonRaw = await res.json();
           ALL_PROJECTS = normalizeProjects(jsonRaw);
           initDirectory();
+          initEnergyCharts();
+          initMainFlowMap();
+          renderMainFlowVectors();
           return;
         }
       } catch (e) {
@@ -1143,39 +1485,54 @@
           const raw = await window.RV_Supabase.getWithFallback('pdp8_fuel_targets', '/data/pdp8_targets.json', {
             cacheKey: 'pdp8_fuel_targets'
           });
-          if (raw && raw.fuel_targets) {
+          if (raw && (raw.fuel_targets || raw.priority_projects)) {
             pdp8Dataset = raw;
-            return;
           }
         }
-        const res = await fetch("/data/pdp8_targets.json?t=" + Date.now());
-        if (!res.ok) throw new Error("Status " + res.status);
-        pdp8Dataset = await res.json();
+        if (!pdp8Dataset) {
+          const res = await fetch("/data/pdp8_targets.json?t=" + Date.now());
+          if (res.ok) pdp8Dataset = await res.json();
+        }
       } catch (e) {
         console.warn("PDP8 JSON fetch error, attempting fallback targets:", e);
-        // Robust statutory fallback dataset derived from Decision 500/QD-TTg
+      }
+
+      if (!pdp8Dataset || !pdp8Dataset.fuel_targets || !pdp8Dataset.priority_projects) {
         pdp8Dataset = {
-          "metadata": {
-            "statutory_decree": "Decision 500/QD-TTg & Decision 262/QD-TTg",
-            "statutory_title": "National Power Development Plan VIII (PDP8)",
-            "planning_horizon": "2021-2030 (Vision to 2050)",
-            "total_statutory_capacity_2030_mw": 150489,
-            "current_operating_baseload_mw": 80612,
-            "statutory_delta_mw": 69877
+          metadata: {
+            statutory_decree: "Decision 500/QD-TTg & Decision 262/QD-TTg",
+            statutory_title: "National Power Development Plan VIII (PDP8)",
+            planning_horizon: "2021-2030 (Vision to 2050)",
+            total_statutory_capacity_2030_mw: 150489,
+            current_operating_baseload_mw: 80612,
+            statutory_delta_mw: 69877
           },
-          "fuel_targets": [
-            { "fuel": "Hydropower", "fuel_vi": "Thủy điện", "target_2030_mw": 29346, "current_operating_mw": 19101, "pipeline_mw": 10245, "target_share_pct": 19.5, "hex": "#3b82f6", "status_note": "Expansion of major dams (Ialy, Tri An, Hoa Binh) + small hydro run-of-river" },
-            { "fuel": "Onshore Wind", "fuel_vi": "Điện gió trên bờ & gần bờ", "target_2030_mw": 21880, "current_operating_mw": 4603, "pipeline_mw": 17277, "target_share_pct": 14.5, "hex": "#14b8a6", "status_note": "Heavy deployment in Central Highlands, South Central Coast & Mekong Delta" },
-            { "fuel": "Offshore Wind", "fuel_vi": "Điện gió ngoài khơi", "target_2030_mw": 6000, "current_operating_mw": 0, "pipeline_mw": 6000, "target_share_pct": 4.0, "hex": "#06b6d4", "status_note": "Pioneering pilot concessions awaiting marine spatial licenses" },
-            { "fuel": "Solar Power", "fuel_vi": "Điện mặt trời (Tập trung & Mái nhà)", "target_2030_mw": 15436, "current_operating_mw": 11467, "pipeline_mw": 3969, "target_share_pct": 10.3, "hex": "#f59e0b", "status_note": "12,836 MW utility-scale + 2,600 MW self-consumption under Decree 135/2024/ND-CP" },
-            { "fuel": "Biomass & Waste", "fuel_vi": "Sinh khối & Điện rác", "target_2030_mw": 2270, "current_operating_mw": 620, "pipeline_mw": 1650, "target_share_pct": 1.5, "hex": "#10b981", "status_note": "Wood pellets, bagasse, and municipal solid waste-to-energy facilities" },
-            { "fuel": "Domestic Gas & LNG", "fuel_vi": "Nhiệt điện Khí & LNG", "target_2030_mw": 37330, "current_operating_mw": 7200, "pipeline_mw": 30130, "target_share_pct": 24.8, "hex": "#a855f7", "status_note": "14,930 MW domestic gas (Block B, Ca Voi Xanh) + 22,400 MW imported LNG fleet" },
-            { "fuel": "Grid Storage & Pumped Hydro", "fuel_vi": "Thủy điện tích năng & Pin lưu trữ (BESS)", "target_2030_mw": 2700, "current_operating_mw": 0, "pipeline_mw": 2700, "target_share_pct": 1.8, "hex": "#6366f1", "status_note": "Bac Ai 1,200 MW pumped storage + pilot utility BESS frequency regulation systems" },
-            { "fuel": "Coal Thermal (Capped)", "fuel_vi": "Nhiệt điện than (Đạt đỉnh & Khống chế)", "target_2030_mw": 30127, "current_operating_mw": 26000, "pipeline_mw": 4127, "target_share_pct": 20.0, "hex": "#64748b", "status_note": "Strict cap under JETP; no new coal-fired plants approved after 2030" },
-            { "fuel": "Power Imports", "fuel_vi": "Nhập khẩu điện", "target_2030_mw": 5400, "current_operating_mw": 1621, "pipeline_mw": 3779, "target_share_pct": 3.6, "hex": "#f43f5e", "status_note": "Cross-border transmission lines from southern Laos and China" }
+          fuel_targets: [
+            { fuel: "Hydropower", fuel_vi: "Thủy điện", target_2030_mw: 29346, current_operating_mw: 19101, pipeline_mw: 10245, target_share_pct: 19.5, hex: "#3b82f6", status_note: "Expansion of major dams (Ialy, Tri An, Hoa Binh) + small hydro run-of-river" },
+            { fuel: "Onshore Wind", fuel_vi: "Điện gió trên bờ & gần bờ", target_2030_mw: 21880, current_operating_mw: 4603, pipeline_mw: 17277, target_share_pct: 14.5, hex: "#14b8a6", status_note: "Heavy deployment in Central Highlands, South Central Coast & Mekong Delta" },
+            { fuel: "Offshore Wind", fuel_vi: "Điện gió ngoài khơi", target_2030_mw: 6000, current_operating_mw: 0, pipeline_mw: 6000, target_share_pct: 4.0, hex: "#06b6d4", status_note: "Pioneering pilot concessions awaiting marine spatial licenses" },
+            { fuel: "Solar Power", fuel_vi: "Điện mặt trời (Tập trung & Mái nhà)", target_2030_mw: 15436, current_operating_mw: 11467, pipeline_mw: 3969, target_share_pct: 10.3, hex: "#f59e0b", status_note: "12,836 MW utility-scale + 2,600 MW self-consumption under Decree 135/2024/ND-CP" },
+            { fuel: "Biomass & Waste", fuel_vi: "Sinh khối & Điện rác", target_2030_mw: 2270, current_operating_mw: 620, pipeline_mw: 1650, target_share_pct: 1.5, hex: "#10b981", status_note: "Wood pellets, bagasse, and municipal solid waste-to-energy facilities" },
+            { fuel: "Domestic Gas & LNG", fuel_vi: "Nhiệt điện Khí & LNG", target_2030_mw: 37330, current_operating_mw: 7200, pipeline_mw: 30130, target_share_pct: 24.8, hex: "#a855f7", status_note: "14,930 MW domestic gas + 22,400 MW imported LNG fleet" },
+            { fuel: "Grid Storage & Pumped Hydro", fuel_vi: "Thủy điện tích năng & Pin lưu trữ (BESS)", target_2030_mw: 2700, current_operating_mw: 0, pipeline_mw: 2700, target_share_pct: 1.8, hex: "#6366f1", status_note: "Bac Ai 1,200 MW pumped storage + pilot utility BESS frequency regulation" },
+            { fuel: "Coal Thermal (Capped)", fuel_vi: "Nhiệt điện than (Đạt đỉnh & Khống chế)", target_2030_mw: 30127, current_operating_mw: 26000, pipeline_mw: 4127, target_share_pct: 20.0, hex: "#64748b", status_note: "Strict cap under JETP; no new coal-fired plants approved after 2030" },
+            { fuel: "Power Imports", fuel_vi: "Nhập khẩu điện", target_2030_mw: 5400, current_operating_mw: 1621, pipeline_mw: 3779, target_share_pct: 3.6, hex: "#f43f5e", status_note: "Cross-border transmission lines from southern Laos and China" }
+          ],
+          priority_projects: [
+            { id: "NT34-LNG", name: "Nhà máy Nhiệt điện LNG Nhơn Trạch 3 & 4", fuel: "LNG", capacity_mw: 1624, province: "Đồng Nai", investor: "PV Power (PetroVietnam)", target_cod: "2025-2026", status: "Under Construction", progress_pct: 92, notes: "First utility-scale imported LNG power project in Vietnam, high efficiency CCGT", lat: 10.687, lon: 106.924 },
+            { id: "BAC-AI-PSH", name: "Thủy điện tích năng Bác Ái (1,200 MW)", fuel: "Hydro", capacity_mw: 1200, province: "Ninh Thuận", investor: "EVN", target_cod: "2028-2029", status: "Under Construction", progress_pct: 45, notes: "Largest grid storage asset in Southeast Asia, absorbing renewable curtailment", lat: 11.833, lon: 108.917 },
+            { id: "QUANG-TRACH-1", name: "Nhiệt điện Quảng Trạch 1 (2x701 MW)", fuel: "Thermal", capacity_mw: 1403, province: "Quảng Bình", investor: "EVN", target_cod: "2026", status: "Under Construction", progress_pct: 78, notes: "Ultra-supercritical baseload generation hub", lat: 17.892, lon: 106.495 },
+            { id: "IALY-EXP", name: "Thủy điện Ialy Mở rộng (2x180 MW)", fuel: "Hydro", capacity_mw: 360, province: "Gia Lai", investor: "EVN", target_cod: "2025", status: "Under Construction", progress_pct: 95, notes: "Peak load shaving and frequency regulation on Sesan river", lat: 14.218, lon: 107.828 },
+            { id: "HOA-BINH-EXP", name: "Thủy điện Hòa Bình Mở rộng (2x240 MW)", fuel: "Hydro", capacity_mw: 480, province: "Hòa Bình", investor: "EVN", target_cod: "2025-2026", status: "Under Construction", progress_pct: 85, notes: "Northern grid balancing and flood discharge utilization", lat: 20.812, lon: 105.328 },
+            { id: "TRI-AN-EXP", name: "Thủy điện Trị An Mở rộng (2x100 MW)", fuel: "Hydro", capacity_mw: 200, province: "Đồng Nai", investor: "EVN", target_cod: "2026-2027", status: "In Development", progress_pct: 30, notes: "Southern peaking capacity expansion on Dong Nai river", lat: 11.116, lon: 106.998 },
+            { id: "BLOCK-B-OMON", name: "Chuỗi dự án Khí - Điện Lô B & Ô Môn", fuel: "LNG / gas", capacity_mw: 3810, province: "Cần Thơ", investor: "PVN / Marubeni", target_cod: "2027-2028", status: "In Development", progress_pct: 40, notes: "Strategic upstream gas-to-power flagship supplying Southwest grid", lat: 10.125, lon: 105.655 },
+            { id: "HAI-LANG-LNG", name: "Trung tâm Điện khí LNG Hải Lăng GĐ 1", fuel: "LNG", capacity_mw: 1500, province: "Quảng Trị", investor: "T&T / KOGAS / KOSPO / HANWHA", target_cod: "2028-2029", status: "In Development", progress_pct: 25, notes: "Central coast LNG receiving terminal and power complex", lat: 16.712, lon: 107.315 },
+            { id: "THANG-LONG-OW", name: "Điện gió ngoài khơi Thăng Long (GĐ Thí điểm)", fuel: "Wind", capacity_mw: 3400, province: "Bình Thuận", investor: "Enterprize Energy", target_cod: "2029-2030", status: "In Development", progress_pct: 20, notes: "Pioneering deepwater offshore wind pilot 50km off Ke Ga cape", lat: 10.550, lon: 108.200 },
+            { id: "LA-GAN-OW", name: "Điện gió ngoài khơi La Gàn (GĐ Thí điểm)", fuel: "Wind", capacity_mw: 3500, province: "Bình Thuận", investor: "Copenhagen Infrastructure Partners (CIP)", target_cod: "2029-2030", status: "In Development", progress_pct: 20, notes: "Statutory pilot offshore concession under marine spatial licensing", lat: 11.020, lon: 108.680 }
           ]
         };
       }
+
       renderIndependentSectorTable();
       renderPdp8Gauges();
       renderPdp8Projects();
@@ -1420,28 +1777,42 @@
       }
     }
 
-    // 13. Tab View Switcher (Assets Dossier & PDP8 Priority Pipeline)
+    // 13. Tab View Switcher (Assets Dossier, PDP8 Priority & National Grid)
     function switchDossierTab(tabKey) {
       activeTab = tabKey;
       const tabAssets = document.getElementById('tabAssetsBtn');
       const tabPipeline = document.getElementById('tabPipelineBtn');
+      const tabGrid = document.getElementById('tabGridBtn');
       
       const viewAssets = document.getElementById('viewAssetsDossier');
       const viewPipeline = document.getElementById('viewPipelineContainer');
+      const viewGrid = document.getElementById('viewGridContainer');
       const filtersBox = document.getElementById('dossierFiltersContainer');
       const paginationBar = document.getElementById('dossierPaginationBar');
 
-      [tabAssets, tabPipeline].forEach(btn => {
+      [tabAssets, tabPipeline, tabGrid].forEach(btn => {
         if (!btn) return;
-        btn.classList.remove('bg-teal-600', 'text-white', 'font-semibold');
+        btn.classList.remove('bg-teal-600', 'bg-rose-600', 'text-white', 'font-semibold');
         btn.classList.add('text-inkMuted', 'dark:text-textDarkMuted');
       });
 
-      [viewAssets, viewPipeline].forEach(v => {
+      [viewAssets, viewPipeline, viewGrid].forEach(v => {
         if (v) v.classList.add('hidden');
       });
 
-      if (tabKey === 'pipeline') {
+      if (tabKey === 'grid') {
+        if (tabGrid) {
+          tabGrid.classList.add('bg-rose-600', 'text-white', 'font-semibold');
+          tabGrid.classList.remove('text-inkMuted', 'dark:text-textDarkMuted');
+        }
+        if (viewGrid) viewGrid.classList.remove('hidden');
+        if (filtersBox) filtersBox.classList.add('hidden');
+        if (paginationBar) paginationBar.classList.add('hidden');
+        setTimeout(() => {
+          initGridMap();
+          if (gridMapInstance) gridMapInstance.invalidateSize();
+        }, 120);
+      } else if (tabKey === 'pipeline') {
         if (tabPipeline) {
           tabPipeline.classList.add('bg-teal-600', 'text-white', 'font-semibold');
           tabPipeline.classList.remove('text-inkMuted', 'dark:text-textDarkMuted');
@@ -1686,6 +2057,487 @@
         `;
       }
     }
+
+    
+    
+    // ========================================================================
+    // INTEGRATED GIS POWER FLOW & TRANSMISSION CARTOGRAPHY (MAIN DASHBOARD)
+    // ========================================================================
+    let mainFlowMapInstance = null;
+    let mainFlow500Layer = null;
+    let mainGrid220Layer = null;
+    let mainAssetsLayer = null;
+    let show500Flow = true;
+    let show220Grid = false;
+    let showCleanAssets = true;
+
+    function initMainFlowMap() {
+      const mapEl = document.getElementById('mainEnergyFlowMap');
+      if (!mapEl) return;
+      if (typeof L === 'undefined') {
+        console.warn('Leaflet engine loading delayed, retrying in 250ms...');
+        setTimeout(initMainFlowMap, 250);
+        return;
+      }
+
+      if (!mainFlowMapInstance) {
+        mainFlowMapInstance = L.map('mainEnergyFlowMap', {
+          center: [16.2, 107.5],
+          zoom: 6,
+          zoomControl: true,
+          attributionControl: false
+        });
+
+        const isDark = document.documentElement.classList.contains('dark');
+        const tileUrl = isDark 
+          ? 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'
+          : 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
+
+        const baseTileLayer = L.tileLayer(tileUrl, {
+          maxZoom: 18,
+          subdomains: 'abcd',
+          attribution: '&copy; CartoDB &copy; OpenStreetMap'
+        });
+
+        baseTileLayer.on('tileerror', function() {
+          console.warn('CartoDB tile warning, activating OpenStreetMap fallback');
+          L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18 }).addTo(mainFlowMapInstance);
+        });
+
+        baseTileLayer.addTo(mainFlowMapInstance);
+
+        mainFlow500Layer = L.layerGroup().addTo(mainFlowMapInstance);
+        mainGrid220Layer = L.layerGroup();
+        mainAssetsLayer = L.layerGroup().addTo(mainFlowMapInstance);
+
+        // Bind filter toggles
+        document.getElementById('mapToggleFlow500Btn')?.addEventListener('click', function() {
+          show500Flow = !show500Flow;
+          if (show500Flow) {
+            mainFlowMapInstance.addLayer(mainFlow500Layer);
+            this.classList.add('bg-rose-600', 'text-white', 'font-semibold');
+            this.classList.remove('bg-white', 'dark:bg-darkCard', 'text-inkMuted', 'dark:text-textDarkMuted');
+          } else {
+            mainFlowMapInstance.removeLayer(mainFlow500Layer);
+            this.classList.remove('bg-rose-600', 'text-white', 'font-semibold');
+            this.classList.add('bg-white', 'dark:bg-darkCard', 'text-inkMuted', 'dark:text-textDarkMuted');
+          }
+        });
+
+        document.getElementById('mapToggleGrid220Btn')?.addEventListener('click', function() {
+          show220Grid = !show220Grid;
+          if (show220Grid) {
+            mainFlowMapInstance.addLayer(mainGrid220Layer);
+            this.classList.add('bg-amber-600', 'text-white', 'font-semibold');
+            this.classList.remove('bg-white', 'dark:bg-darkCard', 'text-inkMuted', 'dark:text-textDarkMuted');
+          } else {
+            mainFlowMapInstance.removeLayer(mainGrid220Layer);
+            this.classList.remove('bg-amber-600', 'text-white', 'font-semibold');
+            this.classList.add('bg-white', 'dark:bg-darkCard', 'text-inkMuted', 'dark:text-textDarkMuted');
+          }
+        });
+
+        document.getElementById('mapToggleAssetsBtn')?.addEventListener('click', function() {
+          showCleanAssets = !showCleanAssets;
+          if (showCleanAssets) {
+            mainFlowMapInstance.addLayer(mainAssetsLayer);
+            this.classList.add('bg-teal-600', 'text-white', 'font-semibold');
+            this.classList.remove('bg-white', 'dark:bg-darkCard', 'text-inkMuted', 'dark:text-textDarkMuted');
+          } else {
+            mainFlowMapInstance.removeLayer(mainAssetsLayer);
+            this.classList.remove('bg-teal-600', 'text-white', 'font-semibold');
+            this.classList.add('bg-white', 'dark:bg-darkCard', 'text-inkMuted', 'dark:text-textDarkMuted');
+          }
+        });
+
+        document.getElementById('mapToggleResetViewBtn')?.addEventListener('click', function() {
+          mainFlowMapInstance.fitBounds([[8.4, 102.1], [23.4, 109.5]], { padding: [15, 15] });
+        });
+
+        // Set initial bounds to entire Vietnam
+        mainFlowMapInstance.fitBounds([[8.4, 102.1], [23.4, 109.5]], { padding: [15, 15] });
+      }
+
+      // Multi-stage size invalidation ensuring zero black container tiles
+      [80, 200, 500, 1000].forEach(delay => {
+        setTimeout(() => {
+          if (mainFlowMapInstance) mainFlowMapInstance.invalidateSize();
+        }, delay);
+      });
+
+      renderMainFlowVectors();
+    }
+
+    function renderMainFlowVectors() {
+      if (!mainFlowMapInstance || !mainFlow500Layer) return;
+      mainFlow500Layer.clearLayers();
+      if (mainGrid220Layer) mainGrid220Layer.clearLayers();
+      if (mainAssetsLayer) mainAssetsLayer.clearLayers();
+
+      // 1. Render 500kV Power Flow Spine (with animated directional pulse)
+      if (Array.isArray(ALL_GRID_LINES)) {
+        ALL_GRID_LINES.forEach(l => {
+          if (!l.coords || l.coords.length < 2) return;
+          const latLngs = [[l.coords[0][1], l.coords[0][0]], [l.coords[1][1], l.coords[1][0]]];
+
+          if (l.v_kv === 500) {
+            const poly = L.polyline(latLngs, {
+              color: '#f43f5e',
+              weight: 3.5,
+              opacity: 0.9,
+              className: 'grid-flow-500kv'
+            });
+            poly.bindPopup(`
+              <div class="font-mono text-xs space-y-1 p-1">
+                <div class="font-bold text-rose-600 dark:text-rose-400">500 kV Supergrid Transmission Spine</div>
+                <div><strong>Corridor:</strong> ${l.s1_name || l.s1_id} &rarr; ${l.s2_name || l.s2_id}</div>
+                <div><strong>Conductor:</strong> ${l.conductor || '4xACSR400'}</div>
+                <div><strong>Distance:</strong> ${l.len_km} km</div>
+                <div><strong>Impedance:</strong> R=${l.r} Ω, X=${l.x} Ω</div>
+              </div>
+            `);
+            poly.addTo(mainFlow500Layer);
+          } else if (l.v_kv === 220 && mainGrid220Layer) {
+            const poly220 = L.polyline(latLngs, {
+              color: '#f59e0b',
+              weight: 2.0,
+              opacity: 0.75,
+              className: 'grid-flow-220kv'
+            });
+            poly220.bindPopup(`
+              <div class="font-mono text-xs space-y-1 p-1">
+                <div class="font-bold text-amber-600 dark:text-amber-400">220 kV Regional Sub-transmission</div>
+                <div><strong>Corridor:</strong> ${l.s1_name || l.s1_id} &rarr; ${l.s2_name || l.s2_id}</div>
+                <div><strong>Distance:</strong> ${l.len_km} km</div>
+              </div>
+            `);
+            poly220.addTo(mainGrid220Layer);
+          }
+        });
+      }
+
+      // 2. Render 500kV Substations
+      if (Array.isArray(ALL_GRID_SUBSTATIONS)) {
+        ALL_GRID_SUBSTATIONS.forEach(s => {
+          if (s.lat === null || s.lng === null || s.max_v < 500) return;
+          const marker = L.circleMarker([s.lat, s.lng], {
+            radius: 6,
+            fillColor: '#f43f5e',
+            color: '#ffffff',
+            weight: 1.5,
+            opacity: 1,
+            fillOpacity: 0.9
+          });
+          marker.bindTooltip(`<strong>${s.name}</strong> (500kV TBA)<br>${s.total_tx_mva} MVA &middot; ${s.place || 'Vietnam'}`, { direction: 'top' });
+          marker.on('click', () => openSubstationModal(s.id));
+          marker.addTo(mainFlow500Layer);
+        });
+      }
+
+      // 3. Render Generation Plants (Clean Generation Clusters)
+      if (Array.isArray(ALL_PROJECTS) && mainAssetsLayer) {
+        ALL_PROJECTS.slice(0, 300).forEach(p => {
+          const lat = parseFloat(p.lat);
+          const lon = parseFloat(p.lon || p.lng);
+          if (!lat || !lon) return;
+
+          const fuel = (p.type || p.fuel || '').toLowerCase();
+          let color = '#10B981';
+          if (fuel.includes('solar')) color = '#F59E0B';
+          else if (fuel.includes('wind')) color = '#06B6D4';
+          else if (fuel.includes('hydro')) color = '#3B82F6';
+
+          const marker = L.circleMarker([lat, lon], {
+            radius: 3.5,
+            fillColor: color,
+            color: '#ffffff',
+            weight: 0.8,
+            opacity: 0.9,
+            fillOpacity: 0.8
+          });
+
+          marker.bindTooltip(`<strong>${p.name}</strong><br>${p.capacity_mw || p.capacity} &middot; ${p.type}`, { direction: 'top' });
+          marker.addTo(mainAssetsLayer);
+        });
+      }
+    }
+
+
+    // ========================================================================
+    // NATIONAL TRANSMISSION GRID LOGIC (NSMO 2025 MODEL INTEGRATION)
+    // ========================================================================
+    let ALL_GRID_SUBSTATIONS = [];
+    let ALL_GRID_LINES = [];
+    let FILTERED_GRID_SUBSTATIONS = [];
+    let FILTERED_GRID_LINES = [];
+    let selectedGridVoltage = "ALL";
+    let gridMapInstance = null;
+    let gridMapLayerGroup = null;
+
+    async function loadGridData() {
+      try {
+        if (window.RV_Supabase) {
+          const subsRaw = await window.RV_Supabase.getWithFallback('grid_substations', '/data/vietnam_grid_substations.json', {
+            cacheKey: 'grid_substations'
+          });
+          const linesRaw = await window.RV_Supabase.getWithFallback('grid_lines', '/data/vietnam_grid_lines.json', {
+            cacheKey: 'grid_lines'
+          });
+          if (Array.isArray(subsRaw) && subsRaw.length > 0) ALL_GRID_SUBSTATIONS = subsRaw;
+          if (Array.isArray(linesRaw) && linesRaw.length > 0) ALL_GRID_LINES = linesRaw;
+        } else {
+          const [sRes, lRes] = await Promise.all([
+            fetch('/data/vietnam_grid_substations.json'),
+            fetch('/data/vietnam_grid_lines.json')
+          ]);
+          if (sRes.ok) ALL_GRID_SUBSTATIONS = await sRes.json();
+          if (lRes.ok) ALL_GRID_LINES = await lRes.json();
+        }
+
+        FILTERED_GRID_SUBSTATIONS = ALL_GRID_SUBSTATIONS;
+        FILTERED_GRID_LINES = ALL_GRID_LINES;
+
+        const subCountEl = document.getElementById('totalGridSubstationsCount');
+        if (subCountEl) subCountEl.textContent = ALL_GRID_SUBSTATIONS.length.toLocaleString();
+
+        renderGridSubstationsTable();
+        renderGridLinesTable();
+        renderMainFlowVectors();
+        if (mainFlowMapInstance) mainFlowMapInstance.invalidateSize();
+        if (activeTab === 'grid') {
+          setTimeout(initGridMap, 100);
+        }
+      } catch (err) {
+        console.warn('Grid data load bypassed:', err);
+      }
+    }
+
+    function initGridMap() {
+      const mapContainer = document.getElementById('gridTopologyMap');
+      if (!mapContainer || typeof L === 'undefined') return;
+
+      if (!gridMapInstance) {
+        gridMapInstance = L.map('gridTopologyMap', {
+          center: [16.0, 106.5],
+          zoom: 6,
+          zoomControl: true,
+          attributionControl: false
+        });
+
+        // High-contrast clean dark/light cartography base tiles
+        const isDark = document.documentElement.classList.contains('dark');
+        const tileUrl = isDark 
+          ? 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'
+          : 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
+
+        L.tileLayer(tileUrl, { maxZoom: 18 }).addTo(gridMapInstance);
+        gridMapLayerGroup = L.layerGroup().addTo(gridMapInstance);
+      }
+
+      renderGridMapVectors();
+    }
+
+    function renderGridMapVectors() {
+      if (!gridMapInstance || !gridMapLayerGroup) return;
+      gridMapLayerGroup.clearLayers();
+
+      const vFilter = selectedGridVoltage;
+
+      // 1. Render Transmission Line Vectors
+      ALL_GRID_LINES.forEach(l => {
+        if (!l.coords || l.coords.length < 2) return;
+        if (vFilter !== 'ALL' && String(l.v_kv) !== String(vFilter)) return;
+
+        const latLngs = [[l.coords[0][1], l.coords[0][0]], [l.coords[1][1], l.coords[1][0]]];
+        let color = '#06b6d4'; // 110kV
+        let weight = 1.4;
+        let opacity = 0.65;
+
+        if (l.v_kv === 500) {
+          color = '#f43f5e';
+          weight = 3.2;
+          opacity = 0.9;
+        } else if (l.v_kv === 220) {
+          color = '#f59e0b';
+          weight = 2.0;
+          opacity = 0.8;
+        }
+
+        const poly = L.polyline(latLngs, {
+          color: color,
+          weight: weight,
+          opacity: opacity,
+          dashArray: l.dashed ? '4, 4' : null
+        });
+
+        poly.bindPopup(`
+          <div class="font-mono text-xs space-y-1 p-1">
+            <div class="font-bold text-rose-600 dark:text-rose-400">${l.v_kv} kV Transmission Circuit</div>
+            <div><strong>From:</strong> ${l.s1_name || l.s1_id}</div>
+            <div><strong>To:</strong> ${l.s2_name || l.s2_id}</div>
+            <div><strong>Conductor:</strong> ${l.conductor || 'Standard'}</div>
+            <div><strong>Est. Length:</strong> ${l.len_km} km</div>
+            <div><strong>Impedance:</strong> R=${l.r} Ω, X=${l.x} Ω</div>
+          </div>
+        `);
+
+        poly.addTo(gridMapLayerGroup);
+      });
+
+      // 2. Render Substation Circle Markers
+      ALL_GRID_SUBSTATIONS.forEach(s => {
+        if (s.lat === null || s.lng === null) return;
+        if (vFilter !== 'ALL' && !s.voltages.includes(parseInt(vFilter))) return;
+
+        let fillColor = '#06b6d4';
+        let radius = 3.5;
+        if (s.max_v >= 500) {
+          fillColor = '#f43f5e';
+          radius = 6.5;
+        } else if (s.max_v >= 220) {
+          fillColor = '#f59e0b';
+          radius = 4.8;
+        }
+
+        const marker = L.circleMarker([s.lat, s.lng], {
+          radius: radius,
+          fillColor: fillColor,
+          color: '#ffffff',
+          weight: 1,
+          opacity: 0.9,
+          fillOpacity: 0.85
+        });
+
+        marker.on('click', () => openSubstationModal(s.id));
+        marker.bindTooltip(`<strong>${s.name}</strong> (${s.max_v}kV)`, { direction: 'top', offset: [0, -5] });
+        marker.addTo(gridMapLayerGroup);
+      });
+    }
+
+    function renderGridSubstationsTable() {
+      const tbody = document.getElementById('gridSubstationsTableBody');
+      if (!tbody) return;
+
+      const q = (document.getElementById('gridSubstationSearchInput')?.value || '').toLowerCase().trim();
+      const vFilter = selectedGridVoltage;
+
+      const list = ALL_GRID_SUBSTATIONS.filter(s => {
+        if (vFilter !== 'ALL' && !s.voltages.includes(parseInt(vFilter))) return false;
+        if (q) {
+          const matchName = (s.name || '').toLowerCase().includes(q);
+          const matchPlace = (s.place || '').toLowerCase().includes(q);
+          const matchBays = (s.bay_codes || '').toLowerCase().includes(q);
+          if (!matchName && !matchPlace && !matchBays) return false;
+        }
+        return true;
+      });
+
+      const badge = document.getElementById('gridSubstationCountBadge');
+      if (badge) badge.textContent = `Showing ${list.length.toLocaleString()} of ${ALL_GRID_SUBSTATIONS.length.toLocaleString()} Substations`;
+
+      // Render top 100 for responsive scrolling
+      tbody.innerHTML = list.slice(0, 100).map(s => {
+        const vBadgeColor = s.max_v >= 500 
+          ? 'bg-rose-500/10 text-rose-600 border-rose-500/20' 
+          : (s.max_v >= 220 ? 'bg-amber-500/10 text-amber-600 border-amber-500/20' : 'bg-sky-500/10 text-sky-600 border-sky-500/20');
+
+        return `
+          <tr class="hover:bg-slate-50/80 dark:hover:bg-darkCard/50 transition-colors cursor-pointer" onclick="openSubstationModal('${s.id}')">
+            <td class="p-2.5 font-semibold text-inkPrimary dark:text-textDarkPrimary">${s.name}</td>
+            <td class="p-2.5 text-center">
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold border ${vBadgeColor}">
+                ${s.voltages.join('/')} kV
+              </span>
+            </td>
+            <td class="p-2.5 text-right font-medium text-inkPrimary dark:text-textDarkPrimary">
+              ${s.tx_count > 0 ? `${s.tx_count} tx (${s.total_tx_mva} MVA)` : '-'}
+            </td>
+            <td class="p-2.5 text-right font-medium text-rose-600 dark:text-rose-400">
+              ${s.gen_count > 0 ? `${s.gen_count} gen (${s.total_gen_mw} MW)` : '-'}
+            </td>
+            <td class="p-2.5 text-inkMuted dark:text-textDarkMuted text-[11px] truncate max-w-[200px]">${s.place || 'Vietnam'}</td>
+            <td class="p-2.5 text-right">
+              <button onclick="event.stopPropagation(); openSubstationModal('${s.id}')" class="px-2.5 py-1 rounded bg-slate-100 dark:bg-darkCard hover:bg-rose-50 dark:hover:bg-rose-950/40 text-inkPrimary dark:text-textDarkPrimary hover:text-rose-600 dark:hover:text-rose-400 border border-borderSlate dark:border-darkBorder text-[10px] cursor-pointer">
+                Dossier &rarr;
+              </button>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function renderGridLinesTable() {
+      const tbody = document.getElementById('gridLinesTableBody');
+      if (!tbody) return;
+
+      const q = (document.getElementById('gridLineSearchInput')?.value || '').toLowerCase().trim();
+      const vFilter = selectedGridVoltage;
+
+      const list = ALL_GRID_LINES.filter(l => {
+        if (vFilter !== 'ALL' && String(l.v_kv) !== String(vFilter)) return false;
+        if (q) {
+          const matchS1 = (l.s1_name || l.s1_id || '').toLowerCase().includes(q);
+          const matchS2 = (l.s2_name || l.s2_id || '').toLowerCase().includes(q);
+          const matchCond = (l.conductor || '').toLowerCase().includes(q);
+          if (!matchS1 && !matchS2 && !matchCond) return false;
+        }
+        return true;
+      });
+
+      const badge = document.getElementById('gridLineCountBadge');
+      if (badge) badge.textContent = `Showing ${list.length.toLocaleString()} of ${ALL_GRID_LINES.length.toLocaleString()} Circuits`;
+
+      tbody.innerHTML = list.slice(0, 100).map(l => {
+        const vBadgeColor = l.v_kv === 500 
+          ? 'bg-rose-500/10 text-rose-600 border-rose-500/20' 
+          : (l.v_kv === 220 ? 'bg-amber-500/10 text-amber-600 border-amber-500/20' : 'bg-sky-500/10 text-sky-600 border-sky-500/20');
+
+        return `
+          <tr class="hover:bg-slate-50/80 dark:hover:bg-darkCard/50 transition-colors">
+            <td class="p-2.5 font-semibold text-inkPrimary dark:text-textDarkPrimary">
+              <span>${l.s1_name || l.s1_id}</span>
+              <span class="text-slate-400 mx-1">&rarr;</span>
+              <span>${l.s2_name || l.s2_id}</span>
+            </td>
+            <td class="p-2.5 text-center">
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold border ${vBadgeColor}">
+                ${l.v_kv} kV
+              </span>
+            </td>
+            <td class="p-2.5 text-inkMuted dark:text-textDarkMuted">${l.conductor || 'Standard ACSR'}</td>
+            <td class="p-2.5 text-right font-mono">${l.r !== null ? l.r : '-'}</td>
+            <td class="p-2.5 text-right font-mono">${l.x !== null ? l.x : '-'}</td>
+            <td class="p-2.5 text-right font-bold text-inkPrimary dark:text-textDarkPrimary">${l.len_km} km</td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function openSubstationModal(subId) {
+      const s = ALL_GRID_SUBSTATIONS.find(x => x.id === subId);
+      if (!s) return;
+
+      const overlay = document.getElementById('substationModalOverlay');
+      if (!overlay) return;
+
+      document.getElementById('substationModalName').textContent = s.name;
+      document.getElementById('substationModalPlace').textContent = s.place || 'National Grid Vietnam';
+      document.getElementById('substationModalVoltageBadge').textContent = `${s.voltages.join('/')} kV Substation`;
+      document.getElementById('substationModalTx').textContent = s.tx_count > 0 ? `${s.tx_count} Transformers (${s.total_tx_mva} MVA)` : 'None Recorded';
+      document.getElementById('substationModalGen').textContent = s.gen_count > 0 ? `${s.gen_count} Generation Units (${s.total_gen_mw} MW)` : 'No Generation Units';
+      document.getElementById('substationModalBays').textContent = s.bay_codes || 'Standard Feeder Bays';
+      document.getElementById('substationModalCoords').textContent = (s.lat && s.lng) ? `Lat: ${s.lat}, Lng: ${s.lng} (WGS84)` : 'Coordinates Unmapped';
+
+      const gmapsLink = document.getElementById('substationModalGmapsLink');
+      if (gmapsLink) {
+        gmapsLink.href = (s.lat && s.lng) 
+          ? `https://maps.google.com/maps?t=k&q=loc:${s.lat},${s.lng}&gl=vn&hl=vi`
+          : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.name + ' TBA Vietnam')}`;
+      }
+
+      overlay.classList.remove('hidden');
+    }
+
 
     // 15C. Bi-Directional Sector Filtering Logic (Table -> GIS Map & Dossier)
     function filterBySector(filterFuel, fuelLabel) {
@@ -1950,9 +2802,188 @@
         });
       }
 
-      // Initial Data Loading
+      
+    // =========================================================================
+    // INTERACTIVE CHARTS: PROVINCIAL CAPACITY & ASSET LIFECYCLE
+    // =========================================================================
+    let energyTopProvChartInstance = null;
+    let energyStatusChartInstance = null;
+
+    function initEnergyCharts() {
+      if (!ALL_PROJECTS || ALL_PROJECTS.length === 0) return;
+      if (typeof Chart === 'undefined') return;
+
+      const isDark = document.documentElement.classList.contains('dark');
+      const textColor = isDark ? '#94A3B8' : '#64748B';
+      const gridColor = isDark ? 'rgba(255, 255, 255, 0.05)' : 'rgba(0, 0, 0, 0.05)';
+      const tooltipBg = isDark ? '#141D32' : '#FFFFFF';
+      const tooltipText = isDark ? '#F8FAFC' : '#0F172A';
+
+      // Aggregate capacity by province
+      const provMap = {};
+      const statusMap = { 'Operational (COD)': 0, 'Under Construction': 0, 'In Development': 0, 'Planned': 0 };
+
+      ALL_PROJECTS.forEach(p => {
+        const prov = p.province || p.location || 'Unknown';
+        if (!provMap[prov]) {
+          provMap[prov] = { total: 0, wind: 0, solar: 0, hydro: 0, lng: 0, other: 0 };
+        }
+        const cap = parseFloat(p.capacity_mw) || parseFloat(p.capacity) || 0;
+        provMap[prov].total += cap;
+        const fuel = (p.type || p.fuel || '').toLowerCase();
+        if (fuel.includes('wind')) provMap[prov].wind += cap;
+        else if (fuel.includes('solar')) provMap[prov].solar += cap;
+        else if (fuel.includes('hydro')) provMap[prov].hydro += cap;
+        else if (fuel.includes('gas') || fuel.includes('lng')) provMap[prov].lng += cap;
+        else provMap[prov].other += cap;
+
+        const stat = (p.status || p.cod_status || 'Operational (COD)').toLowerCase();
+        if (stat.includes('operat') || stat.includes('cod') || stat.includes('active')) {
+          statusMap['Operational (COD)'] += cap;
+        } else if (stat.includes('construct')) {
+          statusMap['Under Construction'] += cap;
+        } else if (stat.includes('permit') || stat.includes('develop') || stat.includes('approv')) {
+          statusMap['In Development'] += cap;
+        } else {
+          statusMap['Planned'] += cap;
+        }
+      });
+
+      // Top 10 Provinces by Total Clean Energy Capacity
+      const sortedProvs = Object.keys(provMap)
+        .filter(pr => pr !== 'Unknown' && provMap[pr].total > 0)
+        .sort((a, b) => provMap[b].total - provMap[a].total)
+        .slice(0, 10);
+
+      const provLabels = sortedProvs;
+      const windData = sortedProvs.map(pr => Math.round(provMap[pr].wind));
+      const solarData = sortedProvs.map(pr => Math.round(provMap[pr].solar));
+      const hydroData = sortedProvs.map(pr => Math.round(provMap[pr].hydro));
+      const lngData = sortedProvs.map(pr => Math.round(provMap[pr].lng));
+      const otherData = sortedProvs.map(pr => Math.round(provMap[pr].other));
+
+      // Chart 1: Top 10 Provinces Horizontal Stacked Bar
+      const canvasProv = document.getElementById('energyTopProvincesChart');
+      if (canvasProv) {
+        if (energyTopProvChartInstance) energyTopProvChartInstance.destroy();
+        energyTopProvChartInstance = new Chart(canvasProv.getContext('2d'), {
+          type: 'bar',
+          data: {
+            labels: provLabels,
+            datasets: [
+              { label: 'Wind', data: windData, backgroundColor: '#10B981', stack: 'stack1' },
+              { label: 'Solar', data: solarData, backgroundColor: '#F59E0B', stack: 'stack1' },
+              { label: 'Hydro', data: hydroData, backgroundColor: '#06B6D4', stack: 'stack1' },
+              { label: 'LNG / Gas', data: lngData, backgroundColor: '#3B82F6', stack: 'stack1' },
+              { label: 'Biomass/Other', data: otherData, backgroundColor: '#8B5CF6', stack: 'stack1' }
+            ]
+          },
+          options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: false,
+            onClick: (e, elements) => {
+              if (elements && elements.length > 0) {
+                const idx = elements[0].index;
+                const clickedProv = provLabels[idx];
+                const provSel = document.getElementById('provinceSelect');
+                if (provSel) {
+                  provSel.value = clickedProv;
+                  selectedProvince = clickedProv;
+                  applyFilters();
+                  document.getElementById('cockpitContainer')?.scrollIntoView({ behavior: 'smooth' });
+                }
+              }
+            },
+            plugins: {
+              legend: {
+                position: 'top',
+                labels: { color: textColor, font: { size: 10, family: 'monospace' }, boxWidth: 10 }
+              },
+              tooltip: {
+                backgroundColor: tooltipBg,
+                titleColor: tooltipText,
+                bodyColor: tooltipText,
+                borderColor: 'rgba(255,255,255,0.1)',
+                borderWidth: 1,
+                callbacks: {
+                  afterLabel: () => 'Click bar to filter directory'
+                }
+              }
+            },
+            scales: {
+              x: {
+                stacked: true,
+                grid: { color: gridColor },
+                ticks: { color: textColor, font: { size: 9, family: 'monospace' }, callback: v => v.toLocaleString() + ' MW' }
+              },
+              y: {
+                stacked: true,
+                grid: { display: false },
+                ticks: { color: textColor, font: { size: 10, family: 'monospace', weight: 'bold' } }
+              }
+            }
+          }
+        });
+      }
+
+      // Chart 2: Asset Status Lifecycle Doughnut
+      const canvasStatus = document.getElementById('energyStatusDoughnutChart');
+      if (canvasStatus) {
+        if (energyStatusChartInstance) energyStatusChartInstance.destroy();
+        const statusLabels = Object.keys(statusMap);
+        const statusValues = Object.values(statusMap).map(v => Math.round(v));
+
+        energyStatusChartInstance = new Chart(canvasStatus.getContext('2d'), {
+          type: 'doughnut',
+          data: {
+            labels: statusLabels,
+            datasets: [{
+              data: statusValues,
+              backgroundColor: ['#10B981', '#F59E0B', '#3B82F6', '#64748B'],
+              borderWidth: 2,
+              borderColor: isDark ? '#0D1322' : '#FFFFFF'
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            cutout: '72%',
+            plugins: {
+              legend: {
+                position: 'bottom',
+                labels: { color: textColor, font: { size: 9, family: 'monospace' }, boxWidth: 8, padding: 8 }
+              },
+              tooltip: {
+                backgroundColor: tooltipBg,
+                titleColor: tooltipText,
+                bodyColor: tooltipText,
+                borderColor: 'rgba(255,255,255,0.1)',
+                borderWidth: 1,
+                callbacks: {
+                  label: ctx => ` ${ctx.label}: ${ctx.raw.toLocaleString()} MW`
+                }
+              }
+            }
+          }
+        });
+      }
+    }
+
+      // Initial Data Loading & Multi-Stage Cartography Trigger
       loadProjectsData();
       loadPdp8Data();
+      loadGridData();
+      setTimeout(initMainFlowMap, 150);
+      setTimeout(initEnergyCharts, 250);
+    });
+
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        if (typeof initEnergyCharts === 'function') initEnergyCharts();
+        if (typeof initMainFlowMap === 'function') initMainFlowMap();
+        if (mainFlowMapInstance) mainFlowMapInstance.invalidateSize();
+      }, 300);
     });
   </script>
 </body>
