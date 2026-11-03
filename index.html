@@ -167,8 +167,8 @@
   <main class="relative z-10 flex-1 w-full max-w-[1920px] 2xl:max-w-full mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-5 sm:py-6 space-y-5 sm:space-y-6">
 
     <!-- HERO HEADER: SOFTENED CONTRAST & TYPOGRAPHY -->
-    <section class="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-white dark:bg-slate-800/80 border border-slate-200/70 dark:border-slate-700/60 rounded-2xl p-4 sm:p-5 shadow-xs">
-      <div class="space-y-1">
+    <section class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 bg-white dark:bg-slate-800/80 border border-slate-200/70 dark:border-slate-700/60 rounded-2xl p-4 sm:p-5 shadow-xs">
+      <div class="space-y-1 flex-1 min-w-0">
         <div class="flex items-center gap-2">
           <span class="font-mono text-[10px] uppercase font-semibold text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700/60 px-2 py-0.5 rounded border border-slate-200/80 dark:border-slate-600/60">
             National Telemetry
@@ -202,199 +202,383 @@
       </div>
     </section>
 
-    <!-- SECTION 1: INTERACTIVE ENERGY NETWORK TOPOLOGY GRAPH (FLOW ENGINE) -->
-    <section class="bg-white dark:bg-slate-800/80 border border-slate-200/70 dark:border-slate-700/60 rounded-2xl p-4 sm:p-5 shadow-xs space-y-3.5">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-700/50 pb-2.5">
-        <div>
+        <!-- SECTION 1: THE 12 STRATEGIC PILLARS OF VIETNAM ENERGY TRANSITION -->
+    <section id="homepage12PillarsSection" class="bg-white dark:bg-slate-800/80 border border-slate-200/70 dark:border-slate-700/60 rounded-2xl p-4 sm:p-5 shadow-xs space-y-4">
+      <div class="flex flex-col xl:flex-row xl:items-end justify-between gap-4 border-b border-slate-100 dark:border-slate-700/50 pb-3.5">
+        <div class="space-y-1.5 flex-1 min-w-0">
           <div class="flex items-center gap-2">
-            <span class="w-2 h-2 rounded-full bg-teal-600 dark:bg-teal-400"></span>
-            <h2 class="text-xs sm:text-sm font-semibold uppercase tracking-wider text-slate-800 dark:text-slate-200">
-              Interactive Energy Flow Topology Network
-            </h2>
+            <span class="w-2 h-2 rounded-full bg-teal-600 dark:bg-teal-400 animate-pulse"></span>
+            <span class="font-mono text-[10px] uppercase font-semibold text-teal-700 dark:text-teal-300">
+              DECISION 500/QĐ-TTG &middot; RESOLUTION 55-NQ/TW &middot; NET-ZERO 2050 PATHWAY
+            </span>
           </div>
-          <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
-            Click on any segment node to inspect operational parameters, legal basis, and direct edge telemetry.
+          <h2 class="text-base sm:text-lg font-bold tracking-tight text-slate-900 dark:text-slate-100">
+            The 12 Strategic Pillars of Vietnam's National Energy Transition
+          </h2>
+          <p class="text-xs text-slate-500 dark:text-slate-400 max-w-4xl leading-relaxed">
+            Statutory framework orchestrating utility-scale generation expansion, ultra-high-voltage transmission corridors, competitive wholesale power markets, and green hydrogen power-to-X infrastructure across $134.7B in capital allocation through 2030. Click any pillar to inspect telemetry and direct gateway.
           </p>
         </div>
-        <span class="font-mono text-[10px] text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-700/50 px-2 py-0.5 rounded border border-slate-200/60 dark:border-slate-600/50">
-          Node Selector Active
-        </span>
-      </div>
 
-      <!-- 5 Interactive Flow Nodes -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2.5" id="flowNodesContainer">
-        <!-- Node 1: PDP8 Generation -->
-        <div class="flow-node active-node p-3 rounded-xl bg-slate-50/80 dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700/70" data-node="0">
-          <div class="flex items-center justify-between font-mono text-[10px] mb-1">
-            <span class="text-teal-700 dark:text-teal-300 font-semibold">NODE 01</span>
-            <span class="w-1.5 h-1.5 rounded-full bg-teal-600 dark:bg-teal-400"></span>
-          </div>
-          <strong class="block text-xs font-semibold text-slate-800 dark:text-slate-200">Generation Quotas</strong>
-          <span class="block text-[10px] text-slate-500 dark:text-slate-400 mt-0.5">Wind, Solar &amp; Hydro</span>
-          <div class="mt-2 pt-1 border-t border-slate-200/50 dark:border-slate-700/50 font-mono text-[10px] text-slate-700 dark:text-slate-300 font-medium">
-            107.5 GW Pipeline
-          </div>
-        </div>
-
-        <!-- Node 2: Permitting CPM -->
-        <div class="flow-node p-3 rounded-xl bg-slate-50/80 dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700/70" data-node="1">
-          <div class="flex items-center justify-between font-mono text-[10px] mb-1">
-            <span class="text-blue-700 dark:text-blue-300 font-semibold">NODE 02</span>
-            <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
-          </div>
-          <strong class="block text-xs font-semibold text-slate-800 dark:text-slate-200">Permitting CPM</strong>
-          <span class="block text-[10px] text-slate-500 dark:text-slate-400 mt-0.5">Statutory &amp; Land Leases</span>
-          <div class="mt-2 pt-1 border-t border-slate-200/50 dark:border-slate-700/50 font-mono text-[10px] text-slate-700 dark:text-slate-300 font-medium">
-            30+ Milestones
-          </div>
-        </div>
-
-        <!-- Node 3: Transmission Intertie -->
-        <div class="flow-node p-3 rounded-xl bg-slate-50/80 dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700/70" data-node="2">
-          <div class="flex items-center justify-between font-mono text-[10px] mb-1">
-            <span class="text-teal-700 dark:text-teal-300 font-semibold">NODE 03</span>
-            <span class="w-1.5 h-1.5 rounded-full bg-teal-600 dark:bg-teal-400"></span>
-          </div>
-          <strong class="block text-xs font-semibold text-slate-800 dark:text-slate-200">Grid Intertie</strong>
-          <span class="block text-[10px] text-slate-500 dark:text-slate-400 mt-0.5">500kV/220kV Substation</span>
-          <div class="mt-2 pt-1 border-t border-slate-200/50 dark:border-slate-700/50 font-mono text-[10px] text-slate-700 dark:text-slate-300 font-medium">
-            High-Voltage Loops
-          </div>
-        </div>
-
-        <!-- Node 4: Industrial Offtake -->
-        <div class="flow-node p-3 rounded-xl bg-slate-50/80 dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700/70" data-node="3">
-          <div class="flex items-center justify-between font-mono text-[10px] mb-1">
-            <span class="text-teal-700 dark:text-teal-300 font-semibold">NODE 04</span>
-            <span class="w-1.5 h-1.5 rounded-full bg-teal-600 dark:bg-teal-400"></span>
-          </div>
-          <strong class="block text-xs font-semibold text-slate-800 dark:text-slate-200">Industrial DPPA</strong>
-          <span class="block text-[10px] text-slate-500 dark:text-slate-400 mt-0.5">Decree 80 Direct Wheeling</span>
-          <div class="mt-2 pt-1 border-t border-slate-200/50 dark:border-slate-700/50 font-mono text-[10px] text-slate-700 dark:text-slate-300 font-medium">
-            5,655 MWp Rooftop
-          </div>
-        </div>
-
-        <!-- Node 5: EV Corridors -->
-        <div class="flow-node p-3 rounded-xl bg-slate-50/80 dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700/70" data-node="4">
-          <div class="flex items-center justify-between font-mono text-[10px] mb-1">
-            <span class="text-amber-700 dark:text-amber-300 font-semibold">NODE 05</span>
-            <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
-          </div>
-          <strong class="block text-xs font-semibold text-slate-800 dark:text-slate-200">EV Freight Network</strong>
-          <span class="block text-[10px] text-slate-500 dark:text-slate-400 mt-0.5">Expressway DC Fast</span>
-          <div class="mt-2 pt-1 border-t border-slate-200/50 dark:border-slate-700/50 font-mono text-[10px] text-slate-700 dark:text-slate-300 font-medium">
-            22,055+ Ports
-          </div>
+        <!-- Pillar Dimension Filter Toolbar -->
+        <div class="flex flex-wrap items-center gap-1.5 font-mono text-[11px] shrink-0 self-start xl:self-auto">
+          <button onclick="filterHomepagePillars('ALL')" id="hpFilterAll" class="px-2.5 py-1.5 rounded-lg bg-teal-600 text-white font-semibold transition-all cursor-pointer shadow-xs">
+            All Pillars (12)
+          </button>
+          <button onclick="filterHomepagePillars('GENERATION')" id="hpFilterGen" class="px-2.5 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-700/60 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 transition-all cursor-pointer">
+            Generation (6)
+          </button>
+          <button onclick="filterHomepagePillars('GRID')" id="hpFilterGrid" class="px-2.5 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-700/60 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 transition-all cursor-pointer">
+            Grid &amp; Supergrid (3)
+          </button>
+          <button onclick="filterHomepagePillars('MARKET')" id="hpFilterMarket" class="px-2.5 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-700/60 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 transition-all cursor-pointer">
+            Market &amp; Policy (3)
+          </button>
         </div>
       </div>
 
-      <!-- Real-Time Node Inspector Drawer -->
-      <div id="nodeInspectorPanel" class="p-3.5 sm:p-4 rounded-xl bg-slate-50/90 dark:bg-slate-800/60 border border-slate-200/70 dark:border-slate-700/60 transition-all flex flex-col md:flex-row md:items-center justify-between gap-3">
-        <div class="space-y-1">
+      <!-- 12 Strategic Pillars Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3" id="homepagePillarsContainer">
+        
+        <!-- Pillar 01: Offshore Wind -->
+        <div class="flow-node active-node pillar-card p-3.5 rounded-xl bg-slate-50/80 dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700/70 cursor-pointer hover:border-teal-500/60 transition-all space-y-2" data-node="0" data-category="GENERATION">
+          <div class="flex items-center justify-between font-mono text-[10px]">
+            <span class="text-blue-700 dark:text-blue-300 font-semibold">PILLAR 01 &middot; GENERATION</span>
+            <span class="text-slate-400 font-medium">$18.5B Capex</span>
+          </div>
+          <strong class="block text-xs font-semibold text-slate-800 dark:text-slate-200">Offshore Wind Supergrid</strong>
+          <span class="block text-[11px] text-slate-500 dark:text-slate-400 leading-snug">Marine wind clusters in South Central &amp; Northern Gulf of Tonkin.</span>
+          <div class="space-y-1 font-mono text-[10px] pt-1.5 border-t border-slate-200/50 dark:border-slate-700/50">
+            <div class="flex justify-between text-slate-600 dark:text-slate-300">
+              <span>Target 2030:</span>
+              <strong class="text-slate-900 dark:text-slate-100">6,000 MW</strong>
+            </div>
+            <div class="w-full bg-slate-200 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden">
+              <div class="bg-blue-500 h-full rounded-full" style="width: 5%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 02: Onshore & Nearshore Wind -->
+        <div class="flow-node pillar-card p-3.5 rounded-xl bg-slate-50/80 dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700/70 cursor-pointer hover:border-teal-500/60 transition-all space-y-2" data-node="1" data-category="GENERATION">
+          <div class="flex items-center justify-between font-mono text-[10px]">
+            <span class="text-teal-700 dark:text-teal-300 font-semibold">PILLAR 02 &middot; GENERATION</span>
+            <span class="text-slate-400 font-medium">$26.2B Capex</span>
+          </div>
+          <strong class="block text-xs font-semibold text-slate-800 dark:text-slate-200">Onshore/Nearshore Wind</strong>
+          <span class="block text-[11px] text-slate-500 dark:text-slate-400 leading-snug">High-resource corridors in Central Highlands and Mekong Delta.</span>
+          <div class="space-y-1 font-mono text-[10px] pt-1.5 border-t border-slate-200/50 dark:border-slate-700/50">
+            <div class="flex justify-between text-slate-600 dark:text-slate-300">
+              <span>Target 2030:</span>
+              <strong class="text-teal-600 dark:text-teal-400">21,880 MW (4,798 MW COD)</strong>
+            </div>
+            <div class="w-full bg-slate-200 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden">
+              <div class="bg-teal-500 h-full rounded-full" style="width: 22%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 03: Solar PV & Rooftop RTS -->
+        <div class="flow-node pillar-card p-3.5 rounded-xl bg-slate-50/80 dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700/70 cursor-pointer hover:border-teal-500/60 transition-all space-y-2" data-node="2" data-category="GENERATION">
+          <div class="flex items-center justify-between font-mono text-[10px]">
+            <span class="text-amber-700 dark:text-amber-300 font-semibold">PILLAR 03 &middot; GENERATION</span>
+            <span class="text-slate-400 font-medium">$14.1B Capex</span>
+          </div>
+          <strong class="block text-xs font-semibold text-slate-800 dark:text-slate-200">Solar PV &amp; Rooftop RTS</strong>
+          <span class="block text-[11px] text-slate-500 dark:text-slate-400 leading-snug">Utility ground-mount and 50% rooftop self-consumption (Decree 135).</span>
+          <div class="space-y-1 font-mono text-[10px] pt-1.5 border-t border-slate-200/50 dark:border-slate-700/50">
+            <div class="flex justify-between text-slate-600 dark:text-slate-300">
+              <span>Installed:</span>
+              <strong class="text-amber-600 dark:text-amber-400">16,500+ MW</strong>
+            </div>
+            <div class="w-full bg-slate-200 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden">
+              <div class="bg-amber-500 h-full rounded-full" style="width: 85%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 04: Flexible Hydro & Storage -->
+        <div class="flow-node pillar-card p-3.5 rounded-xl bg-slate-50/80 dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700/70 cursor-pointer hover:border-teal-500/60 transition-all space-y-2" data-node="3" data-category="GENERATION">
+          <div class="flex items-center justify-between font-mono text-[10px]">
+            <span class="text-cyan-700 dark:text-cyan-300 font-semibold">PILLAR 04 &middot; GENERATION</span>
+            <span class="text-slate-400 font-medium">$11.8B Capex</span>
+          </div>
+          <strong class="block text-xs font-semibold text-slate-800 dark:text-slate-200">Flexible Hydro &amp; BESS</strong>
+          <span class="block text-[11px] text-slate-500 dark:text-slate-400 leading-snug">Cascade reservoir dispatch + 2,400 MW Pumped Hydro (Bác Ái) &amp; BESS.</span>
+          <div class="space-y-1 font-mono text-[10px] pt-1.5 border-t border-slate-200/50 dark:border-slate-700/50">
+            <div class="flex justify-between text-slate-600 dark:text-slate-300">
+              <span>Baseload + Storage:</span>
+              <strong class="text-cyan-600 dark:text-cyan-400">29,346 MW + 2.7 GW</strong>
+            </div>
+            <div class="w-full bg-slate-200 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden">
+              <div class="bg-cyan-500 h-full rounded-full" style="width: 78%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 05: Domestic Gas & LNG -->
+        <div class="flow-node pillar-card p-3.5 rounded-xl bg-slate-50/80 dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700/70 cursor-pointer hover:border-teal-500/60 transition-all space-y-2" data-node="4" data-category="GENERATION">
+          <div class="flex items-center justify-between font-mono text-[10px]">
+            <span class="text-indigo-700 dark:text-indigo-300 font-semibold">PILLAR 05 &middot; GENERATION</span>
+            <span class="text-slate-400 font-medium">$31.4B Capex</span>
+          </div>
+          <strong class="block text-xs font-semibold text-slate-800 dark:text-slate-200">Domestic Gas &amp; LNG Terminals</strong>
+          <span class="block text-[11px] text-slate-500 dark:text-slate-400 leading-snug">Baseload firming via Block B upstream gas &amp; 13 world-scale LNG ports.</span>
+          <div class="space-y-1 font-mono text-[10px] pt-1.5 border-t border-slate-200/50 dark:border-slate-700/50">
+            <div class="flex justify-between text-slate-600 dark:text-slate-300">
+              <span>Target 2030:</span>
+              <strong class="text-indigo-600 dark:text-indigo-400">37,330 MW Gas/LNG</strong>
+            </div>
+            <div class="w-full bg-slate-200 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden">
+              <div class="bg-indigo-500 h-full rounded-full" style="width: 25%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 06: Biomass & Waste-to-Energy -->
+        <div class="flow-node pillar-card p-3.5 rounded-xl bg-slate-50/80 dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700/70 cursor-pointer hover:border-teal-500/60 transition-all space-y-2" data-node="5" data-category="GENERATION">
+          <div class="flex items-center justify-between font-mono text-[10px]">
+            <span class="text-emerald-700 dark:text-emerald-300 font-semibold">PILLAR 06 &middot; GENERATION</span>
+            <span class="text-slate-400 font-medium">$3.6B Capex</span>
+          </div>
+          <strong class="block text-xs font-semibold text-slate-800 dark:text-slate-200">Biomass &amp; Waste-to-Energy</strong>
+          <span class="block text-[11px] text-slate-500 dark:text-slate-400 leading-snug">Converting agricultural residues and municipal waste into clean power.</span>
+          <div class="space-y-1 font-mono text-[10px] pt-1.5 border-t border-slate-200/50 dark:border-slate-700/50">
+            <div class="flex justify-between text-slate-600 dark:text-slate-300">
+              <span>Target 2030:</span>
+              <strong class="text-emerald-600 dark:text-emerald-400">2,270 MW</strong>
+            </div>
+            <div class="w-full bg-slate-200 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden">
+              <div class="bg-emerald-500 h-full rounded-full" style="width: 28%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 07: 500kV Supergrid Spine -->
+        <div class="flow-node pillar-card p-3.5 rounded-xl bg-slate-50/80 dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700/70 cursor-pointer hover:border-teal-500/60 transition-all space-y-2" data-node="6" data-category="GRID">
+          <div class="flex items-center justify-between font-mono text-[10px]">
+            <span class="text-rose-700 dark:text-rose-300 font-semibold">PILLAR 07 &middot; SUPERGRID</span>
+            <span class="text-slate-400 font-medium">$14.9B Capex</span>
+          </div>
+          <strong class="block text-xs font-semibold text-slate-800 dark:text-slate-200">500kV Supergrid Backbone Spine</strong>
+          <span class="block text-[11px] text-slate-500 dark:text-slate-400 leading-snug">15,888 km circuits, Circuit-3 Quảng Trạch &ndash; Phố Nối 519 km.</span>
+          <div class="space-y-1 font-mono text-[10px] pt-1.5 border-t border-slate-200/50 dark:border-slate-700/50">
+            <div class="flex justify-between text-slate-600 dark:text-slate-300">
+              <span>Wheeling Capacity:</span>
+              <strong class="text-rose-600 dark:text-rose-400">5,000 MW Northward</strong>
+            </div>
+            <div class="w-full bg-slate-200 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden">
+              <div class="bg-rose-500 h-full rounded-full" style="width: 100%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 08: ASEAN Grid Interties -->
+        <div class="flow-node pillar-card p-3.5 rounded-xl bg-slate-50/80 dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700/70 cursor-pointer hover:border-teal-500/60 transition-all space-y-2" data-node="7" data-category="GRID">
+          <div class="flex items-center justify-between font-mono text-[10px]">
+            <span class="text-violet-700 dark:text-violet-300 font-semibold">PILLAR 08 &middot; SUPERGRID</span>
+            <span class="text-slate-400 font-medium">$4.2B Capex</span>
+          </div>
+          <strong class="block text-xs font-semibold text-slate-800 dark:text-slate-200">Cross-Border ASEAN Grid</strong>
+          <span class="block text-[11px] text-slate-500 dark:text-slate-400 leading-snug">Monsoon 500kV Lao import and planned subsea HVDC link to Singapore.</span>
+          <div class="space-y-1 font-mono text-[10px] pt-1.5 border-t border-slate-200/50 dark:border-slate-700/50">
+            <div class="flex justify-between text-slate-600 dark:text-slate-300">
+              <span>Lao Clean Import:</span>
+              <strong class="text-violet-600 dark:text-violet-400">5,000 - 8,000 MW</strong>
+            </div>
+            <div class="w-full bg-slate-200 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden">
+              <div class="bg-violet-500 h-full rounded-full" style="width: 35%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 09: Smart Grid Automation -->
+        <div class="flow-node pillar-card p-3.5 rounded-xl bg-slate-50/80 dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700/70 cursor-pointer hover:border-teal-500/60 transition-all space-y-2" data-node="8" data-category="GRID">
+          <div class="flex items-center justify-between font-mono text-[10px]">
+            <span class="text-fuchsia-700 dark:text-fuchsia-300 font-semibold">PILLAR 09 &middot; SUPERGRID</span>
+            <span class="text-slate-400 font-medium">$3.8B Capex</span>
+          </div>
+          <strong class="block text-xs font-semibold text-slate-800 dark:text-slate-200">Smart Grid SCADA &amp; Automation</strong>
+          <span class="block text-[11px] text-slate-500 dark:text-slate-400 leading-snug">100% digital substations IEC 61850 &amp; 2,000 MW Demand-Side Response.</span>
+          <div class="space-y-1 font-mono text-[10px] pt-1.5 border-t border-slate-200/50 dark:border-slate-700/50">
+            <div class="flex justify-between text-slate-600 dark:text-slate-300">
+              <span>Digital Automation:</span>
+              <strong class="text-fuchsia-600 dark:text-fuchsia-400">1,915 Unmanned TBA</strong>
+            </div>
+            <div class="w-full bg-slate-200 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden">
+              <div class="bg-fuchsia-500 h-full rounded-full" style="width: 65%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 10: DPPA Wheeling Mechanism -->
+        <div class="flow-node pillar-card p-3.5 rounded-xl bg-slate-50/80 dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700/70 cursor-pointer hover:border-teal-500/60 transition-all space-y-2" data-node="9" data-category="MARKET">
+          <div class="flex items-center justify-between font-mono text-[10px]">
+            <span class="text-emerald-700 dark:text-emerald-300 font-semibold">PILLAR 10 &middot; MARKET</span>
+            <span class="text-slate-400 font-medium">Private Wheeling</span>
+          </div>
+          <strong class="block text-xs font-semibold text-slate-800 dark:text-slate-200">Direct PPA (DPPA Mechanism)</strong>
+          <span class="block text-[11px] text-slate-500 dark:text-slate-400 leading-snug">Decree 80/2024 private wire and national grid CfD wheeling for RE100.</span>
+          <div class="space-y-1 font-mono text-[10px] pt-1.5 border-t border-slate-200/50 dark:border-slate-700/50">
+            <div class="flex justify-between text-slate-600 dark:text-slate-300">
+              <span>Statutory Basis:</span>
+              <strong class="text-emerald-600 dark:text-emerald-400">Decree 80/2024/NĐ-CP</strong>
+            </div>
+            <div class="w-full bg-slate-200 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden">
+              <div class="bg-emerald-500 h-full rounded-full" style="width: 90%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 11: Competitive Electricity Market (VWEM/VREM) -->
+        <div class="flow-node pillar-card p-3.5 rounded-xl bg-slate-50/80 dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700/70 cursor-pointer hover:border-teal-500/60 transition-all space-y-2" data-node="10" data-category="MARKET">
+          <div class="flex items-center justify-between font-mono text-[10px]">
+            <span class="text-amber-700 dark:text-amber-300 font-semibold">PILLAR 11 &middot; MARKET</span>
+            <span class="text-slate-400 font-medium">Spot Clearing</span>
+          </div>
+          <strong class="block text-xs font-semibold text-slate-800 dark:text-slate-200">Wholesale Market (VWEM/VREM)</strong>
+          <span class="block text-[11px] text-slate-500 dark:text-slate-400 leading-snug">Spot market clearing (SMP + CAN) and roadmap to competitive retail choice.</span>
+          <div class="space-y-1 font-mono text-[10px] pt-1.5 border-t border-slate-200/50 dark:border-slate-700/50">
+            <div class="flex justify-between text-slate-600 dark:text-slate-300">
+              <span>Full Market Clearing:</span>
+              <strong class="text-amber-600 dark:text-amber-400">SMP + CAN (~$0.073)</strong>
+            </div>
+            <div class="w-full bg-slate-200 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden">
+              <div class="bg-amber-500 h-full rounded-full" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 12: Green Hydrogen & Power-to-X -->
+        <div class="flow-node pillar-card p-3.5 rounded-xl bg-slate-50/80 dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700/70 cursor-pointer hover:border-teal-500/60 transition-all space-y-2" data-node="11" data-category="MARKET">
+          <div class="flex items-center justify-between font-mono text-[10px]">
+            <span class="text-teal-700 dark:text-teal-300 font-semibold">PILLAR 12 &middot; NET-ZERO</span>
+            <span class="text-slate-400 font-medium">$6.2B Capex</span>
+          </div>
+          <strong class="block text-xs font-semibold text-slate-800 dark:text-slate-200">Green Hydrogen &amp; Power-to-X</strong>
+          <span class="block text-[11px] text-slate-500 dark:text-slate-400 leading-snug">Green hydrogen, ammonia co-firing, green steel, and maritime exports.</span>
+          <div class="space-y-1 font-mono text-[10px] pt-1.5 border-t border-slate-200/50 dark:border-slate-700/50">
+            <div class="flex justify-between text-slate-600 dark:text-slate-300">
+              <span>Target 2030:</span>
+              <strong class="text-teal-600 dark:text-teal-400">100k - 500k t/yr</strong>
+            </div>
+            <div class="w-full bg-slate-200 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden">
+              <div class="bg-teal-500 h-full rounded-full" style="width: 15%"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Real-Time Node Inspector Drawer (Syncs with all 12 pillars) -->
+      <div id="nodeInspectorPanel" class="p-4 sm:p-4.5 rounded-xl bg-slate-50/90 dark:bg-slate-800/60 border border-slate-200/70 dark:border-slate-700/60 transition-all flex flex-col lg:flex-row lg:items-center justify-between gap-3 shadow-xs">
+        <div class="space-y-1 flex-1 min-w-0">
           <div class="flex items-center gap-2">
-            <span id="inspectorBadge" class="font-mono text-[9px] uppercase font-semibold text-slate-700 dark:text-slate-300 bg-slate-200/70 dark:bg-slate-700/70 px-2 py-0.5 rounded">
-              NODE 01 &middot; STATUTORY ZONING
+            <span id="inspectorBadge" class="font-mono text-[9px] uppercase font-semibold text-blue-700 dark:text-blue-300 bg-blue-100 dark:bg-blue-900/40 px-2 py-0.5 rounded border border-blue-200 dark:border-blue-800/40">
+              PILLAR 01 &middot; CLEAN GENERATION
             </span>
             <span id="inspectorStatute" class="font-mono text-[10px] text-slate-500 dark:text-slate-400">
-              Statutory Basis: PDP8 Decision 500/QD-TTg
+              Statutory Basis: Decision 500/QĐ-TTg &middot; Marine Spatial Plan
             </span>
           </div>
-          <h3 id="inspectorTitle" class="text-sm font-semibold text-slate-800 dark:text-slate-200">
-            PDP8 Clean Energy &amp; Power Generation Statutory Quotas
+          <h3 id="inspectorTitle" class="text-sm sm:text-base font-bold text-slate-800 dark:text-slate-100">
+            Offshore Wind Supergrid &amp; Marine Spatial Corridors
           </h3>
           <p id="inspectorDesc" class="text-xs text-slate-600 dark:text-slate-400 max-w-3xl leading-relaxed">
-            Provincial resource allocation allocating 107.5 GW total clean capacity across onshore/offshore wind, utility-scale solar farms, biomass, and pumped-storage hydro installations.
+            Deployment of utility-scale marine wind clusters across South Central Vietnam (Bình Thuận, Ninh Thuận) and Northern Gulf of Tonkin to anchor baseload green power.
           </p>
         </div>
 
         <div class="flex items-center gap-3 shrink-0">
           <div class="text-right font-mono text-[11px] pr-2">
-            <span class="block text-slate-500 dark:text-slate-400 text-[10px]">Key Indicator</span>
-            <strong id="inspectorMetric" class="text-slate-800 dark:text-slate-200 text-xs font-semibold">107.5 GW Pipeline</strong>
+            <span class="block text-slate-500 dark:text-slate-400 text-[10px]">2030 Mandate</span>
+            <strong id="inspectorMetric" class="text-slate-900 dark:text-slate-100 text-xs sm:text-sm font-bold">6,000 MW Target ($18.5B)</strong>
           </div>
-          <a id="inspectorLaunchBtn" href="https://energy.renewablevietnam.com/" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 dark:bg-slate-700 dark:hover:bg-slate-600 text-white font-mono text-xs font-medium shadow-xs transition-all flex items-center gap-1.5">
-            <span>Explore Gateway</span>
+          <a id="inspectorLaunchBtn" href="https://energy.renewablevietnam.com/" class="px-3.5 py-2 rounded-lg bg-teal-600 hover:bg-teal-500 text-white font-mono text-xs font-semibold shadow-xs transition-all flex items-center gap-1.5">
+            <span>Launch Gateway</span>
             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 2: MULTI-GRAPH INTERACTIVE VISUALIZATION SUITE -->
-    <section class="space-y-4">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-700/50 pb-2">
-        <div>
+        <!-- SECTION 2: 10-MODULE INSTITUTIONAL VISUAL TELEMETRY SUITE -->
+    <section class="space-y-4" id="visualTelemetrySuiteSection">
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-700/50 pb-2">
+        <div class="space-y-0.5 flex-1 min-w-0">
           <h2 class="text-xs sm:text-sm font-semibold uppercase tracking-wider text-slate-800 dark:text-slate-200 flex items-center gap-2">
-            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-            Interactive Graph Suite &amp; Transition Telemetry
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            Comprehensive 10-Module Visual Telemetry &amp; Analytical Suite
           </h2>
           <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
-            Interactive multi-horizon projections, statutory technology slices, and regional 5-axis competitiveness.
+            Quantitative models covering long-term net-zero trajectories, merit-order dispatch curves, capital expenditure allocations, grid voltage hierarchies, wholesale market clearing, and territorial power balance.
           </p>
         </div>
-        <span class="font-mono text-[10px] text-slate-500 dark:text-slate-400">Horizon: 2026&ndash;2050 Net Zero</span>
+        <div class="flex items-center gap-2 font-mono text-[10px]">
+          <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 font-semibold">10 Active Visualizations</span>
+          <span class="text-slate-400">Horizon: 2026&ndash;2050</span>
+        </div>
       </div>
 
-      <!-- 4 Compact Telemetry Gauges -->
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3">
+      <!-- 4 Compact Telemetry KPI Gauges -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3 font-mono">
         <div class="bg-white dark:bg-slate-800/80 border border-slate-200/70 dark:border-slate-700/60 rounded-xl p-3 shadow-xs">
-          <div class="flex justify-between items-baseline font-mono text-[10px]">
+          <div class="flex justify-between items-baseline text-[10px]">
             <span class="text-slate-500 dark:text-slate-400">PDP8 RE Realization</span>
             <strong class="text-slate-800 dark:text-slate-200 font-semibold text-xs">31.5%</strong>
           </div>
           <div class="w-full bg-slate-100 dark:bg-slate-700/60 h-1.5 rounded-full mt-2 overflow-hidden">
             <div class="bg-teal-600 dark:bg-teal-400 h-full rounded-full" style="width: 31.5%"></div>
           </div>
-          <span class="block text-[9px] font-mono text-slate-500 dark:text-slate-400 mt-1.5">14.8 GW / 47.0 GW Target</span>
+          <span class="block text-[9px] text-slate-500 dark:text-slate-400 mt-1.5">14.8 GW / 47.0 GW Target</span>
         </div>
 
         <div class="bg-white dark:bg-slate-800/80 border border-slate-200/70 dark:border-slate-700/60 rounded-xl p-3 shadow-xs">
-          <div class="flex justify-between items-baseline font-mono text-[10px]">
+          <div class="flex justify-between items-baseline text-[10px]">
             <span class="text-slate-500 dark:text-slate-400">Decree 80 DPPA</span>
             <strong class="text-slate-800 dark:text-slate-200 font-semibold text-xs">100%</strong>
           </div>
           <div class="w-full bg-slate-100 dark:bg-slate-700/60 h-1.5 rounded-full mt-2 overflow-hidden">
             <div class="bg-teal-600 dark:bg-teal-400 h-full rounded-full" style="width: 100%"></div>
           </div>
-          <span class="block text-[9px] font-mono text-slate-500 dark:text-slate-400 mt-1.5">Statutory Clearance Active</span>
+          <span class="block text-[9px] text-slate-500 dark:text-slate-400 mt-1.5">Statutory Clearance Active</span>
         </div>
 
         <div class="bg-white dark:bg-slate-800/80 border border-slate-200/70 dark:border-slate-700/60 rounded-xl p-3 shadow-xs">
-          <div class="flex justify-between items-baseline font-mono text-[10px]">
+          <div class="flex justify-between items-baseline text-[10px]">
             <span class="text-slate-500 dark:text-slate-400">Expressway EV Fast</span>
             <strong class="text-slate-800 dark:text-slate-200 font-semibold text-xs">95.2%</strong>
           </div>
           <div class="w-full bg-slate-100 dark:bg-slate-700/60 h-1.5 rounded-full mt-2 overflow-hidden">
             <div class="bg-amber-600 dark:bg-amber-400 h-full rounded-full" style="width: 95.2%"></div>
           </div>
-          <span class="block text-[9px] font-mono text-slate-500 dark:text-slate-400 mt-1.5">Route 1A &amp; CT.01 Corridors</span>
+          <span class="block text-[9px] text-slate-500 dark:text-slate-400 mt-1.5">Route 1A &amp; CT.01 Corridors</span>
         </div>
 
         <div class="bg-white dark:bg-slate-800/80 border border-slate-200/70 dark:border-slate-700/60 rounded-xl p-3 shadow-xs">
-          <div class="flex justify-between items-baseline font-mono text-[10px]">
+          <div class="flex justify-between items-baseline text-[10px]">
             <span class="text-slate-500 dark:text-slate-400">Eco-Park ESG Share</span>
             <strong class="text-slate-800 dark:text-slate-200 font-semibold text-xs">42.0%</strong>
           </div>
           <div class="w-full bg-slate-100 dark:bg-slate-700/60 h-1.5 rounded-full mt-2 overflow-hidden">
             <div class="bg-blue-600 dark:bg-blue-400 h-full rounded-full" style="width: 42.0%"></div>
           </div>
-          <span class="block text-[9px] font-mono text-slate-500 dark:text-slate-400 mt-1.5">71 of 168 Hubs Certified</span>
+          <span class="block text-[9px] text-slate-500 dark:text-slate-400 mt-1.5">71 of 168 Hubs Certified</span>
         </div>
       </div>
 
-      <!-- INTERACTIVE GRAPH ROW 1: TRAJECTORY AREA GRAPH & PDP8 MIX DOUGHNUT -->
+      <!-- VISUAL ROW 1: TRAJECTORY AREA & PDP8 TECHNOLOGY MIX (CHARTS 01 & 02) -->
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
         
-        <!-- Graph 2: 2025-2050 Net Zero Transition Trajectory (7 cols) -->
+        <!-- Visual 01: 2025-2050 Net Zero Transition Trajectory (7 cols) -->
         <div class="lg:col-span-7 bg-white dark:bg-slate-800/80 border border-slate-200/70 dark:border-slate-700/60 rounded-2xl p-4 sm:p-5 shadow-xs flex flex-col justify-between">
           <div>
             <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-2.5 mb-2.5 border-b border-slate-100 dark:border-slate-700/50 gap-2">
               <div>
+                <span class="font-mono text-[9px] uppercase font-bold text-teal-600 dark:text-teal-400 block">VISUAL 01 &middot; MULTI-HORIZON TRAJECTORY</span>
                 <span class="text-xs font-semibold text-slate-800 dark:text-slate-200">Vietnam Clean Energy Trajectory (2020&ndash;2050)</span>
                 <span class="text-[10px] text-slate-500 dark:text-slate-400 block">Long-term transition path from baseline to 500 GW Net Zero</span>
               </div>
-              <!-- Interactive metric toggles -->
               <div class="flex items-center gap-1 font-mono text-[10px] bg-slate-100 dark:bg-slate-700/50 p-0.5 rounded-lg border border-slate-200/60 dark:border-slate-600/50 self-start sm:self-auto">
                 <button id="btnTrajectoryCapacity" class="px-2 py-0.5 rounded bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-medium shadow-xs">GW</button>
                 <button id="btnTrajectoryShare" class="px-2 py-0.5 rounded text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200">RE %</button>
@@ -412,12 +596,13 @@
           </div>
         </div>
 
-        <!-- Graph 3: PDP8 Statutory Capacity Breakdown (5 cols) -->
+        <!-- Visual 02: PDP8 Statutory Capacity Breakdown (5 cols) -->
         <div class="lg:col-span-5 bg-white dark:bg-slate-800/80 border border-slate-200/70 dark:border-slate-700/60 rounded-2xl p-4 sm:p-5 shadow-xs flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between pb-2.5 mb-2.5 border-b border-slate-100 dark:border-slate-700/50">
               <div>
-                <span class="text-xs font-semibold text-slate-800 dark:text-slate-200">PDP8 Technology Mix (2030)</span>
+                <span class="font-mono text-[9px] uppercase font-bold text-blue-600 dark:text-blue-400 block">VISUAL 02 &middot; STATUTORY ALLOCATION</span>
+                <span class="text-xs font-semibold text-slate-800 dark:text-slate-200">PDP8 Technology Quota Mix (2030)</span>
                 <span class="text-[10px] text-slate-500 dark:text-slate-400 block">Statutory allocation across generation archetypes</span>
               </div>
               <span class="font-mono text-[10px] text-slate-700 dark:text-slate-300 font-semibold bg-slate-100 dark:bg-slate-700/50 px-2 py-0.5 rounded border border-slate-200/60 dark:border-slate-600/50">
@@ -446,15 +631,16 @@
 
       </div>
 
-      <!-- INTERACTIVE GRAPH ROW 2: 5-AXIS RADAR GRAPH & EV CHARGING VELOCITY -->
+      <!-- VISUAL ROW 2: 5-AXIS RADAR & EV CHARGING VELOCITY (CHARTS 03 & 04) -->
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
 
-        <!-- Graph 4: 5-Axis Regional Clean Energy Competitiveness Radar (6 cols) -->
+        <!-- Visual 03: 5-Axis Regional Clean Energy Competitiveness Radar (6 cols) -->
         <div class="lg:col-span-6 bg-white dark:bg-slate-800/80 border border-slate-200/70 dark:border-slate-700/60 rounded-2xl p-4 sm:p-5 shadow-xs flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between pb-2.5 mb-2 border-b border-slate-100 dark:border-slate-700/50">
               <div>
-                <span class="text-xs font-semibold text-slate-800 dark:text-slate-200">5-Axis Regional Competitiveness</span>
+                <span class="font-mono text-[9px] uppercase font-bold text-amber-600 dark:text-amber-400 block">VISUAL 03 &middot; REGIONAL VECTOR ANALYSIS</span>
+                <span class="text-xs font-semibold text-slate-800 dark:text-slate-200">5-Axis Regional Clean Competitiveness</span>
                 <span class="text-[10px] text-slate-500 dark:text-slate-400 block">South vs North vs Central across 5 infrastructure vectors</span>
               </div>
               <span class="font-mono text-[10px] text-slate-700 dark:text-slate-300 font-semibold bg-slate-100 dark:bg-slate-700/50 px-2 py-0.5 rounded border border-slate-200/60 dark:border-slate-600/50">
@@ -472,12 +658,13 @@
           </div>
         </div>
 
-        <!-- Graph 5: National EV Charging Infrastructure Footprint (6 cols) -->
+        <!-- Visual 04: National EV Charging Infrastructure Footprint (6 cols) -->
         <div class="lg:col-span-6 bg-white dark:bg-slate-800/80 border border-slate-200/70 dark:border-slate-700/60 rounded-2xl p-4 sm:p-5 shadow-xs flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between pb-2.5 mb-2 border-b border-slate-100 dark:border-slate-700/50">
               <div>
-                <span class="text-xs font-semibold text-slate-800 dark:text-slate-200">EV Charging Network Velocity</span>
+                <span class="font-mono text-[9px] uppercase font-bold text-emerald-600 dark:text-emerald-400 block">VISUAL 04 &middot; E-MOBILITY DENSITY</span>
+                <span class="text-xs font-semibold text-slate-800 dark:text-slate-200">EV Charging Network Velocity &amp; CPO Slices</span>
                 <span class="text-[10px] text-slate-500 dark:text-slate-400 block">22,055+ verified ports across operators &amp; charging tiers</span>
               </div>
               <span class="font-mono text-[10px] text-slate-700 dark:text-slate-300 font-semibold bg-slate-100 dark:bg-slate-700/50 px-2 py-0.5 rounded border border-slate-200/60 dark:border-slate-600/50">
@@ -505,6 +692,225 @@
               <span class="text-slate-500 dark:text-slate-400 block">DC Fast &ge;60kW</span>
               <strong class="text-teal-700 dark:text-teal-300 font-medium">13,674</strong>
             </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- VISUAL ROW 3: 24H LOAD CURVE & CAPEX ALLOCATION (CHARTS 05 & 06) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
+
+        <!-- Visual 05: National 24-Hour Load Curve & Merit-Order Dispatch (7 cols) -->
+        <div class="lg:col-span-7 bg-white dark:bg-slate-800/80 border border-slate-200/70 dark:border-slate-700/60 rounded-2xl p-4 sm:p-5 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between pb-2.5 mb-2 border-b border-slate-100 dark:border-slate-700/50">
+              <div>
+                <span class="font-mono text-[9px] uppercase font-bold text-rose-600 dark:text-rose-400 block">VISUAL 05 &middot; MERIT-ORDER DISPATCH</span>
+                <span class="text-xs font-semibold text-slate-800 dark:text-slate-200">National 24-Hour Load Curve &amp; Merit-Order Dispatch</span>
+                <span class="text-[10px] text-slate-500 dark:text-slate-400 block">Simulating solar midday belly, wind evening ramp, and hydro peak shaving</span>
+              </div>
+              <span class="font-mono text-[10px] text-rose-600 dark:text-rose-400 font-semibold bg-rose-50 dark:bg-rose-950/40 px-2 py-0.5 rounded border border-rose-200 dark:border-rose-800/40">
+                Pmax 48.5 GW
+              </span>
+            </div>
+            <div class="relative h-64">
+              <canvas id="dailyDispatchChart"></canvas>
+            </div>
+          </div>
+          <div class="flex items-center justify-between text-[10px] font-mono text-slate-500 dark:text-slate-400 pt-2.5 border-t border-slate-100 dark:border-slate-700/50">
+            <span>Midday Solar: Peak 16.5 GW</span>
+            <span>Evening Peak (18-20h): 48.5 GW</span>
+            <span>Night Baseload: 28.0 GW</span>
+          </div>
+        </div>
+
+        <!-- Visual 06: PDP8 Statutory Capital Expenditure (CapEx) Allocation (5 cols) -->
+        <div class="lg:col-span-5 bg-white dark:bg-slate-800/80 border border-slate-200/70 dark:border-slate-700/60 rounded-2xl p-4 sm:p-5 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between pb-2.5 mb-2 border-b border-slate-100 dark:border-slate-700/50">
+              <div>
+                <span class="font-mono text-[9px] uppercase font-bold text-violet-600 dark:text-violet-400 block">VISUAL 06 &middot; CAPITAL EXPENDITURE ALLOCATION</span>
+                <span class="text-xs font-semibold text-slate-800 dark:text-slate-200">PDP8 Statutory CapEx Allocation</span>
+                <span class="text-[10px] text-slate-500 dark:text-slate-400 block">$134.7B statutory capital requirements through 2030</span>
+              </div>
+              <span class="font-mono text-[10px] text-violet-600 dark:text-violet-400 font-semibold bg-violet-50 dark:bg-violet-950/40 px-2 py-0.5 rounded border border-violet-200 dark:border-violet-800/40">
+                $134.7B Total
+              </span>
+            </div>
+            <div class="relative h-64 flex items-center justify-center">
+              <canvas id="capexAllocationChart"></canvas>
+            </div>
+          </div>
+          <div class="grid grid-cols-3 gap-1.5 text-center font-mono text-[9px] pt-2.5 border-t border-slate-100 dark:border-slate-700/50">
+            <div class="p-1 rounded bg-slate-50 dark:bg-slate-800/50">
+              <span class="text-slate-500 dark:text-slate-400 block">Gas &amp; LNG</span>
+              <strong class="text-slate-700 dark:text-slate-300">$31.4B</strong>
+            </div>
+            <div class="p-1 rounded bg-slate-50 dark:bg-slate-800/50">
+              <span class="text-slate-500 dark:text-slate-400 block">Onshore Wind</span>
+              <strong class="text-teal-700 dark:text-teal-300">$26.2B</strong>
+            </div>
+            <div class="p-1 rounded bg-slate-50 dark:bg-slate-800/50">
+              <span class="text-slate-500 dark:text-slate-400 block">Offshore Wind</span>
+              <strong class="text-blue-700 dark:text-blue-300">$18.5B</strong>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- VISUAL ROW 4: SUBSTATION HIERARCHY & MARKET CLEARING PRICES (CHARTS 07 & 08) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
+
+        <!-- Visual 07: Substation Voltage & Headroom Hierarchy (6 cols) -->
+        <div class="lg:col-span-6 bg-white dark:bg-slate-800/80 border border-slate-200/70 dark:border-slate-700/60 rounded-2xl p-4 sm:p-5 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between pb-2.5 mb-2 border-b border-slate-100 dark:border-slate-700/50">
+              <div>
+                <span class="font-mono text-[9px] uppercase font-bold text-fuchsia-600 dark:text-fuchsia-400 block">VISUAL 07 &middot; GRID TOPOLOGY HIERARCHY</span>
+                <span class="text-xs font-semibold text-slate-800 dark:text-slate-200">Substation Voltage &amp; Transformer Headroom</span>
+                <span class="text-[10px] text-slate-500 dark:text-slate-400 block">1,915 national substations: Installed MVA vs available headroom</span>
+              </div>
+              <span class="font-mono text-[10px] text-slate-700 dark:text-slate-300 font-semibold bg-slate-100 dark:bg-slate-700/50 px-2 py-0.5 rounded border border-slate-200/60 dark:border-slate-600/50">
+                1,915 Units
+              </span>
+            </div>
+            <div class="relative h-64">
+              <canvas id="substationHierarchyChart"></canvas>
+            </div>
+          </div>
+          <div class="flex items-center justify-between text-[10px] font-mono text-slate-500 dark:text-slate-400 pt-2.5 border-t border-slate-100 dark:border-slate-700/50">
+            <span>500kV: 8,700 MVA Peak Hub</span>
+            <span>220kV: 27,007 km Circuits</span>
+            <span>110kV: Industrial Feeders</span>
+          </div>
+        </div>
+
+        <!-- Visual 08: Wholesale Market (VWEM) Price Clearing Dynamics (6 cols) -->
+        <div class="lg:col-span-6 bg-white dark:bg-slate-800/80 border border-slate-200/70 dark:border-slate-700/60 rounded-2xl p-4 sm:p-5 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between pb-2.5 mb-2 border-b border-slate-100 dark:border-slate-700/50">
+              <div>
+                <span class="font-mono text-[9px] uppercase font-bold text-amber-600 dark:text-amber-400 block">VISUAL 08 &middot; MARKET CLEARING DYNAMICS</span>
+                <span class="text-xs font-semibold text-slate-800 dark:text-slate-200">VWEM Spot Clearing vs DPPA vs TOU Retail</span>
+                <span class="text-[10px] text-slate-500 dark:text-slate-400 block">System Marginal Price (SMP) dynamics vs industrial retail tariff schedules</span>
+              </div>
+              <span class="font-mono text-[10px] text-emerald-600 dark:text-emerald-400 font-semibold bg-emerald-50 dark:bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-200 dark:border-emerald-800/40">
+                FMP 1,825 VND
+              </span>
+            </div>
+            <div class="relative h-64">
+              <canvas id="marketClearingChart"></canvas>
+            </div>
+          </div>
+          <div class="flex items-center justify-between text-[10px] font-mono text-slate-500 dark:text-slate-400 pt-2.5 border-t border-slate-100 dark:border-slate-700/50">
+            <span>Off-Peak: 1,100 VND</span>
+            <span>Normal: 1,685 VND</span>
+            <span>Peak TOU: 3,171 VND</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- VISUAL ROW 5: PROVINCIAL CAPACITY & SYSTEMIC ENERGY FLOW (CHARTS 09 & 10) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
+
+        <!-- Visual 09: Top 10 Energy Provinces: Clean Capacity vs Eco-Parks (6 cols) -->
+        <div class="lg:col-span-6 bg-white dark:bg-slate-800/80 border border-slate-200/70 dark:border-slate-700/60 rounded-2xl p-4 sm:p-5 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between pb-2.5 mb-2 border-b border-slate-100 dark:border-slate-700/50">
+              <div>
+                <span class="font-mono text-[9px] uppercase font-bold text-cyan-600 dark:text-cyan-400 block">VISUAL 09 &middot; TERRITORIAL CLUSTERING</span>
+                <span class="text-xs font-semibold text-slate-800 dark:text-slate-200">Top 10 Energy Provinces: Capacity vs Eco-Parks</span>
+                <span class="text-[10px] text-slate-500 dark:text-slate-400 block">Correlating clean generation (MW) with industrial manufacturing hubs</span>
+              </div>
+              <span class="font-mono text-[10px] text-cyan-600 dark:text-cyan-400 font-semibold bg-cyan-50 dark:bg-cyan-950/40 px-2 py-0.5 rounded border border-cyan-200 dark:border-cyan-800/40">
+                10 Strategic Provinces
+              </span>
+            </div>
+            <div class="relative h-64">
+              <canvas id="topProvincesEcoparkChart"></canvas>
+            </div>
+          </div>
+          <div class="flex items-center justify-between text-[10px] font-mono text-slate-500 dark:text-slate-400 pt-2.5 border-t border-slate-100 dark:border-slate-700/50">
+            <span>Top Generation: Ninh Thuận &amp; Bình Thuận</span>
+            <span>Top Demand: Bình Dương &amp; Đồng Nai</span>
+          </div>
+        </div>
+
+        <!-- Visual 10: End-to-End Systemic Energy Transition Flow Diagram (6 cols) -->
+        <div class="lg:col-span-6 bg-white dark:bg-slate-800/80 border border-slate-200/70 dark:border-slate-700/60 rounded-2xl p-4 sm:p-5 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between pb-2.5 mb-2 border-b border-slate-100 dark:border-slate-700/50">
+              <div>
+                <span class="font-mono text-[9px] uppercase font-bold text-teal-600 dark:text-teal-400 block">VISUAL 10 &middot; SYSTEMIC POWER BALANCE</span>
+                <span class="text-xs font-semibold text-slate-800 dark:text-slate-200">Systemic Energy Flow &amp; Power Balance Pipeline</span>
+                <span class="text-[10px] text-slate-500 dark:text-slate-400 block">Primary supply sources &rarr; 500kV supergrid transmission &rarr; sectoral demand sinks</span>
+              </div>
+              <span class="font-mono text-[10px] text-teal-600 dark:text-teal-400 font-semibold bg-teal-50 dark:bg-teal-950/40 px-2 py-0.5 rounded border border-teal-200 dark:border-teal-800/40">
+                280.5 TWh Baseline
+              </span>
+            </div>
+
+            <!-- Directional Flow Diagram Canvas -->
+            <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200/60 dark:border-slate-700/50 font-mono text-xs space-y-2.5 my-2">
+              <div class="grid grid-cols-3 gap-2 text-center text-[10px]">
+                <div class="p-2 rounded-lg bg-white dark:bg-slate-800 border border-slate-200/60 dark:border-slate-700/60 space-y-1">
+                  <span class="text-slate-400 uppercase text-[9px] font-bold block">1. Generation Inputs</span>
+                  <div class="text-xs font-bold text-teal-600 dark:text-teal-400">84.0 GW Installed</div>
+                  <span class="text-[9px] text-slate-500 block">Solar, Wind, Hydro, LNG</span>
+                </div>
+                <div class="p-2 rounded-lg bg-white dark:bg-slate-800 border border-slate-200/60 dark:border-slate-700/60 space-y-1">
+                  <span class="text-slate-400 uppercase text-[9px] font-bold block">2. Supergrid Wheel</span>
+                  <div class="text-xs font-bold text-rose-600 dark:text-rose-400">65,566 km Circuits</div>
+                  <span class="text-[9px] text-slate-500 block">500kV/220kV 3.2 GW Flow</span>
+                </div>
+                <div class="p-2 rounded-lg bg-white dark:bg-slate-800 border border-slate-200/60 dark:border-slate-700/60 space-y-1">
+                  <span class="text-slate-400 uppercase text-[9px] font-bold block">3. Demand Sinks</span>
+                  <div class="text-xs font-bold text-blue-600 dark:text-blue-400">100% Allocation</div>
+                  <span class="text-[9px] text-slate-500 block">Industry, EVs, Urban</span>
+                </div>
+              </div>
+
+              <!-- Stream Vector Progressions -->
+              <div class="space-y-1.5 pt-1 text-[10px]">
+                <div class="flex justify-between">
+                  <span class="text-slate-600 dark:text-slate-400 font-semibold">Industrial Clean Manufacturing (RE100)</span>
+                  <strong class="text-teal-600 dark:text-teal-400">54.2% (~152 TWh)</strong>
+                </div>
+                <div class="w-full bg-slate-200 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden">
+                  <div class="bg-teal-500 h-full rounded-full" style="width: 54%"></div>
+                </div>
+
+                <div class="flex justify-between pt-1">
+                  <span class="text-slate-600 dark:text-slate-400 font-semibold">Commercial Buildings &amp; Urban Load</span>
+                  <strong class="text-indigo-600 dark:text-indigo-400">35.8% (~100 TWh)</strong>
+                </div>
+                <div class="w-full bg-slate-200 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden">
+                  <div class="bg-indigo-500 h-full rounded-full" style="width: 36%"></div>
+                </div>
+
+                <div class="flex justify-between pt-1">
+                  <span class="text-slate-600 dark:text-slate-400 font-semibold">Electric Mobility &amp; Charging Fleet</span>
+                  <strong class="text-emerald-600 dark:text-emerald-400">6.5% (~18 TWh)</strong>
+                </div>
+                <div class="w-full bg-slate-200 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden">
+                  <div class="bg-emerald-500 h-full rounded-full" style="width: 7%"></div>
+                </div>
+
+                <div class="flex justify-between pt-1">
+                  <span class="text-slate-600 dark:text-slate-400 font-semibold">Green Hydrogen Synthesis &amp; Export</span>
+                  <strong class="text-violet-600 dark:text-violet-400">3.5% (~10 TWh)</strong>
+                </div>
+                <div class="w-full bg-slate-200 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden">
+                  <div class="bg-violet-500 h-full rounded-full" style="width: 4%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-between text-[10px] font-mono text-slate-500 dark:text-slate-400 pt-2.5 border-t border-slate-100 dark:border-slate-700/50">
+            <span>Transmission Loss: 6.25%</span>
+            <span>Decree 80 Direct Wheeling Active</span>
           </div>
         </div>
 
@@ -846,50 +1252,139 @@
     let pdp8ChartInstance = null;
     let regionalRadarChartInstance = null;
     let evChartInstance = null;
+    let dailyDispatchChartInstance = null;
+    let capexAllocationChartInstance = null;
+    let substationHierarchyChartInstance = null;
+    let marketClearingChartInstance = null;
+    let topProvincesEcoparkChartInstance = null;
 
-    // Node Inspector Data
+        // The 12 Strategic Pillars of Vietnam Energy Transition Data
     const nodeDetails = [
       {
-        badge: "NODE 01 &middot; STATUTORY ZONING",
-        statute: "Statutory Basis: PDP8 Decision 500/QD-TTg",
-        title: "Clean Energy & Power Generation Statutory Quotas",
-        desc: "Provincial resource allocation allocating 107.5 GW total clean capacity across onshore/offshore wind, utility-scale solar farms, biomass, and pumped-storage hydro installations.",
-        metric: "107.5 GW Pipeline",
+        badge: "PILLAR 01 &middot; CLEAN GENERATION",
+        statute: "Statutory Basis: Decision 500/QĐ-TTg &middot; Marine Spatial Plan",
+        title: "Offshore Wind Supergrid & Marine Spatial Corridors",
+        desc: "Deployment of utility-scale marine wind clusters across South Central Vietnam (Bình Thuận, Ninh Thuận) and Northern Gulf of Tonkin to anchor baseload green power.",
+        metric: "6,000 MW ($18.5B)",
         url: "https://energy.renewablevietnam.com/"
       },
       {
-        badge: "NODE 02 &middot; STATUTORY PERMITTING",
-        statute: "Statutory Basis: Investment Law 2020 & Land Law 2024",
-        title: "4-Tier Permitting Critical Path Method (CPM) Due Diligence",
-        desc: "30+ statutory CPM milestones: in-principle investment approval, land lease allocation, Environmental Impact Assessment (EIA), and fire protection (PCCC) validation.",
-        metric: "30+ CPM Milestones",
-        url: "https://legal.renewablevietnam.com/"
-      },
-      {
-        badge: "NODE 03 &middot; TRANSMISSION INTERTIE",
-        statute: "Statutory Basis: Law on Electricity 2024 & EVN Dispatch Code",
-        title: "High-Voltage 500kV/220kV Grid Interconnection & Loop",
-        desc: "Substation proximity buffers, intertie agreements, N-1 contingency modeling, and curtailment dispatch simulations along the North-South 500kV backbone.",
-        metric: "500kV / 220kV Backbone",
+        badge: "PILLAR 02 &middot; CLEAN GENERATION",
+        statute: "Statutory Basis: Decision 500/QĐ-TTg Table 1",
+        title: "Onshore & Nearshore Wind Resource Corridors",
+        desc: "Accelerated wind development across Central Highlands (Gia Lai, Đắk Lắk) and Mekong Delta coastline (Bạc Liêu, Sóc Trăng, Bến Tre, Trà Vinh).",
+        metric: "21,880 MW ($26.2B)",
         url: "https://energy.renewablevietnam.com/"
       },
       {
-        badge: "NODE 04 &middot; INDUSTRIAL OFFTAKE",
-        statute: "Statutory Basis: Decree 80/2024/ND-CP DPPA Wheeling",
-        title: "Direct Power Purchase Agreements (DPPA) & RE100 Siting",
-        desc: "Decree 80 bilateral wheeling mechanisms connecting clean generators to multinational manufacturing off-takers across 168 cataloged Tier-1 eco-industrial parks.",
-        metric: "5,655 MWp Rooftop",
+        badge: "PILLAR 03 &middot; CLEAN GENERATION",
+        statute: "Statutory Basis: Decree 135/2024/NĐ-CP (Self-Consumption)",
+        title: "Utility Solar PV & Distributed Rooftop (RTS)",
+        desc: "Consolidating centralized solar farms with nationwide self-consumption rooftop solar for 50% of residential and office structures, paired with industrial park net-metering.",
+        metric: "12,836 MW + RTS ($14.1B)",
         url: "https://industrial.renewablevietnam.com/"
       },
       {
-        badge: "NODE 05 &middot; E-MOBILITY CORRIDORS",
-        statute: "Statutory Basis: National Green Transport Action Plan",
-        title: "National EV Charging Infrastructure & Highway Fast Network",
-        desc: "22,055+ verified charging ports across 63 provinces, featuring CCS2 DC fast-charging hubs along National Route 1A and North-South Expressway CT.01.",
-        metric: "22,055+ CCS2 Ports",
-        url: "https://ev.renewablevietnam.com/"
+        badge: "PILLAR 04 &middot; CLEAN GENERATION",
+        statute: "Statutory Basis: Decision 500/QĐ-TTg & Pumped Storage Roadmap",
+        title: "Flexible Cascade Hydro, Pumped Storage & BESS",
+        desc: "Maximizing multi-purpose cascade hydro paired with utility pumped hydro (Bác Ái 1,200 MW, Đơn Dương) and 300 MW grid-scale battery energy storage systems (BESS).",
+        metric: "29,346 MW + 2.7 GW ($11.8B)",
+        url: "https://energy.renewablevietnam.com/"
+      },
+      {
+        badge: "PILLAR 05 &middot; TRANSITION FUEL",
+        statute: "Statutory Basis: National LNG Terminal Master Plan",
+        title: "Domestic Natural Gas & Transition LNG Terminals",
+        desc: "Bridging baseload reliability via Block B Ô Môn, Cá Voi Xanh upstream gas, and 13 world-scale LNG receiving terminals including Thị Vải, Sơn Mỹ, Hải Lăng, and Hiệp Phước.",
+        metric: "37,330 MW Gas/LNG ($31.4B)",
+        url: "https://legal.renewablevietnam.com/"
+      },
+      {
+        badge: "PILLAR 06 &middot; CIRCULAR ENERGY",
+        statute: "Statutory Basis: Circular Economy & Waste Management Directives",
+        title: "Biomass, Waste-to-Energy & Industrial Cogeneration",
+        desc: "Converting agricultural residues (rice husk, wood pellets, bagasse) and municipal solid waste into continuous, low-carbon baseload power for industrial decarbonization.",
+        metric: "2,270 MW ($3.6B)",
+        url: "https://industrial.renewablevietnam.com/"
+      },
+      {
+        badge: "PILLAR 07 &middot; SUPERGRID INFRASTRUCTURE",
+        statute: "Statutory Basis: National Key Project (Circuit-3 COD 2024)",
+        title: "500kV Supergrid Backbone Spine & Wheeling",
+        desc: "Tripling North-South transfer capacity via 500kV Circuit-3 (Quảng Trạch – Phố Nối 519 km across 4 projects), relieving Central-to-North transmission bottlenecks.",
+        metric: "15,888 km (5,000 MW Wheel)",
+        url: "https://energy.renewablevietnam.com/"
+      },
+      {
+        badge: "PILLAR 08 &middot; SUPERGRID INFRASTRUCTURE",
+        statute: "Statutory Basis: Vietnam-Laos Energy Cooperation Agreement",
+        title: "Cross-Border ASEAN Power Grid Interconnections",
+        desc: "Integrating Lao PDR cross-border clean energy imports (Monsoon Wind 600 MW via 500kV Thạnh Mỹ) and planned subsea HVDC power export interconnection to Singapore.",
+        metric: "5,000 - 8,000 MW Import",
+        url: "https://energy.renewablevietnam.com/"
+      },
+      {
+        badge: "PILLAR 09 &middot; SUPERGRID INFRASTRUCTURE",
+        statute: "Statutory Basis: Prime Minister Decision 1670/QĐ-TTg",
+        title: "Smart Grid Automation, SCADA/EMS & Digital Substations",
+        desc: "Digitalizing all 1,915 substations to IEC 61850 standards, enabling Dynamic Line Rating (DLR), automated AGC dispatch, and 2,000 MW Demand-Side Response (DSM).",
+        metric: "100% Unmanned TBA ($3.8B)",
+        url: "https://energy.renewablevietnam.com/"
+      },
+      {
+        badge: "PILLAR 10 &middot; MARKET MECHANISMS",
+        statute: "Statutory Basis: Decree 80/2024/NĐ-CP (Enacted July 3, 2024)",
+        title: "Direct Power Purchase Agreement (DPPA Mechanism)",
+        desc: "Statutory private power wheeling allowing multinational industrial clients (RE100) to contract clean electricity directly via private wire or national grid CfD wheeling.",
+        metric: "Decree 80 Direct Wheeling",
+        url: "https://industrial.renewablevietnam.com/"
+      },
+      {
+        badge: "PILLAR 11 &middot; MARKET MECHANISMS",
+        statute: "Statutory Basis: Amended Electricity Law 2024 & ERAV Circulars",
+        title: "Competitive Wholesale & Retail Electricity Market (VWEM/VREM)",
+        desc: "Maturation of the Vietnam Wholesale Electricity Market (VWEM) with nodal spot market clearing prices (SMP + CAN) and roadmap toward full retail choice (VREM).",
+        metric: "SMP + CAN (~$0.073/kWh)",
+        url: "https://legal.renewablevietnam.com/"
+      },
+      {
+        badge: "PILLAR 12 &middot; NET-ZERO TECHNOLOGY",
+        statute: "Statutory Basis: Decision 165/QĐ-TTg (Hydrogen Strategy)",
+        title: "Green Hydrogen, Ammonia & Power-to-X Infrastructure",
+        desc: "Establishing green hydrogen & green ammonia production hubs in South Central Vietnam to decarbonize coal co-firing, green steel, and international marine transport.",
+        metric: "100k - 500k tons/yr ($6.2B)",
+        url: "https://legal.renewablevietnam.com/"
       }
     ];
+
+    function filterHomepagePillars(category) {
+      const cards = document.querySelectorAll('.pillar-card');
+      const buttons = {
+        'ALL': document.getElementById('hpFilterAll'),
+        'GENERATION': document.getElementById('hpFilterGen'),
+        'GRID': document.getElementById('hpFilterGrid'),
+        'MARKET': document.getElementById('hpFilterMarket')
+      };
+
+      Object.keys(buttons).forEach(k => {
+        const btn = buttons[k];
+        if (!btn) return;
+        if (k === category) {
+          btn.className = 'px-2.5 py-1.5 rounded-lg bg-teal-600 text-white font-semibold transition-all cursor-pointer shadow-xs';
+        } else {
+          btn.className = 'px-2.5 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-700/60 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 transition-all cursor-pointer';
+        }
+      });
+
+      cards.forEach(card => {
+        if (category === 'ALL' || card.getAttribute('data-category') === category) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
 
     // Wire up Node Click Events
     document.querySelectorAll('.flow-node').forEach(nodeEl => {
@@ -1212,6 +1707,351 @@
           }
         });
       }
+
+      // 5. National 24-Hour Load Curve & Merit-Order Dispatch (Stacked Area)
+      const ctxDispatch = document.getElementById('dailyDispatchChart')?.getContext('2d');
+      if (ctxDispatch) {
+        if (dailyDispatchChartInstance) dailyDispatchChartInstance.destroy();
+        dailyDispatchChartInstance = new Chart(ctxDispatch, {
+          type: 'line',
+          data: {
+            labels: ['00:00', '02:00', '04:00', '06:00', '08:00', '10:00', '12:00', '14:00', '16:00', '18:00', '20:00', '22:00'],
+            datasets: [
+              {
+                label: 'Baseload Gas/Coal (GW)',
+                data: [18.0, 17.5, 17.0, 18.5, 20.0, 20.5, 20.0, 20.5, 21.0, 21.5, 20.5, 19.0],
+                fill: true,
+                backgroundColor: isDark ? 'rgba(100, 116, 139, 0.4)' : 'rgba(148, 163, 184, 0.35)',
+                borderColor: '#64748B',
+                tension: 0.3,
+                borderWidth: 1.5,
+                pointRadius: 0
+              },
+              {
+                label: 'Cascade Hydro (GW)',
+                data: [6.0, 5.5, 5.0, 6.5, 8.0, 7.5, 7.0, 7.5, 9.0, 14.5, 13.0, 8.0],
+                fill: true,
+                backgroundColor: isDark ? 'rgba(6, 182, 212, 0.4)' : 'rgba(6, 182, 212, 0.35)',
+                borderColor: '#06B6D4',
+                tension: 0.3,
+                borderWidth: 1.5,
+                pointRadius: 0
+              },
+              {
+                label: 'Solar PV Surge (GW)',
+                data: [0, 0, 0, 1.2, 7.5, 14.0, 16.5, 15.0, 8.0, 0.5, 0, 0],
+                fill: true,
+                backgroundColor: isDark ? 'rgba(245, 158, 11, 0.45)' : 'rgba(245, 158, 11, 0.35)',
+                borderColor: '#F59E0B',
+                tension: 0.3,
+                borderWidth: 1.5,
+                pointRadius: 0
+              },
+              {
+                label: 'Wind Corridors (GW)',
+                data: [3.8, 3.6, 3.5, 3.2, 3.0, 2.8, 3.2, 3.8, 4.5, 5.2, 5.0, 4.2],
+                fill: true,
+                backgroundColor: isDark ? 'rgba(16, 185, 129, 0.45)' : 'rgba(16, 185, 129, 0.35)',
+                borderColor: '#10B981',
+                tension: 0.3,
+                borderWidth: 1.5,
+                pointRadius: 0
+              },
+              {
+                label: 'Pumped Hydro & BESS (GW)',
+                data: [-1.5, -2.0, -1.8, 0, 0, -2.5, -3.0, -2.0, 0, 4.2, 3.5, 0],
+                fill: false,
+                borderColor: '#EC4899',
+                borderWidth: 2,
+                tension: 0.3,
+                pointRadius: 2
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: { mode: 'index', intersect: false },
+            plugins: {
+              legend: {
+                position: 'top',
+                labels: { color: theme.textColor, font: { size: 9, family: 'monospace' }, boxWidth: 8 }
+              },
+              tooltip: {
+                backgroundColor: theme.tooltipBg,
+                titleColor: theme.tooltipText,
+                bodyColor: theme.tooltipText,
+                borderColor: theme.tooltipBorder,
+                borderWidth: 1,
+                callbacks: {
+                  label: ctx => ` ${ctx.dataset.label}: ${ctx.raw} GW`
+                }
+              }
+            },
+            scales: {
+              x: { grid: { color: theme.gridColor }, ticks: { color: theme.textColor, font: { size: 9 } } },
+              y: {
+                grid: { color: theme.gridColor },
+                ticks: { color: theme.textColor, font: { size: 9, family: 'monospace' }, callback: v => `${v} GW` }
+              }
+            }
+          }
+        });
+      }
+
+      // 6. PDP8 Statutory CapEx Allocation Breakdown (Polar Area)
+      const ctxCapex = document.getElementById('capexAllocationChart')?.getContext('2d');
+      if (ctxCapex) {
+        if (capexAllocationChartInstance) capexAllocationChartInstance.destroy();
+        capexAllocationChartInstance = new Chart(ctxCapex, {
+          type: 'polarArea',
+          data: {
+            labels: [
+              'Gas & LNG ($31.4B)',
+              'Onshore Wind ($26.2B)',
+              'Offshore Wind ($18.5B)',
+              '500kV/220kV Grid ($14.9B)',
+              'Solar PV ($14.1B)',
+              'Hydro & BESS ($11.8B)',
+              'Hydrogen P2X ($6.2B)',
+              'Smart Grid ($3.8B)',
+              'Biomass ($3.6B)'
+            ],
+            datasets: [{
+              data: [31.4, 26.2, 18.5, 14.9, 14.1, 11.8, 6.2, 3.8, 3.6],
+              backgroundColor: [
+                'rgba(59, 130, 246, 0.75)',
+                'rgba(16, 185, 129, 0.75)',
+                'rgba(20, 184, 166, 0.75)',
+                'rgba(244, 63, 94, 0.75)',
+                'rgba(245, 158, 11, 0.75)',
+                'rgba(6, 182, 212, 0.75)',
+                'rgba(139, 92, 246, 0.75)',
+                'rgba(217, 70, 239, 0.75)',
+                'rgba(34, 197, 94, 0.75)'
+              ],
+              borderColor: isDark ? '#1E293B' : '#FFFFFF',
+              borderWidth: 1.5
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: { display: false },
+              tooltip: {
+                backgroundColor: theme.tooltipBg,
+                titleColor: theme.tooltipText,
+                bodyColor: theme.tooltipText,
+                borderColor: theme.tooltipBorder,
+                borderWidth: 1,
+                callbacks: {
+                  label: ctx => ` ${ctx.label}: $${ctx.raw}B (${((ctx.raw / 134.7) * 100).toFixed(1)}%)`
+                }
+              }
+            },
+            scales: {
+              r: {
+                grid: { color: theme.gridColor },
+                ticks: { display: false }
+              }
+            }
+          }
+        });
+      }
+
+      // 7. Substation Voltage & Headroom Hierarchy (Grouped Bar)
+      const ctxSubH = document.getElementById('substationHierarchyChart')?.getContext('2d');
+      if (ctxSubH) {
+        if (substationHierarchyChartInstance) substationHierarchyChartInstance.destroy();
+        substationHierarchyChartInstance = new Chart(ctxSubH, {
+          type: 'bar',
+          data: {
+            labels: ['500kV Supergrid Hubs', '220kV Regional Hubs', '110kV Industrial Offtakes'],
+            datasets: [
+              {
+                label: 'Installed Transformer Capacity (MVA)',
+                data: [42500, 78200, 96000],
+                backgroundColor: '#3B82F6',
+                borderRadius: 4
+              },
+              {
+                label: 'Available Intertie Headroom (MVA)',
+                data: [14800, 22400, 31200],
+                backgroundColor: '#10B981',
+                borderRadius: 4
+              }
+            ]
+          },
+          options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: {
+                position: 'top',
+                labels: { color: theme.textColor, font: { size: 9, family: 'monospace' }, boxWidth: 10 }
+              },
+              tooltip: {
+                backgroundColor: theme.tooltipBg,
+                titleColor: theme.tooltipText,
+                bodyColor: theme.tooltipText,
+                borderColor: theme.tooltipBorder,
+                borderWidth: 1,
+                callbacks: {
+                  label: ctx => ` ${ctx.dataset.label}: ${ctx.raw.toLocaleString()} MVA`
+                }
+              }
+            },
+            scales: {
+              x: {
+                grid: { color: theme.gridColor },
+                ticks: { color: theme.textColor, font: { size: 9, family: 'monospace' }, callback: v => `${(v/1000).toFixed(0)}k MVA` }
+              },
+              y: {
+                grid: { display: false },
+                ticks: { color: theme.textColor, font: { size: 9, family: 'monospace' } }
+              }
+            }
+          }
+        });
+      }
+
+      // 8. Wholesale Market (VWEM) Price Clearing Dynamics (Multi-Series Line)
+      const ctxMkt = document.getElementById('marketClearingChart')?.getContext('2d');
+      if (ctxMkt) {
+        if (marketClearingChartInstance) marketClearingChartInstance.destroy();
+        marketClearingChartInstance = new Chart(ctxMkt, {
+          type: 'line',
+          data: {
+            labels: ['00:00', '03:00', '06:00', '09:00', '11:00', '14:00', '17:00', '19:00', '21:00', '23:00'],
+            datasets: [
+              {
+                label: 'VWEM Spot SMP (VND/kWh)',
+                data: [1420, 1380, 1490, 1780, 1690, 1620, 1890, 1850, 1650, 1450],
+                borderColor: '#10B981',
+                backgroundColor: 'rgba(16, 185, 129, 0.08)',
+                fill: true,
+                tension: 0.35,
+                borderWidth: 2,
+                pointRadius: 2.5
+              },
+              {
+                label: 'DPPA CfD Strike Benchmark (VND/kWh)',
+                data: [1650, 1650, 1650, 1650, 1650, 1650, 1650, 1650, 1650, 1650],
+                borderColor: '#3B82F6',
+                borderDash: [5, 4],
+                fill: false,
+                borderWidth: 1.5,
+                pointRadius: 0
+              },
+              {
+                label: 'EVN Industrial Peak TOU (VND/kWh)',
+                data: [1100, 1100, 1100, 3171, 3171, 1685, 3171, 3171, 1685, 1100],
+                borderColor: '#F43F5E',
+                fill: false,
+                borderWidth: 1.5,
+                stepped: true,
+                pointRadius: 0
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: { mode: 'index', intersect: false },
+            plugins: {
+              legend: {
+                position: 'top',
+                labels: { color: theme.textColor, font: { size: 9, family: 'monospace' }, boxWidth: 10 }
+              },
+              tooltip: {
+                backgroundColor: theme.tooltipBg,
+                titleColor: theme.tooltipText,
+                bodyColor: theme.tooltipText,
+                borderColor: theme.tooltipBorder,
+                borderWidth: 1,
+                callbacks: {
+                  label: ctx => ` ${ctx.dataset.label}: ${ctx.raw.toLocaleString()} VND`
+                }
+              }
+            },
+            scales: {
+              x: { grid: { color: theme.gridColor }, ticks: { color: theme.textColor, font: { size: 9 } } },
+              y: {
+                grid: { color: theme.gridColor },
+                ticks: { color: theme.textColor, font: { size: 9, family: 'monospace' }, callback: v => `${v} VND` }
+              }
+            }
+          }
+        });
+      }
+
+      // 9. Top 10 Energy Provinces: Clean Capacity vs Eco-Parks (Mixed Bar & Line)
+      const ctxProv = document.getElementById('topProvincesEcoparkChart')?.getContext('2d');
+      if (ctxProv) {
+        if (topProvincesEcoparkChartInstance) topProvincesEcoparkChartInstance.destroy();
+        topProvincesEcoparkChartInstance = new Chart(ctxProv, {
+          type: 'bar',
+          data: {
+            labels: ['Ninh Thuận', 'Bình Thuận', 'Gia Lai', 'Đắk Lắk', 'Quảng Trị', 'Bình Dương', 'Đồng Nai', 'Hải Phòng', 'Bắc Ninh', 'Bà Rịa'],
+            datasets: [
+              {
+                type: 'bar',
+                label: 'Operating Clean Capacity (MW)',
+                data: [3850, 3420, 2980, 2450, 1890, 850, 720, 650, 520, 1650],
+                backgroundColor: '#14B8A6',
+                yAxisID: 'y',
+                borderRadius: 4
+              },
+              {
+                type: 'line',
+                label: 'Tier-1 Industrial Parks (Hubs)',
+                data: [4, 6, 3, 2, 5, 29, 32, 14, 16, 15],
+                borderColor: '#F59E0B',
+                backgroundColor: '#F59E0B',
+                borderWidth: 2,
+                pointRadius: 3,
+                yAxisID: 'y1'
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: { mode: 'index', intersect: false },
+            plugins: {
+              legend: {
+                position: 'top',
+                labels: { color: theme.textColor, font: { size: 9, family: 'monospace' }, boxWidth: 10 }
+              },
+              tooltip: {
+                backgroundColor: theme.tooltipBg,
+                titleColor: theme.tooltipText,
+                bodyColor: theme.tooltipText,
+                borderColor: theme.tooltipBorder,
+                borderWidth: 1
+              }
+            },
+            scales: {
+              x: { grid: { color: theme.gridColor }, ticks: { color: theme.textColor, font: { size: 9 } } },
+              y: {
+                type: 'linear',
+                position: 'left',
+                grid: { color: theme.gridColor },
+                ticks: { color: theme.textColor, font: { size: 9, family: 'monospace' }, callback: v => `${v} MW` }
+              },
+              y1: {
+                type: 'linear',
+                position: 'right',
+                grid: { display: false },
+                ticks: { color: '#F59E0B', font: { size: 9, family: 'monospace' }, callback: v => `${v} IPs` }
+              }
+            }
+          }
+        });
+      }
+
     }
 
     // Trajectory Mode Switcher Buttons
