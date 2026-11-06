@@ -14,10 +14,9 @@
  */
 
 const HOST_PATH_MAP = {
-  'energy.renewablevietnam.com': '/projectenergy',
-  'wind.renewablevietnam.com': '/projectenergy',
+  'energy.renewablevietnam.com': '/energy',
+  'wind.renewablevietnam.com': '/energy',
   'industrial.renewablevietnam.com': '/industrial',
-  'ev.renewablevietnam.com': '/evcharging',
   'legal.renewablevietnam.com': '/invm',
   'invest.renewablevietnam.com': '/invm',
   'project.renewablevietnam.com': '/project'
@@ -34,6 +33,12 @@ export default {
     // Edge HTTP 301 Permanent Redirect: invest. -> legal.
     if (hostname === 'invest.renewablevietnam.com') {
       const destination = `https://legal.renewablevietnam.com${url.pathname}${url.search}`;
+      return Response.redirect(destination, 301);
+    }
+
+    // Edge HTTP 301 Permanent Redirect: ev. -> /evcharging
+    if (hostname === 'ev.renewablevietnam.com') {
+      const destination = `https://${originHost}/evcharging${url.pathname}${url.search}`;
       return Response.redirect(destination, 301);
     }
 
@@ -56,6 +61,12 @@ export default {
     let pathname = url.pathname;
 
     // Edge HTTP 301 Permanent Redirect: /green -> /industrial
+        // Edge HTTP 301 Permanent Redirect: /projectenergy -> /energy
+    if (pathname.startsWith('/projectenergy')) {
+      const remainingPath = pathname.replace(/^\/projectenergy/, '') || '/';
+      return Response.redirect(`https://energy.renewablevietnam.com${remainingPath}${url.search}`, 301);
+    }
+
     if (pathname.startsWith('/green')) {
       const remainingPath = pathname.replace(/^\/green/, '') || '/';
       return Response.redirect(`https://industrial.renewablevietnam.com${remainingPath}${url.search}`, 301);
@@ -92,18 +103,34 @@ export default {
     headers.set('X-Forwarded-Proto', 'https');
     headers.set('X-From-Worker', 'subdomain-gateway');
 
-    const originRequest = new Request(originUrl.toString(), {
+    // Edge cache control for static datasets, scripts and assets
+    const isStaticAsset = isSharedAsset || /\.(json|gz|js|css|svg|png|jpg|jpeg|webp|woff2?|ico)(\?.*)?$/i.test(pathname);
+
+    const fetchOptions = {
       method: request.method,
       headers: headers,
       body: request.method !== 'GET' && request.method !== 'HEAD' ? request.body : null,
       redirect: 'follow'
-    });
+    };
+
+    if (isStaticAsset && request.method === 'GET') {
+      fetchOptions.cf = {
+        cacheTtl: 86400,
+        cacheEverything: true
+      };
+    }
+
+    const originRequest = new Request(originUrl.toString(), fetchOptions);
 
     try {
       const response = await fetch(originRequest);
       const responseHeaders = new Headers(response.headers);
       responseHeaders.set('X-Proxy-By', 'Cloudflare-Worker-Subdomain-Gateway');
       responseHeaders.delete('X-Frame-Options');
+
+      if (isStaticAsset && response.status === 200) {
+        responseHeaders.set('Cache-Control', 'public, max-age=86400, s-maxage=86400, stale-while-revalidate=604800');
+      }
 
       return new Response(response.body, {
         status: response.status,
