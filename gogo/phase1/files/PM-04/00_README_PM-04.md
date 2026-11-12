@@ -14,10 +14,10 @@ Build EUR/MW Capex baselines, colocation yield curves, PUE/energy sensitivity ta
 
 | Doc | Category | Title | Exact Local File | Companion / Notes |
 | :--- | :--- | :--- | :--- | :--- |
-| Doc 1 | Standard | RICS New Rules of Measurement (NRM1) & Institutional Valuation Standard | `PM04_Doc1_Standard_RICS_New_Rules_of_Measurement_NRM1_Rev.002.docx` | RICS NRM1 / Real Estate Std |
-| Doc 2 | Deliverable | 45 MW Capex Cost Plan (Land, Grid, CSA, MEP, OFCI, Soft Costs & Contingency) | `PM04_Doc2_Deliverable_StageGate_Capex_Budget_Charter_Master_Rev.002.xlsx` | Sheet 6. Stage-Gate Budget |
-| Doc 3 | Template | 10-Year EUR Discounted Cashflow Model (IRR, NPV, Payback & EUR/kW Yield) | `PM04_Doc3_Template_EUR_10Yr_DCF_Model_Master_Rev.002.xlsx` | Sheet 2. EUR 10-Yr DCF |
-| Doc 4 | Audit | Sensitivity & Downside Stress Test Matrix (Power Tariff, PUE & Capex +/-10%) | `PM04_Doc4_Audit_Sensitivity_Downside_Stress_Test_Rev.002.xlsx` | IC Investment Stress Test |
+| Doc 1 | Standard | RICS New Rules of Measurement (NRM1) & Institutional Valuation Standard | `PM04_Doc1_Standard_RICS_New_Rules_of_Measurement_NRM1_Rev.004.docx` | RICS NRM1 / Real Estate Std |
+| Doc 2 | Deliverable | 45 MW Capex Cost Plan (Land, Grid, CSA, MEP, OFCI, Soft Costs & Contingency) | `PM04_Doc2_Deliverable_StageGate_Capex_Budget_Charter_Master_Rev.004.xlsx` | Sheet 6. Stage-Gate Budget |
+| Doc 3 | Template | 10-Year EUR Discounted Cashflow Model (IRR, NPV, Payback & EUR/kW Yield) | `PM04_Doc3_Template_EUR_10Yr_DCF_Model_Master_Rev.004.xlsx` | Sheet 2. EUR 10-Yr DCF |
+| Doc 4 | Audit | Sensitivity & Downside Stress Test Matrix (Power Tariff, PUE & Capex +/-10%) | `PM04_Doc4_Audit_Sensitivity_Downside_Stress_Test_Rev.004.xlsx` | IC Investment Stress Test |
 
 ## Study Takeaway (`Why Each Document Matters`)
 - **Doc 1 (Standard)**: Structure institutional elemental cost planning benchmarked in EUR per MW of IT load.
