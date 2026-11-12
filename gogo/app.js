@@ -238,7 +238,11 @@ function loadState() {
   }
 }
 
+const HISTORY_STORAGE_KEY = 'dc36_eu_history_v1';
+const PROFILE_STORAGE_KEY = 'dc36_eu_profile_id_v1';
+
 let state = loadState();
+let historyEvents = loadLocalHistory();
 
 const trackFilters = {
   pm: { pillar: 'ALL', status: 'ALL', search: '' },
@@ -246,6 +250,46 @@ const trackFilters = {
 };
 let portfolioTrackFilter = 'ALL';
 let interviewTrackFilter = 'pm';
+let historyTrackFilter = 'ALL';
+let historyTypeFilter = 'ALL';
+let cloudSchemaReady = false;
+
+function getProfileId() {
+  const saved = (localStorage.getItem(PROFILE_STORAGE_KEY) || 'dc36-quan-eu').trim();
+  return saved.length >= 3 ? saved : 'dc36-quan-eu';
+}
+
+function loadLocalHistory() {
+  try {
+    const raw = localStorage.getItem(HISTORY_STORAGE_KEY);
+    const parsed = raw ? JSON.parse(raw) : [];
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveLocalHistory() {
+  if (historyEvents.length > 500) {
+    historyEvents = historyEvents.slice(0, 500);
+  }
+  localStorage.setItem(HISTORY_STORAGE_KEY, JSON.stringify(historyEvents));
+}
+
+function setSyncUiState(mode, label) {
+  const pill = document.getElementById('sync-pill');
+  const banner = document.getElementById('history-setup-banner');
+  if (pill) {
+    pill.classList.remove('is-connected', 'is-pending');
+    if (mode === 'connected') pill.classList.add('is-connected');
+    else if (mode === 'schema_missing') pill.classList.add('is-pending');
+    pill.textContent = label;
+  }
+  cloudSchemaReady = mode === 'connected';
+  if (banner) {
+    banner.style.display = mode === 'schema_missing' ? 'flex' : 'none';
+  }
+}
 
 function saveState(msg) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
@@ -258,6 +302,199 @@ function showToast(msg) {
   t.textContent = msg;
   t.classList.add('show');
   setTimeout(() => t.classList.remove('show'), 2200);
+}
+
+function recordHistoryEvent(evt) {
+  const pm = getTrackMetrics('pm');
+  const legal = getTrackMetrics('legal');
+  const totalHrs = Number((pm.hours + legal.hours).toFixed(2));
+  const row = {
+    profile_id: getProfileId(),
+    event_type: evt.event_type,
+    entity_id: evt.entity_id,
+    entity_title: evt.entity_title || '',
+    track: evt.track || 'pm',
+    old_status: evt.old_status || null,
+    new_status: evt.new_status || null,
+    hours_delta: Number((evt.hours_delta || 0).toFixed(2)),
+    total_hours: totalHrs,
+    old_confidence: evt.old_confidence ?? null,
+    new_confidence: evt.new_confidence ?? null,
+    pm_readiness_pct: pm.readiness,
+    legal_readiness_pct: legal.readiness,
+    summary: evt.summary || '',
+    created_at: new Date().toISOString()
+  };
+
+  historyEvents.unshift(row);
+  saveLocalHistory();
+  renderHistory();
+
+  if (window.DC36_Supabase && cloudSchemaReady) {
+    window.DC36_Supabase.appendHistory(row).then(res => {
+      if (!res.ok) setSyncUiState('offline', 'Cloud Sync Degraded');
+    });
+  }
+}
+
+function syncModuleRow(moduleId) {
+  if (!window.DC36_Supabase || !cloudSchemaReady) return;
+  const meta = CURRICULUM.find(m => m.id === moduleId);
+  const st = state.modules[moduleId];
+  if (!meta || !st) return;
+  window.DC36_Supabase.upsertModules([{
+    profile_id: getProfileId(),
+    module_id: moduleId,
+    track: meta.track,
+    pillar: meta.pillar,
+    status: st.status,
+    hours: Number(st.hours) || 0,
+    confidence: Number(st.confidence) || 3,
+    notes: st.notes || '',
+    updated_at: new Date().toISOString()
+  }]).then(res => {
+    if (res.ok) setSyncUiState('connected', 'Supabase Synced');
+  });
+}
+
+function syncPortfolioRow(itemId) {
+  if (!window.DC36_Supabase || !cloudSchemaReady) return;
+  const meta = PORTFOLIO_ITEMS.find(p => p.id === itemId);
+  const st = state.portfolio[itemId];
+  if (!meta || !st) return;
+  window.DC36_Supabase.upsertPortfolio([{
+    profile_id: getProfileId(),
+    item_id: itemId,
+    track: meta.track,
+    status: st.status,
+    notes: st.linkNote || '',
+    updated_at: new Date().toISOString()
+  }]);
+}
+
+function syncInterviewRow(qaId) {
+  if (!window.DC36_Supabase || !cloudSchemaReady) return;
+  const meta = INTERVIEW_QA.find(q => q.id === qaId);
+  const st = state.interviews[qaId];
+  if (!meta || !st) return;
+  window.DC36_Supabase.upsertInterviews([{
+    profile_id: getProfileId(),
+    qa_id: qaId,
+    track: meta.track,
+    ready: Boolean(st.ready),
+    updated_at: new Date().toISOString()
+  }]);
+}
+
+async function pullFromSupabase(silent) {
+  if (!window.DC36_Supabase) return;
+  const check = await window.DC36_Supabase.checkConnection();
+  setSyncUiState(check.state, check.state === 'connected' ? 'Supabase Connected' : (check.state === 'schema_missing' ? 'SQL Schema Pending' : 'Offline (Local Save)'));
+  if (check.state !== 'connected') {
+    if (!silent) showToast(check.detail);
+    return;
+  }
+
+  const res = await window.DC36_Supabase.pullAll(getProfileId());
+  if (!res.ok) {
+    if (!silent) showToast('Cloud pull failed; using local cache');
+    return;
+  }
+
+  const hasRemoteData = res.modules.length > 0 || res.portfolio.length > 0 || res.interviews.length > 0 || res.history.length > 0;
+  if (hasRemoteData) {
+    res.modules.forEach(r => {
+      if (state.modules[r.module_id]) {
+        state.modules[r.module_id] = {
+          status: r.status || 'todo',
+          hours: Number(r.hours) || 0,
+          confidence: Number(r.confidence) || 3,
+          notes: r.notes || ''
+        };
+      }
+    });
+    res.portfolio.forEach(r => {
+      if (state.portfolio[r.item_id]) {
+        state.portfolio[r.item_id] = { status: r.status || 'Planned', linkNote: r.notes || '' };
+      }
+    });
+    res.interviews.forEach(r => {
+      if (state.interviews[r.qa_id]) {
+        state.interviews[r.qa_id] = { ready: Boolean(r.ready) };
+      }
+    });
+    if (res.history.length > 0) {
+      historyEvents = res.history;
+      saveLocalHistory();
+    }
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    renderTrackSection('pm');
+    renderTrackSection('legal');
+    renderPortfolio();
+    renderInterviews();
+    renderHistory();
+    updateMetrics();
+    setSyncUiState('connected', `Supabase Synced (${res.modules.length} mods)`);
+    if (!silent) showToast(`Pulled ${res.modules.length} modules and ${res.history.length} history events`);
+  } else if (!silent) {
+    showToast('Cloud profile empty; click Push Local to Cloud to upload');
+  }
+}
+
+async function pushAllToSupabase() {
+  if (!window.DC36_Supabase) return;
+  const check = await window.DC36_Supabase.checkConnection();
+  setSyncUiState(check.state, check.state === 'connected' ? 'Syncing...' : 'SQL Schema Pending');
+  if (check.state !== 'connected') {
+    showToast(check.detail);
+    return;
+  }
+
+  const pid = getProfileId();
+  const now = new Date().toISOString();
+  const modRows = CURRICULUM.map(m => {
+    const s = state.modules[m.id] || computeDefaultModuleEntry();
+    return {
+      profile_id: pid,
+      module_id: m.id,
+      track: m.track,
+      pillar: m.pillar,
+      status: s.status,
+      hours: Number(s.hours) || 0,
+      confidence: Number(s.confidence) || 3,
+      notes: s.notes || '',
+      updated_at: now
+    };
+  });
+  const portRows = PORTFOLIO_ITEMS.map(p => {
+    const s = state.portfolio[p.id] || { status: p.status, linkNote: '' };
+    return { profile_id: pid, item_id: p.id, track: p.track, status: s.status, notes: s.linkNote || '', updated_at: now };
+  });
+  const iqRows = INTERVIEW_QA.map(q => {
+    const s = state.interviews[q.id] || { ready: false };
+    return { profile_id: pid, qa_id: q.id, track: q.track, ready: Boolean(s.ready), updated_at: now };
+  });
+
+  const [mRes, pRes, iRes] = await Promise.all([
+    window.DC36_Supabase.upsertModules(modRows),
+    window.DC36_Supabase.upsertPortfolio(portRows),
+    window.DC36_Supabase.upsertInterviews(iqRows)
+  ]);
+
+  if (mRes.ok && pRes.ok && iRes.ok) {
+    setSyncUiState('connected', `Supabase Synced (${modRows.length} mods)`);
+    recordHistoryEvent({
+      event_type: 'cloud_sync',
+      entity_id: pid,
+      entity_title: 'Full Portfolio Cloud Backup',
+      track: 'system',
+      summary: `Synced ${modRows.length} modules, ${portRows.length} deliverables, and ${iqRows.length} Q&As to Supabase`
+    });
+    showToast('All local progress pushed to Supabase');
+  } else {
+    setSyncUiState('offline', 'Cloud Push Error');
+    showToast('Cloud push failed; check console or RLS');
+  }
 }
 
 function getTrackMetrics(trackName) {
@@ -418,28 +655,84 @@ function renderTrackModules(trackName, gridId) {
 
   grid.querySelectorAll('.status-select').forEach(sel => {
     sel.onchange = () => {
-      state.modules[sel.dataset.id].status = sel.value;
-      saveState(`Updated ${sel.dataset.id}`);
+      const id = sel.dataset.id;
+      const meta = CURRICULUM.find(m => m.id === id) || { title: id, track: trackName };
+      const oldStatus = state.modules[id].status;
+      const newStatus = sel.value;
+      state.modules[id].status = newStatus;
+      saveState(`Updated ${id}`);
+      syncModuleRow(id);
+      recordHistoryEvent({
+        event_type: 'status_change',
+        entity_id: id,
+        entity_title: meta.title,
+        track: meta.track,
+        old_status: oldStatus,
+        new_status: newStatus,
+        summary: `Module status changed: ${oldStatus} -> ${newStatus}`
+      });
       renderTrackModules(trackName, gridId);
     };
   });
   grid.querySelectorAll('.hours-input').forEach(inp => {
     inp.onchange = () => {
-      state.modules[inp.dataset.id].hours = Math.max(0, parseFloat(inp.value) || 0);
+      const id = inp.dataset.id;
+      const meta = CURRICULUM.find(m => m.id === id) || { title: id, track: trackName };
+      const oldHrs = Number(state.modules[id].hours) || 0;
+      const newHrs = Math.max(0, parseFloat(inp.value) || 0);
+      const delta = Number((newHrs - oldHrs).toFixed(2));
+      state.modules[id].hours = newHrs;
       saveState('Saved study hours');
+      syncModuleRow(id);
+      if (delta !== 0) {
+        recordHistoryEvent({
+          event_type: 'hours_logged',
+          entity_id: id,
+          entity_title: meta.title,
+          track: meta.track,
+          hours_delta: delta,
+          summary: `Logged ${delta >= 0 ? '+' : ''}${delta.toFixed(1)}h (module total: ${newHrs.toFixed(1)}h)`
+        });
+      }
     };
   });
   grid.querySelectorAll('.conf-btn').forEach(btn => {
     btn.onclick = () => {
-      state.modules[btn.dataset.id].confidence = Number(btn.dataset.conf);
-      saveState(`Confidence set to ${btn.dataset.conf}/5`);
+      const id = btn.dataset.id;
+      const meta = CURRICULUM.find(m => m.id === id) || { title: id, track: trackName };
+      const oldConf = Number(state.modules[id].confidence) || 3;
+      const newConf = Number(btn.dataset.conf);
+      state.modules[id].confidence = newConf;
+      saveState(`Confidence set to ${newConf}/5`);
+      syncModuleRow(id);
+      if (oldConf !== newConf) {
+        recordHistoryEvent({
+          event_type: 'confidence_update',
+          entity_id: id,
+          entity_title: meta.title,
+          track: meta.track,
+          old_confidence: oldConf,
+          new_confidence: newConf,
+          summary: `Self-confidence updated from ${oldConf}/5 to ${newConf}/5`
+        });
+      }
       renderTrackModules(trackName, gridId);
     };
   });
   grid.querySelectorAll('.notes-area').forEach(ta => {
     ta.onchange = () => {
-      state.modules[ta.dataset.id].notes = ta.value;
+      const id = ta.dataset.id;
+      const meta = CURRICULUM.find(m => m.id === id) || { title: id, track: trackName };
+      state.modules[id].notes = ta.value;
       saveState('Notes saved');
+      syncModuleRow(id);
+      recordHistoryEvent({
+        event_type: 'note_update',
+        entity_id: id,
+        entity_title: meta.title,
+        track: meta.track,
+        summary: `Updated study note (${ta.value.trim().slice(0, 72)}${ta.value.trim().length > 72 ? '...' : ''})`
+      });
     };
   });
 }
@@ -542,8 +835,22 @@ function renderPortfolio() {
 
   tbody.querySelectorAll('.port-status').forEach(sel => {
     sel.onchange = () => {
-      state.portfolio[sel.dataset.id] = { ...(state.portfolio[sel.dataset.id] || {}), status: sel.value };
-      saveState(`Portfolio ${sel.dataset.id} updated`);
+      const id = sel.dataset.id;
+      const meta = PORTFOLIO_ITEMS.find(p => p.id === id) || { doc: id, track: 'pm' };
+      const oldStatus = state.portfolio[id]?.status || meta.status;
+      const newStatus = sel.value;
+      state.portfolio[id] = { ...(state.portfolio[id] || {}), status: newStatus };
+      saveState(`Portfolio ${id} updated`);
+      syncPortfolioRow(id);
+      recordHistoryEvent({
+        event_type: 'portfolio_update',
+        entity_id: id,
+        entity_title: meta.doc,
+        track: meta.track,
+        old_status: oldStatus,
+        new_status: newStatus,
+        summary: `Deliverable ${id}: ${oldStatus} -> ${newStatus}`
+      });
       renderPortfolio();
     };
   });
@@ -582,14 +889,207 @@ function renderInterviews() {
       e.preventDefault();
       e.stopPropagation();
       const id = btn.dataset.id;
-      state.interviews[id] = { ready: !state.interviews[id]?.ready };
+      const meta = INTERVIEW_QA.find(q => q.id === id) || { q: id, track: 'pm' };
+      const nextReady = !state.interviews[id]?.ready;
+      state.interviews[id] = { ready: nextReady };
       saveState('Interview status saved');
+      syncInterviewRow(id);
+      recordHistoryEvent({
+        event_type: 'interview_update',
+        entity_id: id,
+        entity_title: meta.q.slice(0, 64),
+        track: meta.track,
+        old_status: nextReady ? 'unrehearsed' : 'rehearsed',
+        new_status: nextReady ? 'rehearsed' : 'unrehearsed',
+        summary: `Interview scenario ${id} marked ${nextReady ? 'Rehearsed' : 'Needs Review'}`
+      });
       renderInterviews();
     };
   });
 }
 
+function renderHistorySparkline(eventsDesc) {
+  const svg = document.getElementById('history-sparkline');
+  const meta = document.getElementById('sparkline-meta');
+  if (!svg) return;
+
+  const chrono = eventsDesc.slice().reverse();
+  if (!chrono.length) {
+    svg.innerHTML = `<text x="20" y="70" fill="#44474f" font-size="13" font-family="Plus Jakarta Sans, sans-serif">No history points yet. Update any module status, study hours, or click Log Study Check-In.</text>`;
+    if (meta) meta.textContent = 'Waiting for first study event';
+    return;
+  }
+
+  const W = 800;
+  const H = 130;
+  const padX = 24;
+  const padY = 16;
+  const innerW = W - padX * 2;
+  const innerH = H - padY * 2;
+
+  const pts = chrono.map((ev, idx) => {
+    const x = chrono.length === 1 ? padX + innerW / 2 : padX + (idx / (chrono.length - 1)) * innerW;
+    const pct = Math.max(0, Math.min(100, Number(ev.pm_readiness_pct) || 0));
+    const y = padY + innerH - (pct / 100) * innerH;
+    return { x, y, pct };
+  });
+
+  const linePath = pts.map((p, i) => `${i === 0 ? 'M' : 'L'}${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(' ');
+  const areaPath = `${linePath} L${pts[pts.length - 1].x.toFixed(1)},${(H - padY).toFixed(1)} L${pts[0].x.toFixed(1)},${(H - padY).toFixed(1)} Z`;
+  const dots = pts.map(p => `<circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="3.5" fill="#0b57d0" />`).join('');
+
+  svg.innerHTML = `
+    <line x1="${padX}" y1="${padY}" x2="${W - padX}" y2="${padY}" stroke="#e3e9f4" stroke-dasharray="4 4" />
+    <line x1="${padX}" y1="${H / 2}" x2="${W - padX}" y2="${H / 2}" stroke="#e3e9f4" stroke-dasharray="4 4" />
+    <line x1="${padX}" y1="${H - padY}" x2="${W - padX}" y2="${H - padY}" stroke="#c4c7c5" />
+    <path d="${areaPath}" fill="rgba(11, 87, 208, 0.12)" />
+    <path d="${linePath}" fill="none" stroke="#0b57d0" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+    ${dots}
+  `;
+  if (meta) {
+    meta.textContent = `${chrono.length} events | Start ${pts[0].pct}% -> Latest ${pts[pts.length - 1].pct}%`;
+  }
+}
+
+function renderHistory() {
+  const nowMs = Date.now();
+  const weekAgoMs = nowMs - 7 * 24 * 3600 * 1000;
+  const recentWeek = historyEvents.filter(e => new Date(e.created_at).getTime() >= weekAgoMs);
+  const hours7 = recentWeek.reduce((s, e) => s + Math.max(0, Number(e.hours_delta) || 0), 0);
+  const mastered7 = recentWeek.filter(e => e.event_type === 'status_change' && e.new_status === 'mastered').length;
+  const pmNow = getTrackMetrics('pm').readiness;
+
+  const evEl = document.getElementById('hist-kpi-events');
+  if (evEl) evEl.textContent = String(historyEvents.length);
+  const h7El = document.getElementById('hist-kpi-hours7');
+  if (h7El) h7El.textContent = `${hours7.toFixed(1)}h`;
+  const m7El = document.getElementById('hist-kpi-mastered7');
+  if (m7El) m7El.textContent = String(mastered7);
+  const rEl = document.getElementById('hist-kpi-readiness');
+  if (rEl) rEl.textContent = `${pmNow}%`;
+
+  renderHistorySparkline(historyEvents);
+
+  const trackRow = document.getElementById('history-track-chips');
+  if (trackRow) {
+    const tOpts = [['ALL', 'All Tracks'], ['pm', 'PM Lifecycle'], ['legal', 'Legal (Later)'], ['system', 'System / Sync']];
+    trackRow.innerHTML = tOpts.map(([k, l]) => `<button type="button" class="chip ${historyTrackFilter === k ? 'selected' : ''}" data-htrack="${k}">${l}</button>`).join('');
+    trackRow.querySelectorAll('.chip').forEach(b => {
+      b.onclick = () => { historyTrackFilter = b.dataset.htrack; renderHistory(); };
+    });
+  }
+
+  const typeRow = document.getElementById('history-type-chips');
+  if (typeRow) {
+    const eOpts = [
+      ['ALL', 'All Events'],
+      ['status_change', 'Status Changes'],
+      ['hours_logged', 'Hours Logged'],
+      ['confidence_update', 'Confidence'],
+      ['note_update', 'Notes'],
+      ['manual_checkin', 'Check-Ins']
+    ];
+    typeRow.innerHTML = eOpts.map(([k, l]) => `<button type="button" class="chip ${historyTypeFilter === k ? 'selected' : ''}" data-htype="${k}">${l}</button>`).join('');
+    typeRow.querySelectorAll('.chip').forEach(b => {
+      b.onclick = () => { historyTypeFilter = b.dataset.htype; renderHistory(); };
+    });
+  }
+
+  const tbody = document.getElementById('history-tbody');
+  if (!tbody) return;
+  const filtered = historyEvents.filter(e => {
+    if (historyTrackFilter !== 'ALL' && e.track !== historyTrackFilter) return false;
+    if (historyTypeFilter !== 'ALL' && e.event_type !== historyTypeFilter) return false;
+    return true;
+  });
+
+  if (!filtered.length) {
+    tbody.innerHTML = `<tr><td colspan="8">No matching history events recorded yet.</td></tr>`;
+    return;
+  }
+
+  tbody.innerHTML = filtered.slice(0, 150).map(e => {
+    const ts = e.created_at ? new Date(e.created_at).toLocaleString() : '-';
+    const trans = e.old_status || e.new_status
+      ? `${e.old_status || '-'} -> ${e.new_status || '-'}`
+      : (e.new_confidence ? `Conf ${e.old_confidence || '-'} -> ${e.new_confidence}/5` : '-');
+    const hrsDelta = Number(e.hours_delta) ? `${Number(e.hours_delta) > 0 ? '+' : ''}${Number(e.hours_delta).toFixed(1)}h` : '-';
+    const trackBadge = e.track === 'pm'
+      ? '<span class="track-badge track-badge-pm">PM</span>'
+      : '<span class="track-badge track-badge-legal">' + (e.track === 'legal' ? 'Legal' : 'System') + '</span>';
+    return `
+      <tr>
+        <td class="mono">${ts}</td>
+        <td>${trackBadge}</td>
+        <td class="mono">${e.event_type}</td>
+        <td><strong>${e.entity_id}</strong> ${e.entity_title ? '- ' + e.entity_title : ''}</td>
+        <td class="mono">${trans}</td>
+        <td class="mono">${hrsDelta}</td>
+        <td class="mono">${Number(e.pm_readiness_pct || 0).toFixed(0)}%</td>
+        <td>${e.summary || ''}</td>
+      </tr>
+    `;
+  }).join('');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+  const profileInput = document.getElementById('profile-id-input');
+  if (profileInput) {
+    profileInput.value = getProfileId();
+    profileInput.onchange = () => {
+      const clean = profileInput.value.trim();
+      if (clean.length < 3) {
+        showToast('Profile Key must be at least 3 characters');
+        profileInput.value = getProfileId();
+        return;
+      }
+      localStorage.setItem(PROFILE_STORAGE_KEY, clean);
+      showToast(`Switched profile key to ${clean}`);
+      pullFromSupabase(false);
+    };
+  }
+
+  document.getElementById('btn-sync-pull').onclick = () => pullFromSupabase(false);
+  document.getElementById('btn-sync-push').onclick = () => pushAllToSupabase();
+  document.getElementById('btn-checkin').onclick = () => {
+    const note = prompt('Optional note for this Study Check-In snapshot (hours/goals/milestone):', 'Daily PM lifecycle study session');
+    if (note === null) return;
+    recordHistoryEvent({
+      event_type: 'manual_checkin',
+      entity_id: 'CHECKIN',
+      entity_title: 'Manual Study Check-In',
+      track: 'pm',
+      summary: note.trim() || 'Manual readiness checkpoint logged'
+    });
+    showToast('Study check-in logged to history');
+  };
+
+  const copySqlBtn = document.getElementById('btn-copy-sql');
+  if (copySqlBtn) {
+    copySqlBtn.onclick = async () => {
+      try {
+        const res = await fetch('../supabase/dc36_learning_schema.sql');
+        if (!res.ok) throw new Error('Fetch failed');
+        const sqlText = await res.text();
+        await navigator.clipboard.writeText(sqlText);
+        showToast('Copied SQL schema to clipboard');
+      } catch {
+        showToast('Open supabase/dc36_learning_schema.sql in repo and paste into Supabase SQL Editor');
+      }
+    };
+  }
+
+  document.getElementById('btn-export-history-csv').onclick = () => {
+    const hdr = ['created_at', 'profile_id', 'track', 'event_type', 'entity_id', 'entity_title', 'old_status', 'new_status', 'hours_delta', 'total_hours', 'pm_readiness_pct', 'summary'];
+    const rows = [hdr.join(',')].concat(historyEvents.map(e => hdr.map(k => `"${String(e[k] ?? '').replace(/"/g, '""')}"`).join(',')));
+    const blob = new Blob([rows.join('\n')], { type: 'text/csv;charset=utf-8;' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = `dc36_eu_study_history_${new Date().toISOString().slice(0, 10)}.csv`;
+    a.click();
+    showToast('Exported study history CSV');
+  };
+
   document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.onclick = () => {
       document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
@@ -610,12 +1110,13 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   document.getElementById('btn-export').onclick = () => {
-    const blob = new Blob([JSON.stringify(state, null, 2)], { type: 'application/json' });
+    const payload = { profileId: getProfileId(), state, historyEvents };
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
     a.download = `dc36_eu_learning_backup_${new Date().toISOString().slice(0, 10)}.json`;
     a.click();
-    showToast('Exported JSON progress backup');
+    showToast('Exported JSON progress + history backup');
   };
 
   document.getElementById('file-import').onchange = (e) => {
@@ -625,17 +1126,23 @@ document.addEventListener('DOMContentLoaded', () => {
     reader.onload = () => {
       try {
         const imported = JSON.parse(reader.result);
+        const rawState = imported.state || imported;
         const def = defaultState();
         state = {
-          modules: { ...def.modules, ...migrateLegacyModules(imported.modules) },
-          portfolio: { ...def.portfolio, ...(imported.portfolio || {}) },
-          interviews: { ...def.interviews, ...(imported.interviews || {}) }
+          modules: { ...def.modules, ...migrateLegacyModules(rawState.modules) },
+          portfolio: { ...def.portfolio, ...(rawState.portfolio || {}) },
+          interviews: { ...def.interviews, ...(rawState.interviews || {}) }
         };
+        if (Array.isArray(imported.historyEvents)) {
+          historyEvents = imported.historyEvents;
+          saveLocalHistory();
+        }
         saveState('Imported progress backup');
         renderTrackSection('pm');
         renderTrackSection('legal');
         renderPortfolio();
         renderInterviews();
+        renderHistory();
       } catch {
         showToast('Invalid JSON backup file');
       }
@@ -644,18 +1151,23 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   document.getElementById('btn-reset').onclick = () => {
-    if (!confirm('Reset all learning progress, hours, notes, and confidence scores across both tracks?')) return;
+    if (!confirm('Reset all local learning progress, hours, notes, confidence scores, and local history cache?')) return;
     state = defaultState();
-    saveState('Progress reset');
+    historyEvents = [];
+    saveLocalHistory();
+    saveState('Local progress reset');
     renderTrackSection('pm');
     renderTrackSection('legal');
     renderPortfolio();
     renderInterviews();
+    renderHistory();
   };
 
   renderTrackSection('pm');
   renderTrackSection('legal');
   renderPortfolio();
   renderInterviews();
+  renderHistory();
   updateMetrics();
+  pullFromSupabase(true);
 });

@@ -71,6 +71,21 @@
       </div>
     </section>
 
+    <section class="sync-bar" aria-label="Supabase cloud sync">
+      <div class="sync-left">
+        <span id="sync-pill" class="sync-pill">Checking Supabase...</span>
+        <label class="profile-label">
+          Profile Key:
+          <input type="text" id="profile-id-input" class="profile-input" value="dc36-quan-eu" maxlength="64" title="Workspace profile key used to isolate your rows in Supabase" />
+        </label>
+      </div>
+      <div class="sync-right">
+        <button type="button" id="btn-sync-pull" class="btn-m3 btn-outline-m3">Pull Cloud</button>
+        <button type="button" id="btn-sync-push" class="btn-m3 btn-tonal">Push Local to Cloud</button>
+        <button type="button" id="btn-checkin" class="btn-m3 btn-outline-m3">Log Study Check-In</button>
+      </div>
+    </section>
+
     <nav class="nav-tabs" aria-label="Dashboard sections">
       <button type="button" class="tab-btn active" data-target="view-pm">1. PM Full Lifecycle (36)</button>
       <button type="button" class="tab-btn" data-target="view-legal">
@@ -80,6 +95,7 @@
       <button type="button" class="tab-btn" data-target="view-analytics">3. Lifecycle &amp; Pillar Analytics</button>
       <button type="button" class="tab-btn" data-target="view-portfolio">4. DC36-EU Portfolio &amp; Gaps</button>
       <button type="button" class="tab-btn" data-target="view-interviews">5. Dublin / EU Interview Prep</button>
+      <button type="button" class="tab-btn" data-target="view-history">6. Study History &amp; Log</button>
     </nav>
 
     <main>
@@ -164,10 +180,73 @@
         </div>
         <div id="interview-list"></div>
       </section>
+
+      <section id="view-history" class="view-panel">
+        <div id="history-setup-banner" class="sql-setup-box" style="display:none;">
+          <div>
+            <strong>Supabase Schema Not Initialized Yet:</strong> Run <span class="mono">supabase/dc36_learning_schema.sql</span> once in Supabase Dashboard -&gt; SQL Editor to activate cloud persistence across devices. History continues logging locally in the meantime.
+          </div>
+          <button type="button" id="btn-copy-sql" class="btn-m3 btn-outline-m3">Copy SQL Script</button>
+        </div>
+
+        <div class="history-kpi-grid">
+          <div class="history-kpi-card">
+            <div class="history-kpi-label">Logged History Events</div>
+            <div class="history-kpi-value" id="hist-kpi-events">0</div>
+          </div>
+          <div class="history-kpi-card">
+            <div class="history-kpi-label">Study Hours (Last 7 Days)</div>
+            <div class="history-kpi-value" id="hist-kpi-hours7">0.0h</div>
+          </div>
+          <div class="history-kpi-card">
+            <div class="history-kpi-label">Modules Mastered (Last 7 Days)</div>
+            <div class="history-kpi-value" id="hist-kpi-mastered7">0</div>
+          </div>
+          <div class="history-kpi-card">
+            <div class="history-kpi-label">Latest Recorded PM Readiness</div>
+            <div class="history-kpi-value" id="hist-kpi-readiness">0%</div>
+          </div>
+        </div>
+
+        <div class="sparkline-card">
+          <div class="sparkline-head">
+            <h3>PM Readiness Progression Trajectory</h3>
+            <span class="mono" style="font-size:12px;color:#44474f;" id="sparkline-meta">Chronological event snapshots</span>
+          </div>
+          <svg id="history-sparkline" viewBox="0 0 800 130" width="100%" height="130" preserveAspectRatio="none" aria-label="Readiness history chart"></svg>
+        </div>
+
+        <div class="toolbar">
+          <div class="toolbar-top">
+            <div class="chip-row" id="history-track-chips"></div>
+            <button type="button" id="btn-export-history-csv" class="btn-m3 btn-outline-m3">Export History CSV</button>
+          </div>
+          <div class="chip-row" id="history-type-chips"></div>
+        </div>
+
+        <div class="table-wrap">
+          <table class="m3-table">
+            <thead>
+              <tr>
+                <th>Timestamp</th>
+                <th>Track</th>
+                <th>Event</th>
+                <th>Item / Module</th>
+                <th>Transition</th>
+                <th>Hours Delta</th>
+                <th>PM %</th>
+                <th>Summary</th>
+              </tr>
+            </thead>
+            <tbody id="history-tbody"></tbody>
+          </table>
+        </div>
+      </section>
     </main>
   </div>
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="supabase-sync.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
