@@ -1321,11 +1321,13 @@ function renderModuleDocsDrawerHtml(m, forceOpen) {
     const catLbl = d.cat || 'Guide';
     return `
       <li class="module-doc-item">
-        <div class="module-doc-head">
-          <span class="doc-cat-badge ${docCatClass(catLbl)}">${catLbl}</span>
-          <div class="module-doc-title">${d.title}</div>
+        <div class="module-doc-main">
+          <div class="module-doc-head">
+            <span class="doc-cat-badge ${docCatClass(catLbl)}">${catLbl}</span>
+            <div class="module-doc-title">${d.title}</div>
+          </div>
+          ${d.why ? `<div class="module-doc-why">${d.why}</div>` : ''}
         </div>
-        ${d.why ? `<div class="module-doc-why">${d.why}</div>` : ''}
         <div class="module-doc-meta">
           <span class="mono">${d.artifact} (${d.ref})</span>
           <span class="doc-pill ${kindCls}">${kindLbl}</span>
@@ -1357,27 +1359,33 @@ function renderModuleCardHtml(m, forceDocsOpen) {
 
   return `
     <article class="module-card ${cardCls}">
-      <div class="card-head">
-        <span class="badge-code mono">${m.id}</span>
-        <span class="badge-pillar">${pLabel}</span>
+      <div class="module-card-top">
+        <div class="module-card-info">
+          <div class="card-head">
+            <span class="badge-code mono">${m.id}</span>
+            <span class="badge-pillar">${pLabel}</span>
+          </div>
+          <h3 class="card-title">${m.title}</h3>
+          <p class="card-desc">${m.desc}</p>
+          <div class="std-tags">${m.tags.map(t => `<span class="std-tag mono">${t}</span>`).join('')}</div>
+        </div>
+        <div class="module-card-controls">
+          <div class="controls-row">
+            <select class="status-select ${selCls}" data-id="${m.id}" aria-label="Status for ${m.id}">
+              <option value="todo" ${st.status === 'todo' ? 'selected' : ''}>To Study</option>
+              <option value="progress" ${st.status === 'progress' ? 'selected' : ''}>In Progress</option>
+              <option value="mastered" ${st.status === 'mastered' ? 'selected' : ''}>Mastered</option>
+            </select>
+            <input type="number" min="0" step="0.5" class="hours-input" data-id="${m.id}" value="${st.hours}" title="Logged study hours" placeholder="Hrs" />
+          </div>
+          <div class="confidence-row">
+            <span>Confidence (1-5):</span>
+            <div class="conf-pills">${confBtns}</div>
+          </div>
+          <textarea class="notes-area" data-id="${m.id}" placeholder="Study notes, project artifacts, interview anchor...">${st.notes || ''}</textarea>
+        </div>
       </div>
-      <h3 class="card-title">${m.title}</h3>
-      <p class="card-desc">${m.desc}</p>
-      <div class="std-tags">${m.tags.map(t => `<span class="std-tag mono">${t}</span>`).join('')}</div>
       ${renderModuleDocsDrawerHtml(m, forceDocsOpen)}
-      <div class="controls-row">
-        <select class="status-select ${selCls}" data-id="${m.id}" aria-label="Status for ${m.id}">
-          <option value="todo" ${st.status === 'todo' ? 'selected' : ''}>To Study</option>
-          <option value="progress" ${st.status === 'progress' ? 'selected' : ''}>In Progress</option>
-          <option value="mastered" ${st.status === 'mastered' ? 'selected' : ''}>Mastered</option>
-        </select>
-        <input type="number" min="0" step="0.5" class="hours-input" data-id="${m.id}" value="${st.hours}" title="Logged study hours" placeholder="Hrs" />
-      </div>
-      <div class="confidence-row">
-        <span>Confidence (1-5):</span>
-        <div class="conf-pills">${confBtns}</div>
-      </div>
-      <textarea class="notes-area" data-id="${m.id}" placeholder="Study notes, project artifacts, interview anchor...">${st.notes || ''}</textarea>
     </article>
   `;
 }
