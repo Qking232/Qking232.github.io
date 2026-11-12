@@ -1,6 +1,17 @@
 // Ireland & EU Data Centre Development Mastery Tracker (DC36-EU)
 // Primary Track: End-to-End Project Management Lifecycle | Deferred Track: Legal & Permitting
 const STORAGE_KEY = 'dc36_eu_ireland_tracker_v1';
+const LOCAL_REPO_ROOT = 'G:\\My Drive\\7. AI\\DataCenter_EU_Ireland\\';
+
+async function copyLocalRepoPath(relPath, label) {
+  const full = `${LOCAL_REPO_ROOT}${relPath}`;
+  try {
+    await navigator.clipboard.writeText(full);
+    showToast(`Copied path: ${label || relPath}`);
+  } catch {
+    showToast(full);
+  }
+}
 
 const PILLARS = [
   // Active Track: End-to-End Project Management Lifecycle (6 Phases x 6 = 36 Modules)
@@ -30,7 +41,7 @@ const SECTION_DOCS = {
     { code: 'PM2-DOC-02', title: 'Master Level 4 Primavera P6 Schedule (141 Tasks / 48 Critical)', std: 'DCMA-14 6/6 / CPM', artifact: 'DataCenter_36MW_EU_Ireland.xer', kind: 'built' },
     { code: 'PM2-DOC-03', title: 'DCMA-14 Schedule Health Audit & Longest Path Diagnostic Report', std: 'DCMA 14-Point', artifact: 'P6 QA Audit Checksheet', kind: 'ref' },
     { code: 'PM2-DOC-04', title: 'EU EED Telemetry Specification (PUE / WUE / ERF / REF Metering Plan)', std: 'EU EED 2023/1791 & 2024/1364', artifact: 'DataCenter_36MW_EU_PreNTP_Controls.xlsx', kind: 'built' },
-    { code: 'PM2-DOC-05', title: 'BIM Exchange Info Requirements (EIR), BEP & Master Document Register', std: 'BS EN ISO 19650 CDE', artifact: 'Master_Document_Register_DC36EU.xlsx', kind: 'planned' }
+    { code: 'PM2-DOC-05', title: 'BIM Exchange Info Requirements (EIR), BEP & Master Document Register', std: 'BS EN ISO 19650 CDE', artifact: 'Master_Document_Register_DC36EU_Rev.001.xlsx', kind: 'built' }
   ],
   PM3: [
     { code: 'PM3-DOC-01', title: 'Contracting & Multi-Prime Work Packaging Strategy (EPCm vs. D&B)', std: 'RIBA Stage 4 / Procurement', artifact: 'DataCenter_36MW_EU_PIP.xlsx', kind: 'built' },
@@ -109,11 +120,12 @@ const CURRICULUM = [
     title: 'Project Charter, Governance Structure & RACI Matrix',
     desc: 'Establish Project Charter, Sponsor authority, Steering Committee cadence, success thresholds, and multi-party RACI governance.',
     tags: ['Charter', 'Governance', 'RACI'],
+    folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-01_Project_Charter_Governance_RACI',
     docs: [
-      { cat: 'Standard', title: 'PMI PMBOK Project Charter Guideline & RIBA Stage 0-1 Client Brief', ref: 'PMBOK / RIBA Stage 0-1', artifact: 'Charter Governance Standard', why: 'Understand sponsor authority, business objectives, and formal project authorization.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Executive Project Charter Document (Objectives, 36 MW Scope & PM Authority)', ref: 'Sheet 1. Charter Summary', artifact: 'DataCenter_36MW_EU_Project_Charter.xlsx', why: 'Benchmark real DC36-EU charter scope boundaries, KPIs, and stage-gate mandates.', kind: 'built' },
-      { cat: 'Template', title: 'Multi-Party Governance Framework & RACI Responsibility Matrix', ref: 'Sheet 2. Governance & RACI', artifact: 'DataCenter_36MW_EU_Project_Charter.xlsx', why: 'Map Responsible, Accountable, Consulted, and Informed roles across Sponsor, EPCm, and CxA.', kind: 'built' },
-      { cat: 'Audit', title: 'Steering Committee Terms of Reference, Quorum & Escalation Charter', ref: 'DC36EU_SteerCo_DoA_Quorum_Audit.xlsx', artifact: 'DC36EU_SteerCo_ToR_Escalation_Charter.docx', why: 'Define executive voting thresholds, financial sign-off limits, and escalation paths.', kind: 'built' }
+      { cat: 'Standard', title: 'PMI PMBOK Project Charter Guideline & RIBA Stage 0-1 Client Brief', ref: 'PMBOK / RIBA Stage 0-1', artifact: 'PM01_Doc1_Standard_Charter_Governance_Standard_Rev.001.docx', why: 'Understand sponsor authority, business objectives, and formal project authorization.', folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-01_Project_Charter_Governance_RACI', localPath: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-01_Project_Charter_Governance_RACI\\PM01_Doc1_Standard_Charter_Governance_Standard_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Executive Project Charter Document (Objectives, 36 MW Scope & PM Authority)', ref: 'Sheet 1. Charter Summary', artifact: 'PM01_Doc2_Deliverable_Project_Charter_Summary_Master_Rev.001.xlsx', why: 'Benchmark real DC36-EU charter scope boundaries, KPIs, and stage-gate mandates.', folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-01_Project_Charter_Governance_RACI', localPath: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-01_Project_Charter_Governance_RACI\\PM01_Doc2_Deliverable_Project_Charter_Summary_Master_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Template', title: 'Multi-Party Governance Framework & RACI Responsibility Matrix', ref: 'Sheet 2. Governance & RACI', artifact: 'PM01_Doc3_Template_Governance_RACI_Charter_Master_Rev.001.xlsx', why: 'Map Responsible, Accountable, Consulted, and Informed roles across Sponsor, EPCm, and CxA.', folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-01_Project_Charter_Governance_RACI', localPath: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-01_Project_Charter_Governance_RACI\\PM01_Doc3_Template_Governance_RACI_Charter_Master_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Steering Committee Terms of Reference, Quorum & Escalation Charter', ref: 'DC36EU_SteerCo_DoA_Quorum_Audit.xlsx', artifact: 'PM01_Doc4_Audit_SteerCo_ToR_Escalation_Charter_Rev.001.docx', why: 'Define executive voting thresholds, financial sign-off limits, and escalation paths.', folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-01_Project_Charter_Governance_RACI', localPath: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-01_Project_Charter_Governance_RACI\\PM01_Doc4_Audit_SteerCo_ToR_Escalation_Charter_Rev.001.docx', kind: 'built' }
     ]
   },
   {
@@ -121,11 +133,12 @@ const CURRICULUM = [
     title: 'Site Selection Due Diligence & Pre-Feasibility Scoring',
     desc: 'Evaluate land parcels across power proximity, fibre diversity, geotechnical conditions, flood zones, and buildability constraints.',
     tags: ['Feasibility', 'Due Diligence', 'Scoring'],
+    folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-02_Site_Selection_Due_Diligence',
     docs: [
-      { cat: 'Standard', title: 'I.S. EN 50600-2-1 Building Construction & Site Environmental Risk Guideline', ref: 'EN 50600-2-1 Siting', artifact: 'Site Siting Standard Guide', why: 'Learn mandatory physical security setbacks, flood immunity, and external hazard rules.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Multi-Criteria Site Selection & Land Acquisition Due Diligence Report', ref: 'Power / Fibre / Zoning', artifact: 'Site Selection Feasibility Report', why: 'Synthesize grid substation distance, dual-path dark fibre, and zoning viability for FID.', kind: 'ref' },
-      { cat: 'Template', title: 'Weighted Land Parcel Comparison Scorecard (Grid, Geotech, Flood, Cost)', ref: 'Weighted Decision Model', artifact: 'Site Scoring Matrix Workbook', why: 'Quantify site trade-offs objectively across capex penalties and schedule risk.', kind: 'ref' },
-      { cat: 'Audit', title: 'Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood)', ref: 'Eurocode 7 / OPW Flood Maps', artifact: 'Land DD Verification Checklist', why: 'Eliminate fatal subsurface, contamination, UXO, or fluvial flood blockers before closing.', kind: 'ref' }
+      { cat: 'Standard', title: 'I.S. EN 50600-2-1 Building Construction & Site Environmental Risk Guideline', ref: 'EN 50600-2-1 Siting', artifact: 'PM02_Doc1_Standard_Site_Siting_Standard_Guide_Rev.001.docx', why: 'Learn mandatory physical security setbacks, flood immunity, and external hazard rules.', folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-02_Site_Selection_Due_Diligence', localPath: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-02_Site_Selection_Due_Diligence\\PM02_Doc1_Standard_Site_Siting_Standard_Guide_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Multi-Criteria Site Selection & Land Acquisition Due Diligence Report', ref: 'Power / Fibre / Zoning', artifact: 'PM02_Doc2_Deliverable_Site_Selection_Feasibility_Report_Rev.001.docx', why: 'Synthesize grid substation distance, dual-path dark fibre, and zoning viability for FID.', folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-02_Site_Selection_Due_Diligence', localPath: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-02_Site_Selection_Due_Diligence\\PM02_Doc2_Deliverable_Site_Selection_Feasibility_Report_Rev.001.docx', kind: 'built' },
+      { cat: 'Template', title: 'Weighted Land Parcel Comparison Scorecard (Grid, Geotech, Flood, Cost)', ref: 'Weighted Decision Model', artifact: 'PM02_Doc3_Template_Site_Scoring_Matrix_Workbook_Rev.001.xlsx', why: 'Quantify site trade-offs objectively across capex penalties and schedule risk.', folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-02_Site_Selection_Due_Diligence', localPath: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-02_Site_Selection_Due_Diligence\\PM02_Doc3_Template_Site_Scoring_Matrix_Workbook_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood)', ref: 'Eurocode 7 / OPW Flood Maps', artifact: 'PM02_Doc4_Audit_Land_DD_Verification_Checklist_Rev.001.xlsx', why: 'Eliminate fatal subsurface, contamination, UXO, or fluvial flood blockers before closing.', folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-02_Site_Selection_Due_Diligence', localPath: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-02_Site_Selection_Due_Diligence\\PM02_Doc4_Audit_Land_DD_Verification_Checklist_Rev.001.xlsx', kind: 'built' }
     ]
   },
   {
@@ -133,11 +146,12 @@ const CURRICULUM = [
     title: 'Basis of Design (BoD) & I.S. EN 50600 Class 3 Translation',
     desc: 'Translate tenant SLAs and Uptime Tier III maintainability into EN 50600 Availability Classes, PUE targets, and free-cooling envelope.',
     tags: ['EN 50600', 'BoD', 'ISO 22237'],
+    folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-03_Basis_of_Design_EN50600_Class3',
     docs: [
-      { cat: 'Standard', title: 'I.S. EN 50600-1 / -2-2 / -2-3 & ISO/IEC 22237 Availability Class 3 Series', ref: 'EN 50600 / ISO 22237', artifact: 'Availability Class 3 Standard', why: 'Master European concurrent maintainability topology across power, cooling, and security.', kind: 'ref' },
-      { cat: 'Deliverable', title: '36 MW Campus Basis of Design (N+1/2N Topology, Density, SLAs & Redundancy)', ref: 'Sheet 3. EN 50600 & EED', artifact: 'DataCenter_36MW_EU_PreNTP_Controls.xlsx', why: 'Translate 36 MW IT load and kW/rack targets into distributable redundant MEP specs.', kind: 'built' },
-      { cat: 'Template', title: 'Scope Boundaries, Client vs. Contractor Battery Limits & Exclusions Matrix', ref: 'Sheet 4. Scope Boundaries', artifact: 'DataCenter_36MW_EU_Project_Charter.xlsx', why: 'Prevent scope gaps between core shell, white-space fit-out, and utility tie-ins.', kind: 'built' },
-      { cat: 'Audit', title: 'Atlantic Free-Cooling Psychrometric Study & Low-GWP Chiller (EU F-Gas) Review', ref: 'ASHRAE TC 9.9 / EU 2024/573', artifact: 'Mechanical Concept Design Audit', why: 'Validate annualized PUE <= 1.22 using Irish ambient cooling hours and compliant refrigerants.', kind: 'ref' }
+      { cat: 'Standard', title: 'I.S. EN 50600-1 / -2-2 / -2-3 & ISO/IEC 22237 Availability Class 3 Series', ref: 'EN 50600 / ISO 22237', artifact: 'PM03_Doc1_Standard_Availability_Class_3_Standard_Rev.001.docx', why: 'Master European concurrent maintainability topology across power, cooling, and security.', folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-03_Basis_of_Design_EN50600_Class3', localPath: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-03_Basis_of_Design_EN50600_Class3\\PM03_Doc1_Standard_Availability_Class_3_Standard_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: '36 MW Campus Basis of Design (N+1/2N Topology, Density, SLAs & Redundancy)', ref: 'Sheet 3. EN 50600 & EED', artifact: 'PM03_Doc2_Deliverable_EN50600_BoD_Controls_Master_Rev.001.xlsx', why: 'Translate 36 MW IT load and kW/rack targets into distributable redundant MEP specs.', folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-03_Basis_of_Design_EN50600_Class3', localPath: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-03_Basis_of_Design_EN50600_Class3\\PM03_Doc2_Deliverable_EN50600_BoD_Controls_Master_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Template', title: 'Scope Boundaries, Client vs. Contractor Battery Limits & Exclusions Matrix', ref: 'Sheet 4. Scope Boundaries', artifact: 'PM03_Doc3_Template_Scope_Boundaries_Charter_Master_Rev.001.xlsx', why: 'Prevent scope gaps between core shell, white-space fit-out, and utility tie-ins.', folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-03_Basis_of_Design_EN50600_Class3', localPath: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-03_Basis_of_Design_EN50600_Class3\\PM03_Doc3_Template_Scope_Boundaries_Charter_Master_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Atlantic Free-Cooling Psychrometric Study & Low-GWP Chiller (EU F-Gas) Review', ref: 'ASHRAE TC 9.9 / EU 2024/573', artifact: 'PM03_Doc4_Audit_Mechanical_Concept_Design_Audit_Rev.001.docx', why: 'Validate annualized PUE <= 1.22 using Irish ambient cooling hours and compliant refrigerants.', folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-03_Basis_of_Design_EN50600_Class3', localPath: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-03_Basis_of_Design_EN50600_Class3\\PM03_Doc4_Audit_Mechanical_Concept_Design_Audit_Rev.001.docx', kind: 'built' }
     ]
   },
   {
@@ -145,11 +159,12 @@ const CURRICULUM = [
     title: 'EUR Capex Modelling, 10-Yr DCF, NPV/IRR & Sensitivity',
     desc: 'Build EUR/MW Capex baselines, colocation yield curves, PUE/energy sensitivity tables, and institutional investment metrics.',
     tags: ['EUR DCF', 'Capex/MW', 'NPV/IRR'],
+    folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-04_EUR_Capex_10Yr_DCF_NPV_IRR',
     docs: [
-      { cat: 'Standard', title: 'RICS New Rules of Measurement (NRM1) & Institutional Valuation Standard', ref: 'RICS NRM1 / Real Estate Std', artifact: 'RICS Capex Cost Standard', why: 'Structure institutional elemental cost planning benchmarked in EUR per MW of IT load.', kind: 'ref' },
-      { cat: 'Deliverable', title: '36 MW Capex Cost Plan (Land, Grid, CSA, MEP, OFCI, Soft Costs & Contingency)', ref: 'Sheet 6. Stage-Gate Budget', artifact: 'DataCenter_36MW_EU_Project_Charter.xlsx', why: 'Break down total development capex across stage-gate funding tranches.', kind: 'built' },
-      { cat: 'Template', title: '10-Year EUR Discounted Cashflow Model (IRR, NPV, Payback & EUR/kW Yield)', ref: 'Sheet 2. EUR 10-Yr DCF', artifact: 'DataCenter_36MW_EU_PreNTP_Controls.xlsx', why: 'Model multi-year leasing ramp, WACC discounting, opex recovery, and terminal exit value.', kind: 'built' },
-      { cat: 'Audit', title: 'Sensitivity & Downside Stress Test Matrix (Power Tariff, PUE & Capex +/-10%)', ref: 'IC Investment Stress Test', artifact: 'Financial Sensitivity Matrix', why: 'Quantify IRR resilience against construction inflation, grid delays, and energy spikes.', kind: 'ref' }
+      { cat: 'Standard', title: 'RICS New Rules of Measurement (NRM1) & Institutional Valuation Standard', ref: 'RICS NRM1 / Real Estate Std', artifact: 'PM04_Doc1_Standard_RICS_Capex_Cost_Standard_Rev.001.docx', why: 'Structure institutional elemental cost planning benchmarked in EUR per MW of IT load.', folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-04_EUR_Capex_10Yr_DCF_NPV_IRR', localPath: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-04_EUR_Capex_10Yr_DCF_NPV_IRR\\PM04_Doc1_Standard_RICS_Capex_Cost_Standard_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: '36 MW Capex Cost Plan (Land, Grid, CSA, MEP, OFCI, Soft Costs & Contingency)', ref: 'Sheet 6. Stage-Gate Budget', artifact: 'PM04_Doc2_Deliverable_StageGate_Capex_Budget_Charter_Master_Rev.001.xlsx', why: 'Break down total development capex across stage-gate funding tranches.', folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-04_EUR_Capex_10Yr_DCF_NPV_IRR', localPath: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-04_EUR_Capex_10Yr_DCF_NPV_IRR\\PM04_Doc2_Deliverable_StageGate_Capex_Budget_Charter_Master_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Template', title: '10-Year EUR Discounted Cashflow Model (IRR, NPV, Payback & EUR/kW Yield)', ref: 'Sheet 2. EUR 10-Yr DCF', artifact: 'PM04_Doc3_Template_EUR_10Yr_DCF_Model_Master_Rev.001.xlsx', why: 'Model multi-year leasing ramp, WACC discounting, opex recovery, and terminal exit value.', folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-04_EUR_Capex_10Yr_DCF_NPV_IRR', localPath: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-04_EUR_Capex_10Yr_DCF_NPV_IRR\\PM04_Doc3_Template_EUR_10Yr_DCF_Model_Master_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Sensitivity & Downside Stress Test Matrix (Power Tariff, PUE & Capex +/-10%)', ref: 'IC Investment Stress Test', artifact: 'PM04_Doc4_Audit_Financial_Sensitivity_Matrix_Rev.001.xlsx', why: 'Quantify IRR resilience against construction inflation, grid delays, and energy spikes.', folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-04_EUR_Capex_10Yr_DCF_NPV_IRR', localPath: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-04_EUR_Capex_10Yr_DCF_NPV_IRR\\PM04_Doc4_Audit_Financial_Sensitivity_Matrix_Rev.001.xlsx', kind: 'built' }
     ]
   },
   {
@@ -157,11 +172,12 @@ const CURRICULUM = [
     title: 'RIBA 0-7 Stage-Gate Framework & Pre-NTP FID Package',
     desc: 'Structure formal Stage-Gate entry/exit criteria leading to Final Investment Decision (FID) and Full Notice to Proceed (NTP).',
     tags: ['RIBA 0-7', 'Stage Gates', 'FID'],
+    folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-05_RIBA_Stage_Gate_PreNTP_FID',
     docs: [
-      { cat: 'Standard', title: 'RIBA Plan of Work 2020 (Stages 0-7) Mission-Critical Data Centre Overlay', ref: 'RIBA Plan of Work 2020', artifact: 'RIBA 0-7 Framework Guide', why: 'Align design freezes, statutory consents, and site construction gates cleanly.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Final Investment Decision (FID) Board Paper & Pre-NTP Executive Dossier', ref: 'Sheet 1. Executive Summary', artifact: 'DataCenter_36MW_EU_PreNTP_Controls.xlsx', why: 'Consolidate commercial returns, schedule baseline, and risk readiness for board sign-off.', kind: 'built' },
-      { cat: 'Template', title: 'Limited Notice to Proceed (LNTP) vs. Full NTP Release Authorization Memo', ref: 'Pre-NTP Commercial Release', artifact: 'LNTP / FNTP Authorization Memo', why: 'Commit early enabling works or OEM slots before unconditional full contract execution.', kind: 'ref' },
-      { cat: 'Audit', title: 'Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist', ref: 'Gate Review Governance', artifact: 'Stage-Gate Exit Checklist', why: 'Verify design maturity, permit status, and funded contingency before unlocking next tranche.', kind: 'ref' }
+      { cat: 'Standard', title: 'RIBA Plan of Work 2020 (Stages 0-7) Mission-Critical Data Centre Overlay', ref: 'RIBA Plan of Work 2020', artifact: 'PM05_Doc1_Standard_RIBA_0_7_Framework_Guide_Rev.001.docx', why: 'Align design freezes, statutory consents, and site construction gates cleanly.', folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-05_RIBA_Stage_Gate_PreNTP_FID', localPath: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-05_RIBA_Stage_Gate_PreNTP_FID\\PM05_Doc1_Standard_RIBA_0_7_Framework_Guide_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Final Investment Decision (FID) Board Paper & Pre-NTP Executive Dossier', ref: 'Sheet 1. Executive Summary', artifact: 'PM05_Doc2_Deliverable_FID_PreNTP_Dossier_Controls_Master_Rev.001.xlsx', why: 'Consolidate commercial returns, schedule baseline, and risk readiness for board sign-off.', folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-05_RIBA_Stage_Gate_PreNTP_FID', localPath: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-05_RIBA_Stage_Gate_PreNTP_FID\\PM05_Doc2_Deliverable_FID_PreNTP_Dossier_Controls_Master_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Template', title: 'Limited Notice to Proceed (LNTP) vs. Full NTP Release Authorization Memo', ref: 'Pre-NTP Commercial Release', artifact: 'PM05_Doc3_Template_LNTP_FNTP_Authorization_Memo_Rev.001.docx', why: 'Commit early enabling works or OEM slots before unconditional full contract execution.', folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-05_RIBA_Stage_Gate_PreNTP_FID', localPath: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-05_RIBA_Stage_Gate_PreNTP_FID\\PM05_Doc3_Template_LNTP_FNTP_Authorization_Memo_Rev.001.docx', kind: 'built' },
+      { cat: 'Audit', title: 'Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist', ref: 'Gate Review Governance', artifact: 'PM05_Doc4_Audit_Stage_Gate_Exit_Checklist_Rev.001.xlsx', why: 'Verify design maturity, permit status, and funded contingency before unlocking next tranche.', folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-05_RIBA_Stage_Gate_PreNTP_FID', localPath: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-05_RIBA_Stage_Gate_PreNTP_FID\\PM05_Doc4_Audit_Stage_Gate_Exit_Checklist_Rev.001.xlsx', kind: 'built' }
     ]
   },
   {
@@ -169,11 +185,12 @@ const CURRICULUM = [
     title: 'Stakeholder Register, Engagement & Escalation Plan',
     desc: 'Map internal sponsors, hyperscale tenants, EPCm leads, local communities, and utility/certifier touchpoints across phases.',
     tags: ['Stakeholders', 'Comms Plan'],
+    folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-06_Stakeholder_Engagement_Escalation',
     docs: [
-      { cat: 'Standard', title: 'ISO 21502 Guidance on Project Management — Stakeholder Engagement', ref: 'ISO 21502 / PMI Stakeholder', artifact: 'Stakeholder Mgmt Standard', why: 'Apply structured identification, cadence tailoring, and alignment feedback loops.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Project Communications Management Plan & Weekly/Monthly Cadence Matrix', ref: 'Reporting Governance', artifact: 'Comms Management Plan', why: 'Establish predictable reporting rhythm across lenders, tenants, TSO, and site teams.', kind: 'ref' },
-      { cat: 'Template', title: 'Stakeholder Register & Power/Interest Matrix (Investors, Tenants, TSO, Public)', ref: 'Sheet 3. Stakeholders', artifact: 'DataCenter_36MW_EU_Project_Charter.xlsx', why: 'Classify influence vs. interest for every internal executive and Irish statutory body.', kind: 'built' },
-      { cat: 'Audit', title: 'Executive Issue Escalation Flowchart & Decision Turnaround SLA Log', ref: 'Decision Turnaround SLA', artifact: 'Escalation Protocol Log', why: 'Enforce time-boxed escalation paths so critical-path blockers never stall in committees.', kind: 'ref' }
+      { cat: 'Standard', title: 'ISO 21502 Guidance on Project Management — Stakeholder Engagement', ref: 'ISO 21502 / PMI Stakeholder', artifact: 'PM06_Doc1_Standard_Stakeholder_Mgmt_Standard_Rev.001.docx', why: 'Apply structured identification, cadence tailoring, and alignment feedback loops.', folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-06_Stakeholder_Engagement_Escalation', localPath: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-06_Stakeholder_Engagement_Escalation\\PM06_Doc1_Standard_Stakeholder_Mgmt_Standard_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Project Communications Management Plan & Weekly/Monthly Cadence Matrix', ref: 'Reporting Governance', artifact: 'PM06_Doc2_Deliverable_Comms_Management_Plan_Rev.001.docx', why: 'Establish predictable reporting rhythm across lenders, tenants, TSO, and site teams.', folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-06_Stakeholder_Engagement_Escalation', localPath: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-06_Stakeholder_Engagement_Escalation\\PM06_Doc2_Deliverable_Comms_Management_Plan_Rev.001.docx', kind: 'built' },
+      { cat: 'Template', title: 'Stakeholder Register & Power/Interest Matrix (Investors, Tenants, TSO, Public)', ref: 'Sheet 3. Stakeholders', artifact: 'PM06_Doc3_Template_Stakeholder_Register_Charter_Master_Rev.001.xlsx', why: 'Classify influence vs. interest for every internal executive and Irish statutory body.', folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-06_Stakeholder_Engagement_Escalation', localPath: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-06_Stakeholder_Engagement_Escalation\\PM06_Doc3_Template_Stakeholder_Register_Charter_Master_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Executive Issue Escalation Flowchart & Decision Turnaround SLA Log', ref: 'Decision Turnaround SLA', artifact: 'PM06_Doc4_Audit_Escalation_Protocol_Log_Rev.001.xlsx', why: 'Enforce time-boxed escalation paths so critical-path blockers never stall in committees.', folder: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-06_Stakeholder_Engagement_Escalation', localPath: 'Phase_1_Initiation_Charter_RIBA_0_1\\PM-06_Stakeholder_Engagement_Escalation\\PM06_Doc4_Audit_Escalation_Protocol_Log_Rev.001.xlsx', kind: 'built' }
     ]
   },
 
@@ -183,11 +200,12 @@ const CURRICULUM = [
     title: 'Work Breakdown Structure (WBS) & Dictionary Architecture',
     desc: 'Decompose 36 MW campus scope into controllable CSA, HV/MV Power, Mechanical, BMS/EPMS, and Cx deliverables mapped to cost accounts.',
     tags: ['WBS', 'Scope Baseline'],
+    folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-07_WBS_Dictionary_OBS',
     docs: [
-      { cat: 'Standard', title: 'PMI Practice Standard for WBS & Uniclass 2015 Data Centre Coding', ref: 'PMI WBS / Uniclass 2015', artifact: 'WBS & Coding Standard', why: 'Structure 100% scope hierarchy rules and standardized asset classification codes.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Master WBS Dictionary (Scope Statements, Deliverables & Cost Accounts)', ref: 'Sheet 2. WBS Dictionary', artifact: 'DataCenter_36MW_EU_PIP.xlsx', why: 'Link every physical campus element (CSA, HV, MEP, BMS, Cx) to a budget control account.', kind: 'built' },
-      { cat: 'Template', title: 'WBS-to-OBS Responsibility Assignment Matrix (RAM) Across Package Teams', ref: 'PMBOK / ISO 21502 RAM', artifact: 'WBS-to-OBS RAM Workbook', why: 'Assign single-point package ownership between Owner, EPCm, and trade contractors.', kind: 'ref' },
-      { cat: 'Audit', title: 'Multi-Level (L1-L4) Campus WBS Completeness & Control Account Check', ref: '100% Rule Verification', artifact: 'WBS Integrity Audit Sheet', why: 'Confirm zero unallocated scope, zero duplicate cost buckets, and clean P6 parity.', kind: 'ref' }
+      { cat: 'Standard', title: 'PMI Practice Standard for WBS & Uniclass 2015 Data Centre Coding', ref: 'PMI WBS / Uniclass 2015', artifact: 'PM07_Doc1_Standard_WBS_Coding_Standard_Rev.001.docx', why: 'Structure 100% scope hierarchy rules and standardized asset classification codes.', folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-07_WBS_Dictionary_OBS', localPath: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-07_WBS_Dictionary_OBS\\PM07_Doc1_Standard_WBS_Coding_Standard_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Master WBS Dictionary (Scope Statements, Deliverables & Cost Accounts)', ref: 'Sheet 2. WBS Dictionary', artifact: 'PM07_Doc2_Deliverable_Master_WBS_Dictionary_PIP_Master_Rev.001.xlsx', why: 'Link every physical campus element (CSA, HV, MEP, BMS, Cx) to a budget control account.', folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-07_WBS_Dictionary_OBS', localPath: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-07_WBS_Dictionary_OBS\\PM07_Doc2_Deliverable_Master_WBS_Dictionary_PIP_Master_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Template', title: 'WBS-to-OBS Responsibility Assignment Matrix (RAM) Across Package Teams', ref: 'PMBOK / ISO 21502 RAM', artifact: 'PM07_Doc3_Template_WBS_to_OBS_RAM_Workbook_Rev.001.xlsx', why: 'Assign single-point package ownership between Owner, EPCm, and trade contractors.', folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-07_WBS_Dictionary_OBS', localPath: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-07_WBS_Dictionary_OBS\\PM07_Doc3_Template_WBS_to_OBS_RAM_Workbook_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Multi-Level (L1-L4) Campus WBS Completeness & Control Account Check', ref: '100% Rule Verification', artifact: 'PM07_Doc4_Audit_WBS_Integrity_Audit_Sheet_Rev.001.xlsx', why: 'Confirm zero unallocated scope, zero duplicate cost buckets, and clean P6 parity.', folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-07_WBS_Dictionary_OBS', localPath: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-07_WBS_Dictionary_OBS\\PM07_Doc4_Audit_WBS_Integrity_Audit_Sheet_Rev.001.xlsx', kind: 'built' }
     ]
   },
   {
@@ -195,11 +213,12 @@ const CURRICULUM = [
     title: 'Primavera P6 Level 4 Logic Network & Critical Path',
     desc: 'Build deterministic FS/SS logic across Pre-Construction, OFCI, CSA Shell, MEP Halls 1-4, Energisation, and L1-L5 Commissioning.',
     tags: ['Primavera P6', 'Level 4', 'CPM'],
+    folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-08_Primavera_P6_Logic_Critical_Path',
     docs: [
-      { cat: 'Standard', title: 'AACE Recommended Practice 27R-03 (Schedule Classification & CPM Method)', ref: 'AACE 27R-03 / 38R-06', artifact: 'CPM Scheduling Standard', why: 'Differentiate Level 1 executive timelines from Level 4 logic-driven execution networks.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Master Level 4 Primavera P6 File (141 Tasks, 209 Links, 48 Critical Tasks)', ref: 'EU Calendar (2027-2030)', artifact: 'DataCenter_36MW_EU_Ireland.xer', why: 'Operate an importable P6 XER schedule driving May 2028 energisation to 2030 RFS.', kind: 'built' },
-      { cat: 'Template', title: 'Project Implementation Plan (PIP) & Interactive 141-Task Gantt Workbook', ref: 'Sheet 3. 141-Task Gantt', artifact: 'DataCenter_36MW_EU_PIP.xlsx', why: 'Communicate P6 critical path dates and dependencies clearly in Excel to non-planners.', kind: 'built' },
-      { cat: 'Audit', title: 'Schedule Basis Memorandum (Calendars, Shift Assumptions & Driving Path)', ref: 'AACE 38R-06 Basis Memo', artifact: 'Schedule Basis Memorandum', why: 'Document Irish bank holidays, productivity assumptions, and key critical-path drivers.', kind: 'ref' }
+      { cat: 'Standard', title: 'AACE Recommended Practice 27R-03 (Schedule Classification & CPM Method)', ref: 'AACE 27R-03 / 38R-06', artifact: 'PM08_Doc1_Standard_CPM_Scheduling_Standard_Rev.001.docx', why: 'Differentiate Level 1 executive timelines from Level 4 logic-driven execution networks.', folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-08_Primavera_P6_Logic_Critical_Path', localPath: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-08_Primavera_P6_Logic_Critical_Path\\PM08_Doc1_Standard_CPM_Scheduling_Standard_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Master Level 4 Primavera P6 File (141 Tasks, 209 Links, 48 Critical Tasks)', ref: 'EU Calendar (2027-2030)', artifact: 'PM08_Doc2_Deliverable_Primavera_P6_Schedule_141Tasks_Master_Rev.001.xer', why: 'Operate an importable P6 XER schedule driving May 2028 energisation to 2030 RFS.', folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-08_Primavera_P6_Logic_Critical_Path', localPath: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-08_Primavera_P6_Logic_Critical_Path\\PM08_Doc2_Deliverable_Primavera_P6_Schedule_141Tasks_Master_Rev.001.xer', kind: 'built' },
+      { cat: 'Template', title: 'Project Implementation Plan (PIP) & Interactive 141-Task Gantt Workbook', ref: 'Sheet 3. 141-Task Gantt', artifact: 'PM08_Doc3_Template_PIP_141Task_Gantt_Master_Rev.001.xlsx', why: 'Communicate P6 critical path dates and dependencies clearly in Excel to non-planners.', folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-08_Primavera_P6_Logic_Critical_Path', localPath: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-08_Primavera_P6_Logic_Critical_Path\\PM08_Doc3_Template_PIP_141Task_Gantt_Master_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Schedule Basis Memorandum (Calendars, Shift Assumptions & Driving Path)', ref: 'AACE 38R-06 Basis Memo', artifact: 'PM08_Doc4_Audit_Schedule_Basis_Memorandum_Rev.001.docx', why: 'Document Irish bank holidays, productivity assumptions, and key critical-path drivers.', folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-08_Primavera_P6_Logic_Critical_Path', localPath: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-08_Primavera_P6_Logic_Critical_Path\\PM08_Doc4_Audit_Schedule_Basis_Memorandum_Rev.001.docx', kind: 'built' }
     ]
   },
   {
@@ -207,11 +226,12 @@ const CURRICULUM = [
     title: 'DCMA-14 Schedule Quality Audit & Longest Path Diagnostics',
     desc: 'Enforce 100% logic integrity: zero dangling open ends, zero arbitrary lags/constraints, positive float discipline, and realistic critical density.',
     tags: ['DCMA-14', 'Schedule QA'],
+    folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-09_DCMA14_Schedule_Quality_Audit',
     docs: [
-      { cat: 'Standard', title: 'DCMA 14-Point Schedule Assessment Guideline (Logic, Leads, Lags, Float)', ref: 'DCMA 14-Point Standard', artifact: 'DCMA-14 Rulebook Reference', why: 'Learn exact thresholds (<5% high float, 0% negative float, 0 lags) for lender audits.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Automated DCMA-14 6/6 Schedule Health Diagnostic Report (pyp6xer Log)', ref: 'pyp6xer Quality Engine', artifact: 'DataCenter_36MW_EU_Ireland.xer', why: 'Inspect verified proof of zero open ends, zero hard constraints, and valid critical density.', kind: 'built' },
-      { cat: 'Template', title: 'Monthly Contractor Schedule Update Audit & Float Consumption Checksheet', ref: 'Clause 31/32 Schedule Check', artifact: 'Contractor Update Checksheet', why: 'Spot hidden logic overrides, artificial lags, and silent float erosion each reporting cycle.', kind: 'ref' },
-      { cat: 'Audit', title: 'Driving Predecessor & Near-Critical Path Risk Diagnostic Sheet', ref: 'Longest Path Trace', artifact: 'Longest Path Diagnostic Log', why: 'Isolate tasks with <10 days total float likely to flip onto the driving critical path.', kind: 'ref' }
+      { cat: 'Standard', title: 'DCMA 14-Point Schedule Assessment Guideline (Logic, Leads, Lags, Float)', ref: 'DCMA 14-Point Standard', artifact: 'PM09_Doc1_Standard_DCMA_14_Rulebook_Reference_Rev.001.docx', why: 'Learn exact thresholds (<5% high float, 0% negative float, 0 lags) for lender audits.', folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-09_DCMA14_Schedule_Quality_Audit', localPath: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-09_DCMA14_Schedule_Quality_Audit\\PM09_Doc1_Standard_DCMA_14_Rulebook_Reference_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Automated DCMA-14 6/6 Schedule Health Diagnostic Report (pyp6xer Log)', ref: 'pyp6xer Quality Engine', artifact: 'PM09_Doc2_Deliverable_DCMA14_Schedule_Baseline_XER_Master_Rev.001.xer', why: 'Inspect verified proof of zero open ends, zero hard constraints, and valid critical density.', folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-09_DCMA14_Schedule_Quality_Audit', localPath: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-09_DCMA14_Schedule_Quality_Audit\\PM09_Doc2_Deliverable_DCMA14_Schedule_Baseline_XER_Master_Rev.001.xer', kind: 'built' },
+      { cat: 'Template', title: 'Monthly Contractor Schedule Update Audit & Float Consumption Checksheet', ref: 'Clause 31/32 Schedule Check', artifact: 'PM09_Doc3_Template_Contractor_Update_Checksheet_Rev.001.xlsx', why: 'Spot hidden logic overrides, artificial lags, and silent float erosion each reporting cycle.', folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-09_DCMA14_Schedule_Quality_Audit', localPath: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-09_DCMA14_Schedule_Quality_Audit\\PM09_Doc3_Template_Contractor_Update_Checksheet_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Driving Predecessor & Near-Critical Path Risk Diagnostic Sheet', ref: 'Longest Path Trace', artifact: 'PM09_Doc4_Audit_Longest_Path_Diagnostic_Log_Rev.001.xlsx', why: 'Isolate tasks with <10 days total float likely to flip onto the driving critical path.', folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-09_DCMA14_Schedule_Quality_Audit', localPath: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-09_DCMA14_Schedule_Quality_Audit\\PM09_Doc4_Audit_Longest_Path_Diagnostic_Log_Rev.001.xlsx', kind: 'built' }
     ]
   },
   {
@@ -219,11 +239,12 @@ const CURRICULUM = [
     title: 'Resource Loading, Cashflow S-Curves & Baseline Controls',
     desc: 'Cost-load P6 activities to forecast monthly EUR burn rates, engineering/site manpower peaks, and Performance Measurement Baselines.',
     tags: ['S-Curve', 'PMB', 'Manpower'],
+    folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-10_Resource_Loading_Cashflow_SCurves',
     docs: [
-      { cat: 'Standard', title: 'PMI Practice Standard for Cost-Loaded Scheduling & Cashflow Forecasting', ref: 'PMI Practice Standard', artifact: 'Cost-Loaded P6 Standard', why: 'Connect P6 task durations directly to capex drawdown curves and Earned Value baselines.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Performance Measurement Baseline (PMB) — Monthly EUR Capex Burn S-Curve', ref: 'Sheet 4. EVM Cost/Schedule', artifact: 'DataCenter_36MW_EU_PreNTP_Controls.xlsx', why: 'Forecast cumulative EUR investment pacing across enabling, CSA, MEP, and Cx phases.', kind: 'built' },
-      { cat: 'Template', title: 'Trade & Engineering Peak Manpower Histogram (CSA, HV, MEP, Cx Teams)', ref: 'Trade Labour Loading', artifact: 'Manpower Histogram Workbook', why: 'Prevent trade stacking in crowded white space by forecasting peak craft headcounts.', kind: 'ref' },
-      { cat: 'Audit', title: 'Peak Headcount Welfare, Canteen, Turnstile & Site Logistics Audit Plan', ref: 'HSA Site Welfare Regs', artifact: 'Site Welfare Capacity Audit', why: 'Ensure statutory HSE welfare facilities, parking, and biometric gates scale for peak labour.', kind: 'ref' }
+      { cat: 'Standard', title: 'PMI Practice Standard for Cost-Loaded Scheduling & Cashflow Forecasting', ref: 'PMI Practice Standard', artifact: 'PM10_Doc1_Standard_Cost_Loaded_P6_Standard_Rev.001.docx', why: 'Connect P6 task durations directly to capex drawdown curves and Earned Value baselines.', folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-10_Resource_Loading_Cashflow_SCurves', localPath: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-10_Resource_Loading_Cashflow_SCurves\\PM10_Doc1_Standard_Cost_Loaded_P6_Standard_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Performance Measurement Baseline (PMB) — Monthly EUR Capex Burn S-Curve', ref: 'Sheet 4. EVM Cost/Schedule', artifact: 'PM10_Doc2_Deliverable_PMB_Monthly_Burn_SCurve_Master_Rev.001.xlsx', why: 'Forecast cumulative EUR investment pacing across enabling, CSA, MEP, and Cx phases.', folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-10_Resource_Loading_Cashflow_SCurves', localPath: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-10_Resource_Loading_Cashflow_SCurves\\PM10_Doc2_Deliverable_PMB_Monthly_Burn_SCurve_Master_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Template', title: 'Trade & Engineering Peak Manpower Histogram (CSA, HV, MEP, Cx Teams)', ref: 'Trade Labour Loading', artifact: 'PM10_Doc3_Template_Manpower_Histogram_Workbook_Rev.001.xlsx', why: 'Prevent trade stacking in crowded white space by forecasting peak craft headcounts.', folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-10_Resource_Loading_Cashflow_SCurves', localPath: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-10_Resource_Loading_Cashflow_SCurves\\PM10_Doc3_Template_Manpower_Histogram_Workbook_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Peak Headcount Welfare, Canteen, Turnstile & Site Logistics Audit Plan', ref: 'HSA Site Welfare Regs', artifact: 'PM10_Doc4_Audit_Site_Welfare_Capacity_Audit_Rev.001.xlsx', why: 'Ensure statutory HSE welfare facilities, parking, and biometric gates scale for peak labour.', folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-10_Resource_Loading_Cashflow_SCurves', localPath: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-10_Resource_Loading_Cashflow_SCurves\\PM10_Doc4_Audit_Site_Welfare_Capacity_Audit_Rev.001.xlsx', kind: 'built' }
     ]
   },
   {
@@ -231,11 +252,12 @@ const CURRICULUM = [
     title: 'EU EED (2023/1791) & Delegated Reg. (2024/1364) KPI Design',
     desc: 'Embed sub-metering, PUE/WUE/ERF/REF telemetry pipelines and heat-reuse export readiness into technical specifications early.',
     tags: ['EED 2023/1791', 'PUE/WUE/ERF'],
+    folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-11_EU_EED_2023_1791_KPI_Design',
     docs: [
-      { cat: 'Standard', title: 'EU Energy Efficiency Directive (EU) 2023/1791 Art. 12 & Reg. (EU) 2024/1364', ref: 'Directive (EU) 2023/1791', artifact: 'EU EED Compliance Text', why: 'Master mandatory EU reporting metrics for all data centres >= 500 kW IT demand.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Facility Sustainability & EED Telemetry Design Spec (PUE, WUE, ERF, REF)', ref: 'Sheet 3. EN 50600 & EED', artifact: 'DataCenter_36MW_EU_PreNTP_Controls.xlsx', why: 'Establish campus targets (PUE <= 1.22, closed-loop WUE, heat export ERF, REF >= 90%).', kind: 'built' },
-      { cat: 'Template', title: 'EPMS / BMS Revenue-Grade Sub-Metering Hierarchy (IT vs. Cooling vs. Aux)', ref: 'EN 50600-4-x Telemetry', artifact: 'EPMS Sub-Metering Matrix', why: 'Position CT/PT meters accurately so UPS losses and parasitic loads report cleanly.', kind: 'ref' },
-      { cat: 'Audit', title: 'Waste Heat Recovery Heat-Pump & Municipal District Heating Readiness Review', ref: 'Art. 26 Cost-Benefit Review', artifact: 'Waste Heat Readiness Audit', why: 'Verify plate heat exchanger flange-offs satisfy Irish SEAI / EU heat-reuse rules.', kind: 'ref' }
+      { cat: 'Standard', title: 'EU Energy Efficiency Directive (EU) 2023/1791 Art. 12 & Reg. (EU) 2024/1364', ref: 'Directive (EU) 2023/1791', artifact: 'PM11_Doc1_Standard_EU_EED_Compliance_Text_Rev.001.docx', why: 'Master mandatory EU reporting metrics for all data centres >= 500 kW IT demand.', folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-11_EU_EED_2023_1791_KPI_Design', localPath: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-11_EU_EED_2023_1791_KPI_Design\\PM11_Doc1_Standard_EU_EED_Compliance_Text_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Facility Sustainability & EED Telemetry Design Spec (PUE, WUE, ERF, REF)', ref: 'Sheet 3. EN 50600 & EED', artifact: 'PM11_Doc2_Deliverable_EU_EED_Telemetry_Spec_Master_Rev.001.xlsx', why: 'Establish campus targets (PUE <= 1.22, closed-loop WUE, heat export ERF, REF >= 90%).', folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-11_EU_EED_2023_1791_KPI_Design', localPath: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-11_EU_EED_2023_1791_KPI_Design\\PM11_Doc2_Deliverable_EU_EED_Telemetry_Spec_Master_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Template', title: 'EPMS / BMS Revenue-Grade Sub-Metering Hierarchy (IT vs. Cooling vs. Aux)', ref: 'EN 50600-4-x Telemetry', artifact: 'PM11_Doc3_Template_EPMS_Sub_Metering_Matrix_Rev.001.xlsx', why: 'Position CT/PT meters accurately so UPS losses and parasitic loads report cleanly.', folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-11_EU_EED_2023_1791_KPI_Design', localPath: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-11_EU_EED_2023_1791_KPI_Design\\PM11_Doc3_Template_EPMS_Sub_Metering_Matrix_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Waste Heat Recovery Heat-Pump & Municipal District Heating Readiness Review', ref: 'Art. 26 Cost-Benefit Review', artifact: 'PM11_Doc4_Audit_Waste_Heat_Readiness_Audit_Rev.001.docx', why: 'Verify plate heat exchanger flange-offs satisfy Irish SEAI / EU heat-reuse rules.', folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-11_EU_EED_2023_1791_KPI_Design', localPath: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-11_EU_EED_2023_1791_KPI_Design\\PM11_Doc4_Audit_Waste_Heat_Readiness_Audit_Rev.001.docx', kind: 'built' }
     ]
   },
   {
@@ -243,11 +265,12 @@ const CURRICULUM = [
     title: 'BS EN ISO 19650 Information Management, EIR & CDE Setup',
     desc: 'Implement Common Data Environment workflows (WIP -> Shared -> Published -> Archive), Exchange Info Requirements, and BIM LOD matrices.',
     tags: ['ISO 19650', 'CDE', 'BEP'],
+    folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-12_ISO19650_Information_Mgmt_CDE',
     docs: [
-      { cat: 'Standard', title: 'BS EN ISO 19650-1 & -2 Information Management Concepts & Delivery Phase', ref: 'BS EN ISO 19650-1 / -2', artifact: 'ISO 19650 Standard Guide', why: 'Enforce uniform naming conventions and suitability gates (S0-A7) across ACC/BIM 360.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Exchange Information Requirements (EIR) & Master Information Delivery Plan', ref: 'Appointing Party EIR/MIDP', artifact: 'EIR & MIDP Baseline Pack', why: 'Define exact BIM LOD, COBie data fields, and submission dates inside vendor contracts.', kind: 'ref' },
-      { cat: 'Template', title: 'Project BIM Execution Plan (BEP) & CDE Folder Workflow (WIP/Shared/Archive)', ref: 'CDE Workflow & Naming Code', artifact: 'BIM BEP & Naming Standard', why: 'Standardize originator, volume, level, type, and role fields across all disciplines.', kind: 'ref' },
-      { cat: 'Audit', title: 'Master Document Register (MDR) with ISO 19650 Suitability Codes (S0-A7)', ref: 'Portfolio Next Deliverable', artifact: 'Master_Document_Register_DC36EU.xlsx', why: 'Track live drawing transmittals, review aging, and IFC approvals in one central ledger.', kind: 'planned' }
+      { cat: 'Standard', title: 'BS EN ISO 19650-1 & -2 Information Management Concepts & Delivery Phase', ref: 'BS EN ISO 19650-1 / -2', artifact: 'PM12_Doc1_Standard_ISO_19650_Standard_Guide_Rev.001.docx', why: 'Enforce uniform naming conventions and suitability gates (S0-A7) across ACC/BIM 360.', folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-12_ISO19650_Information_Mgmt_CDE', localPath: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-12_ISO19650_Information_Mgmt_CDE\\PM12_Doc1_Standard_ISO_19650_Standard_Guide_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Exchange Information Requirements (EIR) & Master Information Delivery Plan', ref: 'Appointing Party EIR/MIDP', artifact: 'PM12_Doc2_Deliverable_EIR_MIDP_Baseline_Pack_Rev.001.docx', why: 'Define exact BIM LOD, COBie data fields, and submission dates inside vendor contracts.', folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-12_ISO19650_Information_Mgmt_CDE', localPath: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-12_ISO19650_Information_Mgmt_CDE\\PM12_Doc2_Deliverable_EIR_MIDP_Baseline_Pack_Rev.001.docx', kind: 'built' },
+      { cat: 'Template', title: 'Project BIM Execution Plan (BEP) & CDE Folder Workflow (WIP/Shared/Archive)', ref: 'CDE Workflow & Naming Code', artifact: 'PM12_Doc3_Template_BIM_BEP_Naming_Standard_Rev.001.xlsx', why: 'Standardize originator, volume, level, type, and role fields across all disciplines.', folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-12_ISO19650_Information_Mgmt_CDE', localPath: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-12_ISO19650_Information_Mgmt_CDE\\PM12_Doc3_Template_BIM_BEP_Naming_Standard_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Master Document Register (MDR) with ISO 19650 Suitability Codes (S0-A7)', ref: 'Portfolio Next Deliverable', artifact: 'PM12_Doc4_Audit_Master_Document_Register_DC36EU_Rev.001.xlsx', why: 'Track live drawing transmittals, review aging, and IFC approvals in one central ledger.', folder: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-12_ISO19650_Information_Mgmt_CDE', localPath: 'Phase_2_Planning_WBS_P6_RIBA_2_3\\PM-12_ISO19650_Information_Mgmt_CDE\\PM12_Doc4_Audit_Master_Document_Register_DC36EU_Rev.001.xlsx', kind: 'built' }
     ]
   },
 
@@ -257,11 +280,12 @@ const CURRICULUM = [
     title: 'Delivery Strategy: EPCm, Design-Build & Multi-Prime Packaging',
     desc: 'Compare single-point turnkey vs. Trade/EPCm split packages across cost certainty, design control, interfaces, and claims exposure.',
     tags: ['EPCm', 'Design-Build', 'Packaging'],
+    folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-13_Delivery_Strategy_EPCm_DB',
     docs: [
-      { cat: 'Standard', title: 'RIBA Stage 4 Technical Design & Commercial Procurement Options Standard', ref: 'RIBA Stage 4 Procurement', artifact: 'Procurement Route Framework', why: 'Weigh owner risk retention vs. turnkey risk premium across volatile European markets.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Contracting & Packaging Strategy Paper (EPCm vs. Single Turnkey vs. Multi-Prime)', ref: 'Sheet 5. Contracting & OFCI', artifact: 'DataCenter_36MW_EU_PIP.xlsx', why: 'Structure CSA shell, HV substation, MEP fit-out, and BMS contracts for 36 MW velocity.', kind: 'built' },
-      { cat: 'Template', title: 'Package Interface & Battery-Limit Split Matrix (HV, CSA, MEP, Controls, Cx)', ref: 'Package Demarcation Table', artifact: 'Interface Demarcation Matrix', why: 'Assign physical termination points (e.g., switchgear cable lugs, chilled water flanges).', kind: 'ref' },
-      { cat: 'Audit', title: 'Supply Chain Market Warming & Pre-Qualification (PQQ) Scoring Audit', ref: 'Capacity / Safety / Finance', artifact: 'Bidder PQQ Shortlist Report', why: 'Vet Tier-1 European MEP/CSA contractors for bonding capacity, backlog, and DC experience.', kind: 'ref' }
+      { cat: 'Standard', title: 'RIBA Stage 4 Technical Design & Commercial Procurement Options Standard', ref: 'RIBA Stage 4 Procurement', artifact: 'PM13_Doc1_Standard_Procurement_Route_Framework_Rev.001.docx', why: 'Weigh owner risk retention vs. turnkey risk premium across volatile European markets.', folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-13_Delivery_Strategy_EPCm_DB', localPath: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-13_Delivery_Strategy_EPCm_DB\\PM13_Doc1_Standard_Procurement_Route_Framework_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Contracting & Packaging Strategy Paper (EPCm vs. Single Turnkey vs. Multi-Prime)', ref: 'Sheet 5. Contracting & OFCI', artifact: 'PM13_Doc2_Deliverable_Contracting_Strategy_PIP_Master_Rev.001.xlsx', why: 'Structure CSA shell, HV substation, MEP fit-out, and BMS contracts for 36 MW velocity.', folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-13_Delivery_Strategy_EPCm_DB', localPath: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-13_Delivery_Strategy_EPCm_DB\\PM13_Doc2_Deliverable_Contracting_Strategy_PIP_Master_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Template', title: 'Package Interface & Battery-Limit Split Matrix (HV, CSA, MEP, Controls, Cx)', ref: 'Package Demarcation Table', artifact: 'PM13_Doc3_Template_Interface_Demarcation_Matrix_Rev.001.xlsx', why: 'Assign physical termination points (e.g., switchgear cable lugs, chilled water flanges).', folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-13_Delivery_Strategy_EPCm_DB', localPath: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-13_Delivery_Strategy_EPCm_DB\\PM13_Doc3_Template_Interface_Demarcation_Matrix_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Supply Chain Market Warming & Pre-Qualification (PQQ) Scoring Audit', ref: 'Capacity / Safety / Finance', artifact: 'PM13_Doc4_Audit_Bidder_PQQ_Shortlist_Report_Rev.001.docx', why: 'Vet Tier-1 European MEP/CSA contractors for bonding capacity, backlog, and DC experience.', folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-13_Delivery_Strategy_EPCm_DB', localPath: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-13_Delivery_Strategy_EPCm_DB\\PM13_Doc4_Audit_Bidder_PQQ_Shortlist_Report_Rev.001.docx', kind: 'built' }
     ]
   },
   {
@@ -269,11 +293,12 @@ const CURRICULUM = [
     title: 'NEC4 ECC (Option A/C): Early Warnings & Compensation Events',
     desc: 'Administer collaborative NEC4 contracts: Accepted Programme updates, Risk Reduction Meetings, CEs, and Option C target pain/gainshare.',
     tags: ['NEC4 ECC', 'Option A/C', 'CE'],
+    folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-14_NEC4_ECC_Early_Warnings_CE',
     docs: [
-      { cat: 'Standard', title: 'NEC4 Engineering & Construction Contract (Options A & C Guidance Notes)', ref: 'NEC4 ECC Clauses 10-95', artifact: 'NEC4 ECC Practice Guide', why: 'Master collaborative PM duties, time bars (Clause 61.3), and target cost gainshare.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'NEC4 Works Information (Scope), Contract Data Part 1/2 & Pain/Gainshare Model', ref: 'NEC4 Contract Pack', artifact: 'NEC4 Scope & Contract Data', why: 'Draft unambiguous Scope specs and Option C share ranges aligned with sponsor budgets.', kind: 'ref' },
-      { cat: 'Template', title: 'Live Early Warning Notice (EWN) & Risk Reduction Meeting Action Register', ref: 'NEC4 Clause 15 Workflow', artifact: 'EWN & Risk Reduction Log', why: 'Surface cost/programme threats early before they convert into expensive Compensation Events.', kind: 'ref' },
-      { cat: 'Audit', title: 'Compensation Event (CE) Valuation Register & Clause 31/32 Programme Check', ref: 'NEC4 Cl. 31-32 & 60-65', artifact: 'CE & Programme Audit Log', why: 'Enforce strict prospective time-impact quoting and Defined Cost substantiation.', kind: 'ref' }
+      { cat: 'Standard', title: 'NEC4 Engineering & Construction Contract (Options A & C Guidance Notes)', ref: 'NEC4 ECC Clauses 10-95', artifact: 'PM14_Doc1_Standard_NEC4_ECC_Practice_Guide_Rev.001.docx', why: 'Master collaborative PM duties, time bars (Clause 61.3), and target cost gainshare.', folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-14_NEC4_ECC_Early_Warnings_CE', localPath: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-14_NEC4_ECC_Early_Warnings_CE\\PM14_Doc1_Standard_NEC4_ECC_Practice_Guide_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'NEC4 Works Information (Scope), Contract Data Part 1/2 & Pain/Gainshare Model', ref: 'NEC4 Contract Pack', artifact: 'PM14_Doc2_Deliverable_NEC4_Scope_Contract_Data_Rev.001.docx', why: 'Draft unambiguous Scope specs and Option C share ranges aligned with sponsor budgets.', folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-14_NEC4_ECC_Early_Warnings_CE', localPath: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-14_NEC4_ECC_Early_Warnings_CE\\PM14_Doc2_Deliverable_NEC4_Scope_Contract_Data_Rev.001.docx', kind: 'built' },
+      { cat: 'Template', title: 'Live Early Warning Notice (EWN) & Risk Reduction Meeting Action Register', ref: 'NEC4 Clause 15 Workflow', artifact: 'PM14_Doc3_Template_EWN_Risk_Reduction_Log_Rev.001.xlsx', why: 'Surface cost/programme threats early before they convert into expensive Compensation Events.', folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-14_NEC4_ECC_Early_Warnings_CE', localPath: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-14_NEC4_ECC_Early_Warnings_CE\\PM14_Doc3_Template_EWN_Risk_Reduction_Log_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Compensation Event (CE) Valuation Register & Clause 31/32 Programme Check', ref: 'NEC4 Cl. 31-32 & 60-65', artifact: 'PM14_Doc4_Audit_CE_Programme_Audit_Log_Rev.001.xlsx', why: 'Enforce strict prospective time-impact quoting and Defined Cost substantiation.', folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-14_NEC4_ECC_Early_Warnings_CE', localPath: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-14_NEC4_ECC_Early_Warnings_CE\\PM14_Doc4_Audit_CE_Programme_Audit_Log_Rev.001.xlsx', kind: 'built' }
     ]
   },
   {
@@ -281,11 +306,12 @@ const CURRICULUM = [
     title: 'FIDIC Yellow / Silver Book: Risk Allocation & Claims Control',
     desc: 'Manage Engineer determinations, Employer Requirements integrity, EOT substantiation, and DAB dispute avoidance under FIDIC.',
     tags: ['FIDIC', 'Claims', 'EOT'],
+    folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-15_FIDIC_Yellow_Silver_Claims',
     docs: [
-      { cat: 'Standard', title: 'FIDIC Yellow Book (D&B) / Silver Book (EPC) 2017 & SCL Delay Protocol', ref: 'FIDIC 2017 / SCL Protocol', artifact: 'FIDIC & SCL Reference Pack', why: 'Understand Employer Risk vs. turnkey single-point responsibility under Irish/EU law.', kind: 'ref' },
-      { cat: 'Deliverable', title: "Employer's Requirements (ERs), Particular Conditions & Delay Damages Schedule", ref: 'FIDIC Contract Drafting', artifact: 'FIDIC ERs & Particulars Pack', why: 'Protect power efficiency guarantees and liquidated damages via airtight ER schedules.', kind: 'ref' },
-      { cat: 'Template', title: 'Contractor Notice of Claim, Time-Impact EOT Analysis & Determination SOP', ref: 'FIDIC Clause 20 / 3.7', artifact: 'Claim & EOT Assessment SOP', why: 'Evaluate concurrent delay, pacing, and Sub-Clause 20.2 condition-precedent notices.', kind: 'ref' },
-      { cat: 'Audit', title: 'Dispute Avoidance/Adjudication Board (DAAB) Monthly Standing Briefing Audit', ref: 'FIDIC Clause 21 DAAB', artifact: 'Monthly DAAB Briefing File', why: 'Resolve commercial entitlement deadlocks contemporaneously to avoid arbitration.', kind: 'ref' }
+      { cat: 'Standard', title: 'FIDIC Yellow Book (D&B) / Silver Book (EPC) 2017 & SCL Delay Protocol', ref: 'FIDIC 2017 / SCL Protocol', artifact: 'PM15_Doc1_Standard_FIDIC_SCL_Reference_Pack_Rev.001.docx', why: 'Understand Employer Risk vs. turnkey single-point responsibility under Irish/EU law.', folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-15_FIDIC_Yellow_Silver_Claims', localPath: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-15_FIDIC_Yellow_Silver_Claims\\PM15_Doc1_Standard_FIDIC_SCL_Reference_Pack_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: "Employer's Requirements (ERs), Particular Conditions & Delay Damages Schedule", ref: 'FIDIC Contract Drafting', artifact: 'PM15_Doc2_Deliverable_FIDIC_ERs_Particulars_Pack_Rev.001.docx', why: 'Protect power efficiency guarantees and liquidated damages via airtight ER schedules.', folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-15_FIDIC_Yellow_Silver_Claims', localPath: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-15_FIDIC_Yellow_Silver_Claims\\PM15_Doc2_Deliverable_FIDIC_ERs_Particulars_Pack_Rev.001.docx', kind: 'built' },
+      { cat: 'Template', title: 'Contractor Notice of Claim, Time-Impact EOT Analysis & Determination SOP', ref: 'FIDIC Clause 20 / 3.7', artifact: 'PM15_Doc3_Template_Claim_EOT_Assessment_SOP_Rev.001.docx', why: 'Evaluate concurrent delay, pacing, and Sub-Clause 20.2 condition-precedent notices.', folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-15_FIDIC_Yellow_Silver_Claims', localPath: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-15_FIDIC_Yellow_Silver_Claims\\PM15_Doc3_Template_Claim_EOT_Assessment_SOP_Rev.001.docx', kind: 'built' },
+      { cat: 'Audit', title: 'Dispute Avoidance/Adjudication Board (DAAB) Monthly Standing Briefing Audit', ref: 'FIDIC Clause 21 DAAB', artifact: 'PM15_Doc4_Audit_Monthly_DAAB_Briefing_File_Rev.001.docx', why: 'Resolve commercial entitlement deadlocks contemporaneously to avoid arbitration.', folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-15_FIDIC_Yellow_Silver_Claims', localPath: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-15_FIDIC_Yellow_Silver_Claims\\PM15_Doc4_Audit_Monthly_DAAB_Briefing_File_Rev.001.docx', kind: 'built' }
     ]
   },
   {
@@ -293,11 +319,12 @@ const CURRICULUM = [
     title: 'OFCI Long-Lead Equipment Strategy (HV, UPS, Chillers, BESS)',
     desc: 'De-risk 40-80 week OEM bottlenecks via early Owner-Furnished slots, milestone reservation payments, and novation options.',
     tags: ['OFCI', 'Long-Lead', 'OEM'],
+    folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-16_OFCI_Long_Lead_Equipment',
     docs: [
-      { cat: 'Standard', title: 'Hyperscale Owner-Furnished Contractor-Installed (OFCI) Procurement Protocol', ref: 'OFCI Delivery Standard', artifact: 'OFCI Governance Protocol', why: 'Balance 52-week OEM lead-time compression against interface liability risks.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Master OFCI Long-Lead Equipment Matrix (110kV GIS, Transformers, UPS, BESS)', ref: 'Sheet 5. Contracting & OFCI', artifact: 'DataCenter_36MW_EU_PIP.xlsx', why: 'Track factory build slots, deposit milestones, and required-on-site dates in P6.', kind: 'built' },
-      { cat: 'Template', title: 'OEM Slot Reservation Agreement, Progress Milestones & Conditional Novation Deed', ref: 'HV / UPS / Chiller Supply', artifact: 'OEM Slot & Novation Deed', why: 'Lock factory production early and cleanly transfer custody to the EPCm at site delivery.', kind: 'ref' },
-      { cat: 'Audit', title: 'OFCI Factory Warranty Transition, Site Receiving, Rigging & Custody Audit', ref: 'Care & Custody Transfer', artifact: 'OFCI Site Custody Checklist', why: 'Verify crane paths, floor point-loads, and preservation warranty compliance on arrival.', kind: 'ref' }
+      { cat: 'Standard', title: 'Hyperscale Owner-Furnished Contractor-Installed (OFCI) Procurement Protocol', ref: 'OFCI Delivery Standard', artifact: 'PM16_Doc1_Standard_OFCI_Governance_Protocol_Rev.001.docx', why: 'Balance 52-week OEM lead-time compression against interface liability risks.', folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-16_OFCI_Long_Lead_Equipment', localPath: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-16_OFCI_Long_Lead_Equipment\\PM16_Doc1_Standard_OFCI_Governance_Protocol_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Master OFCI Long-Lead Equipment Matrix (110kV GIS, Transformers, UPS, BESS)', ref: 'Sheet 5. Contracting & OFCI', artifact: 'PM16_Doc2_Deliverable_OFCI_LongLead_Matrix_PIP_Master_Rev.001.xlsx', why: 'Track factory build slots, deposit milestones, and required-on-site dates in P6.', folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-16_OFCI_Long_Lead_Equipment', localPath: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-16_OFCI_Long_Lead_Equipment\\PM16_Doc2_Deliverable_OFCI_LongLead_Matrix_PIP_Master_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Template', title: 'OEM Slot Reservation Agreement, Progress Milestones & Conditional Novation Deed', ref: 'HV / UPS / Chiller Supply', artifact: 'PM16_Doc3_Template_OEM_Slot_Novation_Deed_Rev.001.docx', why: 'Lock factory production early and cleanly transfer custody to the EPCm at site delivery.', folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-16_OFCI_Long_Lead_Equipment', localPath: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-16_OFCI_Long_Lead_Equipment\\PM16_Doc3_Template_OEM_Slot_Novation_Deed_Rev.001.docx', kind: 'built' },
+      { cat: 'Audit', title: 'OFCI Factory Warranty Transition, Site Receiving, Rigging & Custody Audit', ref: 'Care & Custody Transfer', artifact: 'PM16_Doc4_Audit_OFCI_Site_Custody_Checklist_Rev.001.xlsx', why: 'Verify crane paths, floor point-loads, and preservation warranty compliance on arrival.', folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-16_OFCI_Long_Lead_Equipment', localPath: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-16_OFCI_Long_Lead_Equipment\\PM16_Doc4_Audit_OFCI_Site_Custody_Checklist_Rev.001.xlsx', kind: 'built' }
     ]
   },
   {
@@ -305,11 +332,12 @@ const CURRICULUM = [
     title: 'RFP Issuance, Technical Bid Evaluation (TBE) & BAFO Leveling',
     desc: 'Run blind commercial/technical scoring matrices, normalize exclusions/deviations, and lead structured BAFO negotiations.',
     tags: ['TBE', 'BAFO', 'Procurement'],
+    folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-17_RFP_TBE_BAFO_Leveling',
     docs: [
-      { cat: 'Standard', title: 'EU Competitive Tender Governance & Commercial Bid Normalisation Best Practice', ref: 'Audit-Ready Tender Rules', artifact: 'Tender Governance Standard', why: 'Guarantee transparent, defensible contractor selection under institutional governance.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Invitation to Tender (ITT) / RFP Package, Pricing BoQ & Mandatory Compliances', ref: 'RIBA Stage 4 Tender Pack', artifact: 'ITT / RFP Tender Dossier', why: 'Issue standardized pricing schedules so bids can be compared apples-to-apples.', kind: 'ref' },
-      { cat: 'Template', title: 'Blind Technical Bid Evaluation (TBE) Scorecard & BAFO Leveling Sheet', ref: 'Tech / Cost / Schedule / HSE', artifact: 'TBE & BAFO Leveling Workbook', why: 'Plug gaps, price exclusions, and benchmark labour productivity rates across bidders.', kind: 'ref' },
-      { cat: 'Audit', title: 'Post-Tender Clarification Log & Executive Recommendation to Award (RTA) Paper', ref: 'IC Award Approval', artifact: 'Recommendation to Award Memo', why: 'Document BAFO savings, negotiated risk caps, and final contract execution readiness.', kind: 'ref' }
+      { cat: 'Standard', title: 'EU Competitive Tender Governance & Commercial Bid Normalisation Best Practice', ref: 'Audit-Ready Tender Rules', artifact: 'PM17_Doc1_Standard_Tender_Governance_Standard_Rev.001.docx', why: 'Guarantee transparent, defensible contractor selection under institutional governance.', folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-17_RFP_TBE_BAFO_Leveling', localPath: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-17_RFP_TBE_BAFO_Leveling\\PM17_Doc1_Standard_Tender_Governance_Standard_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Invitation to Tender (ITT) / RFP Package, Pricing BoQ & Mandatory Compliances', ref: 'RIBA Stage 4 Tender Pack', artifact: 'PM17_Doc2_Deliverable_ITT_RFP_Tender_Dossier_Rev.001.docx', why: 'Issue standardized pricing schedules so bids can be compared apples-to-apples.', folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-17_RFP_TBE_BAFO_Leveling', localPath: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-17_RFP_TBE_BAFO_Leveling\\PM17_Doc2_Deliverable_ITT_RFP_Tender_Dossier_Rev.001.docx', kind: 'built' },
+      { cat: 'Template', title: 'Blind Technical Bid Evaluation (TBE) Scorecard & BAFO Leveling Sheet', ref: 'Tech / Cost / Schedule / HSE', artifact: 'PM17_Doc3_Template_TBE_BAFO_Leveling_Workbook_Rev.001.xlsx', why: 'Plug gaps, price exclusions, and benchmark labour productivity rates across bidders.', folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-17_RFP_TBE_BAFO_Leveling', localPath: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-17_RFP_TBE_BAFO_Leveling\\PM17_Doc3_Template_TBE_BAFO_Leveling_Workbook_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Post-Tender Clarification Log & Executive Recommendation to Award (RTA) Paper', ref: 'IC Award Approval', artifact: 'PM17_Doc4_Audit_Recommendation_to_Award_Memo_Rev.001.docx', why: 'Document BAFO savings, negotiated risk caps, and final contract execution readiness.', folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-17_RFP_TBE_BAFO_Leveling', localPath: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-17_RFP_TBE_BAFO_Leveling\\PM17_Doc4_Audit_Recommendation_to_Award_Memo_Rev.001.docx', kind: 'built' }
     ]
   },
   {
@@ -317,11 +345,12 @@ const CURRICULUM = [
     title: 'Vendor Expediting, Factory Readiness & Incoterms Logistics',
     desc: 'Track shop drawings, sub-supplier components, DDP/DAP customs clearance, and laydown yard sequencing to site.',
     tags: ['Expediting', 'Incoterms', 'Supply Chain'],
+    folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-18_Vendor_Expediting_Incoterms_Logistics',
     docs: [
-      { cat: 'Standard', title: 'ICC Incoterms 2020 Rules (EXW / FCA / CIF / DAP / DDP) & Expediting Guide', ref: 'ICC Incoterms 2020', artifact: 'Incoterms & Logistics Guide', why: 'Determine exact freight insurance, VAT customs liability, and site unloading boundaries.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Weekly OEM Production, Sub-Supplier (Breakers/PLC) & Shop Drawing Tracker', ref: 'Tier-2 Component Tracking', artifact: 'Vendor Expediting Tracker', why: 'Catch sub-tier PCB or breaker delays months before missed factory delivery dates.', kind: 'ref' },
-      { cat: 'Template', title: 'Marine Freight, EU Customs Clearance, Abnormal Load Route & Laydown Plan', ref: 'Dublin/Cork Heavy Haul', artifact: 'Freight & Laydown Schedule', why: 'Coordinate Garda escorts, bridge weight limits, and crane pads for 100t transformers.', kind: 'ref' },
-      { cat: 'Audit', title: 'Delivered Equipment Preservation, Space-Heater Power & Nitrogen Purge Audit', ref: 'Storage Warranty Protection', artifact: 'Preservation Inspection Log', why: 'Protect switchgear insulation and chiller bearings during damp Irish winters on site.', kind: 'ref' }
+      { cat: 'Standard', title: 'ICC Incoterms 2020 Rules (EXW / FCA / CIF / DAP / DDP) & Expediting Guide', ref: 'ICC Incoterms 2020', artifact: 'PM18_Doc1_Standard_Incoterms_Logistics_Guide_Rev.001.docx', why: 'Determine exact freight insurance, VAT customs liability, and site unloading boundaries.', folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-18_Vendor_Expediting_Incoterms_Logistics', localPath: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-18_Vendor_Expediting_Incoterms_Logistics\\PM18_Doc1_Standard_Incoterms_Logistics_Guide_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Weekly OEM Production, Sub-Supplier (Breakers/PLC) & Shop Drawing Tracker', ref: 'Tier-2 Component Tracking', artifact: 'PM18_Doc2_Deliverable_Vendor_Expediting_Tracker_Rev.001.xlsx', why: 'Catch sub-tier PCB or breaker delays months before missed factory delivery dates.', folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-18_Vendor_Expediting_Incoterms_Logistics', localPath: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-18_Vendor_Expediting_Incoterms_Logistics\\PM18_Doc2_Deliverable_Vendor_Expediting_Tracker_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Template', title: 'Marine Freight, EU Customs Clearance, Abnormal Load Route & Laydown Plan', ref: 'Dublin/Cork Heavy Haul', artifact: 'PM18_Doc3_Template_Freight_Laydown_Schedule_Rev.001.xlsx', why: 'Coordinate Garda escorts, bridge weight limits, and crane pads for 100t transformers.', folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-18_Vendor_Expediting_Incoterms_Logistics', localPath: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-18_Vendor_Expediting_Incoterms_Logistics\\PM18_Doc3_Template_Freight_Laydown_Schedule_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Delivered Equipment Preservation, Space-Heater Power & Nitrogen Purge Audit', ref: 'Storage Warranty Protection', artifact: 'PM18_Doc4_Audit_Preservation_Inspection_Log_Rev.001.xlsx', why: 'Protect switchgear insulation and chiller bearings during damp Irish winters on site.', folder: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-18_Vendor_Expediting_Incoterms_Logistics', localPath: 'Phase_3_Procurement_Contracts_RIBA_4\\PM-18_Vendor_Expediting_Incoterms_Logistics\\PM18_Doc4_Audit_Preservation_Inspection_Log_Rev.001.xlsx', kind: 'built' }
     ]
   },
 
@@ -331,11 +360,12 @@ const CURRICULUM = [
     title: 'Earned Value Management (EVM): CPI, SPI, EAC & Recovery',
     desc: 'Measure physical % complete against PV/EV/AC, diagnose CPI/SPI drift early, and enforce schedule compression or fast-track recovery plans.',
     tags: ['EVM', 'CPI/SPI', 'EAC'],
+    folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-19_EVM_CPI_SPI_EAC_Recovery',
     docs: [
-      { cat: 'Standard', title: 'ANSI/EIA-748 & PMI Practice Standard for Earned Value Management', ref: 'ANSI/EIA-748 / PMI EVM', artifact: 'EVM Control Standard Guide', why: 'Master PV, EV, AC, SPI, CPI, TCPI, and EAC formulas used to audit delivery health.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Live Cost/Schedule EVM Workbook (PV, EV, AC, CPI, SPI & EAC Model)', ref: 'Sheet 4. EVM Cost/Schedule', artifact: 'DataCenter_36MW_EU_PreNTP_Controls.xlsx', why: 'Monitor monthly DC36-EU spend efficiency and detect slippage before contingency burns.', kind: 'built' },
-      { cat: 'Template', title: 'Trade Physical Progress Rules-of-Credit Matrix (Linear vs. Billed %)', ref: 'Rules of Credit Matrix', artifact: 'Trade Rules-of-Credit Sheet', why: 'Prevent contractor front-loading by tying progress strictly to installed linear meters.', kind: 'ref' },
-      { cat: 'Audit', title: 'Schedule Variance Recovery & Acceleration Plan (Double Shifts / Skids)', ref: 'SPI < 0.95 Recovery', artifact: 'Schedule Recovery Action Plan', why: 'Restore lost float via weekend shifts, offsite modular skids, and crew re-sequencing.', kind: 'ref' }
+      { cat: 'Standard', title: 'ANSI/EIA-748 & PMI Practice Standard for Earned Value Management', ref: 'ANSI/EIA-748 / PMI EVM', artifact: 'PM19_Doc1_Standard_EVM_Control_Standard_Guide_Rev.001.docx', why: 'Master PV, EV, AC, SPI, CPI, TCPI, and EAC formulas used to audit delivery health.', folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-19_EVM_CPI_SPI_EAC_Recovery', localPath: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-19_EVM_CPI_SPI_EAC_Recovery\\PM19_Doc1_Standard_EVM_Control_Standard_Guide_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Live Cost/Schedule EVM Workbook (PV, EV, AC, CPI, SPI & EAC Model)', ref: 'Sheet 4. EVM Cost/Schedule', artifact: 'PM19_Doc2_Deliverable_EVM_Cost_Schedule_Controls_Master_Rev.001.xlsx', why: 'Monitor monthly DC36-EU spend efficiency and detect slippage before contingency burns.', folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-19_EVM_CPI_SPI_EAC_Recovery', localPath: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-19_EVM_CPI_SPI_EAC_Recovery\\PM19_Doc2_Deliverable_EVM_Cost_Schedule_Controls_Master_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Template', title: 'Trade Physical Progress Rules-of-Credit Matrix (Linear vs. Billed %)', ref: 'Rules of Credit Matrix', artifact: 'PM19_Doc3_Template_Trade_Rules_of_Credit_Sheet_Rev.001.xlsx', why: 'Prevent contractor front-loading by tying progress strictly to installed linear meters.', folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-19_EVM_CPI_SPI_EAC_Recovery', localPath: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-19_EVM_CPI_SPI_EAC_Recovery\\PM19_Doc3_Template_Trade_Rules_of_Credit_Sheet_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Schedule Variance Recovery & Acceleration Plan (Double Shifts / Skids)', ref: 'SPI < 0.95 Recovery', artifact: 'PM19_Doc4_Audit_Schedule_Recovery_Action_Plan_Rev.001.docx', why: 'Restore lost float via weekend shifts, offsite modular skids, and crew re-sequencing.', folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-19_EVM_CPI_SPI_EAC_Recovery', localPath: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-19_EVM_CPI_SPI_EAC_Recovery\\PM19_Doc4_Audit_Schedule_Recovery_Action_Plan_Rev.001.docx', kind: 'built' }
     ]
   },
   {
@@ -343,11 +373,12 @@ const CURRICULUM = [
     title: 'Integrated Change Control (CRB), Scope Freeze & Baselines',
     desc: 'Govern Change Requests through technical/cost/schedule impact scoring before Change Control Board sign-off and baseline revision.',
     tags: ['Change Control', 'CRB', 'Scope Freeze'],
+    folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-20_Integrated_Change_Control_CRB',
     docs: [
-      { cat: 'Standard', title: 'ISO 10007 Configuration Management & Baseline Change Governance Guide', ref: 'ISO 10007 Baseline Control', artifact: 'Configuration Mgmt Standard', why: 'Enforce strict separation between pending tenant wishes and approved baseline changes.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Change Control Board (CRB) Charter, Delegated Financial Authority & SLAs', ref: 'CRB Governance Charter', artifact: 'CRB Decision Authority Matrix', why: 'Clarify PM vs. Sponsor approval caps so minor field tweaks move without stalling.', kind: 'ref' },
-      { cat: 'Template', title: 'Change Request (CR) Impact Assessment Form (Tech, Capex, P6, PUE)', ref: 'CR Impact Form', artifact: 'Change Impact Assessment Form', why: 'Force holistic impact sign-off on load density, P6 float, and PUE before issuing VOs.', kind: 'ref' },
-      { cat: 'Audit', title: 'Approved Change Log, Baseline Revision History & Design Freeze Tracker', ref: 'Stage 4/5 Scope Freeze', artifact: 'Change Log & Freeze Waiver Audit', why: 'Trace every EUR moved from contingency and justify late tenant variation orders.', kind: 'ref' }
+      { cat: 'Standard', title: 'ISO 10007 Configuration Management & Baseline Change Governance Guide', ref: 'ISO 10007 Baseline Control', artifact: 'PM20_Doc1_Standard_Configuration_Mgmt_Standard_Rev.001.docx', why: 'Enforce strict separation between pending tenant wishes and approved baseline changes.', folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-20_Integrated_Change_Control_CRB', localPath: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-20_Integrated_Change_Control_CRB\\PM20_Doc1_Standard_Configuration_Mgmt_Standard_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Change Control Board (CRB) Charter, Delegated Financial Authority & SLAs', ref: 'CRB Governance Charter', artifact: 'PM20_Doc2_Deliverable_CRB_Decision_Authority_Matrix_Rev.001.docx', why: 'Clarify PM vs. Sponsor approval caps so minor field tweaks move without stalling.', folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-20_Integrated_Change_Control_CRB', localPath: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-20_Integrated_Change_Control_CRB\\PM20_Doc2_Deliverable_CRB_Decision_Authority_Matrix_Rev.001.docx', kind: 'built' },
+      { cat: 'Template', title: 'Change Request (CR) Impact Assessment Form (Tech, Capex, P6, PUE)', ref: 'CR Impact Form', artifact: 'PM20_Doc3_Template_Change_Impact_Assessment_Form_Rev.001.xlsx', why: 'Force holistic impact sign-off on load density, P6 float, and PUE before issuing VOs.', folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-20_Integrated_Change_Control_CRB', localPath: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-20_Integrated_Change_Control_CRB\\PM20_Doc3_Template_Change_Impact_Assessment_Form_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Approved Change Log, Baseline Revision History & Design Freeze Tracker', ref: 'Stage 4/5 Scope Freeze', artifact: 'PM20_Doc4_Audit_Change_Log_Freeze_Waiver_Audit_Rev.001.xlsx', why: 'Trace every EUR moved from contingency and justify late tenant variation orders.', folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-20_Integrated_Change_Control_CRB', localPath: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-20_Integrated_Change_Control_CRB\\PM20_Doc4_Audit_Change_Log_Freeze_Waiver_Audit_Rev.001.xlsx', kind: 'built' }
     ]
   },
   {
@@ -355,11 +386,12 @@ const CURRICULUM = [
     title: 'Quantitative Risk Analysis (QRA / Monte Carlo P50 & P80)',
     desc: 'Maintain active L x I Risk Register, run 3-point cost/schedule Monte Carlo simulations, and govern drawdown of management reserve.',
     tags: ['QRA', 'Monte Carlo', 'P50/P80'],
+    folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-21_Quantitative_Risk_QRA_Monte_Carlo',
     docs: [
-      { cat: 'Standard', title: 'ISO 31000 Risk Management Standard & AACE 40R-08 Probabilistic Estimating', ref: 'ISO 31000 / AACE 40R-08', artifact: 'Quantitative Risk Standard', why: 'Move beyond static guesses to probability-weighted P50/P80 contingency sizing.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Weighted Risk & Opportunity Register (L x I, EMV, Owners & Triggers)', ref: 'Sheet 5. Risk Register', artifact: 'DataCenter_36MW_EU_PreNTP_Controls.xlsx', why: 'Manage live EU data centre threats (grid delay, OFCI lead-time, wet weather, FX).', kind: 'built' },
-      { cat: 'Template', title: 'Project Charter Top-10 Strategic Risk & Quantitative Monte Carlo Output', ref: 'Charter Sheet 5 / QRA P80', artifact: 'DataCenter_36MW_EU_Project_Charter.xlsx', why: 'Identify top Tornado drivers dictating reserve drawdown across charter and pre-NTP gates.', kind: 'built' },
-      { cat: 'Audit', title: 'Contingency & Management Reserve Drawdown Authorization Ledger', ref: 'Reserve Drawdown Control', artifact: 'Contingency Drawdown Ledger', why: 'Audit every contingency drawdown against realized risk triggers rather than scope creep.', kind: 'ref' }
+      { cat: 'Standard', title: 'ISO 31000 Risk Management Standard & AACE 40R-08 Probabilistic Estimating', ref: 'ISO 31000 / AACE 40R-08', artifact: 'PM21_Doc1_Standard_Quantitative_Risk_Standard_Rev.001.docx', why: 'Move beyond static guesses to probability-weighted P50/P80 contingency sizing.', folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-21_Quantitative_Risk_QRA_Monte_Carlo', localPath: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-21_Quantitative_Risk_QRA_Monte_Carlo\\PM21_Doc1_Standard_Quantitative_Risk_Standard_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Weighted Risk & Opportunity Register (L x I, EMV, Owners & Triggers)', ref: 'Sheet 5. Risk Register', artifact: 'PM21_Doc2_Deliverable_Weighted_Risk_Register_Master_Rev.001.xlsx', why: 'Manage live EU data centre threats (grid delay, OFCI lead-time, wet weather, FX).', folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-21_Quantitative_Risk_QRA_Monte_Carlo', localPath: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-21_Quantitative_Risk_QRA_Monte_Carlo\\PM21_Doc2_Deliverable_Weighted_Risk_Register_Master_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Template', title: 'Project Charter Top-10 Strategic Risk & Quantitative Monte Carlo Output', ref: 'Charter Sheet 5 / QRA P80', artifact: 'PM21_Doc3_Template_Strategic_Risk_QRA_Charter_Master_Rev.001.xlsx', why: 'Identify top Tornado drivers dictating reserve drawdown across charter and pre-NTP gates.', folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-21_Quantitative_Risk_QRA_Monte_Carlo', localPath: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-21_Quantitative_Risk_QRA_Monte_Carlo\\PM21_Doc3_Template_Strategic_Risk_QRA_Charter_Master_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Contingency & Management Reserve Drawdown Authorization Ledger', ref: 'Reserve Drawdown Control', artifact: 'PM21_Doc4_Audit_Contingency_Drawdown_Ledger_Rev.001.xlsx', why: 'Audit every contingency drawdown against realized risk triggers rather than scope creep.', folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-21_Quantitative_Risk_QRA_Monte_Carlo', localPath: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-21_Quantitative_Risk_QRA_Monte_Carlo\\PM21_Doc4_Audit_Contingency_Drawdown_Ledger_Rev.001.xlsx', kind: 'built' }
     ]
   },
   {
@@ -367,11 +399,12 @@ const CURRICULUM = [
     title: 'Quality Assurance (QA/QC), ITPs & NCR / RFI Discipline',
     desc: 'Enforce Inspection & Test Plans, hold/witness points, concrete/weld QA logs, submittals SLAs, and timely Non-Conformance closure.',
     tags: ['QA/QC', 'ITP', 'NCR'],
+    folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-22_QA_QC_ITPs_NCR_RFI_Discipline',
     docs: [
-      { cat: 'Standard', title: 'ISO 9001 Quality Management Systems & CSA/MEP Site Testing Best Practice', ref: 'ISO 9001 QA/QC Standard', artifact: 'Quality Management Standard', why: 'Establish zero-defect construction discipline preventing hidden faults before Cx.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Project Construction Quality Management Plan (CQP) & Testing Lab Scope', ref: 'Stage 5 Site CQP', artifact: 'Construction Quality Plan', why: 'Define concrete cube crush tests, MV/HV cable hipots, and third-party weld NDE rules.', kind: 'ref' },
-      { cat: 'Template', title: 'Trade Inspection & Test Plans (ITPs) with Hold / Witness Checkpoints', ref: 'CSA / HV / MEP ITPs', artifact: 'Master ITP Hold-Point Matrix', why: 'Require CxA/RE physical sign-off before burying conduits, slabs, or pipework.', kind: 'ref' },
-      { cat: 'Audit', title: 'Non-Conformance Report (NCR), Field Observation & RFI Aging Dashboard', ref: 'NCR / RFI Closure SLA', artifact: 'NCR & RFI Aging Audit Log', why: 'Close overdue RFIs (<5 days) and open NCRs before they block handover certificates.', kind: 'ref' }
+      { cat: 'Standard', title: 'ISO 9001 Quality Management Systems & CSA/MEP Site Testing Best Practice', ref: 'ISO 9001 QA/QC Standard', artifact: 'PM22_Doc1_Standard_Quality_Management_Standard_Rev.001.docx', why: 'Establish zero-defect construction discipline preventing hidden faults before Cx.', folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-22_QA_QC_ITPs_NCR_RFI_Discipline', localPath: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-22_QA_QC_ITPs_NCR_RFI_Discipline\\PM22_Doc1_Standard_Quality_Management_Standard_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Project Construction Quality Management Plan (CQP) & Testing Lab Scope', ref: 'Stage 5 Site CQP', artifact: 'PM22_Doc2_Deliverable_Construction_Quality_Plan_Rev.001.docx', why: 'Define concrete cube crush tests, MV/HV cable hipots, and third-party weld NDE rules.', folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-22_QA_QC_ITPs_NCR_RFI_Discipline', localPath: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-22_QA_QC_ITPs_NCR_RFI_Discipline\\PM22_Doc2_Deliverable_Construction_Quality_Plan_Rev.001.docx', kind: 'built' },
+      { cat: 'Template', title: 'Trade Inspection & Test Plans (ITPs) with Hold / Witness Checkpoints', ref: 'CSA / HV / MEP ITPs', artifact: 'PM22_Doc3_Template_Master_ITP_Hold_Point_Matrix_Rev.001.xlsx', why: 'Require CxA/RE physical sign-off before burying conduits, slabs, or pipework.', folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-22_QA_QC_ITPs_NCR_RFI_Discipline', localPath: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-22_QA_QC_ITPs_NCR_RFI_Discipline\\PM22_Doc3_Template_Master_ITP_Hold_Point_Matrix_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Non-Conformance Report (NCR), Field Observation & RFI Aging Dashboard', ref: 'NCR / RFI Closure SLA', artifact: 'PM22_Doc4_Audit_NCR_RFI_Aging_Audit_Log_Rev.001.xlsx', why: 'Close overdue RFIs (<5 days) and open NCRs before they block handover certificates.', folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-22_QA_QC_ITPs_NCR_RFI_Discipline', localPath: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-22_QA_QC_ITPs_NCR_RFI_Discipline\\PM22_Doc4_Audit_NCR_RFI_Aging_Audit_Log_Rev.001.xlsx', kind: 'built' }
     ]
   },
   {
@@ -379,11 +412,12 @@ const CURRICULUM = [
     title: 'Multi-Disciplinary MEP / CSA Interface & Clash Coordination',
     desc: 'Resolve slab penetrations, busway/piping corridors, hot/cold aisle containment tolerances, and trade handoffs between CSA and MEP.',
     tags: ['Interfaces', 'BIM Clash', 'MEP/CSA'],
+    folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-23_MEP_CSA_Interface_BIM_Clash',
     docs: [
-      { cat: 'Standard', title: 'BS EN ISO 19650-2 Spatial Coordination & Federated BIM Clash Standard', ref: 'ISO 19650-2 Coordination', artifact: 'Federated BIM Coordination Std', why: 'Catch clearance clashes digitally in LOD 350 models before pouring concrete slabs.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Cross-Discipline Interface Responsibility & Sequence Plan (Slabs, Busways)', ref: 'CSA -> MEP -> BMS/EPMS', artifact: 'Interface Responsibility Plan', why: 'Sequence overhead containment, sprinkler racks, busbar aisles, and hot-aisle plenums.', kind: 'ref' },
-      { cat: 'Template', title: 'Weekly Navisworks / ACC BIM Clash Resolution & Builders-Work Sign-Off', ref: 'BIM Clash Matrix', artifact: 'Weekly Clash Resolution Log', why: 'Drive weekly clash counts down to zero per zone prior to IFC construction drawings.', kind: 'ref' },
-      { cat: 'Audit', title: 'Data Hall White-Space Readiness Walkdown Checklist (Floor, ESD, Cleanliness)', ref: 'White-Space Sign-Off', artifact: 'Hall White-Space Walkdown Log', why: 'Verify raised floor pedestals, airtight containment, and ISO cleanroom standards pre-rack.', kind: 'ref' }
+      { cat: 'Standard', title: 'BS EN ISO 19650-2 Spatial Coordination & Federated BIM Clash Standard', ref: 'ISO 19650-2 Coordination', artifact: 'PM23_Doc1_Standard_Federated_BIM_Coordination_Std_Rev.001.docx', why: 'Catch clearance clashes digitally in LOD 350 models before pouring concrete slabs.', folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-23_MEP_CSA_Interface_BIM_Clash', localPath: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-23_MEP_CSA_Interface_BIM_Clash\\PM23_Doc1_Standard_Federated_BIM_Coordination_Std_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Cross-Discipline Interface Responsibility & Sequence Plan (Slabs, Busways)', ref: 'CSA -> MEP -> BMS/EPMS', artifact: 'PM23_Doc2_Deliverable_Interface_Responsibility_Plan_Rev.001.docx', why: 'Sequence overhead containment, sprinkler racks, busbar aisles, and hot-aisle plenums.', folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-23_MEP_CSA_Interface_BIM_Clash', localPath: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-23_MEP_CSA_Interface_BIM_Clash\\PM23_Doc2_Deliverable_Interface_Responsibility_Plan_Rev.001.docx', kind: 'built' },
+      { cat: 'Template', title: 'Weekly Navisworks / ACC BIM Clash Resolution & Builders-Work Sign-Off', ref: 'BIM Clash Matrix', artifact: 'PM23_Doc3_Template_Weekly_Clash_Resolution_Log_Rev.001.xlsx', why: 'Drive weekly clash counts down to zero per zone prior to IFC construction drawings.', folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-23_MEP_CSA_Interface_BIM_Clash', localPath: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-23_MEP_CSA_Interface_BIM_Clash\\PM23_Doc3_Template_Weekly_Clash_Resolution_Log_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Data Hall White-Space Readiness Walkdown Checklist (Floor, ESD, Cleanliness)', ref: 'White-Space Sign-Off', artifact: 'PM23_Doc4_Audit_Hall_White_Space_Walkdown_Log_Rev.001.xlsx', why: 'Verify raised floor pedestals, airtight containment, and ISO cleanroom standards pre-rack.', folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-23_MEP_CSA_Interface_BIM_Clash', localPath: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-23_MEP_CSA_Interface_BIM_Clash\\PM23_Doc4_Audit_Hall_White_Space_Walkdown_Log_Rev.001.xlsx', kind: 'built' }
     ]
   },
   {
@@ -391,11 +425,12 @@ const CURRICULUM = [
     title: 'Executive Steering Reporting, Lookahead & Escalation',
     desc: 'Publish weekly/monthly control packs, 3-week/6-week constraint-free lookaheads, and crisp decision memos for executive sponsors.',
     tags: ['Reporting', 'Lookahead', 'Governance'],
+    folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-24_SteerCo_Reporting_Lookahead_PPC',
     docs: [
-      { cat: 'Standard', title: 'Last Planner System (LPS) Pull Planning & Enterprise PMO Reporting Std', ref: 'Last Planner System', artifact: 'Lean Lookahead & PMO Standard', why: 'Combine top-down P6 CPM milestones with weekly field constraint-removal workflows.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Monthly Executive Steering Committee Pack (HSE, EVM, Cash, Top Risks)', ref: 'Monthly SteerCo Pack', artifact: 'Monthly Executive Report Deck', why: 'Present board-level RAG status, S-curves, and urgent capital decisions clearly.', kind: 'ref' },
-      { cat: 'Template', title: 'Rolling 6-Week Constraint-Free Lookahead & Percent Plan Complete (PPC) Log', ref: 'Weekly Site Lookahead', artifact: '6-Week Lookahead & PPC Sheet', why: 'Unblock permits, RAMS, materials, and drawings two weeks ahead of field crews.', kind: 'ref' },
-      { cat: 'Audit', title: 'One-Page Executive Decision Memo & Red-Amber-Green (RAG) Recovery Brief', ref: 'Executive Escalation Memo', artifact: 'RAG Recovery Briefing Note', why: 'Isolate root causes, quantified options, and clear leadership asks on one page.', kind: 'ref' }
+      { cat: 'Standard', title: 'Last Planner System (LPS) Pull Planning & Enterprise PMO Reporting Std', ref: 'Last Planner System', artifact: 'PM24_Doc1_Standard_Lean_Lookahead_PMO_Standard_Rev.001.docx', why: 'Combine top-down P6 CPM milestones with weekly field constraint-removal workflows.', folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-24_SteerCo_Reporting_Lookahead_PPC', localPath: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-24_SteerCo_Reporting_Lookahead_PPC\\PM24_Doc1_Standard_Lean_Lookahead_PMO_Standard_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Monthly Executive Steering Committee Pack (HSE, EVM, Cash, Top Risks)', ref: 'Monthly SteerCo Pack', artifact: 'PM24_Doc2_Deliverable_Monthly_Executive_Report_Deck_Rev.001.docx', why: 'Present board-level RAG status, S-curves, and urgent capital decisions clearly.', folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-24_SteerCo_Reporting_Lookahead_PPC', localPath: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-24_SteerCo_Reporting_Lookahead_PPC\\PM24_Doc2_Deliverable_Monthly_Executive_Report_Deck_Rev.001.docx', kind: 'built' },
+      { cat: 'Template', title: 'Rolling 6-Week Constraint-Free Lookahead & Percent Plan Complete (PPC) Log', ref: 'Weekly Site Lookahead', artifact: 'PM24_Doc3_Template_6_Week_Lookahead_PPC_Sheet_Rev.001.xlsx', why: 'Unblock permits, RAMS, materials, and drawings two weeks ahead of field crews.', folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-24_SteerCo_Reporting_Lookahead_PPC', localPath: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-24_SteerCo_Reporting_Lookahead_PPC\\PM24_Doc3_Template_6_Week_Lookahead_PPC_Sheet_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'One-Page Executive Decision Memo & Red-Amber-Green (RAG) Recovery Brief', ref: 'Executive Escalation Memo', artifact: 'PM24_Doc4_Audit_RAG_Recovery_Briefing_Note_Rev.001.docx', why: 'Isolate root causes, quantified options, and clear leadership asks on one page.', folder: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-24_SteerCo_Reporting_Lookahead_PPC', localPath: 'Phase_4_Execution_Controls_Risk_RIBA_5\\PM-24_SteerCo_Reporting_Lookahead_PPC\\PM24_Doc4_Audit_RAG_Recovery_Briefing_Note_Rev.001.docx', kind: 'built' }
     ]
   },
 
@@ -405,11 +440,12 @@ const CURRICULUM = [
     title: 'Master Commissioning Plan (CIBSE Code M / ASHRAE 0)',
     desc: 'Organize Commissioning Authority (CxA) governance, test matrices, dependency logic, and tag progression gates from L1 to L5.',
     tags: ['CIBSE Code M', 'ASHRAE 0', 'CxA'],
+    folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-25_Master_Commissioning_Plan_CIBSE_M',
     docs: [
-      { cat: 'Standard', title: 'CIBSE Commissioning Code M & ASHRAE Guideline 0 / Standard 202 Process', ref: 'CIBSE Code M / ASHRAE 0', artifact: 'Cx Process Authority Standard', why: 'Structure independent Commissioning Authority (CxA) governance from OPR through IST.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Master Commissioning Management Plan (CxA Authority, Matrix & Logic Gates)', ref: 'Portfolio Stage 6 Pack', artifact: 'Master Commissioning Plan (Stage 6)', why: 'Define sign-off protocols, witness notice periods, and system-by-system test sequences.', kind: 'planned' },
-      { cat: 'Template', title: 'Level 1-5 Sequence Dependency Roadmap Across All 4 Data Halls', ref: 'Sheet 6. Commissioning L1-L5', artifact: 'DataCenter_36MW_EU_PIP.xlsx', why: 'Sequence Hall 1-4 handover phases alongside shared 110kV/central plant systems.', kind: 'built' },
-      { cat: 'Audit', title: 'Commissioning Issues Log (CxIL) & Test Script Completion Burn-Down Log', ref: 'CxTrack / CxAlloy Burn-Down', artifact: 'CxIL & Script Burn-Down Tracker', why: 'Track open commissioning deficiencies daily so zero severity-1 blockers reach IST.', kind: 'ref' }
+      { cat: 'Standard', title: 'CIBSE Commissioning Code M & ASHRAE Guideline 0 / Standard 202 Process', ref: 'CIBSE Code M / ASHRAE 0', artifact: 'PM25_Doc1_Standard_Cx_Process_Authority_Standard_Rev.001.docx', why: 'Structure independent Commissioning Authority (CxA) governance from OPR through IST.', folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-25_Master_Commissioning_Plan_CIBSE_M', localPath: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-25_Master_Commissioning_Plan_CIBSE_M\\PM25_Doc1_Standard_Cx_Process_Authority_Standard_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Master Commissioning Management Plan (CxA Authority, Matrix & Logic Gates)', ref: 'Portfolio Stage 6 Pack', artifact: 'PM25_Doc2_Deliverable_Master_Commissioning_Plan_Stage_6_Rev.001.docx', why: 'Define sign-off protocols, witness notice periods, and system-by-system test sequences.', folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-25_Master_Commissioning_Plan_CIBSE_M', localPath: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-25_Master_Commissioning_Plan_CIBSE_M\\PM25_Doc2_Deliverable_Master_Commissioning_Plan_Stage_6_Rev.001.docx', kind: 'built' },
+      { cat: 'Template', title: 'Level 1-5 Sequence Dependency Roadmap Across All 4 Data Halls', ref: 'Sheet 6. Commissioning L1-L5', artifact: 'PM25_Doc3_Template_Commissioning_L1_L5_Roadmap_PIP_Master_Rev.001.xlsx', why: 'Sequence Hall 1-4 handover phases alongside shared 110kV/central plant systems.', folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-25_Master_Commissioning_Plan_CIBSE_M', localPath: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-25_Master_Commissioning_Plan_CIBSE_M\\PM25_Doc3_Template_Commissioning_L1_L5_Roadmap_PIP_Master_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Commissioning Issues Log (CxIL) & Test Script Completion Burn-Down Log', ref: 'CxTrack / CxAlloy Burn-Down', artifact: 'PM25_Doc4_Audit_CxIL_Script_Burn_Down_Tracker_Rev.001.xlsx', why: 'Track open commissioning deficiencies daily so zero severity-1 blockers reach IST.', folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-25_Master_Commissioning_Plan_CIBSE_M', localPath: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-25_Master_Commissioning_Plan_CIBSE_M\\PM25_Doc4_Audit_CxIL_Script_Burn_Down_Tracker_Rev.001.xlsx', kind: 'built' }
     ]
   },
   {
@@ -417,11 +453,12 @@ const CURRICULUM = [
     title: 'Cx Levels 1 & 2: Witnessed OEM FAT & Site Receiving QA',
     desc: 'Execute European Factory Acceptance Tests (HV switchgear, UPS, chillers, BESS) and verify undamaged site installation/red-line tags.',
     tags: ['L1-L2', 'FAT', 'Red Tag'],
+    folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-26_Cx_L1_L2_OEM_FAT_Receiving_QA',
     docs: [
-      { cat: 'Standard', title: 'IEC 62271 (HV Switchgear), IEC 62040 (UPS) & ISO 8528 (Generator) Standards', ref: 'IEC 62271 / IEC 62040 / ISO 8528', artifact: 'OEM Factory Test Standards', why: 'Understand rated impulse withstand, UPS overload specs, and ISO G3 genset classes.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Level 1 Witnessed Factory Acceptance Test (FAT) Scripts & Punchlists', ref: 'HV GIS / UPS / Chillers / BESS', artifact: 'L1 FAT Witness Test Pack', why: 'Catch protection/firmware defects in the factory before shipping to Dublin/Cork.', kind: 'planned' },
-      { cat: 'Template', title: 'Level 2 Site Delivery, Foundation Alignment, Torque & Pre-Energisation Forms', ref: 'L2 Installation Checksheets', artifact: 'L2 Mechanical/Electrical Forms', why: 'Verify shock-recorder logs, anchor bolts, and megger tests prior to Yellow Tag sign-off.', kind: 'ref' },
-      { cat: 'Audit', title: 'Equipment Color-Tagging Procedure (White L1 -> Yellow L2 -> Green L3 -> Blue L4)', ref: 'Tagging Discipline SOP', artifact: 'Cx Color-Tagging Audit SOP', why: 'Control physical lockstep gates so no contractor energizes an unverified panel.', kind: 'ref' }
+      { cat: 'Standard', title: 'IEC 62271 (HV Switchgear), IEC 62040 (UPS) & ISO 8528 (Generator) Standards', ref: 'IEC 62271 / IEC 62040 / ISO 8528', artifact: 'PM26_Doc1_Standard_OEM_Factory_Test_Standards_Rev.001.docx', why: 'Understand rated impulse withstand, UPS overload specs, and ISO G3 genset classes.', folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-26_Cx_L1_L2_OEM_FAT_Receiving_QA', localPath: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-26_Cx_L1_L2_OEM_FAT_Receiving_QA\\PM26_Doc1_Standard_OEM_Factory_Test_Standards_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Level 1 Witnessed Factory Acceptance Test (FAT) Scripts & Punchlists', ref: 'HV GIS / UPS / Chillers / BESS', artifact: 'PM26_Doc2_Deliverable_L1_FAT_Witness_Test_Pack_Rev.001.docx', why: 'Catch protection/firmware defects in the factory before shipping to Dublin/Cork.', folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-26_Cx_L1_L2_OEM_FAT_Receiving_QA', localPath: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-26_Cx_L1_L2_OEM_FAT_Receiving_QA\\PM26_Doc2_Deliverable_L1_FAT_Witness_Test_Pack_Rev.001.docx', kind: 'built' },
+      { cat: 'Template', title: 'Level 2 Site Delivery, Foundation Alignment, Torque & Pre-Energisation Forms', ref: 'L2 Installation Checksheets', artifact: 'PM26_Doc3_Template_L2_Mechanical_Electrical_Forms_Rev.001.xlsx', why: 'Verify shock-recorder logs, anchor bolts, and megger tests prior to Yellow Tag sign-off.', folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-26_Cx_L1_L2_OEM_FAT_Receiving_QA', localPath: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-26_Cx_L1_L2_OEM_FAT_Receiving_QA\\PM26_Doc3_Template_L2_Mechanical_Electrical_Forms_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Equipment Color-Tagging Procedure (White L1 -> Yellow L2 -> Green L3 -> Blue L4)', ref: 'Tagging Discipline SOP', artifact: 'PM26_Doc4_Audit_Cx_Color_Tagging_Audit_SOP_Rev.001.docx', why: 'Control physical lockstep gates so no contractor energizes an unverified panel.', folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-26_Cx_L1_L2_OEM_FAT_Receiving_QA', localPath: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-26_Cx_L1_L2_OEM_FAT_Receiving_QA\\PM26_Doc4_Audit_Cx_Color_Tagging_Audit_SOP_Rev.001.docx', kind: 'built' }
     ]
   },
   {
@@ -429,11 +466,12 @@ const CURRICULUM = [
     title: 'Cx Level 3: Pre-Functional Static, BSRIA Flush & LOTO',
     desc: 'Verify Megger/hi-pot insulation, relay secondary injection, BSRIA chilled-water flushing, and strict LOTO energisation permits.',
     tags: ['L3 Static', 'BSRIA', 'LOTO'],
+    folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-27_Cx_L3_Static_BSRIA_Flush_LOTO',
     docs: [
-      { cat: 'Standard', title: 'BSRIA BG 29 Pre-Commission Cleaning of Pipework & HV Safe Switching Rules', ref: 'BSRIA BG 29 / ESBN Safety', artifact: 'Static Cleaning & HV Standard', why: 'Prevent condenser fouling and arc-flash hazards through strict static qualification.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Authorized HV/LV Lockout-Tagout (LOTO) Control Book & Sanction-for-Test', ref: 'SAP / Authorized Person Book', artifact: 'HV/LV LOTO Permit Control Book', why: 'Enforce Safe System of Work and Authorised Person isolation across live zones.', kind: 'ref' },
-      { cat: 'Template', title: 'Level 3 Electrical Static Checksheets (Megger, VLF Hi-Pot & Relay Injection)', ref: 'L3 Electrical Static Pack', artifact: 'L3 Static Test Checksheets', why: 'Validate busbar torque thermography marks, CT polarity, and relay trip curves.', kind: 'planned' },
-      { cat: 'Audit', title: 'BSRIA Closed-Loop Chilled-Water Chemical Flushing & Leakage Certificates', ref: 'BSRIA BG 29 / Duct Leakage', artifact: 'BSRIA Flush & Hydro Certificates', why: 'Confirm turbidity, iron <5 ppm, biocide dosing, and pressurized pipe integrity.', kind: 'ref' }
+      { cat: 'Standard', title: 'BSRIA BG 29 Pre-Commission Cleaning of Pipework & HV Safe Switching Rules', ref: 'BSRIA BG 29 / ESBN Safety', artifact: 'PM27_Doc1_Standard_Static_Cleaning_HV_Standard_Rev.001.docx', why: 'Prevent condenser fouling and arc-flash hazards through strict static qualification.', folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-27_Cx_L3_Static_BSRIA_Flush_LOTO', localPath: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-27_Cx_L3_Static_BSRIA_Flush_LOTO\\PM27_Doc1_Standard_Static_Cleaning_HV_Standard_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Authorized HV/LV Lockout-Tagout (LOTO) Control Book & Sanction-for-Test', ref: 'SAP / Authorized Person Book', artifact: 'PM27_Doc2_Deliverable_HV_LV_LOTO_Permit_Control_Book_Rev.001.docx', why: 'Enforce Safe System of Work and Authorised Person isolation across live zones.', folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-27_Cx_L3_Static_BSRIA_Flush_LOTO', localPath: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-27_Cx_L3_Static_BSRIA_Flush_LOTO\\PM27_Doc2_Deliverable_HV_LV_LOTO_Permit_Control_Book_Rev.001.docx', kind: 'built' },
+      { cat: 'Template', title: 'Level 3 Electrical Static Checksheets (Megger, VLF Hi-Pot & Relay Injection)', ref: 'L3 Electrical Static Pack', artifact: 'PM27_Doc3_Template_L3_Static_Test_Checksheets_Rev.001.xlsx', why: 'Validate busbar torque thermography marks, CT polarity, and relay trip curves.', folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-27_Cx_L3_Static_BSRIA_Flush_LOTO', localPath: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-27_Cx_L3_Static_BSRIA_Flush_LOTO\\PM27_Doc3_Template_L3_Static_Test_Checksheets_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'BSRIA Closed-Loop Chilled-Water Chemical Flushing & Leakage Certificates', ref: 'BSRIA BG 29 / Duct Leakage', artifact: 'PM27_Doc4_Audit_BSRIA_Flush_Hydro_Certificates_Rev.001.xlsx', why: 'Confirm turbidity, iron <5 ppm, biocide dosing, and pressurized pipe integrity.', folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-27_Cx_L3_Static_BSRIA_Flush_LOTO', localPath: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-27_Cx_L3_Static_BSRIA_Flush_LOTO\\PM27_Doc4_Audit_BSRIA_Flush_Hydro_Certificates_Rev.001.xlsx', kind: 'built' }
     ]
   },
   {
@@ -441,11 +479,12 @@ const CURRICULUM = [
     title: 'Cx Level 4: Dynamic Load, SCR Abatement & BESS Sync',
     desc: 'Prove 22kV energisation, genset step-load black-start, SCR NOx abatement, EPMS/BMS failure sequences, and BESS synchronization.',
     tags: ['L4 Dynamic', 'BESS Sync', 'BMS/EPMS'],
+    folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-28_Cx_L4_Dynamic_SCR_HVO_BESS',
     docs: [
-      { cat: 'Standard', title: 'CIBSE Commissioning Code C (Controls), NETA ATS & EU Medium Combustion Regs', ref: 'CIBSE Code C / NETA ATS', artifact: 'Dynamic Controls & Test Std', why: 'Set dynamic acceptance tolerances for voltage transients, controls loops, and emissions.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Level 4 Functional Performance Test (FPT) Scripts (UPS, Genset & BESS Sync)', ref: 'CIBSE Code M L4', artifact: 'L4 Functional Test Dossier', why: 'Prove single-system load transfers, static switch speeds, and BESS grid synchronization.', kind: 'planned' },
-      { cat: 'Template', title: 'Generator SCR NOx Emissions Abatement & HVO Combustion Verification Logs', ref: 'EPA IEL Stack Verification', artifact: 'SCR & HVO Dynamic Test Logs', why: 'Verify urea dosing and NOx limits under 25%-100% step loads to satisfy EPA conditions.', kind: 'ref' },
-      { cat: 'Audit', title: 'Automated BMS / EPMS Sequence of Operations (SOO) & Cause-and-Effect Proof', ref: 'BMS / EPMS Telemetry Audit', artifact: 'SOO & Cause-and-Effect Matrix', why: 'Audit sensor trends, alarms, and automated valve/breaker interlock responses end-to-end.', kind: 'ref' }
+      { cat: 'Standard', title: 'CIBSE Commissioning Code C (Controls), NETA ATS & EU Medium Combustion Regs', ref: 'CIBSE Code C / NETA ATS', artifact: 'PM28_Doc1_Standard_Dynamic_Controls_Test_Std_Rev.001.docx', why: 'Set dynamic acceptance tolerances for voltage transients, controls loops, and emissions.', folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-28_Cx_L4_Dynamic_SCR_HVO_BESS', localPath: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-28_Cx_L4_Dynamic_SCR_HVO_BESS\\PM28_Doc1_Standard_Dynamic_Controls_Test_Std_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Level 4 Functional Performance Test (FPT) Scripts (UPS, Genset & BESS Sync)', ref: 'CIBSE Code M L4', artifact: 'PM28_Doc2_Deliverable_L4_Functional_Test_Dossier_Rev.001.docx', why: 'Prove single-system load transfers, static switch speeds, and BESS grid synchronization.', folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-28_Cx_L4_Dynamic_SCR_HVO_BESS', localPath: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-28_Cx_L4_Dynamic_SCR_HVO_BESS\\PM28_Doc2_Deliverable_L4_Functional_Test_Dossier_Rev.001.docx', kind: 'built' },
+      { cat: 'Template', title: 'Generator SCR NOx Emissions Abatement & HVO Combustion Verification Logs', ref: 'EPA IEL Stack Verification', artifact: 'PM28_Doc3_Template_SCR_HVO_Dynamic_Test_Logs_Rev.001.xlsx', why: 'Verify urea dosing and NOx limits under 25%-100% step loads to satisfy EPA conditions.', folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-28_Cx_L4_Dynamic_SCR_HVO_BESS', localPath: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-28_Cx_L4_Dynamic_SCR_HVO_BESS\\PM28_Doc3_Template_SCR_HVO_Dynamic_Test_Logs_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Automated BMS / EPMS Sequence of Operations (SOO) & Cause-and-Effect Proof', ref: 'BMS / EPMS Telemetry Audit', artifact: 'PM28_Doc4_Audit_SOO_Cause_and_Effect_Matrix_Rev.001.xlsx', why: 'Audit sensor trends, alarms, and automated valve/breaker interlock responses end-to-end.', folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-28_Cx_L4_Dynamic_SCR_HVO_BESS', localPath: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-28_Cx_L4_Dynamic_SCR_HVO_BESS\\PM28_Doc4_Audit_SOO_Cause_and_Effect_Matrix_Rev.001.xlsx', kind: 'built' }
     ]
   },
   {
@@ -453,11 +492,12 @@ const CURRICULUM = [
     title: 'Cx Level 5: 36 MW 48-Hr IST & Full Blackout Simulation',
     desc: 'Orchestrate portable load-bank thermal soak, pull-the-plug blackout ATS/UPS failover (<10s), and TES cooling ride-through tests.',
     tags: ['L5 IST', '36 MW', 'Blackout Test'],
+    folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-29_Cx_L5_36MW_48Hr_IST_Blackout',
     docs: [
-      { cat: 'Standard', title: 'ASHRAE Guideline 0 & Hyperscale Integrated Systems Testing (IST) MOP Rules', ref: 'ASHRAE 0 / Hyperscale IST', artifact: 'IST Method Statement Standard', why: 'Structure integrated failure scenarios proving facility resilience under 100% heat load.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Master 36 MW 48-Hour Integrated Systems Test (IST) Playbook & Scenario Pack', ref: 'Pull-the-Plug Blackout', artifact: 'L5 36MW 48-Hr IST Playbook', why: 'Script dual-feed utility loss, breaker failures, and emergency thermal ride-through.', kind: 'planned' },
-      { cat: 'Template', title: 'Portable Load-Bank Power Matrix, Heat-Soak & Infrared Thermography Logs', ref: '36 MW Thermal Heat-Soak', artifact: 'Load-Bank & IR Thermo Matrix', why: 'Distribute fan-assisted resistive load banks accurately across PDUs and floor tiles.', kind: 'ref' },
-      { cat: 'Audit', title: 'Facility Grid Blackout, <10s ATS+BESS Failover & TES Ride-Through Audit Log', ref: 'Scenario Sign-Off Evidence', artifact: 'Blackout & TES Ride-Through Log', why: 'Capture millisecond waveform recordings proving uninterrupted power and zero thermal trip.', kind: 'ref' }
+      { cat: 'Standard', title: 'ASHRAE Guideline 0 & Hyperscale Integrated Systems Testing (IST) MOP Rules', ref: 'ASHRAE 0 / Hyperscale IST', artifact: 'PM29_Doc1_Standard_IST_Method_Statement_Standard_Rev.001.docx', why: 'Structure integrated failure scenarios proving facility resilience under 100% heat load.', folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-29_Cx_L5_36MW_48Hr_IST_Blackout', localPath: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-29_Cx_L5_36MW_48Hr_IST_Blackout\\PM29_Doc1_Standard_IST_Method_Statement_Standard_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Master 36 MW 48-Hour Integrated Systems Test (IST) Playbook & Scenario Pack', ref: 'Pull-the-Plug Blackout', artifact: 'PM29_Doc2_Deliverable_L5_36MW_48_Hr_IST_Playbook_Rev.001.docx', why: 'Script dual-feed utility loss, breaker failures, and emergency thermal ride-through.', folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-29_Cx_L5_36MW_48Hr_IST_Blackout', localPath: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-29_Cx_L5_36MW_48Hr_IST_Blackout\\PM29_Doc2_Deliverable_L5_36MW_48_Hr_IST_Playbook_Rev.001.docx', kind: 'built' },
+      { cat: 'Template', title: 'Portable Load-Bank Power Matrix, Heat-Soak & Infrared Thermography Logs', ref: '36 MW Thermal Heat-Soak', artifact: 'PM29_Doc3_Template_Load_Bank_IR_Thermo_Matrix_Rev.001.xlsx', why: 'Distribute fan-assisted resistive load banks accurately across PDUs and floor tiles.', folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-29_Cx_L5_36MW_48Hr_IST_Blackout', localPath: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-29_Cx_L5_36MW_48Hr_IST_Blackout\\PM29_Doc3_Template_Load_Bank_IR_Thermo_Matrix_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Facility Grid Blackout, <10s ATS+BESS Failover & TES Ride-Through Audit Log', ref: 'Scenario Sign-Off Evidence', artifact: 'PM29_Doc4_Audit_Blackout_TES_Ride_Through_Log_Rev.001.xlsx', why: 'Capture millisecond waveform recordings proving uninterrupted power and zero thermal trip.', folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-29_Cx_L5_36MW_48Hr_IST_Blackout', localPath: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-29_Cx_L5_36MW_48Hr_IST_Blackout\\PM29_Doc4_Audit_Blackout_TES_Ride_Through_Log_Rev.001.xlsx', kind: 'built' }
     ]
   },
   {
@@ -465,11 +505,12 @@ const CURRICULUM = [
     title: 'Dual EN 50600 Class 3 & Uptime TCCF Constructed Audit',
     desc: 'Script simultaneous path-isolation concurrent maintainability demonstrations for independent on-site certifying assessors.',
     tags: ['TCCF', 'EN 50600', 'Maintainability'],
+    folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-30_Dual_EN50600_Uptime_TCCF_Audit',
     docs: [
-      { cat: 'Standard', title: 'Uptime Institute Tier Standard Topology (TCCF) & I.S. EN 50600 Class 3 Rules', ref: 'Uptime TCCF / EN 50600', artifact: 'Dual Certification Rulebook', why: 'Satisfy both Uptime Institute assessors and European EN 50600 third-party auditors.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'On-Site Assessor Concurrent Maintainability Isolation Demonstration Pack', ref: 'Path A vs. Path B Proofs', artifact: 'TCCF & Class 3 Witness Scripts', why: 'Prove every switchgear, transformer, UPS, and chiller header isolates with zero outage.', kind: 'planned' },
-      { cat: 'Template', title: 'Pre-Audit Single-Point-of-Failure (SPOF) Electrical & Cooling Walkdown Sheet', ref: 'SPOF Elimination Check', artifact: 'Pre-Audit SPOF Walkdown Sheet', why: 'Eliminate shared control PLC power supplies, manual valve bypasses, or control loops.', kind: 'ref' },
-      { cat: 'Audit', title: 'Assessor Observations Remediation Dossier & Constructed Certificate File', ref: 'Certification Sign-Off Vault', artifact: 'TCCF / EN 50600 Audit File', why: 'Close minor witness punch items and secure final bankable facility certificates.', kind: 'ref' }
+      { cat: 'Standard', title: 'Uptime Institute Tier Standard Topology (TCCF) & I.S. EN 50600 Class 3 Rules', ref: 'Uptime TCCF / EN 50600', artifact: 'PM30_Doc1_Standard_Dual_Certification_Rulebook_Rev.001.docx', why: 'Satisfy both Uptime Institute assessors and European EN 50600 third-party auditors.', folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-30_Dual_EN50600_Uptime_TCCF_Audit', localPath: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-30_Dual_EN50600_Uptime_TCCF_Audit\\PM30_Doc1_Standard_Dual_Certification_Rulebook_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'On-Site Assessor Concurrent Maintainability Isolation Demonstration Pack', ref: 'Path A vs. Path B Proofs', artifact: 'PM30_Doc2_Deliverable_TCCF_Class_3_Witness_Scripts_Rev.001.docx', why: 'Prove every switchgear, transformer, UPS, and chiller header isolates with zero outage.', folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-30_Dual_EN50600_Uptime_TCCF_Audit', localPath: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-30_Dual_EN50600_Uptime_TCCF_Audit\\PM30_Doc2_Deliverable_TCCF_Class_3_Witness_Scripts_Rev.001.docx', kind: 'built' },
+      { cat: 'Template', title: 'Pre-Audit Single-Point-of-Failure (SPOF) Electrical & Cooling Walkdown Sheet', ref: 'SPOF Elimination Check', artifact: 'PM30_Doc3_Template_Pre_Audit_SPOF_Walkdown_Sheet_Rev.001.xlsx', why: 'Eliminate shared control PLC power supplies, manual valve bypasses, or control loops.', folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-30_Dual_EN50600_Uptime_TCCF_Audit', localPath: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-30_Dual_EN50600_Uptime_TCCF_Audit\\PM30_Doc3_Template_Pre_Audit_SPOF_Walkdown_Sheet_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Assessor Observations Remediation Dossier & Constructed Certificate File', ref: 'Certification Sign-Off Vault', artifact: 'PM30_Doc4_Audit_TCCF_EN_50600_Audit_File_Rev.001.docx', why: 'Close minor witness punch items and secure final bankable facility certificates.', folder: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-30_Dual_EN50600_Uptime_TCCF_Audit', localPath: 'Phase_5_Commissioning_L1_L5_RIBA_5_6\\PM-30_Dual_EN50600_Uptime_TCCF_Audit\\PM30_Doc4_Audit_TCCF_EN_50600_Audit_File_Rev.001.docx', kind: 'built' }
     ]
   },
 
@@ -479,11 +520,12 @@ const CURRICULUM = [
     title: 'Practical Completion (PC), Snagging Burn-Down & RFS Gate',
     desc: 'Run A/B/C defect classification, enforce Day-1 Ready-for-Service (RFS) blocker zeroing, and issue Taking-Over Certificates.',
     tags: ['Practical Completion', 'Punch List', 'RFS'],
+    folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-31_Practical_Completion_Snagging_RFS',
     docs: [
-      { cat: 'Standard', title: 'RIBA Stage 6 Handover & Contract Practical Completion Certification Protocol', ref: 'RIBA Stage 6 / Contract PC', artifact: 'Handover & RFS Gate Standard', why: 'Prevent premature lease start liabilities by defining strict objective PC/RFS exits.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Ready-for-Service (RFS) Gate Sign-Off Package & Taking-Over Certificate', ref: 'Tenant Lease / Contract TOC', artifact: 'PC & RFS Gate Sign-Off Pack', why: 'Trigger rent commencement, insurance transfer, and defects liability start date cleanly.', kind: 'ref' },
-      { cat: 'Template', title: 'A / B / C Defect Categorization & Snagging Punch-List Burn-Down Tracker', ref: 'Zero Cat-A Day-1 Blockers', artifact: 'Snagging Punch-List Log', why: 'Separate safety/SLAs (Cat-A) from cosmetic snags (Cat-C) to unblock handover.', kind: 'ref' },
-      { cat: 'Audit', title: 'Tenant Demise Inspection, Cleanroom & Security Keys Handover Certificate', ref: 'White-Space Demise Sign-Off', artifact: 'Tenant Demise Handover Audit', why: 'Verify BMS security access badges, cleanroom particle counts, and cage locks.', kind: 'ref' }
+      { cat: 'Standard', title: 'RIBA Stage 6 Handover & Contract Practical Completion Certification Protocol', ref: 'RIBA Stage 6 / Contract PC', artifact: 'PM31_Doc1_Standard_Handover_RFS_Gate_Standard_Rev.001.docx', why: 'Prevent premature lease start liabilities by defining strict objective PC/RFS exits.', folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-31_Practical_Completion_Snagging_RFS', localPath: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-31_Practical_Completion_Snagging_RFS\\PM31_Doc1_Standard_Handover_RFS_Gate_Standard_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Ready-for-Service (RFS) Gate Sign-Off Package & Taking-Over Certificate', ref: 'Tenant Lease / Contract TOC', artifact: 'PM31_Doc2_Deliverable_PC_RFS_Gate_Sign_Off_Pack_Rev.001.docx', why: 'Trigger rent commencement, insurance transfer, and defects liability start date cleanly.', folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-31_Practical_Completion_Snagging_RFS', localPath: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-31_Practical_Completion_Snagging_RFS\\PM31_Doc2_Deliverable_PC_RFS_Gate_Sign_Off_Pack_Rev.001.docx', kind: 'built' },
+      { cat: 'Template', title: 'A / B / C Defect Categorization & Snagging Punch-List Burn-Down Tracker', ref: 'Zero Cat-A Day-1 Blockers', artifact: 'PM31_Doc3_Template_Snagging_Punch_List_Log_Rev.001.xlsx', why: 'Separate safety/SLAs (Cat-A) from cosmetic snags (Cat-C) to unblock handover.', folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-31_Practical_Completion_Snagging_RFS', localPath: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-31_Practical_Completion_Snagging_RFS\\PM31_Doc3_Template_Snagging_Punch_List_Log_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Tenant Demise Inspection, Cleanroom & Security Keys Handover Certificate', ref: 'White-Space Demise Sign-Off', artifact: 'PM31_Doc4_Audit_Tenant_Demise_Handover_Audit_Rev.001.docx', why: 'Verify BMS security access badges, cleanroom particle counts, and cage locks.', folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-31_Practical_Completion_Snagging_RFS', localPath: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-31_Practical_Completion_Snagging_RFS\\PM31_Doc4_Audit_Tenant_Demise_Handover_Audit_Rev.001.docx', kind: 'built' }
     ]
   },
   {
@@ -491,11 +533,12 @@ const CURRICULUM = [
     title: 'Operational Readiness & Transition (OR&T) & Black-Hat Drills',
     desc: 'Train 24/7 Critical Facilities staff, validate EOP/MOP/SOP libraries, run live Black-Hat incident drills, and stock 2-year critical spares.',
     tags: ['OR&T', 'Black-Hat', 'EOP/MOP/SOP'],
+    folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-32_ORT_EOP_MOP_SOP_BlackHat',
     docs: [
-      { cat: 'Standard', title: 'I.S. EN 50600-3-1 Management & Operations + Uptime Operational Sustainability', ref: 'EN 50600-3-1 / Uptime M&O', artifact: 'Facility Operations Standard', why: 'Avoid human-error outages (>70% of failures) through certified operating discipline.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Critical Facilities Operations Handbook: EOP, MOP & SOP Playbook Library', ref: 'Stage 6 OR&T Runbooks', artifact: 'Stage 6 OR&T Handbook Suite', why: 'Equip shift engineers with step-by-step switching and emergency response guides.', kind: 'planned' },
-      { cat: 'Template', title: 'Live Black-Hat Unannounced Outage Drill Scripts & 24/7 Crew Scorecards', ref: 'Operator Drill Simulation', artifact: 'Black-Hat Drill Evaluation Log', why: 'Test live crew reactions to simulated tripped breakers, chiller leaks, and fire alarms.', kind: 'ref' },
-      { cat: 'Audit', title: '24/7 Technician Competency Sign-Offs, OEM SLAs & 2-Year Critical Spares Log', ref: 'Spares & Competency Check', artifact: 'Spares & SLA Readiness Audit', why: 'Ensure breakers, PLC cards, fan drives, and 4-hour vendor SLAs exist prior to Day-1.', kind: 'ref' }
+      { cat: 'Standard', title: 'I.S. EN 50600-3-1 Management & Operations + Uptime Operational Sustainability', ref: 'EN 50600-3-1 / Uptime M&O', artifact: 'PM32_Doc1_Standard_Facility_Operations_Standard_Rev.001.docx', why: 'Avoid human-error outages (>70% of failures) through certified operating discipline.', folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-32_ORT_EOP_MOP_SOP_BlackHat', localPath: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-32_ORT_EOP_MOP_SOP_BlackHat\\PM32_Doc1_Standard_Facility_Operations_Standard_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Critical Facilities Operations Handbook: EOP, MOP & SOP Playbook Library', ref: 'Stage 6 OR&T Runbooks', artifact: 'PM32_Doc2_Deliverable_Stage_6_OR_T_Handbook_Suite_Rev.001.docx', why: 'Equip shift engineers with step-by-step switching and emergency response guides.', folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-32_ORT_EOP_MOP_SOP_BlackHat', localPath: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-32_ORT_EOP_MOP_SOP_BlackHat\\PM32_Doc2_Deliverable_Stage_6_OR_T_Handbook_Suite_Rev.001.docx', kind: 'built' },
+      { cat: 'Template', title: 'Live Black-Hat Unannounced Outage Drill Scripts & 24/7 Crew Scorecards', ref: 'Operator Drill Simulation', artifact: 'PM32_Doc3_Template_Black_Hat_Drill_Evaluation_Log_Rev.001.xlsx', why: 'Test live crew reactions to simulated tripped breakers, chiller leaks, and fire alarms.', folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-32_ORT_EOP_MOP_SOP_BlackHat', localPath: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-32_ORT_EOP_MOP_SOP_BlackHat\\PM32_Doc3_Template_Black_Hat_Drill_Evaluation_Log_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: '24/7 Technician Competency Sign-Offs, OEM SLAs & 2-Year Critical Spares Log', ref: 'Spares & Competency Check', artifact: 'PM32_Doc4_Audit_Spares_SLA_Readiness_Audit_Rev.001.xlsx', why: 'Ensure breakers, PLC cards, fan drives, and 4-hour vendor SLAs exist prior to Day-1.', folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-32_ORT_EOP_MOP_SOP_BlackHat', localPath: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-32_ORT_EOP_MOP_SOP_BlackHat\\PM32_Doc4_Audit_Spares_SLA_Readiness_Audit_Rev.001.xlsx', kind: 'built' }
     ]
   },
   {
@@ -503,11 +546,12 @@ const CURRICULUM = [
     title: 'BS EN ISO 19650 Asset Information Model (AIM) Handover',
     desc: 'Deliver verified COBie asset registers, as-built BIM models, O&M manuals, warranties, and CMMS integration packages.',
     tags: ['ISO 19650 AIM', 'COBie', 'O&M'],
+    folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-33_ISO19650_AIM_COBie_CMMS_Handover',
     docs: [
-      { cat: 'Standard', title: 'BS EN ISO 19650-3 Operational Asset Information Mgmt & BS 1192-4 COBie', ref: 'ISO 19650-3 / BS 1192-4', artifact: 'AIM & COBie Data Standard', why: 'Bridge construction CDE models seamlessly into live CMMS maintenance software.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Verified Asset Information Model (AIM) & As-Built Federated BIM Archive', ref: 'As-Built Digital Twin', artifact: 'As-Built AIM Digital Vault', why: 'Deliver geo-tagged 3D models matching every installed pipe, valve, and breaker.', kind: 'planned' },
-      { cat: 'Template', title: 'Structured COBie / CMMS Equipment Asset Register (Barcodes, Serials, PPM)', ref: 'CMMS Bulk Import Pack', artifact: 'COBie & CMMS Asset Register', why: 'Pre-load thousands of maintainable assets with OEM warranty dates and PPM intervals.', kind: 'ref' },
-      { cat: 'Audit', title: 'Final Red-Line As-Built Drawings, O&M Manuals, Warranties & Test Vault', ref: 'CDE Published Archive', artifact: 'O&M & Warranty Completeness Log', why: 'Audit 100% receipt of signed statutory O&M volumes before final retention payment.', kind: 'ref' }
+      { cat: 'Standard', title: 'BS EN ISO 19650-3 Operational Asset Information Mgmt & BS 1192-4 COBie', ref: 'ISO 19650-3 / BS 1192-4', artifact: 'PM33_Doc1_Standard_AIM_COBie_Data_Standard_Rev.001.docx', why: 'Bridge construction CDE models seamlessly into live CMMS maintenance software.', folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-33_ISO19650_AIM_COBie_CMMS_Handover', localPath: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-33_ISO19650_AIM_COBie_CMMS_Handover\\PM33_Doc1_Standard_AIM_COBie_Data_Standard_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Verified Asset Information Model (AIM) & As-Built Federated BIM Archive', ref: 'As-Built Digital Twin', artifact: 'PM33_Doc2_Deliverable_As_Built_AIM_Digital_Vault_Rev.001.docx', why: 'Deliver geo-tagged 3D models matching every installed pipe, valve, and breaker.', folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-33_ISO19650_AIM_COBie_CMMS_Handover', localPath: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-33_ISO19650_AIM_COBie_CMMS_Handover\\PM33_Doc2_Deliverable_As_Built_AIM_Digital_Vault_Rev.001.docx', kind: 'built' },
+      { cat: 'Template', title: 'Structured COBie / CMMS Equipment Asset Register (Barcodes, Serials, PPM)', ref: 'CMMS Bulk Import Pack', artifact: 'PM33_Doc3_Template_COBie_CMMS_Asset_Register_Rev.001.xlsx', why: 'Pre-load thousands of maintainable assets with OEM warranty dates and PPM intervals.', folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-33_ISO19650_AIM_COBie_CMMS_Handover', localPath: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-33_ISO19650_AIM_COBie_CMMS_Handover\\PM33_Doc3_Template_COBie_CMMS_Asset_Register_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Final Red-Line As-Built Drawings, O&M Manuals, Warranties & Test Vault', ref: 'CDE Published Archive', artifact: 'PM33_Doc4_Audit_O_M_Warranty_Completeness_Log_Rev.001.xlsx', why: 'Audit 100% receipt of signed statutory O&M volumes before final retention payment.', folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-33_ISO19650_AIM_COBie_CMMS_Handover', localPath: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-33_ISO19650_AIM_COBie_CMMS_Handover\\PM33_Doc4_Audit_O_M_Warranty_Completeness_Log_Rev.001.xlsx', kind: 'built' }
     ]
   },
   {
@@ -515,11 +559,12 @@ const CURRICULUM = [
     title: 'Commercial Final Account, Variations Settlement & DLP',
     desc: 'Reconcile all CEs/variations, close prime cost sums, manage retention release mechanics, and track 12/24-month Defect Liability Period.',
     tags: ['Final Account', 'DLP', 'Retention'],
+    folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-34_Commercial_Final_Account_DLP',
     docs: [
-      { cat: 'Standard', title: 'NEC4 / FIDIC Commercial Final Account Agreement & Defects Liability Rules', ref: 'NEC4 Cl. 5 / FIDIC Cl. 14', artifact: 'Commercial Closeout Standard', why: 'Execute legally binding full-and-final commercial settlement eliminating latent claims.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Agreed Commercial Final Account Statement & Closed Variation Schedule', ref: 'Final Account Deed', artifact: 'Final Account Settlement Pack', why: 'Reconcile provisional sums, CEs, contra-charges, and final capex EUR/MW actuals.', kind: 'ref' },
-      { cat: 'Template', title: '12-to-24 Month Defects Liability Period (DLP) & Warranty Callout Tracker', ref: 'Post-PC Defect SLA', artifact: 'DLP Callout & Defect Register', why: 'Track response SLAs for post-handover snags and latent leaks during warranty year 1.', kind: 'ref' },
-      { cat: 'Audit', title: 'Practical Completion 50% Retention Release & Making-Good Defects Cert', ref: 'Final Certificate Gate', artifact: 'Retention & Defects Release Audit', why: 'Release second half of performance bond/retention only after DLP clearance sign-off.', kind: 'ref' }
+      { cat: 'Standard', title: 'NEC4 / FIDIC Commercial Final Account Agreement & Defects Liability Rules', ref: 'NEC4 Cl. 5 / FIDIC Cl. 14', artifact: 'PM34_Doc1_Standard_Commercial_Closeout_Standard_Rev.001.docx', why: 'Execute legally binding full-and-final commercial settlement eliminating latent claims.', folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-34_Commercial_Final_Account_DLP', localPath: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-34_Commercial_Final_Account_DLP\\PM34_Doc1_Standard_Commercial_Closeout_Standard_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Agreed Commercial Final Account Statement & Closed Variation Schedule', ref: 'Final Account Deed', artifact: 'PM34_Doc2_Deliverable_Final_Account_Settlement_Pack_Rev.001.docx', why: 'Reconcile provisional sums, CEs, contra-charges, and final capex EUR/MW actuals.', folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-34_Commercial_Final_Account_DLP', localPath: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-34_Commercial_Final_Account_DLP\\PM34_Doc2_Deliverable_Final_Account_Settlement_Pack_Rev.001.docx', kind: 'built' },
+      { cat: 'Template', title: '12-to-24 Month Defects Liability Period (DLP) & Warranty Callout Tracker', ref: 'Post-PC Defect SLA', artifact: 'PM34_Doc3_Template_DLP_Callout_Defect_Register_Rev.001.xlsx', why: 'Track response SLAs for post-handover snags and latent leaks during warranty year 1.', folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-34_Commercial_Final_Account_DLP', localPath: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-34_Commercial_Final_Account_DLP\\PM34_Doc3_Template_DLP_Callout_Defect_Register_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Practical Completion 50% Retention Release & Making-Good Defects Cert', ref: 'Final Certificate Gate', artifact: 'PM34_Doc4_Audit_Retention_Defects_Release_Audit_Rev.001.xlsx', why: 'Release second half of performance bond/retention only after DLP clearance sign-off.', folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-34_Commercial_Final_Account_DLP', localPath: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-34_Commercial_Final_Account_DLP\\PM34_Doc4_Audit_Retention_Defects_Release_Audit_Rev.001.xlsx', kind: 'built' }
     ]
   },
   {
@@ -527,11 +572,12 @@ const CURRICULUM = [
     title: 'Post-Occupancy Evaluation (POE) & Live PUE/WUE/ERF Audit',
     desc: 'Track seasonal commissioning tuning, verify guaranteed vs. measured PUE/WUE at partial IT load, and optimize chiller staging.',
     tags: ['POE', 'Seasonal Cx', 'Live PUE'],
+    folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-35_Post_Occupancy_Evaluation_PUE_EED',
     docs: [
-      { cat: 'Standard', title: 'BSRIA BG 63 Soft Landings Post-Occupancy & Reg. (EU) 2024/1364 Reporting', ref: 'BSRIA BG 63 / EU 2024/1364', artifact: 'POE & EED Live Audit Standard', why: 'Ensure design PUE survives reality at 15%-50% early tenant ramp-up load factors.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Summer/Winter Seasonal Commissioning Fine-Tuning Report (Chiller/Pump Opt)', ref: 'RIBA Stage 7 In-Use', artifact: 'Seasonal Cx Tuning Report', why: 'Retune VFD fan walls, EC fans, and adiabatic wetted pads across live seasonal peaks.', kind: 'ref' },
-      { cat: 'Template', title: 'Guaranteed vs. Measured PUE, WUE & Free-Cooling Energy Validation Log', ref: 'KPI Benchmark Tracker', artifact: 'Live PUE/WUE Validation Workbook', why: 'Measure EPMS sub-meters continuously to confirm <1.22 annualized PUE compliance.', kind: 'ref' },
-      { cat: 'Audit', title: 'Initial Statutory Annual EU EED Art. 12 Union Database Filing Pack', ref: 'May 15 Annual EED Filing', artifact: 'EU EED Annual Filing Audit', why: 'Submit verified energy, water, and waste-heat metrics to the European Commission portal.', kind: 'ref' }
+      { cat: 'Standard', title: 'BSRIA BG 63 Soft Landings Post-Occupancy & Reg. (EU) 2024/1364 Reporting', ref: 'BSRIA BG 63 / EU 2024/1364', artifact: 'PM35_Doc1_Standard_POE_EED_Live_Audit_Standard_Rev.001.docx', why: 'Ensure design PUE survives reality at 15%-50% early tenant ramp-up load factors.', folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-35_Post_Occupancy_Evaluation_PUE_EED', localPath: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-35_Post_Occupancy_Evaluation_PUE_EED\\PM35_Doc1_Standard_POE_EED_Live_Audit_Standard_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Summer/Winter Seasonal Commissioning Fine-Tuning Report (Chiller/Pump Opt)', ref: 'RIBA Stage 7 In-Use', artifact: 'PM35_Doc2_Deliverable_Seasonal_Cx_Tuning_Report_Rev.001.docx', why: 'Retune VFD fan walls, EC fans, and adiabatic wetted pads across live seasonal peaks.', folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-35_Post_Occupancy_Evaluation_PUE_EED', localPath: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-35_Post_Occupancy_Evaluation_PUE_EED\\PM35_Doc2_Deliverable_Seasonal_Cx_Tuning_Report_Rev.001.docx', kind: 'built' },
+      { cat: 'Template', title: 'Guaranteed vs. Measured PUE, WUE & Free-Cooling Energy Validation Log', ref: 'KPI Benchmark Tracker', artifact: 'PM35_Doc3_Template_Live_PUE_WUE_Validation_Workbook_Rev.001.xlsx', why: 'Measure EPMS sub-meters continuously to confirm <1.22 annualized PUE compliance.', folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-35_Post_Occupancy_Evaluation_PUE_EED', localPath: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-35_Post_Occupancy_Evaluation_PUE_EED\\PM35_Doc3_Template_Live_PUE_WUE_Validation_Workbook_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Initial Statutory Annual EU EED Art. 12 Union Database Filing Pack', ref: 'May 15 Annual EED Filing', artifact: 'PM35_Doc4_Audit_EU_EED_Annual_Filing_Audit_Rev.001.docx', why: 'Submit verified energy, water, and waste-heat metrics to the European Commission portal.', folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-35_Post_Occupancy_Evaluation_PUE_EED', localPath: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-35_Post_Occupancy_Evaluation_PUE_EED\\PM35_Doc4_Audit_EU_EED_Annual_Filing_Audit_Rev.001.docx', kind: 'built' }
     ]
   },
   {
@@ -539,11 +585,12 @@ const CURRICULUM = [
     title: 'Lessons Learned Archive, Benefits Realization & Closeout',
     desc: 'Publish benchmark EUR/MW actuals, schedule variance post-mortems, contract closeout certificates, and enterprise knowledge transfer.',
     tags: ['Closeout', 'Lessons Learned', 'KPIs'],
+    folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-36_Lessons_Learned_Benefits_Closeout',
     docs: [
-      { cat: 'Standard', title: 'PMI Close Project Phase Standard & Enterprise PMO Benchmarking Guidelines', ref: 'PMI Closeout / PMO Std', artifact: 'Enterprise Closeout Standard', why: 'Institutionalize actual build costs and schedule durations to inform DC36 Phase 2.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Final Project Closeout Report & Actual EUR/MW Capex + Schedule Benchmark', ref: 'Board Benefits Review', artifact: 'Project Closeout & Benchmark Pack', why: 'Compare FID forecasts vs. final outturn IRR, EUR/MW capex, and critical-path variances.', kind: 'ref' },
-      { cat: 'Template', title: 'Cross-Discipline End-to-End Lessons Learned Register (CSA, Grid, Cx, OR&T)', ref: 'PMO Knowledge Base', artifact: 'Lessons Learned Register', why: 'Capture procurement pitfalls, OFCI lessons, and Irish permitting timelines for future sites.', kind: 'ref' },
-      { cat: 'Audit', title: 'Formal Contract Closeout Notices, Bond Returns & Benefits Realization Sign-Off', ref: 'Sponsor Final Discharge', artifact: 'Contract Closeout Sign-Off Log', why: 'Confirm parent guarantees returned, CDE archived, and project team formally released.', kind: 'ref' }
+      { cat: 'Standard', title: 'PMI Close Project Phase Standard & Enterprise PMO Benchmarking Guidelines', ref: 'PMI Closeout / PMO Std', artifact: 'PM36_Doc1_Standard_Enterprise_Closeout_Standard_Rev.001.docx', why: 'Institutionalize actual build costs and schedule durations to inform DC36 Phase 2.', folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-36_Lessons_Learned_Benefits_Closeout', localPath: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-36_Lessons_Learned_Benefits_Closeout\\PM36_Doc1_Standard_Enterprise_Closeout_Standard_Rev.001.docx', kind: 'built' },
+      { cat: 'Deliverable', title: 'Final Project Closeout Report & Actual EUR/MW Capex + Schedule Benchmark', ref: 'Board Benefits Review', artifact: 'PM36_Doc2_Deliverable_Project_Closeout_Benchmark_Pack_Rev.001.docx', why: 'Compare FID forecasts vs. final outturn IRR, EUR/MW capex, and critical-path variances.', folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-36_Lessons_Learned_Benefits_Closeout', localPath: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-36_Lessons_Learned_Benefits_Closeout\\PM36_Doc2_Deliverable_Project_Closeout_Benchmark_Pack_Rev.001.docx', kind: 'built' },
+      { cat: 'Template', title: 'Cross-Discipline End-to-End Lessons Learned Register (CSA, Grid, Cx, OR&T)', ref: 'PMO Knowledge Base', artifact: 'PM36_Doc3_Template_Lessons_Learned_Register_Rev.001.xlsx', why: 'Capture procurement pitfalls, OFCI lessons, and Irish permitting timelines for future sites.', folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-36_Lessons_Learned_Benefits_Closeout', localPath: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-36_Lessons_Learned_Benefits_Closeout\\PM36_Doc3_Template_Lessons_Learned_Register_Rev.001.xlsx', kind: 'built' },
+      { cat: 'Audit', title: 'Formal Contract Closeout Notices, Bond Returns & Benefits Realization Sign-Off', ref: 'Sponsor Final Discharge', artifact: 'PM36_Doc4_Audit_Contract_Closeout_Sign_Off_Log_Rev.001.xlsx', why: 'Confirm parent guarantees returned, CDE archived, and project team formally released.', folder: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-36_Lessons_Learned_Benefits_Closeout', localPath: 'Phase_6_Handover_ORT_Closeout_RIBA_6_7\\PM-36_Lessons_Learned_Benefits_Closeout\\PM36_Doc4_Audit_Contract_Closeout_Sign_Off_Log_Rev.001.xlsx', kind: 'built' }
     ]
   },
 
@@ -1395,6 +1442,11 @@ function renderModuleDocsDrawerHtml(m, forceOpen) {
     const kindCls = d.kind === 'built' ? 'doc-pill-built' : (d.kind === 'planned' ? 'doc-pill-planned' : 'doc-pill-ref');
     const kindLbl = d.kind === 'built' ? 'Built (DC36-EU)' : (d.kind === 'planned' ? 'Planned Next' : 'Guide / Std');
     const catLbl = d.cat || 'Guide';
+    const safeArtifact = escapeHtml(d.artifact || '');
+    const safeRef = escapeHtml(d.ref || '');
+    const copyBtnHtml = d.localPath
+      ? `<button type="button" class="btn-copy-path mono" data-copy-path="${escapeHtml(d.localPath)}" data-copy-label="${safeArtifact}" title="Copy full Windows file path">Copy Path</button>`
+      : '';
     return `
       <li class="module-doc-item ${isChecked ? 'is-done' : ''}" data-doc-row="${k}">
         <div class="module-doc-left">
@@ -1410,7 +1462,8 @@ function renderModuleDocsDrawerHtml(m, forceOpen) {
           </div>
         </div>
         <div class="module-doc-meta">
-          <span class="mono">${d.artifact} (${d.ref})</span>
+          <span class="mono">${safeArtifact}${safeRef ? ` (${safeRef})` : ''}</span>
+          ${copyBtnHtml}
           <span class="doc-pill ${kindCls}">${kindLbl}</span>
         </div>
       </li>
@@ -1418,6 +1471,15 @@ function renderModuleDocsDrawerHtml(m, forceOpen) {
   }).join('');
 
   const pillCls = doneCount === docs.length ? 'all-done' : (doneCount > 0 ? 'has-done' : '');
+  const folderPath = m.folder || (docs[0] && docs[0].folder) || '';
+  const folderBarHtml = folderPath
+    ? `
+      <div class="drawer-folder-bar">
+        <span class="drawer-folder-path mono" title="${escapeHtml(LOCAL_REPO_ROOT + folderPath)}">Folder: ${escapeHtml(folderPath)}</span>
+        <button type="button" class="btn-copy-path mono" data-copy-path="${escapeHtml(folderPath)}" data-copy-label="${m.id} Flashcard Folder">Copy Folder</button>
+      </div>
+    `
+    : '';
 
   return `
     <details class="module-docs-drawer" data-id="${m.id}" ${forceOpen ? 'open' : ''}>
@@ -1429,6 +1491,7 @@ function renderModuleDocsDrawerHtml(m, forceOpen) {
         <span class="section-docs-hint hint-view">View</span>
         <span class="section-docs-hint hint-hide">Hide</span>
       </summary>
+      ${folderBarHtml}
       <ul class="module-docs-list">${itemsHtml}</ul>
     </details>
   `;
@@ -1549,6 +1612,14 @@ function renderTrackModules(trackName, gridId) {
   }
 
   grid.innerHTML = sectionsHtml;
+
+  grid.querySelectorAll('.btn-copy-path').forEach(btn => {
+    btn.onclick = (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      copyLocalRepoPath(btn.dataset.copyPath || '', btn.dataset.copyLabel || '');
+    };
+  });
 
   grid.querySelectorAll('.doc-check-input').forEach(chk => {
     chk.onchange = () => {
@@ -1809,6 +1880,76 @@ function renderPortfolio() {
       });
       renderPortfolio();
     };
+  });
+
+  renderRepoMap();
+}
+
+let repoPhaseFilter = 'ALL';
+function renderRepoMap() {
+  const host = document.getElementById('repo-map-section');
+  if (!host) return;
+  const pmModules = CURRICULUM.filter(m => m.track === 'pm');
+  const pmPillars = PILLARS.filter(p => p.track === 'pm');
+  const filtered = pmModules.filter(m => repoPhaseFilter === 'ALL' || m.pillar === repoPhaseFilter);
+  const chipHtml = [
+    `<button type="button" class="chip ${repoPhaseFilter === 'ALL' ? 'selected' : ''}" data-rphase="ALL">All Phases (36 Folders / 144 Docs)</button>`,
+    ...pmPillars.map(p => `<button type="button" class="chip ${repoPhaseFilter === p.id ? 'selected' : ''}" data-rphase="${p.id}">${p.code}</button>`)
+  ].join('');
+
+  const rowsHtml = filtered.map(m => {
+    const pObj = pmPillars.find(p => p.id === m.pillar);
+    const folder = m.folder || (m.docs && m.docs[0] && m.docs[0].folder) || '';
+    const fmtList = (m.docs || []).map((d, i) => `D${i + 1}: ${escapeHtml(d.artifact || '')}`).join('<br/>');
+    return `
+      <tr>
+        <td class="mono"><strong>${m.id}</strong></td>
+        <td><span class="track-badge track-badge-pm">${pObj ? pObj.code : m.pillar}</span></td>
+        <td><strong>${escapeHtml(m.title)}</strong><div class="mono" style="font-size:11px;color:#44474f;margin-top:3px;">${escapeHtml(folder)}</div></td>
+        <td class="mono" style="font-size:11px;line-height:1.45;">${fmtList}</td>
+        <td>
+          <button type="button" class="btn-copy-path mono" data-copy-path="${escapeHtml(folder)}" data-copy-label="${m.id} Folder">Copy Folder</button>
+        </td>
+      </tr>
+    `;
+  }).join('');
+
+  host.innerHTML = `
+    <div class="repo-map-header">
+      <div>
+        <h3>Local Self-Contained Flashcard Repository Map (Phase 1 - Phase 6)</h3>
+        <div class="mono" style="font-size:12px;color:#44474f;margin-top:3px;">Root: ${escapeHtml(LOCAL_REPO_ROOT)}</div>
+      </div>
+      <div class="repo-map-actions">
+        <button type="button" class="btn-m3 btn-outline-m3 btn-copy-path" data-copy-path="" data-copy-label="Repository Root">Copy Root Path</button>
+        <button type="button" class="btn-m3 btn-tonal btn-copy-path" data-copy-path="Master_Document_Register_DC36EU_Rev.001.xlsx" data-copy-label="Master Document Register">Copy MDR Excel Path</button>
+      </div>
+    </div>
+    <div class="chip-row" style="margin-bottom:12px;">${chipHtml}</div>
+    <div class="table-wrap">
+      <table class="m3-table">
+        <thead>
+          <tr>
+            <th>Card</th>
+            <th>Phase</th>
+            <th>Module Title &amp; Flashcard Folder</th>
+            <th>Ordered Files Inside Folder (+ 00_README)</th>
+            <th>Quick Path</th>
+          </tr>
+        </thead>
+        <tbody>${rowsHtml}</tbody>
+      </table>
+    </div>
+  `;
+
+  host.querySelectorAll('[data-rphase]').forEach(btn => {
+    btn.onclick = () => {
+      repoPhaseFilter = btn.dataset.rphase;
+      renderRepoMap();
+    };
+  });
+  host.querySelectorAll('.btn-copy-path').forEach(btn => {
+    btn.onclick = () => copyLocalRepoPath(btn.dataset.copyPath || '', btn.dataset.copyLabel || '');
   });
 }
 

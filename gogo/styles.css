@@ -1480,3 +1480,76 @@ table.docs-mini-table tr:last-child td {
   padding: 0 5px;
   border-radius: 5px;
 }
+
+/* Local Flashcard Repository Controls & Repo Map */
+.drawer-folder-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  background: var(--md-surface-container-low);
+  border: 1px solid var(--md-outline-variant);
+  font-size: 11.5px;
+  color: var(--md-on-surface-variant);
+}
+
+.drawer-folder-path {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.btn-copy-path {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 9px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--md-outline-variant);
+  background: var(--md-surface);
+  color: var(--md-primary);
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.btn-copy-path:hover {
+  background: var(--md-primary-container);
+  border-color: var(--md-primary);
+}
+
+.repo-map-panel {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--md-outline-variant);
+}
+
+.repo-map-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.repo-map-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--md-on-surface);
+}
+
+.repo-map-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
