@@ -1340,7 +1340,8 @@ function renderModuleDocsDrawerHtml(m, forceOpen) {
     <details class="module-docs-drawer" data-id="${m.id}" ${forceOpen ? 'open' : ''}>
       <summary>
         <span>Related Documents (${docs.length})</span>
-        <span class="section-docs-hint">${forceOpen ? 'Hide' : 'View'}</span>
+        <span class="section-docs-hint hint-view">View</span>
+        <span class="section-docs-hint hint-hide">Hide</span>
       </summary>
       <ul class="module-docs-list">${itemsHtml}</ul>
     </details>
