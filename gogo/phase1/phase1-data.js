@@ -1,11 +1,11 @@
 // Auto-generated full-detail Phase 1 document repository payload
 window.PHASE1_PORTAL_DATA = {
-  "generatedAt": "2026-11-12 09:08 UTC",
-  "phaseTitle": "Phase 1: Initiation, Charter & Business Case (RIBA 0-1)",
+  "generatedAt": "2026-11-12 13:44 UTC",
+  "phaseTitle": "Phase 1 (45 MW DC45-EU): Initiation, Charter & Business Case (RIBA 0-1)",
   "fileCount": 31,
   "masterWorkbooks": {
     "CHARTER": {
-      "fileName": "PM01_Doc2_Deliverable_Project_Charter_Summary_Master_Rev.001.xlsx",
+      "fileName": "PM01_Doc2_Deliverable_Project_Charter_Summary_Master_Rev.002.xlsx",
       "sheets": [
         {
           "name": "1. Charter Executive Brief",
@@ -13,7 +13,7 @@ window.PHASE1_PORTAL_DATA = {
           "rows": [
             [
               {
-                "v": "PROJECT CHARTER - IRELAND / EU 36 MW DATA CENTRE (EN 50600 CLASS 3 / TIER III)",
+                "v": "PROJECT CHARTER - IRELAND / EU 45 MW DATA CENTRE (EN 50600 CLASS 3 / TIER III)",
                 "f": "",
                 "rspan": 1,
                 "cspan": 8,
@@ -22,7 +22,7 @@ window.PHASE1_PORTAL_DATA = {
             ],
             [
               {
-                "v": "Project Code: DC36-EU | RIBA Stages 0-7 | EirGrid / EPA IEL / BCAR / PSDP-PSCS / EU EED (2023/1791)",
+                "v": "Project Code: DC45-EU | RIBA Stages 0-7 | EirGrid / EPA IEL / BCAR / PSDP-PSCS / EU EED (2023/1791)",
                 "f": "",
                 "rspan": 1,
                 "cspan": 8,
@@ -40,7 +40,7 @@ window.PHASE1_PORTAL_DATA = {
             ],
             [
               {
-                "v": "This Project Charter authorizes planning (SID/EIAR), EPA Industrial Emissions Licensing (IEL), EirGrid 110kV grid connection, ISO 19650 BIM design, EN 50600 Class 3 construction under BCAR & S.I. No. 291/2013 (PSDP/PSCS), CIBSE/ASHRAE L1-L5 commissioning (48-hr 36 MW IST), and BCAR Certificate of Compliance on Completion for a 36 MW hyperscale facility in Ireland.",
+                "v": "This Project Charter authorizes planning (SID/EIAR), EPA Industrial Emissions Licensing (IEL), EirGrid 110kV grid connection, ISO 19650 BIM design, EN 50600 Class 3 construction under BCAR & S.I. No. 291/2013 (PSDP/PSCS), CIBSE/ASHRAE L1-L5 commissioning (48-hr 45 MW IST), and BCAR Certificate of Compliance on Completion for a 45 MW hyperscale facility in Ireland.",
                 "f": "",
                 "rspan": 1,
                 "cspan": 8,
@@ -229,7 +229,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "Synchronized with DataCenter_36MW_EU_Ireland.xer",
+                "v": "Synchronized with DataCenter_45MW_EU_Ireland.xer",
                 "f": "",
                 "rspan": 1,
                 "cspan": 3,
@@ -275,7 +275,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "2027-01-04",
+                "v": "0",
                 "f": "=MIN('3. Milestones & Budget'!E6:E15)",
                 "rspan": 1,
                 "cspan": 1,
@@ -305,7 +305,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "2030-03-18",
+                "v": "0",
                 "f": "=MAX('3. Milestones & Budget'!E6:E15)",
                 "rspan": 1,
                 "cspan": 1,
@@ -434,7 +434,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "DataCenter_36MW_EU_Project_Charter.xlsx",
+                "v": "DataCenter_45MW_EU_Project_Charter.xlsx",
                 "f": "",
                 "rspan": 1,
                 "cspan": 2,
@@ -464,14 +464,14 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "DataCenter_36MW_EU_PIP.xlsx",
+                "v": "DataCenter_45MW_EU_PIP.xlsx",
                 "f": "",
                 "rspan": 1,
                 "cspan": 2,
                 "kind": "cell"
               },
               {
-                "v": "141-task RIBA/EN 50600 Gantt, Ireland Statutory & CIBSE L1-L5",
+                "v": "144-task RIBA/EN 50600 Gantt, Ireland Statutory & CIBSE L1-L5",
                 "f": "",
                 "rspan": 1,
                 "cspan": 3,
@@ -494,7 +494,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "DataCenter_36MW_EU_PreNTP_Controls.xlsx",
+                "v": "DataCenter_45MW_EU_PreNTP_Controls.xlsx",
                 "f": "",
                 "rspan": 1,
                 "cspan": 2,
@@ -524,14 +524,14 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "DataCenter_36MW_EU_Ireland.xer",
+                "v": "DataCenter_45MW_EU_Ireland.xer",
                 "f": "",
                 "rspan": 1,
                 "cspan": 2,
                 "kind": "cell"
               },
               {
-                "v": "141 tasks, 22 WBS, 209 FS links; DCMA-14 6/6 PASS (835 workdays)",
+                "v": "144 tasks, 22 WBS, 209 FS links; DCMA-14 6/6 PASS (835 workdays)",
                 "f": "",
                 "rspan": 1,
                 "cspan": 3,
@@ -663,7 +663,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "600 CFA piles, 18 kN/m2 decks, Part L envelope, PAS 68 perimeter, 110kV/22kV GIS, 16x HVO+SCR gensets, BESS, CHW+ERF+TES & Halls 1-4.",
+                "v": "750 CFA piles, 18 kN/m2 decks, Part L envelope, PAS 68 perimeter, 110kV/22kV GIS, 20x HVO+SCR gensets, BESS, CHW+ERF+TES & Halls 1-4.",
                 "f": "",
                 "rspan": 1,
                 "cspan": 5,
@@ -686,7 +686,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "Witnessed FAT/BCAR QA, L3 static/LOTO, L4 BESS/black-start, L5 36MW 48h IST, HSA Safety File, Part B Fire, EED, EirGrid & BCAR CCC.",
+                "v": "Witnessed FAT/BCAR QA, L3 static/LOTO, L4 BESS/black-start, L5 45MW 48h IST, HSA Safety File, Part B Fire, EED, EirGrid & BCAR CCC.",
                 "f": "",
                 "rspan": 1,
                 "cspan": 5,
@@ -935,7 +935,7 @@ window.PHASE1_PORTAL_DATA = {
             ],
             [
               {
-                "v": "Synced to DataCenter_36MW_EU_Ireland.xer | Enter Approved EUR Capex in Blue [Input] Cells (D19:E25)",
+                "v": "Synced to DataCenter_45MW_EU_Ireland.xer | Enter Approved EUR Capex in Blue [Input] Cells (D19:E25)",
                 "f": "",
                 "rspan": 1,
                 "cspan": 8,
@@ -1104,7 +1104,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "265",
+                "v": "290",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -1213,14 +1213,14 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "2027-12-20",
+                "v": "2028-01-03",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
                 "kind": "cell"
               },
               {
-                "v": "265",
+                "v": "290",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -1271,7 +1271,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "alert"
               },
               {
-                "v": "2028-12-25",
+                "v": "2029-02-12",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -1329,7 +1329,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "alert"
               },
               {
-                "v": "2029-07-30",
+                "v": "2029-09-24",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -1387,7 +1387,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "alert"
               },
               {
-                "v": "2029-08-20",
+                "v": "2029-10-15",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -1445,7 +1445,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "alert"
               },
               {
-                "v": "2029-10-15",
+                "v": "2029-12-10",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -1489,7 +1489,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "alert"
               },
               {
-                "v": "Cx Level 5 Integrated Systems Testing (36MW IST) Passed Milestone",
+                "v": "Cx Level 5 Integrated Systems Testing (45MW IST) Passed Milestone",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -1503,7 +1503,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "alert"
               },
               {
-                "v": "2029-12-24",
+                "v": "2030-02-25",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -1561,7 +1561,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "alert"
               },
               {
-                "v": "2030-03-18",
+                "v": "2030-05-20",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -1700,14 +1700,14 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "0.0%",
+                "v": "0.0/0.0",
                 "f": "=IFERROR(F19/$F$26,0)",
                 "rspan": 1,
                 "cspan": 1,
                 "kind": "cell"
               },
               {
-                "v": "0.0%",
+                "v": "0.0/0.0",
                 "f": "=IFERROR(E19/D19,0)",
                 "rspan": 1,
                 "cspan": 1,
@@ -1758,14 +1758,14 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "0.0%",
+                "v": "0.0/0.0",
                 "f": "=IFERROR(F20/$F$26,0)",
                 "rspan": 1,
                 "cspan": 1,
                 "kind": "cell"
               },
               {
-                "v": "0.0%",
+                "v": "0.0/0.0",
                 "f": "=IFERROR(E20/D20,0)",
                 "rspan": 1,
                 "cspan": 1,
@@ -1781,7 +1781,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "45MVA Tx, SF6-Free GIS, HVO+SCR Gensets, BESS & Chillers",
+                "v": "63MVA Tx, SF6-Free GIS, HVO+SCR Gensets, BESS & Chillers",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -1816,14 +1816,14 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "0.0%",
+                "v": "0.0/0.0",
                 "f": "=IFERROR(F21/$F$26,0)",
                 "rspan": 1,
                 "cspan": 1,
                 "kind": "cell"
               },
               {
-                "v": "0.0%",
+                "v": "0.0/0.0",
                 "f": "=IFERROR(E21/D21,0)",
                 "rspan": 1,
                 "cspan": 1,
@@ -1839,7 +1839,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "PSCS Enabling, 600 CFA Piles, Shell, SuDS & PAS 68 Site",
+                "v": "PSCS Enabling, 750 CFA Piles, Shell, SuDS & PAS 68 Site",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -1874,14 +1874,14 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "0.0%",
+                "v": "0.0/0.0",
                 "f": "=IFERROR(F22/$F$26,0)",
                 "rspan": 1,
                 "cspan": 1,
                 "kind": "cell"
               },
               {
-                "v": "0.0%",
+                "v": "0.0/0.0",
                 "f": "=IFERROR(E22/D22,0)",
                 "rspan": 1,
                 "cspan": 1,
@@ -1932,14 +1932,14 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "0.0%",
+                "v": "0.0/0.0",
                 "f": "=IFERROR(F23/$F$26,0)",
                 "rspan": 1,
                 "cspan": 1,
                 "kind": "cell"
               },
               {
-                "v": "0.0%",
+                "v": "0.0/0.0",
                 "f": "=IFERROR(E23/D23,0)",
                 "rspan": 1,
                 "cspan": 1,
@@ -1955,7 +1955,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "CIBSE/ASHRAE CxA L1-L5, 36MW Load Banks & Safety File",
+                "v": "CIBSE/ASHRAE CxA L1-L5, 45MW Load Banks & Safety File",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -1990,14 +1990,14 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "0.0%",
+                "v": "0.0/0.0",
                 "f": "=IFERROR(F24/$F$26,0)",
                 "rspan": 1,
                 "cspan": 1,
                 "kind": "cell"
               },
               {
-                "v": "0.0%",
+                "v": "0.0/0.0",
                 "f": "=IFERROR(E24/D24,0)",
                 "rspan": 1,
                 "cspan": 1,
@@ -2048,14 +2048,14 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "0.0%",
+                "v": "0.0/0.0",
                 "f": "=IFERROR(F25/$F$26,0)",
                 "rspan": 1,
                 "cspan": 1,
                 "kind": "cell"
               },
               {
-                "v": "0.0%",
+                "v": "0.0/0.0",
                 "f": "=IFERROR(E25/D25,0)",
                 "rspan": 1,
                 "cspan": 1,
@@ -2113,7 +2113,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "total"
               },
               {
-                "v": "0.0%",
+                "v": "0.0/0.0",
                 "f": "=IFERROR(E26/D26,0)",
                 "rspan": 1,
                 "cspan": 1,
@@ -2435,14 +2435,14 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "Cx Level 5 36MW 48h IST & Grid Blackout Transfer",
+                "v": "Cx Level 5 45MW 48h IST & Grid Blackout Transfer",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
                 "kind": "cell"
               },
               {
-                "v": "2029-12-24",
+                "v": "2030-02-25",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -2500,7 +2500,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "2030-03-18",
+                "v": "2030-05-20",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -2725,14 +2725,14 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "Total EUR BAC overrun, COD shift beyond 2030-03-18 or <36 MW critical capacity.",
+                "v": "Total EUR BAC overrun, COD shift beyond 2030-05-20 or <45 MW critical capacity.",
                 "f": "",
                 "rspan": 1,
                 "cspan": 3,
                 "kind": "cell"
               },
               {
-                "v": "Total BAC or COD > 2030-03-18",
+                "v": "Total BAC or COD > 2030-05-20",
                 "f": "",
                 "rspan": 1,
                 "cspan": 2,
@@ -2886,7 +2886,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "Independent veto at M6260 (L3), M6370 (L4) & M6470 (36 MW 48h IST).",
+                "v": "Independent veto at M6260 (L3), M6370 (L4) & M6470 (45 MW 48h IST).",
                 "f": "",
                 "rspan": 1,
                 "cspan": 4,
@@ -3259,7 +3259,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "CIBSE/ASHRAE Cx L1-L5 & 36MW IST (M6470)",
+                "v": "CIBSE/ASHRAE Cx L1-L5 & 45MW IST (M6470)",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -3503,7 +3503,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "Signed M6260, M6370 & M6470 with zero Sev-1 punch items; 48h 36MW IST & <10s blackout transfer.",
+                "v": "Signed M6260, M6370 & M6470 with zero Sev-1 punch items; 48h 45MW IST & <10s blackout transfer.",
                 "f": "",
                 "rspan": 1,
                 "cspan": 4,
@@ -4114,7 +4114,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "alert"
               },
               {
-                "v": "36 MW load bank availability or weather interrupts 48-hr continuous IST.",
+                "v": "45 MW load bank availability or weather interrupts 48-hr continuous IST.",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -4149,7 +4149,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "alert"
               },
               {
-                "v": "Bind 36 MW load bank & HVO fuel tankers 6 months ahead of M6260 static ready.",
+                "v": "Bind 45 MW load bank & HVO fuel tankers 6 months ahead of M6260 static ready.",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -4348,7 +4348,7 @@ window.PHASE1_PORTAL_DATA = {
       ]
     },
     "CONTROLS": {
-      "fileName": "PM03_Doc2_Deliverable_EN50600_BoD_Controls_Master_Rev.001.xlsx",
+      "fileName": "PM03_Doc2_Deliverable_EN50600_BoD_Controls_Master_Rev.002.xlsx",
       "sheets": [
         {
           "name": "1. Feasibility & Financial",
@@ -4365,7 +4365,7 @@ window.PHASE1_PORTAL_DATA = {
             ],
             [
               {
-                "v": "36 MW EN 50600 Class 3 | Enter Blue [Input] Cells for Live EUR EBITDA, NPV & IRR + EED (2023/1791) Targets",
+                "v": "45 MW EN 50600 Class 3 | Enter Blue [Input] Cells for Live EUR EBITDA, NPV & IRR + EED (2023/1791) Targets",
                 "f": "",
                 "rspan": 1,
                 "cspan": 12,
@@ -4434,7 +4434,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "36,000",
+                "v": "45,000",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -4448,7 +4448,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "Locked to 4x 9,000 kW Halls (DataCenter_36MW_EU_Ireland.xer)",
+                "v": "Locked to 5x 9,000 kW Halls (DataCenter_45MW_EU_Ireland.xer)",
                 "f": "",
                 "rspan": 1,
                 "cspan": 8,
@@ -4843,7 +4843,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "36,000 kW x 12m x Rate",
+                "v": "45,000 kW x 12m x Rate",
                 "f": "",
                 "rspan": 1,
                 "cspan": 2,
@@ -5144,70 +5144,70 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "9,000",
+                "v": "11,250",
                 "f": "=$C$6*C26",
                 "rspan": 1,
                 "cspan": 1,
                 "kind": "cell"
               },
               {
-                "v": "18,000",
+                "v": "22,500",
                 "f": "=$C$6*D26",
                 "rspan": 1,
                 "cspan": 1,
                 "kind": "cell"
               },
               {
-                "v": "27,000",
+                "v": "33,750",
                 "f": "=$C$6*E26",
                 "rspan": 1,
                 "cspan": 1,
                 "kind": "cell"
               },
               {
-                "v": "32,400",
+                "v": "40,500",
                 "f": "=$C$6*F26",
                 "rspan": 1,
                 "cspan": 1,
                 "kind": "cell"
               },
               {
-                "v": "34,200",
+                "v": "42,750",
                 "f": "=$C$6*G26",
                 "rspan": 1,
                 "cspan": 1,
                 "kind": "cell"
               },
               {
-                "v": "34,200",
+                "v": "42,750",
                 "f": "=$C$6*H26",
                 "rspan": 1,
                 "cspan": 1,
                 "kind": "cell"
               },
               {
-                "v": "34,200",
+                "v": "42,750",
                 "f": "=$C$6*I26",
                 "rspan": 1,
                 "cspan": 1,
                 "kind": "cell"
               },
               {
-                "v": "34,200",
+                "v": "42,750",
                 "f": "=$C$6*J26",
                 "rspan": 1,
                 "cspan": 1,
                 "kind": "cell"
               },
               {
-                "v": "34,200",
+                "v": "42,750",
                 "f": "=$C$6*K26",
                 "rspan": 1,
                 "cspan": 1,
                 "kind": "cell"
               },
               {
-                "v": "34,200",
+                "v": "42,750",
                 "f": "=$C$6*L26",
                 "rspan": 1,
                 "cspan": 1,
@@ -5900,7 +5900,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "36 MW IT load across 4x 9 MW suites; Class 3 maintainability.",
+                "v": "45 MW IT load across 5x 9 MW suites; Class 3 maintainability.",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -6481,7 +6481,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "45MVA Tx, SF6-Free GIS, HVO Gensets, BESS & Chillers (3.0)",
+                "v": "63MVA Tx, SF6-Free GIS, HVO Gensets, BESS & Chillers (3.0)",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -6495,7 +6495,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "2027-07-12 to 2027-12-20",
+                "v": "2027-07-12 to 2028-01-03",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -6581,7 +6581,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "PSCS Enabling, 600 Piles, Frame, Shell & PAS 68 (4.1-4.4)",
+                "v": "PSCS Enabling, 750 Piles, Frame, Shell & PAS 68 (4.1-4.4)",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -6595,7 +6595,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "2027-10-18 to 2028-12-25",
+                "v": "2027-10-18 to 2029-02-12",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -6688,14 +6688,14 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "50",
+                "v": "53",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
                 "kind": "cell"
               },
               {
-                "v": "2028-12-25 to 2029-07-30",
+                "v": "2029-02-12 to 2029-09-24",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -6781,7 +6781,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "CIBSE/ASHRAE L1-L5, 36MW IST & HSA Safety File (6.1-6.5)",
+                "v": "CIBSE/ASHRAE L1-L5, 45MW IST & HSA Safety File (6.1-6.5)",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -6795,7 +6795,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "2027-12-20 to 2029-12-24",
+                "v": "2028-01-03 to 2030-02-25",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -6895,7 +6895,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "2029-12-24 to 2030-03-18",
+                "v": "2030-02-25 to 2030-05-20",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -7088,14 +7088,14 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "total"
               },
               {
-                "v": "141",
+                "v": "144",
                 "f": "=SUM(C5:C11)",
                 "rspan": 1,
                 "cspan": 1,
                 "kind": "total"
               },
               {
-                "v": "2027-01-04 to 2030-03-18",
+                "v": "2027-01-04 to 2030-05-20",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -7189,7 +7189,7 @@ window.PHASE1_PORTAL_DATA = {
             ],
             [
               {
-                "v": "Planning Appeals, EPA IEL, EirGrid/CRU, BCAR & 36 MW IST Mapped to XER Task IDs",
+                "v": "Planning Appeals, EPA IEL, EirGrid/CRU, BCAR & 45 MW IST Mapped to XER Task IDs",
                 "f": "",
                 "rspan": 1,
                 "cspan": 10,
@@ -7579,7 +7579,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "cell"
               },
               {
-                "v": "High water table / limestone karst complicates 600 CFA piles & SuDS attenuation.",
+                "v": "High water table / limestone karst complicates 750 CFA piles & SuDS attenuation.",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -7939,7 +7939,7 @@ window.PHASE1_PORTAL_DATA = {
                 "kind": "alert"
               },
               {
-                "v": "Portable 36 MW load bank shortfall interrupts 48h IST & EN 50600 isolation.",
+                "v": "Portable 45 MW load bank shortfall interrupts 48h IST & EN 50600 isolation.",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
@@ -8529,7 +8529,7 @@ window.PHASE1_PORTAL_DATA = {
         "RACI"
       ],
       "folder": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-01_Project_Charter_Governance_RACI",
-      "readme": "# PM-01: Project Charter, Governance Structure & RACI Matrix\n\n- **Phase**: `Phase 1: Initiation, Charter & Business Case (RIBA 0-1)`\n- **RIBA Stage**: `RIBA Stage 0-1`\n- **P6 Milestone Gate**: `M1000 (2027-01-04)`\n- **WBS Scope**: `WBS 1.0-PERM`\n- **Governing Standards**: PMI PMBOK, I.S. EN 50600, S.I. 291/2013 PSDP/PSCS\n- **Focus Areas**: Sponsor, PM, PSDP, PSCS, Assigned Certifier, CxA\n\n## Module Overview\nEstablish Project Charter, Sponsor authority, Steering Committee cadence, success thresholds, and multi-party RACI governance.\n\n## Ordered Flashcard Documents (`Doc 1` -> `Doc 4`)\n\n| Doc | Category | Title | Exact Local File | Companion / Notes |\n| :--- | :--- | :--- | :--- | :--- |\n| Doc 1 | Standard | PMI PMBOK Project Charter Guideline & RIBA Stage 0-1 Client Brief | `PM01_Doc1_Standard_Charter_Governance_Standard_Rev.001.docx` | PMBOK / RIBA Stage 0-1 |\n| Doc 2 | Deliverable | Executive Project Charter Document (Objectives, 36 MW Scope & PM Authority) | `PM01_Doc2_Deliverable_Project_Charter_Summary_Master_Rev.001.xlsx` | Sheet 1. Charter Summary |\n| Doc 3 | Template | Multi-Party Governance Framework & RACI Responsibility Matrix | `PM01_Doc3_Template_Governance_RACI_Charter_Master_Rev.001.xlsx` | Sheet 2. Governance & RACI |\n| Doc 4 | Audit | Steering Committee Terms of Reference, Quorum & Escalation Charter | `PM01_Doc4_Audit_SteerCo_ToR_Escalation_Charter_Rev.001.docx` | Companion workbook: `PM01_Doc4_Audit_SteerCo_DoA_Quorum_Audit_Rev.001.xlsx` |\n\n## Study Takeaway (`Why Each Document Matters`)\n- **Doc 1 (Standard)**: Understand sponsor authority, business objectives, and formal project authorization.\n- **Doc 2 (Deliverable)**: Benchmark real DC36-EU charter scope boundaries, KPIs, and stage-gate mandates.\n- **Doc 3 (Template)**: Map Responsible, Accountable, Consulted, and Informed roles across Sponsor, EPCm, and CxA.\n- **Doc 4 (Audit)**: Define executive voting thresholds, financial sign-off limits, and escalation paths.\n",
+      "readme": "# PM-01: Project Charter, Governance Structure & RACI Matrix\n\n- **Phase**: `Phase 1: Initiation, Charter & Business Case (RIBA 0-1)`\n- **RIBA Stage**: `RIBA Stage 0-1`\n- **P6 Milestone Gate**: `M1000 (2027-01-04)`\n- **WBS Scope**: `WBS 1.0-PERM`\n- **Governing Standards**: PMI PMBOK, I.S. EN 50600, S.I. 291/2013 PSDP/PSCS\n- **Focus Areas**: Sponsor, PM, PSDP, PSCS, Assigned Certifier, CxA\n\n## Module Overview\nEstablish Project Charter, Sponsor authority, Steering Committee cadence, success thresholds, and multi-party RACI governance.\n\n## Ordered Flashcard Documents (`Doc 1` -> `Doc 4`)\n\n| Doc | Category | Title | Exact Local File | Companion / Notes |\n| :--- | :--- | :--- | :--- | :--- |\n| Doc 1 | Standard | PMI PMBOK Project Charter Guideline & RIBA Stage 0-1 Client Brief | `PM01_Doc1_Standard_PMI_PMBOK_Project_Charter_Guideline_Rev.002.docx` | PMBOK / RIBA Stage 0-1 |\n| Doc 2 | Deliverable | Executive Project Charter Document (Objectives, 45 MW Scope & PM Authority) | `PM01_Doc2_Deliverable_Project_Charter_Summary_Master_Rev.002.xlsx` | Sheet 1. Charter Summary |\n| Doc 3 | Template | Multi-Party Governance Framework & RACI Responsibility Matrix | `PM01_Doc3_Template_Governance_RACI_Charter_Master_Rev.002.xlsx` | Sheet 2. Governance & RACI |\n| Doc 4 | Audit | Steering Committee Terms of Reference, Quorum & Escalation Charter | `PM01_Doc4_Audit_SteerCo_ToR_Escalation_Charter_Rev.002.docx` | Companion workbook: `PM01_Doc4_Audit_SteerCo_DoA_Quorum_Audit_Rev.002.xlsx` |\n\n## Study Takeaway (`Why Each Document Matters`)\n- **Doc 1 (Standard)**: Understand sponsor authority, business objectives, and formal project authorization.\n- **Doc 2 (Deliverable)**: Benchmark real DC45-EU charter scope boundaries, KPIs, and stage-gate mandates.\n- **Doc 3 (Template)**: Map Responsible, Accountable, Consulted, and Informed roles across Sponsor, EPCm, and CxA.\n- **Doc 4 (Audit)**: Define executive voting thresholds, financial sign-off limits, and escalation paths.\n",
       "docs": [
         {
           "docId": "PM-01-D1",
@@ -8538,13 +8538,13 @@ window.PHASE1_PORTAL_DATA = {
           "title": "PMI PMBOK Project Charter Guideline & RIBA Stage 0-1 Client Brief",
           "ref": "PMBOK / RIBA Stage 0-1",
           "why": "Understand sponsor authority, business objectives, and formal project authorization.",
-          "fileName": "PM01_Doc1_Standard_Charter_Governance_Standard_Rev.001.docx",
+          "fileName": "PM01_Doc1_Standard_PMI_PMBOK_Project_Charter_Guideline_Rev.002.docx",
           "ext": "DOCX",
-          "downloadUrl": "files/PM-01/PM01_Doc1_Standard_Charter_Governance_Standard_Rev.001.docx",
-          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-01_Project_Charter_Governance_RACI\\PM01_Doc1_Standard_Charter_Governance_Standard_Rev.001.docx",
+          "downloadUrl": "files/PM-01/PM01_Doc1_Standard_PMI_PMBOK_Project_Charter_Guideline_Rev.002.docx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-01_Project_Charter_Governance_RACI\\PM01_Doc1_Standard_PMI_PMBOK_Project_Charter_Guideline_Rev.002.docx",
           "renderType": "docx",
           "docx": {
-            "fileName": "PM01_Doc1_Standard_Charter_Governance_Standard_Rev.001.docx",
+            "fileName": "PM01_Doc1_Standard_PMI_PMBOK_Project_Charter_Guideline_Rev.002.docx",
             "blocks": [
               {
                 "type": "banner",
@@ -8555,11 +8555,11 @@ window.PHASE1_PORTAL_DATA = {
                 "rows": [
                   [
                     "Document Control Field",
-                    "DC36-EU Repository Value"
+                    "DC45-EU Repository Value"
                   ],
                   [
                     "ISO 19650 Document Code",
-                    "DC36EU-PM01-DOC1-Rev001"
+                    "DC45EU-PM01-DOC1-Rev002"
                   ],
                   [
                     "Flashcard Module & Stage",
@@ -8567,7 +8567,7 @@ window.PHASE1_PORTAL_DATA = {
                   ],
                   [
                     "P6 Milestone / WBS Anchor",
-                    "M1000 (2027-01-04) | WBS 1.0-PERM | Live Schedule: 141 Tasks / 209 Links"
+                    "M1000 (2027-01-04) | WBS 1.0-PERM | Live Schedule: 144 Tasks / 213 Links"
                   ],
                   [
                     "Governing Standards",
@@ -8585,7 +8585,7 @@ window.PHASE1_PORTAL_DATA = {
               },
               {
                 "type": "p",
-                "text": "Portfolio Context: This institutional standard establishes controlled governance, technical compliance rules, and auditable evidence for the 36 MW DC36-EU Hyperscale Data Centre development in Ireland (4 x 9.0 MW data halls, dual 110 kV grid incomers, 16 x 2.5 MVA HVO standby generation with SCR abatement, and EN 50600 Availability Class 3 / Uptime TCCF target). All schedules and resource assumptions synchronize against the master Primavera P6 baseline (DataCenter_36MW_EU_Ireland.xer: M1000 NTP 2027-01-04 through M7060 COD 2030-03-18)."
+                "text": "Portfolio Context: This institutional standard establishes controlled governance, technical compliance rules, and auditable evidence for the 45 MW DC45-EU Hyperscale Data Centre development in Ireland (4 x 9.0 MW data halls, dual 110 kV grid incomers, 16 x 2.5 MVA HVO standby generation with SCR abatement, and EN 50600 Availability Class 3 / Uptime TCCF target). All schedules and resource assumptions synchronize against the master Primavera P6 baseline (DataCenter_45MW_EU_Ireland.xer: M1000 NTP 2027-01-04 through M7060 COD 2030-05-20)."
               },
               {
                 "type": "p",
@@ -8621,7 +8621,7 @@ window.PHASE1_PORTAL_DATA = {
                   [
                     "Item Code",
                     "Control Focus Area",
-                    "DC36-EU Quantitative / Statutory Threshold",
+                    "DC45-EU Quantitative / Statutory Threshold",
                     "Verification Authority"
                   ],
                   [
@@ -8686,27 +8686,27 @@ window.PHASE1_PORTAL_DATA = {
                   ],
                   [
                     "M3120",
-                    "2027-12-20",
+                    "2028-01-03",
                     "OFCI Long-Lead Equipment Delivery Buffer (+200d Lead)"
                   ],
                   [
                     "M4350",
-                    "2028-12-25",
+                    "2029-02-12",
                     "Core & Shell Weather-Tight Envelope Complete"
                   ],
                   [
                     "M5595",
-                    "2029-07-30",
+                    "2029-09-24",
                     "MEP Pre-Energisation Complete \u2014 L3/L4 Cx Handover"
                   ],
                   [
                     "M6470",
-                    "2029-12-24",
-                    "Level 5 36 MW 48-Hr Integrated Systems Test (IST) Complete"
+                    "2030-02-25",
+                    "Level 5 45 MW 48-Hr Integrated Systems Test (IST) Complete"
                   ],
                   [
                     "M7060",
-                    "2030-03-18",
+                    "2030-05-20",
                     "Practical Completion, BCAR CCC & Commercial Operation (COD)"
                   ]
                 ]
@@ -8757,13 +8757,13 @@ window.PHASE1_PORTAL_DATA = {
           "docId": "PM-01-D2",
           "idx0": 1,
           "cat": "Deliverable",
-          "title": "Executive Project Charter Document (Objectives, 36 MW Scope & PM Authority)",
+          "title": "Executive Project Charter Document (Objectives, 45 MW Scope & PM Authority)",
           "ref": "Sheet 1. Charter Summary",
-          "why": "Benchmark real DC36-EU charter scope boundaries, KPIs, and stage-gate mandates.",
-          "fileName": "PM01_Doc2_Deliverable_Project_Charter_Summary_Master_Rev.001.xlsx",
+          "why": "Benchmark real DC45-EU charter scope boundaries, KPIs, and stage-gate mandates.",
+          "fileName": "PM01_Doc2_Deliverable_Project_Charter_Summary_Master_Rev.002.xlsx",
           "ext": "XLSX",
-          "downloadUrl": "files/PM-01/PM01_Doc2_Deliverable_Project_Charter_Summary_Master_Rev.001.xlsx",
-          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-01_Project_Charter_Governance_RACI\\PM01_Doc2_Deliverable_Project_Charter_Summary_Master_Rev.001.xlsx",
+          "downloadUrl": "files/PM-01/PM01_Doc2_Deliverable_Project_Charter_Summary_Master_Rev.002.xlsx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-01_Project_Charter_Governance_RACI\\PM01_Doc2_Deliverable_Project_Charter_Summary_Master_Rev.002.xlsx",
           "renderType": "xlsx_master",
           "masterKey": "CHARTER",
           "focalSheet": "1. Charter Executive Brief"
@@ -8775,10 +8775,10 @@ window.PHASE1_PORTAL_DATA = {
           "title": "Multi-Party Governance Framework & RACI Responsibility Matrix",
           "ref": "Sheet 2. Governance & RACI",
           "why": "Map Responsible, Accountable, Consulted, and Informed roles across Sponsor, EPCm, and CxA.",
-          "fileName": "PM01_Doc3_Template_Governance_RACI_Charter_Master_Rev.001.xlsx",
+          "fileName": "PM01_Doc3_Template_Governance_RACI_Charter_Master_Rev.002.xlsx",
           "ext": "XLSX",
-          "downloadUrl": "files/PM-01/PM01_Doc3_Template_Governance_RACI_Charter_Master_Rev.001.xlsx",
-          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-01_Project_Charter_Governance_RACI\\PM01_Doc3_Template_Governance_RACI_Charter_Master_Rev.001.xlsx",
+          "downloadUrl": "files/PM-01/PM01_Doc3_Template_Governance_RACI_Charter_Master_Rev.002.xlsx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-01_Project_Charter_Governance_RACI\\PM01_Doc3_Template_Governance_RACI_Charter_Master_Rev.002.xlsx",
           "renderType": "xlsx_master",
           "masterKey": "CHARTER",
           "focalSheet": "4. Governance & Organization"
@@ -8788,15 +8788,15 @@ window.PHASE1_PORTAL_DATA = {
           "idx0": 3,
           "cat": "Audit",
           "title": "Steering Committee Terms of Reference, Quorum & Escalation Charter",
-          "ref": "DC36EU_SteerCo_DoA_Quorum_Audit.xlsx",
+          "ref": "DC45EU_SteerCo_DoA_Quorum_Audit.xlsx",
           "why": "Define executive voting thresholds, financial sign-off limits, and escalation paths.",
-          "fileName": "PM01_Doc4_Audit_SteerCo_ToR_Escalation_Charter_Rev.001.docx",
+          "fileName": "PM01_Doc4_Audit_SteerCo_ToR_Escalation_Charter_Rev.002.docx",
           "ext": "DOCX",
-          "downloadUrl": "files/PM-01/PM01_Doc4_Audit_SteerCo_ToR_Escalation_Charter_Rev.001.docx",
-          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-01_Project_Charter_Governance_RACI\\PM01_Doc4_Audit_SteerCo_ToR_Escalation_Charter_Rev.001.docx",
+          "downloadUrl": "files/PM-01/PM01_Doc4_Audit_SteerCo_ToR_Escalation_Charter_Rev.002.docx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-01_Project_Charter_Governance_RACI\\PM01_Doc4_Audit_SteerCo_ToR_Escalation_Charter_Rev.002.docx",
           "renderType": "docx",
           "docx": {
-            "fileName": "PM01_Doc4_Audit_SteerCo_ToR_Escalation_Charter_Rev.001.docx",
+            "fileName": "PM01_Doc4_Audit_SteerCo_ToR_Escalation_Charter_Rev.002.docx",
             "blocks": [
               {
                 "type": "table",
@@ -8805,7 +8805,7 @@ window.PHASE1_PORTAL_DATA = {
                     "PROJECT GOVERNANCE CONSTITUTION (PM-01 DOC 4) | Steering Committee Terms of Reference, Quorum & Escalation Charter"
                   ],
                   [
-                    "Ireland & EU 36.0 MW Hyperscale Data Centre Portfolio (DC36-EU) | I.S. EN 50600 Class 3 / Uptime Tier III | RIBA Stages 0-7"
+                    "Ireland & EU 45.0 MW Hyperscale Data Centre Portfolio (DC45-EU) | I.S. EN 50600 Class 3 / Uptime Tier III | RIBA Stages 0-7"
                   ]
                 ]
               },
@@ -8820,19 +8820,19 @@ window.PHASE1_PORTAL_DATA = {
                   ],
                   [
                     "ISO 19650 Code",
-                    "DC36EU-SPV-XX-XX-TP-PM-0004_Rev.001",
+                    "DC45EU-SPV-XX-XX-TP-PM-0004_Rev.001",
                     "Suitability Status",
                     "S4 (Stage 0-1 Governance Authorization)"
                   ],
                   [
                     "Project Horizon",
-                    "2027-01-04 (M1000) to 2030-03-18 (M7060)",
+                    "2027-01-04 (M1000) to 2030-05-20 (M7060)",
                     "Schedule Baseline",
-                    "DataCenter_36MW_EU_Ireland.xer (141 Tasks, 835d)"
+                    "DataCenter_45MW_EU_Ireland.xer (144 Tasks, 835d)"
                   ],
                   [
                     "Facility Capacity",
-                    "36.0 MW IT Load (4x 9.0 MW Halls)",
+                    "45.0 MW IT Load (5x 9.0 MW Halls)",
                     "EU EED Targets",
                     "PUE <= 1.25 | WUE <= 0.25 L/kWh | ERF >= 0.15"
                   ],
@@ -8844,7 +8844,7 @@ window.PHASE1_PORTAL_DATA = {
                   ],
                   [
                     "Companion Workbook",
-                    "DC36EU_SteerCo_DoA_Quorum_Audit.xlsx",
+                    "DC45EU_SteerCo_DoA_Quorum_Audit.xlsx",
                     "Charter Hierarchy",
                     "Subordinate only to Executed SPV Shareholders' Agreement"
                   ]
@@ -8856,15 +8856,15 @@ window.PHASE1_PORTAL_DATA = {
               },
               {
                 "type": "p",
-                "text": "This Charter establishes the binding governance authority, fiduciary composition, voting quorum rules, financial Delegation of Authority (DoA), and risk escalation protocols of the Project Steering Committee (SteerCo) for the 36 MW Ireland / EU Hyperscale Data Centre (DC36-EU) across RIBA Stages 0-7 and WBS 1.0-7.0."
+                "text": "This Charter establishes the binding governance authority, fiduciary composition, voting quorum rules, financial Delegation of Authority (DoA), and risk escalation protocols of the Project Steering Committee (SteerCo) for the 45 MW Ireland / EU Hyperscale Data Centre (DC45-EU) across RIBA Stages 0-7 and WBS 1.0-7.0."
               },
               {
                 "type": "bullet",
-                "text": "Authoritative Baseline Link: All baseline dates, float thresholds, and gate controls synchronize directly to DataCenter_36MW_EU_Ireland.xer (141 tasks, 22 WBS nodes, 209 FS links, DCMA-14 6/6 PASS, 8.0 hr/day 5-day calendar) and DataCenter_36MW_EU_Project_Charter.xlsx."
+                "text": "Authoritative Baseline Link: All baseline dates, float thresholds, and gate controls synchronize directly to DataCenter_45MW_EU_Ireland.xer (144 tasks, 22 WBS nodes, 209 FS links, DCMA-14 6/6 PASS, 8.0 hr/day 5-day calendar) and DataCenter_45MW_EU_Project_Charter.xlsx."
               },
               {
                 "type": "bullet",
-                "text": "Scope Integrity Mandate: SteerCo preserves the 36.0 MW critical IT capacity across Data Halls 1-4 (A5430-A5465), 110kV/22kV SF6-Free GIS substation, 16x 2.5MVA HVO+SCR generators, on-site dispatchable BESS, District Heating ERF export skid (A5390), and PAS 68 physical security envelope."
+                "text": "Scope Integrity Mandate: SteerCo preserves the 45.0 MW critical IT capacity across Data Halls 1-4 (A5430-A5465), 110kV/22kV SF6-Free GIS substation, 16x 2.5MVA HVO+SCR generators, on-site dispatchable BESS, District Heating ERF export skid (A5390), and PAS 68 physical security envelope."
               },
               {
                 "type": "p",
@@ -8891,7 +8891,7 @@ window.PHASE1_PORTAL_DATA = {
                     "M2110",
                     "RIBA Stage 4 Technical Design Freeze & ISO 19650 Sign-Off",
                     "2027-07-12",
-                    "265d",
+                    "290d",
                     "NO"
                   ],
                   [
@@ -8904,49 +8904,49 @@ window.PHASE1_PORTAL_DATA = {
                   [
                     "M3120",
                     "EU Long-Lead Plant Manufactured & Delivered On-Site Milestone",
-                    "2027-12-20",
-                    "265d",
+                    "2028-01-03",
+                    "290d",
                     "NO"
                   ],
                   [
                     "M4350",
                     "Building Shell 100% Weather-Tight & BCAR Envelope Ready Milestone",
-                    "2028-12-25",
+                    "2029-02-12",
                     "0d",
                     "YES"
                   ],
                   [
                     "M5595",
                     "MEP Infrastructure & White Space Fit-Out Complete Milestone",
-                    "2029-07-30",
+                    "2029-09-24",
                     "0d",
                     "YES"
                   ],
                   [
                     "M6260",
                     "Cx Level 3 Pre-Functional Static & LOTO Ready Milestone",
-                    "2029-08-20",
+                    "2029-10-15",
                     "0d",
                     "YES"
                   ],
                   [
                     "M6370",
                     "Cx Level 4 Functional Dynamic Performance Passed Milestone",
-                    "2029-10-15",
+                    "2029-12-10",
                     "0d",
                     "YES"
                   ],
                   [
                     "M6470",
-                    "Cx Level 5 Integrated Systems Testing (36MW IST) Passed Milestone",
-                    "2029-12-24",
+                    "Cx Level 5 Integrated Systems Testing (45MW IST) Passed Milestone",
+                    "2030-02-25",
                     "0d",
                     "YES"
                   ],
                   [
                     "M7060",
                     "Commercial Operation Date (COD), Handover & Safety File Milestone",
-                    "2030-03-18",
+                    "2030-05-20",
                     "0d",
                     "YES"
                   ]
@@ -9166,7 +9166,7 @@ window.PHASE1_PORTAL_DATA = {
               },
               {
                 "type": "bullet",
-                "text": "4.2 Supermajority / Special Quorum (>= 80% + Chair & CFO Dual Consent): Mandatory for Tranches TR-01..TR-06, total EUR BAC increases, Management Reserve drawdowns, COD extensions past 2030-03-18, capacity reduction < 36.0 MW, EN 50600 Class 3 deviations, EED metric breaches, or NEC4/FIDIC terminations > EUR 1.5M."
+                "text": "4.2 Supermajority / Special Quorum (>= 80% + Chair & CFO Dual Consent): Mandatory for Tranches TR-01..TR-06, total EUR BAC increases, Management Reserve drawdowns, COD extensions past 2030-05-20, capacity reduction < 45.0 MW, EN 50600 Class 3 deviations, EED metric breaches, or NEC4/FIDIC terminations > EUR 1.5M."
               },
               {
                 "type": "bullet",
@@ -9182,7 +9182,7 @@ window.PHASE1_PORTAL_DATA = {
               },
               {
                 "type": "p",
-                "text": "Delegation limits synchronize directly with DataCenter_36MW_EU_Project_Charter.xlsx (Sheets 3-4) and are dynamically configurable in DC36EU_SteerCo_DoA_Quorum_Audit.xlsx (Tab 1):"
+                "text": "Delegation limits synchronize directly with DataCenter_45MW_EU_Project_Charter.xlsx (Sheets 3-4) and are dynamically configurable in DC45EU_SteerCo_DoA_Quorum_Audit.xlsx (Tab 1):"
               },
               {
                 "type": "table",
@@ -9228,8 +9228,8 @@ window.PHASE1_PORTAL_DATA = {
                     "Full SteerCo / Investment Comm. / Board",
                     "> Tier 2 Cap (Default > EUR 1,500,000)",
                     "Any BAC Overrun / Mgmt Reserve",
-                    "Any Slip to M7060 COD (2030-03-18)",
-                    "IT Load < 36.0 MW, PUE > 1.25, WUE > 0.25, ERF < 0.15, or FIDIC/NEC4 Termination",
+                    "Any Slip to M7060 COD (2030-05-20)",
+                    "IT Load < 45.0 MW, PUE > 1.25, WUE > 0.25, ERF < 0.15, or FIDIC/NEC4 Termination",
                     "Signed Board Resolution & Revised Charter"
                   ]
                 ]
@@ -9324,7 +9324,7 @@ window.PHASE1_PORTAL_DATA = {
                   ],
                   [
                     "ESC-09",
-                    "CxA Level 3/4/5 Rejection or 36 MW Load-Bank Shortfall",
+                    "CxA Level 3/4/5 Rejection or 45 MW Load-Bank Shortfall",
                     "Independent CxA",
                     "Immediate",
                     "48h Cx Recovery War Room",
@@ -9415,16 +9415,16 @@ window.PHASE1_PORTAL_DATA = {
                   [
                     "TR-05",
                     "M6470",
-                    "2029-12-24",
+                    "2030-02-25",
                     "15.0%",
-                    "Cx Level 5 36 MW 48-Hr Continuous IST & <10s BESS/HVO Blackout Transfer",
+                    "Cx Level 5 45 MW 48-Hr Continuous IST & <10s BESS/HVO Blackout Transfer",
                     "Independent CxA L3-L5 Certificates; Zero Severity-1 Open Punchlist",
                     "SteerCo + CxA Co-Sign"
                   ],
                   [
                     "TR-06",
                     "M7060+DLP",
-                    "2030-03-18",
+                    "2030-05-20",
                     "10.0%",
                     "BCAR CCC Validated, EN 50600 Class 3 / Tier III Audit, EED Sync, HSA Safety File",
                     "5.0% at COD Acceptance + 5.0% held through 12/24m DLP Defect Expiry",
@@ -9512,7 +9512,7 @@ window.PHASE1_PORTAL_DATA = {
                   [
                     "AUD-10",
                     "EVM & XER Sync",
-                    "P6 baseline locked (141 tasks, DCMA-14 6/6) and synced to monthly CPI/SPI cutoff.",
+                    "P6 baseline locked (144 tasks, DCMA-14 6/6) and synced to monthly CPI/SPI cutoff.",
                     "XER + PreNTP Controls Tab 3",
                     "PASS"
                   ],
@@ -9599,7 +9599,7 @@ window.PHASE1_PORTAL_DATA = {
               },
               {
                 "type": "banner",
-                "text": "CWR / CHANGE REQUEST MANDATORY SUBMISSION FIELDS | 1. Reference: DC36EU-CR-YYYY-NNN   |   Submission Type: [Monthly CCB / 72h CWR]   |   Contract Clause: [NEC4 Cl. 61.4 / FIDIC Cl. 13] | 2. EUR Financial Delta: Base EUR [_______]  |  Contingency EUR [_______]  |  Post-Change EAC EUR [_______]  |  CPI Impact [_____] | 3. Schedule Delta (XER): Critical Path Slip [0d]  |  Non-Critical Float Consumed [___d]  |  COD Held at 2030-03-18? [YES / NO] | 4. Statutory & Technical Witness Clearance: PSDP/PSCS [OK/NA]  |  BCAR Assigned Certifier [OK/NA]  |  Independent CxA [OK/NA]"
+                "text": "CWR / CHANGE REQUEST MANDATORY SUBMISSION FIELDS | 1. Reference: DC45EU-CR-YYYY-NNN   |   Submission Type: [Monthly CCB / 72h CWR]   |   Contract Clause: [NEC4 Cl. 61.4 / FIDIC Cl. 13] | 2. EUR Financial Delta: Base EUR [_______]  |  Contingency EUR [_______]  |  Post-Change EAC EUR [_______]  |  CPI Impact [_____] | 3. Schedule Delta (XER): Critical Path Slip [0d]  |  Non-Critical Float Consumed [___d]  |  COD Held at 2030-05-20? [YES / NO] | 4. Statutory & Technical Witness Clearance: PSDP/PSCS [OK/NA]  |  BCAR Assigned Certifier [OK/NA]  |  Independent CxA [OK/NA]"
               },
               {
                 "type": "p",
@@ -9654,9 +9654,9 @@ window.PHASE1_PORTAL_DATA = {
               }
             ]
           },
-          "companionDownloadUrl": "files/PM-01/PM01_Doc4_Audit_SteerCo_DoA_Quorum_Audit_Rev.001.xlsx",
+          "companionDownloadUrl": "files/PM-01/PM01_Doc4_Audit_SteerCo_DoA_Quorum_Audit_Rev.002.xlsx",
           "companionXlsx": {
-            "fileName": "PM01_Doc4_Audit_SteerCo_DoA_Quorum_Audit_Rev.001.xlsx",
+            "fileName": "PM01_Doc4_Audit_SteerCo_DoA_Quorum_Audit_Rev.002.xlsx",
             "sheets": [
               {
                 "name": "1. DoA & Threshold Matrix",
@@ -9664,7 +9664,7 @@ window.PHASE1_PORTAL_DATA = {
                 "rows": [
                   [
                     {
-                      "v": "STEERING COMMITTEE DELEGATION OF AUTHORITY (DoA) & CHANGE TIER MATRIX (DC36-EU)",
+                      "v": "STEERING COMMITTEE DELEGATION OF AUTHORITY (DoA) & CHANGE TIER MATRIX (DC45-EU)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 8,
@@ -9784,7 +9784,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "cell"
                     },
                     {
-                      "v": "WBS 1.0-7.0 Total Approved BAC (36.0 MW EN 50600)",
+                      "v": "WBS 1.0-7.0 Total Approved BAC (45.0 MW EN 50600)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -10250,14 +10250,14 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "alert"
                     },
                     {
-                      "v": "COD > 2030-03-18",
+                      "v": "COD > 2030-05-20",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
                       "kind": "alert"
                     },
                     {
-                      "v": "Load < 36 MW, PUE > 1.25, WUE > 0.25, ERF < 0.15, Termination",
+                      "v": "Load < 45 MW, PUE > 1.25, WUE > 0.25, ERF < 0.15, Termination",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -10593,7 +10593,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "cell"
                     },
                     {
-                      "v": "2029-12-24",
+                      "v": "2030-02-25",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -10614,7 +10614,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "cell"
                     },
                     {
-                      "v": "Cx Level 5 36 MW 48-Hr Continuous IST & <10s BESS/HVO Blackout Transfer",
+                      "v": "Cx Level 5 45 MW 48-Hr Continuous IST & <10s BESS/HVO Blackout Transfer",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -10651,7 +10651,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "cell"
                     },
                     {
-                      "v": "2030-03-18",
+                      "v": "2030-05-20",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -10759,7 +10759,7 @@ window.PHASE1_PORTAL_DATA = {
                 "rows": [
                   [
                     {
-                      "v": "STEERING COMMITTEE QUORUM SIMULATOR & VOTING RULES (DC36-EU)",
+                      "v": "STEERING COMMITTEE QUORUM SIMULATOR & VOTING RULES (DC45-EU)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 8,
@@ -11192,7 +11192,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "total"
                     },
                     {
-                      "v": "4",
+                      "v": "",
                       "f": "=SUMPRODUCT(C8:C12,E8:E12)",
                       "rspan": 1,
                       "cspan": 1,
@@ -11268,7 +11268,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "cell"
                     },
                     {
-                      "v": "100.0%",
+                      "v": "0.0%",
                       "f": "=IFERROR(E13/C13,0)",
                       "rspan": 1,
                       "cspan": 1,
@@ -11358,7 +11358,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "pass"
                     },
                     {
-                      "v": "QUORUM MET",
+                      "v": "NO QUORUM",
                       "f": "=IF(AND(E8=1,B17>=IF(LEFT(C5,8)=\"Ordinary\",0.6,0.8)),\"QUORUM MET\",\"NO QUORUM\")",
                       "rspan": 1,
                       "cspan": 1,
@@ -11418,7 +11418,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "pass"
                     },
                     {
-                      "v": "CARRIED / APPROVED",
+                      "v": "DEFERRED - NO QUORUM",
                       "f": "=IF(H5=\"STATUTORY_HOLD\",\"BLOCKED - STATUTORY HOLD\",IF(B20=\"NO QUORUM\",\"DEFERRED - NO QUORUM\",IF(AND(B21>0.5,OR(LEFT(C5,8)=\"Ordinary\",AND(F8=\"YES\",F9=\"YES\"))),\"CARRIED / APPROVED\",\"REJECTED / NOT CARRIED\")))",
                       "rspan": 1,
                       "cspan": 1,
@@ -11715,7 +11715,7 @@ window.PHASE1_PORTAL_DATA = {
                 "rows": [
                   [
                     {
-                      "v": "QUANTITATIVE ESCALATION MATRIX, STATUTORY HARD-STOPS & MASTER XER GATES (DC36-EU)",
+                      "v": "QUANTITATIVE ESCALATION MATRIX, STATUTORY HARD-STOPS & MASTER XER GATES (DC45-EU)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 7,
@@ -11724,7 +11724,7 @@ window.PHASE1_PORTAL_DATA = {
                   ],
                   [
                     {
-                      "v": "Synchronized to DataCenter_36MW_EU_Ireland.xer (M1000-M7060) & Control Risk Thresholds",
+                      "v": "Synchronized to DataCenter_45MW_EU_Ireland.xer (M1000-M7060) & Control Risk Thresholds",
                       "f": "",
                       "rspan": 1,
                       "cspan": 7,
@@ -12208,7 +12208,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "alert"
                     },
                     {
-                      "v": "CxA Level 3/4/5 Rejection or 36 MW Load-Bank Shortfall",
+                      "v": "CxA Level 3/4/5 Rejection or 45 MW Load-Bank Shortfall",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -12537,7 +12537,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "cell"
                     },
                     {
-                      "v": "265d",
+                      "v": "290d",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -12632,14 +12632,14 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "cell"
                     },
                     {
-                      "v": "2027-12-20",
+                      "v": "2028-01-03",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
                       "kind": "cell"
                     },
                     {
-                      "v": "265d",
+                      "v": "290d",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -12683,7 +12683,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "alert"
                     },
                     {
-                      "v": "2028-12-25",
+                      "v": "2029-02-12",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -12734,7 +12734,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "alert"
                     },
                     {
-                      "v": "2029-07-30",
+                      "v": "2029-09-24",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -12785,7 +12785,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "alert"
                     },
                     {
-                      "v": "2029-08-20",
+                      "v": "2029-10-15",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -12836,7 +12836,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "alert"
                     },
                     {
-                      "v": "2029-10-15",
+                      "v": "2029-12-10",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -12880,14 +12880,14 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "alert"
                     },
                     {
-                      "v": "Cx Level 5 Integrated Systems Testing (36MW IST) Passed Milestone",
+                      "v": "Cx Level 5 Integrated Systems Testing (45MW IST) Passed Milestone",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
                       "kind": "alert"
                     },
                     {
-                      "v": "2029-12-24",
+                      "v": "2030-02-25",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -12938,7 +12938,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "alert"
                     },
                     {
-                      "v": "2030-03-18",
+                      "v": "2030-05-20",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -13316,7 +13316,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "input"
                     },
                     {
-                      "v": "Codified in DC36EU_SteerCo_ToR_Escalation_Charter_Rev.001",
+                      "v": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -13404,7 +13404,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "input"
                     },
                     {
-                      "v": "Codified in DC36EU_SteerCo_ToR_Escalation_Charter_Rev.001",
+                      "v": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -13448,7 +13448,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "input"
                     },
                     {
-                      "v": "Codified in DC36EU_SteerCo_ToR_Escalation_Charter_Rev.001",
+                      "v": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -13492,7 +13492,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "input"
                     },
                     {
-                      "v": "Codified in DC36EU_SteerCo_ToR_Escalation_Charter_Rev.001",
+                      "v": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -13580,7 +13580,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "input"
                     },
                     {
-                      "v": "Codified in DC36EU_SteerCo_ToR_Escalation_Charter_Rev.001",
+                      "v": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -13624,7 +13624,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "input"
                     },
                     {
-                      "v": "Codified in DC36EU_SteerCo_ToR_Escalation_Charter_Rev.001",
+                      "v": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -13691,7 +13691,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "cell"
                     },
                     {
-                      "v": "P6 baseline locked (141 tasks, DCMA-14 6/6) and synced to monthly CPI/SPI cutoff.",
+                      "v": "P6 baseline locked (144 tasks, DCMA-14 6/6) and synced to monthly CPI/SPI cutoff.",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -13712,7 +13712,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "input"
                     },
                     {
-                      "v": "Codified in DC36EU_SteerCo_ToR_Escalation_Charter_Rev.001",
+                      "v": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -13756,7 +13756,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "input"
                     },
                     {
-                      "v": "Codified in DC36EU_SteerCo_ToR_Escalation_Charter_Rev.001",
+                      "v": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -13800,7 +13800,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "input"
                     },
                     {
-                      "v": "Codified in DC36EU_SteerCo_ToR_Escalation_Charter_Rev.001",
+                      "v": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -13844,7 +13844,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "input"
                     },
                     {
-                      "v": "Codified in DC36EU_SteerCo_ToR_Escalation_Charter_Rev.001",
+                      "v": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -13956,7 +13956,7 @@ window.PHASE1_PORTAL_DATA = {
         "Scoring"
       ],
       "folder": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-02_Site_Selection_Due_Diligence",
-      "readme": "# PM-02: Site Selection Due Diligence & Pre-Feasibility Scoring\n\n- **Phase**: `Phase 1: Initiation, Charter & Business Case (RIBA 0-1)`\n- **RIBA Stage**: `RIBA Stage 0-1`\n- **P6 Milestone Gate**: `A1020 / M1000`\n- **WBS Scope**: `WBS 1.0-PERM`\n- **Governing Standards**: EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP\n- **Focus Areas**: Power Proximity, OPW Flood Risk, Geotech / Karst, Fibre Diversity, Zoning / SID\n\n## Module Overview\nEvaluate land parcels across power proximity, fibre diversity, geotechnical conditions, flood zones, and buildability constraints.\n\n## Ordered Flashcard Documents (`Doc 1` -> `Doc 4`)\n\n| Doc | Category | Title | Exact Local File | Companion / Notes |\n| :--- | :--- | :--- | :--- | :--- |\n| Doc 1 | Standard | I.S. EN 50600-2-1 Building Construction & Site Environmental Risk Guideline | `PM02_Doc1_Standard_Site_Siting_Standard_Guide_Rev.001.docx` | EN 50600-2-1 Siting |\n| Doc 2 | Deliverable | Multi-Criteria Site Selection & Land Acquisition Due Diligence Report | `PM02_Doc2_Deliverable_Site_Selection_Feasibility_Report_Rev.001.docx` | Power / Fibre / Zoning |\n| Doc 3 | Template | Weighted Land Parcel Comparison Scorecard (Grid, Geotech, Flood, Cost) | `PM02_Doc3_Template_Site_Scoring_Matrix_Workbook_Rev.001.xlsx` | Weighted Decision Model |\n| Doc 4 | Audit | Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) | `PM02_Doc4_Audit_Land_DD_Verification_Checklist_Rev.001.xlsx` | Eurocode 7 / OPW Flood Maps |\n\n## Study Takeaway (`Why Each Document Matters`)\n- **Doc 1 (Standard)**: Learn mandatory physical security setbacks, flood immunity, and external hazard rules.\n- **Doc 2 (Deliverable)**: Synthesize grid substation distance, dual-path dark fibre, and zoning viability for FID.\n- **Doc 3 (Template)**: Quantify site trade-offs objectively across capex penalties and schedule risk.\n- **Doc 4 (Audit)**: Eliminate fatal subsurface, contamination, UXO, or fluvial flood blockers before closing.\n",
+      "readme": "# PM-02: Site Selection Due Diligence & Pre-Feasibility Scoring\n\n- **Phase**: `Phase 1: Initiation, Charter & Business Case (RIBA 0-1)`\n- **RIBA Stage**: `RIBA Stage 0-1`\n- **P6 Milestone Gate**: `A1020 / M1000`\n- **WBS Scope**: `WBS 1.0-PERM`\n- **Governing Standards**: EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP\n- **Focus Areas**: Power Proximity, OPW Flood Risk, Geotech / Karst, Fibre Diversity, Zoning / SID\n\n## Module Overview\nEvaluate land parcels across power proximity, fibre diversity, geotechnical conditions, flood zones, and buildability constraints.\n\n## Ordered Flashcard Documents (`Doc 1` -> `Doc 4`)\n\n| Doc | Category | Title | Exact Local File | Companion / Notes |\n| :--- | :--- | :--- | :--- | :--- |\n| Doc 1 | Standard | I.S. EN 50600-2-1 Building Construction & Site Environmental Risk Guideline | `PM02_Doc1_Standard_I_S_EN_50600_2_1_Building_Rev.002.docx` | EN 50600-2-1 Siting |\n| Doc 2 | Deliverable | Multi-Criteria Site Selection & Land Acquisition Due Diligence Report | `PM02_Doc2_Deliverable_Multi_Criteria_Site_Selection_Land_Rev.002.docx` | Power / Fibre / Zoning |\n| Doc 3 | Template | Weighted Land Parcel Comparison Scorecard (Grid, Geotech, Flood, Cost) | `PM02_Doc3_Template_Weighted_Land_Parcel_Comparison_Rev.002.xlsx` | Weighted Decision Model |\n| Doc 4 | Audit | Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) | `PM02_Doc4_Audit_Pre_Purchase_Technical_Due_Rev.002.xlsx` | Eurocode 7 / OPW Flood Maps |\n\n## Study Takeaway (`Why Each Document Matters`)\n- **Doc 1 (Standard)**: Learn mandatory physical security setbacks, flood immunity, and external hazard rules.\n- **Doc 2 (Deliverable)**: Synthesize grid substation distance, dual-path dark fibre, and zoning viability for FID.\n- **Doc 3 (Template)**: Quantify site trade-offs objectively across capex penalties and schedule risk.\n- **Doc 4 (Audit)**: Eliminate fatal subsurface, contamination, UXO, or fluvial flood blockers before closing.\n",
       "docs": [
         {
           "docId": "PM-02-D1",
@@ -13965,13 +13965,13 @@ window.PHASE1_PORTAL_DATA = {
           "title": "I.S. EN 50600-2-1 Building Construction & Site Environmental Risk Guideline",
           "ref": "EN 50600-2-1 Siting",
           "why": "Learn mandatory physical security setbacks, flood immunity, and external hazard rules.",
-          "fileName": "PM02_Doc1_Standard_Site_Siting_Standard_Guide_Rev.001.docx",
+          "fileName": "PM02_Doc1_Standard_I_S_EN_50600_2_1_Building_Rev.002.docx",
           "ext": "DOCX",
-          "downloadUrl": "files/PM-02/PM02_Doc1_Standard_Site_Siting_Standard_Guide_Rev.001.docx",
-          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-02_Site_Selection_Due_Diligence\\PM02_Doc1_Standard_Site_Siting_Standard_Guide_Rev.001.docx",
+          "downloadUrl": "files/PM-02/PM02_Doc1_Standard_I_S_EN_50600_2_1_Building_Rev.002.docx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-02_Site_Selection_Due_Diligence\\PM02_Doc1_Standard_I_S_EN_50600_2_1_Building_Rev.002.docx",
           "renderType": "docx",
           "docx": {
-            "fileName": "PM02_Doc1_Standard_Site_Siting_Standard_Guide_Rev.001.docx",
+            "fileName": "PM02_Doc1_Standard_I_S_EN_50600_2_1_Building_Rev.002.docx",
             "blocks": [
               {
                 "type": "banner",
@@ -13982,11 +13982,11 @@ window.PHASE1_PORTAL_DATA = {
                 "rows": [
                   [
                     "Document Control Field",
-                    "DC36-EU Repository Value"
+                    "DC45-EU Repository Value"
                   ],
                   [
                     "ISO 19650 Document Code",
-                    "DC36EU-PM02-DOC1-Rev001"
+                    "DC45EU-PM02-DOC1-Rev002"
                   ],
                   [
                     "Flashcard Module & Stage",
@@ -13994,7 +13994,7 @@ window.PHASE1_PORTAL_DATA = {
                   ],
                   [
                     "P6 Milestone / WBS Anchor",
-                    "A1020 / M1000 | WBS 1.0-PERM | Live Schedule: 141 Tasks / 209 Links"
+                    "A1020 / M1000 | WBS 1.0-PERM | Live Schedule: 144 Tasks / 213 Links"
                   ],
                   [
                     "Governing Standards",
@@ -14012,7 +14012,7 @@ window.PHASE1_PORTAL_DATA = {
               },
               {
                 "type": "p",
-                "text": "Portfolio Context: This institutional standard establishes controlled governance, technical compliance rules, and auditable evidence for the 36 MW DC36-EU Hyperscale Data Centre development in Ireland (4 x 9.0 MW data halls, dual 110 kV grid incomers, 16 x 2.5 MVA HVO standby generation with SCR abatement, and EN 50600 Availability Class 3 / Uptime TCCF target). All schedules and resource assumptions synchronize against the master Primavera P6 baseline (DataCenter_36MW_EU_Ireland.xer: M1000 NTP 2027-01-04 through M7060 COD 2030-03-18)."
+                "text": "Portfolio Context: This institutional standard establishes controlled governance, technical compliance rules, and auditable evidence for the 45 MW DC45-EU Hyperscale Data Centre development in Ireland (4 x 9.0 MW data halls, dual 110 kV grid incomers, 16 x 2.5 MVA HVO standby generation with SCR abatement, and EN 50600 Availability Class 3 / Uptime TCCF target). All schedules and resource assumptions synchronize against the master Primavera P6 baseline (DataCenter_45MW_EU_Ireland.xer: M1000 NTP 2027-01-04 through M7060 COD 2030-05-20)."
               },
               {
                 "type": "p",
@@ -14052,7 +14052,7 @@ window.PHASE1_PORTAL_DATA = {
                   [
                     "Item Code",
                     "Control Focus Area",
-                    "DC36-EU Quantitative / Statutory Threshold",
+                    "DC45-EU Quantitative / Statutory Threshold",
                     "Verification Authority"
                   ],
                   [
@@ -14111,27 +14111,27 @@ window.PHASE1_PORTAL_DATA = {
                   ],
                   [
                     "M3120",
-                    "2027-12-20",
+                    "2028-01-03",
                     "OFCI Long-Lead Equipment Delivery Buffer (+200d Lead)"
                   ],
                   [
                     "M4350",
-                    "2028-12-25",
+                    "2029-02-12",
                     "Core & Shell Weather-Tight Envelope Complete"
                   ],
                   [
                     "M5595",
-                    "2029-07-30",
+                    "2029-09-24",
                     "MEP Pre-Energisation Complete \u2014 L3/L4 Cx Handover"
                   ],
                   [
                     "M6470",
-                    "2029-12-24",
-                    "Level 5 36 MW 48-Hr Integrated Systems Test (IST) Complete"
+                    "2030-02-25",
+                    "Level 5 45 MW 48-Hr Integrated Systems Test (IST) Complete"
                   ],
                   [
                     "M7060",
-                    "2030-03-18",
+                    "2030-05-20",
                     "Practical Completion, BCAR CCC & Commercial Operation (COD)"
                   ]
                 ]
@@ -14185,13 +14185,13 @@ window.PHASE1_PORTAL_DATA = {
           "title": "Multi-Criteria Site Selection & Land Acquisition Due Diligence Report",
           "ref": "Power / Fibre / Zoning",
           "why": "Synthesize grid substation distance, dual-path dark fibre, and zoning viability for FID.",
-          "fileName": "PM02_Doc2_Deliverable_Site_Selection_Feasibility_Report_Rev.001.docx",
+          "fileName": "PM02_Doc2_Deliverable_Multi_Criteria_Site_Selection_Land_Rev.002.docx",
           "ext": "DOCX",
-          "downloadUrl": "files/PM-02/PM02_Doc2_Deliverable_Site_Selection_Feasibility_Report_Rev.001.docx",
-          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-02_Site_Selection_Due_Diligence\\PM02_Doc2_Deliverable_Site_Selection_Feasibility_Report_Rev.001.docx",
+          "downloadUrl": "files/PM-02/PM02_Doc2_Deliverable_Multi_Criteria_Site_Selection_Land_Rev.002.docx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-02_Site_Selection_Due_Diligence\\PM02_Doc2_Deliverable_Multi_Criteria_Site_Selection_Land_Rev.002.docx",
           "renderType": "docx",
           "docx": {
-            "fileName": "PM02_Doc2_Deliverable_Site_Selection_Feasibility_Report_Rev.001.docx",
+            "fileName": "PM02_Doc2_Deliverable_Multi_Criteria_Site_Selection_Land_Rev.002.docx",
             "blocks": [
               {
                 "type": "banner",
@@ -14202,11 +14202,11 @@ window.PHASE1_PORTAL_DATA = {
                 "rows": [
                   [
                     "Document Control Field",
-                    "DC36-EU Repository Value"
+                    "DC45-EU Repository Value"
                   ],
                   [
                     "ISO 19650 Document Code",
-                    "DC36EU-PM02-DOC2-Rev001"
+                    "DC45EU-PM02-DOC2-Rev002"
                   ],
                   [
                     "Flashcard Module & Stage",
@@ -14214,7 +14214,7 @@ window.PHASE1_PORTAL_DATA = {
                   ],
                   [
                     "P6 Milestone / WBS Anchor",
-                    "A1020 / M1000 | WBS 1.0-PERM | Live Schedule: 141 Tasks / 209 Links"
+                    "A1020 / M1000 | WBS 1.0-PERM | Live Schedule: 144 Tasks / 213 Links"
                   ],
                   [
                     "Governing Standards",
@@ -14232,7 +14232,7 @@ window.PHASE1_PORTAL_DATA = {
               },
               {
                 "type": "p",
-                "text": "Portfolio Context: This institutional deliverable establishes controlled governance, technical compliance rules, and auditable evidence for the 36 MW DC36-EU Hyperscale Data Centre development in Ireland (4 x 9.0 MW data halls, dual 110 kV grid incomers, 16 x 2.5 MVA HVO standby generation with SCR abatement, and EN 50600 Availability Class 3 / Uptime TCCF target). All schedules and resource assumptions synchronize against the master Primavera P6 baseline (DataCenter_36MW_EU_Ireland.xer: M1000 NTP 2027-01-04 through M7060 COD 2030-03-18)."
+                "text": "Portfolio Context: This institutional deliverable establishes controlled governance, technical compliance rules, and auditable evidence for the 45 MW DC45-EU Hyperscale Data Centre development in Ireland (4 x 9.0 MW data halls, dual 110 kV grid incomers, 16 x 2.5 MVA HVO standby generation with SCR abatement, and EN 50600 Availability Class 3 / Uptime TCCF target). All schedules and resource assumptions synchronize against the master Primavera P6 baseline (DataCenter_45MW_EU_Ireland.xer: M1000 NTP 2027-01-04 through M7060 COD 2030-05-20)."
               },
               {
                 "type": "p",
@@ -14272,7 +14272,7 @@ window.PHASE1_PORTAL_DATA = {
                   [
                     "Item Code",
                     "Control Focus Area",
-                    "DC36-EU Quantitative / Statutory Threshold",
+                    "DC45-EU Quantitative / Statutory Threshold",
                     "Verification Authority"
                   ],
                   [
@@ -14331,27 +14331,27 @@ window.PHASE1_PORTAL_DATA = {
                   ],
                   [
                     "M3120",
-                    "2027-12-20",
+                    "2028-01-03",
                     "OFCI Long-Lead Equipment Delivery Buffer (+200d Lead)"
                   ],
                   [
                     "M4350",
-                    "2028-12-25",
+                    "2029-02-12",
                     "Core & Shell Weather-Tight Envelope Complete"
                   ],
                   [
                     "M5595",
-                    "2029-07-30",
+                    "2029-09-24",
                     "MEP Pre-Energisation Complete \u2014 L3/L4 Cx Handover"
                   ],
                   [
                     "M6470",
-                    "2029-12-24",
-                    "Level 5 36 MW 48-Hr Integrated Systems Test (IST) Complete"
+                    "2030-02-25",
+                    "Level 5 45 MW 48-Hr Integrated Systems Test (IST) Complete"
                   ],
                   [
                     "M7060",
-                    "2030-03-18",
+                    "2030-05-20",
                     "Practical Completion, BCAR CCC & Commercial Operation (COD)"
                   ]
                 ]
@@ -14405,13 +14405,13 @@ window.PHASE1_PORTAL_DATA = {
           "title": "Weighted Land Parcel Comparison Scorecard (Grid, Geotech, Flood, Cost)",
           "ref": "Weighted Decision Model",
           "why": "Quantify site trade-offs objectively across capex penalties and schedule risk.",
-          "fileName": "PM02_Doc3_Template_Site_Scoring_Matrix_Workbook_Rev.001.xlsx",
+          "fileName": "PM02_Doc3_Template_Weighted_Land_Parcel_Comparison_Rev.002.xlsx",
           "ext": "XLSX",
-          "downloadUrl": "files/PM-02/PM02_Doc3_Template_Site_Scoring_Matrix_Workbook_Rev.001.xlsx",
-          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-02_Site_Selection_Due_Diligence\\PM02_Doc3_Template_Site_Scoring_Matrix_Workbook_Rev.001.xlsx",
+          "downloadUrl": "files/PM-02/PM02_Doc3_Template_Weighted_Land_Parcel_Comparison_Rev.002.xlsx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-02_Site_Selection_Due_Diligence\\PM02_Doc3_Template_Weighted_Land_Parcel_Comparison_Rev.002.xlsx",
           "renderType": "xlsx",
           "xlsx": {
-            "fileName": "PM02_Doc3_Template_Site_Scoring_Matrix_Workbook_Rev.001.xlsx",
+            "fileName": "PM02_Doc3_Template_Weighted_Land_Parcel_Comparison_Rev.002.xlsx",
             "sheets": [
               {
                 "name": "1. Site Scoring Matrix",
@@ -14419,7 +14419,7 @@ window.PHASE1_PORTAL_DATA = {
                 "rows": [
                   [
                     {
-                      "v": "DC36-EU | Weighted Land Parcel Comparison Scorecard (Grid, Geotech, Flood, Cost)",
+                      "v": "DC45-EU | Weighted Land Parcel Comparison Scorecard (Grid, Geotech, Flood, Cost)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 9,
@@ -15028,7 +15028,7 @@ window.PHASE1_PORTAL_DATA = {
                 "rows": [
                   [
                     {
-                      "v": "DC36-EU | PM-02 DOC 3 \u2014 DOCUMENT CONTROL & XER SYNCHRONIZATION",
+                      "v": "DC45-EU | PM-02 DOC 3 \u2014 DOCUMENT CONTROL & XER SYNCHRONIZATION",
                       "f": "",
                       "rspan": 1,
                       "cspan": 4,
@@ -15083,7 +15083,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "cell"
                     },
                     {
-                      "v": "DC36EU-PM02-DOC3-Rev001",
+                      "v": "DC45EU-PM02-DOC3-Rev002",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -15150,7 +15150,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "cell"
                     },
                     {
-                      "v": "141 Tasks / 209 Links",
+                      "v": "144 Tasks / 213 Links",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -15266,13 +15266,13 @@ window.PHASE1_PORTAL_DATA = {
           "title": "Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood)",
           "ref": "Eurocode 7 / OPW Flood Maps",
           "why": "Eliminate fatal subsurface, contamination, UXO, or fluvial flood blockers before closing.",
-          "fileName": "PM02_Doc4_Audit_Land_DD_Verification_Checklist_Rev.001.xlsx",
+          "fileName": "PM02_Doc4_Audit_Pre_Purchase_Technical_Due_Rev.002.xlsx",
           "ext": "XLSX",
-          "downloadUrl": "files/PM-02/PM02_Doc4_Audit_Land_DD_Verification_Checklist_Rev.001.xlsx",
-          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-02_Site_Selection_Due_Diligence\\PM02_Doc4_Audit_Land_DD_Verification_Checklist_Rev.001.xlsx",
+          "downloadUrl": "files/PM-02/PM02_Doc4_Audit_Pre_Purchase_Technical_Due_Rev.002.xlsx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-02_Site_Selection_Due_Diligence\\PM02_Doc4_Audit_Pre_Purchase_Technical_Due_Rev.002.xlsx",
           "renderType": "xlsx",
           "xlsx": {
-            "fileName": "PM02_Doc4_Audit_Land_DD_Verification_Checklist_Rev.001.xlsx",
+            "fileName": "PM02_Doc4_Audit_Pre_Purchase_Technical_Due_Rev.002.xlsx",
             "sheets": [
               {
                 "name": "1. Compliance Audit",
@@ -15280,7 +15280,7 @@ window.PHASE1_PORTAL_DATA = {
                 "rows": [
                   [
                     {
-                      "v": "DC36-EU | Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood)",
+                      "v": "DC45-EU | Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 6,
@@ -15964,7 +15964,7 @@ window.PHASE1_PORTAL_DATA = {
                 "rows": [
                   [
                     {
-                      "v": "DC36-EU | PM-02 DOC 4 \u2014 DOCUMENT CONTROL & XER SYNCHRONIZATION",
+                      "v": "DC45-EU | PM-02 DOC 4 \u2014 DOCUMENT CONTROL & XER SYNCHRONIZATION",
                       "f": "",
                       "rspan": 1,
                       "cspan": 4,
@@ -16019,7 +16019,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "cell"
                     },
                     {
-                      "v": "DC36EU-PM02-DOC4-Rev001",
+                      "v": "DC45EU-PM02-DOC4-Rev002",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -16086,7 +16086,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "cell"
                     },
                     {
-                      "v": "141 Tasks / 209 Links",
+                      "v": "144 Tasks / 213 Links",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -16207,7 +16207,7 @@ window.PHASE1_PORTAL_DATA = {
         "ISO 22237"
       ],
       "folder": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-03_Basis_of_Design_EN50600_Class3",
-      "readme": "# PM-03: Basis of Design (BoD) & I.S. EN 50600 Class 3 Translation\n\n- **Phase**: `Phase 1: Initiation, Charter & Business Case (RIBA 0-1)`\n- **RIBA Stage**: `RIBA Stage 1-2`\n- **P6 Milestone Gate**: `M1000 / M2110`\n- **WBS Scope**: `WBS 2.0-ENG`\n- **Governing Standards**: I.S. EN 50600-1/-2-2/-2-3, ISO/IEC 22237 Class 3, ASHRAE TC 9.9, EU F-Gas 2024/573\n- **Focus Areas**: 36.0 MW IT Load, 4x 9 MW Halls, PUE <= 1.25, WUE <= 0.25 L/kWh, ERF >= 0.15\n\n## Module Overview\nTranslate tenant SLAs and Uptime Tier III maintainability into EN 50600 Availability Classes, PUE targets, and free-cooling envelope.\n\n## Ordered Flashcard Documents (`Doc 1` -> `Doc 4`)\n\n| Doc | Category | Title | Exact Local File | Companion / Notes |\n| :--- | :--- | :--- | :--- | :--- |\n| Doc 1 | Standard | I.S. EN 50600-1 / -2-2 / -2-3 & ISO/IEC 22237 Availability Class 3 Series | `PM03_Doc1_Standard_Availability_Class_3_Standard_Rev.001.docx` | EN 50600 / ISO 22237 |\n| Doc 2 | Deliverable | 36 MW Campus Basis of Design (N+1/2N Topology, Density, SLAs & Redundancy) | `PM03_Doc2_Deliverable_EN50600_BoD_Controls_Master_Rev.001.xlsx` | Sheet 3. EN 50600 & EED |\n| Doc 3 | Template | Scope Boundaries, Client vs. Contractor Battery Limits & Exclusions Matrix | `PM03_Doc3_Template_Scope_Boundaries_Charter_Master_Rev.001.xlsx` | Sheet 4. Scope Boundaries |\n| Doc 4 | Audit | Atlantic Free-Cooling Psychrometric Study & Low-GWP Chiller (EU F-Gas) Review | `PM03_Doc4_Audit_Mechanical_Concept_Design_Audit_Rev.001.docx` | ASHRAE TC 9.9 / EU 2024/573 |\n\n## Study Takeaway (`Why Each Document Matters`)\n- **Doc 1 (Standard)**: Master European concurrent maintainability topology across power, cooling, and security.\n- **Doc 2 (Deliverable)**: Translate 36 MW IT load and kW/rack targets into distributable redundant MEP specs.\n- **Doc 3 (Template)**: Prevent scope gaps between core shell, white-space fit-out, and utility tie-ins.\n- **Doc 4 (Audit)**: Validate annualized PUE <= 1.22 using Irish ambient cooling hours and compliant refrigerants.\n",
+      "readme": "# PM-03: Basis of Design (BoD) & I.S. EN 50600 Class 3 Translation\n\n- **Phase**: `Phase 1: Initiation, Charter & Business Case (RIBA 0-1)`\n- **RIBA Stage**: `RIBA Stage 1-2`\n- **P6 Milestone Gate**: `M1000 / M2110`\n- **WBS Scope**: `WBS 2.0-ENG`\n- **Governing Standards**: I.S. EN 50600-1/-2-2/-2-3, ISO/IEC 22237 Class 3, ASHRAE TC 9.9, EU F-Gas 2024/573\n- **Focus Areas**: 36.0 MW IT Load, 5x 9 MW Halls, PUE <= 1.25, WUE <= 0.25 L/kWh, ERF >= 0.15\n\n## Module Overview\nTranslate tenant SLAs and Uptime Tier III maintainability into EN 50600 Availability Classes, PUE targets, and free-cooling envelope.\n\n## Ordered Flashcard Documents (`Doc 1` -> `Doc 4`)\n\n| Doc | Category | Title | Exact Local File | Companion / Notes |\n| :--- | :--- | :--- | :--- | :--- |\n| Doc 1 | Standard | I.S. EN 50600-1 / -2-2 / -2-3 & ISO/IEC 22237 Availability Class 3 Series | `PM03_Doc1_Standard_I_S_EN_50600_1_2_2_2_3_ISO_IEC_Rev.002.docx` | EN 50600 / ISO 22237 |\n| Doc 2 | Deliverable | 45 MW Campus Basis of Design (N+1/2N Topology, Density, SLAs & Redundancy) | `PM03_Doc2_Deliverable_EN50600_BoD_Controls_Master_Rev.002.xlsx` | Sheet 3. EN 50600 & EED |\n| Doc 3 | Template | Scope Boundaries, Client vs. Contractor Battery Limits & Exclusions Matrix | `PM03_Doc3_Template_Scope_Boundaries_Charter_Master_Rev.002.xlsx` | Sheet 4. Scope Boundaries |\n| Doc 4 | Audit | Atlantic Free-Cooling Psychrometric Study & Low-GWP Chiller (EU F-Gas) Review | `PM03_Doc4_Audit_Atlantic_Free_Cooling_Psychrometric_Rev.002.docx` | ASHRAE TC 9.9 / EU 2024/573 |\n\n## Study Takeaway (`Why Each Document Matters`)\n- **Doc 1 (Standard)**: Master European concurrent maintainability topology across power, cooling, and security.\n- **Doc 2 (Deliverable)**: Translate 45 MW IT load and kW/rack targets into distributable redundant MEP specs.\n- **Doc 3 (Template)**: Prevent scope gaps between core shell, white-space fit-out, and utility tie-ins.\n- **Doc 4 (Audit)**: Validate annualized PUE <= 1.22 using Irish ambient cooling hours and compliant refrigerants.\n",
       "docs": [
         {
           "docId": "PM-03-D1",
@@ -16216,13 +16216,13 @@ window.PHASE1_PORTAL_DATA = {
           "title": "I.S. EN 50600-1 / -2-2 / -2-3 & ISO/IEC 22237 Availability Class 3 Series",
           "ref": "EN 50600 / ISO 22237",
           "why": "Master European concurrent maintainability topology across power, cooling, and security.",
-          "fileName": "PM03_Doc1_Standard_Availability_Class_3_Standard_Rev.001.docx",
+          "fileName": "PM03_Doc1_Standard_I_S_EN_50600_1_2_2_2_3_ISO_IEC_Rev.002.docx",
           "ext": "DOCX",
-          "downloadUrl": "files/PM-03/PM03_Doc1_Standard_Availability_Class_3_Standard_Rev.001.docx",
-          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-03_Basis_of_Design_EN50600_Class3\\PM03_Doc1_Standard_Availability_Class_3_Standard_Rev.001.docx",
+          "downloadUrl": "files/PM-03/PM03_Doc1_Standard_I_S_EN_50600_1_2_2_2_3_ISO_IEC_Rev.002.docx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-03_Basis_of_Design_EN50600_Class3\\PM03_Doc1_Standard_I_S_EN_50600_1_2_2_2_3_ISO_IEC_Rev.002.docx",
           "renderType": "docx",
           "docx": {
-            "fileName": "PM03_Doc1_Standard_Availability_Class_3_Standard_Rev.001.docx",
+            "fileName": "PM03_Doc1_Standard_I_S_EN_50600_1_2_2_2_3_ISO_IEC_Rev.002.docx",
             "blocks": [
               {
                 "type": "banner",
@@ -16233,11 +16233,11 @@ window.PHASE1_PORTAL_DATA = {
                 "rows": [
                   [
                     "Document Control Field",
-                    "DC36-EU Repository Value"
+                    "DC45-EU Repository Value"
                   ],
                   [
                     "ISO 19650 Document Code",
-                    "DC36EU-PM03-DOC1-Rev001"
+                    "DC45EU-PM03-DOC1-Rev002"
                   ],
                   [
                     "Flashcard Module & Stage",
@@ -16245,7 +16245,7 @@ window.PHASE1_PORTAL_DATA = {
                   ],
                   [
                     "P6 Milestone / WBS Anchor",
-                    "M1000 / M2110 | WBS 2.0-ENG | Live Schedule: 141 Tasks / 209 Links"
+                    "M1000 / M2110 | WBS 2.0-ENG | Live Schedule: 144 Tasks / 213 Links"
                   ],
                   [
                     "Governing Standards",
@@ -16263,7 +16263,7 @@ window.PHASE1_PORTAL_DATA = {
               },
               {
                 "type": "p",
-                "text": "Portfolio Context: This institutional standard establishes controlled governance, technical compliance rules, and auditable evidence for the 36 MW DC36-EU Hyperscale Data Centre development in Ireland (4 x 9.0 MW data halls, dual 110 kV grid incomers, 16 x 2.5 MVA HVO standby generation with SCR abatement, and EN 50600 Availability Class 3 / Uptime TCCF target). All schedules and resource assumptions synchronize against the master Primavera P6 baseline (DataCenter_36MW_EU_Ireland.xer: M1000 NTP 2027-01-04 through M7060 COD 2030-03-18)."
+                "text": "Portfolio Context: This institutional standard establishes controlled governance, technical compliance rules, and auditable evidence for the 45 MW DC45-EU Hyperscale Data Centre development in Ireland (4 x 9.0 MW data halls, dual 110 kV grid incomers, 16 x 2.5 MVA HVO standby generation with SCR abatement, and EN 50600 Availability Class 3 / Uptime TCCF target). All schedules and resource assumptions synchronize against the master Primavera P6 baseline (DataCenter_45MW_EU_Ireland.xer: M1000 NTP 2027-01-04 through M7060 COD 2030-05-20)."
               },
               {
                 "type": "p",
@@ -16303,7 +16303,7 @@ window.PHASE1_PORTAL_DATA = {
                   [
                     "Item Code",
                     "Control Focus Area",
-                    "DC36-EU Quantitative / Statutory Threshold",
+                    "DC45-EU Quantitative / Statutory Threshold",
                     "Verification Authority"
                   ],
                   [
@@ -16314,7 +16314,7 @@ window.PHASE1_PORTAL_DATA = {
                   ],
                   [
                     "PM03-C02",
-                    "4x 9 MW Halls",
+                    "5x 9 MW Halls",
                     "Formal standard evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to M1000 / M2110 and WBS 2.0-ENG.",
                     "Project Director / CxA / Assigned Certifier"
                   ],
@@ -16362,27 +16362,27 @@ window.PHASE1_PORTAL_DATA = {
                   ],
                   [
                     "M3120",
-                    "2027-12-20",
+                    "2028-01-03",
                     "OFCI Long-Lead Equipment Delivery Buffer (+200d Lead)"
                   ],
                   [
                     "M4350",
-                    "2028-12-25",
+                    "2029-02-12",
                     "Core & Shell Weather-Tight Envelope Complete"
                   ],
                   [
                     "M5595",
-                    "2029-07-30",
+                    "2029-09-24",
                     "MEP Pre-Energisation Complete \u2014 L3/L4 Cx Handover"
                   ],
                   [
                     "M6470",
-                    "2029-12-24",
-                    "Level 5 36 MW 48-Hr Integrated Systems Test (IST) Complete"
+                    "2030-02-25",
+                    "Level 5 45 MW 48-Hr Integrated Systems Test (IST) Complete"
                   ],
                   [
                     "M7060",
-                    "2030-03-18",
+                    "2030-05-20",
                     "Practical Completion, BCAR CCC & Commercial Operation (COD)"
                   ]
                 ]
@@ -16433,13 +16433,13 @@ window.PHASE1_PORTAL_DATA = {
           "docId": "PM-03-D2",
           "idx0": 1,
           "cat": "Deliverable",
-          "title": "36 MW Campus Basis of Design (N+1/2N Topology, Density, SLAs & Redundancy)",
+          "title": "45 MW Campus Basis of Design (N+1/2N Topology, Density, SLAs & Redundancy)",
           "ref": "Sheet 3. EN 50600 & EED",
-          "why": "Translate 36 MW IT load and kW/rack targets into distributable redundant MEP specs.",
-          "fileName": "PM03_Doc2_Deliverable_EN50600_BoD_Controls_Master_Rev.001.xlsx",
+          "why": "Translate 45 MW IT load and kW/rack targets into distributable redundant MEP specs.",
+          "fileName": "PM03_Doc2_Deliverable_EN50600_BoD_Controls_Master_Rev.002.xlsx",
           "ext": "XLSX",
-          "downloadUrl": "files/PM-03/PM03_Doc2_Deliverable_EN50600_BoD_Controls_Master_Rev.001.xlsx",
-          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-03_Basis_of_Design_EN50600_Class3\\PM03_Doc2_Deliverable_EN50600_BoD_Controls_Master_Rev.001.xlsx",
+          "downloadUrl": "files/PM-03/PM03_Doc2_Deliverable_EN50600_BoD_Controls_Master_Rev.002.xlsx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-03_Basis_of_Design_EN50600_Class3\\PM03_Doc2_Deliverable_EN50600_BoD_Controls_Master_Rev.002.xlsx",
           "renderType": "xlsx_master",
           "masterKey": "CONTROLS",
           "focalSheet": "2. EN 50600 Basis of Design"
@@ -16451,10 +16451,10 @@ window.PHASE1_PORTAL_DATA = {
           "title": "Scope Boundaries, Client vs. Contractor Battery Limits & Exclusions Matrix",
           "ref": "Sheet 4. Scope Boundaries",
           "why": "Prevent scope gaps between core shell, white-space fit-out, and utility tie-ins.",
-          "fileName": "PM03_Doc3_Template_Scope_Boundaries_Charter_Master_Rev.001.xlsx",
+          "fileName": "PM03_Doc3_Template_Scope_Boundaries_Charter_Master_Rev.002.xlsx",
           "ext": "XLSX",
-          "downloadUrl": "files/PM-03/PM03_Doc3_Template_Scope_Boundaries_Charter_Master_Rev.001.xlsx",
-          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-03_Basis_of_Design_EN50600_Class3\\PM03_Doc3_Template_Scope_Boundaries_Charter_Master_Rev.001.xlsx",
+          "downloadUrl": "files/PM-03/PM03_Doc3_Template_Scope_Boundaries_Charter_Master_Rev.002.xlsx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-03_Basis_of_Design_EN50600_Class3\\PM03_Doc3_Template_Scope_Boundaries_Charter_Master_Rev.002.xlsx",
           "renderType": "xlsx_master",
           "masterKey": "CHARTER",
           "focalSheet": "2. Scope & Constraints"
@@ -16466,13 +16466,13 @@ window.PHASE1_PORTAL_DATA = {
           "title": "Atlantic Free-Cooling Psychrometric Study & Low-GWP Chiller (EU F-Gas) Review",
           "ref": "ASHRAE TC 9.9 / EU 2024/573",
           "why": "Validate annualized PUE <= 1.22 using Irish ambient cooling hours and compliant refrigerants.",
-          "fileName": "PM03_Doc4_Audit_Mechanical_Concept_Design_Audit_Rev.001.docx",
+          "fileName": "PM03_Doc4_Audit_Atlantic_Free_Cooling_Psychrometric_Rev.002.docx",
           "ext": "DOCX",
-          "downloadUrl": "files/PM-03/PM03_Doc4_Audit_Mechanical_Concept_Design_Audit_Rev.001.docx",
-          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-03_Basis_of_Design_EN50600_Class3\\PM03_Doc4_Audit_Mechanical_Concept_Design_Audit_Rev.001.docx",
+          "downloadUrl": "files/PM-03/PM03_Doc4_Audit_Atlantic_Free_Cooling_Psychrometric_Rev.002.docx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-03_Basis_of_Design_EN50600_Class3\\PM03_Doc4_Audit_Atlantic_Free_Cooling_Psychrometric_Rev.002.docx",
           "renderType": "docx",
           "docx": {
-            "fileName": "PM03_Doc4_Audit_Mechanical_Concept_Design_Audit_Rev.001.docx",
+            "fileName": "PM03_Doc4_Audit_Atlantic_Free_Cooling_Psychrometric_Rev.002.docx",
             "blocks": [
               {
                 "type": "banner",
@@ -16483,11 +16483,11 @@ window.PHASE1_PORTAL_DATA = {
                 "rows": [
                   [
                     "Document Control Field",
-                    "DC36-EU Repository Value"
+                    "DC45-EU Repository Value"
                   ],
                   [
                     "ISO 19650 Document Code",
-                    "DC36EU-PM03-DOC4-Rev001"
+                    "DC45EU-PM03-DOC4-Rev002"
                   ],
                   [
                     "Flashcard Module & Stage",
@@ -16495,7 +16495,7 @@ window.PHASE1_PORTAL_DATA = {
                   ],
                   [
                     "P6 Milestone / WBS Anchor",
-                    "M1000 / M2110 | WBS 2.0-ENG | Live Schedule: 141 Tasks / 209 Links"
+                    "M1000 / M2110 | WBS 2.0-ENG | Live Schedule: 144 Tasks / 213 Links"
                   ],
                   [
                     "Governing Standards",
@@ -16513,7 +16513,7 @@ window.PHASE1_PORTAL_DATA = {
               },
               {
                 "type": "p",
-                "text": "Portfolio Context: This institutional audit establishes controlled governance, technical compliance rules, and auditable evidence for the 36 MW DC36-EU Hyperscale Data Centre development in Ireland (4 x 9.0 MW data halls, dual 110 kV grid incomers, 16 x 2.5 MVA HVO standby generation with SCR abatement, and EN 50600 Availability Class 3 / Uptime TCCF target). All schedules and resource assumptions synchronize against the master Primavera P6 baseline (DataCenter_36MW_EU_Ireland.xer: M1000 NTP 2027-01-04 through M7060 COD 2030-03-18)."
+                "text": "Portfolio Context: This institutional audit establishes controlled governance, technical compliance rules, and auditable evidence for the 45 MW DC45-EU Hyperscale Data Centre development in Ireland (4 x 9.0 MW data halls, dual 110 kV grid incomers, 16 x 2.5 MVA HVO standby generation with SCR abatement, and EN 50600 Availability Class 3 / Uptime TCCF target). All schedules and resource assumptions synchronize against the master Primavera P6 baseline (DataCenter_45MW_EU_Ireland.xer: M1000 NTP 2027-01-04 through M7060 COD 2030-05-20)."
               },
               {
                 "type": "p",
@@ -16553,7 +16553,7 @@ window.PHASE1_PORTAL_DATA = {
                   [
                     "Item Code",
                     "Control Focus Area",
-                    "DC36-EU Quantitative / Statutory Threshold",
+                    "DC45-EU Quantitative / Statutory Threshold",
                     "Verification Authority"
                   ],
                   [
@@ -16564,7 +16564,7 @@ window.PHASE1_PORTAL_DATA = {
                   ],
                   [
                     "PM03-C02",
-                    "4x 9 MW Halls",
+                    "5x 9 MW Halls",
                     "Formal audit evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to M1000 / M2110 and WBS 2.0-ENG.",
                     "Project Director / CxA / Assigned Certifier"
                   ],
@@ -16612,27 +16612,27 @@ window.PHASE1_PORTAL_DATA = {
                   ],
                   [
                     "M3120",
-                    "2027-12-20",
+                    "2028-01-03",
                     "OFCI Long-Lead Equipment Delivery Buffer (+200d Lead)"
                   ],
                   [
                     "M4350",
-                    "2028-12-25",
+                    "2029-02-12",
                     "Core & Shell Weather-Tight Envelope Complete"
                   ],
                   [
                     "M5595",
-                    "2029-07-30",
+                    "2029-09-24",
                     "MEP Pre-Energisation Complete \u2014 L3/L4 Cx Handover"
                   ],
                   [
                     "M6470",
-                    "2029-12-24",
-                    "Level 5 36 MW 48-Hr Integrated Systems Test (IST) Complete"
+                    "2030-02-25",
+                    "Level 5 45 MW 48-Hr Integrated Systems Test (IST) Complete"
                   ],
                   [
                     "M7060",
-                    "2030-03-18",
+                    "2030-05-20",
                     "Practical Completion, BCAR CCC & Commercial Operation (COD)"
                   ]
                 ]
@@ -16691,7 +16691,7 @@ window.PHASE1_PORTAL_DATA = {
         "NPV/IRR"
       ],
       "folder": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-04_EUR_Capex_10Yr_DCF_NPV_IRR",
-      "readme": "# PM-04: EUR Capex Modelling, 10-Yr DCF, NPV/IRR & Sensitivity\n\n- **Phase**: `Phase 1: Initiation, Charter & Business Case (RIBA 0-1)`\n- **RIBA Stage**: `RIBA Stage 1`\n- **P6 Milestone Gate**: `M1000 FID`\n- **WBS Scope**: `WBS 1.0-7.0`\n- **Governing Standards**: RICS NRM1, Institutional EUR DCF (WACC 8.5%, CIT 12.5%)\n- **Focus Areas**: Capex EUR/MW, Opex EUR/yr, Tariff EUR/kW/mo, Power EUR/kWh, Unlevered IRR / NPV\n\n## Module Overview\nBuild EUR/MW Capex baselines, colocation yield curves, PUE/energy sensitivity tables, and institutional investment metrics.\n\n## Ordered Flashcard Documents (`Doc 1` -> `Doc 4`)\n\n| Doc | Category | Title | Exact Local File | Companion / Notes |\n| :--- | :--- | :--- | :--- | :--- |\n| Doc 1 | Standard | RICS New Rules of Measurement (NRM1) & Institutional Valuation Standard | `PM04_Doc1_Standard_RICS_Capex_Cost_Standard_Rev.001.docx` | RICS NRM1 / Real Estate Std |\n| Doc 2 | Deliverable | 36 MW Capex Cost Plan (Land, Grid, CSA, MEP, OFCI, Soft Costs & Contingency) | `PM04_Doc2_Deliverable_StageGate_Capex_Budget_Charter_Master_Rev.001.xlsx` | Sheet 6. Stage-Gate Budget |\n| Doc 3 | Template | 10-Year EUR Discounted Cashflow Model (IRR, NPV, Payback & EUR/kW Yield) | `PM04_Doc3_Template_EUR_10Yr_DCF_Model_Master_Rev.001.xlsx` | Sheet 2. EUR 10-Yr DCF |\n| Doc 4 | Audit | Sensitivity & Downside Stress Test Matrix (Power Tariff, PUE & Capex +/-10%) | `PM04_Doc4_Audit_Financial_Sensitivity_Matrix_Rev.001.xlsx` | IC Investment Stress Test |\n\n## Study Takeaway (`Why Each Document Matters`)\n- **Doc 1 (Standard)**: Structure institutional elemental cost planning benchmarked in EUR per MW of IT load.\n- **Doc 2 (Deliverable)**: Break down total development capex across stage-gate funding tranches.\n- **Doc 3 (Template)**: Model multi-year leasing ramp, WACC discounting, opex recovery, and terminal exit value.\n- **Doc 4 (Audit)**: Quantify IRR resilience against construction inflation, grid delays, and energy spikes.\n",
+      "readme": "# PM-04: EUR Capex Modelling, 10-Yr DCF, NPV/IRR & Sensitivity\n\n- **Phase**: `Phase 1: Initiation, Charter & Business Case (RIBA 0-1)`\n- **RIBA Stage**: `RIBA Stage 1`\n- **P6 Milestone Gate**: `M1000 FID`\n- **WBS Scope**: `WBS 1.0-7.0`\n- **Governing Standards**: RICS NRM1, Institutional EUR DCF (WACC 8.5%, CIT 12.5%)\n- **Focus Areas**: Capex EUR/MW, Opex EUR/yr, Tariff EUR/kW/mo, Power EUR/kWh, Unlevered IRR / NPV\n\n## Module Overview\nBuild EUR/MW Capex baselines, colocation yield curves, PUE/energy sensitivity tables, and institutional investment metrics.\n\n## Ordered Flashcard Documents (`Doc 1` -> `Doc 4`)\n\n| Doc | Category | Title | Exact Local File | Companion / Notes |\n| :--- | :--- | :--- | :--- | :--- |\n| Doc 1 | Standard | RICS New Rules of Measurement (NRM1) & Institutional Valuation Standard | `PM04_Doc1_Standard_RICS_New_Rules_of_Measurement_NRM1_Rev.002.docx` | RICS NRM1 / Real Estate Std |\n| Doc 2 | Deliverable | 45 MW Capex Cost Plan (Land, Grid, CSA, MEP, OFCI, Soft Costs & Contingency) | `PM04_Doc2_Deliverable_StageGate_Capex_Budget_Charter_Master_Rev.002.xlsx` | Sheet 6. Stage-Gate Budget |\n| Doc 3 | Template | 10-Year EUR Discounted Cashflow Model (IRR, NPV, Payback & EUR/kW Yield) | `PM04_Doc3_Template_EUR_10Yr_DCF_Model_Master_Rev.002.xlsx` | Sheet 2. EUR 10-Yr DCF |\n| Doc 4 | Audit | Sensitivity & Downside Stress Test Matrix (Power Tariff, PUE & Capex +/-10%) | `PM04_Doc4_Audit_Sensitivity_Downside_Stress_Test_Rev.002.xlsx` | IC Investment Stress Test |\n\n## Study Takeaway (`Why Each Document Matters`)\n- **Doc 1 (Standard)**: Structure institutional elemental cost planning benchmarked in EUR per MW of IT load.\n- **Doc 2 (Deliverable)**: Break down total development capex across stage-gate funding tranches.\n- **Doc 3 (Template)**: Model multi-year leasing ramp, WACC discounting, opex recovery, and terminal exit value.\n- **Doc 4 (Audit)**: Quantify IRR resilience against construction inflation, grid delays, and energy spikes.\n",
       "docs": [
         {
           "docId": "PM-04-D1",
@@ -16700,13 +16700,13 @@ window.PHASE1_PORTAL_DATA = {
           "title": "RICS New Rules of Measurement (NRM1) & Institutional Valuation Standard",
           "ref": "RICS NRM1 / Real Estate Std",
           "why": "Structure institutional elemental cost planning benchmarked in EUR per MW of IT load.",
-          "fileName": "PM04_Doc1_Standard_RICS_Capex_Cost_Standard_Rev.001.docx",
+          "fileName": "PM04_Doc1_Standard_RICS_New_Rules_of_Measurement_NRM1_Rev.002.docx",
           "ext": "DOCX",
-          "downloadUrl": "files/PM-04/PM04_Doc1_Standard_RICS_Capex_Cost_Standard_Rev.001.docx",
-          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-04_EUR_Capex_10Yr_DCF_NPV_IRR\\PM04_Doc1_Standard_RICS_Capex_Cost_Standard_Rev.001.docx",
+          "downloadUrl": "files/PM-04/PM04_Doc1_Standard_RICS_New_Rules_of_Measurement_NRM1_Rev.002.docx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-04_EUR_Capex_10Yr_DCF_NPV_IRR\\PM04_Doc1_Standard_RICS_New_Rules_of_Measurement_NRM1_Rev.002.docx",
           "renderType": "docx",
           "docx": {
-            "fileName": "PM04_Doc1_Standard_RICS_Capex_Cost_Standard_Rev.001.docx",
+            "fileName": "PM04_Doc1_Standard_RICS_New_Rules_of_Measurement_NRM1_Rev.002.docx",
             "blocks": [
               {
                 "type": "banner",
@@ -16717,11 +16717,11 @@ window.PHASE1_PORTAL_DATA = {
                 "rows": [
                   [
                     "Document Control Field",
-                    "DC36-EU Repository Value"
+                    "DC45-EU Repository Value"
                   ],
                   [
                     "ISO 19650 Document Code",
-                    "DC36EU-PM04-DOC1-Rev001"
+                    "DC45EU-PM04-DOC1-Rev002"
                   ],
                   [
                     "Flashcard Module & Stage",
@@ -16729,7 +16729,7 @@ window.PHASE1_PORTAL_DATA = {
                   ],
                   [
                     "P6 Milestone / WBS Anchor",
-                    "M1000 FID | WBS 1.0-7.0 | Live Schedule: 141 Tasks / 209 Links"
+                    "M1000 FID | WBS 1.0-7.0 | Live Schedule: 144 Tasks / 213 Links"
                   ],
                   [
                     "Governing Standards",
@@ -16747,7 +16747,7 @@ window.PHASE1_PORTAL_DATA = {
               },
               {
                 "type": "p",
-                "text": "Portfolio Context: This institutional standard establishes controlled governance, technical compliance rules, and auditable evidence for the 36 MW DC36-EU Hyperscale Data Centre development in Ireland (4 x 9.0 MW data halls, dual 110 kV grid incomers, 16 x 2.5 MVA HVO standby generation with SCR abatement, and EN 50600 Availability Class 3 / Uptime TCCF target). All schedules and resource assumptions synchronize against the master Primavera P6 baseline (DataCenter_36MW_EU_Ireland.xer: M1000 NTP 2027-01-04 through M7060 COD 2030-03-18)."
+                "text": "Portfolio Context: This institutional standard establishes controlled governance, technical compliance rules, and auditable evidence for the 45 MW DC45-EU Hyperscale Data Centre development in Ireland (4 x 9.0 MW data halls, dual 110 kV grid incomers, 16 x 2.5 MVA HVO standby generation with SCR abatement, and EN 50600 Availability Class 3 / Uptime TCCF target). All schedules and resource assumptions synchronize against the master Primavera P6 baseline (DataCenter_45MW_EU_Ireland.xer: M1000 NTP 2027-01-04 through M7060 COD 2030-05-20)."
               },
               {
                 "type": "p",
@@ -16783,7 +16783,7 @@ window.PHASE1_PORTAL_DATA = {
                   [
                     "Item Code",
                     "Control Focus Area",
-                    "DC36-EU Quantitative / Statutory Threshold",
+                    "DC45-EU Quantitative / Statutory Threshold",
                     "Verification Authority"
                   ],
                   [
@@ -16842,27 +16842,27 @@ window.PHASE1_PORTAL_DATA = {
                   ],
                   [
                     "M3120",
-                    "2027-12-20",
+                    "2028-01-03",
                     "OFCI Long-Lead Equipment Delivery Buffer (+200d Lead)"
                   ],
                   [
                     "M4350",
-                    "2028-12-25",
+                    "2029-02-12",
                     "Core & Shell Weather-Tight Envelope Complete"
                   ],
                   [
                     "M5595",
-                    "2029-07-30",
+                    "2029-09-24",
                     "MEP Pre-Energisation Complete \u2014 L3/L4 Cx Handover"
                   ],
                   [
                     "M6470",
-                    "2029-12-24",
-                    "Level 5 36 MW 48-Hr Integrated Systems Test (IST) Complete"
+                    "2030-02-25",
+                    "Level 5 45 MW 48-Hr Integrated Systems Test (IST) Complete"
                   ],
                   [
                     "M7060",
-                    "2030-03-18",
+                    "2030-05-20",
                     "Practical Completion, BCAR CCC & Commercial Operation (COD)"
                   ]
                 ]
@@ -16913,13 +16913,13 @@ window.PHASE1_PORTAL_DATA = {
           "docId": "PM-04-D2",
           "idx0": 1,
           "cat": "Deliverable",
-          "title": "36 MW Capex Cost Plan (Land, Grid, CSA, MEP, OFCI, Soft Costs & Contingency)",
+          "title": "45 MW Capex Cost Plan (Land, Grid, CSA, MEP, OFCI, Soft Costs & Contingency)",
           "ref": "Sheet 6. Stage-Gate Budget",
           "why": "Break down total development capex across stage-gate funding tranches.",
-          "fileName": "PM04_Doc2_Deliverable_StageGate_Capex_Budget_Charter_Master_Rev.001.xlsx",
+          "fileName": "PM04_Doc2_Deliverable_StageGate_Capex_Budget_Charter_Master_Rev.002.xlsx",
           "ext": "XLSX",
-          "downloadUrl": "files/PM-04/PM04_Doc2_Deliverable_StageGate_Capex_Budget_Charter_Master_Rev.001.xlsx",
-          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-04_EUR_Capex_10Yr_DCF_NPV_IRR\\PM04_Doc2_Deliverable_StageGate_Capex_Budget_Charter_Master_Rev.001.xlsx",
+          "downloadUrl": "files/PM-04/PM04_Doc2_Deliverable_StageGate_Capex_Budget_Charter_Master_Rev.002.xlsx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-04_EUR_Capex_10Yr_DCF_NPV_IRR\\PM04_Doc2_Deliverable_StageGate_Capex_Budget_Charter_Master_Rev.002.xlsx",
           "renderType": "xlsx_master",
           "masterKey": "CHARTER",
           "focalSheet": "3. Milestones & Budget"
@@ -16931,10 +16931,10 @@ window.PHASE1_PORTAL_DATA = {
           "title": "10-Year EUR Discounted Cashflow Model (IRR, NPV, Payback & EUR/kW Yield)",
           "ref": "Sheet 2. EUR 10-Yr DCF",
           "why": "Model multi-year leasing ramp, WACC discounting, opex recovery, and terminal exit value.",
-          "fileName": "PM04_Doc3_Template_EUR_10Yr_DCF_Model_Master_Rev.001.xlsx",
+          "fileName": "PM04_Doc3_Template_EUR_10Yr_DCF_Model_Master_Rev.002.xlsx",
           "ext": "XLSX",
-          "downloadUrl": "files/PM-04/PM04_Doc3_Template_EUR_10Yr_DCF_Model_Master_Rev.001.xlsx",
-          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-04_EUR_Capex_10Yr_DCF_NPV_IRR\\PM04_Doc3_Template_EUR_10Yr_DCF_Model_Master_Rev.001.xlsx",
+          "downloadUrl": "files/PM-04/PM04_Doc3_Template_EUR_10Yr_DCF_Model_Master_Rev.002.xlsx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-04_EUR_Capex_10Yr_DCF_NPV_IRR\\PM04_Doc3_Template_EUR_10Yr_DCF_Model_Master_Rev.002.xlsx",
           "renderType": "xlsx_master",
           "masterKey": "CONTROLS",
           "focalSheet": "1. Feasibility & Financial"
@@ -16946,13 +16946,13 @@ window.PHASE1_PORTAL_DATA = {
           "title": "Sensitivity & Downside Stress Test Matrix (Power Tariff, PUE & Capex +/-10%)",
           "ref": "IC Investment Stress Test",
           "why": "Quantify IRR resilience against construction inflation, grid delays, and energy spikes.",
-          "fileName": "PM04_Doc4_Audit_Financial_Sensitivity_Matrix_Rev.001.xlsx",
+          "fileName": "PM04_Doc4_Audit_Sensitivity_Downside_Stress_Test_Rev.002.xlsx",
           "ext": "XLSX",
-          "downloadUrl": "files/PM-04/PM04_Doc4_Audit_Financial_Sensitivity_Matrix_Rev.001.xlsx",
-          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-04_EUR_Capex_10Yr_DCF_NPV_IRR\\PM04_Doc4_Audit_Financial_Sensitivity_Matrix_Rev.001.xlsx",
+          "downloadUrl": "files/PM-04/PM04_Doc4_Audit_Sensitivity_Downside_Stress_Test_Rev.002.xlsx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-04_EUR_Capex_10Yr_DCF_NPV_IRR\\PM04_Doc4_Audit_Sensitivity_Downside_Stress_Test_Rev.002.xlsx",
           "renderType": "xlsx",
           "xlsx": {
-            "fileName": "PM04_Doc4_Audit_Financial_Sensitivity_Matrix_Rev.001.xlsx",
+            "fileName": "PM04_Doc4_Audit_Sensitivity_Downside_Stress_Test_Rev.002.xlsx",
             "sheets": [
               {
                 "name": "1. Stress Test Matrix",
@@ -16960,7 +16960,7 @@ window.PHASE1_PORTAL_DATA = {
                 "rows": [
                   [
                     {
-                      "v": "DC36-EU | Sensitivity & Downside Stress Test Matrix (Power Tariff, PUE & Capex +/-10%)",
+                      "v": "DC45-EU | Sensitivity & Downside Stress Test Matrix (Power Tariff, PUE & Capex +/-10%)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 9,
@@ -17504,7 +17504,7 @@ window.PHASE1_PORTAL_DATA = {
                 "rows": [
                   [
                     {
-                      "v": "DC36-EU | PM-04 DOC 4 \u2014 DOCUMENT CONTROL & XER SYNCHRONIZATION",
+                      "v": "DC45-EU | PM-04 DOC 4 \u2014 DOCUMENT CONTROL & XER SYNCHRONIZATION",
                       "f": "",
                       "rspan": 1,
                       "cspan": 4,
@@ -17559,7 +17559,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "cell"
                     },
                     {
-                      "v": "DC36EU-PM04-DOC4-Rev001",
+                      "v": "DC45EU-PM04-DOC4-Rev002",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -17626,7 +17626,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "cell"
                     },
                     {
-                      "v": "141 Tasks / 209 Links",
+                      "v": "144 Tasks / 213 Links",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -17747,7 +17747,7 @@ window.PHASE1_PORTAL_DATA = {
         "FID"
       ],
       "folder": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-05_RIBA_Stage_Gate_PreNTP_FID",
-      "readme": "# PM-05: RIBA 0-7 Stage-Gate Framework & Pre-NTP FID Package\n\n- **Phase**: `Phase 1: Initiation, Charter & Business Case (RIBA 0-1)`\n- **RIBA Stage**: `RIBA Stages 0-7`\n- **P6 Milestone Gate**: `M1000 -> M7060`\n- **WBS Scope**: `All WBS`\n- **Governing Standards**: RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06\n- **Focus Areas**: LNTP, FNTP, TR-01..TR-06, Gate Freeze, FID Dossier\n\n## Module Overview\nStructure formal Stage-Gate entry/exit criteria leading to Final Investment Decision (FID) and Full Notice to Proceed (NTP).\n\n## Ordered Flashcard Documents (`Doc 1` -> `Doc 4`)\n\n| Doc | Category | Title | Exact Local File | Companion / Notes |\n| :--- | :--- | :--- | :--- | :--- |\n| Doc 1 | Standard | RIBA Plan of Work 2020 (Stages 0-7) Mission-Critical Data Centre Overlay | `PM05_Doc1_Standard_RIBA_0_7_Framework_Guide_Rev.001.docx` | RIBA Plan of Work 2020 |\n| Doc 2 | Deliverable | Final Investment Decision (FID) Board Paper & Pre-NTP Executive Dossier | `PM05_Doc2_Deliverable_FID_PreNTP_Dossier_Controls_Master_Rev.001.xlsx` | Sheet 1. Executive Summary |\n| Doc 3 | Template | Limited Notice to Proceed (LNTP) vs. Full NTP Release Authorization Memo | `PM05_Doc3_Template_LNTP_FNTP_Authorization_Memo_Rev.001.docx` | Pre-NTP Commercial Release |\n| Doc 4 | Audit | Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist | `PM05_Doc4_Audit_Stage_Gate_Exit_Checklist_Rev.001.xlsx` | Gate Review Governance |\n\n## Study Takeaway (`Why Each Document Matters`)\n- **Doc 1 (Standard)**: Align design freezes, statutory consents, and site construction gates cleanly.\n- **Doc 2 (Deliverable)**: Consolidate commercial returns, schedule baseline, and risk readiness for board sign-off.\n- **Doc 3 (Template)**: Commit early enabling works or OEM slots before unconditional full contract execution.\n- **Doc 4 (Audit)**: Verify design maturity, permit status, and funded contingency before unlocking next tranche.\n",
+      "readme": "# PM-05: RIBA 0-7 Stage-Gate Framework & Pre-NTP FID Package\n\n- **Phase**: `Phase 1: Initiation, Charter & Business Case (RIBA 0-1)`\n- **RIBA Stage**: `RIBA Stages 0-7`\n- **P6 Milestone Gate**: `M1000 -> M7060`\n- **WBS Scope**: `All WBS`\n- **Governing Standards**: RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06\n- **Focus Areas**: LNTP, FNTP, TR-01..TR-06, Gate Freeze, FID Dossier\n\n## Module Overview\nStructure formal Stage-Gate entry/exit criteria leading to Final Investment Decision (FID) and Full Notice to Proceed (NTP).\n\n## Ordered Flashcard Documents (`Doc 1` -> `Doc 4`)\n\n| Doc | Category | Title | Exact Local File | Companion / Notes |\n| :--- | :--- | :--- | :--- | :--- |\n| Doc 1 | Standard | RIBA Plan of Work 2020 (Stages 0-7) Mission-Critical Data Centre Overlay | `PM05_Doc1_Standard_RIBA_Plan_of_Work_2020_Stages_0_7_Rev.002.docx` | RIBA Plan of Work 2020 |\n| Doc 2 | Deliverable | Final Investment Decision (FID) Board Paper & Pre-NTP Executive Dossier | `PM05_Doc2_Deliverable_FID_PreNTP_Dossier_Controls_Master_Rev.002.xlsx` | Sheet 1. Executive Summary |\n| Doc 3 | Template | Limited Notice to Proceed (LNTP) vs. Full NTP Release Authorization Memo | `PM05_Doc3_Template_Limited_Notice_to_Proceed_LNTP_vs_Rev.002.docx` | Pre-NTP Commercial Release |\n| Doc 4 | Audit | Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist | `PM05_Doc4_Audit_Stage_Gate_0_to_7_Mandatory_Exit_Rev.002.xlsx` | Gate Review Governance |\n\n## Study Takeaway (`Why Each Document Matters`)\n- **Doc 1 (Standard)**: Align design freezes, statutory consents, and site construction gates cleanly.\n- **Doc 2 (Deliverable)**: Consolidate commercial returns, schedule baseline, and risk readiness for board sign-off.\n- **Doc 3 (Template)**: Commit early enabling works or OEM slots before unconditional full contract execution.\n- **Doc 4 (Audit)**: Verify design maturity, permit status, and funded contingency before unlocking next tranche.\n",
       "docs": [
         {
           "docId": "PM-05-D1",
@@ -17756,13 +17756,13 @@ window.PHASE1_PORTAL_DATA = {
           "title": "RIBA Plan of Work 2020 (Stages 0-7) Mission-Critical Data Centre Overlay",
           "ref": "RIBA Plan of Work 2020",
           "why": "Align design freezes, statutory consents, and site construction gates cleanly.",
-          "fileName": "PM05_Doc1_Standard_RIBA_0_7_Framework_Guide_Rev.001.docx",
+          "fileName": "PM05_Doc1_Standard_RIBA_Plan_of_Work_2020_Stages_0_7_Rev.002.docx",
           "ext": "DOCX",
-          "downloadUrl": "files/PM-05/PM05_Doc1_Standard_RIBA_0_7_Framework_Guide_Rev.001.docx",
-          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-05_RIBA_Stage_Gate_PreNTP_FID\\PM05_Doc1_Standard_RIBA_0_7_Framework_Guide_Rev.001.docx",
+          "downloadUrl": "files/PM-05/PM05_Doc1_Standard_RIBA_Plan_of_Work_2020_Stages_0_7_Rev.002.docx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-05_RIBA_Stage_Gate_PreNTP_FID\\PM05_Doc1_Standard_RIBA_Plan_of_Work_2020_Stages_0_7_Rev.002.docx",
           "renderType": "docx",
           "docx": {
-            "fileName": "PM05_Doc1_Standard_RIBA_0_7_Framework_Guide_Rev.001.docx",
+            "fileName": "PM05_Doc1_Standard_RIBA_Plan_of_Work_2020_Stages_0_7_Rev.002.docx",
             "blocks": [
               {
                 "type": "banner",
@@ -17773,11 +17773,11 @@ window.PHASE1_PORTAL_DATA = {
                 "rows": [
                   [
                     "Document Control Field",
-                    "DC36-EU Repository Value"
+                    "DC45-EU Repository Value"
                   ],
                   [
                     "ISO 19650 Document Code",
-                    "DC36EU-PM05-DOC1-Rev001"
+                    "DC45EU-PM05-DOC1-Rev002"
                   ],
                   [
                     "Flashcard Module & Stage",
@@ -17785,7 +17785,7 @@ window.PHASE1_PORTAL_DATA = {
                   ],
                   [
                     "P6 Milestone / WBS Anchor",
-                    "M1000 -> M7060 | All WBS | Live Schedule: 141 Tasks / 209 Links"
+                    "M1000 -> M7060 | All WBS | Live Schedule: 144 Tasks / 213 Links"
                   ],
                   [
                     "Governing Standards",
@@ -17803,7 +17803,7 @@ window.PHASE1_PORTAL_DATA = {
               },
               {
                 "type": "p",
-                "text": "Portfolio Context: This institutional standard establishes controlled governance, technical compliance rules, and auditable evidence for the 36 MW DC36-EU Hyperscale Data Centre development in Ireland (4 x 9.0 MW data halls, dual 110 kV grid incomers, 16 x 2.5 MVA HVO standby generation with SCR abatement, and EN 50600 Availability Class 3 / Uptime TCCF target). All schedules and resource assumptions synchronize against the master Primavera P6 baseline (DataCenter_36MW_EU_Ireland.xer: M1000 NTP 2027-01-04 through M7060 COD 2030-03-18)."
+                "text": "Portfolio Context: This institutional standard establishes controlled governance, technical compliance rules, and auditable evidence for the 45 MW DC45-EU Hyperscale Data Centre development in Ireland (4 x 9.0 MW data halls, dual 110 kV grid incomers, 16 x 2.5 MVA HVO standby generation with SCR abatement, and EN 50600 Availability Class 3 / Uptime TCCF target). All schedules and resource assumptions synchronize against the master Primavera P6 baseline (DataCenter_45MW_EU_Ireland.xer: M1000 NTP 2027-01-04 through M7060 COD 2030-05-20)."
               },
               {
                 "type": "p",
@@ -17835,7 +17835,7 @@ window.PHASE1_PORTAL_DATA = {
                   [
                     "Item Code",
                     "Control Focus Area",
-                    "DC36-EU Quantitative / Statutory Threshold",
+                    "DC45-EU Quantitative / Statutory Threshold",
                     "Verification Authority"
                   ],
                   [
@@ -17894,27 +17894,27 @@ window.PHASE1_PORTAL_DATA = {
                   ],
                   [
                     "M3120",
-                    "2027-12-20",
+                    "2028-01-03",
                     "OFCI Long-Lead Equipment Delivery Buffer (+200d Lead)"
                   ],
                   [
                     "M4350",
-                    "2028-12-25",
+                    "2029-02-12",
                     "Core & Shell Weather-Tight Envelope Complete"
                   ],
                   [
                     "M5595",
-                    "2029-07-30",
+                    "2029-09-24",
                     "MEP Pre-Energisation Complete \u2014 L3/L4 Cx Handover"
                   ],
                   [
                     "M6470",
-                    "2029-12-24",
-                    "Level 5 36 MW 48-Hr Integrated Systems Test (IST) Complete"
+                    "2030-02-25",
+                    "Level 5 45 MW 48-Hr Integrated Systems Test (IST) Complete"
                   ],
                   [
                     "M7060",
-                    "2030-03-18",
+                    "2030-05-20",
                     "Practical Completion, BCAR CCC & Commercial Operation (COD)"
                   ]
                 ]
@@ -17968,10 +17968,10 @@ window.PHASE1_PORTAL_DATA = {
           "title": "Final Investment Decision (FID) Board Paper & Pre-NTP Executive Dossier",
           "ref": "Sheet 1. Executive Summary",
           "why": "Consolidate commercial returns, schedule baseline, and risk readiness for board sign-off.",
-          "fileName": "PM05_Doc2_Deliverable_FID_PreNTP_Dossier_Controls_Master_Rev.001.xlsx",
+          "fileName": "PM05_Doc2_Deliverable_FID_PreNTP_Dossier_Controls_Master_Rev.002.xlsx",
           "ext": "XLSX",
-          "downloadUrl": "files/PM-05/PM05_Doc2_Deliverable_FID_PreNTP_Dossier_Controls_Master_Rev.001.xlsx",
-          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-05_RIBA_Stage_Gate_PreNTP_FID\\PM05_Doc2_Deliverable_FID_PreNTP_Dossier_Controls_Master_Rev.001.xlsx",
+          "downloadUrl": "files/PM-05/PM05_Doc2_Deliverable_FID_PreNTP_Dossier_Controls_Master_Rev.002.xlsx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-05_RIBA_Stage_Gate_PreNTP_FID\\PM05_Doc2_Deliverable_FID_PreNTP_Dossier_Controls_Master_Rev.002.xlsx",
           "renderType": "xlsx_master",
           "masterKey": "CONTROLS",
           "focalSheet": "1. Feasibility & Financial"
@@ -17983,13 +17983,13 @@ window.PHASE1_PORTAL_DATA = {
           "title": "Limited Notice to Proceed (LNTP) vs. Full NTP Release Authorization Memo",
           "ref": "Pre-NTP Commercial Release",
           "why": "Commit early enabling works or OEM slots before unconditional full contract execution.",
-          "fileName": "PM05_Doc3_Template_LNTP_FNTP_Authorization_Memo_Rev.001.docx",
+          "fileName": "PM05_Doc3_Template_Limited_Notice_to_Proceed_LNTP_vs_Rev.002.docx",
           "ext": "DOCX",
-          "downloadUrl": "files/PM-05/PM05_Doc3_Template_LNTP_FNTP_Authorization_Memo_Rev.001.docx",
-          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-05_RIBA_Stage_Gate_PreNTP_FID\\PM05_Doc3_Template_LNTP_FNTP_Authorization_Memo_Rev.001.docx",
+          "downloadUrl": "files/PM-05/PM05_Doc3_Template_Limited_Notice_to_Proceed_LNTP_vs_Rev.002.docx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-05_RIBA_Stage_Gate_PreNTP_FID\\PM05_Doc3_Template_Limited_Notice_to_Proceed_LNTP_vs_Rev.002.docx",
           "renderType": "docx",
           "docx": {
-            "fileName": "PM05_Doc3_Template_LNTP_FNTP_Authorization_Memo_Rev.001.docx",
+            "fileName": "PM05_Doc3_Template_Limited_Notice_to_Proceed_LNTP_vs_Rev.002.docx",
             "blocks": [
               {
                 "type": "banner",
@@ -18000,11 +18000,11 @@ window.PHASE1_PORTAL_DATA = {
                 "rows": [
                   [
                     "Document Control Field",
-                    "DC36-EU Repository Value"
+                    "DC45-EU Repository Value"
                   ],
                   [
                     "ISO 19650 Document Code",
-                    "DC36EU-PM05-DOC3-Rev001"
+                    "DC45EU-PM05-DOC3-Rev002"
                   ],
                   [
                     "Flashcard Module & Stage",
@@ -18012,7 +18012,7 @@ window.PHASE1_PORTAL_DATA = {
                   ],
                   [
                     "P6 Milestone / WBS Anchor",
-                    "M1000 -> M7060 | All WBS | Live Schedule: 141 Tasks / 209 Links"
+                    "M1000 -> M7060 | All WBS | Live Schedule: 144 Tasks / 213 Links"
                   ],
                   [
                     "Governing Standards",
@@ -18030,7 +18030,7 @@ window.PHASE1_PORTAL_DATA = {
               },
               {
                 "type": "p",
-                "text": "Portfolio Context: This institutional template establishes controlled governance, technical compliance rules, and auditable evidence for the 36 MW DC36-EU Hyperscale Data Centre development in Ireland (4 x 9.0 MW data halls, dual 110 kV grid incomers, 16 x 2.5 MVA HVO standby generation with SCR abatement, and EN 50600 Availability Class 3 / Uptime TCCF target). All schedules and resource assumptions synchronize against the master Primavera P6 baseline (DataCenter_36MW_EU_Ireland.xer: M1000 NTP 2027-01-04 through M7060 COD 2030-03-18)."
+                "text": "Portfolio Context: This institutional template establishes controlled governance, technical compliance rules, and auditable evidence for the 45 MW DC45-EU Hyperscale Data Centre development in Ireland (4 x 9.0 MW data halls, dual 110 kV grid incomers, 16 x 2.5 MVA HVO standby generation with SCR abatement, and EN 50600 Availability Class 3 / Uptime TCCF target). All schedules and resource assumptions synchronize against the master Primavera P6 baseline (DataCenter_45MW_EU_Ireland.xer: M1000 NTP 2027-01-04 through M7060 COD 2030-05-20)."
               },
               {
                 "type": "p",
@@ -18062,7 +18062,7 @@ window.PHASE1_PORTAL_DATA = {
                   [
                     "Item Code",
                     "Control Focus Area",
-                    "DC36-EU Quantitative / Statutory Threshold",
+                    "DC45-EU Quantitative / Statutory Threshold",
                     "Verification Authority"
                   ],
                   [
@@ -18121,27 +18121,27 @@ window.PHASE1_PORTAL_DATA = {
                   ],
                   [
                     "M3120",
-                    "2027-12-20",
+                    "2028-01-03",
                     "OFCI Long-Lead Equipment Delivery Buffer (+200d Lead)"
                   ],
                   [
                     "M4350",
-                    "2028-12-25",
+                    "2029-02-12",
                     "Core & Shell Weather-Tight Envelope Complete"
                   ],
                   [
                     "M5595",
-                    "2029-07-30",
+                    "2029-09-24",
                     "MEP Pre-Energisation Complete \u2014 L3/L4 Cx Handover"
                   ],
                   [
                     "M6470",
-                    "2029-12-24",
-                    "Level 5 36 MW 48-Hr Integrated Systems Test (IST) Complete"
+                    "2030-02-25",
+                    "Level 5 45 MW 48-Hr Integrated Systems Test (IST) Complete"
                   ],
                   [
                     "M7060",
-                    "2030-03-18",
+                    "2030-05-20",
                     "Practical Completion, BCAR CCC & Commercial Operation (COD)"
                   ]
                 ]
@@ -18195,13 +18195,13 @@ window.PHASE1_PORTAL_DATA = {
           "title": "Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist",
           "ref": "Gate Review Governance",
           "why": "Verify design maturity, permit status, and funded contingency before unlocking next tranche.",
-          "fileName": "PM05_Doc4_Audit_Stage_Gate_Exit_Checklist_Rev.001.xlsx",
+          "fileName": "PM05_Doc4_Audit_Stage_Gate_0_to_7_Mandatory_Exit_Rev.002.xlsx",
           "ext": "XLSX",
-          "downloadUrl": "files/PM-05/PM05_Doc4_Audit_Stage_Gate_Exit_Checklist_Rev.001.xlsx",
-          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-05_RIBA_Stage_Gate_PreNTP_FID\\PM05_Doc4_Audit_Stage_Gate_Exit_Checklist_Rev.001.xlsx",
+          "downloadUrl": "files/PM-05/PM05_Doc4_Audit_Stage_Gate_0_to_7_Mandatory_Exit_Rev.002.xlsx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-05_RIBA_Stage_Gate_PreNTP_FID\\PM05_Doc4_Audit_Stage_Gate_0_to_7_Mandatory_Exit_Rev.002.xlsx",
           "renderType": "xlsx",
           "xlsx": {
-            "fileName": "PM05_Doc4_Audit_Stage_Gate_Exit_Checklist_Rev.001.xlsx",
+            "fileName": "PM05_Doc4_Audit_Stage_Gate_0_to_7_Mandatory_Exit_Rev.002.xlsx",
             "sheets": [
               {
                 "name": "1. Compliance Audit",
@@ -18209,7 +18209,7 @@ window.PHASE1_PORTAL_DATA = {
                 "rows": [
                   [
                     {
-                      "v": "DC36-EU | Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist",
+                      "v": "DC45-EU | Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist",
                       "f": "",
                       "rspan": 1,
                       "cspan": 6,
@@ -18893,7 +18893,7 @@ window.PHASE1_PORTAL_DATA = {
                 "rows": [
                   [
                     {
-                      "v": "DC36-EU | PM-05 DOC 4 \u2014 DOCUMENT CONTROL & XER SYNCHRONIZATION",
+                      "v": "DC45-EU | PM-05 DOC 4 \u2014 DOCUMENT CONTROL & XER SYNCHRONIZATION",
                       "f": "",
                       "rspan": 1,
                       "cspan": 4,
@@ -18948,7 +18948,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "cell"
                     },
                     {
-                      "v": "DC36EU-PM05-DOC4-Rev001",
+                      "v": "DC45EU-PM05-DOC4-Rev002",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -19015,7 +19015,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "cell"
                     },
                     {
-                      "v": "141 Tasks / 209 Links",
+                      "v": "144 Tasks / 213 Links",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -19135,7 +19135,7 @@ window.PHASE1_PORTAL_DATA = {
         "Comms Plan"
       ],
       "folder": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-06_Stakeholder_Engagement_Escalation",
-      "readme": "# PM-06: Stakeholder Register, Engagement & Escalation Plan\n\n- **Phase**: `Phase 1: Initiation, Charter & Business Case (RIBA 0-1)`\n- **RIBA Stage**: `RIBA Stage 1-7`\n- **P6 Milestone Gate**: `M1000 / M1090`\n- **WBS Scope**: `WBS 1.0 & 7.0`\n- **Governing Standards**: ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA\n- **Focus Areas**: Local Authority / ABP, EPA IEL, EirGrid / CRU, BCMS / Fire Officer, Anchor Tenant\n\n## Module Overview\nMap internal sponsors, hyperscale tenants, EPCm leads, local communities, and utility/certifier touchpoints across phases.\n\n## Ordered Flashcard Documents (`Doc 1` -> `Doc 4`)\n\n| Doc | Category | Title | Exact Local File | Companion / Notes |\n| :--- | :--- | :--- | :--- | :--- |\n| Doc 1 | Standard | ISO 21502 Guidance on Project Management \u2014 Stakeholder Engagement | `PM06_Doc1_Standard_Stakeholder_Mgmt_Standard_Rev.001.docx` | ISO 21502 / PMI Stakeholder |\n| Doc 2 | Deliverable | Project Communications Management Plan & Weekly/Monthly Cadence Matrix | `PM06_Doc2_Deliverable_Comms_Management_Plan_Rev.001.docx` | Reporting Governance |\n| Doc 3 | Template | Stakeholder Register & Power/Interest Matrix (Investors, Tenants, TSO, Public) | `PM06_Doc3_Template_Stakeholder_Register_Charter_Master_Rev.001.xlsx` | Sheet 3. Stakeholders |\n| Doc 4 | Audit | Executive Issue Escalation Flowchart & Decision Turnaround SLA Log | `PM06_Doc4_Audit_Escalation_Protocol_Log_Rev.001.xlsx` | Decision Turnaround SLA |\n\n## Study Takeaway (`Why Each Document Matters`)\n- **Doc 1 (Standard)**: Apply structured identification, cadence tailoring, and alignment feedback loops.\n- **Doc 2 (Deliverable)**: Establish predictable reporting rhythm across lenders, tenants, TSO, and site teams.\n- **Doc 3 (Template)**: Classify influence vs. interest for every internal executive and Irish statutory body.\n- **Doc 4 (Audit)**: Enforce time-boxed escalation paths so critical-path blockers never stall in committees.\n",
+      "readme": "# PM-06: Stakeholder Register, Engagement & Escalation Plan\n\n- **Phase**: `Phase 1: Initiation, Charter & Business Case (RIBA 0-1)`\n- **RIBA Stage**: `RIBA Stage 1-7`\n- **P6 Milestone Gate**: `M1000 / M1090`\n- **WBS Scope**: `WBS 1.0 & 7.0`\n- **Governing Standards**: ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA\n- **Focus Areas**: Local Authority / ABP, EPA IEL, EirGrid / CRU, BCMS / Fire Officer, Anchor Tenant\n\n## Module Overview\nMap internal sponsors, hyperscale tenants, EPCm leads, local communities, and utility/certifier touchpoints across phases.\n\n## Ordered Flashcard Documents (`Doc 1` -> `Doc 4`)\n\n| Doc | Category | Title | Exact Local File | Companion / Notes |\n| :--- | :--- | :--- | :--- | :--- |\n| Doc 1 | Standard | ISO 21502 Guidance on Project Management \u2014 Stakeholder Engagement | `PM06_Doc1_Standard_ISO_21502_Guidance_on_Project_Rev.002.docx` | ISO 21502 / PMI Stakeholder |\n| Doc 2 | Deliverable | Project Communications Management Plan & Weekly/Monthly Cadence Matrix | `PM06_Doc2_Deliverable_Project_Communications_Management_Rev.002.docx` | Reporting Governance |\n| Doc 3 | Template | Stakeholder Register & Power/Interest Matrix (Investors, Tenants, TSO, Public) | `PM06_Doc3_Template_Stakeholder_Register_Charter_Master_Rev.002.xlsx` | Sheet 3. Stakeholders |\n| Doc 4 | Audit | Executive Issue Escalation Flowchart & Decision Turnaround SLA Log | `PM06_Doc4_Audit_Executive_Issue_Escalation_Rev.002.xlsx` | Decision Turnaround SLA |\n\n## Study Takeaway (`Why Each Document Matters`)\n- **Doc 1 (Standard)**: Apply structured identification, cadence tailoring, and alignment feedback loops.\n- **Doc 2 (Deliverable)**: Establish predictable reporting rhythm across lenders, tenants, TSO, and site teams.\n- **Doc 3 (Template)**: Classify influence vs. interest for every internal executive and Irish statutory body.\n- **Doc 4 (Audit)**: Enforce time-boxed escalation paths so critical-path blockers never stall in committees.\n",
       "docs": [
         {
           "docId": "PM-06-D1",
@@ -19144,13 +19144,13 @@ window.PHASE1_PORTAL_DATA = {
           "title": "ISO 21502 Guidance on Project Management \u2014 Stakeholder Engagement",
           "ref": "ISO 21502 / PMI Stakeholder",
           "why": "Apply structured identification, cadence tailoring, and alignment feedback loops.",
-          "fileName": "PM06_Doc1_Standard_Stakeholder_Mgmt_Standard_Rev.001.docx",
+          "fileName": "PM06_Doc1_Standard_ISO_21502_Guidance_on_Project_Rev.002.docx",
           "ext": "DOCX",
-          "downloadUrl": "files/PM-06/PM06_Doc1_Standard_Stakeholder_Mgmt_Standard_Rev.001.docx",
-          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-06_Stakeholder_Engagement_Escalation\\PM06_Doc1_Standard_Stakeholder_Mgmt_Standard_Rev.001.docx",
+          "downloadUrl": "files/PM-06/PM06_Doc1_Standard_ISO_21502_Guidance_on_Project_Rev.002.docx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-06_Stakeholder_Engagement_Escalation\\PM06_Doc1_Standard_ISO_21502_Guidance_on_Project_Rev.002.docx",
           "renderType": "docx",
           "docx": {
-            "fileName": "PM06_Doc1_Standard_Stakeholder_Mgmt_Standard_Rev.001.docx",
+            "fileName": "PM06_Doc1_Standard_ISO_21502_Guidance_on_Project_Rev.002.docx",
             "blocks": [
               {
                 "type": "banner",
@@ -19161,11 +19161,11 @@ window.PHASE1_PORTAL_DATA = {
                 "rows": [
                   [
                     "Document Control Field",
-                    "DC36-EU Repository Value"
+                    "DC45-EU Repository Value"
                   ],
                   [
                     "ISO 19650 Document Code",
-                    "DC36EU-PM06-DOC1-Rev001"
+                    "DC45EU-PM06-DOC1-Rev002"
                   ],
                   [
                     "Flashcard Module & Stage",
@@ -19173,7 +19173,7 @@ window.PHASE1_PORTAL_DATA = {
                   ],
                   [
                     "P6 Milestone / WBS Anchor",
-                    "M1000 / M1090 | WBS 1.0 & 7.0 | Live Schedule: 141 Tasks / 209 Links"
+                    "M1000 / M1090 | WBS 1.0 & 7.0 | Live Schedule: 144 Tasks / 213 Links"
                   ],
                   [
                     "Governing Standards",
@@ -19191,7 +19191,7 @@ window.PHASE1_PORTAL_DATA = {
               },
               {
                 "type": "p",
-                "text": "Portfolio Context: This institutional standard establishes controlled governance, technical compliance rules, and auditable evidence for the 36 MW DC36-EU Hyperscale Data Centre development in Ireland (4 x 9.0 MW data halls, dual 110 kV grid incomers, 16 x 2.5 MVA HVO standby generation with SCR abatement, and EN 50600 Availability Class 3 / Uptime TCCF target). All schedules and resource assumptions synchronize against the master Primavera P6 baseline (DataCenter_36MW_EU_Ireland.xer: M1000 NTP 2027-01-04 through M7060 COD 2030-03-18)."
+                "text": "Portfolio Context: This institutional standard establishes controlled governance, technical compliance rules, and auditable evidence for the 45 MW DC45-EU Hyperscale Data Centre development in Ireland (4 x 9.0 MW data halls, dual 110 kV grid incomers, 16 x 2.5 MVA HVO standby generation with SCR abatement, and EN 50600 Availability Class 3 / Uptime TCCF target). All schedules and resource assumptions synchronize against the master Primavera P6 baseline (DataCenter_45MW_EU_Ireland.xer: M1000 NTP 2027-01-04 through M7060 COD 2030-05-20)."
               },
               {
                 "type": "p",
@@ -19239,7 +19239,7 @@ window.PHASE1_PORTAL_DATA = {
                   [
                     "Item Code",
                     "Control Focus Area",
-                    "DC36-EU Quantitative / Statutory Threshold",
+                    "DC45-EU Quantitative / Statutory Threshold",
                     "Verification Authority"
                   ],
                   [
@@ -19298,27 +19298,27 @@ window.PHASE1_PORTAL_DATA = {
                   ],
                   [
                     "M3120",
-                    "2027-12-20",
+                    "2028-01-03",
                     "OFCI Long-Lead Equipment Delivery Buffer (+200d Lead)"
                   ],
                   [
                     "M4350",
-                    "2028-12-25",
+                    "2029-02-12",
                     "Core & Shell Weather-Tight Envelope Complete"
                   ],
                   [
                     "M5595",
-                    "2029-07-30",
+                    "2029-09-24",
                     "MEP Pre-Energisation Complete \u2014 L3/L4 Cx Handover"
                   ],
                   [
                     "M6470",
-                    "2029-12-24",
-                    "Level 5 36 MW 48-Hr Integrated Systems Test (IST) Complete"
+                    "2030-02-25",
+                    "Level 5 45 MW 48-Hr Integrated Systems Test (IST) Complete"
                   ],
                   [
                     "M7060",
-                    "2030-03-18",
+                    "2030-05-20",
                     "Practical Completion, BCAR CCC & Commercial Operation (COD)"
                   ]
                 ]
@@ -19372,13 +19372,13 @@ window.PHASE1_PORTAL_DATA = {
           "title": "Project Communications Management Plan & Weekly/Monthly Cadence Matrix",
           "ref": "Reporting Governance",
           "why": "Establish predictable reporting rhythm across lenders, tenants, TSO, and site teams.",
-          "fileName": "PM06_Doc2_Deliverable_Comms_Management_Plan_Rev.001.docx",
+          "fileName": "PM06_Doc2_Deliverable_Project_Communications_Management_Rev.002.docx",
           "ext": "DOCX",
-          "downloadUrl": "files/PM-06/PM06_Doc2_Deliverable_Comms_Management_Plan_Rev.001.docx",
-          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-06_Stakeholder_Engagement_Escalation\\PM06_Doc2_Deliverable_Comms_Management_Plan_Rev.001.docx",
+          "downloadUrl": "files/PM-06/PM06_Doc2_Deliverable_Project_Communications_Management_Rev.002.docx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-06_Stakeholder_Engagement_Escalation\\PM06_Doc2_Deliverable_Project_Communications_Management_Rev.002.docx",
           "renderType": "docx",
           "docx": {
-            "fileName": "PM06_Doc2_Deliverable_Comms_Management_Plan_Rev.001.docx",
+            "fileName": "PM06_Doc2_Deliverable_Project_Communications_Management_Rev.002.docx",
             "blocks": [
               {
                 "type": "banner",
@@ -19389,11 +19389,11 @@ window.PHASE1_PORTAL_DATA = {
                 "rows": [
                   [
                     "Document Control Field",
-                    "DC36-EU Repository Value"
+                    "DC45-EU Repository Value"
                   ],
                   [
                     "ISO 19650 Document Code",
-                    "DC36EU-PM06-DOC2-Rev001"
+                    "DC45EU-PM06-DOC2-Rev002"
                   ],
                   [
                     "Flashcard Module & Stage",
@@ -19401,7 +19401,7 @@ window.PHASE1_PORTAL_DATA = {
                   ],
                   [
                     "P6 Milestone / WBS Anchor",
-                    "M1000 / M1090 | WBS 1.0 & 7.0 | Live Schedule: 141 Tasks / 209 Links"
+                    "M1000 / M1090 | WBS 1.0 & 7.0 | Live Schedule: 144 Tasks / 213 Links"
                   ],
                   [
                     "Governing Standards",
@@ -19419,7 +19419,7 @@ window.PHASE1_PORTAL_DATA = {
               },
               {
                 "type": "p",
-                "text": "Portfolio Context: This institutional deliverable establishes controlled governance, technical compliance rules, and auditable evidence for the 36 MW DC36-EU Hyperscale Data Centre development in Ireland (4 x 9.0 MW data halls, dual 110 kV grid incomers, 16 x 2.5 MVA HVO standby generation with SCR abatement, and EN 50600 Availability Class 3 / Uptime TCCF target). All schedules and resource assumptions synchronize against the master Primavera P6 baseline (DataCenter_36MW_EU_Ireland.xer: M1000 NTP 2027-01-04 through M7060 COD 2030-03-18)."
+                "text": "Portfolio Context: This institutional deliverable establishes controlled governance, technical compliance rules, and auditable evidence for the 45 MW DC45-EU Hyperscale Data Centre development in Ireland (4 x 9.0 MW data halls, dual 110 kV grid incomers, 16 x 2.5 MVA HVO standby generation with SCR abatement, and EN 50600 Availability Class 3 / Uptime TCCF target). All schedules and resource assumptions synchronize against the master Primavera P6 baseline (DataCenter_45MW_EU_Ireland.xer: M1000 NTP 2027-01-04 through M7060 COD 2030-05-20)."
               },
               {
                 "type": "p",
@@ -19467,7 +19467,7 @@ window.PHASE1_PORTAL_DATA = {
                   [
                     "Item Code",
                     "Control Focus Area",
-                    "DC36-EU Quantitative / Statutory Threshold",
+                    "DC45-EU Quantitative / Statutory Threshold",
                     "Verification Authority"
                   ],
                   [
@@ -19526,27 +19526,27 @@ window.PHASE1_PORTAL_DATA = {
                   ],
                   [
                     "M3120",
-                    "2027-12-20",
+                    "2028-01-03",
                     "OFCI Long-Lead Equipment Delivery Buffer (+200d Lead)"
                   ],
                   [
                     "M4350",
-                    "2028-12-25",
+                    "2029-02-12",
                     "Core & Shell Weather-Tight Envelope Complete"
                   ],
                   [
                     "M5595",
-                    "2029-07-30",
+                    "2029-09-24",
                     "MEP Pre-Energisation Complete \u2014 L3/L4 Cx Handover"
                   ],
                   [
                     "M6470",
-                    "2029-12-24",
-                    "Level 5 36 MW 48-Hr Integrated Systems Test (IST) Complete"
+                    "2030-02-25",
+                    "Level 5 45 MW 48-Hr Integrated Systems Test (IST) Complete"
                   ],
                   [
                     "M7060",
-                    "2030-03-18",
+                    "2030-05-20",
                     "Practical Completion, BCAR CCC & Commercial Operation (COD)"
                   ]
                 ]
@@ -19600,10 +19600,10 @@ window.PHASE1_PORTAL_DATA = {
           "title": "Stakeholder Register & Power/Interest Matrix (Investors, Tenants, TSO, Public)",
           "ref": "Sheet 3. Stakeholders",
           "why": "Classify influence vs. interest for every internal executive and Irish statutory body.",
-          "fileName": "PM06_Doc3_Template_Stakeholder_Register_Charter_Master_Rev.001.xlsx",
+          "fileName": "PM06_Doc3_Template_Stakeholder_Register_Charter_Master_Rev.002.xlsx",
           "ext": "XLSX",
-          "downloadUrl": "files/PM-06/PM06_Doc3_Template_Stakeholder_Register_Charter_Master_Rev.001.xlsx",
-          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-06_Stakeholder_Engagement_Escalation\\PM06_Doc3_Template_Stakeholder_Register_Charter_Master_Rev.001.xlsx",
+          "downloadUrl": "files/PM-06/PM06_Doc3_Template_Stakeholder_Register_Charter_Master_Rev.002.xlsx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-06_Stakeholder_Engagement_Escalation\\PM06_Doc3_Template_Stakeholder_Register_Charter_Master_Rev.002.xlsx",
           "renderType": "xlsx_master",
           "masterKey": "CHARTER",
           "focalSheet": "4. Governance & Organization"
@@ -19615,13 +19615,13 @@ window.PHASE1_PORTAL_DATA = {
           "title": "Executive Issue Escalation Flowchart & Decision Turnaround SLA Log",
           "ref": "Decision Turnaround SLA",
           "why": "Enforce time-boxed escalation paths so critical-path blockers never stall in committees.",
-          "fileName": "PM06_Doc4_Audit_Escalation_Protocol_Log_Rev.001.xlsx",
+          "fileName": "PM06_Doc4_Audit_Executive_Issue_Escalation_Rev.002.xlsx",
           "ext": "XLSX",
-          "downloadUrl": "files/PM-06/PM06_Doc4_Audit_Escalation_Protocol_Log_Rev.001.xlsx",
-          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-06_Stakeholder_Engagement_Escalation\\PM06_Doc4_Audit_Escalation_Protocol_Log_Rev.001.xlsx",
+          "downloadUrl": "files/PM-06/PM06_Doc4_Audit_Executive_Issue_Escalation_Rev.002.xlsx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-06_Stakeholder_Engagement_Escalation\\PM06_Doc4_Audit_Executive_Issue_Escalation_Rev.002.xlsx",
           "renderType": "xlsx",
           "xlsx": {
-            "fileName": "PM06_Doc4_Audit_Escalation_Protocol_Log_Rev.001.xlsx",
+            "fileName": "PM06_Doc4_Audit_Executive_Issue_Escalation_Rev.002.xlsx",
             "sheets": [
               {
                 "name": "1. Compliance Audit",
@@ -19629,7 +19629,7 @@ window.PHASE1_PORTAL_DATA = {
                 "rows": [
                   [
                     {
-                      "v": "DC36-EU | Executive Issue Escalation Flowchart & Decision Turnaround SLA Log",
+                      "v": "DC45-EU | Executive Issue Escalation Flowchart & Decision Turnaround SLA Log",
                       "f": "",
                       "rspan": 1,
                       "cspan": 6,
@@ -20313,7 +20313,7 @@ window.PHASE1_PORTAL_DATA = {
                 "rows": [
                   [
                     {
-                      "v": "DC36-EU | PM-06 DOC 4 \u2014 DOCUMENT CONTROL & XER SYNCHRONIZATION",
+                      "v": "DC45-EU | PM-06 DOC 4 \u2014 DOCUMENT CONTROL & XER SYNCHRONIZATION",
                       "f": "",
                       "rspan": 1,
                       "cspan": 4,
@@ -20368,7 +20368,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "cell"
                     },
                     {
-                      "v": "DC36EU-PM06-DOC4-Rev001",
+                      "v": "DC45EU-PM06-DOC4-Rev002",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
@@ -20435,7 +20435,7 @@ window.PHASE1_PORTAL_DATA = {
                       "kind": "cell"
                     },
                     {
-                      "v": "141 Tasks / 209 Links",
+                      "v": "144 Tasks / 213 Links",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
