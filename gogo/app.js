@@ -1452,8 +1452,10 @@ function renderModuleDocsDrawerHtml(m, forceOpen) {
     const copyBtnHtml = d.localPath
       ? `<button type="button" class="btn-copy-path mono" data-copy-path="${escapeHtml(d.localPath)}" data-copy-label="${safeArtifact}" title="Copy full Windows file path">Copy Path</button>`
       : '';
-    const liveReadBtnHtml = m.pillar === 'PM1'
-      ? `<a href="phase1/#${m.id}-D${idx + 1}" class="btn-read-live mono" title="Open full rendered document & download">Read Live</a>`
+    const phaseSlugMap = { PM1: 'phase1', PM2: 'phase2', PM3: 'phase3', PM4: 'phase4', PM5: 'phase5', PM6: 'phase6' };
+    const pSlug = phaseSlugMap[m.pillar] || '';
+    const liveReadBtnHtml = pSlug
+      ? `<a href="${pSlug}/#${m.id}-D${idx + 1}" class="btn-read-live mono" title="Open full rendered document & download">Read Live</a>`
       : '';
     return `
       <li class="module-doc-item ${isChecked ? 'is-done' : ''}" data-doc-row="${k}">
@@ -1596,7 +1598,7 @@ function renderTrackModules(trackName, gridId) {
           <div class="section-title-group">
             <span class="track-badge ${badgeCls}">${p.code}</span>
             <h3 class="section-title">${p.name}</h3>
-            ${p.id === 'PM1' ? '<a href="phase1/index.html" class="btn-read-live mono" style="padding:5px 12px;">Open Phase 1 Live Reader (31 Files)</a>' : ''}
+            ${({ PM1: '<a href="phase1/index.html" class="btn-read-live mono" style="padding:5px 12px;">Open Phase 1 Live Reader (31 Files)</a>', PM2: '<a href="phase2/index.html" class="btn-read-live mono" style="padding:5px 12px;">Open Phase 2 Live Reader (30 Files)</a>', PM3: '<a href="phase3/index.html" class="btn-read-live mono" style="padding:5px 12px;">Open Phase 3 Live Reader (30 Files)</a>', PM4: '<a href="phase4/index.html" class="btn-read-live mono" style="padding:5px 12px;">Open Phase 4 Live Reader (30 Files)</a>', PM5: '<a href="phase5/index.html" class="btn-read-live mono" style="padding:5px 12px;">Open Phase 5 Live Reader (30 Files)</a>', PM6: '<a href="phase6/index.html" class="btn-read-live mono" style="padding:5px 12px;">Open Phase 6 Live Reader (30 Files)</a>' })[p.id] || ''}
           </div>
           <div class="section-stats mono">
             <span>${done}/${allSectionMods.length} Mastered</span>
@@ -2140,284 +2142,93 @@ function renderHistory() {
   }).join('');
 }
 
-const ABBR_DOMAINS = [
-  { id: 'ALL', label: 'All Domains', cls: '' },
-  { id: 'PM & Controls', label: 'PM & Controls', cls: 'abbr-cat-pm' },
-  { id: 'Contracts & Finance', label: 'Contracts & Finance', cls: 'abbr-cat-contracts' },
-  { id: 'IE & EU Statutory', label: 'IE & EU Statutory', cls: 'abbr-cat-statutory' },
-  { id: 'Engineering & MEP', label: 'Engineering & MEP', cls: 'abbr-cat-engineering' },
-  { id: 'Standards', label: 'Standards', cls: 'abbr-cat-standards' },
-  { id: 'Cx, BIM & Ops', label: 'Cx, BIM & Ops', cls: 'abbr-cat-cxbim' },
-  { id: 'Data & Misc', label: 'Data & Misc', cls: 'abbr-cat-data' }
-];
+const ABBR_DOMAINS = window.DC45_ABBR_DOMAINS || [];
+const ABBREVIATIONS = window.DC45_GLOSSARY || [];
 
-const ABBREVIATIONS = [
-  // PM & Controls
-  { abbr: 'AC', full: 'Actual Cost (EVM) / Assigned Certifier (BCAR)', cat: 'PM & Controls', desc: 'Dual meaning: (1) In Earned Value Management, actual money spent/incurred for work performed (`CPI = EV/AC`). (2) Under Irish BCAR, Chartered professional who inspects works and signs the Completion Certificate.', where: 'PM-19, EU-15, SteerCo' },
-  { abbr: 'BAC', full: 'Budget at Completion', cat: 'PM & Controls', desc: 'Total authorized EUR baseline cost budget across WBS 1.0-7.0 before Management Reserve drawdown.', where: 'PM-19, Charter, SteerCo' },
-  { abbr: 'CCB / CRB', full: 'Change Control Board / Change Review Board', cat: 'PM & Controls', desc: 'Tier-2 formal governance panel reviewing changes exceeding the Project Director threshold, critical-path shifts, or statutory specs.', where: 'PM-20, SteerCo' },
-  { abbr: 'CPI', full: 'Cost Performance Index', cat: 'PM & Controls', desc: 'Earned Value efficiency ratio (`EV / AC`). Value `< 1.0` indicates budget overrun; `< 0.92` triggers mandatory SteerCo escalation (`ESC-03`).', where: 'PM-19, PM-20, SteerCo' },
-  { abbr: 'CPM', full: 'Critical Path Method', cat: 'PM & Controls', desc: 'Network scheduling technique identifying longest sequence of dependent activities with zero total float determining project COD.', where: 'PM-08, PM-09, PM-10' },
-  { abbr: 'CR', full: 'Change Request', cat: 'PM & Controls', desc: 'Formal scoped, costed, and schedule-impacted request submitted for Tier-1/2/3 approval against the locked baseline.', where: 'PM-20, SteerCo' },
-  { abbr: 'CV', full: 'Cost Variance', cat: 'PM & Controls', desc: 'EVM variance metric (`EV - AC`) showing under-budget (`> 0`) or over-budget (`< 0`) position in EUR.', where: 'PM-19' },
-  { abbr: 'CWR', full: 'Circular Written Resolution', cat: 'PM & Controls', desc: '72-hour fast-track asynchronous SteerCo voting mechanism used between monthly meetings for NEC4 deadlines or OEM slots.', where: 'PM-01, SteerCo ToR' },
-  { abbr: 'DCMA-14', full: 'Defense Contract Management Agency 14-Point Schedule Assessment', cat: 'PM & Controls', desc: 'Industry benchmark testing P6 schedules for missing logic, leads, negative lags, high float, open ends, and realistic critical path (`6/6 PASS` on `DC45-EU`).', where: 'PM-09, PM-10' },
-  { abbr: 'DoA', full: 'Delegation of Authority', cat: 'PM & Controls', desc: 'Financial and schedule sign-off hierarchy (`Tier 0` to `Tier 3`) separating Project Director authority from CCB and Board approvals.', where: 'PM-01, SteerCo ToR' },
-  { abbr: 'EAC', full: 'Estimate at Completion', cat: 'PM & Controls', desc: 'Projected final EUR project cost based on cumulative performance (`EAC = BAC / CPI`).', where: 'PM-19, PM-20' },
-  { abbr: 'EMV', full: 'Expected Monetary Value', cat: 'PM & Controls', desc: 'Probability-weighted risk reserve quantification (`Probability % x EUR Impact`) driving project contingency sizing.', where: 'PM-21' },
-  { abbr: 'EV', full: 'Earned Value', cat: 'PM & Controls', desc: 'Budgeted EUR value of physical work actually accomplished at the status data date.', where: 'PM-19' },
-  { abbr: 'EVM', full: 'Earned Value Management', cat: 'PM & Controls', desc: 'Integrated cost, schedule, and scope control methodology tying P6 physical progress to `PV`, `EV`, `AC`, `CPI`, and `SPI`.', where: 'PM-19, PM-20' },
-  { abbr: 'EWN', full: 'Early Warning Notice', cat: 'PM & Controls', desc: 'Contractual proactive risk notice (especially NEC4 Clause 15) alerting parties to cost, delay, or performance threats early.', where: 'PM-14, PM-20, SteerCo' },
-  { abbr: 'FID', full: 'Final Investment Decision', cat: 'PM & Controls', desc: 'Board / Investment Committee capital commitment gate (`M1000`) authorizing Notice to Proceed and full construction drawdown.', where: 'PM-04, PM-05, SteerCo' },
-  { abbr: 'FNTP', full: 'Full Notice to Proceed', cat: 'PM & Controls', desc: 'Unconditional written instruction authorizing full-scope design, procurement, and construction.', where: 'PM-05, PM-14' },
-  { abbr: 'KPI', full: 'Key Performance Indicator', cat: 'PM & Controls', desc: 'Quantifiable benchmark measuring delivery health (`CPI`, `SPI`, `LTIFR`, `PPC`, `PUE`, `WUE`, `ERF`).', where: 'PM-01, PM-36' },
-  { abbr: 'LNTP', full: 'Limited Notice to Proceed', cat: 'PM & Controls', desc: 'Capped early authorization allowing design, surveys, or long-lead reservation fees prior to Full NTP.', where: 'PM-05, PM-14' },
-  { abbr: 'LPS', full: 'Last Planner System', cat: 'PM & Controls', desc: 'Lean construction short-interval production control uniting master pull plans, 6-week constraint lookaheads, and weekly work plans.', where: 'PM-23, PM-24' },
-  { abbr: 'MDR', full: 'Master Document Register', cat: 'PM & Controls', desc: 'Central control ledger tracking every project deliverable, ISO 19650 suitability code, revision, author, and approval gate.', where: 'PM-07, PM-11' },
-  { abbr: 'NTP', full: 'Notice to Proceed', cat: 'PM & Controls', desc: 'Formal commencement trigger (`M1000`, `2027-01-04` on `DC45-EU`) starting contractual time clocks.', where: 'PM-01, PM-05' },
-  { abbr: 'OBS', full: 'Organizational Breakdown Structure', cat: 'PM & Controls', desc: 'Hierarchical delivery org chart mapped 1-to-1 against `WBS` Control Accounts to enforce accountability.', where: 'PM-06, PM-07' },
-  { abbr: 'OPR', full: 'Owner\'s Project Requirements', cat: 'PM & Controls', desc: 'Foundational Owner brief defining IT load, availability class, PUE, maintainability, and operational expectations (`ORD`).', where: 'PM-03, PM-25' },
-  { abbr: 'P50 / P80', full: '50th / 80th Percentile Confidence Forecast', cat: 'PM & Controls', desc: 'Monte Carlo QRA output levels representing median (`P50`) and conservative institutional reserve (`P80`) cost/schedule bounds.', where: 'PM-09, PM-21' },
-  { abbr: 'PD / PM', full: 'Project Director / Project Manager', cat: 'PM & Controls', desc: 'Authorized overall delivery leader accountable for schedule, cost, statutory coordination, and Tier-1 change governance.', where: 'PM-01, SteerCo' },
-  { abbr: 'PIP', full: 'Project Implementation Plan', cat: 'PM & Controls', desc: 'Master execution playbook (`DataCenter_45MW_EU_PIP.xlsx`) detailing WBS work packages, contracting, and Cx strategy.', where: 'PM-06, PM-07' },
-  { abbr: 'PMB', full: 'Performance Measurement Baseline', cat: 'PM & Controls', desc: 'Time-phased `PV` curve against which EVM performance (`CPI`/`SPI`) is audited monthly.', where: 'PM-19' },
-  { abbr: 'PMBOK', full: 'Project Management Body of Knowledge', cat: 'PM & Controls', desc: 'PMI flagship reference framework governing project chartering, WBS, EVM, risk, and stakeholder processes.', where: 'PM-01, PM-06' },
-  { abbr: 'PMI', full: 'Project Management Institute', cat: 'PM & Controls', desc: 'Global professional standards body for project management (`PMP`, `PMBOK`, Practice Standard for EVM).', where: 'PM-01, PM-19' },
-  { abbr: 'PMO', full: 'Project Management Office', cat: 'PM & Controls', desc: 'Central governance function standardizing P6 baselines, SteerCo reporting packs, EVM dashboards, and document control.', where: 'PM-23' },
-  { abbr: 'PPC', full: 'Percent Plan Complete', cat: 'PM & Controls', desc: 'Lean metric (`Completed Weekly Tasks / Planned Weekly Tasks`) measuring short-term site execution reliability in LPS.', where: 'PM-23, PM-24' },
-  { abbr: 'PV', full: 'Planned Value', cat: 'PM & Controls', desc: 'Authorized EVM baseline budget scheduled to be earned up to the reporting data date.', where: 'PM-19' },
-  { abbr: 'QRA', full: 'Quantitative Risk Analysis', cat: 'PM & Controls', desc: 'Probabilistic cost and schedule modeling (`Monte Carlo`) used to size risk drawdown contingency (`P50`/`P80`).', where: 'PM-21' },
-  { abbr: 'RACI', full: 'Responsible, Accountable, Consulted, Informed', cat: 'PM & Controls', desc: 'Matrix clarifying single-point accountability (`A`) versus execution (`R`) across Sponsor, EPCm, Contractors, and CxA.', where: 'PM-01' },
-  { abbr: 'RAG', full: 'Red / Amber / Green Status', cat: 'PM & Controls', desc: 'Executive dashboard traffic-light indicator flagging schedule, cost, statutory, or commissioning tolerances.', where: 'PM-20, PM-23' },
-  { abbr: 'SPI', full: 'Schedule Performance Index', cat: 'PM & Controls', desc: 'EVM schedule efficiency ratio (`EV / PV`). Value `< 0.90` on MEP/Cx packages triggers mandatory escalation (`ESC-04`).', where: 'PM-19, SteerCo' },
-  { abbr: 'SPV', full: 'Special Purpose Vehicle', cat: 'PM & Controls', desc: 'Ring-fenced legal entity incorporated to own, finance, build, and operate the single `DC45-EU` facility.', where: 'PM-01, SteerCo' },
-  { abbr: 'SteerCo', full: 'Steering Committee', cat: 'PM & Controls', desc: 'Senior executive governance board holding Stage-Gate funding (`TR-01..TR-06`), BAC, COD, and Tier-2/3 decision authority.', where: 'PM-01, SteerCo' },
-  { abbr: 'SV', full: 'Schedule Variance', cat: 'PM & Controls', desc: 'EVM schedule metric (`EV - PV`) quantifying ahead (`> 0`) or behind (`< 0`) planned value in EUR.', where: 'PM-19' },
-  { abbr: 'TCPI', full: 'To-Complete Performance Index', cat: 'PM & Controls', desc: 'Cost efficiency (`Work Remaining / Funds Remaining`) required to finish on `BAC` or revised `EAC`.', where: 'PM-19' },
-  { abbr: 'ToR', full: 'Terms of Reference', cat: 'PM & Controls', desc: 'Charter document defining SteerCo membership, quorum, voting rules, DoA limits, and escalation duties.', where: 'PM-01' },
-  { abbr: 'VAC', full: 'Variance at Completion', cat: 'PM & Controls', desc: 'Projected final budget surplus or overrun (`BAC - EAC`).', where: 'PM-19' },
-  { abbr: 'WBS', full: 'Work Breakdown Structure', cat: 'PM & Controls', desc: 'Deliverable-oriented hierarchy (`1.0-PERM` through `7.0-COD`, `22` nodes on `DC45-EU`) linking P6 tasks to cost accounts.', where: 'PM-06, PM-07, PM-08' },
-  { abbr: 'XER', full: 'Primavera P6 Exchange Format', cat: 'PM & Controls', desc: 'Native Oracle Primavera P6 ASCII file format storing WBS, calendars, `144` tasks, `213` links, and float calculations.', where: 'PM-08, PM-09' },
+let srsDrawerOpen = false;
+let srsAnswerShown = false;
 
-  // Contracts & Finance
-  { abbr: 'BAFO', full: 'Best and Final Offer', cat: 'Contracts & Finance', desc: 'Final binding commercial & technical bid submitted by shortlisted contractors after TBE negotiations.', where: 'PM-15' },
-  { abbr: 'BoQ', full: 'Bill of Quantities', cat: 'Contracts & Finance', desc: 'Itemized schedule of construction quantities priced under traditional or re-measurable contract options.', where: 'PM-17, PM-18' },
-  { abbr: 'Capex', full: 'Capital Expenditure', cat: 'Contracts & Finance', desc: 'Upfront development and construction investment (`EUR/MW`) spanning land, design, HV/MEP equipment, shell, and Cx.', where: 'PM-04, PM-05, Charter' },
-  { abbr: 'CE', full: 'Compensation Event', cat: 'Contracts & Finance', desc: 'NEC4 contract mechanism adjusting Time (Completion Date) and/or Price for Employer-risk changes (e.g., Cl. 60-65).', where: 'PM-14, PM-20, SteerCo' },
-  { abbr: 'CIF', full: 'Cost, Insurance and Freight (Incoterms 2020)', cat: 'Contracts & Finance', desc: 'Maritime delivery rule where seller pays freight and minimum insurance to Dublin/EU port of destination.', where: 'PM-16' },
-  { abbr: 'CPPA', full: 'Corporate Power Purchase Agreement', cat: 'Contracts & Finance', desc: 'Long-term contract committing data centre load to off-site wind/solar renewable electricity supply.', where: 'EU-12' },
-  { abbr: 'D&B', full: 'Design and Build', cat: 'Contracts & Finance', desc: 'Single-point delivery contract assigning both detailed design and physical construction risk to one main contractor.', where: 'PM-12, PM-13, PM-14' },
-  { abbr: 'DAAB / DAB', full: 'Dispute Avoidance / Adjudication Board', cat: 'Contracts & Finance', desc: 'FIDIC standing neutral panel preventing and resolving commercial/EOT disputes during construction.', where: 'PM-14' },
-  { abbr: 'DAP', full: 'Delivered at Place (Incoterms 2020)', cat: 'Contracts & Finance', desc: 'Seller bears transport risk to the Irish data centre site ready for unloading; buyer handles import customs.', where: 'PM-16' },
-  { abbr: 'DCF', full: 'Discounted Cash Flow', cat: 'Contracts & Finance', desc: '10-year financial valuation model discounting future colocation EBITDA to derive project `NPV` and `IRR`.', where: 'PM-04, PreNTP Controls' },
-  { abbr: 'DD', full: 'Due Diligence', cat: 'Contracts & Finance', desc: 'Pre-acquisition technical, environmental, grid, legal, and commercial investigation before land/FID lock.', where: 'PM-02, PM-05' },
-  { abbr: 'DDP', full: 'Delivered Duty Paid (Incoterms 2020)', cat: 'Contracts & Finance', desc: 'Maximum seller obligation including EU customs clearance, VAT/duties, and delivery to site.', where: 'PM-16' },
-  { abbr: 'DLP', full: 'Defects Liability Period', cat: 'Contracts & Finance', desc: '12-24 month post-COD warranty period backed by final retention (`TR-06 5%`) requiring contractor defect rectification.', where: 'PM-35, Charter' },
-  { abbr: 'EOT', full: 'Extension of Time', cat: 'Contracts & Finance', desc: 'Formal relief of Contractual Completion Date when an Employer-risk event impacts the P6 critical path.', where: 'PM-14, PM-20' },
-  { abbr: 'EPC', full: 'Engineering, Procurement and Construction', cat: 'Contracts & Finance', desc: 'Turnkey lump-sum contract structure transferring design, OEM procurement, and build coordination to an EPC contractor.', where: 'PM-12, PM-14' },
-  { abbr: 'EPCm', full: 'Engineering, Procurement and Construction Management', cat: 'Contracts & Finance', desc: 'Multi-prime client agency model where an EPCm firm manages separate CSA, HV, MEP, and OFCI packages without wrapping construction risk.', where: 'PM-12, PM-13' },
-  { abbr: 'EXW', full: 'Ex Works (Incoterms 2020)', cat: 'Contracts & Finance', desc: 'Minimum seller responsibility; buyer collects OFCI plant directly at OEM factory gate and bears all transit/customs risk.', where: 'PM-16' },
-  { abbr: 'FCA', full: 'Free Carrier (Incoterms 2020)', cat: 'Contracts & Finance', desc: 'Seller clears export and hands equipment to buyer-nominated carrier at factory or inland terminal.', where: 'PM-16' },
-  { abbr: 'FIDIC', full: 'International Federation of Consulting Engineers', cat: 'Contracts & Finance', desc: 'Standard EU/international contract suite (`Yellow Book` D&B, `Silver Book` Turnkey EPC, 2017 Edition).', where: 'PM-13, PM-14' },
-  { abbr: 'FX', full: 'Foreign Exchange', cat: 'Contracts & Finance', desc: 'Currency hedging exposure between `EUR` project capex/revenues and non-Euro OEM equipment (`USD`/`GBP`/`CHF`).', where: 'PM-04, SteerCo' },
-  { abbr: 'ICC', full: 'International Chamber of Commerce', cat: 'Contracts & Finance', desc: 'Global trade body publishing the `ICC Incoterms 2020` rules (`EXW`, `FCA`, `CIF`, `DAP`, `DDP`) and ICC Arbitration.', where: 'PM-16' },
-  { abbr: 'IRR', full: 'Internal Rate of Return', cat: 'Contracts & Finance', desc: 'Annualized unlevered/levered yield metric benchmarked against Sponsor `WACC` hurdle rate (`> 8.5%`) for FID.', where: 'PM-04, PM-05' },
-  { abbr: 'ITT', full: 'Invitation to Tender', cat: 'Contracts & Finance', desc: 'Formal bidding dossier issuing Works Information, Employer\'s Requirements, P6 milestones, and contract Z-clauses.', where: 'PM-15' },
-  { abbr: 'LDs', full: 'Liquidated Damages', cat: 'Contracts & Finance', desc: 'Pre-agreed daily/milestone delay or performance (`PUE`/`kW`) damages deducted from contractor payments on breach.', where: 'PM-13, PM-14' },
-  { abbr: 'NEC4', full: 'New Engineering Contract (4th Edition)', cat: 'Contracts & Finance', desc: 'Collaborative UK/Ireland contract (`ECC Option A` Lump Sum / `Option C` Target Cost) using Early Warnings and time-barred Compensation Events.', where: 'PM-13, PM-14' },
-  { abbr: 'NPV', full: 'Net Present Value', cat: 'Contracts & Finance', desc: 'Present value of 10-year colocation cash flows minus initial `EUR` Capex discounted at `WACC` (`> EUR 0` required).', where: 'PM-04' },
-  { abbr: 'NRM1', full: 'RICS New Rules of Measurement 1', cat: 'Contracts & Finance', desc: 'UK/Ireland elemental cost estimating standard used to benchmark CSA, MEP, and data hall `EUR/MW` budgets.', where: 'PM-18' },
-  { abbr: 'OFCI', full: 'Owner-Furnished Contractor-Installed', cat: 'Contracts & Finance', desc: 'Procurement model where Client pre-buys long-lead OEM plant (`63MVA` tx, `GIS`, `UPS`, gensets, chillers) and novates/hands off for site installation.', where: 'PM-12, PM-16' },
-  { abbr: 'Opex', full: 'Operating Expenditure', cat: 'Contracts & Finance', desc: 'Recurring annual electricity, water, staffing, maintenance, rates, and insurance costs over facility operation.', where: 'PM-04, PM-34' },
-  { abbr: 'PI', full: 'Professional Indemnity (Insurance)', cat: 'Contracts & Finance', desc: 'Mandatory design liability insurance carried by Designers, PSDP, and BCAR Assigned Certifiers.', where: 'EU-13' },
-  { abbr: 'PPA', full: 'Power Purchase Agreement', cat: 'Contracts & Finance', desc: 'Bilateral contract fixing long-term electricity pricing (`EUR/kWh`) and renewable attributes with an energy generator.', where: 'PM-04, EU-12' },
-  { abbr: 'PQQ', full: 'Pre-Qualification Questionnaire', cat: 'Contracts & Finance', desc: 'First-stage vendor screening evaluating financial balance sheet, Irish H&S record, and hyperscale credentials.', where: 'PM-15' },
-  { abbr: 'RFI / RFP', full: 'Request for Information / Request for Proposal', cat: 'Contracts & Finance', desc: 'Market capability sounding (`RFI`) or commercial tender (`RFP`), plus formal technical clarification queries during construction (`RFI`).', where: 'PM-15, PM-17' },
-  { abbr: 'RICS', full: 'Royal Institution of Chartered Surveyors', cat: 'Contracts & Finance', desc: 'Global/Irish-recognized body governing QS cost planning (`NRM1`), final accounts, and commercial valuations.', where: 'PM-18, PM-35' },
-  { abbr: 'ROI', full: 'Return on Investment', cat: 'Contracts & Finance', desc: 'Cumulative profitability ratio evaluating capital allocation efficiency across facility phases.', where: 'PM-04' },
-  { abbr: 'RTA', full: 'Recommendation to Award', cat: 'Contracts & Finance', desc: 'Executive commercial approval paper summarizing TBE/BAFO scoring and seeking SteerCo/IC contract execution sign-off.', where: 'PM-15' },
-  { abbr: 'SCL', full: 'Society of Construction Law (Delay Protocol)', cat: 'Contracts & Finance', desc: 'Forensic schedule analysis framework (`Time Impact Analysis`) governing `EOT` entitlement and concurrent delay.', where: 'PM-14, PM-20' },
-  { abbr: 'TBE', full: 'Technical Bid Evaluation', cat: 'Contracts & Finance', desc: 'Weighted compliance scoring of contractor/OEM bids across specs, program, HSE, and exclusions prior to commercial opening.', where: 'PM-15' },
-  { abbr: 'TOC', full: 'Taking-Over Certificate', cat: 'Contracts & Finance', desc: 'FIDIC / contract certificate formally transferring site possession, risk, and DLP commencement to Employer.', where: 'PM-31' },
-  { abbr: 'VAT', full: 'Value-Added Tax', cat: 'Contracts & Finance', desc: 'Irish/EU indirect tax requiring RCT reverse-charge and customs cash-flow treatment in Capex models.', where: 'PM-16, PM-18' },
-  { abbr: 'VO / VOs', full: 'Variation Order(s)', cat: 'Contracts & Finance', desc: 'Contractual price/scope amendment instruction executed under FIDIC or traditional construction forms.', where: 'PM-20, PM-35' },
-  { abbr: 'VPPA', full: 'Virtual Power Purchase Agreement', cat: 'Contracts & Finance', desc: 'Financial Contract-for-Difference settling renewable electricity prices without physical grid sleeving, issuing `GO` certificates.', where: 'EU-12' },
-  { abbr: 'WACC', full: 'Weighted Average Cost of Capital', cat: 'Contracts & Finance', desc: 'Blended debt/equity hurdle discount rate (`8.5%` baseline) used in 10-year `DC45-EU` `NPV` analysis.', where: 'PM-04' },
+function renderDueTodayBanner() {
+  const host = document.getElementById('srs-due-banner');
+  if (!host) return;
+  const cards = window.DC45_FLASHCARDS || [];
+  const store = window.DC45_LEARNING_STORE;
+  if (!cards.length || !store) { host.innerHTML = ''; return; }
+  const extras = store.loadExtras();
+  const now = Date.now();
+  const dueCards = cards.filter(c => store.isCardDue(extras.srs[c.id], now));
+  const reviewedCount = Object.keys(extras.srs).length;
+  const notesCount = Object.values(extras.notes || {}).filter(n => n && n.text && n.text.trim()).length;
 
-  // IE & EU Statutory
-  { abbr: 'AA', full: 'Appropriate Assessment (EU Habitats Directive)', cat: 'IE & EU Statutory', desc: 'Statutory screening and Natura Impact Statement ensuring zero adverse effect on protected European Natura 2000 sites.', where: 'EU-01, EU-02' },
-  { abbr: 'ABP', full: 'An Bord Pleanala (An Coimisiun Pleanala)', cat: 'IE & EU Statutory', desc: 'Ireland\'s national independent planning appeals board handling Strategic Infrastructure Development (`SID`) and third-party planning appeals.', where: 'EU-01, EU-05' },
-  { abbr: 'AER', full: 'Annual Environmental Report', cat: 'IE & EU Statutory', desc: 'Mandatory yearly EPA Industrial Emissions compliance filing summarizing emissions, noise, waste, and resource efficiency.', where: 'EU-03' },
-  { abbr: 'AERMOD', full: 'AMS/EPA Regulatory Air Dispersion Model', cat: 'IE & EU Statutory', desc: 'Gaussian plume model simulating `NOx`/`NO2` ground concentrations from `20x 2.5MVA` gensets to justify stack heights.', where: 'EU-03' },
-  { abbr: 'AF1 / AF2', full: 'HSA Construction Notification Forms AF1 & AF2', cat: 'IE & EU Statutory', desc: 'Mandatory Irish Health & Safety Authority filings submitted by Client (`AF1`, pre-design/start) and PSCS (`AF2`, `>30 days / 500 person-days`).', where: 'EU-16, EU-17' },
-  { abbr: 'AG4', full: 'EPA Air Dispersion Modelling Guidance Note AG4', cat: 'IE & EU Statutory', desc: 'Irish EPA technical guidance governing cumulative `NO2` air modeling for data centre standby generation.', where: 'EU-03' },
-  { abbr: 'BAT / BREF', full: 'Best Available Techniques / Reference Document', cat: 'IE & EU Statutory', desc: 'EU Industrial Emissions standards (`LCP BREF`) dictating `SCR` exhaust abatement and efficiency obligations.', where: 'EU-04' },
-  { abbr: 'BCAR', full: 'Building Control (Amendment) Regulations 2014 (IE)', cat: 'IE & EU Statutory', desc: 'Statutory Irish building certification regime requiring Design Certifier, Assigned Certifier, Inspection Plan, and `CCC`.', where: 'PM-31, EU-13..EU-15' },
-  { abbr: 'BCMS', full: 'Building Control Management System', cat: 'IE & EU Statutory', desc: 'National Irish online statutory portal hosting Commencement Notices, `FSC`/`DAC` tracking, and `CCC` registration.', where: 'EU-13, EU-15' },
-  { abbr: 'CCC', full: 'Certificate of Compliance on Completion', cat: 'IE & EU Statutory', desc: 'Mandatory BCAR final statutory sign-off validating Building Regulations compliance; building cannot legally open without registration (`M7060`).', where: 'PM-31, PM-36, EU-15' },
-  { abbr: 'CRU', full: 'Commission for Regulation of Utilities (IE)', cat: 'IE & EU Statutory', desc: 'Irish energy regulator issuing Large Energy User (`LEU`) grid connection directions requiring dispatchable BESS/gen and renewable additionality.', where: 'PM-02, EU-09, EU-12' },
-  { abbr: 'CSCS', full: 'Construction Skills Certification Scheme', cat: 'IE & EU Statutory', desc: 'Statutory SOLAS Irish plant/high-risk trade cards alongside Safe Pass audited by PSCS on site.', where: 'PM-22, EU-17' },
-  { abbr: 'DAC', full: 'Disability Access Certificate (BCAR Part M)', cat: 'IE & EU Statutory', desc: 'Statutory Local Authority certificate confirming accessible entry, circulation, and welfare compliance prior to occupation.', where: 'EU-14, EU-15' },
-  { abbr: 'DCC / EU 2016/1388', full: 'EU Demand Connection Code Regulation', cat: 'IE & EU Statutory', desc: 'Binding EU network code governing `110kV` fault ride-through, frequency response, and RMS dynamic simulation studies.', where: 'EU-10' },
-  { abbr: 'DOC', full: 'Department of Construction / Building Control Dept.', cat: 'IE & EU Statutory', desc: 'Legacy statutory inspection counterpart to Irish Local Authority Building Control / Fire Authority completion audits.', where: 'Charter' },
-  { abbr: 'DS3', full: 'Delivering a Secure, Sustainable Electricity System', cat: 'IE & EU Statutory', desc: 'EirGrid grid ancillary services program compensating fast-acting `BESS` / synchronous inertia for high wind/solar grids.', where: 'EU-09' },
-  { abbr: 'ECP', full: 'Enduring Connection Policy (EirGrid / ESBN)', cat: 'IE & EU Statutory', desc: 'Irish regulatory batching framework governing `110kV` grid connection offers and Maximum Import Capacity (`MIC`) awards.', where: 'PM-02, EU-07' },
-  { abbr: 'EEC', full: 'European Economic Community (Directive Prefix)', cat: 'IE & EU Statutory', desc: 'Pre-EU treaty legislation code such as EU Habitats Directive `92/43/EEC` governing Natura 2000 `AA` screening.', where: 'EU-02' },
-  { abbr: 'EED', full: 'EU Energy Efficiency Directive (EU) 2023/1791 & Reg. 2024/1364', cat: 'IE & EU Statutory', desc: 'Mandatory EU law requiring data centres `>= 500 kW` to report `PUE`, `WUE`, `ERF`, `REF`, and waste-heat readiness annually.', where: 'PM-03, PM-36, EU-12' },
-  { abbr: 'EIA / EIAR', full: 'Environmental Impact Assessment (Report)', cat: 'IE & EU Statutory', desc: 'Mandatory EU Directive (`2014/52/EU`) multi-volume study assessing noise, air, drainage, traffic, and biodiversity for planning grant.', where: 'EU-01, EU-02' },
-  { abbr: 'EirGrid', full: 'Irish Transmission System Operator (TSO)', cat: 'IE & EU Statutory', desc: 'State operator of Ireland\'s `110kV/220kV/400kV` transmission grid issuing `ECP` offers, RMS studies, and `ION`/`FON` energization.', where: 'PM-02, EU-07..EU-11' },
-  { abbr: 'EPA', full: 'Environmental Protection Agency (Ireland)', cat: 'IE & EU Statutory', desc: 'National environmental regulator granting and auditing the Industrial Emissions Licence (`IEL`) for thermal capacity `> 50 MWth`.', where: 'EU-03, EU-04' },
-  { abbr: 'ESA', full: 'Environmental Site Assessment (Phase 1 / 2)', cat: 'IE & EU Statutory', desc: 'Soil, groundwater contamination, and historical industrial risk screening completed during pre-purchase land due diligence.', where: 'PM-02' },
-  { abbr: 'ESB / ESBN', full: 'Electricity Supply Board / ESB Networks (IE)', cat: 'IE & EU Statutory', desc: 'Irish Distribution System Operator & Transmission Asset Owner managing `110kV` contestable substation interface and cut-in.', where: 'EU-07, EU-11' },
-  { abbr: 'FI', full: 'Further Information Request (Planning)', cat: 'IE & EU Statutory', desc: 'Formal statutory pause by Local Authority / `ABP` seeking extra acoustic, traffic, drainage, or grid data prior to determination.', where: 'EU-02, EU-05' },
-  { abbr: 'FSC', full: 'Fire Safety Certificate (BCAR Part B)', cat: 'IE & EU Statutory', desc: 'Mandatory statutory approval of compartmentation, escape distances, smoke venting, and fire suppression prior to superstructure build.', where: 'EU-14, EU-15' },
-  { abbr: 'GDSDS', full: 'Greater Dublin Strategic Drainage Study', cat: 'IE & EU Statutory', desc: 'Regional attenuation, `SuDS`, and climate-adjusted `+20%` stormwater design rules for Dublin developments.', where: 'EU-06' },
-  { abbr: 'GO / REGO', full: 'Guarantee of Origin / Renewable Energy Guarantee of Origin', cat: 'IE & EU Statutory', desc: 'Traceable electronic certificates proving MWh electricity came from renewable generation (`EU RED III` / `EED REF`).', where: 'EU-12' },
-  { abbr: 'HSA', full: 'Health and Safety Authority (Ireland)', cat: 'IE & EU Statutory', desc: 'National workplace safety regulator enforcing `S.I. No. 291/2013`, `PSDP`/`PSCS` duties, `AF1` notices, and site inspections.', where: 'PM-22, EU-16..EU-18' },
-  { abbr: 'IED / IEL', full: 'Industrial Emissions Directive / Licence', cat: 'IE & EU Statutory', desc: 'EU Directive `2010/75/EU` and Irish EPA operating licence required when aggregated thermal input exceeds `50 MWth`.', where: 'EU-03, EU-04' },
-  { abbr: 'JR', full: 'Judicial Review', cat: 'IE & EU Statutory', desc: 'High Court legal challenge against an `ABP` planning grant or `EPA` licence; top schedule delay risk (`RSK-01`).', where: 'EU-05, SteerCo' },
-  { abbr: 'LCP', full: 'Large Combustion Plant', cat: 'IE & EU Statutory', desc: 'EU `BREF` classification covering `>= 50 MWth` standby generator banks subject to `NOx`, CO, and operating-hour caps.', where: 'EU-04' },
-  { abbr: 'LEU', full: 'Large Energy User', cat: 'IE & EU Statutory', desc: 'CRU regulatory classification for hyperscale data centres requiring flexible demand, on-site BESS/gen, and zero net grid congestion.', where: 'EU-09, EU-12' },
-  { abbr: 'MIC', full: 'Maximum Import Capacity', cat: 'IE & EU Statutory', desc: 'Contracted firm `kVA`/`MW` utility grid connection capacity granted under EirGrid / ESBN Connection Agreement.', where: 'PM-02, EU-07' },
-  { abbr: 'NCC', full: 'National Control Centre (EirGrid)', cat: 'IE & EU Statutory', desc: 'EirGrid\'s national transmission operations centre interfacing with site `SCADA` for LEU flexible demand & curtailment signals.', where: 'EU-09' },
-  { abbr: 'NIS2', full: 'EU Network & Information Security Directive 2', cat: 'IE & EU Statutory', desc: 'Binding EU cybersecurity directive imposing OT/BMS/SCADA resilience and incident reporting on critical digital infrastructure.', where: 'PM-31, EU-15' },
-  { abbr: 'NPWS', full: 'National Parks and Wildlife Service (IE)', cat: 'IE & EU Statutory', desc: 'Irish statutory consultee reviewing `AA` / Habitats Directive compliance during EIAR and planning.', where: 'EU-02' },
-  { abbr: 'OPW', full: 'Office of Public Works (IE)', cat: 'IE & EU Statutory', desc: 'Irish flood authority publishing CFRAM fluvial/coastal flood maps governing `DC45-EU` siting and finished floor levels.', where: 'PM-02, EU-06' },
-  { abbr: 'PCCC', full: 'Fire Prevention & Rescue Police / Fire Officer', cat: 'IE & EU Statutory', desc: 'Fire authority clearance prerequisite blocking building completion acceptance until active/passive life-safety passes audit.', where: 'EU-14, Charter' },
-  { abbr: 'PSCS', full: 'Project Supervisor Construction Stage', cat: 'IE & EU Statutory', desc: 'Statutory principal contractor (`S.I. No. 291/2013`) appointed in writing by Client to coordinate site safety, RAMS, and AF2.', where: 'PM-22, EU-16..EU-18' },
-  { abbr: 'PSDP', full: 'Project Supervisor Design Process', cat: 'IE & EU Statutory', desc: 'Statutory competent designer (`S.I. No. 291/2013`) appointed at Stage 1 to eliminate design hazards and compile the Safety File.', where: 'EU-16..EU-18' },
-  { abbr: 'RED III', full: 'EU Renewable Energy Directive III (2023/2413)', cat: 'IE & EU Statutory', desc: 'EU legislation raising renewable energy targets and governing `HVO` biofuel sustainability and hourly `CFE`/`REF` matching.', where: 'EU-04, EU-12' },
-  { abbr: 'SAC / SPA', full: 'Special Area of Conservation / Special Protection Area', cat: 'IE & EU Statutory', desc: 'EU Natura 2000 protected habitat/bird zones requiring `AA` Screening and ecological buffers.', where: 'EU-02' },
-  { abbr: 'SEAI', full: 'Sustainable Energy Authority of Ireland', cat: 'IE & EU Statutory', desc: 'Irish national agency administering `EU EED` data centre reporting guidance, energy audits, and heat-network grants.', where: 'PM-36, EU-12' },
-  { abbr: 'SEMOpx', full: 'Single Electricity Market Operator Exchange', cat: 'IE & EU Statutory', desc: 'All-island Ireland/NI wholesale day-ahead and intraday electricity trading market.', where: 'EU-12' },
-  { abbr: 'S.I. 291', full: 'Statutory Instrument No. 291 of 2013 (Construction Regs)', cat: 'IE & EU Statutory', desc: 'Core Irish construction H&S law mandating written `PSDP`/`PSCS` appointments, Preliminary H&S Plan, and Safety File.', where: 'PM-22, EU-16..EU-18' },
-  { abbr: 'SID', full: 'Strategic Infrastructure Development', cat: 'IE & EU Statutory', desc: 'Fast-track direct-to-`An Bord Pleanala` planning pathway for major data centres and `110kV` substations.', where: 'EU-01, EU-05' },
-  { abbr: 'SSFRA', full: 'Site-Specific Flood Risk Assessment', cat: 'IE & EU Statutory', desc: 'Hydrological report proving 1-in-100 / 1-in-1000 year flood immunity plus `+20%` climate-change allowance.', where: 'EU-06' },
-  { abbr: 'SuDS', full: 'Sustainable Drainage Systems', cat: 'IE & EU Statutory', desc: 'Nature-based stormwater attenuation (`swales`, `QBAR` greenfield runoff control, interceptors) required by Irish councils.', where: 'EU-06' },
-  { abbr: 'TGD', full: 'Technical Guidance Documents (Irish Building Regs)', cat: 'IE & EU Statutory', desc: 'Official Irish statutory compliance guides (`TGD Part B` Fire Safety, `Part L` Energy Conservation, `Part M` Access).', where: 'EU-14' },
-  { abbr: 'TII', full: 'Transport Infrastructure Ireland', cat: 'IE & EU Statutory', desc: 'Prescribed statutory consultee reviewing national road, motorway junction, and abnormal-load haulage impacts.', where: 'EU-02, PM-16' },
-  { abbr: 'TSO', full: 'Transmission System Operator', cat: 'IE & EU Statutory', desc: 'National high-voltage grid operator (`EirGrid` in Ireland) owning system stability, grid codes, and substation energization.', where: 'EU-07..EU-11' },
-  { abbr: 'UXO', full: 'Unexploded Ordnance', cat: 'IE & EU Statutory', desc: 'Pre-piling geotechnical hazard clearance check executed prior to `750` CFA pile mobilization.', where: 'PM-02' },
+  const cur = dueCards[0] || null;
+  const pillCls = dueCards.length === 0 ? 'is-clear' : '';
+  const pillText = dueCards.length === 0 ? 'All Caught Up (0 Due Today)' : dueCards.length + ' / ' + cards.length + ' Cards Due Now';
 
-  // Engineering & MEP
-  { abbr: 'ATS', full: 'Automatic Transfer Switch / Tier Sustainability', cat: 'Engineering & MEP', desc: 'Fast static/mechanical switch transferring critical load between utility mains and standby UPS/gensets (`<10s` blackout ride).', where: 'PM-25, PM-29' },
-  { abbr: 'BESS', full: 'Battery Energy Storage System', cat: 'Engineering & MEP', desc: 'On-site utility-scale Li-Ion/LFP battery bank enabling CRU LEU grid compliance, `FFR`/`DS3` response, and blackout ride-through.', where: 'PM-26, EU-09' },
-  { abbr: 'BMS', full: 'Building Management System', cat: 'Engineering & MEP', desc: 'Automated HVAC, chiller plant, CRAH, damper, and environmental control telemetry network.', where: 'PM-27, PM-36' },
-  { abbr: 'BoD', full: 'Basis of Design', cat: 'Engineering & MEP', desc: 'Engineering translation of Owner Requirements into `kW`, `N+2` redundancy, `PUE 1.25`, `18 kN/m2` slab, and Tier III topology.', where: 'PM-03, PreNTP Controls' },
-  { abbr: 'CHW', full: 'Chilled Water', cat: 'Engineering & MEP', desc: 'Closed-loop heat rejection circuit circulating water between `8x 1200 RT` chillers, `TES` tanks, and `90x` CRAHs.', where: 'PM-27, PM-28' },
-  { abbr: 'CT / PT', full: 'Current Transformer / Potential (Voltage) Transformer', cat: 'Engineering & MEP', desc: 'Precision HV/MV instrument transformers feeding protection relays and Class-0.2 `EPMS`/`EED` revenue meters.', where: 'PM-26, EU-11' },
-  { abbr: 'DIgSILENT / PSS/E (PSSE)', full: 'Power System Simulation Tools (PowerFactory / PSS/E)', cat: 'Engineering & MEP', desc: 'Industry grid simulation suites required by EirGrid to validate RMS transient stability, arc flash, and fault levels.', where: 'EU-10' },
-  { abbr: 'DUoS', full: 'Distribution Use of System (Tariffs)', cat: 'Engineering & MEP', desc: 'Grid network peak capacity charges mitigated through scheduled BESS peak-shaving dispatch.', where: 'EU-09' },
-  { abbr: 'EPMS', full: 'Electrical Power Monitoring System', cat: 'Engineering & MEP', desc: 'High-speed SCADA/ION metering layer capturing real-time kW, harmonics, breaker trips, and `EU EED` PUE sub-metering.', where: 'PM-26, PM-36' },
-  { abbr: 'ERF', full: 'Energy Reuse Factor (EU EED)', cat: 'Engineering & MEP', desc: 'Share of total data centre energy recovered and exported (`>= 0.15` target) via District Heating export skid (`A5390`).', where: 'PM-03, PM-27, PM-36' },
-  { abbr: 'ESD', full: 'Electrostatic Discharge / Emergency Shutdown', cat: 'Engineering & MEP', desc: 'White-space anti-static conductive flooring / contamination control, or Emergency Power Off (`EPO`) interlock.', where: 'PM-24' },
-  { abbr: 'FFR', full: 'Fast Frequency Response', cat: 'Engineering & MEP', desc: 'Sub-second grid frequency support service provided by on-site `BESS` under EirGrid `DS3`.', where: 'EU-09' },
-  { abbr: 'FON / ION', full: 'Final / Interim Operational Notification', cat: 'Engineering & MEP', desc: 'Phased EirGrid grid-code compliance gates moving from temporary energization testing (`ION`) to commercial approval (`FON`).', where: 'EU-11' },
-  { abbr: 'GIS', full: 'Gas-Insulated Switchgear (22kV / 110kV SF6-Free)', cat: 'Engineering & MEP', desc: 'Compact sealed HV/MV switchgear lineups A & B (`DC45-EU` mandates zero-GWP `SF6-free` clean-air/vacuum GIS).', where: 'PM-26, EU-11' },
-  { abbr: 'GWP', full: 'Global Warming Potential', cat: 'Engineering & MEP', desc: 'EU F-Gas Regulation (`2024/573`) metric banning high-GWP refrigerants (`HFCs`) and `SF6` (`GWP = 24,300`).', where: 'PM-03, PM-27' },
-  { abbr: 'HV / MV / LV', full: 'High / Medium / Low Voltage', cat: 'Engineering & MEP', desc: 'Facility electrical tiers: `110kV` utility GIS (`HV`), `22kV` campus rings (`MV`), and `400V/415V` hall distribution (`LV`).', where: 'PM-26' },
-  { abbr: 'HVO', full: 'Hydrotreated Vegetable Oil', cat: 'Engineering & MEP', desc: 'EN 15940 drop-in renewable paraffinic diesel stored in `4x 80 m3` tanks giving `72h` low-carbon standby autonomy.', where: 'PM-26, EU-04' },
-  { abbr: 'IR', full: 'Infrared Thermography', cat: 'Engineering & MEP', desc: 'Non-contact thermal imaging scan performed on busways, breakers, and terminations under full `45 MW` `IST` load.', where: 'PM-29' },
-  { abbr: 'kV / kVA / kW / kWh', full: 'Kilovolt / Kilovolt-Ampere / Kilowatt / Kilowatt-Hour', cat: 'Engineering & MEP', desc: 'Core electrical units measuring line voltage (`110kV`), apparent transformer rating, real critical IT power (`45,000 kW`), and energy.', where: 'All MEP / Controls' },
-  { abbr: 'LOTO', full: 'Lockout / Tagout', cat: 'Engineering & MEP', desc: 'Mandatory electrical/mechanical energy isolation and padlock permit system enforced by `SAP` from L3 energization (`M6260`).', where: 'PM-28, SteerCo' },
-  { abbr: 'M&E / MEP', full: 'Mechanical & Electrical / Mechanical, Electrical & Plumbing', cat: 'Engineering & MEP', desc: 'Active power, cooling, fire protection, and control packages comprising ~`65-75%` of data centre Capex.', where: 'PM-12, PM-25..PM-28' },
-  { abbr: 'MMR', full: 'Meet-Me-Room (MMR-A / MMR-B)', cat: 'Engineering & MEP', desc: 'Physically separated carrier telecom demarcation vaults connecting external dark fibre rings into the white space.', where: 'PM-03, Charter' },
-  { abbr: 'MW / MVA / MWh / MWth', full: 'Megawatt / Megavolt-Ampere / Megawatt-Hour / Megawatt Thermal', cat: 'Engineering & MEP', desc: 'Facility scale units: `45 MW` critical IT, `2x 63 MVA` transformers, `BESS` `MWh` storage, and `>50 MWth` EPA combustion threshold.', where: 'Charter, EU-03' },
-  { abbr: 'NOx / NO2', full: 'Nitrogen Oxides / Nitrogen Dioxide', cat: 'Engineering & MEP', desc: 'Regulated exhaust pollutants from `20x` diesel/HVO generators abated via `SCR` and modeled via `AERMOD` (`AG4`).', where: 'EU-03, EU-04' },
-  { abbr: 'PDU / RPP', full: 'Power Distribution Unit / Remote Power Panel', cat: 'Engineering & MEP', desc: 'Hall-level `22kV/400V` step-down transformers and branch circuit breaker cabinets feeding IT server busbars.', where: 'PM-26' },
-  { abbr: 'PLC / SCADA', full: 'Programmable Logic Controller / Supervisory Control & Data Acquisition', cat: 'Engineering & MEP', desc: 'Industrial generator/switchgear paralleling automation and real-time HV/MV breaker monitoring network.', where: 'PM-26, PM-27' },
-  { abbr: 'PUE', full: 'Power Usage Effectiveness', cat: 'Engineering & MEP', desc: 'Ratio `Total Facility Energy / IT Equipment Energy` (`1.25` annualized Irish design target under `EU EED` vs `1.00` ideal).', where: 'PM-03, PM-36, EU-12' },
-  { abbr: 'REF', full: 'Renewable Energy Factor (EU EED)', cat: 'Engineering & MEP', desc: 'Ratio of certified renewable electricity consumed over total facility electricity, tracked via hourly `CFE` / `GO` audits.', where: 'PM-36, EU-12' },
-  { abbr: 'RMS', full: 'Root Mean Square Dynamic Simulation', cat: 'Engineering & MEP', desc: 'Transient electro-mechanical grid model proving `110kV` substation and `BESS` stability per `EU 2016/1388`.', where: 'EU-10' },
-  { abbr: 'SCR', full: 'Selective Catalytic Reduction', cat: 'Engineering & MEP', desc: 'Urea-injected exhaust after-treatment fitted to standby gensets to reduce `NOx` emissions by `>90%` under `EPA IEL`.', where: 'EU-04, PM-26' },
-  { abbr: 'SF6', full: 'Sulphur Hexafluoride', cat: 'Engineering & MEP', desc: 'Potent greenhouse insulating gas banned by `EU F-Gas` rules in new medium-voltage switchgear (`SF6-Free` GIS required).', where: 'PM-26, EU-11' },
-  { abbr: 'SLD', full: 'Single-Line Diagram', cat: 'Engineering & MEP', desc: 'Master schematic tracing dual A+B power distribution paths from `110kV` utility grid to server rack PDUs.', where: 'PM-03, PM-26' },
-  { abbr: 'SPOF', full: 'Single Point of Failure', cat: 'Engineering & MEP', desc: 'Any component or common pathway whose failure drops IT load; strictly zero allowed under `Tier III / EN 50600 Class 3`.', where: 'PM-03, PM-29' },
-  { abbr: 'STATCOM', full: 'Static Synchronous Compensator', cat: 'Engineering & MEP', desc: 'Power-electronic device regulating `110kV` bus voltage, power factor, and harmonics per `ENA G5/5`.', where: 'EU-10' },
-  { abbr: 'TES', full: 'Thermal Energy Storage', cat: 'Engineering & MEP', desc: 'Stratified chilled-water buffer tanks riding through chiller restart during utility-to-generator power transition (`A5370`, `A6450`).', where: 'PM-27, PM-29' },
-  { abbr: 'THD', full: 'Total Harmonic Distortion', cat: 'Engineering & MEP', desc: 'Power quality metric verifying non-linear UPS/VFD currents stay inside EirGrid / `ENA G5/5` limits.', where: 'EU-10' },
-  { abbr: 'UPS', full: 'Uninterruptible Power Supply', cat: 'Engineering & MEP', desc: '`45x 1000kVA` modular double-conversion UPS + LFP battery strings supplying zero-break clean power to IT halls.', where: 'PM-26' },
-  { abbr: 'VESDA', full: 'Very Early Smoke Detection Apparatus', cat: 'Engineering & MEP', desc: 'Laser aspirating air-sampling pipework detecting microscopic pre-combustion particulates inside data halls prior to gas dump.', where: 'PM-25, EU-14' },
-  { abbr: 'VFD', full: 'Variable Frequency Drive', cat: 'Engineering & MEP', desc: 'Electronic motor speed controller modulating pumps, fans, and chillers at part-load to maximize `PUE` efficiency.', where: 'PM-27' },
-  { abbr: 'VLF', full: 'Very Low Frequency (Hi-Pot Test)', cat: 'Engineering & MEP', desc: 'Non-destructive `0.1 Hz` high-voltage cable insulation integrity test performed at Commissioning Level 3 (`A6210`).', where: 'PM-28' },
-  { abbr: 'WUE', full: 'Water Usage Effectiveness', cat: 'Engineering & MEP', desc: 'Annual cooling water consumed per IT kWh (`<= 0.25 L/kWh` target via free-cooling bias & rainwater RO harvesting).', where: 'PM-03, PM-36' },
+  let drawerHtml = '';
+  if (srsDrawerOpen && cur) {
+    drawerHtml = `
+      <div class="srs-due-drawer">
+        <div class="srs-due-meta">
+          <span class="mono" style="font-size:12px;font-weight:800;color:#0b57d0;">${escapeHtml(cur.id)} | ${escapeHtml(cur.modId)} | ${escapeHtml(cur.cat)}</span>
+          <a href="phase${cur.phaseNum}/#${escapeHtml(cur.docId)}" class="btn-read-live mono">Open Source Doc</a>
+        </div>
+        <div class="srs-due-question">${escapeHtml(cur.q)}</div>
+        ${srsAnswerShown
+          ? `<div class="srs-due-answer">${escapeHtml(cur.a)}</div>
+             <div class="srs-due-actions">
+               <button type="button" class="btn-srs-rate-dash" data-dash-rate="0">Again (&lt;10m)</button>
+               <button type="button" class="btn-srs-rate-dash" data-dash-rate="1">Hard (1d)</button>
+               <button type="button" class="btn-srs-rate-dash" data-dash-rate="2">Good (3d+)</button>
+               <button type="button" class="btn-srs-rate-dash" data-dash-rate="3">Easy (7d+)</button>
+             </div>`
+          : `<div class="srs-due-actions"><button type="button" id="btn-dash-reveal" class="btn-m3 btn-tonal">Reveal Answer</button></div>`
+        }
+      </div>
+    `;
+  }
 
-  // Standards
-  { abbr: 'AACE', full: 'Association for the Advancement of Cost Engineering', cat: 'Standards', desc: 'Standard defining `Class 5` (order-of-magnitude) through `Class 1` (tender/control) Capex estimate accuracy bands.', where: 'PM-18' },
-  { abbr: 'ASHRAE', full: 'American Society of Heating, Refrigerating & Air-Conditioning Engineers', cat: 'Standards', desc: 'Author of `TC 9.9` server thermal envelopes (`18-27 degC`) and `Guideline 0` L1-L5 commissioning methodology.', where: 'PM-03, PM-28, PM-29' },
-  { abbr: 'ATD / ATS', full: 'Accredited Tier Designer / Accredited Tier Specialist', cat: 'Standards', desc: 'Uptime Institute professional credentials required to certify Tier III topology (`TCDD`) and constructed audit (`TCCF`).', where: 'PM-01, PM-03, PM-31' },
-  { abbr: 'BS / EN', full: 'British Standard / European Norm', cat: 'Standards', desc: 'Harmonized technical codes enforced across Ireland/EU engineering, structural Eurocodes, and fire protection.', where: 'PM-03, EU-14' },
-  { abbr: 'BSRIA', full: 'Building Services Research and Information Association', cat: 'Standards', desc: 'Author of `BG 29` (pre-commission pipework flushing) and `BG 63` (Soft Landings post-occupancy evaluation).', where: 'PM-28, PM-36' },
-  { abbr: 'CE / EN 50600', full: 'Conformite Europeenne / European Standard EN 50600', cat: 'Standards', desc: 'Europe\'s unified data centre standard governing Availability Classes `1-4` (power, cooling, security) and KPI metrics.', where: 'PM-03, PM-31' },
-  { abbr: 'CIBSE', full: 'Chartered Institution of Building Services Engineers', cat: 'Standards', desc: 'UK/Ireland engineering standard body authoring `Code M` Commissioning Management framework (`L1-L5`).', where: 'PM-28..PM-30' },
-  { abbr: 'ENA G5/5 / G99', full: 'Energy Networks Association G5/5 & G99', cat: 'Standards', desc: 'Engineering Recommendations regulating utility harmonic distortion (`G5/5`) and embedded generation connection (`G99`).', where: 'EU-10' },
-  { abbr: 'IEC', full: 'International Electrotechnical Commission', cat: 'Standards', desc: 'Global electrical equipment testing and switchgear safety standards (`IEC 61439`, `62271`, `61850`).', where: 'PM-26, PM-28' },
-  { abbr: 'ISO 19650', full: 'BS EN ISO 19650 BIM Information Management', cat: 'Standards', desc: 'International Common Data Environment (`CDE`) standard governing `EIR`, `BEP`, `MIDP`, naming, and `S0-S4 / A1-A7` suitability.', where: 'PM-11, PM-33' },
-  { abbr: 'ISO 22237', full: 'ISO/IEC 22237 Data Centre Facilities & Infrastructures', cat: 'Standards', desc: 'Global counterpart harmonized directly with `EN 50600` defining Availability Class 3 topology.', where: 'PM-03' },
-  { abbr: 'ISO 31000', full: 'ISO 31000 Risk Management Standard', cat: 'Standards', desc: 'Framework structuring risk identification, Likelihood x Impact (`L x I`) scoring, triggers, and governance escalation.', where: 'PM-21' },
-  { abbr: 'ISO 9001', full: 'ISO 9001 Quality Management System', cat: 'Standards', desc: 'Quality assurance benchmark underpinning the Construction Quality Plan (`CQP`), `ITPs`, and `NCR` closeout.', where: 'PM-22' },
-  { abbr: 'M&O', full: 'Management & Operations (Uptime Stamp of Approval)', cat: 'Standards', desc: 'Uptime Institute audit verifying operational staffing, SOP/MOP/EOP procedures, and `2N/N+2` human-factor readiness.', where: 'PM-32' },
-  { abbr: 'NETA', full: 'InterNational Electrical Testing Association', cat: 'Standards', desc: 'Acceptance testing specifications (`ANSI/NETA ATS`) for MV/HV relays, breakers, transformers, and insulation.', where: 'PM-28' },
-  { abbr: 'RIBA', full: 'Royal Institute of British Architects (Plan of Work)', cat: 'Standards', desc: '8-stage lifecycle roadmap (`Stages 0-7`: Strategic Definition through In-Use) structuring `DC45-EU` stage gates.', where: 'All Tracks' },
-  { abbr: 'TCDD / TCCF', full: 'Tier Certification of Design Documents / Constructed Facility', cat: 'Standards', desc: 'Uptime Institute two-stage audit certifying design drawings (`TCDD`) and physical witness testing (`TCCF`, `A7040`).', where: 'PM-03, PM-31' },
-  { abbr: 'UL', full: 'Underwriters Laboratories', cat: 'Standards', desc: 'Product fire, battery thermal-runaway (`UL 9540A` BESS/Li-Ion), and electrical safety certification standard.', where: 'PM-26' },
+  host.innerHTML = `
+    <div class="srs-due-bar">
+      <div class="srs-due-summary">
+        <span class="srs-due-pill ${pillCls}">${pillText}</span>
+        <span style="font-size:13px;font-weight:700;color:#1b365d;">SM-2 Spaced Repetition Queue &amp; Feynman Notes</span>
+        <span class="mono" style="font-size:11.5px;color:#44474f;">${reviewedCount} scheduled | ${notesCount} quick notes</span>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center;">
+        ${cur ? `<button type="button" id="btn-toggle-srs-drawer" class="btn-m3 btn-tonal">${srsDrawerOpen ? 'Close Drill' : 'Review Due Card'}</button>` : '<span class="mono" style="font-size:12px;color:#146c2e;font-weight:700;">Queue Clear</span>'}
+      </div>
+    </div>
+    ${drawerHtml}
+  `;
 
-  // Cx, BIM & Ops
-  { abbr: 'AIM', full: 'Asset Information Model', cat: 'Cx, BIM & Ops', desc: 'As-built `ISO 19650-3` digital twin + `COBie` asset register handed over to Operations (`FM`) within 30 days of COD.', where: 'PM-33, Charter' },
-  { abbr: 'BEP', full: 'BIM Execution Plan', cat: 'Cx, BIM & Ops', desc: 'Project delivery plan defining LOD 400 modeling rules, clash workflows, CDE permissions, and file naming.', where: 'PM-11, SteerCo' },
-  { abbr: 'BIM', full: 'Building Information Modelling', cat: 'Cx, BIM & Ops', desc: '3D federated digital model (`Revit`/`Navisworks`/`ACC`) eliminating CSA/MEP/HV spatial clashes before site build.', where: 'PM-11, PM-24' },
-  { abbr: 'CDE', full: 'Common Data Environment', cat: 'Cx, BIM & Ops', desc: 'Single source-of-truth repository (`ACC` / `Aconex`) enforcing `WIP -> Shared -> Published -> Archive` workflows.', where: 'PM-11, PM-33' },
-  { abbr: 'CMMS', full: 'Computerized Maintenance Management System', cat: 'Cx, BIM & Ops', desc: 'Facility software loaded with `COBie` asset tags, serial numbers, warranties, and `PPM` schedules before handover.', where: 'PM-33' },
-  { abbr: 'COBie', full: 'Construction Operations Building Information Exchange', cat: 'Cx, BIM & Ops', desc: 'Structured asset data schema transferring MEP/HV equipment metadata cleanly from BIM into Ops `CMMS`.', where: 'PM-33' },
-  { abbr: 'CQP', full: 'Construction Quality Plan', cat: 'Cx, BIM & Ops', desc: 'Overarching site QA/QC governance manual integrating contractor `ITPs`, lab testing, and `NCR` workflows.', where: 'PM-22' },
-  { abbr: 'CSA', full: 'Civil, Structural & Architectural', cat: 'Cx, BIM & Ops', desc: 'Piling, foundations, precast/steel superstructure, weather-tight envelope (`M4350`), and site hardstands.', where: 'PM-24, PM-25' },
-  { abbr: 'Cx', full: 'Commissioning', cat: 'Cx, BIM & Ops', desc: 'Structured quality verification process testing plant from factory (`L1`) to live full-load blackout integration (`L5`).', where: 'PM-28..PM-31' },
-  { abbr: 'CxA', full: 'Commissioning Authority (Independent)', cat: 'Cx, BIM & Ops', desc: 'Independent third-party authority holding SteerCo non-overridable veto rights at Gates `M6260 (L3)`, `M6370 (L4)`, and `M6470 (L5)`.', where: 'PM-01, PM-28..PM-31' },
-  { abbr: 'CxAlloy / CxTrack', full: 'Commissioning Management Platforms', cat: 'Cx, BIM & Ops', desc: 'Digital cloud commissioning tools logging `L1-L4` checksheets, red-tags, and burn-down of Commissioning Issues (`CxIL`).', where: 'PM-28, PM-30' },
-  { abbr: 'CxIL', full: 'Commissioning Issues Log', cat: 'Cx, BIM & Ops', desc: 'Tracked Severity-1/2/3 defect list discovered during commissioning; zero Severity-1 items permitted before `TR-05`/`COD`.', where: 'PM-30, SteerCo' },
-  { abbr: 'EIR', full: 'Exchange Information Requirements', cat: 'Cx, BIM & Ops', desc: 'Client ISO 19650 specification defining what digital BIM, COBie, and asset models contractors must deliver at each gate.', where: 'PM-11' },
-  { abbr: 'EOP', full: 'Emergency Operating Procedure', cat: 'Cx, BIM & Ops', desc: 'Crisis response playbook executed during blackouts, fire suppression trips, or cooling failure drills (`Black-Hat`).', where: 'PM-32' },
-  { abbr: 'FAT', full: 'Factory Acceptance Test', cat: 'Cx, BIM & Ops', desc: 'Witnessed Level 1/2 performance & shock-logger test at OEM plant (`63MVA` tx, `GIS`, `UPS`, gensets) prior to shipping (`M3120`).', where: 'PM-16, PM-28' },
-  { abbr: 'FPT', full: 'Functional Performance Testing', cat: 'Cx, BIM & Ops', desc: 'Level 4 energized testing verifying each equipment subsystem behaves per Sequence of Operations (`SOO`).', where: 'PM-29' },
-  { abbr: 'H&S / HSE', full: 'Health & Safety / Health, Safety & Environment', cat: 'Cx, BIM & Ops', desc: 'Site worker welfare, RAMS, `S.I. No. 291/2013` compliance, and environmental safeguards.', where: 'PM-22, EU-16..EU-18' },
-  { abbr: 'IFC', full: 'Issued for Construction', cat: 'Cx, BIM & Ops', desc: 'Frozen, coordinated `RIBA Stage 4` engineering design set (`M2110`) approved for physical procurement and build.', where: 'PM-07, PM-11' },
-  { abbr: 'IST', full: 'Integrated Systems Testing (Level 5)', cat: 'Cx, BIM & Ops', desc: 'Full-facility `48`-hour `45 MW` portable load-bank heat soak + `<10s` utility blackout failure test (`M6470`).', where: 'PM-30, Charter' },
-  { abbr: 'ITP', full: 'Inspection and Test Plan', cat: 'Cx, BIM & Ops', desc: 'Trade-specific quality schedule defining Hold Points (`H`), Witness Points (`W`), and Review steps (`R`) for `BCAR` & `Cx`.', where: 'PM-22, EU-15' },
-  { abbr: 'L1-L5', full: 'ASHRAE / CIBSE Commissioning Levels 1 through 5', cat: 'Cx, BIM & Ops', desc: '`L1` Factory FAT -> `L2` Site Red-Tag Install -> `L3` Static/Pre-Functional -> `L4` Functional Dynamic -> `L5` Integrated Systems Test (`IST`).', where: 'PM-28..PM-30' },
-  { abbr: 'LOD', full: 'Level of Development (BIM LOD 300 / 400 / 500)', cat: 'Cx, BIM & Ops', desc: 'BIM geometry/data detail scale: `LOD 400` fabrication-ready clash-free design (`M2110`) up to `LOD 500` As-Built.', where: 'PM-11, PM-33' },
-  { abbr: 'MIDP', full: 'Master Information Delivery Plan', cat: 'Cx, BIM & Ops', desc: 'Consolidated schedule of every BIM deliverable, model container, drawing, and COBie drop across all task teams.', where: 'PM-11' },
-  { abbr: 'MOP', full: 'Method of Procedure', cat: 'Cx, BIM & Ops', desc: 'Step-by-step live switching or critical maintenance script preventing human-error outages in energized halls.', where: 'PM-32' },
-  { abbr: 'NCR', full: 'Non-Conformance Report', cat: 'Cx, BIM & Ops', desc: 'Formal quality deviation record tracking root cause, engineering disposition, and re-inspection closure.', where: 'PM-22, PM-24' },
-  { abbr: 'NDE', full: 'Non-Destructive Examination', cat: 'Cx, BIM & Ops', desc: 'Weld radiography, ultrasonic, and concrete integrity testing validating structural/piping quality without damage.', where: 'PM-22' },
-  { abbr: 'NOC', full: 'Network Operations Centre', cat: 'Cx, BIM & Ops', desc: '24/7 operational monitoring hub inside the data centre requiring BCAR Part M accessibility and resilience.', where: 'EU-14, PM-32' },
-  { abbr: 'O&M', full: 'Operations and Maintenance', cat: 'Cx, BIM & Ops', desc: 'Post-COD 24/7 facility engineering regime executing `PPM`, `MOPs`, and `2`-year critical spares management.', where: 'PM-32, PM-33' },
-  { abbr: 'OEM', full: 'Original Equipment Manufacturer', cat: 'Cx, BIM & Ops', desc: 'Primary tier-1 plant makers (transformers, GIS switchgear, UPS, HVO gensets, chillers, BESS) requiring slot deposits.', where: 'PM-16, PM-28' },
-  { abbr: 'OR&T', full: 'Operational Readiness and Transition', cat: 'Cx, BIM & Ops', desc: 'Stage 5-6 readiness stream (`A6510-A6540`) covering staffing, SOP/EOP/MOP library, `Black-Hat` drills, and spares handover.', where: 'PM-32, PM-34' },
-  { abbr: 'PC / RFS', full: 'Practical Completion / Ready for Service', cat: 'Cx, BIM & Ops', desc: 'Contractual completion gate (`PC`) and tenant lease handover date (`RFS`) marking transition to live commercial operations.', where: 'PM-31' },
-  { abbr: 'POE', full: 'Post-Occupancy Evaluation', cat: 'Cx, BIM & Ops', desc: '`RIBA Stage 7` / `BSRIA BG 63` seasonal 12-month verification auditing real winter/summer `PUE`, `WUE`, and `ERF`.', where: 'PM-36' },
-  { abbr: 'PPM', full: 'Planned Preventive Maintenance', cat: 'Cx, BIM & Ops', desc: 'Scheduled OEM-prescribed servicing cycles loaded into `CMMS` prior to COD.', where: 'PM-33' },
-  { abbr: 'QA/QC', full: 'Quality Assurance / Quality Control', cat: 'Cx, BIM & Ops', desc: 'Preventive quality processes (`QA`) and physical inspection/testing verification (`QC`) across CSA, MEP, and Cx.', where: 'PM-22' },
-  { abbr: 'RAMS', full: 'Risk Assessment and Method Statement', cat: 'Cx, BIM & Ops', desc: 'Mandatory task-level safe work method reviewed and signed off by `PSCS` prior to high-risk site activities.', where: 'PM-22, EU-17' },
-  { abbr: 'S0-S4 / A1-A7', full: 'ISO 19650 CDE Suitability Status Codes', cat: 'Cx, BIM & Ops', desc: 'Work-in-Progress (`WIP`), Shared (`S0-S4` review/approval), and Published (`A1-A7` authorized contractual baseline) file states.', where: 'PM-11, Charter' },
-  { abbr: 'SAP', full: 'Senior Authorized Person', cat: 'Cx, BIM & Ops', desc: 'Certified high-voltage engineer legally holding `110kV/22kV` switching, `LOTO`, and Sanction-for-Test authority.', where: 'PM-28, EU-11' },
-  { abbr: 'SAT', full: 'Site Acceptance Test', cat: 'Cx, BIM & Ops', desc: 'On-site delivery and functional readiness verification confirming no transit damage occurred post-`FAT`.', where: 'PM-16, PM-28' },
-  { abbr: 'SLA', full: 'Service Level Agreement', cat: 'Cx, BIM & Ops', desc: 'Contractual availability (`99.999%`), temperature/humidity (`TC 9.9`), and SteerCo decision turnaround commitments.', where: 'PM-03, SteerCo' },
-  { abbr: 'SOC', full: 'Security Operations Centre', cat: 'Cx, BIM & Ops', desc: '24/7 physical security hub monitoring `PIDS` fence sensors, biometrics, CCTV, and `PAS 68` vehicle sally ports.', where: 'PM-25, Charter' },
-  { abbr: 'SOO', full: 'Sequence of Operations', cat: 'Cx, BIM & Ops', desc: 'Control-logic specification defining chiller staging, ATS transfer, BESS peak-shaving, and failover behavior.', where: 'PM-27, PM-29' },
-  { abbr: 'SOP', full: 'Standard Operating Procedure', cat: 'Cx, BIM & Ops', desc: 'Routine operational instructions governing normal daily facility monitoring and inspections.', where: 'PM-32' },
-  { abbr: 'WIP', full: 'Work in Progress (ISO 19650 CDE)', cat: 'Cx, BIM & Ops', desc: 'Private discipline authoring zone inside `CDE` prior to coordinator check and Shared (`S1`) release.', where: 'PM-11' },
-
-  // Data & Misc
-  { abbr: 'CFE', full: '24/7 Carbon-Free Energy', cat: 'Data & Misc', desc: 'Hourly grid-matched renewable power procurement standard surpassing annual `GO` certificates for `EU EED REF`.', where: 'EU-12' },
-  { abbr: 'CSV / JSON', full: 'Comma-Separated Values / JavaScript Object Notation', cat: 'Data & Misc', desc: 'Export/import data formats supported by the `gogo/` dashboard for Study History CSV and full progress backups.', where: 'Dashboard Top/History' },
-  { abbr: 'DC45-EU', full: 'Ireland / EU 45 MW Hyperscale Data Centre Portfolio', cat: 'Data & Misc', desc: 'Reference project (`5x 9 MW` halls, `880` workdays, `M1000` to `M7060`, `I.S. EN 50600 Class 3`) unified across XER, Excel & Portal.', where: 'All Modules' },
-  { abbr: 'GDPR', full: 'EU General Data Protection Regulation', cat: 'Data & Misc', desc: 'Binding EU data privacy regulation governing access-control biometrics, CCTV retention, and tenant hosting compliance.', where: 'PM-31, EU-15' },
-  { abbr: 'PCB', full: 'Printed Circuit Board / Polychlorinated Biphenyls', cat: 'Data & Misc', desc: 'Critical tier-2 electronic sub-components inside OEM UPS/breakers tracked in supply-chain logs (also hazardous transformer oils checked in Phase 1 ESA).', where: 'PM-16, PM-02' },
-  { abbr: 'PoE (802.3)', full: 'Power over Ethernet', cat: 'Engineering & MEP', desc: 'Structured cabling standard powering BMS edge sensors, access control readers, and IP security cameras.', where: 'PM-25' },
-  { abbr: 'QBAR', full: 'Mean Annual Flood Flow', cat: 'Data & Misc', desc: 'Pre-development greenfield catchment runoff rate limiting discharge from site `SuDS` attenuation ponds.', where: 'EU-06' },
-  { abbr: 'SQL', full: 'Structured Query Language (Supabase Postgres)', cat: 'Data & Misc', desc: 'Database language powering `dc36_learning_schema.sql` for cross-device cloud sync (`dc_learning_modules`, `doc_checks`, `history`).', where: 'History & Sync' },
-  { abbr: 'WS', full: 'White Space', cat: 'Data & Misc', desc: 'Conditioned IT server hall area (`Data Halls 1-5`, `800mm` raised floor) distinct from Grey Space MEP plant.', where: 'PM-24, PM-26, WBS 5.4' }
-];
+  const toggleBtn = document.getElementById('btn-toggle-srs-drawer');
+  if (toggleBtn) {
+    toggleBtn.onclick = () => {
+      srsDrawerOpen = !srsDrawerOpen;
+      srsAnswerShown = false;
+      renderDueTodayBanner();
+    };
+  }
+  const revBtn = document.getElementById('btn-dash-reveal');
+  if (revBtn) {
+    revBtn.onclick = () => {
+      srsAnswerShown = true;
+      renderDueTodayBanner();
+    };
+  }
+  host.querySelectorAll('.btn-srs-rate-dash').forEach(btn => {
+    btn.onclick = () => {
+      if (!cur) return;
+      const rate = Number(btn.dataset.dashRate);
+      const ex = store.loadExtras();
+      ex.srs[cur.id] = store.gradeSrsCard(ex.srs[cur.id], rate);
+      store.saveExtras(ex);
+      srsAnswerShown = false;
+      renderDueTodayBanner();
+      showToast(`Scheduled ${cur.id}: ${store.formatDueLabel(ex.srs[cur.id])}`);
+    };
+  });
+}
 
 let abbrCatFilter = 'ALL';
 let abbrAlphaFilter = 'ALL';
@@ -2618,13 +2429,15 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   document.getElementById('btn-export').onclick = () => {
-    const payload = { profileId: getProfileId(), state, historyEvents };
+    const store = window.DC45_LEARNING_STORE;
+    const extras = store ? store.loadExtras() : null;
+    const payload = { profileId: getProfileId(), state, historyEvents, learningExtras: extras };
     const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
     a.download = `dc36_eu_learning_backup_${new Date().toISOString().slice(0, 10)}.json`;
     a.click();
-    showToast('Exported JSON progress + history backup');
+    showToast('Exported JSON progress, SRS & history backup');
   };
 
   document.getElementById('file-import').onchange = (e) => {
@@ -2646,12 +2459,16 @@ document.addEventListener('DOMContentLoaded', () => {
           historyEvents = imported.historyEvents;
           saveLocalHistory();
         }
+        if (imported.learningExtras && window.DC45_LEARNING_STORE) {
+          window.DC45_LEARNING_STORE.saveExtras(imported.learningExtras);
+        }
         saveState('Imported progress backup');
         renderTrackSection('pm');
         renderTrackSection('legal');
         renderPortfolio();
         renderInterviews();
         renderHistory();
+        renderDueTodayBanner();
       } catch {
         showToast('Invalid JSON backup file');
       }
@@ -2660,9 +2477,12 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   document.getElementById('btn-reset').onclick = () => {
-    if (!confirm('Reset all local learning progress, hours, notes, confidence scores, and local history cache?')) return;
+    if (!confirm('Reset all local learning progress, hours, notes, confidence scores, SRS queue, and local history cache?')) return;
     state = defaultState();
     historyEvents = [];
+    if (window.DC45_LEARNING_STORE) {
+      localStorage.removeItem(window.DC45_LEARNING_STORE.EXTRAS_KEY);
+    }
     saveLocalHistory();
     saveState('Local progress reset');
     renderTrackSection('pm');
@@ -2670,6 +2490,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderPortfolio();
     renderInterviews();
     renderHistory();
+    renderDueTodayBanner();
   };
 
   renderTrackSection('pm');
@@ -2678,6 +2499,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderInterviews();
   renderHistory();
   renderAbbreviations();
+  renderDueTodayBanner();
   updateMetrics();
   pullFromSupabase(true);
 });
