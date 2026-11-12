@@ -1,6 +1,6 @@
 // Auto-generated full-detail Phase 1 document repository payload
 window.PHASE1_PORTAL_DATA = {
-  "generatedAt": "2026-11-12 08:53 UTC",
+  "generatedAt": "2026-11-12 09:08 UTC",
   "phaseTitle": "Phase 1: Initiation, Charter & Business Case (RIBA 0-1)",
   "fileCount": 31,
   "masterWorkbooks": {
@@ -26,7 +26,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 8,
-                "kind": "banner"
+                "kind": "header"
               }
             ],
             [
@@ -35,7 +35,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 8,
-                "kind": "cell"
+                "kind": "section"
               }
             ],
             [
@@ -173,7 +173,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 8,
-                "kind": "cell"
+                "kind": "section"
               }
             ],
             [
@@ -219,7 +219,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "=COUNTA('3. Milestones & Budget'!A6:A15)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "pass"
               },
               {
                 "v": "Gates (M1000-M7060)",
@@ -249,7 +249,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "=COUNTIF('3. Milestones & Budget'!G6:G15,\"YES\")",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "pass"
               },
               {
                 "v": "Zero-Float Gates",
@@ -392,7 +392,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 8,
-                "kind": "cell"
+                "kind": "section"
               }
             ],
             [
@@ -452,7 +452,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "pass"
               }
             ],
             [
@@ -482,7 +482,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "pass"
               }
             ],
             [
@@ -512,7 +512,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "pass"
               }
             ],
             [
@@ -542,7 +542,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "pass"
               }
             ]
           ]
@@ -566,7 +566,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 8,
-                "kind": "banner"
+                "kind": "header"
               }
             ],
             [
@@ -575,7 +575,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 8,
-                "kind": "cell"
+                "kind": "section"
               }
             ],
             [
@@ -699,7 +699,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 8,
-                "kind": "cell"
+                "kind": "section"
               }
             ],
             [
@@ -731,7 +731,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Tenant Active IT Equipment",
@@ -754,7 +754,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Upstream EirGrid Transmission",
@@ -777,7 +777,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "District Heating Network Pipe",
@@ -800,7 +800,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 8,
-                "kind": "cell"
+                "kind": "section"
               }
             ],
             [
@@ -939,7 +939,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 8,
-                "kind": "banner"
+                "kind": "header"
               }
             ],
             [
@@ -948,7 +948,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 8,
-                "kind": "cell"
+                "kind": "section"
               }
             ],
             [
@@ -1015,56 +1015,56 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "1.0-PERM",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "RIBA Stage 1 Notice to Proceed & Land Option Milestone",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Start Gate",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "2027-01-04",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "YES",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Board / Investment Committee",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               }
             ],
             [
@@ -1131,56 +1131,56 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "1.0-PERM",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "All Irish Statutory Planning, EPA IEL & BCAR Clearances Milestone",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Finish Gate",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "2027-10-18",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "YES",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Local Auth / EPA / EirGrid / BCMS",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               }
             ],
             [
@@ -1247,56 +1247,56 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "4.3-ENVEL",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Building Shell 100% Weather-Tight & BCAR Envelope Ready Milestone",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Finish Gate",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "2028-12-25",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "YES",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Assigned Certifier / Civil PSCS",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               }
             ],
             [
@@ -1305,56 +1305,56 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "5.5-ICT",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "MEP Infrastructure & White Space Fit-Out Complete Milestone",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Finish Gate",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "2029-07-30",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "YES",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "MEP Lead / Commissioning Manager",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               }
             ],
             [
@@ -1363,56 +1363,56 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "6.2-L3",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Cx Level 3 Pre-Functional Static & LOTO Ready Milestone",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Finish Gate",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "2029-08-20",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "YES",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Independent CxA / HV AP",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               }
             ],
             [
@@ -1421,56 +1421,56 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "6.3-L4",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Cx Level 4 Functional Dynamic Performance Passed Milestone",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Finish Gate",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "2029-10-15",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "YES",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Independent CxA",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               }
             ],
             [
@@ -1479,56 +1479,56 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "6.4-L5",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Cx Level 5 Integrated Systems Testing (36MW IST) Passed Milestone",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Finish Gate",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "2029-12-24",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "YES",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Client Tech Rep / CxA",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               }
             ],
             [
@@ -1537,56 +1537,56 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "7.0-COD",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Commercial Operation Date (COD), Handover & Safety File Milestone",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Finish Gate",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "2030-03-18",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "YES",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Assigned Certifier / EN 50600 / Client",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               }
             ],
             [
@@ -1595,7 +1595,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 8,
-                "kind": "cell"
+                "kind": "section"
               }
             ],
             [
@@ -1683,14 +1683,14 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
@@ -1741,14 +1741,14 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
@@ -1799,14 +1799,14 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
@@ -1857,14 +1857,14 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
@@ -1915,14 +1915,14 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
@@ -1973,14 +1973,14 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
@@ -2031,14 +2031,14 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
@@ -2068,56 +2068,56 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "Total Authorized EUR Capex Baseline (Links to Sheet 1)",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "All 7 Packages",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=SUM(D19:D25)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=SUM(E19:E25)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=SUM(F19:F25)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "0.0%",
                 "f": "=SUM(G19:G25)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "0.0%",
                 "f": "=IFERROR(E26/D26,0)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               }
             ],
             [
@@ -2126,7 +2126,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 8,
-                "kind": "cell"
+                "kind": "section"
               }
             ],
             [
@@ -2221,7 +2221,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
@@ -2279,7 +2279,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
@@ -2337,7 +2337,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
@@ -2395,7 +2395,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
@@ -2453,7 +2453,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
@@ -2511,7 +2511,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
@@ -2541,56 +2541,56 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "Full EUR Capex Tranche Reconciliation",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "100.0%",
                 "f": "=SUM(E30:E35)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=SUM(F30:F35)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               }
             ]
           ]
@@ -2614,7 +2614,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 8,
-                "kind": "banner"
+                "kind": "header"
               }
             ],
             [
@@ -2623,7 +2623,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 8,
-                "kind": "cell"
+                "kind": "section"
               }
             ],
             [
@@ -2706,7 +2706,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 2,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Formal CCB Instruction",
@@ -2736,7 +2736,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 2,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Board Resolution",
@@ -2752,7 +2752,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 8,
-                "kind": "cell"
+                "kind": "section"
               }
             ],
             [
@@ -2899,7 +2899,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 8,
-                "kind": "cell"
+                "kind": "section"
               }
             ],
             [
@@ -2980,14 +2980,14 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "pass"
               },
               {
                 "v": "R",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "C",
@@ -3045,14 +3045,14 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "pass"
               },
               {
                 "v": "R",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "C",
@@ -3103,7 +3103,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "pass"
               },
               {
                 "v": "C",
@@ -3117,7 +3117,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "C",
@@ -3161,7 +3161,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "pass"
               },
               {
                 "v": "C",
@@ -3175,7 +3175,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "C",
@@ -3219,7 +3219,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "pass"
               },
               {
                 "v": "C",
@@ -3233,7 +3233,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "C",
@@ -3277,7 +3277,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "pass"
               },
               {
                 "v": "C",
@@ -3291,14 +3291,14 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "R",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "C",
@@ -3335,7 +3335,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "pass"
               },
               {
                 "v": "C",
@@ -3363,7 +3363,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               }
             ],
             [
@@ -3386,14 +3386,14 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "pass"
               },
               {
                 "v": "R",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "C",
@@ -3407,14 +3407,14 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "R",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "C",
@@ -3445,7 +3445,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 8,
-                "kind": "banner"
+                "kind": "header"
               }
             ],
             [
@@ -3454,7 +3454,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 8,
-                "kind": "cell"
+                "kind": "section"
               }
             ],
             [
@@ -3493,7 +3493,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "CIBSE / ASHRAE Cx L3-L5",
@@ -3523,7 +3523,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Part B Fire Clearance",
@@ -3583,7 +3583,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "EirGrid 110kV Live Sync",
@@ -3613,7 +3613,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "EN 50600 & Tier III Audit",
@@ -3643,7 +3643,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "BCAR Certificate (CCC)",
@@ -3673,7 +3673,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "pass"
               },
               {
                 "v": "Safety File & 2-Yr Spares",
@@ -3703,7 +3703,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 8,
-                "kind": "cell"
+                "kind": "section"
               }
             ],
             [
@@ -3796,7 +3796,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 8,
-                "kind": "banner"
+                "kind": "header"
               }
             ],
             [
@@ -3805,7 +3805,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 8,
-                "kind": "cell"
+                "kind": "section"
               }
             ],
             [
@@ -3872,56 +3872,56 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "A1030-A1040",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Planning Judicial Review or EIAR further information request slips Planning Grant.",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "4",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "5",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "20",
                 "f": "=D6*E6",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "CRITICAL",
                 "f": "=IF(F6>=20,\"CRITICAL\",IF(F6>=15,\"HIGH\",IF(F6>=8,\"MODERATE\",\"LOW\")))",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Comprehensive Section 247 consultation; pre-validate biodiversity, acoustic & drainage.",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               }
             ],
             [
@@ -3988,56 +3988,56 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "A1060-A1070",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "EirGrid / CRU policy requires expanded BESS / dispatchable power before MIC offer.",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "4",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "5",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "20",
                 "f": "=D8*E8",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "CRITICAL",
                 "f": "=IF(F8>=20,\"CRITICAL\",IF(F8>=15,\"HIGH\",IF(F8>=8,\"MODERATE\",\"LOW\")))",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Embed on-site BESS (A3045/A5250) & renewable PPA Day-1; run early RMS studies.",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               }
             ],
             [
@@ -4104,56 +4104,56 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "A6410-M6470",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "36 MW load bank availability or weather interrupts 48-hr continuous IST.",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "4",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "5",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "20",
                 "f": "=D10*E10",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "CRITICAL",
                 "f": "=IF(F10>=20,\"CRITICAL\",IF(F10>=15,\"HIGH\",IF(F10>=8,\"MODERATE\",\"LOW\")))",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Bind 36 MW load bank & HVO fuel tankers 6 months ahead of M6260 static ready.",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               }
             ],
             [
@@ -4162,56 +4162,56 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "A7010-A7050",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Unresolved Part B Fire or BCAR Assigned Certifier ancillary certs hold up CCC.",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "4",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "5",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "20",
                 "f": "=D11*E11",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "CRITICAL",
                 "f": "=IF(F11>=20,\"CRITICAL\",IF(F11>=15,\"HIGH\",IF(F11>=8,\"MODERATE\",\"LOW\")))",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Continuous progressive BCAR inspections & pre-COD Fire Officer mock walkdowns.",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               }
             ],
             [
@@ -4220,7 +4220,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 8,
-                "kind": "cell"
+                "kind": "section"
               }
             ],
             [
@@ -4369,7 +4369,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 12,
-                "kind": "banner"
+                "kind": "header"
               }
             ],
             [
@@ -4378,7 +4378,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 12,
-                "kind": "cell"
+                "kind": "section"
               }
             ],
             [
@@ -4475,7 +4475,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "Ratio",
@@ -4512,7 +4512,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "L/kWh",
@@ -4549,7 +4549,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "Ratio",
@@ -4586,7 +4586,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR/kW/mo",
@@ -4623,7 +4623,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR/kWh",
@@ -4660,7 +4660,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR/yr",
@@ -4697,7 +4697,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "%",
@@ -4734,7 +4734,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "%",
@@ -4794,7 +4794,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 12,
-                "kind": "cell"
+                "kind": "section"
               }
             ],
             [
@@ -4953,7 +4953,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 12,
-                "kind": "cell"
+                "kind": "section"
               }
             ],
             [
@@ -5062,70 +5062,70 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "50.0%",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "75.0%",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "90.0%",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "95.0%",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "95.0%",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "95.0%",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "95.0%",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "95.0%",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "95.0%",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               }
             ],
             [
@@ -5478,84 +5478,84 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=SUM(B28:B30)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=SUM(C28:C30)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=SUM(D28:D30)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=SUM(E28:E30)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=SUM(F28:F30)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=SUM(G28:G30)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=SUM(H28:H30)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=SUM(I28:I30)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=SUM(J28:J30)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=SUM(K28:K30)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=SUM(L28:L30)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               }
             ],
             [
@@ -5650,84 +5650,84 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=B31+B32",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=C31+C32",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=D31+D32",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=E31+E32",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=F31+F32",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=G31+G32",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=H31+H32",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=I31+I32",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=J31+J32",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=K31+K32",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=L31+L32",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               }
             ],
             [
@@ -5736,84 +5736,84 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=B33",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=B34+C33",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=C34+D33",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=D34+E33",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=E34+F33",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=F34+G33",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=G34+H33",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=H34+I33",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=I34+J33",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=J34+K33",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=K34+L33",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               }
             ]
           ]
@@ -5837,7 +5837,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 6,
-                "kind": "banner"
+                "kind": "header"
               }
             ],
             [
@@ -6169,7 +6169,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 14,
-                "kind": "banner"
+                "kind": "header"
               }
             ],
             [
@@ -6306,28 +6306,28 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
@@ -6406,28 +6406,28 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
@@ -6506,28 +6506,28 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
@@ -6606,28 +6606,28 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
@@ -6706,28 +6706,28 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
@@ -6806,28 +6806,28 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
@@ -6906,28 +6906,28 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
@@ -7006,7 +7006,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "input"
               },
               {
                 "v": "EUR 0",
@@ -7078,98 +7078,98 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "Total Authorized EUR BAC (Links to Sheet 1 Capex)",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "141",
                 "f": "=SUM(C5:C11)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "2027-01-04 to 2030-03-18",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=SUM(E5:E12)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=SUM(F5:F12)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=SUM(G5:G12)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=SUM(H5:H12)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=SUM(I5:I12)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=SUM(J5:J12)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "0.0/0.0",
                 "f": "=IFERROR(G13/H13,0)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "0.0/0.0",
                 "f": "=IFERROR(G13/F13,0)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=SUM(M5:M12)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               },
               {
                 "v": "EUR 0",
                 "f": "=SUM(N5:N12)",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "total"
               }
             ]
           ]
@@ -7193,7 +7193,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 10,
-                "kind": "banner"
+                "kind": "header"
               }
             ],
             [
@@ -7274,70 +7274,70 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "A1030-A1040",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Planning / ABP",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Third-party planning appeal or Judicial Review delays Planning Grant (A1040).",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "4",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "5",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "20",
                 "f": "=E5*F5",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "CRITICAL",
                 "f": "=IF(G5>=20,\"CRITICAL\",IF(G5>=15,\"HIGH\",IF(G5>=8,\"MODERATE\",\"LOW\")))",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Planning Lead",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Early Section 247 alignment & exhaustive EIAR ecological/acoustic evidence.",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               }
             ],
             [
@@ -7418,70 +7418,70 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "A1060-A1070",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "EirGrid / CRU",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "CRU Large Energy User rules require higher on-site BESS capacity before MIC grant.",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "4",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "5",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "20",
                 "f": "=E7*F7",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "CRITICAL",
                 "f": "=IF(G7>=20,\"CRITICAL\",IF(G7>=15,\"HIGH\",IF(G7>=8,\"MODERATE\",\"LOW\")))",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Grid Director",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Integrate CRU-compliant BESS & additional renewable PPA from Stage 1.",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               }
             ],
             [
@@ -7922,70 +7922,70 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "A6410-M6470",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Commissioning",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Portable 36 MW load bank shortfall interrupts 48h IST & EN 50600 isolation.",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "4",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "5",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "20",
                 "f": "=E14*F14",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "CRITICAL",
                 "f": "=IF(G14>=20,\"CRITICAL\",IF(G14>=15,\"HIGH\",IF(G14>=8,\"MODERATE\",\"LOW\")))",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "CxA / Logistics",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Execute binding load bank & HVO fuel tanker contracts 6 months pre-M6260.",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               }
             ],
             [
@@ -8066,70 +8066,70 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "A7010, A7050",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "BCAR Handover",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Late Fire Officer comments or missing Safety File delays BCAR CCC (M7060).",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "4",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "5",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "20",
                 "f": "=E16*F16",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "CRITICAL",
                 "f": "=IF(G16>=20,\"CRITICAL\",IF(G16>=15,\"HIGH\",IF(G16>=8,\"MODERATE\",\"LOW\")))",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "PSDP / AC",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               },
               {
                 "v": "Compile Safety File progressively (A6520) & run Fire Officer mock walkdowns.",
                 "f": "",
                 "rspan": 1,
                 "cspan": 1,
-                "kind": "cell"
+                "kind": "alert"
               }
             ]
           ]
@@ -8153,7 +8153,7 @@ window.PHASE1_PORTAL_DATA = {
                 "f": "",
                 "rspan": 1,
                 "cspan": 7,
-                "kind": "banner"
+                "kind": "header"
               }
             ],
             [
@@ -9677,7 +9677,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 8,
-                      "kind": "banner"
+                      "kind": "header"
                     }
                   ],
                   [
@@ -9686,7 +9686,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 8,
-                      "kind": "cell"
+                      "kind": "section"
                     }
                   ],
                   [
@@ -9767,7 +9767,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "EUR",
@@ -9825,7 +9825,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "EUR",
@@ -9883,7 +9883,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "EUR",
@@ -9941,7 +9941,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "EUR",
@@ -9985,7 +9985,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 8,
-                      "kind": "cell"
+                      "kind": "section"
                     }
                   ],
                   [
@@ -10226,56 +10226,56 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Full Board / IC",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "> EUR 1.5M (>C9)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "BAC Overrun / Reserve",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "COD > 2030-03-18",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Load < 36 MW, PUE > 1.25, WUE > 0.25, ERF < 0.15, Termination",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Supermajority (>=80%+Chair/CFO)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Board Resolution",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     }
                   ],
                   [
@@ -10284,7 +10284,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 8,
-                      "kind": "cell"
+                      "kind": "section"
                     }
                   ],
                   [
@@ -10372,7 +10372,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "EUR 45,000,000",
@@ -10430,7 +10430,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "EUR 90,000,000",
@@ -10488,7 +10488,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "EUR 112,500,000",
@@ -10546,7 +10546,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "EUR 90,000,000",
@@ -10604,7 +10604,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "EUR 67,500,000",
@@ -10662,7 +10662,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "EUR 45,000,000",
@@ -10699,56 +10699,56 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "total"
                     },
                     {
                       "v": "",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "total"
                     },
                     {
                       "v": "Full Portfolio Release",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "total"
                     },
                     {
                       "v": "100.0%",
                       "f": "=SUM(D20:D25)",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "total"
                     },
                     {
                       "v": "EUR 450,000,000",
                       "f": "=SUM(E20:E25)",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "total"
                     },
                     {
                       "v": "Reconciles 100% to POL-BAC Input Cell C6",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "total"
                     },
                     {
                       "v": "",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "total"
                     },
                     {
                       "v": "",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "total"
                     }
                   ]
                 ]
@@ -10772,7 +10772,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 8,
-                      "kind": "banner"
+                      "kind": "header"
                     }
                   ],
                   [
@@ -10781,7 +10781,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 8,
-                      "kind": "cell"
+                      "kind": "section"
                     }
                   ],
                   [
@@ -10797,7 +10797,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 3,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "Static Statutory Hold Check [Input]:",
@@ -10811,7 +10811,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     }
                   ],
                   [
@@ -10892,7 +10892,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "2",
@@ -10906,14 +10906,14 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "YES",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "2",
@@ -10950,7 +10950,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "1",
@@ -10964,14 +10964,14 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "YES",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "1",
@@ -11008,7 +11008,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "1",
@@ -11022,14 +11022,14 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "YES",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "1",
@@ -11066,7 +11066,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "1",
@@ -11080,14 +11080,14 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "YES",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "1",
@@ -11124,7 +11124,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "1",
@@ -11138,14 +11138,14 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "ABSTAIN",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "0",
@@ -11168,56 +11168,56 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "total"
                     },
                     {
                       "v": "Active Voting Pool & Attendance Summary",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "total"
                     },
                     {
                       "v": "4",
                       "f": "=SUM(C8:C12)",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "total"
                     },
                     {
                       "v": "",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "total"
                     },
                     {
                       "v": "4",
                       "f": "=SUMPRODUCT(C8:C12,E8:E12)",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "total"
                     },
                     {
                       "v": "",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "total"
                     },
                     {
                       "v": "5",
                       "f": "=SUM(G8:G12)",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "total"
                     },
                     {
                       "v": "5",
                       "f": "=SUM(H8:H12)",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "total"
                     }
                   ],
                   [
@@ -11226,7 +11226,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 8,
-                      "kind": "cell"
+                      "kind": "section"
                     }
                   ],
                   [
@@ -11355,28 +11355,28 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "pass"
                     },
                     {
                       "v": "QUORUM MET",
                       "f": "=IF(AND(E8=1,B17>=IF(LEFT(C5,8)=\"Ordinary\",0.6,0.8)),\"QUORUM MET\",\"NO QUORUM\")",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "pass"
                     },
                     {
                       "v": "Dynamic per C5 Rule",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "pass"
                     },
                     {
                       "v": "Determines if meeting may legally resolve",
                       "f": "",
                       "rspan": 1,
                       "cspan": 5,
-                      "kind": "cell"
+                      "kind": "pass"
                     }
                   ],
                   [
@@ -11415,28 +11415,28 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "pass"
                     },
                     {
                       "v": "CARRIED / APPROVED",
                       "f": "=IF(H5=\"STATUTORY_HOLD\",\"BLOCKED - STATUTORY HOLD\",IF(B20=\"NO QUORUM\",\"DEFERRED - NO QUORUM\",IF(AND(B21>0.5,OR(LEFT(C5,8)=\"Ordinary\",AND(F8=\"YES\",F9=\"YES\"))),\"CARRIED / APPROVED\",\"REJECTED / NOT CARRIED\")))",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "pass"
                     },
                     {
                       "v": "Checks C5, Hold, Quorum & Chair/CFO",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "pass"
                     },
                     {
                       "v": "Enforces Clause 2.3 Statutory Non-Override automatically",
                       "f": "",
                       "rspan": 1,
                       "cspan": 5,
-                      "kind": "cell"
+                      "kind": "pass"
                     }
                   ],
                   [
@@ -11445,7 +11445,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 8,
-                      "kind": "cell"
+                      "kind": "section"
                     }
                   ],
                   [
@@ -11528,35 +11528,35 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Project Supervisor Design Process (PSDP)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Statutory Witness",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Veto (Design Safety)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "S.I. No. 291/2013 compliance, AF1 design safety, permanent Safety File gate (A6520).",
                       "f": "",
                       "rspan": 1,
                       "cspan": 4,
-                      "kind": "cell"
+                      "kind": "alert"
                     }
                   ],
                   [
@@ -11565,35 +11565,35 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Project Supervisor Construction (PSCS)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Statutory Witness",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Veto (Site H&S)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Multi-contractor RAMS, Safe Pass / CSCS verification, HSA reporting & site stop authority.",
                       "f": "",
                       "rspan": 1,
                       "cspan": 4,
-                      "kind": "cell"
+                      "kind": "alert"
                     }
                   ],
                   [
@@ -11602,35 +11602,35 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "BCAR Assigned Certifier (AC)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Statutory Certifier",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Veto (BCMS / CCC)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "BCAR 2014 Inspection Plan, Ancillary Certs, Part B FSC/DAC & final CCC (A7050).",
                       "f": "",
                       "rspan": 1,
                       "cspan": 4,
-                      "kind": "cell"
+                      "kind": "alert"
                     }
                   ],
                   [
@@ -11639,35 +11639,35 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Independent Commissioning Authority (CxA)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Technical Veto",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Veto (L3/L4/L5 Cx)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Independent C1-C5 QA; retains absolute hold at M6260 (L3), M6370 (L4) & M6470 (IST).",
                       "f": "",
                       "rspan": 1,
                       "cspan": 4,
-                      "kind": "cell"
+                      "kind": "alert"
                     }
                   ],
                   [
@@ -11728,7 +11728,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 7,
-                      "kind": "banner"
+                      "kind": "header"
                     }
                   ],
                   [
@@ -11737,7 +11737,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 7,
-                      "kind": "cell"
+                      "kind": "section"
                     }
                   ],
                   [
@@ -11797,49 +11797,49 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "H&S / HSA Prohibition or Fatal/RIDDOR Event",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "PSCS / PSDP",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Immediate (< 2h)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Emergency Session <= 24h",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Sponsor Chair + Board",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "STOP WORKS: S.I. 291/2013 Statutory Hold",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     }
                   ],
                   [
@@ -12154,49 +12154,49 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "BCAR Part B Fire Officer Query / AC Inspection Block",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Assigned Certifier",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "24 hours",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "72h Technical Resolution",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Tier 2 SteerCo Panel",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "STATUTORY HOLD: Zero Energisation / CCC",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     }
                   ],
                   [
@@ -12205,49 +12205,49 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "CxA Level 3/4/5 Rejection or 36 MW Load-Bank Shortfall",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Independent CxA",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Immediate",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "48h Cx Recovery War Room",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Tier 2 SteerCo (Veto Retained)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "MANDATORY VETO: Cannot Override via Vote",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     }
                   ],
                   [
@@ -12409,7 +12409,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 7,
-                      "kind": "cell"
+                      "kind": "section"
                     }
                   ],
                   [
@@ -12469,49 +12469,49 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "RIBA Stage 1 Notice to Proceed & Land Option Milestone",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "2027-01-04",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "0d",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "YES",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "TR-01 (10%)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Any >0d variance triggers ESC-02 within 24h",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     }
                   ],
                   [
@@ -12571,49 +12571,49 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "All Irish Statutory Planning, EPA IEL & BCAR Clearances Milestone",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "2027-10-18",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "0d",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "YES",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "TR-02 (20%)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Any >0d variance triggers ESC-02 within 24h",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     }
                   ],
                   [
@@ -12673,49 +12673,49 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Building Shell 100% Weather-Tight & BCAR Envelope Ready Milestone",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "2028-12-25",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "0d",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "YES",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "TR-04 (20%)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Any >0d variance triggers ESC-02 within 24h",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     }
                   ],
                   [
@@ -12724,49 +12724,49 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "MEP Infrastructure & White Space Fit-Out Complete Milestone",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "2029-07-30",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "0d",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "YES",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Review Gate",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Any >0d variance triggers ESC-02 within 24h",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     }
                   ],
                   [
@@ -12775,49 +12775,49 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Cx Level 3 Pre-Functional Static & LOTO Ready Milestone",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "2029-08-20",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "0d",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "YES",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Review Gate",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Any >0d variance triggers ESC-02 within 24h",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     }
                   ],
                   [
@@ -12826,49 +12826,49 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Cx Level 4 Functional Dynamic Performance Passed Milestone",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "2029-10-15",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "0d",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "YES",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Review Gate",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Any >0d variance triggers ESC-02 within 24h",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     }
                   ],
                   [
@@ -12877,49 +12877,49 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Cx Level 5 Integrated Systems Testing (36MW IST) Passed Milestone",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "2029-12-24",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "0d",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "YES",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "TR-05 (15%)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Any >0d variance triggers ESC-02 within 24h",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     }
                   ],
                   [
@@ -12928,49 +12928,49 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Commercial Operation Date (COD), Handover & Safety File Milestone",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "2030-03-18",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "0d",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "YES",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "TR-06 (10%)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     },
                     {
                       "v": "Any >0d variance triggers ESC-02 within 24h",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "alert"
                     }
                   ]
                 ]
@@ -12994,7 +12994,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 6,
-                      "kind": "banner"
+                      "kind": "header"
                     }
                   ],
                   [
@@ -13003,7 +13003,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 6,
-                      "kind": "cell"
+                      "kind": "section"
                     }
                   ],
                   [
@@ -13100,42 +13100,42 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "pass"
                     },
                     {
                       "v": "10",
                       "f": "=COUNTIF(E13:E27,\"PASS\")",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "pass"
                     },
                     {
                       "v": "15",
                       "f": "=B6",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "pass"
                     },
                     {
                       "v": "66.7%",
                       "f": "=IFERROR(B7/C7,0)",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "pass"
                     },
                     {
                       "v": "100% by M1000",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "pass"
                     },
                     {
                       "v": "Fully codified & evidenced controls",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "pass"
                     }
                   ],
                   [
@@ -13144,42 +13144,42 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "warn"
                     },
                     {
                       "v": "3",
                       "f": "=COUNTIF(E13:E27,\"PARTIAL\")",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "warn"
                     },
                     {
                       "v": "15",
                       "f": "=B6",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "warn"
                     },
                     {
                       "v": "20.0%",
                       "f": "=IFERROR(B8/C8,0)",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "warn"
                     },
                     {
                       "v": "0 by M1000",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "warn"
                     },
                     {
                       "v": "Charter drafted; awaiting named FID / CDE integration",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "warn"
                     }
                   ],
                   [
@@ -13188,42 +13188,42 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "warn"
                     },
                     {
                       "v": "2",
                       "f": "=COUNTIF(E13:E27,\"OPEN\")",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "warn"
                     },
                     {
                       "v": "15",
                       "f": "=B6",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "warn"
                     },
                     {
                       "v": "13.3%",
                       "f": "=IFERROR(B9/C9,0)",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "warn"
                     },
                     {
                       "v": "0 by M1000",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "warn"
                     },
                     {
                       "v": "Requires formal executive signature & COI filing",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "warn"
                     }
                   ],
                   [
@@ -13232,7 +13232,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 6,
-                      "kind": "cell"
+                      "kind": "section"
                     }
                   ],
                   [
@@ -13313,7 +13313,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "Codified in DC36EU_SteerCo_ToR_Escalation_Charter_Rev.001",
@@ -13357,7 +13357,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "Confirm named voting appointees / BAC limits at FID",
@@ -13401,7 +13401,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "Codified in DC36EU_SteerCo_ToR_Escalation_Charter_Rev.001",
@@ -13445,7 +13445,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "Codified in DC36EU_SteerCo_ToR_Escalation_Charter_Rev.001",
@@ -13489,7 +13489,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "Codified in DC36EU_SteerCo_ToR_Escalation_Charter_Rev.001",
@@ -13533,7 +13533,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "Complete Conflict declarations & Appendix C signatures at M1000",
@@ -13577,7 +13577,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "Codified in DC36EU_SteerCo_ToR_Escalation_Charter_Rev.001",
@@ -13621,7 +13621,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "Codified in DC36EU_SteerCo_ToR_Escalation_Charter_Rev.001",
@@ -13665,7 +13665,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "Confirm named voting appointees / BAC limits at FID",
@@ -13709,7 +13709,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "Codified in DC36EU_SteerCo_ToR_Escalation_Charter_Rev.001",
@@ -13753,7 +13753,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "Codified in DC36EU_SteerCo_ToR_Escalation_Charter_Rev.001",
@@ -13797,7 +13797,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "Codified in DC36EU_SteerCo_ToR_Escalation_Charter_Rev.001",
@@ -13841,7 +13841,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "Codified in DC36EU_SteerCo_ToR_Escalation_Charter_Rev.001",
@@ -13885,7 +13885,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "Confirm named voting appointees / BAC limits at FID",
@@ -13929,7 +13929,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "cell"
+                      "kind": "input"
                     },
                     {
                       "v": "Complete Conflict declarations & Appendix C signatures at M1000",
@@ -14432,7 +14432,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 9,
-                      "kind": "cell"
+                      "kind": "total"
                     }
                   ],
                   [
@@ -14441,63 +14441,63 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Due Diligence Factor",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Weight (%)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Site A (Input 1-5)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Site B (Input 1-5)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Site C (Input 1-5)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Site A Wtd",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Site B Wtd",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Site C Wtd",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     }
                   ],
                   [
@@ -14968,7 +14968,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "=IF(AND(G11>=H11,G11>=I11),\"Option A Leads\",IF(H11>=I11,\"Option B Leads\",\"Option C Leads\"))",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "total"
+                      "kind": "pass"
                     },
                     {
                       "v": "",
@@ -15041,7 +15041,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 4,
-                      "kind": "cell"
+                      "kind": "total"
                     }
                   ],
                   [
@@ -15050,28 +15050,28 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Value / Rule",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Linked Reference",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Verification Status",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     }
                   ],
                   [
@@ -15293,7 +15293,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 6,
-                      "kind": "cell"
+                      "kind": "total"
                     }
                   ],
                   [
@@ -15302,42 +15302,42 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Domain / Pillar",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Audit Verification Criterion",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Evidence / P6 Gate",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Status (PASS/PARTIAL/OPEN)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Auditor Sign-Off Notes",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     }
                   ],
                   [
@@ -15932,7 +15932,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "=IFERROR(COUNTIF(E5:E14,\"PASS\")/COUNTA(A5:A14),0)",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "total"
+                      "kind": "pass"
                     },
                     {
                       "v": "",
@@ -15977,7 +15977,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 4,
-                      "kind": "cell"
+                      "kind": "total"
                     }
                   ],
                   [
@@ -15986,28 +15986,28 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Value / Rule",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Linked Reference",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Verification Status",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     }
                   ],
                   [
@@ -16973,7 +16973,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 9,
-                      "kind": "cell"
+                      "kind": "total"
                     }
                   ],
                   [
@@ -16982,63 +16982,63 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Stress Case Description",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Capex Var (%)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Power Tariff Var (%)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Annual PUE",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Base NPV (EUR M)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Adjusted NPV (EUR M)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Unlevered IRR (%)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "FID Pass (>=8.5%)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     }
                   ],
                   [
@@ -17517,7 +17517,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 4,
-                      "kind": "cell"
+                      "kind": "total"
                     }
                   ],
                   [
@@ -17526,28 +17526,28 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Value / Rule",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Linked Reference",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Verification Status",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     }
                   ],
                   [
@@ -18222,7 +18222,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 6,
-                      "kind": "cell"
+                      "kind": "total"
                     }
                   ],
                   [
@@ -18231,42 +18231,42 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Domain / Pillar",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Audit Verification Criterion",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Evidence / P6 Gate",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Status (PASS/PARTIAL/OPEN)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Auditor Sign-Off Notes",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     }
                   ],
                   [
@@ -18861,7 +18861,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "=IFERROR(COUNTIF(E5:E14,\"PASS\")/COUNTA(A5:A14),0)",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "total"
+                      "kind": "pass"
                     },
                     {
                       "v": "",
@@ -18906,7 +18906,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 4,
-                      "kind": "cell"
+                      "kind": "total"
                     }
                   ],
                   [
@@ -18915,28 +18915,28 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Value / Rule",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Linked Reference",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Verification Status",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     }
                   ],
                   [
@@ -19642,7 +19642,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 6,
-                      "kind": "cell"
+                      "kind": "total"
                     }
                   ],
                   [
@@ -19651,42 +19651,42 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Domain / Pillar",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Audit Verification Criterion",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Evidence / P6 Gate",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Status (PASS/PARTIAL/OPEN)",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Auditor Sign-Off Notes",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     }
                   ],
                   [
@@ -20281,7 +20281,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "=IFERROR(COUNTIF(E5:E14,\"PASS\")/COUNTA(A5:A14),0)",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "total"
+                      "kind": "pass"
                     },
                     {
                       "v": "",
@@ -20326,7 +20326,7 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 4,
-                      "kind": "cell"
+                      "kind": "total"
                     }
                   ],
                   [
@@ -20335,28 +20335,28 @@ window.PHASE1_PORTAL_DATA = {
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Value / Rule",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Linked Reference",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     },
                     {
                       "v": "Verification Status",
                       "f": "",
                       "rspan": 1,
                       "cspan": 1,
-                      "kind": "banner"
+                      "kind": "header"
                     }
                   ],
                   [

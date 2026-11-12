@@ -13,6 +13,21 @@
   let catFilter = 'ALL';
   let searchQuery = '';
   let cloudReady = false;
+  const expandedModules = {};
+
+  function getActiveModuleId() {
+    const m = /^PM-\d+/.exec(activeDocId);
+    return m ? m[0] : 'PM-01';
+  }
+
+  function initExpandedModules() {
+    const activeMid = getActiveModuleId();
+    (DATA.modules || []).forEach(m => {
+      if (typeof expandedModules[m.id] !== 'boolean') {
+        expandedModules[m.id] = (m.id === activeMid);
+      }
+    });
+  }
 
   function escapeHtml(s) {
     return String(s ?? '')
@@ -115,12 +130,14 @@
     const host = document.getElementById('p1-cat-chips');
     if (!host) return;
     const opts = ['ALL', 'Standard', 'Deliverable', 'Template', 'Audit'];
-    host.innerHTML = opts.map(k =>
-      `<button type="button" class="chip ${catFilter === k ? 'active' : ''}" data-cat="${k}">${k === 'ALL' ? 'All Categories (24)' : k}</button>`
-    ).join('');
+    host.innerHTML = opts.map(k => {
+      const tagAttr = k === 'ALL' ? 'ALL' : k.toUpperCase();
+      return `<button type="button" class="chip ${catFilter === k ? 'active' : ''}" data-cat-val="${k}" data-cat="${tagAttr}">${k === 'ALL' ? 'All Categories (24)' : k}</button>`;
+    }).join('');
     host.querySelectorAll('.chip').forEach(btn => {
       btn.onclick = () => {
-        catFilter = btn.dataset.cat;
+        catFilter = btn.dataset.catVal;
+        renderChips();
         renderSidebar();
       };
     });
@@ -129,45 +146,90 @@
   function renderSidebar() {
     const host = document.getElementById('p1-sidebar');
     if (!host) return;
+    initExpandedModules();
     const q = searchQuery.trim().toLowerCase();
-    const html = (DATA.modules || []).map(m => {
+    const filtering = Boolean(q || catFilter !== 'ALL');
+    const mods = DATA.modules || [];
+    const allExpanded = mods.length > 0 && mods.every(m => Boolean(expandedModules[m.id]));
+    const chevronSvg = '<svg class="nav-mod-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 6 8 10 12 6"></polyline></svg>';
+
+    const html = mods.map(m => {
       const matching = (m.docs || []).filter(d => {
         if (catFilter !== 'ALL' && d.cat !== catFilter) return false;
         if (q && !getDocTextHaystack(m, d).includes(q)) return false;
         return true;
       });
-      if (!matching.length && q) return '';
+      if (!matching.length && filtering) return '';
+      let doneCount = 0;
+      (m.docs || []).forEach(d => {
+        if (appState.docChecks[`${m.id}::${d.idx0}`]) doneCount += 1;
+      });
+      const isExpanded = filtering ? true : Boolean(expandedModules[m.id]);
       const readmeActive = activeDocId === `${m.id}-README` ? 'active' : '';
+      const readmeRow = (catFilter === 'ALL' || (q && `readme ${m.id} ${m.title}`.toLowerCase().includes(q))) ? `
+        <button type="button" class="nav-doc-btn ${readmeActive}" data-doc="${m.id}-README">
+          <span class="nav-cat-tag" data-cat="README">README</span>
+          <span class="nav-doc-title">00_README_${m.id}.md</span>
+        </button>` : '';
       const docsHtml = matching.map(d => {
         const k = `${m.id}::${d.idx0}`;
         const isDone = Boolean(appState.docChecks[k]);
         const isAct = activeDocId === d.docId ? 'active' : '';
         return `
           <button type="button" class="nav-doc-btn ${isAct} ${isDone ? 'is-done' : ''}" data-doc="${d.docId}">
-            <span class="nav-cat-tag">${escapeHtml(d.cat)}</span>
+            <span class="nav-cat-tag" data-cat="${escapeHtml(d.cat.toUpperCase())}">${escapeHtml(d.cat)}</span>
             <span class="nav-doc-title">${isDone ? '[Done] ' : ''}${escapeHtml(d.title)}</span>
           </button>
         `;
       }).join('');
       return `
         <div class="nav-module-group">
-          <div class="nav-module-head">
+          <button type="button" class="nav-module-toggle" data-mod-toggle="${m.id}" aria-expanded="${isExpanded ? 'true' : 'false'}">
             <span>${escapeHtml(m.id)}: ${escapeHtml(m.title)}</span>
-          </div>
-          <button type="button" class="nav-doc-btn ${readmeActive}" data-doc="${m.id}-README">
-            <span class="nav-cat-tag">README</span>
-            <span class="nav-doc-title">00_README_${m.id}.md</span>
+            <span class="nav-module-meta">
+              <span class="nav-mod-count">${doneCount}/${(m.docs || []).length}</span>
+              ${chevronSvg}
+            </span>
           </button>
-          ${docsHtml}
+          <div class="nav-module-items ${isExpanded ? '' : 'is-collapsed'}">
+            ${readmeRow}
+            ${docsHtml}
+          </div>
         </div>
       `;
     }).filter(Boolean).join('');
 
-    host.innerHTML = html || '<div style="padding:12px;font-size:13px;">No Phase 1 documents match current search or filter.</div>';
+    const controlsHtml = `
+      <div class="sidebar-controls">
+        <span class="sidebar-controls-label">Phase 1 Modules (${mods.length})</span>
+        <button type="button" id="btn-toggle-all" class="sidebar-all-btn">${allExpanded ? 'Collapse All' : 'Expand All'}</button>
+      </div>
+    `;
+
+    host.innerHTML = controlsHtml + (html || '<div style="padding:12px;font-size:13px;">No Phase 1 documents match current search or filter.</div>');
+
+    const toggleAllBtn = document.getElementById('btn-toggle-all');
+    if (toggleAllBtn) {
+      toggleAllBtn.onclick = () => {
+        const nextVal = !allExpanded;
+        mods.forEach(m => { expandedModules[m.id] = nextVal; });
+        renderSidebar();
+      };
+    }
+
+    host.querySelectorAll('[data-mod-toggle]').forEach(btn => {
+      btn.onclick = () => {
+        const mid = btn.dataset.modToggle;
+        expandedModules[mid] = !Boolean(expandedModules[mid]);
+        renderSidebar();
+      };
+    });
+
     host.querySelectorAll('[data-doc]').forEach(btn => {
       btn.onclick = () => {
         activeDocId = btn.dataset.doc;
         activeSheetName = '';
+        expandedModules[getActiveModuleId()] = true;
         window.history.replaceState(null, '', `#${activeDocId}`);
         renderSidebar();
         renderViewer();
@@ -207,9 +269,20 @@
       `<button type="button" class="sheet-tab-btn ${s.name === current.name ? 'active' : ''}" data-sheet="${escapeHtml(s.name)}">${escapeHtml(s.name)}${s.formulaCount ? ` (${s.formulaCount}f)` : ''}</button>`
     ).join('');
 
+    const CELL_CLASS_BY_KIND = {
+      banner: 'cell-banner',
+      header: 'cell-header',
+      section: 'cell-section',
+      input: 'cell-input',
+      total: 'cell-total',
+      alert: 'cell-alert',
+      pass: 'cell-pass',
+      warn: 'cell-warn',
+    };
+
     const rowsHtml = (current.rows || []).map(row => {
       const tds = row.map(cell => {
-        const cls = cell.kind === 'banner' ? 'cell-banner' : (cell.kind === 'input' ? 'cell-input' : (cell.kind === 'total' ? 'cell-total' : ''));
+        const cls = CELL_CLASS_BY_KIND[cell.kind] || 'cell-plain';
         const fBadge = showFormulas && cell.f ? `<span class="formula-hint">${escapeHtml(cell.f)}</span>` : '';
         const spanAttrs = `${cell.rspan > 1 ? ` rowspan="${cell.rspan}"` : ''}${cell.cspan > 1 ? ` colspan="${cell.cspan}"` : ''}`;
         return `<td class="${cls}"${spanAttrs} title="${cell.f ? escapeHtml(cell.f) : ''}">${escapeHtml(cell.v)}${fBadge}</td>`;
@@ -262,7 +335,10 @@
       if (!m) return;
       host.innerHTML = `
         <div class="doc-header-card">
-          <div class="mono" style="font-size:12px;color:#0b57d0;font-weight:700;">${escapeHtml(m.id)} FLASHCARD FOLDER GUIDE</div>
+          <div class="mono" style="font-size:12px;color:#0b57d0;font-weight:700;display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+            <span>${escapeHtml(m.id)} FLASHCARD FOLDER GUIDE</span>
+            <span class="doc-cat-pill" data-cat="README">README</span>
+          </div>
           <h2 class="doc-title-h2">00_README_${escapeHtml(m.id)}.md — ${escapeHtml(m.title)}</h2>
           <p style="margin:4px 0;font-size:13px;color:#44474f;">${escapeHtml(m.desc)}</p>
           <div class="doc-action-bar">
@@ -319,7 +395,10 @@
       <div class="doc-header-card">
         <div class="doc-header-top">
           <div>
-            <div class="mono" style="font-size:12px;color:#0b57d0;font-weight:700;">${escapeHtml(targetMod.id)} | ${escapeHtml(targetDoc.docId)} | ${escapeHtml(targetDoc.cat.toUpperCase())} (${escapeHtml(targetDoc.ext)})</div>
+            <div class="mono" style="font-size:12px;color:#0b57d0;font-weight:700;display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+              <span>${escapeHtml(targetMod.id)} | ${escapeHtml(targetDoc.docId)}</span>
+              <span class="doc-cat-pill" data-cat="${escapeHtml(targetDoc.cat.toUpperCase())}">${escapeHtml(targetDoc.cat.toUpperCase())} (${escapeHtml(targetDoc.ext)})</span>
+            </div>
             <h2 class="doc-title-h2">${escapeHtml(targetDoc.title)}</h2>
             <div class="mono" style="font-size:11.5px;color:#44474f;">File: ${escapeHtml(targetDoc.fileName)} | Ref: ${escapeHtml(targetDoc.ref)}</div>
           </div>
