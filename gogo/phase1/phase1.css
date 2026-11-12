@@ -254,12 +254,79 @@ body {
 }
 
 /* Split Reader Grid */
+.btn-sidebar-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 13px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--md-outline-variant);
+  background: var(--md-surface-low);
+  color: var(--md-navy);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 140ms ease, border-color 140ms ease, color 140ms ease;
+}
+
+.btn-sidebar-toggle:hover {
+  background: var(--md-surface-high);
+  border-color: var(--md-primary);
+}
+
+.btn-sidebar-toggle.is-hidden-state {
+  background: var(--md-primary-container);
+  color: var(--md-on-primary-container);
+  border-color: var(--md-primary);
+}
+
 .reader-layout {
   margin-top: 14px;
   display: grid;
   grid-template-columns: 350px minmax(0, 1fr);
   gap: 16px;
   align-items: start;
+}
+
+.reader-layout.is-sidebar-hidden {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.reader-layout.is-sidebar-hidden .sidebar-nav {
+  display: none;
+}
+
+.floating-sidebar-btn {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 40;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 15px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--md-primary);
+  background: var(--md-primary);
+  color: var(--md-on-primary);
+  font-family: inherit;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(11, 87, 208, 0.28);
+  transition: transform 140ms ease, background 140ms ease;
+}
+
+.floating-sidebar-btn:hover {
+  background: var(--md-navy);
+  border-color: var(--md-navy);
+  transform: translateY(-1px);
+}
+
+.floating-sidebar-btn[hidden] {
+  display: none;
 }
 
 .sidebar-nav {
@@ -281,6 +348,12 @@ body {
   padding: 2px 4px 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid var(--md-outline-variant);
+}
+
+.sidebar-controls-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .sidebar-controls-label {
@@ -698,7 +771,7 @@ table.detail-table tr td.cell-warn {
 }
 
 @media print {
-  .portal-toolbar, .sidebar-nav, .doc-action-bar, .back-link { display: none !important; }
+  .portal-toolbar, .sidebar-nav, .floating-sidebar-btn, .doc-action-bar, .back-link { display: none !important; }
   .reader-layout { display: block; }
   .doc-pane { border: none; padding: 0; }
 }

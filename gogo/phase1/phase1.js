@@ -4,6 +4,7 @@
 
   const STORAGE_KEY = 'dc36_eu_ireland_tracker_v1';
   const PROFILE_STORAGE_KEY = 'dc36_eu_profile_id_v1';
+  const SIDEBAR_STORAGE_KEY = 'dc45_phase1_sidebar_hidden';
   const LOCAL_REPO_ROOT = 'G:\\My Drive\\7. AI\\DataCenter_EU_Ireland\\';
   const DATA = window.PHASE1_PORTAL_DATA || { modules: [], masterWorkbooks: {} };
 
@@ -13,7 +14,37 @@
   let catFilter = 'ALL';
   let searchQuery = '';
   let cloudReady = false;
+  let sidebarHidden = localStorage.getItem(SIDEBAR_STORAGE_KEY) === 'true';
   const expandedModules = {};
+
+  function applySidebarVisibility() {
+    const layout = document.querySelector('.reader-layout');
+    const sidebar = document.getElementById('p1-sidebar');
+    const toggleBtn = document.getElementById('btn-toggle-sidebar');
+    const floatBtn = document.getElementById('btn-floating-sidebar');
+
+    if (layout) layout.classList.toggle('is-sidebar-hidden', sidebarHidden);
+    if (sidebar) sidebar.setAttribute('aria-hidden', sidebarHidden ? 'true' : 'false');
+    if (toggleBtn) {
+      toggleBtn.setAttribute('aria-expanded', sidebarHidden ? 'false' : 'true');
+      toggleBtn.classList.toggle('is-hidden-state', sidebarHidden);
+      const lbl = toggleBtn.querySelector('.sidebar-toggle-label');
+      if (lbl) lbl.textContent = sidebarHidden ? 'Show Sidebar' : 'Hide Sidebar';
+    }
+    if (floatBtn) {
+      floatBtn.hidden = !sidebarHidden;
+    }
+  }
+
+  function setSidebarHidden(nextHidden) {
+    sidebarHidden = Boolean(nextHidden);
+    try {
+      localStorage.setItem(SIDEBAR_STORAGE_KEY, sidebarHidden ? 'true' : 'false');
+    } catch {
+      // Ignore storage quota errors
+    }
+    applySidebarVisibility();
+  }
 
   function getActiveModuleId() {
     const m = /^PM-\d+/.exec(activeDocId);
@@ -137,6 +168,7 @@
     host.querySelectorAll('.chip').forEach(btn => {
       btn.onclick = () => {
         catFilter = btn.dataset.catVal;
+        if (sidebarHidden) setSidebarHidden(false);
         renderChips();
         renderSidebar();
       };
@@ -202,11 +234,19 @@
     const controlsHtml = `
       <div class="sidebar-controls">
         <span class="sidebar-controls-label">Phase 1 Modules (${mods.length})</span>
-        <button type="button" id="btn-toggle-all" class="sidebar-all-btn">${allExpanded ? 'Collapse All' : 'Expand All'}</button>
+        <div class="sidebar-controls-actions">
+          <button type="button" id="btn-toggle-all" class="sidebar-all-btn">${allExpanded ? 'Collapse All' : 'Expand All'}</button>
+          <button type="button" id="btn-sidebar-hide" class="sidebar-all-btn" title="Hide sidebar (shortcut: ])">Hide</button>
+        </div>
       </div>
     `;
 
     host.innerHTML = controlsHtml + (html || '<div style="padding:12px;font-size:13px;">No Phase 1 documents match current search or filter.</div>');
+
+    const hideSidebarBtn = document.getElementById('btn-sidebar-hide');
+    if (hideSidebarBtn) {
+      hideSidebarBtn.onclick = () => setSidebarHidden(true);
+    }
 
     const toggleAllBtn = document.getElementById('btn-toggle-all');
     if (toggleAllBtn) {
@@ -475,10 +515,34 @@
 
   document.addEventListener('DOMContentLoaded', () => {
     resolveInitialTarget();
+    applySidebarVisibility();
+
+    const toggleBtn = document.getElementById('btn-toggle-sidebar');
+    if (toggleBtn) {
+      toggleBtn.onclick = () => setSidebarHidden(!sidebarHidden);
+    }
+
+    const floatBtn = document.getElementById('btn-floating-sidebar');
+    if (floatBtn) {
+      floatBtn.onclick = () => setSidebarHidden(false);
+    }
+
+    document.addEventListener('keydown', e => {
+      const tag = (e.target && e.target.tagName) || '';
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || (e.target && e.target.isContentEditable)) return;
+      if (e.key === ']' || e.key === '\\') {
+        e.preventDefault();
+        setSidebarHidden(!sidebarHidden);
+      }
+    });
+
     const sBox = document.getElementById('p1-search');
     if (sBox) {
       sBox.addEventListener('input', e => {
         searchQuery = e.target.value;
+        if (searchQuery.trim() && sidebarHidden) {
+          setSidebarHidden(false);
+        }
         renderSidebar();
       });
     }
