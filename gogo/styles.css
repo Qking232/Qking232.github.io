@@ -1366,3 +1366,117 @@ table.docs-mini-table tr:last-child td {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* Abbreviations & Glossary Page (#view-abbr) */
+.tab-badge-count {
+  font-size: 11px;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: var(--radius-pill);
+  background: var(--md-secondary-container);
+  color: var(--md-on-secondary-container);
+}
+
+.track-banner-abbr {
+  background: linear-gradient(135deg, #eef6ff, #f4f7fb);
+  border: 1px solid #c5dafc;
+}
+
+.track-badge-abbr {
+  background: var(--md-primary-container);
+  color: var(--md-on-primary-container);
+}
+
+.abbr-count-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--md-on-surface-variant);
+  padding: 6px 12px;
+  background: var(--md-surface);
+  border: 1px solid var(--md-outline-variant);
+  border-radius: var(--radius-pill);
+}
+
+.abbr-alpha-row {
+  gap: 5px;
+  padding-top: 8px;
+  border-top: 1px dashed var(--md-outline-variant);
+}
+
+.abbr-chip-alpha {
+  padding: 4px 10px;
+  font-size: 11.5px;
+  min-width: 30px;
+  text-align: center;
+}
+
+.abbr-code-pill {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 800;
+  color: #0b57d0;
+  background: #edf4ff;
+  border: 1px solid #c6dcff;
+  padding: 3px 9px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.abbr-cat-pill {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+  background: var(--md-surface-container-high);
+  color: var(--md-on-surface-variant);
+}
+
+.abbr-cat-pm { background: #e8f0fe; color: #0b57d0; }
+.abbr-cat-contracts { background: #e6f4ea; color: #137333; }
+.abbr-cat-statutory { background: #fef7e0; color: #b06000; }
+.abbr-cat-engineering { background: #f3e8fd; color: #6a1b9a; }
+.abbr-cat-standards { background: #e0f2f1; color: #00695c; }
+.abbr-cat-cxbim { background: #fce8e6; color: #a50e0e; }
+.abbr-cat-data { background: #eceff1; color: #37474f; }
+
+.abbr-table td:first-child {
+  width: 130px;
+  vertical-align: top;
+}
+
+.abbr-table td:nth-child(2) {
+  min-width: 190px;
+  font-weight: 700;
+  vertical-align: top;
+}
+
+.abbr-table td:nth-child(3) {
+  width: 165px;
+  vertical-align: top;
+}
+
+.abbr-table td:nth-child(4) {
+  min-width: 320px;
+  line-height: 1.48;
+  vertical-align: top;
+}
+
+.abbr-table td:nth-child(5) {
+  width: 170px;
+  font-size: 11.5px;
+  color: var(--md-on-surface-variant);
+  vertical-align: top;
+}
+
+.abbr-inline-code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11.5px;
+  font-weight: 700;
+  background: var(--md-surface-container-low);
+  border: 1px solid var(--md-outline-variant);
+  padding: 0 5px;
+  border-radius: 5px;
+}

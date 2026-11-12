@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20261112-09" />
+  <link rel="stylesheet" href="styles.css?v=20261112-10" />
 </head>
 <body>
   <div class="app-shell">
@@ -97,6 +97,10 @@
       <button type="button" class="tab-btn" data-target="view-portfolio">4. DC36-EU Portfolio &amp; Gaps</button>
       <button type="button" class="tab-btn" data-target="view-interviews">5. Dublin / EU Interview Prep</button>
       <button type="button" class="tab-btn" data-target="view-history">6. Study History &amp; Log</button>
+      <button type="button" class="tab-btn" data-target="view-abbr">
+        7. Abbr &amp; Glossary
+        <span class="tab-badge-count" id="tab-abbr-count"></span>
+      </button>
     </nav>
 
     <main>
@@ -245,11 +249,46 @@
           </table>
         </div>
       </section>
+
+      <section id="view-abbr" class="view-panel">
+        <div class="track-banner track-banner-abbr">
+          <div>
+            <h2 class="track-banner-title">Abbreviations, Acronyms &amp; Technical Glossary</h2>
+            <p class="track-banner-sub">Complete plain-English reference for all project management, contractual, statutory, financial, engineering, BIM, and commissioning acronyms used across the DC36-EU dashboard.</p>
+          </div>
+          <span class="track-badge track-badge-abbr" id="abbr-total-badge">0 Terms</span>
+        </div>
+
+        <div class="toolbar">
+          <div class="toolbar-top">
+            <input type="search" id="abbr-search-box" class="search-input" placeholder="Search abbreviation, full term, explanation, or module ID (e.g., BCAR, PUE, PSDP, EVM, FIDIC, LOTO, EN 50600, IST)..." />
+            <span class="mono abbr-count-label" id="abbr-match-count">Showing 0 terms</span>
+            <button type="button" id="btn-abbr-reset" class="btn-m3 btn-outline-m3">Reset Filters</button>
+          </div>
+          <div class="chip-row" id="abbr-cat-chips"></div>
+          <div class="chip-row abbr-alpha-row" id="abbr-alpha-chips"></div>
+        </div>
+
+        <div class="table-wrap">
+          <table class="m3-table abbr-table">
+            <thead>
+              <tr>
+                <th>Abbreviation</th>
+                <th>Full Expansion</th>
+                <th>Domain</th>
+                <th>Explanation &amp; DC36-EU Context</th>
+                <th>Where Seen</th>
+              </tr>
+            </thead>
+            <tbody id="abbr-tbody"></tbody>
+          </table>
+        </div>
+      </section>
     </main>
   </div>
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <script src="supabase-sync.js?v=20261112-09"></script>
-  <script src="app.js?v=20261112-09"></script>
+  <script src="supabase-sync.js?v=20261112-10"></script>
+  <script src="app.js?v=20261112-10"></script>
 </body>
 </html>
