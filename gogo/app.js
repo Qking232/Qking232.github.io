@@ -113,7 +113,7 @@ const CURRICULUM = [
       { cat: 'Standard', title: 'PMI PMBOK Project Charter Guideline & RIBA Stage 0-1 Client Brief', ref: 'PMBOK / RIBA Stage 0-1', artifact: 'Charter Governance Standard', why: 'Understand sponsor authority, business objectives, and formal project authorization.', kind: 'ref' },
       { cat: 'Deliverable', title: 'Executive Project Charter Document (Objectives, 36 MW Scope & PM Authority)', ref: 'Sheet 1. Charter Summary', artifact: 'DataCenter_36MW_EU_Project_Charter.xlsx', why: 'Benchmark real DC36-EU charter scope boundaries, KPIs, and stage-gate mandates.', kind: 'built' },
       { cat: 'Template', title: 'Multi-Party Governance Framework & RACI Responsibility Matrix', ref: 'Sheet 2. Governance & RACI', artifact: 'DataCenter_36MW_EU_Project_Charter.xlsx', why: 'Map Responsible, Accountable, Consulted, and Informed roles across Sponsor, EPCm, and CxA.', kind: 'built' },
-      { cat: 'Audit', title: 'Steering Committee Terms of Reference, Quorum & Escalation Charter', ref: 'RIBA Stage 0 Governance', artifact: 'SteerCo ToR & Quorum Audit', why: 'Define executive voting thresholds, financial sign-off limits, and escalation paths.', kind: 'ref' }
+      { cat: 'Audit', title: 'Steering Committee Terms of Reference, Quorum & Escalation Charter', ref: 'DC36EU_SteerCo_DoA_Quorum_Audit.xlsx', artifact: 'DC36EU_SteerCo_ToR_Escalation_Charter.docx', why: 'Define executive voting thresholds, financial sign-off limits, and escalation paths.', kind: 'built' }
     ]
   },
   {
