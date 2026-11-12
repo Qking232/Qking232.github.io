@@ -17,6 +17,69 @@ const PILLARS = [
   { id: 'L3', track: 'legal', code: 'Legal 3', shortName: 'L3. BCAR & SI 291', name: 'L3. BCAR & Statutory H&S (SI 291)' }
 ];
 
+const SECTION_DOCS = {
+  PM1: [
+    { code: 'PM1-DOC-01', title: 'Project Charter, Sponsor Governance & Multi-Party RACI Matrix', std: 'PMI / RIBA Stage 0-1', artifact: 'DataCenter_36MW_EU_Project_Charter.xlsx', kind: 'built' },
+    { code: 'PM1-DOC-02', title: 'Site Selection Due Diligence & Power / Flood Feasibility Scoring Memo', std: 'EN 50600-2-1 / OPW', artifact: 'Pre-Feasibility Matrix', kind: 'ref' },
+    { code: 'PM1-DOC-03', title: 'Basis of Design (BoD) — Availability Class 3 & Free-Cooling Envelope', std: 'I.S. EN 50600 / ISO 22237', artifact: 'DataCenter_36MW_EU_PreNTP_Controls.xlsx', kind: 'built' },
+    { code: 'PM1-DOC-04', title: 'EUR Capex/MW Baseline, 10-Year DCF Financial Model & Sensitivity Pack', std: 'IRR / NPV Institutional', artifact: 'DataCenter_36MW_EU_PreNTP_Controls.xlsx', kind: 'built' },
+    { code: 'PM1-DOC-05', title: 'Pre-NTP Final Investment Decision (FID) & Stage-Gate 1 Charter Pack', std: 'RIBA Stage 1 Gate', artifact: 'FID Stage-Gate Memo', kind: 'ref' }
+  ],
+  PM2: [
+    { code: 'PM2-DOC-01', title: 'Project Implementation Plan (PIP) & WBS Cost-Account Dictionary', std: 'PMI / RIBA Stage 2-3', artifact: 'DataCenter_36MW_EU_PIP.xlsx', kind: 'built' },
+    { code: 'PM2-DOC-02', title: 'Master Level 4 Primavera P6 Schedule (141 Tasks / 48 Critical)', std: 'DCMA-14 6/6 / CPM', artifact: 'DataCenter_36MW_EU_Ireland.xer', kind: 'built' },
+    { code: 'PM2-DOC-03', title: 'DCMA-14 Schedule Health Audit & Longest Path Diagnostic Report', std: 'DCMA 14-Point', artifact: 'P6 QA Audit Checksheet', kind: 'ref' },
+    { code: 'PM2-DOC-04', title: 'EU EED Telemetry Specification (PUE / WUE / ERF / REF Metering Plan)', std: 'EU EED 2023/1791 & 2024/1364', artifact: 'DataCenter_36MW_EU_PreNTP_Controls.xlsx', kind: 'built' },
+    { code: 'PM2-DOC-05', title: 'BIM Exchange Info Requirements (EIR), BEP & Master Document Register', std: 'BS EN ISO 19650 CDE', artifact: 'Master_Document_Register_DC36EU.xlsx', kind: 'planned' }
+  ],
+  PM3: [
+    { code: 'PM3-DOC-01', title: 'Contracting & Multi-Prime Work Packaging Strategy (EPCm vs. D&B)', std: 'RIBA Stage 4 / Procurement', artifact: 'DataCenter_36MW_EU_PIP.xlsx', kind: 'built' },
+    { code: 'PM3-DOC-02', title: 'NEC4 ECC (Option A/C) Works Information, Z-Clauses & Early Warning Register', std: 'NEC4 ECC (UK / IE)', artifact: 'NEC4 Contract Pack', kind: 'ref' },
+    { code: 'PM3-DOC-03', title: 'FIDIC Silver / Yellow Book Employer Requirements & EOT Protocol', std: 'FIDIC 2017 (EU)', artifact: 'FIDIC Commercial Pack', kind: 'ref' },
+    { code: 'PM3-DOC-04', title: 'OFCI Long-Lead Equipment Schedule (110kV GIS, UPS, Chillers, BESS)', std: 'Supply Chain Reservation', artifact: 'DataCenter_36MW_EU_PIP.xlsx', kind: 'built' },
+    { code: 'PM3-DOC-05', title: 'Technical Bid Evaluation (TBE), BAFO Leveling & Vendor Expediting Log', std: 'Incoterms 2020 / DDP', artifact: 'Procurement Tracker', kind: 'ref' }
+  ],
+  PM4: [
+    { code: 'PM4-DOC-01', title: 'Monthly Earned Value Management (EVM) Report — CPI, SPI & EAC', std: 'PMI EVM / Cost Control', artifact: 'DataCenter_36MW_EU_PreNTP_Controls.xlsx', kind: 'built' },
+    { code: 'PM4-DOC-02', title: 'Integrated Change Request Log & Change Control Board (CRB) Register', std: 'Baseline Governance', artifact: 'CRB Decision Log', kind: 'ref' },
+    { code: 'PM4-DOC-03', title: 'Quantitative Risk Register (L x I & Monte Carlo P50 / P80 Drawdown)', std: 'ISO 31000 / QRA', artifact: 'DataCenter_36MW_EU_PreNTP_Controls.xlsx', kind: 'built' },
+    { code: 'PM4-DOC-04', title: 'Construction Quality Plan, Inspection & Test Plans (ITPs) & NCR Log', std: 'ISO 9001 / QA-QC', artifact: 'Site QA/QC Dossier', kind: 'ref' },
+    { code: 'PM4-DOC-05', title: 'MEP / CSA Interface Matrix, Clash Sign-Off & 6-Week Lookahead Plan', std: 'Last Planner / Pull Plan', artifact: 'Weekly Lookahead Pack', kind: 'ref' }
+  ],
+  PM5: [
+    { code: 'PM5-DOC-01', title: 'Master Commissioning Management Plan (L1-L5 Governance & Matrix)', std: 'CIBSE Code M / ASHRAE 0', artifact: 'DataCenter_36MW_EU_PIP.xlsx', kind: 'built' },
+    { code: 'PM5-DOC-02', title: 'Level 1-2 Witnessed OEM Factory Acceptance (FAT) & Red-Tag Checklists', std: 'IEC / EN Factory QA', artifact: 'OEM FAT Witness Dossier', kind: 'planned' },
+    { code: 'PM5-DOC-03', title: 'Level 3 Static Testing, BSRIA CHW Flush Certificates & LOTO Permits', std: 'BSRIA BG 29 / HV LOTO', artifact: 'L3 Energisation Pack', kind: 'planned' },
+    { code: 'PM5-DOC-04', title: 'Level 4 Dynamic Step-Load, SCR Abatement & BESS Sync Test Scripts', std: 'CIBSE Code M L4', artifact: 'Dynamic Cx Scripts', kind: 'planned' },
+    { code: 'PM5-DOC-05', title: 'Level 5 36 MW 48-Hr IST Playbook & Dual EN 50600 / Uptime TCCF Audit', std: 'ASHRAE / EN 50600 Class 3', artifact: 'Stage 6 IST & OR&T Pack', kind: 'planned' }
+  ],
+  PM6: [
+    { code: 'PM6-DOC-01', title: 'Practical Completion Certificate, A/B/C Snagging List & RFS Gate Sign-Off', std: 'RIBA Stage 6 Handover', artifact: 'Punch-List Burn-Down Log', kind: 'ref' },
+    { code: 'PM6-DOC-02', title: 'Operational Readiness & Transition (OR&T): EOP / MOP / SOP & Black-Hat Drills', std: '24/7 Critical Ops', artifact: 'Stage 6 OR&T Runbook', kind: 'planned' },
+    { code: 'PM6-DOC-03', title: 'Asset Information Model (AIM), COBie Register & O&M Spares Inventory', std: 'BS EN ISO 19650 Part 3', artifact: 'Handover AIM / O&M Pack', kind: 'planned' },
+    { code: 'PM6-DOC-04', title: 'Commercial Final Account Reconciliation, Retention & DLP Defect Tracker', std: 'NEC4 / FIDIC Closeout', artifact: 'Final Account Settlement', kind: 'ref' },
+    { code: 'PM6-DOC-05', title: 'Post-Occupancy Evaluation (Seasonal PUE/WUE) & Lessons Learned Report', std: 'RIBA Stage 7 In-Use', artifact: 'Project Closeout Report', kind: 'ref' }
+  ],
+  L1: [
+    { code: 'L1-DOC-01', title: 'Section 247 Pre-Planning Minutes & An Bord Pleanala SID Determination', std: 'Planning & Dev. Act (IE)', artifact: 'Stage 2 Statutory Dossier', kind: 'planned' },
+    { code: 'L1-DOC-02', title: 'Environmental Impact Assessment Report (EIAR) & AA Screening', std: 'EU EIA Directive 2014/52/EU', artifact: 'EIAR Volume 1-3', kind: 'ref' },
+    { code: 'L1-DOC-03', title: 'EPA Industrial Emissions Licence (IEL) Application & Dispersion Model', std: 'EU IED 2010/75/EU', artifact: 'EPA IEL Submission', kind: 'planned' },
+    { code: 'L1-DOC-04', title: 'Planning Conditions Compliance Matrix & Judicial Review Risk Log', std: 'Pre-Commencement Discharge', artifact: 'Condition Discharge Tracker', kind: 'ref' }
+  ],
+  L2: [
+    { code: 'L2-DOC-01', title: 'EirGrid / ESB Networks Enduring Connection Policy (ECP) & MIC Offer', std: 'EirGrid Grid Code (IE)', artifact: 'Grid Connection Agreement', kind: 'planned' },
+    { code: 'L2-DOC-02', title: 'CRU Large Energy User (LEU) Dispatchable Generation / BESS Compliance Memo', std: 'CRU LEU Policy', artifact: 'On-Site BESS Grid Study', kind: 'ref' },
+    { code: 'L2-DOC-03', title: 'EU Demand Connection Code RMS Dynamic Stability & Harmonic Study', std: 'Reg. (EU) 2016/1388', artifact: 'RMS / Harmonics Report', kind: 'ref' },
+    { code: 'L2-DOC-04', title: '110kV GIS Substation Design, Protection Schedule & Energisation Notice', std: 'TSO Handover Protocol', artifact: '110kV GIS Relay Pack', kind: 'ref' }
+  ],
+  L3: [
+    { code: 'L3-DOC-01', title: 'BCAR Commencement Notice, Design Certifier & Assigned Certifier Forms', std: 'BCAR 2014 / BCMS Portal', artifact: 'BCMS Statutory Log', kind: 'planned' },
+    { code: 'L3-DOC-02', title: 'Part B Fire Safety Certificate (FSC) & Part M Disability Access (DAC)', std: 'Irish Building Regs', artifact: 'FSC & DAC Applications', kind: 'planned' },
+    { code: 'L3-DOC-03', title: 'Client PSDP & PSCS Appointments, Preliminary H&S Plan & HSA Form AF1', std: 'S.I. No. 291/2013 (HSA)', artifact: 'PSDP / PSCS H&S Pack', kind: 'ref' },
+    { code: 'L3-DOC-04', title: 'Certificate of Compliance on Completion (CCC) & Handover Safety File', std: 'BCAR Completion / SI 291', artifact: 'CCC & Statutory Safety File', kind: 'ref' }
+  ]
+};
+
 // One-time migration map from v1 EU-19..EU-36 IDs to End-to-End PM Lifecycle IDs
 const LEGACY_ID_MAP = {
   'EU-19': 'PM-03',
@@ -595,63 +658,141 @@ function renderTrackFilters(trackName, pillarChipsId, statusChipsId) {
   });
 }
 
+function renderSectionDocsHtml(pillarId) {
+  const docs = SECTION_DOCS[pillarId] || [];
+  if (!docs.length) return '';
+  const rows = docs.map(d => {
+    const kindCls = d.kind === 'built' ? 'doc-pill-built' : (d.kind === 'planned' ? 'doc-pill-planned' : 'doc-pill-ref');
+    const kindLbl = d.kind === 'built' ? 'Built (DC36-EU)' : (d.kind === 'planned' ? 'Planned Next' : 'Industry Std');
+    return `
+      <tr>
+        <td class="mono"><strong>${d.code}</strong></td>
+        <td><strong>${d.title}</strong></td>
+        <td>${d.std}</td>
+        <td class="mono">${d.artifact}</td>
+        <td><span class="doc-pill ${kindCls}">${kindLbl}</span></td>
+      </tr>
+    `;
+  }).join('');
+
+  return `
+    <details class="section-docs-drawer" open>
+      <summary>
+        <span>Related Documents &amp; Deliverables (${docs.length})</span>
+        <span class="section-docs-hint">Click to collapse / expand</span>
+      </summary>
+      <div class="section-docs-list">
+        <table class="docs-mini-table">
+          <thead>
+            <tr>
+              <th>Code</th>
+              <th>Document Title &amp; Deliverable</th>
+              <th>Standard / Framework</th>
+              <th>Artifact / Reference</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+    </details>
+  `;
+}
+
+function renderModuleCardHtml(m) {
+  const st = state.modules[m.id] || computeDefaultModuleEntry();
+  const cardCls = st.status === 'mastered' ? 'is-mastered' : (st.status === 'progress' ? 'is-progress' : '');
+  const selCls = st.status === 'mastered' ? 'status-mastered' : (st.status === 'progress' ? 'status-progress' : '');
+  const pObj = PILLARS.find(p => p.id === m.pillar);
+  const pLabel = pObj ? pObj.shortName : m.pillar;
+  const confBtns = [1, 2, 3, 4, 5].map(v =>
+    `<button type="button" class="conf-btn ${Number(st.confidence) === v ? 'active' : ''}" data-id="${m.id}" data-conf="${v}">${v}</button>`
+  ).join('');
+
+  return `
+    <article class="module-card ${cardCls}">
+      <div class="card-head">
+        <span class="badge-code mono">${m.id}</span>
+        <span class="badge-pillar">${pLabel}</span>
+      </div>
+      <h3 class="card-title">${m.title}</h3>
+      <p class="card-desc">${m.desc}</p>
+      <div class="std-tags">${m.tags.map(t => `<span class="std-tag mono">${t}</span>`).join('')}</div>
+      <div class="controls-row">
+        <select class="status-select ${selCls}" data-id="${m.id}" aria-label="Status for ${m.id}">
+          <option value="todo" ${st.status === 'todo' ? 'selected' : ''}>To Study</option>
+          <option value="progress" ${st.status === 'progress' ? 'selected' : ''}>In Progress</option>
+          <option value="mastered" ${st.status === 'mastered' ? 'selected' : ''}>Mastered</option>
+        </select>
+        <input type="number" min="0" step="0.5" class="hours-input" data-id="${m.id}" value="${st.hours}" title="Logged study hours" placeholder="Hrs" />
+      </div>
+      <div class="confidence-row">
+        <span>Confidence (1-5):</span>
+        <div class="conf-pills">${confBtns}</div>
+      </div>
+      <textarea class="notes-area" data-id="${m.id}" placeholder="Study notes, project artifacts, interview anchor...">${st.notes || ''}</textarea>
+    </article>
+  `;
+}
+
 function renderTrackModules(trackName, gridId) {
   const grid = document.getElementById(gridId);
   const filter = trackFilters[trackName];
   const q = filter.search.trim().toLowerCase();
+  const trackPillars = PILLARS.filter(p => p.track === trackName && (filter.pillar === 'ALL' || p.id === filter.pillar));
 
-  const filtered = CURRICULUM.filter(m => {
-    if (m.track !== trackName) return false;
-    if (filter.pillar !== 'ALL' && m.pillar !== filter.pillar) return false;
-    const st = state.modules[m.id]?.status || 'todo';
-    if (filter.status !== 'ALL' && st !== filter.status) return false;
-    if (q) {
-      const hay = `${m.id} ${m.title} ${m.desc} ${m.tags.join(' ')}`.toLowerCase();
-      if (!hay.includes(q)) return false;
-    }
-    return true;
-  });
+  const sectionsHtml = trackPillars.map(p => {
+    const allSectionMods = CURRICULUM.filter(m => m.pillar === p.id);
+    const docsText = (SECTION_DOCS[p.id] || []).map(d => `${d.code} ${d.title} ${d.std} ${d.artifact}`).join(' ').toLowerCase();
+    const docsMatch = q && docsText.includes(q);
 
-  if (!filtered.length) {
-    grid.innerHTML = `<div class="panel-card"><strong>No matching modules.</strong> Clear phase/pillar or status filters to view all modules in this track.</div>`;
+    const matchingMods = allSectionMods.filter(m => {
+      const st = state.modules[m.id]?.status || 'todo';
+      if (filter.status !== 'ALL' && st !== filter.status) return false;
+      if (q && !docsMatch) {
+        const hay = `${m.id} ${m.title} ${m.desc} ${m.tags.join(' ')}`.toLowerCase();
+        if (!hay.includes(q)) return false;
+      }
+      return true;
+    });
+
+    if (!matchingMods.length) return '';
+
+    const done = allSectionMods.filter(m => state.modules[m.id]?.status === 'mastered').length;
+    const prog = allSectionMods.filter(m => state.modules[m.id]?.status === 'progress').length;
+    const pct = Math.round(((done + prog * 0.45) / allSectionMods.length) * 100);
+    const hrs = allSectionMods.reduce((s, m) => s + (Number(state.modules[m.id]?.hours) || 0), 0);
+    const badgeCls = trackName === 'pm' ? 'track-badge-pm' : 'track-badge-legal';
+
+    return `
+      <section class="section-block" aria-label="${p.name}">
+        <div class="section-header-bar">
+          <div class="section-title-group">
+            <span class="track-badge ${badgeCls}">${p.code}</span>
+            <h3 class="section-title">${p.name}</h3>
+          </div>
+          <div class="section-stats mono">
+            <span>${done}/${allSectionMods.length} Mastered</span>
+            <span>|</span>
+            <span>${hrs.toFixed(1)}h</span>
+            <span>|</span>
+            <span>${pct}%</span>
+          </div>
+        </div>
+        ${renderSectionDocsHtml(p.id)}
+        <div class="cards-grid">
+          ${matchingMods.map(renderModuleCardHtml).join('')}
+        </div>
+      </section>
+    `;
+  }).filter(Boolean).join('');
+
+  if (!sectionsHtml) {
+    grid.innerHTML = `<div class="panel-card"><strong>No matching modules or documents.</strong> Clear phase/pillar or status filters to view all items in this track.</div>`;
     return;
   }
 
-  grid.innerHTML = filtered.map(m => {
-    const st = state.modules[m.id] || computeDefaultModuleEntry();
-    const cardCls = st.status === 'mastered' ? 'is-mastered' : (st.status === 'progress' ? 'is-progress' : '');
-    const selCls = st.status === 'mastered' ? 'status-mastered' : (st.status === 'progress' ? 'status-progress' : '');
-    const pObj = PILLARS.find(p => p.id === m.pillar);
-    const pLabel = pObj ? pObj.shortName : m.pillar;
-    const confBtns = [1, 2, 3, 4, 5].map(v =>
-      `<button type="button" class="conf-btn ${Number(st.confidence) === v ? 'active' : ''}" data-id="${m.id}" data-conf="${v}">${v}</button>`
-    ).join('');
-
-    return `
-      <article class="module-card ${cardCls}">
-        <div class="card-head">
-          <span class="badge-code mono">${m.id}</span>
-          <span class="badge-pillar">${pLabel}</span>
-        </div>
-        <h3 class="card-title">${m.title}</h3>
-        <p class="card-desc">${m.desc}</p>
-        <div class="std-tags">${m.tags.map(t => `<span class="std-tag mono">${t}</span>`).join('')}</div>
-        <div class="controls-row">
-          <select class="status-select ${selCls}" data-id="${m.id}" aria-label="Status for ${m.id}">
-            <option value="todo" ${st.status === 'todo' ? 'selected' : ''}>To Study</option>
-            <option value="progress" ${st.status === 'progress' ? 'selected' : ''}>In Progress</option>
-            <option value="mastered" ${st.status === 'mastered' ? 'selected' : ''}>Mastered</option>
-          </select>
-          <input type="number" min="0" step="0.5" class="hours-input" data-id="${m.id}" value="${st.hours}" title="Logged study hours" placeholder="Hrs" />
-        </div>
-        <div class="confidence-row">
-          <span>Confidence (1-5):</span>
-          <div class="conf-pills">${confBtns}</div>
-        </div>
-        <textarea class="notes-area" data-id="${m.id}" placeholder="Study notes, project artifacts, interview anchor...">${st.notes || ''}</textarea>
-      </article>
-    `;
-  }).join('');
+  grid.innerHTML = sectionsHtml;
 
   grid.querySelectorAll('.status-select').forEach(sel => {
     sel.onchange = () => {
