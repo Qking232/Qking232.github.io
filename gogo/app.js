@@ -1078,7 +1078,9 @@ function syncPortfolioRow(itemId) {
     status: st.status,
     notes: st.linkNote || '',
     updated_at: new Date().toISOString()
-  }]);
+  }]).then(res => {
+    if (res && res.ok) setSyncUiState('connected', 'Supabase Synced');
+  });
 }
 
 function syncInterviewRow(qaId) {
@@ -1092,7 +1094,9 @@ function syncInterviewRow(qaId) {
     track: meta.track,
     ready: Boolean(st.ready),
     updated_at: new Date().toISOString()
-  }]);
+  }]).then(res => {
+    if (res && res.ok) setSyncUiState('connected', 'Supabase Synced');
+  });
 }
 
 function syncDocCheckRow(moduleId, docIdx, checked) {
@@ -1109,7 +1113,9 @@ function syncDocCheckRow(moduleId, docIdx, checked) {
     doc_title: docObj.title || '',
     checked: Boolean(checked),
     updated_at: new Date().toISOString()
-  }]);
+  }]).then(res => {
+    if (res && res.ok) setSyncUiState('connected', 'Supabase Synced');
+  });
 }
 
 async function pullFromSupabase(silent) {
@@ -1226,18 +1232,17 @@ async function pushAllToSupabase() {
     });
   });
 
-  const [mRes, pRes, iRes] = await Promise.all([
+  const [mRes, pRes, iRes, dRes] = await Promise.all([
     window.DC36_Supabase.upsertModules(modRows),
     window.DC36_Supabase.upsertPortfolio(portRows),
-    window.DC36_Supabase.upsertInterviews(iqRows)
+    window.DC36_Supabase.upsertInterviews(iqRows),
+    window.DC36_Supabase.upsertDocChecks && docRows.length
+      ? window.DC36_Supabase.upsertDocChecks(docRows)
+      : Promise.resolve({ ok: true })
   ]);
 
-  if (window.DC36_Supabase.upsertDocChecks && docRows.length) {
-    await window.DC36_Supabase.upsertDocChecks(docRows);
-  }
-
-  if (mRes.ok && pRes.ok && iRes.ok) {
-    setSyncUiState('connected', `Supabase Synced (${modRows.length} mods)`);
+  if (mRes.ok && pRes.ok && iRes.ok && dRes.ok) {
+    setSyncUiState('connected', `Supabase Synced (${modRows.length} mods / ${docRows.length} docs)`);
     recordHistoryEvent({
       event_type: 'cloud_sync',
       entity_id: pid,
