@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ireland &amp; EU Data Centre Development Tracker | DC36-EU Mastery</title>
+  <meta name="description" content="Interactive career learning and portfolio tracker for Ireland and EU Data Centre Development (EN 50600, EirGrid, EPA IEL, BCAR, PSDP/PSCS, P6 DCMA-14, CIBSE L1-L5)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="hero-card">
+      <div>
+        <div class="hero-eyebrow">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          <span>Ireland / EU Hyperscale Portfolio (DC36-EU)</span>
+        </div>
+        <h1 class="hero-title">Data Centre Development Mastery Tracker</h1>
+        <p class="hero-sub">
+          Structured career readiness hub aligned with Irish &amp; EU institutional standards:
+          Planning Act (SID / EIAR), EPA IEL, EirGrid &amp; CRU, BCAR (FSC / DAC / CCC),
+          S.I. No. 291/2013 (PSDP / PSCS), EN 50600 Class 3, EU EED (2023/1791), and CIBSE L1-L5.
+        </p>
+        <div class="hero-actions">
+          <button type="button" id="btn-export" class="btn-m3 btn-tonal-light">Export JSON Backup</button>
+          <label class="btn-m3 btn-ghost-light" style="cursor:pointer;">
+            Import JSON
+            <input type="file" id="file-import" accept=".json" hidden />
+          </label>
+          <button type="button" id="btn-reset" class="btn-m3 btn-danger-ghost">Reset Progress</button>
+        </div>
+      </div>
+
+      <div class="kpi-grid">
+        <div class="kpi-tile">
+          <div class="kpi-label">Career Readiness</div>
+          <div class="kpi-value" id="kpi-readiness">0%</div>
+          <div class="kpi-note">Weighted completion score</div>
+        </div>
+        <div class="kpi-tile">
+          <div class="kpi-label">Modules Mastered</div>
+          <div class="kpi-value" id="kpi-completed">0 / 36</div>
+          <div class="kpi-note" id="kpi-completed-sub">0 currently in progress</div>
+        </div>
+        <div class="kpi-tile">
+          <div class="kpi-label">Logged Study Time</div>
+          <div class="kpi-value" id="kpi-hours">0.0h</div>
+          <div class="kpi-note">Local browser auto-saved</div>
+        </div>
+        <div class="kpi-tile">
+          <div class="kpi-label">Mean Confidence</div>
+          <div class="kpi-value" id="kpi-confidence">3.0 / 5.0</div>
+          <div class="kpi-note">Self-assessed technical fluency</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="wave-progress-card" aria-label="Overall progression">
+      <div class="wave-meta">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0b57d0" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <div>
+          <div class="wave-title" id="wave-label">0% Overall EU / Ireland Readiness</div>
+          <div class="wave-sub">6 Core Pillars x 6 Technical Modules = 36 Target Competencies</div>
+        </div>
+      </div>
+      <div class="wave-track-wrap">
+        <div class="wave-fill" id="wave-fill"></div>
+      </div>
+    </section>
+
+    <nav class="nav-tabs" aria-label="Dashboard sections">
+      <button type="button" class="tab-btn active" data-target="view-curriculum">1. Curriculum (36 Modules)</button>
+      <button type="button" class="tab-btn" data-target="view-analytics">2. Pillar Analytics</button>
+      <button type="button" class="tab-btn" data-target="view-portfolio">3. DC36-EU Portfolio &amp; Gaps</button>
+      <button type="button" class="tab-btn" data-target="view-interviews">4. Dublin / EU Interview Prep</button>
+    </nav>
+
+    <main>
+      <section id="view-curriculum" class="view-panel active">
+        <div class="toolbar">
+          <div class="toolbar-top">
+            <input type="search" id="search-box" class="search-input" placeholder="Filter by keyword, standard (EN 50600, BCAR, EirGrid, EPA IEL, EED, NEC4)..." />
+          </div>
+          <div class="chip-row" id="pillar-chips"></div>
+          <div class="chip-row" id="status-chips"></div>
+        </div>
+        <div id="modules-grid" class="cards-grid"></div>
+      </section>
+
+      <section id="view-analytics" class="view-panel">
+        <div class="analytics-grid">
+          <div class="panel-card">
+            <h3>Mastery Progress by EU / Ireland Pillar</h3>
+            <div id="pillar-bars"></div>
+          </div>
+          <div class="panel-card">
+            <h3>Benchmark &amp; Certification Alignment</h3>
+            <div id="analytics-summary"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="view-portfolio" class="view-panel">
+        <div class="table-wrap">
+          <table class="m3-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Portfolio Deliverable</th>
+                <th>Governing EU / Irish Standards</th>
+                <th>Target Artifact / Metric</th>
+                <th>Update Status</th>
+                <th>Current State</th>
+              </tr>
+            </thead>
+            <tbody id="portfolio-tbody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="view-interviews" class="view-panel">
+        <div id="interview-list"></div>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
