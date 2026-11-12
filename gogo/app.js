@@ -1452,6 +1452,9 @@ function renderModuleDocsDrawerHtml(m, forceOpen) {
     const copyBtnHtml = d.localPath
       ? `<button type="button" class="btn-copy-path mono" data-copy-path="${escapeHtml(d.localPath)}" data-copy-label="${safeArtifact}" title="Copy full Windows file path">Copy Path</button>`
       : '';
+    const liveReadBtnHtml = m.pillar === 'PM1'
+      ? `<a href="phase1/#${m.id}-D${idx + 1}" class="btn-read-live mono" title="Open full rendered document & download">Read Live</a>`
+      : '';
     return `
       <li class="module-doc-item ${isChecked ? 'is-done' : ''}" data-doc-row="${k}">
         <div class="module-doc-left">
@@ -1468,6 +1471,7 @@ function renderModuleDocsDrawerHtml(m, forceOpen) {
         </div>
         <div class="module-doc-meta">
           <span class="mono">${safeArtifact}${safeRef ? ` (${safeRef})` : ''}</span>
+          ${liveReadBtnHtml}
           ${copyBtnHtml}
           <span class="doc-pill ${kindCls}">${kindLbl}</span>
         </div>
@@ -1592,6 +1596,7 @@ function renderTrackModules(trackName, gridId) {
           <div class="section-title-group">
             <span class="track-badge ${badgeCls}">${p.code}</span>
             <h3 class="section-title">${p.name}</h3>
+            ${p.id === 'PM1' ? '<a href="phase1/index.html" class="btn-read-live mono" style="padding:5px 12px;">Open Phase 1 Live Reader (31 Files)</a>' : ''}
           </div>
           <div class="section-stats mono">
             <span>${done}/${allSectionMods.length} Mastered</span>

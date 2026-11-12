@@ -1553,3 +1553,23 @@ table.docs-mini-table tr:last-child td {
   flex-wrap: wrap;
   gap: 8px;
 }
+
+.btn-read-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 9px;
+  border-radius: var(--radius-pill);
+  border: 1px solid #0b57d0;
+  background: #0b57d0;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-read-live:hover {
+  background: #0842a0;
+  border-color: #0842a0;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <title>Phase 1 Live Document Reader (PM-01 to PM-06) | DC36-EU</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="phase1.css?v=20261112-13" />
+</head>
+<body>
+  <div class="portal-shell">
+    <header class="portal-hero">
+      <div>
+        <div class="hero-crumb-row">
+          <a href="../index.html" class="back-link">&lt;- Back to Master Dashboard</a>
+          <span class="hero-tag">RIBA Stage 0-1 | Phase 1 Full-Detail Repository</span>
+        </div>
+        <h1>Phase 1: Initiation, Charter &amp; Business Case (PM-01 to PM-06)</h1>
+        <p>Complete unabridged HTML viewer and direct file downloads for all 31 Phase 1 artifacts (Word Standards, Governance Charters, Feasibility &amp; DCF Models, SteerCo DoA Audit, RIBA Stage-Gates &amp; Escalation Logs).</p>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat-card">
+          <div class="hero-stat-label">Phase 1 Modules</div>
+          <div class="hero-stat-val">6 Cards</div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="hero-stat-label">Hosted Live Files</div>
+          <div class="hero-stat-val" id="stat-files">31 Files</div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="hero-stat-label">Docs Completed</div>
+          <div class="hero-stat-val" id="stat-done">0 / 24</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="portal-toolbar" aria-label="Search and filter Phase 1 documents">
+      <div class="search-wrap">
+        <input type="search" id="p1-search" class="search-box" placeholder="Full-text search across all Phase 1 documents, tables, Excel cells, standards (SteerCo, Quorum, DCF, EN 50600, LNTP)..." />
+      </div>
+      <div class="chip-row" id="p1-cat-chips"></div>
+      <span id="p1-sync-pill" class="sync-status-pill">Checking Supabase...</span>
+    </section>
+
+    <div class="reader-layout">
+      <aside class="sidebar-nav" id="p1-sidebar" aria-label="Phase 1 document tree"></aside>
+      <main class="doc-pane" id="p1-viewer" aria-live="polite"></main>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="../supabase-sync.js?v=20261112-13"></script>
+  <script src="phase1-data.js?v=20261112-13"></script>
+  <script src="phase1.js?v=20261112-13"></script>
+</body>
+</html>
