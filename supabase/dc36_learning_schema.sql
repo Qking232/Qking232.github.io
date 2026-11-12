@@ -118,6 +118,7 @@ create table if not exists public.dc_learning_history (
                         'note_update',
                         'portfolio_update',
                         'interview_update',
+                        'doc_check',
                         'manual_checkin',
                         'cloud_sync'
                       )),
@@ -135,6 +136,20 @@ create table if not exists public.dc_learning_history (
   summary             text not null default '',
   created_at          timestamptz not null default now()
 );
+
+-- Idempotent migration if dc_learning_history was created prior to doc_check
+alter table public.dc_learning_history drop constraint if exists dc_learning_history_event_type_check;
+alter table public.dc_learning_history add constraint dc_learning_history_event_type_check check (event_type in (
+  'status_change',
+  'hours_logged',
+  'confidence_update',
+  'note_update',
+  'portfolio_update',
+  'interview_update',
+  'doc_check',
+  'manual_checkin',
+  'cloud_sync'
+));
 
 create index if not exists dc_learning_history_profile_time_idx
   on public.dc_learning_history (profile_id, created_at desc);
@@ -171,3 +186,39 @@ group by profile_id, date_trunc('day', created_at)::date
 order by study_date desc;
 
 grant select on public.dc_learning_daily_summary to anon, authenticated;
+
+
+-- ---------------------------------------------------------------------------
+-- 6. Per-Document Completion Checkboxes (public.dc_learning_doc_checks)
+-- ---------------------------------------------------------------------------
+create table if not exists public.dc_learning_doc_checks (
+  profile_id  text not null,
+  doc_key     text not null,
+  module_id   text not null,
+  doc_index   smallint not null check (doc_index between 0 and 10),
+  track       text not null check (track in ('pm', 'legal')),
+  doc_title   text not null default '',
+  checked     boolean not null default false,
+  updated_at  timestamptz not null default now(),
+  primary key (profile_id, doc_key)
+);
+
+create index if not exists dc_learning_doc_checks_profile_idx
+  on public.dc_learning_doc_checks (profile_id, track, module_id);
+
+alter table public.dc_learning_doc_checks enable row level security;
+grant select, insert, update on public.dc_learning_doc_checks to anon, authenticated;
+
+drop policy if exists dc_doc_checks_select on public.dc_learning_doc_checks;
+create policy dc_doc_checks_select on public.dc_learning_doc_checks
+  for select to anon, authenticated using (true);
+
+drop policy if exists dc_doc_checks_insert on public.dc_learning_doc_checks;
+create policy dc_doc_checks_insert on public.dc_learning_doc_checks
+  for insert to anon, authenticated with check (length(trim(profile_id)) between 3 and 64);
+
+drop policy if exists dc_doc_checks_update on public.dc_learning_doc_checks;
+create policy dc_doc_checks_update on public.dc_learning_doc_checks
+  for update to anon, authenticated
+  using (length(trim(profile_id)) between 3 and 64)
+  with check (length(trim(profile_id)) between 3 and 64);

@@ -70,11 +70,12 @@
     async pullAll(profileId) {
       const pid = encodeURIComponent(profileId);
       const headers = buildHeaders();
-      const [mods, port, iq, hist] = await Promise.all([
+      const [mods, port, iq, hist, docChk] = await Promise.all([
         requestJson(`dc_learning_modules?profile_id=eq.${pid}&select=*`, { method: 'GET', headers }),
         requestJson(`dc_learning_portfolio?profile_id=eq.${pid}&select=*`, { method: 'GET', headers }),
         requestJson(`dc_learning_interviews?profile_id=eq.${pid}&select=*`, { method: 'GET', headers }),
-        requestJson(`dc_learning_history?profile_id=eq.${pid}&order=created_at.desc&limit=400`, { method: 'GET', headers })
+        requestJson(`dc_learning_history?profile_id=eq.${pid}&order=created_at.desc&limit=400`, { method: 'GET', headers }),
+        requestJson(`dc_learning_doc_checks?profile_id=eq.${pid}&select=*`, { method: 'GET', headers })
       ]);
 
       if (!mods.ok) {
@@ -89,7 +90,8 @@
         modules: Array.isArray(mods.data) ? mods.data : [],
         portfolio: Array.isArray(port.data) ? port.data : [],
         interviews: Array.isArray(iq.data) ? iq.data : [],
-        history: Array.isArray(hist.data) ? hist.data : []
+        history: Array.isArray(hist.data) ? hist.data : [],
+        docChecks: docChk && docChk.ok && Array.isArray(docChk.data) ? docChk.data : []
       };
     },
 
@@ -118,6 +120,19 @@
         headers: buildHeaders({ 'Prefer': 'resolution=merge-duplicates,return=minimal' }),
         body: JSON.stringify(rows)
       });
+    },
+
+    async upsertDocChecks(rows) {
+      if (!rows || !rows.length) return { ok: true };
+      const res = await requestJson('dc_learning_doc_checks?on_conflict=profile_id,doc_key', {
+        method: 'POST',
+        headers: buildHeaders({ 'Prefer': 'resolution=merge-duplicates,return=minimal' }),
+        body: JSON.stringify(rows)
+      });
+      if (!res.ok && isMissingSchemaError(res)) {
+        return { ok: false, reason: 'schema_missing' };
+      }
+      return res;
     },
 
     async appendHistory(row) {

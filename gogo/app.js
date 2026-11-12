@@ -846,6 +846,10 @@ const INTERVIEW_QA = [
   }
 ];
 
+function docKey(moduleId, idx) {
+  return `${moduleId}::${idx}`;
+}
+
 function computeDefaultModuleEntry() {
   return { status: 'todo', hours: 0, confidence: 3, notes: '' };
 }
@@ -863,7 +867,7 @@ function defaultState() {
   INTERVIEW_QA.forEach(q => {
     interviews[q.id] = { ready: false };
   });
-  return { modules, portfolio, interviews };
+  return { modules, portfolio, interviews, docChecks: {} };
 }
 
 function migrateLegacyModules(savedModules) {
@@ -888,7 +892,8 @@ function loadState() {
     return {
       modules: { ...def.modules, ...migratedModules },
       portfolio: { ...def.portfolio, ...(parsed.portfolio || {}) },
-      interviews: { ...def.interviews, ...(parsed.interviews || {}) }
+      interviews: { ...def.interviews, ...(parsed.interviews || {}) },
+      docChecks: { ...(parsed.docChecks || {}) }
     };
   } catch {
     return defaultState();
@@ -1043,6 +1048,23 @@ function syncInterviewRow(qaId) {
   }]);
 }
 
+function syncDocCheckRow(moduleId, docIdx, checked) {
+  if (!window.DC36_Supabase || !cloudSchemaReady || !window.DC36_Supabase.upsertDocChecks) return;
+  const meta = CURRICULUM.find(m => m.id === moduleId);
+  const docObj = meta && Array.isArray(meta.docs) ? meta.docs[docIdx] : null;
+  if (!meta || !docObj) return;
+  window.DC36_Supabase.upsertDocChecks([{
+    profile_id: getProfileId(),
+    doc_key: docKey(moduleId, docIdx),
+    module_id: moduleId,
+    doc_index: docIdx,
+    track: meta.track,
+    doc_title: docObj.title || '',
+    checked: Boolean(checked),
+    updated_at: new Date().toISOString()
+  }]);
+}
+
 async function pullFromSupabase(silent) {
   if (!window.DC36_Supabase) return;
   const check = await window.DC36_Supabase.checkConnection();
@@ -1058,7 +1080,7 @@ async function pullFromSupabase(silent) {
     return;
   }
 
-  const hasRemoteData = res.modules.length > 0 || res.portfolio.length > 0 || res.interviews.length > 0 || res.history.length > 0;
+  const hasRemoteData = res.modules.length > 0 || res.portfolio.length > 0 || res.interviews.length > 0 || res.history.length > 0 || (res.docChecks && res.docChecks.length > 0);
   if (hasRemoteData) {
     res.modules.forEach(r => {
       if (state.modules[r.module_id]) {
@@ -1080,6 +1102,15 @@ async function pullFromSupabase(silent) {
         state.interviews[r.qa_id] = { ready: Boolean(r.ready) };
       }
     });
+    if (Array.isArray(res.docChecks) && res.docChecks.length > 0) {
+      if (!state.docChecks) state.docChecks = {};
+      res.docChecks.forEach(r => {
+        if (r.doc_key) {
+          if (r.checked) state.docChecks[r.doc_key] = true;
+          else delete state.docChecks[r.doc_key];
+        }
+      });
+    }
     if (res.history.length > 0) {
       historyEvents = res.history;
       saveLocalHistory();
@@ -1131,12 +1162,32 @@ async function pushAllToSupabase() {
     const s = state.interviews[q.id] || { ready: false };
     return { profile_id: pid, qa_id: q.id, track: q.track, ready: Boolean(s.ready), updated_at: now };
   });
+  const docRows = [];
+  CURRICULUM.forEach(m => {
+    (m.docs || []).forEach((d, idx) => {
+      const k = docKey(m.id, idx);
+      docRows.push({
+        profile_id: pid,
+        doc_key: k,
+        module_id: m.id,
+        doc_index: idx,
+        track: m.track,
+        doc_title: d.title || '',
+        checked: Boolean(state.docChecks && state.docChecks[k]),
+        updated_at: now
+      });
+    });
+  });
 
   const [mRes, pRes, iRes] = await Promise.all([
     window.DC36_Supabase.upsertModules(modRows),
     window.DC36_Supabase.upsertPortfolio(portRows),
     window.DC36_Supabase.upsertInterviews(iqRows)
   ]);
+
+  if (window.DC36_Supabase.upsertDocChecks && docRows.length) {
+    await window.DC36_Supabase.upsertDocChecks(docRows);
+  }
 
   if (mRes.ok && pRes.ok && iRes.ok) {
     setSyncUiState('connected', `Supabase Synced (${modRows.length} mods)`);
@@ -1145,13 +1196,27 @@ async function pushAllToSupabase() {
       entity_id: pid,
       entity_title: 'Full Portfolio Cloud Backup',
       track: 'system',
-      summary: `Synced ${modRows.length} modules, ${portRows.length} deliverables, and ${iqRows.length} Q&As to Supabase`
+      summary: `Synced ${modRows.length} modules, ${docRows.length} docs, ${portRows.length} deliverables, and ${iqRows.length} Q&As to Supabase`
     });
     showToast('All local progress pushed to Supabase');
   } else {
     setSyncUiState('offline', 'Cloud Push Error');
     showToast('Cloud push failed; check console or RLS');
   }
+}
+
+function getDocStats(trackFilter) {
+  let done = 0;
+  let total = 0;
+  CURRICULUM.forEach(m => {
+    if (trackFilter && m.track !== trackFilter) return;
+    (m.docs || []).forEach((_, idx) => {
+      total += 1;
+      if (state.docChecks && state.docChecks[docKey(m.id, idx)]) done += 1;
+    });
+  });
+  const pct = total ? Math.round((done / total) * 100) : 0;
+  return { done, total, pct };
 }
 
 function getTrackMetrics(trackName) {
@@ -1177,6 +1242,7 @@ function updateMetrics() {
   const pm = getTrackMetrics('pm');
   const legal = getTrackMetrics('legal');
   const totalHrs = pm.hours + legal.hours;
+  const allDocs = getDocStats();
 
   document.getElementById('kpi-readiness').textContent = `${pm.readiness}%`;
   document.getElementById('kpi-readiness-sub').textContent = `PM Lifecycle Active (${pm.count}) | Legal Later: ${legal.readiness}%`;
@@ -1187,6 +1253,10 @@ function updateMetrics() {
   document.getElementById('kpi-confidence').textContent = `${pm.avgConf} / 5.0`;
   document.getElementById('wave-fill').style.width = `${pm.readiness}%`;
   document.getElementById('wave-label').textContent = `${pm.readiness}% End-to-End Project Management Readiness`;
+  const waveSubEl = document.getElementById('wave-sub');
+  if (waveSubEl) {
+    waveSubEl.textContent = `6 Lifecycle Phases x 6 Modules = 36 Active PM Modules (+ 18 Legal) | ${allDocs.done} / ${allDocs.total} Docs Checked (${allDocs.pct}%)`;
+  }
 
   renderPmStepper();
   renderAnalytics();
@@ -1315,18 +1385,29 @@ function docCatClass(cat) {
 function renderModuleDocsDrawerHtml(m, forceOpen) {
   const docs = m.docs || [];
   if (!docs.length) return '';
-  const itemsHtml = docs.map(d => {
+  const checks = state.docChecks || {};
+  let doneCount = 0;
+
+  const itemsHtml = docs.map((d, idx) => {
+    const k = docKey(m.id, idx);
+    const isChecked = Boolean(checks[k]);
+    if (isChecked) doneCount += 1;
     const kindCls = d.kind === 'built' ? 'doc-pill-built' : (d.kind === 'planned' ? 'doc-pill-planned' : 'doc-pill-ref');
     const kindLbl = d.kind === 'built' ? 'Built (DC36-EU)' : (d.kind === 'planned' ? 'Planned Next' : 'Guide / Std');
     const catLbl = d.cat || 'Guide';
     return `
-      <li class="module-doc-item">
-        <div class="module-doc-main">
-          <div class="module-doc-head">
-            <span class="doc-cat-badge ${docCatClass(catLbl)}">${catLbl}</span>
-            <div class="module-doc-title">${d.title}</div>
+      <li class="module-doc-item ${isChecked ? 'is-done' : ''}" data-doc-row="${k}">
+        <div class="module-doc-left">
+          <label class="doc-check-label" title="Mark document completed, learned, or created">
+            <input type="checkbox" class="doc-check-input" data-mod="${m.id}" data-idx="${idx}" aria-label="Mark ${d.title.replace(/"/g, '&quot;')} completed" ${isChecked ? 'checked' : ''} />
+          </label>
+          <div class="module-doc-main">
+            <div class="module-doc-head">
+              <span class="doc-cat-badge ${docCatClass(catLbl)}">${catLbl}</span>
+              <div class="module-doc-title">${d.title}</div>
+            </div>
+            ${d.why ? `<div class="module-doc-why">${d.why}</div>` : ''}
           </div>
-          ${d.why ? `<div class="module-doc-why">${d.why}</div>` : ''}
         </div>
         <div class="module-doc-meta">
           <span class="mono">${d.artifact} (${d.ref})</span>
@@ -1336,10 +1417,15 @@ function renderModuleDocsDrawerHtml(m, forceOpen) {
     `;
   }).join('');
 
+  const pillCls = doneCount === docs.length ? 'all-done' : (doneCount > 0 ? 'has-done' : '');
+
   return `
     <details class="module-docs-drawer" data-id="${m.id}" ${forceOpen ? 'open' : ''}>
       <summary>
-        <span>Related Documents (${docs.length})</span>
+        <span class="module-docs-summary-left">
+          <span>Related Documents (${docs.length})</span>
+          <span class="docs-done-pill ${pillCls} mono" data-docs-pill="${m.id}">${doneCount}/${docs.length} Done</span>
+        </span>
         <span class="section-docs-hint hint-view">View</span>
         <span class="section-docs-hint hint-hide">Hide</span>
       </summary>
@@ -1422,6 +1508,14 @@ function renderTrackModules(trackName, gridId) {
     const prog = allSectionMods.filter(m => state.modules[m.id]?.status === 'progress').length;
     const pct = Math.round(((done + prog * 0.45) / allSectionMods.length) * 100);
     const hrs = allSectionMods.reduce((s, m) => s + (Number(state.modules[m.id]?.hours) || 0), 0);
+    let secDocsDone = 0;
+    let secDocsTotal = 0;
+    allSectionMods.forEach(m => {
+      (m.docs || []).forEach((_, idx) => {
+        secDocsTotal += 1;
+        if (state.docChecks && state.docChecks[docKey(m.id, idx)]) secDocsDone += 1;
+      });
+    });
     const badgeCls = trackName === 'pm' ? 'track-badge-pm' : 'track-badge-legal';
 
     return `
@@ -1433,6 +1527,8 @@ function renderTrackModules(trackName, gridId) {
           </div>
           <div class="section-stats mono">
             <span>${done}/${allSectionMods.length} Mastered</span>
+            <span>|</span>
+            <span data-sec-docs="${p.id}">${secDocsDone}/${secDocsTotal} Docs</span>
             <span>|</span>
             <span>${hrs.toFixed(1)}h</span>
             <span>|</span>
@@ -1453,6 +1549,61 @@ function renderTrackModules(trackName, gridId) {
   }
 
   grid.innerHTML = sectionsHtml;
+
+  grid.querySelectorAll('.doc-check-input').forEach(chk => {
+    chk.onchange = () => {
+      const modId = chk.dataset.mod;
+      const idx = Number(chk.dataset.idx);
+      const checked = Boolean(chk.checked);
+      const k = docKey(modId, idx);
+      if (!state.docChecks) state.docChecks = {};
+      if (checked) state.docChecks[k] = true;
+      else delete state.docChecks[k];
+
+      const row = chk.closest('.module-doc-item');
+      if (row) row.classList.toggle('is-done', checked);
+
+      const meta = CURRICULUM.find(m => m.id === modId);
+      const docObj = meta && Array.isArray(meta.docs) ? meta.docs[idx] : null;
+
+      if (meta) {
+        const docs = meta.docs || [];
+        const modDone = docs.filter((_, i) => state.docChecks[docKey(modId, i)]).length;
+        const pillEl = grid.querySelector(`[data-docs-pill="${modId}"]`);
+        if (pillEl) {
+          pillEl.textContent = `${modDone}/${docs.length} Done`;
+          pillEl.classList.toggle('all-done', modDone === docs.length);
+          pillEl.classList.toggle('has-done', modDone > 0 && modDone < docs.length);
+        }
+
+        const secMods = CURRICULUM.filter(m => m.pillar === meta.pillar);
+        let secDone = 0;
+        let secTotal = 0;
+        secMods.forEach(sm => {
+          (sm.docs || []).forEach((_, i) => {
+            secTotal += 1;
+            if (state.docChecks[docKey(sm.id, i)]) secDone += 1;
+          });
+        });
+        const secEl = grid.querySelector(`[data-sec-docs="${meta.pillar}"]`);
+        if (secEl) secEl.textContent = `${secDone}/${secTotal} Docs`;
+      }
+
+      saveState(checked ? `Checked ${modId} Doc ${idx + 1}` : `Unchecked ${modId} Doc ${idx + 1}`);
+      syncDocCheckRow(modId, idx, checked);
+      if (meta && docObj) {
+        recordHistoryEvent({
+          event_type: 'doc_check',
+          entity_id: `${modId}-D${idx + 1}`,
+          entity_title: docObj.title,
+          track: meta.track,
+          old_status: checked ? 'pending' : 'done',
+          new_status: checked ? 'done' : 'pending',
+          summary: `${checked ? 'Completed' : 'Reopened'} [${docObj.cat}] ${docObj.title}`
+        });
+      }
+    };
+  });
 
   grid.querySelectorAll('.status-select').forEach(sel => {
     sel.onchange = () => {
@@ -1582,12 +1733,16 @@ function renderAnalytics() {
 
   const pm = getTrackMetrics('pm');
   const legal = getTrackMetrics('legal');
+  const allDocs = getDocStats();
+  const pmDocs = getDocStats('pm');
+  const legalDocs = getDocStats('legal');
   const pDone = PORTFOLIO_ITEMS.filter(x => (state.portfolio[x.id]?.status || x.status) === 'Complete').length;
   const iReadyPm = INTERVIEW_QA.filter(q => q.track === 'pm' && state.interviews[q.id]?.ready).length;
   const iTotalPm = INTERVIEW_QA.filter(q => q.track === 'pm').length;
 
   document.getElementById('analytics-summary').innerHTML = `
     <p><strong>Active PM Lifecycle Readiness:</strong> ${pm.readiness}% (${pm.mastered}/${pm.count} mastered, ${pm.hours.toFixed(1)}h logged)</p>
+    <p><strong>Documents Completed (Created / Learned):</strong> ${allDocs.done} / ${allDocs.total} (${allDocs.pct}% | PM ${pmDocs.done}/${pmDocs.total}, Legal ${legalDocs.done}/${legalDocs.total})</p>
     <p><strong>Deferred Legal &amp; Permitting:</strong> ${legal.readiness}% (${legal.mastered}/${legal.count} mastered, parked for later)</p>
     <p><strong>Portfolio Completeness:</strong> ${pDone} / ${PORTFOLIO_ITEMS.length} EU/Ireland Deliverables Completed</p>
     <p><strong>PM Interview Drill Readiness:</strong> ${iReadyPm} / ${iTotalPm} Core PM Scenarios Rehearsed</p>
@@ -1784,6 +1939,7 @@ function renderHistory() {
   if (typeRow) {
     const eOpts = [
       ['ALL', 'All Events'],
+      ['doc_check', 'Doc Checks'],
       ['status_change', 'Status Changes'],
       ['hours_logged', 'Hours Logged'],
       ['confidence_update', 'Confidence'],
@@ -1944,7 +2100,8 @@ document.addEventListener('DOMContentLoaded', () => {
         state = {
           modules: { ...def.modules, ...migrateLegacyModules(rawState.modules) },
           portfolio: { ...def.portfolio, ...(rawState.portfolio || {}) },
-          interviews: { ...def.interviews, ...(rawState.interviews || {}) }
+          interviews: { ...def.interviews, ...(rawState.interviews || {}) },
+          docChecks: { ...(rawState.docChecks || {}) }
         };
         if (Array.isArray(imported.historyEvents)) {
           historyEvents = imported.historyEvents;
