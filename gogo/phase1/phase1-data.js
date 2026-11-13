@@ -1,6 +1,6 @@
 // Auto-generated full-detail Phase 1 document repository payload (PM-01..PM-06 Canonical)
 window.PHASE1_PORTAL_DATA = {
-  "generatedAt": "2026-11-13 04:14 UTC",
+  "generatedAt": "2026-11-13 04:35 UTC",
   "phaseTitle": "Phase 1 (45 MW DC45-EU): Initiation, Charter & Business Case (PM-01 to PM-06)",
   "fileCount": 31,
   "masterWorkbooks": {
@@ -354,7 +354,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Organization Field",
                 "t": "s",
                 "raw": "Organization Field",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -370,7 +370,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Authorized Detail",
                 "t": "s",
                 "raw": "Authorized Detail",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -386,7 +386,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Baseline Parameter",
                 "t": "s",
                 "raw": "Baseline Parameter",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -402,7 +402,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "EU / Ireland Standard",
                 "t": "s",
                 "raw": "EU / Ireland Standard",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -420,7 +420,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Legal Entity / SPV",
                 "t": "s",
                 "raw": "Legal Entity / SPV",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -436,7 +436,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "[TBD - Client / Developer SPV]",
                 "t": "s",
                 "raw": "[TBD - Client / Developer SPV]",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -452,7 +452,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Location / Grid Zone",
                 "t": "s",
                 "raw": "Location / Grid Zone",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -468,7 +468,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "[TBD - Greater Dublin / Ireland IDA Zone]",
                 "t": "s",
                 "raw": "[TBD - Greater Dublin / Ireland IDA Zone]",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -486,7 +486,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Executive Sponsor / IC",
                 "t": "s",
                 "raw": "Executive Sponsor / IC",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -502,7 +502,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "[TBD - Sponsor Input]",
                 "t": "s",
                 "raw": "[TBD - Sponsor Input]",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -518,7 +518,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Project Director / PM",
                 "t": "s",
                 "raw": "Project Director / PM",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -534,7 +534,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "[TBD - Chartered Engineer]",
                 "t": "s",
                 "raw": "[TBD - Chartered Engineer]",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -552,7 +552,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Statutory PSDP / PSCS",
                 "t": "s",
                 "raw": "Statutory PSDP / PSCS",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -568,7 +568,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Appointed in Writing pre-Design / pre-Site (SI 291)",
                 "t": "s",
                 "raw": "Appointed in Writing pre-Design / pre-Site (SI 291)",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -584,7 +584,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "BCAR Assigned Certifier",
                 "t": "s",
                 "raw": "BCAR Assigned Certifier",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -600,7 +600,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Chartered Architect / Engineer (BCMS)",
                 "t": "s",
                 "raw": "Chartered Architect / Engineer (BCMS)",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -742,7 +742,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Control KPI",
                 "t": "s",
                 "raw": "Control KPI",
-                "kind": "input",
+                "kind": "header",
                 "cspan": 2
               },
               {
@@ -758,14 +758,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Live Value",
                 "t": "s",
                 "raw": "Live Value",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "D12",
                 "v": "Unit / Source",
                 "t": "s",
                 "raw": "Unit / Source",
-                "kind": "input",
+                "kind": "header",
                 "cspan": 2
               },
               {
@@ -781,7 +781,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "EU / Ireland Benchmark",
                 "t": "s",
                 "raw": "EU / Ireland Benchmark",
-                "kind": "input",
+                "kind": "header",
                 "cspan": 3
               },
               {
@@ -807,7 +807,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Authorized Master Control Gates",
                 "t": "s",
                 "raw": "Authorized Master Control Gates",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -831,7 +831,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Gates (M1000-M7060)",
                 "t": "s",
                 "raw": "Gates (M1000-M7060)",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -847,7 +847,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Synchronized with DataCenter_45MW_EU_Ireland.xer",
                 "t": "s",
                 "raw": "Synchronized with DataCenter_45MW_EU_Ireland.xer",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 3
               },
               {
@@ -873,7 +873,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Driving Critical-Path Gates",
                 "t": "s",
                 "raw": "Driving Critical-Path Gates",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -897,7 +897,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Zero-Float Gates",
                 "t": "s",
                 "raw": "Zero-Float Gates",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -913,7 +913,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Strict 8.0 hr/day 5-day calendar enforced",
                 "t": "s",
                 "raw": "Strict 8.0 hr/day 5-day calendar enforced",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 3
               },
               {
@@ -939,7 +939,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Notice to Proceed (RIBA Stage 1)",
                 "t": "s",
                 "raw": "Notice to Proceed (RIBA Stage 1)",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -963,7 +963,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "YYYY-MM-DD (M1000)",
                 "t": "s",
                 "raw": "YYYY-MM-DD (M1000)",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -979,7 +979,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Day-1 Land Option & PSDP/EirGrid initiation",
                 "t": "s",
                 "raw": "Day-1 Land Option & PSDP/EirGrid initiation",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 3
               },
               {
@@ -1005,7 +1005,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Commercial Operation Date (COD)",
                 "t": "s",
                 "raw": "Commercial Operation Date (COD)",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -1029,7 +1029,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "YYYY-MM-DD (M7060)",
                 "t": "s",
                 "raw": "YYYY-MM-DD (M7060)",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -1045,7 +1045,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "BCAR CCC validated & Safety File accepted (880 workdays)",
                 "t": "s",
                 "raw": "BCAR CCC validated & Safety File accepted (880 workdays)",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 3
               },
               {
@@ -1071,7 +1071,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Authorized Capex Baseline (BAC)",
                 "t": "s",
                 "raw": "Authorized Capex Baseline (BAC)",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -1095,7 +1095,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "EUR (WBS 1.0-7.0)",
                 "t": "s",
                 "raw": "EUR (WBS 1.0-7.0)",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -1111,7 +1111,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Linked dynamically to Tab 3 EUR Capex table",
                 "t": "s",
                 "raw": "Linked dynamically to Tab 3 EUR Capex table",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 3
               },
               {
@@ -1137,7 +1137,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Critical Strategic Risks (Score>=20)",
                 "t": "s",
                 "raw": "Critical Strategic Risks (Score>=20)",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -1161,7 +1161,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Executive Escalation",
                 "t": "s",
                 "raw": "Executive Escalation",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -1177,7 +1177,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Calculated via L x I matrix on Tab 6",
                 "t": "s",
                 "raw": "Calculated via L x I matrix on Tab 6",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 3
               },
               {
@@ -1327,7 +1327,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Level",
                 "t": "s",
                 "raw": "Level",
-                "kind": "input",
+                "kind": "header",
                 "cspan": 2
               },
               {
@@ -1343,7 +1343,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Deliverable File",
                 "t": "s",
                 "raw": "Deliverable File",
-                "kind": "input",
+                "kind": "header",
                 "cspan": 2
               },
               {
@@ -1359,7 +1359,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Standards Covered",
                 "t": "s",
                 "raw": "Standards Covered",
-                "kind": "input",
+                "kind": "header",
                 "cspan": 3
               },
               {
@@ -1383,7 +1383,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Status",
                 "t": "s",
                 "raw": "Status",
-                "kind": "input"
+                "kind": "header"
               }
             ],
             [
@@ -1392,7 +1392,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "L1 Project Charter",
                 "t": "s",
                 "raw": "L1 Project Charter",
-                "kind": "input",
+                "kind": "banner",
                 "cspan": 2
               },
               {
@@ -1408,7 +1408,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "DataCenter_45MW_EU_Project_Charter.xlsx",
                 "t": "s",
                 "raw": "DataCenter_45MW_EU_Project_Charter.xlsx",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -1424,7 +1424,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "BCAR, PSDP/PSCS, EirGrid/CRU, EUR Stage-Gates & COD Exit",
                 "t": "s",
                 "raw": "BCAR, PSDP/PSCS, EirGrid/CRU, EUR Stage-Gates & COD Exit",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 3
               },
               {
@@ -1448,7 +1448,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "ACTIVE",
                 "t": "s",
                 "raw": "ACTIVE",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -1457,7 +1457,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "L2 Impl. Plan (PIP)",
                 "t": "s",
                 "raw": "L2 Impl. Plan (PIP)",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -1473,7 +1473,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "DataCenter_45MW_EU_PIP.xlsx",
                 "t": "s",
                 "raw": "DataCenter_45MW_EU_PIP.xlsx",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -1489,7 +1489,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "144-task RIBA/EN 50600 Gantt, Ireland Statutory & CIBSE L1-L5",
                 "t": "s",
                 "raw": "144-task RIBA/EN 50600 Gantt, Ireland Statutory & CIBSE L1-L5",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 3
               },
               {
@@ -1513,7 +1513,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "ACTIVE",
                 "t": "s",
                 "raw": "ACTIVE",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -1522,7 +1522,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "L3 Pre-NTP Controls",
                 "t": "s",
                 "raw": "L3 Pre-NTP Controls",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -1538,7 +1538,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "DataCenter_45MW_EU_PreNTP_Controls.xlsx",
                 "t": "s",
                 "raw": "DataCenter_45MW_EU_PreNTP_Controls.xlsx",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -1554,7 +1554,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "EUR 10-yr DCF, EED KPIs (PUE/WUE/ERF), FIDIC/NEC4 EVM & Risks",
                 "t": "s",
                 "raw": "EUR 10-yr DCF, EED KPIs (PUE/WUE/ERF), FIDIC/NEC4 EVM & Risks",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 3
               },
               {
@@ -1578,7 +1578,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "ACTIVE",
                 "t": "s",
                 "raw": "ACTIVE",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -1587,7 +1587,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "L4 Master P6 Schedule",
                 "t": "s",
                 "raw": "L4 Master P6 Schedule",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -1603,7 +1603,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "DataCenter_45MW_EU_Ireland.xer",
                 "t": "s",
                 "raw": "DataCenter_45MW_EU_Ireland.xer",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -1619,7 +1619,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "144 tasks, 22 WBS, 213 FS links; DCMA-14 6/6 PASS (880 workdays)",
                 "t": "s",
                 "raw": "144 tasks, 22 WBS, 213 FS links; DCMA-14 6/6 PASS (880 workdays)",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 3
               },
               {
@@ -1643,7 +1643,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "LOCKED",
                 "t": "s",
                 "raw": "LOCKED",
-                "kind": "input"
+                "kind": "plain"
               }
             ]
           ]
@@ -1798,14 +1798,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "WBS",
                 "t": "s",
                 "raw": "WBS",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "B5",
                 "v": "Package Title",
                 "t": "s",
                 "raw": "Package Title",
-                "kind": "input",
+                "kind": "header",
                 "cspan": 2
               },
               {
@@ -1821,7 +1821,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Scope Deliverables",
                 "t": "s",
                 "raw": "Scope Deliverables",
-                "kind": "section",
+                "kind": "header",
                 "cspan": 5
               }
             ],
@@ -1831,14 +1831,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "1.0-PERM",
                 "t": "s",
                 "raw": "1.0-PERM",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B6",
                 "v": "Planning, EPA IEL & EirGrid",
                 "t": "s",
                 "raw": "Planning, EPA IEL & EirGrid",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -1854,7 +1854,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "PSDP/PSCS appointments, Section 247, EIAR, SID/Local Authority Planning, EPA IEL, EirGrid ECP/RMS, CRU BESS, FSC & DAC.",
                 "t": "s",
                 "raw": "PSDP/PSCS appointments, Section 247, EIAR, SID/Local Authority Planning, EPA IEL, EirGrid ECP/RMS, CRU BESS, FSC & DAC.",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 5
               }
             ],
@@ -1864,14 +1864,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "2.0 & 3.0",
                 "t": "s",
                 "raw": "2.0 & 3.0",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B7",
                 "v": "ISO 19650 BIM & EU Plant",
                 "t": "s",
                 "raw": "ISO 19650 BIM & EU Plant",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -1887,7 +1887,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "BIM CDE, GI boreholes, RIBA Stage 4 IFC, EED telemetry schema, FAT & port logistics for 63MVA tx, SF6-free GIS, HVO gensets & BESS.",
                 "t": "s",
                 "raw": "BIM CDE, GI boreholes, RIBA Stage 4 IFC, EED telemetry schema, FAT & port logistics for 63MVA tx, SF6-free GIS, HVO gensets & BESS.",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 5
               }
             ],
@@ -1897,14 +1897,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "4.x & 5.x",
                 "t": "s",
                 "raw": "4.x & 5.x",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B8",
                 "v": "Shell, Substation, MEP & Halls",
                 "t": "s",
                 "raw": "Shell, Substation, MEP & Halls",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -1920,7 +1920,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "750 CFA piles, 18 kN/m2 decks, Part L envelope, PAS 68 perimeter, 110kV/22kV GIS, 20x HVO+SCR gensets, BESS, CHW+ERF+TES & Halls 1-5.",
                 "t": "s",
                 "raw": "750 CFA piles, 18 kN/m2 decks, Part L envelope, PAS 68 perimeter, 110kV/22kV GIS, 20x HVO+SCR gensets, BESS, CHW+ERF+TES & Halls 1-5.",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 5
               }
             ],
@@ -1930,14 +1930,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "6.0 & 7.0",
                 "t": "s",
                 "raw": "6.0 & 7.0",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B9",
                 "v": "CIBSE Cx L1-L5 & BCAR COD",
                 "t": "s",
                 "raw": "CIBSE Cx L1-L5 & BCAR COD",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -1953,7 +1953,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Witnessed FAT/BCAR QA, L3 static/LOTO, L4 BESS/black-start, L5 45MW 48h IST, HSA Safety File, Part B Fire, EED, EirGrid & BCAR CCC.",
                 "t": "s",
                 "raw": "Witnessed FAT/BCAR QA, L3 static/LOTO, L4 BESS/black-start, L5 45MW 48h IST, HSA Safety File, Part B Fire, EED, EirGrid & BCAR CCC.",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 5
               }
             ],
@@ -2027,14 +2027,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "ID",
                 "t": "s",
                 "raw": "ID",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "B12",
                 "v": "Exclusion",
                 "t": "s",
                 "raw": "Exclusion",
-                "kind": "input",
+                "kind": "header",
                 "cspan": 2
               },
               {
@@ -2050,7 +2050,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Contractual Boundary",
                 "t": "s",
                 "raw": "Contractual Boundary",
-                "kind": "section",
+                "kind": "header",
                 "cspan": 5
               }
             ],
@@ -2060,14 +2060,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "EX-01",
                 "t": "s",
                 "raw": "EX-01",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B13",
                 "v": "Tenant Active IT Equipment",
                 "t": "s",
                 "raw": "Tenant Active IT Equipment",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -2083,7 +2083,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Customer compute racks, servers, storage & optical patching beyond Meet-Me-Rooms MMR-A/B.",
                 "t": "s",
                 "raw": "Customer compute racks, servers, storage & optical patching beyond Meet-Me-Rooms MMR-A/B.",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 5
               }
             ],
@@ -2093,14 +2093,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "EX-02",
                 "t": "s",
                 "raw": "EX-02",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B14",
                 "v": "Upstream EirGrid Transmission",
                 "t": "s",
                 "raw": "Upstream EirGrid Transmission",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -2116,7 +2116,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "EirGrid 220kV/400kV regional transmission reinforcements outside the site 110kV GIS boundary.",
                 "t": "s",
                 "raw": "EirGrid 220kV/400kV regional transmission reinforcements outside the site 110kV GIS boundary.",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 5
               }
             ],
@@ -2126,14 +2126,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "EX-03",
                 "t": "s",
                 "raw": "EX-03",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B15",
                 "v": "District Heating Network Pipe",
                 "t": "s",
                 "raw": "District Heating Network Pipe",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -2149,7 +2149,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Off-site Municipal District Heating distribution mains beyond the ERF Heat-Reuse Export Valve Skid (A5390).",
                 "t": "s",
                 "raw": "Off-site Municipal District Heating distribution mains beyond the ERF Heat-Reuse Export Valve Skid (A5390).",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 5
               }
             ],
@@ -2223,14 +2223,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "ID",
                 "t": "s",
                 "raw": "ID",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "B18",
                 "v": "Constraint",
                 "t": "s",
                 "raw": "Constraint",
-                "kind": "input",
+                "kind": "header",
                 "cspan": 2
               },
               {
@@ -2246,7 +2246,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Non-Negotiable Requirement",
                 "t": "s",
                 "raw": "Non-Negotiable Requirement",
-                "kind": "section",
+                "kind": "header",
                 "cspan": 5
               }
             ],
@@ -2256,14 +2256,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "CON-01",
                 "t": "s",
                 "raw": "CON-01",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B19",
                 "v": "S.I. 291/2013 & HSA AF1",
                 "t": "s",
                 "raw": "S.I. 291/2013 & HSA AF1",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -2279,7 +2279,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Written PSDP/PSCS appointments and HSA AF1 notification legally precede any enabling or excavation works.",
                 "t": "s",
                 "raw": "Written PSDP/PSCS appointments and HSA AF1 notification legally precede any enabling or excavation works.",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 5
               }
             ],
@@ -2289,14 +2289,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "CON-02",
                 "t": "s",
                 "raw": "CON-02",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B20",
                 "v": "BCAR CCC & Part B Gate",
                 "t": "s",
                 "raw": "BCAR CCC & Part B Gate",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -2312,7 +2312,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Building cannot legally open without Assigned Certifier BCMS validation, Part B Fire Clearance (A7010), FSC & DAC.",
                 "t": "s",
                 "raw": "Building cannot legally open without Assigned Certifier BCMS validation, Part B Fire Clearance (A7010), FSC & DAC.",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 5
               }
             ],
@@ -2322,14 +2322,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "CON-03",
                 "t": "s",
                 "raw": "CON-03",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B21",
                 "v": "CRU Dispatchable BESS/Gen",
                 "t": "s",
                 "raw": "CRU Dispatchable BESS/Gen",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -2345,7 +2345,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "EirGrid MIC energisation requires CRU-compliant on-site dispatchable BESS/generation and RMS dynamic verification.",
                 "t": "s",
                 "raw": "EirGrid MIC energisation requires CRU-compliant on-site dispatchable BESS/generation and RMS dynamic verification.",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 5
               }
             ],
@@ -2355,14 +2355,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "CON-04",
                 "t": "s",
                 "raw": "CON-04",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B22",
                 "v": "EU EED (2023/1791) Reporting",
                 "t": "s",
                 "raw": "EU EED (2023/1791) Reporting",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -2378,7 +2378,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Mandatory automated metering infrastructure for annual EU Union Database PUE, WUE, ERF & REF disclosures (>=500kW).",
                 "t": "s",
                 "raw": "Mandatory automated metering infrastructure for annual EU Union Database PUE, WUE, ERF & REF disclosures (>=500kW).",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 5
               }
             ]
@@ -2662,49 +2662,49 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Milestone ID",
                 "t": "s",
                 "raw": "Milestone ID",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "B5",
                 "v": "WBS",
                 "t": "s",
                 "raw": "WBS",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "C5",
                 "v": "Milestone Gate Description",
                 "t": "s",
                 "raw": "Milestone Gate Description",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "D5",
                 "v": "P6 Type",
                 "t": "s",
                 "raw": "P6 Type",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "E5",
                 "v": "Baseline Date",
                 "t": "s",
                 "raw": "Baseline Date",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "F5",
                 "v": "Float (d)",
                 "t": "s",
                 "raw": "Float (d)",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "G5",
                 "v": "Critical",
                 "t": "s",
                 "raw": "Critical",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "H5",
@@ -2720,35 +2720,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "M1000",
                 "t": "s",
                 "raw": "M1000",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B6",
                 "v": "1.0-PERM",
                 "t": "s",
                 "raw": "1.0-PERM",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C6",
                 "v": "RIBA Stage 1 Notice to Proceed & Land Option Milestone",
                 "t": "s",
                 "raw": "RIBA Stage 1 Notice to Proceed & Land Option Milestone",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D6",
                 "v": "Start Gate",
                 "t": "s",
                 "raw": "Start Gate",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E6",
                 "v": "2027-01-04",
                 "t": "empty",
                 "raw": "2027-01-04 00:00:00",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F6",
@@ -2769,7 +2769,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Board / Investment Committee",
                 "t": "s",
                 "raw": "Board / Investment Committee",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -2778,35 +2778,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "M2110",
                 "t": "s",
                 "raw": "M2110",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B7",
                 "v": "2.0-ENG",
                 "t": "s",
                 "raw": "2.0-ENG",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C7",
                 "v": "RIBA Stage 4 Technical Design Freeze & ISO 19650 Sign-Off",
                 "t": "s",
                 "raw": "RIBA Stage 4 Technical Design Freeze & ISO 19650 Sign-Off",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D7",
                 "v": "Finish Gate",
                 "t": "s",
                 "raw": "Finish Gate",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E7",
                 "v": "2027-07-12",
                 "t": "empty",
                 "raw": "2027-07-12 00:00:00",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F7",
@@ -2827,7 +2827,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Lead Designer / ISO 19650 BIM Lead",
                 "t": "s",
                 "raw": "Lead Designer / ISO 19650 BIM Lead",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -2836,35 +2836,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "M1090",
                 "t": "s",
                 "raw": "M1090",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B8",
                 "v": "1.0-PERM",
                 "t": "s",
                 "raw": "1.0-PERM",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C8",
                 "v": "All Irish Statutory Planning, EPA IEL & BCAR Clearances Milestone",
                 "t": "s",
                 "raw": "All Irish Statutory Planning, EPA IEL & BCAR Clearances Milestone",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D8",
                 "v": "Finish Gate",
                 "t": "s",
                 "raw": "Finish Gate",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E8",
                 "v": "2027-10-18",
                 "t": "empty",
                 "raw": "2027-10-18 00:00:00",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F8",
@@ -2885,7 +2885,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Local Auth / EPA / EirGrid / BCMS",
                 "t": "s",
                 "raw": "Local Auth / EPA / EirGrid / BCMS",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -2894,35 +2894,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "M3120",
                 "t": "s",
                 "raw": "M3120",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B9",
                 "v": "3.0-PROC",
                 "t": "s",
                 "raw": "3.0-PROC",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C9",
                 "v": "EU Long-Lead Plant Manufactured & Delivered On-Site Milestone",
                 "t": "s",
                 "raw": "EU Long-Lead Plant Manufactured & Delivered On-Site Milestone",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D9",
                 "v": "Finish Gate",
                 "t": "s",
                 "raw": "Finish Gate",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E9",
                 "v": "2028-01-03",
                 "t": "empty",
                 "raw": "2028-01-03 00:00:00",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F9",
@@ -2943,7 +2943,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Procurement Dir. / Client QA",
                 "t": "s",
                 "raw": "Procurement Dir. / Client QA",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -2952,35 +2952,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "M4350",
                 "t": "s",
                 "raw": "M4350",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B10",
                 "v": "4.3-ENVEL",
                 "t": "s",
                 "raw": "4.3-ENVEL",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C10",
                 "v": "Building Shell 100% Weather-Tight & BCAR Envelope Ready Milestone",
                 "t": "s",
                 "raw": "Building Shell 100% Weather-Tight & BCAR Envelope Ready Milestone",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D10",
                 "v": "Finish Gate",
                 "t": "s",
                 "raw": "Finish Gate",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E10",
                 "v": "2029-02-12",
                 "t": "empty",
                 "raw": "2029-02-12 00:00:00",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F10",
@@ -3001,7 +3001,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Assigned Certifier / Civil PSCS",
                 "t": "s",
                 "raw": "Assigned Certifier / Civil PSCS",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -3010,35 +3010,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "M5595",
                 "t": "s",
                 "raw": "M5595",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B11",
                 "v": "5.5-ICT",
                 "t": "s",
                 "raw": "5.5-ICT",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C11",
                 "v": "MEP Infrastructure & White Space Fit-Out Complete Milestone",
                 "t": "s",
                 "raw": "MEP Infrastructure & White Space Fit-Out Complete Milestone",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D11",
                 "v": "Finish Gate",
                 "t": "s",
                 "raw": "Finish Gate",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E11",
                 "v": "2029-09-24",
                 "t": "empty",
                 "raw": "2029-09-24 00:00:00",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F11",
@@ -3059,7 +3059,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "MEP Lead / Commissioning Manager",
                 "t": "s",
                 "raw": "MEP Lead / Commissioning Manager",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -3068,35 +3068,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "M6260",
                 "t": "s",
                 "raw": "M6260",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B12",
                 "v": "6.2-L3",
                 "t": "s",
                 "raw": "6.2-L3",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C12",
                 "v": "Cx Level 3 Pre-Functional Static & LOTO Ready Milestone",
                 "t": "s",
                 "raw": "Cx Level 3 Pre-Functional Static & LOTO Ready Milestone",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D12",
                 "v": "Finish Gate",
                 "t": "s",
                 "raw": "Finish Gate",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E12",
                 "v": "2029-10-15",
                 "t": "empty",
                 "raw": "2029-10-15 00:00:00",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F12",
@@ -3117,7 +3117,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Independent CxA / HV AP",
                 "t": "s",
                 "raw": "Independent CxA / HV AP",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -3126,35 +3126,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "M6370",
                 "t": "s",
                 "raw": "M6370",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B13",
                 "v": "6.3-L4",
                 "t": "s",
                 "raw": "6.3-L4",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C13",
                 "v": "Cx Level 4 Functional Dynamic Performance Passed Milestone",
                 "t": "s",
                 "raw": "Cx Level 4 Functional Dynamic Performance Passed Milestone",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D13",
                 "v": "Finish Gate",
                 "t": "s",
                 "raw": "Finish Gate",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E13",
                 "v": "2029-12-10",
                 "t": "empty",
                 "raw": "2029-12-10 00:00:00",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F13",
@@ -3175,7 +3175,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Independent CxA",
                 "t": "s",
                 "raw": "Independent CxA",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -3184,35 +3184,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "M6470",
                 "t": "s",
                 "raw": "M6470",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B14",
                 "v": "6.4-L5",
                 "t": "s",
                 "raw": "6.4-L5",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C14",
                 "v": "Cx Level 5 Integrated Systems Testing (45MW IST) Passed Milestone",
                 "t": "s",
                 "raw": "Cx Level 5 Integrated Systems Testing (45MW IST) Passed Milestone",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D14",
                 "v": "Finish Gate",
                 "t": "s",
                 "raw": "Finish Gate",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E14",
                 "v": "2030-02-25",
                 "t": "empty",
                 "raw": "2030-02-25 00:00:00",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F14",
@@ -3233,7 +3233,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Client Tech Rep / CxA",
                 "t": "s",
                 "raw": "Client Tech Rep / CxA",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -3242,35 +3242,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "M7060",
                 "t": "s",
                 "raw": "M7060",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B15",
                 "v": "7.0-COD",
                 "t": "s",
                 "raw": "7.0-COD",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C15",
                 "v": "Commercial Operation Date (COD), Handover & Safety File Milestone",
                 "t": "s",
                 "raw": "Commercial Operation Date (COD), Handover & Safety File Milestone",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D15",
                 "v": "Finish Gate",
                 "t": "s",
                 "raw": "Finish Gate",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E15",
                 "v": "2030-05-20",
                 "t": "empty",
                 "raw": "2030-05-20 00:00:00",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F15",
@@ -3291,7 +3291,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Assigned Certifier / EN 50600 / Client",
                 "t": "s",
                 "raw": "Assigned Certifier / EN 50600 / Client",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -3424,56 +3424,56 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "WBS",
                 "t": "s",
                 "raw": "WBS",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "B18",
                 "v": "Cost Package Description (FIDIC / NEC4)",
                 "t": "s",
                 "raw": "Cost Package Description (FIDIC / NEC4)",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "C18",
                 "v": "Contract Form",
                 "t": "s",
                 "raw": "Contract Form",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "D18",
                 "v": "Base Capex (EUR)",
                 "t": "s",
                 "raw": "Base Capex (EUR)",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "E18",
                 "v": "Contingency (EUR)",
                 "t": "s",
                 "raw": "Contingency (EUR)",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "F18",
                 "v": "Total Capex (EUR)",
                 "t": "s",
                 "raw": "Total Capex (EUR)",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "G18",
                 "v": "% Share",
                 "t": "s",
                 "raw": "% Share",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "H18",
                 "v": "Contingency %",
                 "t": "s",
                 "raw": "Contingency %",
-                "kind": "input"
+                "kind": "header"
               }
             ],
             [
@@ -3482,35 +3482,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "1.0-PERM",
                 "t": "s",
                 "raw": "1.0-PERM",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B19",
                 "v": "Land Option, EIAR, EPA IEL, EirGrid Deposit & BCAR Fees",
                 "t": "s",
                 "raw": "Land Option, EIAR, EPA IEL, EirGrid Deposit & BCAR Fees",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C19",
                 "v": "Client Direct",
                 "t": "s",
                 "raw": "Client Direct",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D19",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E19",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F19",
@@ -3543,35 +3543,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "2.0-ENG",
                 "t": "s",
                 "raw": "2.0-ENG",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B20",
                 "v": "ISO 19650 Design, PSDP, Assigned Certifier & Fire Eng.",
                 "t": "s",
                 "raw": "ISO 19650 Design, PSDP, Assigned Certifier & Fire Eng.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C20",
                 "v": "NEC4 PSC",
                 "t": "s",
                 "raw": "NEC4 PSC",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D20",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E20",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F20",
@@ -3604,35 +3604,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "3.0-PROC",
                 "t": "s",
                 "raw": "3.0-PROC",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B21",
                 "v": "63MVA Tx, SF6-Free GIS, HVO+SCR Gensets, BESS & Chillers",
                 "t": "s",
                 "raw": "63MVA Tx, SF6-Free GIS, HVO+SCR Gensets, BESS & Chillers",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C21",
                 "v": "FIDIC Supply / OFCI",
                 "t": "s",
                 "raw": "FIDIC Supply / OFCI",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D21",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E21",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F21",
@@ -3665,35 +3665,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "4.0-CIVIL",
                 "t": "s",
                 "raw": "4.0-CIVIL",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B22",
                 "v": "PSCS Enabling, 750 CFA Piles, Shell, SuDS & PAS 68 Site",
                 "t": "s",
                 "raw": "PSCS Enabling, 750 CFA Piles, Shell, SuDS & PAS 68 Site",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C22",
                 "v": "FIDIC Yellow / NEC4 ECC",
                 "t": "s",
                 "raw": "FIDIC Yellow / NEC4 ECC",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D22",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E22",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F22",
@@ -3726,35 +3726,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "5.0-MEP",
                 "t": "s",
                 "raw": "5.0-MEP",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B23",
                 "v": "110kV GIS, BESS, CHW/ERF, Halls 1-5 & EED Metering",
                 "t": "s",
                 "raw": "110kV GIS, BESS, CHW/ERF, Halls 1-5 & EED Metering",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C23",
                 "v": "NEC4 ECC Option A/C",
                 "t": "s",
                 "raw": "NEC4 ECC Option A/C",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D23",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E23",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F23",
@@ -3787,35 +3787,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "6.0-CX",
                 "t": "s",
                 "raw": "6.0-CX",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B24",
                 "v": "CIBSE/ASHRAE CxA L1-L5, 45MW Load Banks & Safety File",
                 "t": "s",
                 "raw": "CIBSE/ASHRAE CxA L1-L5, 45MW Load Banks & Safety File",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C24",
                 "v": "Direct Cx Contract",
                 "t": "s",
                 "raw": "Direct Cx Contract",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D24",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E24",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F24",
@@ -3848,35 +3848,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "7.0-COD",
                 "t": "s",
                 "raw": "7.0-COD",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B25",
                 "v": "EN 50600 Class 3 / Tier III Audit & BCAR CCC Closeout",
                 "t": "s",
                 "raw": "EN 50600 Class 3 / Tier III Audit & BCAR CCC Closeout",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C25",
                 "v": "Direct Compliance",
                 "t": "s",
                 "raw": "Direct Compliance",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D25",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E25",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F25",
@@ -3909,21 +3909,21 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "TOTAL",
                 "t": "s",
                 "raw": "TOTAL",
-                "kind": "input"
+                "kind": "total"
               },
               {
                 "coord": "B26",
                 "v": "Total Authorized EUR Capex Baseline (Links to Sheet 1)",
                 "t": "s",
                 "raw": "Total Authorized EUR Capex Baseline (Links to Sheet 1)",
-                "kind": "input"
+                "kind": "total"
               },
               {
                 "coord": "C26",
                 "v": "All 7 Packages",
                 "t": "s",
                 "raw": "All 7 Packages",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D26",
@@ -4096,56 +4096,56 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Tranche",
                 "t": "s",
                 "raw": "Tranche",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "B29",
                 "v": "Gate ID",
                 "t": "s",
                 "raw": "Gate ID",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "C29",
                 "v": "Funding Release Milestone Trigger",
                 "t": "s",
                 "raw": "Funding Release Milestone Trigger",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "D29",
                 "v": "Target Date",
                 "t": "s",
                 "raw": "Target Date",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "E29",
                 "v": "Release %",
                 "t": "s",
                 "raw": "Release %",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "F29",
                 "v": "Tranche Amount (EUR)",
                 "t": "s",
                 "raw": "Tranche Amount (EUR)",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "G29",
                 "v": "Holdback / Guardrail",
                 "t": "s",
                 "raw": "Holdback / Guardrail",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "H29",
                 "v": "Approver",
                 "t": "s",
                 "raw": "Approver",
-                "kind": "input"
+                "kind": "header"
               }
             ],
             [
@@ -4154,28 +4154,28 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "TR-01",
                 "t": "s",
                 "raw": "TR-01",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B30",
                 "v": "M1000",
                 "t": "s",
                 "raw": "M1000",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C30",
                 "v": "Land Option, RIBA Stage 1 & PSDP / EirGrid Filing",
                 "t": "s",
                 "raw": "Land Option, RIBA Stage 1 & PSDP / EirGrid Filing",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D30",
                 "v": "2027-01-04",
                 "t": "s",
                 "raw": "2027-01-04",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E30",
@@ -4197,14 +4197,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Signed ISO 19650 BEP & ORD",
                 "t": "s",
                 "raw": "Signed ISO 19650 BEP & ORD",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "H30",
                 "v": "Sponsor / Board",
                 "t": "s",
                 "raw": "Sponsor / Board",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -4213,28 +4213,28 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "TR-02",
                 "t": "s",
                 "raw": "TR-02",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B31",
                 "v": "M1090",
                 "t": "s",
                 "raw": "M1090",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C31",
                 "v": "Planning Grant, EPA IEL, EirGrid ECP & BCAR Notice",
                 "t": "s",
                 "raw": "Planning Grant, EPA IEL, EirGrid ECP & BCAR Notice",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D31",
                 "v": "2027-10-18",
                 "t": "s",
                 "raw": "2027-10-18",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E31",
@@ -4256,14 +4256,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Zero appeal / judicial stay",
                 "t": "s",
                 "raw": "Zero appeal / judicial stay",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "H31",
                 "v": "Sponsor / Board",
                 "t": "s",
                 "raw": "Sponsor / Board",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -4272,28 +4272,28 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "TR-03",
                 "t": "s",
                 "raw": "TR-03",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B32",
                 "v": "M3120",
                 "t": "s",
                 "raw": "M3120",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C32",
                 "v": "Witnessed FAT & Port Delivery of HV/HVO/BESS/Chillers",
                 "t": "s",
                 "raw": "Witnessed FAT & Port Delivery of HV/HVO/BESS/Chillers",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D32",
                 "v": "2027-12-20",
                 "t": "s",
                 "raw": "2027-12-20",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E32",
@@ -4315,14 +4315,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "L1/L2 shock-logger QA pass",
                 "t": "s",
                 "raw": "L1/L2 shock-logger QA pass",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "H32",
                 "v": "Project Director",
                 "t": "s",
                 "raw": "Project Director",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -4331,28 +4331,28 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "TR-04",
                 "t": "s",
                 "raw": "TR-04",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B33",
                 "v": "M4350",
                 "t": "s",
                 "raw": "M4350",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C33",
                 "v": "Shell Weather-Tight, Flood Ponding & Airtightness",
                 "t": "s",
                 "raw": "Shell Weather-Tight, Flood Ponding & Airtightness",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D33",
                 "v": "2028-12-25",
                 "t": "s",
                 "raw": "2028-12-25",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E33",
@@ -4374,14 +4374,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Assigned Certifier Envelope OK",
                 "t": "s",
                 "raw": "Assigned Certifier Envelope OK",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "H33",
                 "v": "Project Director",
                 "t": "s",
                 "raw": "Project Director",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -4390,28 +4390,28 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "TR-05",
                 "t": "s",
                 "raw": "TR-05",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B34",
                 "v": "M6470",
                 "t": "s",
                 "raw": "M6470",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C34",
                 "v": "Cx Level 5 45MW 48h IST & Grid Blackout Transfer",
                 "t": "s",
                 "raw": "Cx Level 5 45MW 48h IST & Grid Blackout Transfer",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D34",
                 "v": "2030-02-25",
                 "t": "s",
                 "raw": "2030-02-25",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E34",
@@ -4433,14 +4433,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Zero Sev-1 CxA punch items",
                 "t": "s",
                 "raw": "Zero Sev-1 CxA punch items",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "H34",
                 "v": "CCB / CxA",
                 "t": "s",
                 "raw": "CCB / CxA",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -4449,28 +4449,28 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "TR-06",
                 "t": "s",
                 "raw": "TR-06",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B35",
                 "v": "M7060+DLP",
                 "t": "s",
                 "raw": "M7060+DLP",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C35",
                 "v": "BCAR CCC, EN 50600 Audit, Safety File & DLP Expiry",
                 "t": "s",
                 "raw": "BCAR CCC, EN 50600 Audit, Safety File & DLP Expiry",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D35",
                 "v": "2030-05-20",
                 "t": "s",
                 "raw": "2030-05-20",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E35",
@@ -4492,14 +4492,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "5% COD + 5% post-12m DLP",
                 "t": "s",
                 "raw": "5% COD + 5% post-12m DLP",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "H35",
                 "v": "Board / Client",
                 "t": "s",
                 "raw": "Board / Client",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -4508,7 +4508,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "TOTAL",
                 "t": "s",
                 "raw": "TOTAL",
-                "kind": "input"
+                "kind": "total"
               },
               {
                 "coord": "B36",
@@ -4522,7 +4522,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Full EUR Capex Tranche Reconciliation",
                 "t": "s",
                 "raw": "Full EUR Capex Tranche Reconciliation",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D36",
@@ -4907,7 +4907,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Tier 1: Project Director",
                 "t": "s",
                 "raw": "Tier 1: Project Director",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -4923,7 +4923,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Non-critical float (>0d), NEC4 Compensation Events within package contingency.",
                 "t": "s",
                 "raw": "Non-critical float (>0d), NEC4 Compensation Events within package contingency.",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 3
               },
               {
@@ -4947,7 +4947,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Within BAC & float > 0d",
                 "t": "s",
                 "raw": "Within BAC & float > 0d",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -4963,7 +4963,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Monthly EVM Report",
                 "t": "s",
                 "raw": "Monthly EVM Report",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -4972,7 +4972,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Tier 2: Change Control Board",
                 "t": "s",
                 "raw": "Tier 2: Change Control Board",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -4988,7 +4988,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Impacts to Planning conditions, EPA IEL limits, BCAR FSC, EirGrid MIC or EN 50600 Class 3.",
                 "t": "s",
                 "raw": "Impacts to Planning conditions, EPA IEL limits, BCAR FSC, EirGrid MIC or EN 50600 Class 3.",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 3
               },
               {
@@ -5012,7 +5012,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Critical Path or Statutory Spec",
                 "t": "s",
                 "raw": "Critical Path or Statutory Spec",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -5028,7 +5028,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Formal CCB Instruction",
                 "t": "s",
                 "raw": "Formal CCB Instruction",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -5037,7 +5037,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Tier 3: Board / Investment Comm.",
                 "t": "s",
                 "raw": "Tier 3: Board / Investment Comm.",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -5053,7 +5053,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Total EUR BAC overrun, COD shift beyond 2030-05-20 or <45 MW critical capacity.",
                 "t": "s",
                 "raw": "Total EUR BAC overrun, COD shift beyond 2030-05-20 or <45 MW critical capacity.",
-                "kind": "input",
+                "kind": "total",
                 "cspan": 3
               },
               {
@@ -5077,7 +5077,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Total BAC or COD > 2030-05-20",
                 "t": "s",
                 "raw": "Total BAC or COD > 2030-05-20",
-                "kind": "input",
+                "kind": "total",
                 "cspan": 2
               },
               {
@@ -5093,7 +5093,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Board Resolution",
                 "t": "s",
                 "raw": "Board Resolution",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -5226,7 +5226,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Statutory / Key Role",
                 "t": "s",
                 "raw": "Statutory / Key Role",
-                "kind": "input",
+                "kind": "header",
                 "cspan": 2
               },
               {
@@ -5242,7 +5242,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Mandatory Qualification / Law",
                 "t": "s",
                 "raw": "Mandatory Qualification / Law",
-                "kind": "input",
+                "kind": "header",
                 "cspan": 2
               },
               {
@@ -5258,7 +5258,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Core Accountability & Veto Rights",
                 "t": "s",
                 "raw": "Core Accountability & Veto Rights",
-                "kind": "section",
+                "kind": "header",
                 "cspan": 4
               },
               {
@@ -5292,7 +5292,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "PSDP (Design Supervisor)",
                 "t": "s",
                 "raw": "PSDP (Design Supervisor)",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -5308,7 +5308,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "SI 291/2013 Competent Designer Appointment",
                 "t": "s",
                 "raw": "SI 291/2013 Competent Designer Appointment",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -5324,7 +5324,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Design risk elimination, AF1 design safety, compiles statutory Safety File (A6520).",
                 "t": "s",
                 "raw": "Design risk elimination, AF1 design safety, compiles statutory Safety File (A6520).",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 4
               },
               {
@@ -5358,7 +5358,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "PSCS (Construction Sup.)",
                 "t": "s",
                 "raw": "PSCS (Construction Sup.)",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -5374,7 +5374,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "SI 291/2013 Principal Contractor Appointment",
                 "t": "s",
                 "raw": "SI 291/2013 Principal Contractor Appointment",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -5390,7 +5390,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Coordinates multi-contractor M&E site safety, Safe Pass / CSCS checks, HSA AF1.",
                 "t": "s",
                 "raw": "Coordinates multi-contractor M&E site safety, Safe Pass / CSCS checks, HSA AF1.",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 4
               },
               {
@@ -5424,7 +5424,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Assigned Certifier",
                 "t": "s",
                 "raw": "Assigned Certifier",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -5440,7 +5440,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Chartered Engineer/Architect (BCAR 2014)",
                 "t": "s",
                 "raw": "Chartered Engineer/Architect (BCAR 2014)",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -5456,7 +5456,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "BCMS Commencement Notice, Ancillary Certs, Inspection Plan & Certificate of Compliance (A7050).",
                 "t": "s",
                 "raw": "BCMS Commencement Notice, Ancillary Certs, Inspection Plan & Certificate of Compliance (A7050).",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 4
               },
               {
@@ -5490,7 +5490,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "EN 50600 / Uptime Lead",
                 "t": "s",
                 "raw": "EN 50600 / Uptime Lead",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -5506,7 +5506,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "CEI / Uptime ATD-ATS Specialist",
                 "t": "s",
                 "raw": "CEI / Uptime ATD-ATS Specialist",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -5522,7 +5522,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Verifies EN 50600-2-x Class 3, Tier III concurrent maintainability & EED ERF readiness.",
                 "t": "s",
                 "raw": "Verifies EN 50600-2-x Class 3, Tier III concurrent maintainability & EED ERF readiness.",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 4
               },
               {
@@ -5556,7 +5556,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Independent CxA",
                 "t": "s",
                 "raw": "Independent CxA",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -5572,7 +5572,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "CIBSE / ASHRAE Accredited Cx Authority",
                 "t": "s",
                 "raw": "CIBSE / ASHRAE Accredited Cx Authority",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -5588,7 +5588,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Independent veto at M6260 (L3), M6370 (L4) & M6470 (45 MW 48h IST).",
                 "t": "s",
                 "raw": "Independent veto at M6260 (L3), M6370 (L4) & M6470 (45 MW 48h IST).",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 4
               },
               {
@@ -5746,56 +5746,56 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "WBS",
                 "t": "s",
                 "raw": "WBS",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "B19",
                 "v": "Deliverable / Gate",
                 "t": "s",
                 "raw": "Deliverable / Gate",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "C19",
                 "v": "Sponsor",
                 "t": "s",
                 "raw": "Sponsor",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "D19",
                 "v": "Proj. Dir",
                 "t": "s",
                 "raw": "Proj. Dir",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "E19",
                 "v": "PSDP / Des",
                 "t": "s",
                 "raw": "PSDP / Des",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "F19",
                 "v": "PSCS / EPC",
                 "t": "s",
                 "raw": "PSCS / EPC",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "G19",
                 "v": "CxA / AC",
                 "t": "s",
                 "raw": "CxA / AC",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "H19",
                 "v": "Ops",
                 "t": "s",
                 "raw": "Ops",
-                "kind": "input"
+                "kind": "header"
               }
             ],
             [
@@ -5804,14 +5804,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "1.0-PERM",
                 "t": "s",
                 "raw": "1.0-PERM",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B20",
                 "v": "Planning (SID), EPA IEL, EirGrid & BCAR Start (M1090)",
                 "t": "s",
                 "raw": "Planning (SID), EPA IEL, EirGrid & BCAR Start (M1090)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C20",
@@ -5862,14 +5862,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "2.0-ENG",
                 "t": "s",
                 "raw": "2.0-ENG",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B21",
                 "v": "ISO 19650 BIM Freeze, EN 50600 & EED Schema (M2110)",
                 "t": "s",
                 "raw": "ISO 19650 BIM Freeze, EN 50600 & EED Schema (M2110)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C21",
@@ -5920,14 +5920,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "3.0-PROC",
                 "t": "s",
                 "raw": "3.0-PROC",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B22",
                 "v": "EU Plant Manufacture, FAT & Port Logistics (M3120)",
                 "t": "s",
                 "raw": "EU Plant Manufacture, FAT & Port Logistics (M3120)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C22",
@@ -5978,14 +5978,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "4.x-CIVIL",
                 "t": "s",
                 "raw": "4.x-CIVIL",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B23",
                 "v": "Piling, Shell, Weather-Tight & Security (M4350)",
                 "t": "s",
                 "raw": "Piling, Shell, Weather-Tight & Security (M4350)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C23",
@@ -6036,14 +6036,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "5.x-MEP",
                 "t": "s",
                 "raw": "5.x-MEP",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B24",
                 "v": "110kV GIS, HVO/BESS, CHW/ERF & Halls 1-5 (M5595)",
                 "t": "s",
                 "raw": "110kV GIS, HVO/BESS, CHW/ERF & Halls 1-5 (M5595)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C24",
@@ -6094,14 +6094,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "6.1-6.4",
                 "t": "s",
                 "raw": "6.1-6.4",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B25",
                 "v": "CIBSE/ASHRAE Cx L1-L5 & 45MW IST (M6470)",
                 "t": "s",
                 "raw": "CIBSE/ASHRAE Cx L1-L5 & 45MW IST (M6470)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C25",
@@ -6152,14 +6152,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "6.5-OPS",
                 "t": "s",
                 "raw": "6.5-OPS",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B26",
                 "v": "EED Pipeline, Safety File, Black-Hat & Spares (A6540)",
                 "t": "s",
                 "raw": "EED Pipeline, Safety File, Black-Hat & Spares (A6540)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C26",
@@ -6210,14 +6210,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "7.0-COD",
                 "t": "s",
                 "raw": "7.0-COD",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B27",
                 "v": "BCAR CCC, EirGrid Sync & EN 50600 Handover (M7060)",
                 "t": "s",
                 "raw": "BCAR CCC, EirGrid Sync & EN 50600 Handover (M7060)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C27",
@@ -6414,14 +6414,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "CP ID",
                 "t": "s",
                 "raw": "CP ID",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "B5",
                 "v": "Exit Requirement",
                 "t": "s",
                 "raw": "Exit Requirement",
-                "kind": "input",
+                "kind": "header",
                 "cspan": 2
               },
               {
@@ -6437,7 +6437,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Acceptance Evidence & Standard",
                 "t": "s",
                 "raw": "Acceptance Evidence & Standard",
-                "kind": "section",
+                "kind": "header",
                 "cspan": 4
               }
             ],
@@ -6447,14 +6447,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "CP-01",
                 "t": "s",
                 "raw": "CP-01",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B6",
                 "v": "CIBSE / ASHRAE Cx L3-L5",
                 "t": "s",
                 "raw": "CIBSE / ASHRAE Cx L3-L5",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -6470,7 +6470,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Signed M6260, M6370 & M6470 with zero Sev-1 punch items; 48h 45MW IST & <10s blackout transfer.",
                 "t": "s",
                 "raw": "Signed M6260, M6370 & M6470 with zero Sev-1 punch items; 48h 45MW IST & <10s blackout transfer.",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 4
               }
             ],
@@ -6480,14 +6480,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "CP-02",
                 "t": "s",
                 "raw": "CP-02",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B7",
                 "v": "Part B Fire Clearance",
                 "t": "s",
                 "raw": "Part B Fire Clearance",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -6503,7 +6503,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Local Authority Fire Officer inspection & Part B final clearance under FSC terms (A7010).",
                 "t": "s",
                 "raw": "Local Authority Fire Officer inspection & Part B final clearance under FSC terms (A7010).",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 4
               }
             ],
@@ -6513,14 +6513,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "CP-03",
                 "t": "s",
                 "raw": "CP-03",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B8",
                 "v": "EU EED & NIS2/GDPR",
                 "t": "s",
                 "raw": "EU EED & NIS2/GDPR",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -6536,7 +6536,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Automated PUE/WUE/ERF/REF feed verified for EU EED (2023/1791) & NIS2 cyber checks (A7020).",
                 "t": "s",
                 "raw": "Automated PUE/WUE/ERF/REF feed verified for EU EED (2023/1791) & NIS2 cyber checks (A7020).",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 4
               }
             ],
@@ -6546,14 +6546,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "CP-04",
                 "t": "s",
                 "raw": "CP-04",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B9",
                 "v": "EirGrid 110kV Live Sync",
                 "t": "s",
                 "raw": "EirGrid 110kV Live Sync",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -6569,7 +6569,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Full EirGrid / ESB Demand Connection Code RMS/BESS verification & commercial import sync (A7030).",
                 "t": "s",
                 "raw": "Full EirGrid / ESB Demand Connection Code RMS/BESS verification & commercial import sync (A7030).",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 4
               }
             ],
@@ -6579,14 +6579,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "CP-05",
                 "t": "s",
                 "raw": "CP-05",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B10",
                 "v": "EN 50600 & Tier III Audit",
                 "t": "s",
                 "raw": "EN 50600 & Tier III Audit",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -6602,7 +6602,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Passed dual EN 50600 Availability Class 3 & Uptime Tier III Constructed Facility site audit (A7040).",
                 "t": "s",
                 "raw": "Passed dual EN 50600 Availability Class 3 & Uptime Tier III Constructed Facility site audit (A7040).",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 4
               }
             ],
@@ -6612,14 +6612,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "CP-06",
                 "t": "s",
                 "raw": "CP-06",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B11",
                 "v": "BCAR Certificate (CCC)",
                 "t": "s",
                 "raw": "BCAR Certificate (CCC)",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -6635,7 +6635,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Assigned Certifier statutory Certificate of Compliance on Completion registered on BCMS (A7050).",
                 "t": "s",
                 "raw": "Assigned Certifier statutory Certificate of Compliance on Completion registered on BCMS (A7050).",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 4
               }
             ],
@@ -6645,14 +6645,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "CP-07",
                 "t": "s",
                 "raw": "CP-07",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B12",
                 "v": "Safety File & 2-Yr Spares",
                 "t": "s",
                 "raw": "Safety File & 2-Yr Spares",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -6668,7 +6668,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Statutory PSDP/PSCS Safety File (A6520), SOP/EOP/MOPs, Black-Hat drills & 2-yr spares delivered (A6540).",
                 "t": "s",
                 "raw": "Statutory PSDP/PSCS Safety File (A6520), SOP/EOP/MOPs, Black-Hat drills & 2-yr spares delivered (A6540).",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 4
               }
             ],
@@ -6742,14 +6742,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Clause",
                 "t": "s",
                 "raw": "Clause",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "B15",
                 "v": "Closeout Item",
                 "t": "s",
                 "raw": "Closeout Item",
-                "kind": "input",
+                "kind": "header",
                 "cspan": 2
               },
               {
@@ -6765,7 +6765,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Contractual Retention & Transition Standard",
                 "t": "s",
                 "raw": "Contractual Retention & Transition Standard",
-                "kind": "section",
+                "kind": "header",
                 "cspan": 5
               }
             ],
@@ -6775,14 +6775,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "DLP-01",
                 "t": "s",
                 "raw": "DLP-01",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B16",
                 "v": "ISO 19650 Asset Info Model",
                 "t": "s",
                 "raw": "ISO 19650 Asset Info Model",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -6798,7 +6798,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "As-Built BIM Asset Information Model (AIM) handed over within 30 days of M7060.",
                 "t": "s",
                 "raw": "As-Built BIM Asset Information Model (AIM) handed over within 30 days of M7060.",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 5
               }
             ],
@@ -6808,14 +6808,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "DLP-02",
                 "t": "s",
                 "raw": "DLP-02",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B17",
                 "v": "DLP Retention (TR-06 5%)",
                 "t": "s",
                 "raw": "DLP Retention (TR-06 5%)",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -6831,7 +6831,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "12-24 month NEC4/FIDIC Defects Liability Period starts at COD; final 5% released on defect-free sign-off.",
                 "t": "s",
                 "raw": "12-24 month NEC4/FIDIC Defects Liability Period starts at COD; final 5% released on defect-free sign-off.",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 5
               }
             ]
@@ -7083,49 +7083,49 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Risk ID",
                 "t": "s",
                 "raw": "Risk ID",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "B5",
                 "v": "XER Ref",
                 "t": "s",
                 "raw": "XER Ref",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "C5",
                 "v": "Strategic Risk Description",
                 "t": "s",
                 "raw": "Strategic Risk Description",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "D5",
                 "v": "Likelihood",
                 "t": "s",
                 "raw": "Likelihood",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "E5",
                 "v": "Impact",
                 "t": "s",
                 "raw": "Impact",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "F5",
                 "v": "Score (LxI)",
                 "t": "s",
                 "raw": "Score (LxI)",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "G5",
                 "v": "Severity Band",
                 "t": "s",
                 "raw": "Severity Band",
-                "kind": "input"
+                "kind": "header"
               }
             ],
             [
@@ -7134,21 +7134,21 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "CR-01",
                 "t": "s",
                 "raw": "CR-01",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B6",
                 "v": "A1030-A1040",
                 "t": "s",
                 "raw": "A1030-A1040",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C6",
                 "v": "Planning Judicial Review or EIAR further information request slips Planning Grant.",
                 "t": "s",
                 "raw": "Planning Judicial Review or EIAR further information request slips Planning Grant.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D6",
@@ -7187,21 +7187,21 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "CR-02",
                 "t": "s",
                 "raw": "CR-02",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B7",
                 "v": "A1050",
                 "t": "s",
                 "raw": "A1050",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C7",
                 "v": "EPA Industrial Emissions Licence (IEL) appeal over backup diesel emissions.",
                 "t": "s",
                 "raw": "EPA Industrial Emissions Licence (IEL) appeal over backup diesel emissions.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D7",
@@ -7240,21 +7240,21 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "CR-03",
                 "t": "s",
                 "raw": "CR-03",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B8",
                 "v": "A1060-A1070",
                 "t": "s",
                 "raw": "A1060-A1070",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C8",
                 "v": "EirGrid / CRU policy requires expanded BESS / dispatchable power before MIC offer.",
                 "t": "s",
                 "raw": "EirGrid / CRU policy requires expanded BESS / dispatchable power before MIC offer.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D8",
@@ -7293,21 +7293,21 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "CR-04",
                 "t": "s",
                 "raw": "CR-04",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B9",
                 "v": "A3015-M3120",
                 "t": "s",
                 "raw": "A3015-M3120",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C9",
                 "v": "Abnormal-load transformer haulage permits or EU switchgear lead-time slip.",
                 "t": "s",
                 "raw": "Abnormal-load transformer haulage permits or EU switchgear lead-time slip.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D9",
@@ -7346,21 +7346,21 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "CR-05",
                 "t": "s",
                 "raw": "CR-05",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B10",
                 "v": "A6410-M6470",
                 "t": "s",
                 "raw": "A6410-M6470",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C10",
                 "v": "45 MW load bank availability or weather interrupts 48-hr continuous IST.",
                 "t": "s",
                 "raw": "45 MW load bank availability or weather interrupts 48-hr continuous IST.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D10",
@@ -7399,21 +7399,21 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "CR-06",
                 "t": "s",
                 "raw": "CR-06",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B11",
                 "v": "A7010-A7050",
                 "t": "s",
                 "raw": "A7010-A7050",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C11",
                 "v": "Unresolved Part B Fire or BCAR Assigned Certifier ancillary certs hold up CCC.",
                 "t": "s",
                 "raw": "Unresolved Part B Fire or BCAR Assigned Certifier ancillary certs hold up CCC.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D11",
@@ -7561,7 +7561,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Approving Role",
                 "t": "s",
                 "raw": "Approving Role",
-                "kind": "input",
+                "kind": "header",
                 "cspan": 2
               },
               {
@@ -7577,7 +7577,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Name & Title",
                 "t": "s",
                 "raw": "Name & Title",
-                "kind": "input",
+                "kind": "header",
                 "cspan": 2
               },
               {
@@ -7593,7 +7593,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Authorized Signature",
                 "t": "s",
                 "raw": "Authorized Signature",
-                "kind": "input",
+                "kind": "header",
                 "cspan": 3
               },
               {
@@ -7619,7 +7619,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Executive Project Sponsor",
                 "t": "s",
                 "raw": "Executive Project Sponsor",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -7635,7 +7635,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "[TBD - Sponsor Input]",
                 "t": "s",
                 "raw": "[TBD - Sponsor Input]",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -7651,7 +7651,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "______________________________",
                 "t": "s",
                 "raw": "______________________________",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 3
               },
               {
@@ -7677,7 +7677,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Investment Committee Chair",
                 "t": "s",
                 "raw": "Investment Committee Chair",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -7693,7 +7693,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "[TBD - Sponsor Input]",
                 "t": "s",
                 "raw": "[TBD - Sponsor Input]",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -7709,7 +7709,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "______________________________",
                 "t": "s",
                 "raw": "______________________________",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 3
               },
               {
@@ -7735,7 +7735,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Authorized Project Director",
                 "t": "s",
                 "raw": "Authorized Project Director",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -7751,7 +7751,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "[TBD - Sponsor Input]",
                 "t": "s",
                 "raw": "[TBD - Sponsor Input]",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -7767,7 +7767,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "______________________________",
                 "t": "s",
                 "raw": "______________________________",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 3
               },
               {
@@ -8011,35 +8011,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Input ID",
                 "t": "s",
                 "raw": "Input ID",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "B5",
                 "v": "Parameter Description",
                 "t": "s",
                 "raw": "Parameter Description",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "C5",
                 "v": "Value",
                 "t": "s",
                 "raw": "Value",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "D5",
                 "v": "Unit",
                 "t": "s",
                 "raw": "Unit",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "E5",
                 "v": "Basis / EU Directive Standard",
                 "t": "s",
                 "raw": "Basis / EU Directive Standard",
-                "kind": "section",
+                "kind": "header",
                 "cspan": 8
               },
               {
@@ -8057,14 +8057,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "CAP-01",
                 "t": "s",
                 "raw": "CAP-01",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B6",
                 "v": "Critical IT Load Capacity",
                 "t": "s",
                 "raw": "Critical IT Load Capacity",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C6",
@@ -8078,14 +8078,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "kW",
                 "t": "s",
                 "raw": "kW",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E6",
                 "v": "Locked to 5x 9,000 kW Halls (DataCenter_45MW_EU_Ireland.xer)",
                 "t": "s",
                 "raw": "Locked to 5x 9,000 kW Halls (DataCenter_45MW_EU_Ireland.xer)",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 8
               },
               {
@@ -8103,14 +8103,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "EED-01",
                 "t": "s",
                 "raw": "EED-01",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B7",
                 "v": "Design Annualized PUE Target",
                 "t": "s",
                 "raw": "Design Annualized PUE Target",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C7",
@@ -8124,14 +8124,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Ratio",
                 "t": "s",
                 "raw": "Ratio",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E7",
                 "v": "EU EED (2023/1791) & Free-Cooling Chiller Irish Climate Target",
                 "t": "s",
                 "raw": "EU EED (2023/1791) & Free-Cooling Chiller Irish Climate Target",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 8
               },
               {
@@ -8149,14 +8149,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "EED-02",
                 "t": "s",
                 "raw": "EED-02",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B8",
                 "v": "Design Water Usage Effectiveness (WUE)",
                 "t": "s",
                 "raw": "Design Water Usage Effectiveness (WUE)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C8",
@@ -8170,14 +8170,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "L/kWh",
                 "t": "s",
                 "raw": "L/kWh",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E8",
                 "v": "Closed-circuit adiabatic/free-cooling + rainwater harvesting target",
                 "t": "s",
                 "raw": "Closed-circuit adiabatic/free-cooling + rainwater harvesting target",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 8
               },
               {
@@ -8195,14 +8195,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "EED-03",
                 "t": "s",
                 "raw": "EED-03",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B9",
                 "v": "Energy Reuse Factor (ERF Target)",
                 "t": "s",
                 "raw": "Energy Reuse Factor (ERF Target)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C9",
@@ -8216,14 +8216,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Ratio",
                 "t": "s",
                 "raw": "Ratio",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E9",
                 "v": "District Heating Heat-Reuse Export Valve Skid readiness (A5390)",
                 "t": "s",
                 "raw": "District Heating Heat-Reuse Export Valve Skid readiness (A5390)",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 8
               },
               {
@@ -8241,35 +8241,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "COM-01",
                 "t": "s",
                 "raw": "COM-01",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B10",
                 "v": "Monthly Wholesale Colocation Rate",
                 "t": "s",
                 "raw": "Monthly Wholesale Colocation Rate",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C10",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D10",
                 "v": "EUR/kW/mo",
                 "t": "s",
                 "raw": "EUR/kW/mo",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E10",
                 "v": "[Input] Enter contracted EUR/kW/month tariff",
                 "t": "s",
                 "raw": "[Input] Enter contracted EUR/kW/month tariff",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 8
               },
               {
@@ -8287,35 +8287,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "COM-02",
                 "t": "s",
                 "raw": "COM-02",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B11",
                 "v": "Irish Blended Industrial Power Price",
                 "t": "s",
                 "raw": "Irish Blended Industrial Power Price",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C11",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D11",
                 "v": "EUR/kWh",
                 "t": "s",
                 "raw": "EUR/kWh",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E11",
                 "v": "[Input] Enter EirGrid/PPA blended electricity price (EUR/kWh)",
                 "t": "s",
                 "raw": "[Input] Enter EirGrid/PPA blended electricity price (EUR/kWh)",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 8
               },
               {
@@ -8333,35 +8333,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "COM-03",
                 "t": "s",
                 "raw": "COM-03",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B12",
                 "v": "Annual Fixed Opex (O&M, Staff, Rates)",
                 "t": "s",
                 "raw": "Annual Fixed Opex (O&M, Staff, Rates)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C12",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D12",
                 "v": "EUR/yr",
                 "t": "s",
                 "raw": "EUR/yr",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E12",
                 "v": "[Input] Enter fixed annual facility Opex (EUR/yr)",
                 "t": "s",
                 "raw": "[Input] Enter fixed annual facility Opex (EUR/yr)",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 8
               },
               {
@@ -8379,14 +8379,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "COM-04",
                 "t": "s",
                 "raw": "COM-04",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B13",
                 "v": "Sponsor Discount Rate (WACC)",
                 "t": "s",
                 "raw": "Sponsor Discount Rate (WACC)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C13",
@@ -8400,14 +8400,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "%",
                 "t": "s",
                 "raw": "%",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E13",
                 "v": "Editable Euro institutional hurdle discount rate",
                 "t": "s",
                 "raw": "Editable Euro institutional hurdle discount rate",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 8
               },
               {
@@ -8425,14 +8425,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "COM-05",
                 "t": "s",
                 "raw": "COM-05",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B14",
                 "v": "Irish Corporate Tax Rate (CIT)",
                 "t": "s",
                 "raw": "Irish Corporate Tax Rate (CIT)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C14",
@@ -8446,14 +8446,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "%",
                 "t": "s",
                 "raw": "%",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E14",
                 "v": "Ireland 12.5% trading tax baseline (verify Pillar Two 15% if in scope)",
                 "t": "s",
                 "raw": "Ireland 12.5% trading tax baseline (verify Pillar Two 15% if in scope)",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 8
               },
               {
@@ -8471,14 +8471,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "CAP-02",
                 "t": "s",
                 "raw": "CAP-02",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B15",
                 "v": "Total Development Capex (Linked BAC)",
                 "t": "s",
                 "raw": "Total Development Capex (Linked BAC)",
-                "kind": "input"
+                "kind": "total"
               },
               {
                 "coord": "C15",
@@ -8493,14 +8493,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "EUR",
                 "t": "s",
                 "raw": "EUR",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E15",
                 "v": "Linked dynamically from Sheet '3. Cost Control & EVM' Total BAC",
                 "t": "s",
                 "raw": "Linked dynamically from Sheet '3. Cost Control & EVM' Total BAC",
-                "kind": "section",
+                "kind": "plain",
                 "cspan": 8
               },
               {
@@ -8612,7 +8612,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Metric",
                 "t": "s",
                 "raw": "Metric",
-                "kind": "input",
+                "kind": "header",
                 "cspan": 2
               },
               {
@@ -8628,7 +8628,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Calculated Output",
                 "t": "s",
                 "raw": "Calculated Output",
-                "kind": "input",
+                "kind": "header",
                 "cspan": 2
               },
               {
@@ -8644,7 +8644,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Rule",
                 "t": "s",
                 "raw": "Rule",
-                "kind": "input",
+                "kind": "header",
                 "cspan": 2
               },
               {
@@ -8662,7 +8662,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Steady-State Annual Revenue (100%)",
                 "t": "s",
                 "raw": "Steady-State Annual Revenue (100%)",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -8695,7 +8695,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "45,000 kW x 12m x Rate",
                 "t": "s",
                 "raw": "45,000 kW x 12m x Rate",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -8713,7 +8713,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Steady-State Annual Power Cost",
                 "t": "s",
                 "raw": "Steady-State Annual Power Cost",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -8746,7 +8746,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "kW x PUE x 8760h x Price",
                 "t": "s",
                 "raw": "kW x PUE x 8760h x Price",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -8764,7 +8764,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Net Present Value (NPV @ WACC)",
                 "t": "s",
                 "raw": "Net Present Value (NPV @ WACC)",
-                "kind": "input",
+                "kind": "total",
                 "cspan": 2
               },
               {
@@ -8797,7 +8797,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "> EUR 0 Required",
                 "t": "s",
                 "raw": "> EUR 0 Required",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -8815,7 +8815,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Project Unlevered IRR (10-Yr)",
                 "t": "s",
                 "raw": "Project Unlevered IRR (10-Yr)",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -8848,7 +8848,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "> COM-04 WACC",
                 "t": "s",
                 "raw": "> COM-04 WACC",
-                "kind": "input",
+                "kind": "plain",
                 "cspan": 2
               },
               {
@@ -8960,42 +8960,42 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Line Item (EUR)",
                 "t": "s",
                 "raw": "Line Item (EUR)",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "B25",
                 "v": "Dev (Y0)",
                 "t": "s",
                 "raw": "Dev (Y0)",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "C25",
                 "v": "FY1",
                 "t": "s",
                 "raw": "FY1",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "D25",
                 "v": "FY2",
                 "t": "s",
                 "raw": "FY2",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "E25",
                 "v": "FY3",
                 "t": "s",
                 "raw": "FY3",
-                "kind": "input"
+                "kind": "header"
               },
               {
                 "coord": "F25",
                 "v": "FY4",
                 "t": "s",
                 "raw": "FY4",
-                "kind": "input"
+                "kind": "header"
               }
             ],
             [
@@ -9004,7 +9004,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "IT Load Occupancy Ramp (%) [Input]",
                 "t": "s",
                 "raw": "IT Load Occupancy Ramp (%) [Input]",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B26",
@@ -9048,7 +9048,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Utilized IT Load (kW)",
                 "t": "s",
                 "raw": "Utilized IT Load (kW)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B27",
@@ -9096,14 +9096,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Gross Colocation Revenue",
                 "t": "s",
                 "raw": "Gross Colocation Revenue",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B28",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C28",
@@ -9144,14 +9144,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Electricity Draw Cost",
                 "t": "s",
                 "raw": "Electricity Draw Cost",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B29",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C29",
@@ -9192,14 +9192,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Fixed Facility Opex",
                 "t": "s",
                 "raw": "Fixed Facility Opex",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B30",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C30",
@@ -9240,7 +9240,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Facility EBITDA",
                 "t": "s",
                 "raw": "Facility EBITDA",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B31",
@@ -9289,7 +9289,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Development Capex & CIT Tax",
                 "t": "s",
                 "raw": "Development Capex & CIT Tax",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B32",
@@ -9338,7 +9338,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Net Free Cash Flow (FCF)",
                 "t": "s",
                 "raw": "Net Free Cash Flow (FCF)",
-                "kind": "input"
+                "kind": "total"
               },
               {
                 "coord": "B33",
@@ -9387,7 +9387,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Cumulative Cash Flow",
                 "t": "s",
                 "raw": "Cumulative Cash Flow",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B34",
@@ -9596,42 +9596,42 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "ID",
                 "t": "s",
                 "raw": "ID",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B4",
                 "v": "Engineering System",
                 "t": "s",
                 "raw": "Engineering System",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C4",
                 "v": "Owner Mandatory Requirement",
                 "t": "s",
                 "raw": "Owner Mandatory Requirement",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D4",
                 "v": "Verified Design Architecture",
                 "t": "s",
                 "raw": "Verified Design Architecture",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E4",
                 "v": "EU / Irish Standard",
                 "t": "s",
                 "raw": "EU / Irish Standard",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F4",
                 "v": "XER Ref",
                 "t": "s",
                 "raw": "XER Ref",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -9640,42 +9640,42 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "BOD-01",
                 "t": "s",
                 "raw": "BOD-01",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B5",
                 "v": "White Space & Floor Plate",
                 "t": "s",
                 "raw": "White Space & Floor Plate",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C5",
                 "v": "45 MW IT load across 5x 9 MW suites; Class 3 maintainability.",
                 "t": "s",
                 "raw": "45 MW IT load across 5x 9 MW suites; Class 3 maintainability.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D5",
                 "v": "Data Halls 1-5 (A5430-A5469), 800mm floor, 18 kN/m2 hollowcore/composite slab, HAC.",
                 "t": "s",
                 "raw": "Data Halls 1-5 (A5430-A5469), 800mm floor, 18 kN/m2 hollowcore/composite slab, HAC.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E5",
                 "v": "EN 50600-2-1 / Tier III",
                 "t": "s",
                 "raw": "EN 50600-2-1 / Tier III",
-                "kind": "header"
+                "kind": "plain"
               },
               {
                 "coord": "F5",
                 "v": "A5430-A5465",
                 "t": "s",
                 "raw": "A5430-A5465",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -9684,42 +9684,42 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "BOD-02",
                 "t": "s",
                 "raw": "BOD-02",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B6",
                 "v": "110kV Grid & MV Power",
                 "t": "s",
                 "raw": "110kV Grid & MV Power",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C6",
                 "v": "CRU-compliant EirGrid connection with SF6-free switchgear.",
                 "t": "s",
                 "raw": "CRU-compliant EirGrid connection with SF6-free switchgear.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D6",
                 "v": "Dual 110kV/22kV 63MVA low-loss transformers, 22kV SF6-free GIS Rings A & B.",
                 "t": "s",
                 "raw": "Dual 110kV/22kV 63MVA low-loss transformers, 22kV SF6-free GIS Rings A & B.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E6",
                 "v": "EN 50600-2-2 / EU 2016/1388",
                 "t": "s",
                 "raw": "EN 50600-2-2 / EU 2016/1388",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F6",
                 "v": "A1060, A5110-A5150",
                 "t": "s",
                 "raw": "A1060, A5110-A5150",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -9728,42 +9728,42 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "BOD-03",
                 "t": "s",
                 "raw": "BOD-03",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B7",
                 "v": "HVO Standby Gen & BESS",
                 "t": "s",
                 "raw": "HVO Standby Gen & BESS",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C7",
                 "v": "Low-NOx dispatchable backup compliant with EPA IEL & CRU.",
                 "t": "s",
                 "raw": "Low-NOx dispatchable backup compliant with EPA IEL & CRU.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D7",
                 "v": "20x 2.5MVA HVO-ready gensets + SCR flues + 4x 80m3 tanks + on-site Grid BESS.",
                 "t": "s",
                 "raw": "20x 2.5MVA HVO-ready gensets + SCR flues + 4x 80m3 tanks + on-site Grid BESS.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E7",
                 "v": "EPA IEL / ISO 8528",
                 "t": "s",
                 "raw": "EPA IEL / ISO 8528",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F7",
                 "v": "A1050, A5210-A5250",
                 "t": "s",
                 "raw": "A1050, A5210-A5250",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -9772,42 +9772,42 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "BOD-04",
                 "t": "s",
                 "raw": "BOD-04",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B8",
                 "v": "Cooling & Heat Recovery",
                 "t": "s",
                 "raw": "Cooling & Heat Recovery",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C8",
                 "v": "Zero-refrigeration free-cooling bias & EU EED waste-heat capture.",
                 "t": "s",
                 "raw": "Zero-refrigeration free-cooling bias & EU EED waste-heat capture.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D8",
                 "v": "8x 1200 RT low-GWP chillers, closed coolers, TES tanks, RO rainwater, District Heating HEX.",
                 "t": "s",
                 "raw": "8x 1200 RT low-GWP chillers, closed coolers, TES tanks, RO rainwater, District Heating HEX.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E8",
                 "v": "EN 50600-2-3 / EED 2023/1791",
                 "t": "s",
                 "raw": "EN 50600-2-3 / EED 2023/1791",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F8",
                 "v": "A5310-A5390",
                 "t": "s",
                 "raw": "A5310-A5390",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -9816,42 +9816,42 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "BOD-05",
                 "t": "s",
                 "raw": "BOD-05",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B9",
                 "v": "EED Telemetry & BMS",
                 "t": "s",
                 "raw": "EED Telemetry & BMS",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C9",
                 "v": "Automated Union Database reporting for PUE, WUE, ERF & REF.",
                 "t": "s",
                 "raw": "Automated Union Database reporting for PUE, WUE, ERF & REF.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D9",
                 "v": "EPMS Class-0.2 revenue meters + BACnet BMS + DCIM EU EED pipeline.",
                 "t": "s",
                 "raw": "EPMS Class-0.2 revenue meters + BACnet BMS + DCIM EU EED pipeline.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E9",
                 "v": "EN 50600-4 / Reg 2024/1364",
                 "t": "s",
                 "raw": "EN 50600-4 / Reg 2024/1364",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F9",
                 "v": "A5510-A5520, A6510",
                 "t": "s",
                 "raw": "A5510-A5520, A6510",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -9860,42 +9860,42 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "BOD-06",
                 "t": "s",
                 "raw": "BOD-06",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B10",
                 "v": "Fire & Physical Security",
                 "t": "s",
                 "raw": "Fire & Physical Security",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C10",
                 "v": "Part B compartmentation + Class 4 anti-ram physical security.",
                 "t": "s",
                 "raw": "Part B compartmentation + Class 4 anti-ram physical security.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D10",
                 "v": "VESDA-E, water-mist/clean agent, pre-action, PAS 68 barriers, PIDS fence & SOC.",
                 "t": "s",
                 "raw": "VESDA-E, water-mist/clean agent, pre-action, PAS 68 barriers, PIDS fence & SOC.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E10",
                 "v": "BCAR Part B / EN 50600-2-5",
                 "t": "s",
                 "raw": "BCAR Part B / EN 50600-2-5",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F10",
                 "v": "A1080, A4430, A5530-90",
                 "t": "s",
                 "raw": "A1080, A4430, A5530-90",
-                "kind": "input"
+                "kind": "plain"
               }
             ]
           ]
@@ -10256,98 +10256,98 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "WBS",
                 "t": "s",
                 "raw": "WBS",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B4",
                 "v": "Cost Package (CBS)",
                 "t": "s",
                 "raw": "Cost Package (CBS)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C4",
                 "v": "Tasks",
                 "t": "s",
                 "raw": "Tasks",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D4",
                 "v": "Baseline Window",
                 "t": "s",
                 "raw": "Baseline Window",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E4",
                 "v": "BAC (EUR)",
                 "t": "s",
                 "raw": "BAC (EUR)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F4",
                 "v": "PV (EUR)",
                 "t": "s",
                 "raw": "PV (EUR)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "G4",
                 "v": "EV (EUR)",
                 "t": "s",
                 "raw": "EV (EUR)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "H4",
                 "v": "AC (EUR)",
                 "t": "s",
                 "raw": "AC (EUR)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "I4",
                 "v": "CV",
                 "t": "s",
                 "raw": "CV",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "J4",
                 "v": "SV",
                 "t": "s",
                 "raw": "SV",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "K4",
                 "v": "CPI",
                 "t": "s",
                 "raw": "CPI",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "L4",
                 "v": "SPI",
                 "t": "s",
                 "raw": "SPI",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "M4",
                 "v": "EAC (EUR)",
                 "t": "s",
                 "raw": "EAC (EUR)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "N4",
                 "v": "VAC (EUR)",
                 "t": "s",
                 "raw": "VAC (EUR)",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -10356,14 +10356,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "1.0-PERM",
                 "t": "s",
                 "raw": "1.0-PERM",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B5",
                 "v": "Land Option, EIAR, EPA IEL, EirGrid & BCAR (1.0-PERM)",
                 "t": "s",
                 "raw": "Land Option, EIAR, EPA IEL, EirGrid & BCAR (1.0-PERM)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C5",
@@ -10377,35 +10377,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "2027-01-04 to 2027-10-18",
                 "t": "s",
                 "raw": "2027-01-04 to 2027-10-18",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E5",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F5",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "G5",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "H5",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "I5",
@@ -10462,14 +10462,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "2.0-ENG",
                 "t": "s",
                 "raw": "2.0-ENG",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B6",
                 "v": "ISO 19650 Design, PSDP, Assigned Certifier & Fire (2.0-ENG)",
                 "t": "s",
                 "raw": "ISO 19650 Design, PSDP, Assigned Certifier & Fire (2.0-ENG)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C6",
@@ -10483,35 +10483,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "2027-01-04 to 2027-07-12",
                 "t": "s",
                 "raw": "2027-01-04 to 2027-07-12",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E6",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F6",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "G6",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "H6",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "I6",
@@ -10568,14 +10568,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "3.0-PROC",
                 "t": "s",
                 "raw": "3.0-PROC",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B7",
                 "v": "63MVA Tx, SF6-Free GIS, HVO Gensets, BESS & Chillers (3.0)",
                 "t": "s",
                 "raw": "63MVA Tx, SF6-Free GIS, HVO Gensets, BESS & Chillers (3.0)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C7",
@@ -10589,35 +10589,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "2027-07-12 to 2028-01-03",
                 "t": "s",
                 "raw": "2027-07-12 to 2028-01-03",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E7",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F7",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "G7",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "H7",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "I7",
@@ -10674,14 +10674,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "4.0-CIVIL",
                 "t": "s",
                 "raw": "4.0-CIVIL",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B8",
                 "v": "PSCS Enabling, 750 Piles, Frame, Shell & PAS 68 (4.1-4.4)",
                 "t": "s",
                 "raw": "PSCS Enabling, 750 Piles, Frame, Shell & PAS 68 (4.1-4.4)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C8",
@@ -10695,35 +10695,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "2027-10-18 to 2029-02-12",
                 "t": "s",
                 "raw": "2027-10-18 to 2029-02-12",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E8",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F8",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "G8",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "H8",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "I8",
@@ -10780,14 +10780,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "5.0-MEP",
                 "t": "s",
                 "raw": "5.0-MEP",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B9",
                 "v": "110kV GIS, BESS, CHW/ERF, Halls 1-5 & EED/SOC (5.1-5.5)",
                 "t": "s",
                 "raw": "110kV GIS, BESS, CHW/ERF, Halls 1-5 & EED/SOC (5.1-5.5)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C9",
@@ -10801,35 +10801,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "2029-02-12 to 2029-09-24",
                 "t": "s",
                 "raw": "2029-02-12 to 2029-09-24",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E9",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F9",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "G9",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "H9",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "I9",
@@ -10886,14 +10886,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "6.0-CX",
                 "t": "s",
                 "raw": "6.0-CX",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B10",
                 "v": "CIBSE/ASHRAE L1-L5, 45MW IST & HSA Safety File (6.1-6.5)",
                 "t": "s",
                 "raw": "CIBSE/ASHRAE L1-L5, 45MW IST & HSA Safety File (6.1-6.5)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C10",
@@ -10907,35 +10907,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "2028-01-03 to 2030-02-25",
                 "t": "s",
                 "raw": "2028-01-03 to 2030-02-25",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E10",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F10",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "G10",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "H10",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "I10",
@@ -10992,14 +10992,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "7.0-COD",
                 "t": "s",
                 "raw": "7.0-COD",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B11",
                 "v": "Part B Fire, EirGrid Sync, EN 50600 & BCAR CCC (7.0-COD)",
                 "t": "s",
                 "raw": "Part B Fire, EirGrid Sync, EN 50600 & BCAR CCC (7.0-COD)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C11",
@@ -11013,35 +11013,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "2030-02-25 to 2030-05-20",
                 "t": "s",
                 "raw": "2030-02-25 to 2030-05-20",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E11",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F11",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "G11",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "H11",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "I11",
@@ -11098,14 +11098,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "RESERVE",
                 "t": "s",
                 "raw": "RESERVE",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B12",
                 "v": "Sponsor & NEC4 Early-Warning Contingency Reserve",
                 "t": "s",
                 "raw": "Sponsor & NEC4 Early-Warning Contingency Reserve",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C12",
@@ -11119,35 +11119,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Program Reserve",
                 "t": "s",
                 "raw": "Program Reserve",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E12",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F12",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "G12",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "H12",
                 "v": "\u20ac0",
                 "t": "n",
                 "raw": 0,
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "I12",
@@ -11204,14 +11204,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "TOTAL BAC",
                 "t": "s",
                 "raw": "TOTAL BAC",
-                "kind": "input"
+                "kind": "total"
               },
               {
                 "coord": "B13",
                 "v": "Total Authorized EUR BAC (Links to Sheet 1 Capex)",
                 "t": "s",
                 "raw": "Total Authorized EUR BAC (Links to Sheet 1 Capex)",
-                "kind": "input"
+                "kind": "total"
               },
               {
                 "coord": "C13",
@@ -11226,7 +11226,7 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "2027-01-04 to 2030-05-20",
                 "t": "s",
                 "raw": "2027-01-04 to 2030-05-20",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E13",
@@ -11571,35 +11571,35 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Risk ID",
                 "t": "s",
                 "raw": "Risk ID",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B4",
                 "v": "XER Ref",
                 "t": "s",
                 "raw": "XER Ref",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C4",
                 "v": "Domain",
                 "t": "s",
                 "raw": "Domain",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D4",
                 "v": "Risk Description",
                 "t": "s",
                 "raw": "Risk Description",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E4",
                 "v": "L",
                 "t": "s",
                 "raw": "L",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F4",
@@ -11613,28 +11613,28 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Score",
                 "t": "s",
                 "raw": "Score",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "H4",
                 "v": "Band",
                 "t": "s",
                 "raw": "Band",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "I4",
                 "v": "Owner",
                 "t": "s",
                 "raw": "Owner",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "J4",
                 "v": "Preventive Mitigation",
                 "t": "s",
                 "raw": "Preventive Mitigation",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -11643,28 +11643,28 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "RSK-01",
                 "t": "s",
                 "raw": "RSK-01",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B5",
                 "v": "A1030-A1040",
                 "t": "s",
                 "raw": "A1030-A1040",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C5",
                 "v": "Planning / ABP",
                 "t": "s",
                 "raw": "Planning / ABP",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D5",
                 "v": "Third-party planning appeal or Judicial Review delays Planning Grant (A1040).",
                 "t": "s",
                 "raw": "Third-party planning appeal or Judicial Review delays Planning Grant (A1040).",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E5",
@@ -11701,14 +11701,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Planning Lead",
                 "t": "s",
                 "raw": "Planning Lead",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "J5",
                 "v": "Early Section 247 alignment & exhaustive EIAR ecological/acoustic evidence.",
                 "t": "s",
                 "raw": "Early Section 247 alignment & exhaustive EIAR ecological/acoustic evidence.",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -11717,28 +11717,28 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "RSK-02",
                 "t": "s",
                 "raw": "RSK-02",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B6",
                 "v": "A1050",
                 "t": "s",
                 "raw": "A1050",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C6",
                 "v": "EPA IEL",
                 "t": "s",
                 "raw": "EPA IEL",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D6",
                 "v": "EPA Industrial Emissions Licence objection regarding standby genset emissions.",
                 "t": "s",
                 "raw": "EPA Industrial Emissions Licence objection regarding standby genset emissions.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E6",
@@ -11775,14 +11775,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Env. Lead",
                 "t": "s",
                 "raw": "Env. Lead",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "J6",
                 "v": "Specify HVO fuel & SCR NOx abatement; align tightly with Climate Action Plan.",
                 "t": "s",
                 "raw": "Specify HVO fuel & SCR NOx abatement; align tightly with Climate Action Plan.",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -11791,28 +11791,28 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "RSK-03",
                 "t": "s",
                 "raw": "RSK-03",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B7",
                 "v": "A1060-A1070",
                 "t": "s",
                 "raw": "A1060-A1070",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C7",
                 "v": "EirGrid / CRU",
                 "t": "s",
                 "raw": "EirGrid / CRU",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D7",
                 "v": "CRU Large Energy User rules require higher on-site BESS capacity before MIC grant.",
                 "t": "s",
                 "raw": "CRU Large Energy User rules require higher on-site BESS capacity before MIC grant.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E7",
@@ -11849,14 +11849,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Grid Director",
                 "t": "s",
                 "raw": "Grid Director",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "J7",
                 "v": "Integrate CRU-compliant BESS & additional renewable PPA from Stage 1.",
                 "t": "s",
                 "raw": "Integrate CRU-compliant BESS & additional renewable PPA from Stage 1.",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -11865,28 +11865,28 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "RSK-04",
                 "t": "s",
                 "raw": "RSK-04",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B8",
                 "v": "A1080-A1085",
                 "t": "s",
                 "raw": "A1080-A1085",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C8",
                 "v": "BCAR / Fire",
                 "t": "s",
                 "raw": "BCAR / Fire",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D8",
                 "v": "Local Authority Fire Safety Certificate (FSC) queries delay Commencement Notice.",
                 "t": "s",
                 "raw": "Local Authority Fire Safety Certificate (FSC) queries delay Commencement Notice.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E8",
@@ -11923,14 +11923,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Design Cert.",
                 "t": "s",
                 "raw": "Design Cert.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "J8",
                 "v": "Submit Part B strategy early (A2100); avoid 7-Day Notice rework exposure.",
                 "t": "s",
                 "raw": "Submit Part B strategy early (A2100); avoid 7-Day Notice rework exposure.",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -11939,28 +11939,28 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "RSK-05",
                 "t": "s",
                 "raw": "RSK-05",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B9",
                 "v": "A2020, A4120",
                 "t": "s",
                 "raw": "A2020, A4120",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C9",
                 "v": "Geotech / SuDS",
                 "t": "s",
                 "raw": "Geotech / SuDS",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D9",
                 "v": "High water table / limestone karst complicates 750 CFA piles & SuDS attenuation.",
                 "t": "s",
                 "raw": "High water table / limestone karst complicates 750 CFA piles & SuDS attenuation.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E9",
@@ -11997,14 +11997,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Civil Lead",
                 "t": "s",
                 "raw": "Civil Lead",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "J9",
                 "v": "Execute early GI boreholes (A2020) and temporary dewatering contingencies.",
                 "t": "s",
                 "raw": "Execute early GI boreholes (A2020) and temporary dewatering contingencies.",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -12013,28 +12013,28 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "RSK-06",
                 "t": "s",
                 "raw": "RSK-06",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B10",
                 "v": "A3015-M3120",
                 "t": "s",
                 "raw": "A3015-M3120",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C10",
                 "v": "Supply Chain",
                 "t": "s",
                 "raw": "Supply Chain",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D10",
                 "v": "EU transformer / SF6-free GIS lead time or Dublin Port Ro-Ro congestion.",
                 "t": "s",
                 "raw": "EU transformer / SF6-free GIS lead time or Dublin Port Ro-Ro congestion.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E10",
@@ -12071,14 +12071,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Procurement",
                 "t": "s",
                 "raw": "Procurement",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "J10",
                 "v": "Lock manufacturing slots at M2110 preserving +200d arrival buffer pre-M4350.",
                 "t": "s",
                 "raw": "Lock manufacturing slots at M2110 preserving +200d arrival buffer pre-M4350.",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -12087,28 +12087,28 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "RSK-07",
                 "t": "s",
                 "raw": "RSK-07",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B11",
                 "v": "A4330, M4350",
                 "t": "s",
                 "raw": "A4330, M4350",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C11",
                 "v": "Weather / Envelope",
                 "t": "s",
                 "raw": "Weather / Envelope",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D11",
                 "v": "Atlantic storm rain fails 48h roof ponding / airtightness test (A4330).",
                 "t": "s",
                 "raw": "Atlantic storm rain fails 48h roof ponding / airtightness test (A4330).",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E11",
@@ -12145,14 +12145,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Civil PSCS",
                 "t": "s",
                 "raw": "Civil PSCS",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "J11",
                 "v": "Sequence early parapet flashing & modular membrane zones pre-winter.",
                 "t": "s",
                 "raw": "Sequence early parapet flashing & modular membrane zones pre-winter.",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -12161,28 +12161,28 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "RSK-08",
                 "t": "s",
                 "raw": "RSK-08",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B12",
                 "v": "A5110-A5405",
                 "t": "s",
                 "raw": "A5110-A5405",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C12",
                 "v": "HV / MV Works",
                 "t": "s",
                 "raw": "HV / MV Works",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D12",
                 "v": "110kV GIS & MV ring termination shortage creates critical pinch before M5595.",
                 "t": "s",
                 "raw": "110kV GIS & MV ring termination shortage creates critical pinch before M5595.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E12",
@@ -12219,14 +12219,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "MEP Director",
                 "t": "s",
                 "raw": "MEP Director",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "J12",
                 "v": "Dual-gang certified HV jointers and completed crane hardstands (A4450).",
                 "t": "s",
                 "raw": "Dual-gang certified HV jointers and completed crane hardstands (A4450).",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -12235,28 +12235,28 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "RSK-09",
                 "t": "s",
                 "raw": "RSK-09",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B13",
                 "v": "A6130-M6260",
                 "t": "s",
                 "raw": "A6130-M6260",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C13",
                 "v": "BCAR Ancillary",
                 "t": "s",
                 "raw": "BCAR Ancillary",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D13",
                 "v": "Missing Assigned Certifier inspection records block M6260 static energisation.",
                 "t": "s",
                 "raw": "Missing Assigned Certifier inspection records block M6260 static energisation.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E13",
@@ -12293,14 +12293,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "Assigned Cert.",
                 "t": "s",
                 "raw": "Assigned Cert.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "J13",
                 "v": "Track digital BCAR field inspection tags weekly in BIM CDE (A6130).",
                 "t": "s",
                 "raw": "Track digital BCAR field inspection tags weekly in BIM CDE (A6130).",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -12309,28 +12309,28 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "RSK-10",
                 "t": "s",
                 "raw": "RSK-10",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B14",
                 "v": "A6410-M6470",
                 "t": "s",
                 "raw": "A6410-M6470",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C14",
                 "v": "Commissioning",
                 "t": "s",
                 "raw": "Commissioning",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D14",
                 "v": "Portable 45 MW load bank shortfall interrupts 48h IST & EN 50600 isolation.",
                 "t": "s",
                 "raw": "Portable 45 MW load bank shortfall interrupts 48h IST & EN 50600 isolation.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E14",
@@ -12367,14 +12367,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "CxA / Logistics",
                 "t": "s",
                 "raw": "CxA / Logistics",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "J14",
                 "v": "Execute binding load bank & HVO fuel tanker contracts 6 months pre-M6260.",
                 "t": "s",
                 "raw": "Execute binding load bank & HVO fuel tanker contracts 6 months pre-M6260.",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -12383,28 +12383,28 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "RSK-11",
                 "t": "s",
                 "raw": "RSK-11",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B15",
                 "v": "A7020, A7040",
                 "t": "s",
                 "raw": "A7020, A7040",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C15",
                 "v": "EU Compliance",
                 "t": "s",
                 "raw": "EU Compliance",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D15",
                 "v": "EU EED telemetry gap fails automated PUE/WUE/ERF validation or EN 50600 audit.",
                 "t": "s",
                 "raw": "EU EED telemetry gap fails automated PUE/WUE/ERF validation or EN 50600 audit.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E15",
@@ -12441,14 +12441,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "BMS / Ops",
                 "t": "s",
                 "raw": "BMS / Ops",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "J15",
                 "v": "Validate EPMS/BMS revenue tags against Reg. (EU) 2024/1364 schema at L3 (A6240).",
                 "t": "s",
                 "raw": "Validate EPMS/BMS revenue tags against Reg. (EU) 2024/1364 schema at L3 (A6240).",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -12457,28 +12457,28 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "RSK-12",
                 "t": "s",
                 "raw": "RSK-12",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B16",
                 "v": "A7010, A7050",
                 "t": "s",
                 "raw": "A7010, A7050",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C16",
                 "v": "BCAR Handover",
                 "t": "s",
                 "raw": "BCAR Handover",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D16",
                 "v": "Late Fire Officer comments or missing Safety File delays BCAR CCC (M7060).",
                 "t": "s",
                 "raw": "Late Fire Officer comments or missing Safety File delays BCAR CCC (M7060).",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E16",
@@ -12515,14 +12515,14 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "PSDP / AC",
                 "t": "s",
                 "raw": "PSDP / AC",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "J16",
                 "v": "Compile Safety File progressively (A6520) & run Fire Officer mock walkdowns.",
                 "t": "s",
                 "raw": "Compile Safety File progressively (A6520) & run Fire Officer mock walkdowns.",
-                "kind": "input"
+                "kind": "plain"
               }
             ]
           ]
@@ -12715,49 +12715,49 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "ID",
                 "t": "s",
                 "raw": "ID",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B4",
                 "v": "Stakeholder / Authority",
                 "t": "s",
                 "raw": "Stakeholder / Authority",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C4",
                 "v": "Jurisdiction / Interest",
                 "t": "s",
                 "raw": "Jurisdiction / Interest",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D4",
                 "v": "Influence",
                 "t": "s",
                 "raw": "Influence",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E4",
                 "v": "Owner",
                 "t": "s",
                 "raw": "Owner",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F4",
                 "v": "Engagement Strategy",
                 "t": "s",
                 "raw": "Engagement Strategy",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "G4",
                 "v": "Key XER Gates",
                 "t": "s",
                 "raw": "Key XER Gates",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -12766,49 +12766,49 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "STK-01",
                 "t": "s",
                 "raw": "STK-01",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B5",
                 "v": "Local Authority / An Bord Pleanala",
                 "t": "s",
                 "raw": "Local Authority / An Bord Pleanala",
-                "kind": "header"
+                "kind": "plain"
               },
               {
                 "coord": "C5",
                 "v": "Planning Permission / SID & Section 247 Pre-Planning",
                 "t": "s",
                 "raw": "Planning Permission / SID & Section 247 Pre-Planning",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D5",
                 "v": "Critical",
                 "t": "s",
                 "raw": "Critical",
-                "kind": "input"
+                "kind": "alert"
               },
               {
                 "coord": "E5",
                 "v": "Planning Lead",
                 "t": "s",
                 "raw": "Planning Lead",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F5",
                 "v": "Pre-consult early; submit robust EIAR & local infrastructure mitigation.",
                 "t": "s",
                 "raw": "Pre-consult early; submit robust EIAR & local infrastructure mitigation.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "G5",
                 "v": "A1020-A1040",
                 "t": "s",
                 "raw": "A1020-A1040",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -12817,49 +12817,49 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "STK-02",
                 "t": "s",
                 "raw": "STK-02",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B6",
                 "v": "Environmental Protection Agency (EPA)",
                 "t": "s",
                 "raw": "Environmental Protection Agency (EPA)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C6",
                 "v": "Industrial Emissions Licence (IEL) & NOx/Noise limits",
                 "t": "s",
                 "raw": "Industrial Emissions Licence (IEL) & NOx/Noise limits",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D6",
                 "v": "Critical",
                 "t": "s",
                 "raw": "Critical",
-                "kind": "input"
+                "kind": "alert"
               },
               {
                 "coord": "E6",
                 "v": "Env. Manager",
                 "t": "s",
                 "raw": "Env. Manager",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F6",
                 "v": "Demonstrate HVO fuel transition, SCR abatement & climate alignment.",
                 "t": "s",
                 "raw": "Demonstrate HVO fuel transition, SCR abatement & climate alignment.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "G6",
                 "v": "A1050, A6320",
                 "t": "s",
                 "raw": "A1050, A6320",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -12868,49 +12868,49 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "STK-03",
                 "t": "s",
                 "raw": "STK-03",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B7",
                 "v": "EirGrid / ESB Networks / CRU",
                 "t": "s",
                 "raw": "EirGrid / ESB Networks / CRU",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C7",
                 "v": "110kV ECP Offer, MIC, BESS Grid Stability & PPA",
                 "t": "s",
                 "raw": "110kV ECP Offer, MIC, BESS Grid Stability & PPA",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D7",
                 "v": "Critical",
                 "t": "s",
                 "raw": "Critical",
-                "kind": "input"
+                "kind": "alert"
               },
               {
                 "coord": "E7",
                 "v": "Grid Director",
                 "t": "s",
                 "raw": "Grid Director",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F7",
                 "v": "Maintain dynamic RMS studies & dispatchable BESS readiness.",
                 "t": "s",
                 "raw": "Maintain dynamic RMS studies & dispatchable BESS readiness.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "G7",
                 "v": "A1060, A1070, A7030",
                 "t": "s",
                 "raw": "A1060, A1070, A7030",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -12919,49 +12919,49 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "STK-04",
                 "t": "s",
                 "raw": "STK-04",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B8",
                 "v": "Building Control Authority (BCMS)",
                 "t": "s",
                 "raw": "Building Control Authority (BCMS)",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C8",
                 "v": "BCAR Commencement, FSC, DAC & Completion Certificate",
                 "t": "s",
                 "raw": "BCAR Commencement, FSC, DAC & Completion Certificate",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D8",
                 "v": "Critical",
                 "t": "s",
                 "raw": "Critical",
-                "kind": "input"
+                "kind": "alert"
               },
               {
                 "coord": "E8",
                 "v": "Assigned Cert.",
                 "t": "s",
                 "raw": "Assigned Cert.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F8",
                 "v": "Zero-deviation progressive inspection logs & ancillary certs.",
                 "t": "s",
                 "raw": "Zero-deviation progressive inspection logs & ancillary certs.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "G8",
                 "v": "A1080, A1085, A7050",
                 "t": "s",
                 "raw": "A1080, A1085, A7050",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -12970,49 +12970,49 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "STK-05",
                 "t": "s",
                 "raw": "STK-05",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B9",
                 "v": "Health & Safety Authority (HSA)",
                 "t": "s",
                 "raw": "Health & Safety Authority (HSA)",
-                "kind": "header"
+                "kind": "plain"
               },
               {
                 "coord": "C9",
                 "v": "SI 291/2013 PSDP/PSCS Compliance, AF1 & Safe Pass",
                 "t": "s",
                 "raw": "SI 291/2013 PSDP/PSCS Compliance, AF1 & Safe Pass",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D9",
                 "v": "High",
                 "t": "s",
                 "raw": "High",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E9",
                 "v": "PSDP / PSCS",
                 "t": "s",
                 "raw": "PSDP / PSCS",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F9",
                 "v": "Submit AF1 pre-start, audit weekly CSCS cards & finalize Safety File.",
                 "t": "s",
                 "raw": "Submit AF1 pre-start, audit weekly CSCS cards & finalize Safety File.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "G9",
                 "v": "A1010, A1085, A6520",
                 "t": "s",
                 "raw": "A1010, A1085, A6520",
-                "kind": "input"
+                "kind": "plain"
               }
             ],
             [
@@ -13021,49 +13021,49 @@ window.PHASE1_PORTAL_DATA = {
                 "v": "STK-06",
                 "t": "s",
                 "raw": "STK-06",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "B10",
                 "v": "EU EED Database / EN 50600 Auditors",
                 "t": "s",
                 "raw": "EU EED Database / EN 50600 Auditors",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "C10",
                 "v": "Reg (EU) 2024/1364 PUE/WUE/ERF & Class 3 Audit",
                 "t": "s",
                 "raw": "Reg (EU) 2024/1364 PUE/WUE/ERF & Class 3 Audit",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "D10",
                 "v": "High",
                 "t": "s",
                 "raw": "High",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "E10",
                 "v": "FM Ops / CxA",
                 "t": "s",
                 "raw": "FM Ops / CxA",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "F10",
                 "v": "Validate automated EPMS telemetry & Uptime/EN 50600 dual sign-off.",
                 "t": "s",
                 "raw": "Validate automated EPMS telemetry & Uptime/EN 50600 dual sign-off.",
-                "kind": "input"
+                "kind": "plain"
               },
               {
                 "coord": "G10",
                 "v": "A2090, A7020, A7040",
                 "t": "s",
                 "raw": "A2090, A7020, A7040",
-                "kind": "input"
+                "kind": "plain"
               }
             ]
           ]
@@ -14494,56 +14494,56 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Param ID",
                       "t": "s",
                       "raw": "Param ID",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "B5",
                       "v": "Governance Parameter Description",
                       "t": "s",
                       "raw": "Governance Parameter Description",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "C5",
                       "v": "Policy Input",
                       "t": "s",
                       "raw": "Policy Input",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "D5",
                       "v": "Unit",
                       "t": "s",
                       "raw": "Unit",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "E5",
                       "v": "% of BAC",
                       "t": "s",
                       "raw": "% of BAC",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "F5",
                       "v": "Basis / Fiduciary Standard",
                       "t": "s",
                       "raw": "Basis / Fiduciary Standard",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "G5",
                       "v": "Ref Clause",
                       "t": "s",
                       "raw": "Ref Clause",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "H5",
                       "v": "Owner",
                       "t": "s",
                       "raw": "Owner",
-                      "kind": "input"
+                      "kind": "header"
                     }
                   ],
                   [
@@ -14552,28 +14552,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "POL-BAC",
                       "t": "s",
                       "raw": "POL-BAC",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B6",
                       "v": "Authorized Facility Capex Baseline (BAC) [Update at FID]",
                       "t": "s",
                       "raw": "Authorized Facility Capex Baseline (BAC) [Update at FID]",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C6",
                       "v": "\u20ac450,000,000",
                       "t": "n",
                       "raw": 450000000,
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D6",
                       "v": "EUR",
                       "t": "s",
                       "raw": "EUR",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E6",
@@ -14588,21 +14588,21 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "WBS 1.0-7.0 Total Approved BAC (45.0 MW EN 50600)",
                       "t": "s",
                       "raw": "WBS 1.0-7.0 Total Approved BAC (45.0 MW EN 50600)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G6",
                       "v": "Charter Sht 3",
                       "t": "s",
                       "raw": "Charter Sht 3",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "H6",
                       "v": "Board / CFO",
                       "t": "s",
                       "raw": "Board / CFO",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -14611,28 +14611,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "POL-T1S",
                       "t": "s",
                       "raw": "POL-T1S",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B7",
                       "v": "Tier 1 Single Change Event Cap (Project Director)",
                       "t": "s",
                       "raw": "Tier 1 Single Change Event Cap (Project Director)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C7",
                       "v": "\u20ac250,000",
                       "t": "n",
                       "raw": 250000,
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D7",
                       "v": "EUR",
                       "t": "s",
                       "raw": "EUR",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E7",
@@ -14647,21 +14647,21 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "NEC4 Compensation Events within Package Contingency",
                       "t": "s",
                       "raw": "NEC4 Compensation Events within Package Contingency",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G7",
                       "v": "ToR Sec. 5",
                       "t": "s",
                       "raw": "ToR Sec. 5",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "H7",
                       "v": "CFO / Chair",
                       "t": "s",
                       "raw": "CFO / Chair",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -14670,28 +14670,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "POL-T1Q",
                       "t": "s",
                       "raw": "POL-T1Q",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B8",
                       "v": "Tier 1 Quarterly Cumulative Cap (Project Director)",
                       "t": "s",
                       "raw": "Tier 1 Quarterly Cumulative Cap (Project Director)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C8",
                       "v": "\u20ac750,000",
                       "t": "n",
                       "raw": 750000,
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D8",
                       "v": "EUR",
                       "t": "s",
                       "raw": "EUR",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E8",
@@ -14706,21 +14706,21 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Rolling 90-day aggregate PM drawdown before CCB lock",
                       "t": "s",
                       "raw": "Rolling 90-day aggregate PM drawdown before CCB lock",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G8",
                       "v": "ToR Sec. 5",
                       "t": "s",
                       "raw": "ToR Sec. 5",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "H8",
                       "v": "CFO",
                       "t": "s",
                       "raw": "CFO",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -14729,28 +14729,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "POL-T2S",
                       "t": "s",
                       "raw": "POL-T2S",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B9",
                       "v": "Tier 2 SteerCo Panel / CCB Single Event Ceiling",
                       "t": "s",
                       "raw": "Tier 2 SteerCo Panel / CCB Single Event Ceiling",
-                      "kind": "header"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C9",
                       "v": "\u20ac1,500,000",
                       "t": "n",
                       "raw": 1500000,
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D9",
                       "v": "EUR",
                       "t": "s",
                       "raw": "EUR",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E9",
@@ -14765,21 +14765,21 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Above EUR 1.5M escalates automatically to Full Board (Tier 3)",
                       "t": "s",
                       "raw": "Above EUR 1.5M escalates automatically to Full Board (Tier 3)",
-                      "kind": "header"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G9",
                       "v": "ToR Sec. 4-5",
                       "t": "s",
                       "raw": "ToR Sec. 4-5",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "H9",
                       "v": "Full SteerCo",
                       "t": "s",
                       "raw": "Full SteerCo",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -14912,56 +14912,56 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Tier",
                       "t": "s",
                       "raw": "Tier",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "B12",
                       "v": "Approving Body",
                       "t": "s",
                       "raw": "Approving Body",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "C12",
                       "v": "Single Cap (EUR)",
                       "t": "s",
                       "raw": "Single Cap (EUR)",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "D12",
                       "v": "Cumulative / Period Limit",
                       "t": "s",
                       "raw": "Cumulative / Period Limit",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "E12",
                       "v": "Schedule Float Rule",
                       "t": "s",
                       "raw": "Schedule Float Rule",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "F12",
                       "v": "Statutory & Spec Trigger",
                       "t": "s",
                       "raw": "Statutory & Spec Trigger",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "G12",
                       "v": "Required Quorum",
                       "t": "s",
                       "raw": "Required Quorum",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "H12",
                       "v": "Record",
                       "t": "s",
                       "raw": "Record",
-                      "kind": "input"
+                      "kind": "header"
                     }
                   ],
                   [
@@ -14970,56 +14970,56 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Tier 0",
                       "t": "s",
                       "raw": "Tier 0",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B13",
                       "v": "Work Package Lead",
                       "t": "s",
                       "raw": "Work Package Lead",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C13",
                       "v": "\u20ac0",
                       "t": "n",
                       "raw": 0,
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D13",
                       "v": "\u20ac0",
                       "t": "n",
                       "raw": 0,
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E13",
                       "v": "0d (No Float Loss)",
                       "t": "s",
                       "raw": "0d (No Float Loss)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F13",
                       "v": "Zero impact to cost, dates, EN 50600, or statutory specs",
                       "t": "s",
                       "raw": "Zero impact to cost, dates, EN 50600, or statutory specs",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G13",
                       "v": "Unilateral Sign-Off",
                       "t": "s",
                       "raw": "Unilateral Sign-Off",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "H13",
                       "v": "BIM CDE Log",
                       "t": "s",
                       "raw": "BIM CDE Log",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -15028,14 +15028,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Tier 1",
                       "t": "s",
                       "raw": "Tier 1",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B14",
                       "v": "Authorized Project Dir.",
                       "t": "s",
                       "raw": "Authorized Project Dir.",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C14",
@@ -15058,28 +15058,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Float > 0d (Non-Crit)",
                       "t": "s",
                       "raw": "Float > 0d (Non-Crit)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F14",
                       "v": "Within package contingency; zero BoD/EED/Planning drift",
                       "t": "s",
                       "raw": "Within package contingency; zero BoD/EED/Planning drift",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G14",
                       "v": "PM + QS Check",
                       "t": "s",
                       "raw": "PM + QS Check",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "H14",
                       "v": "Monthly EVM Report",
                       "t": "s",
                       "raw": "Monthly EVM Report",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -15088,14 +15088,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Tier 2",
                       "t": "s",
                       "raw": "Tier 2",
-                      "kind": "header"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B15",
                       "v": "SteerCo Panel / CCB",
                       "t": "s",
                       "raw": "SteerCo Panel / CCB",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C15",
@@ -15118,28 +15118,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Critical=0d OR Non-Crit<15d",
                       "t": "s",
                       "raw": "Critical=0d OR Non-Crit<15d",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F15",
                       "v": "Planning conditions, EPA IEL, FSC, EirGrid MIC or Class 3",
                       "t": "s",
                       "raw": "Planning conditions, EPA IEL, FSC, EirGrid MIC or Class 3",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G15",
                       "v": "Ordinary (>=60% Seats)",
                       "t": "s",
                       "raw": "Ordinary (>=60% Seats)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "H15",
                       "v": "SteerCo Minute / CWR",
                       "t": "s",
                       "raw": "SteerCo Minute / CWR",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -15148,56 +15148,56 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Tier 3",
                       "t": "s",
                       "raw": "Tier 3",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B16",
                       "v": "Full Board / IC",
                       "t": "s",
                       "raw": "Full Board / IC",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C16",
                       "v": "> EUR 1.5M (>C9)",
                       "t": "s",
                       "raw": "> EUR 1.5M (>C9)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D16",
                       "v": "BAC Overrun / Reserve",
                       "t": "s",
                       "raw": "BAC Overrun / Reserve",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E16",
                       "v": "COD > 2030-05-20",
                       "t": "s",
                       "raw": "COD > 2030-05-20",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F16",
                       "v": "Load < 45 MW, PUE > 1.25, WUE > 0.25, ERF < 0.15, Termination",
                       "t": "s",
                       "raw": "Load < 45 MW, PUE > 1.25, WUE > 0.25, ERF < 0.15, Termination",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G16",
                       "v": "Supermajority (>=80%+Chair/CFO)",
                       "t": "s",
                       "raw": "Supermajority (>=80%+Chair/CFO)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "H16",
                       "v": "Board Resolution",
                       "t": "s",
                       "raw": "Board Resolution",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -15330,56 +15330,56 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Tranche",
                       "t": "s",
                       "raw": "Tranche",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "B19",
                       "v": "Gate ID",
                       "t": "s",
                       "raw": "Gate ID",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "C19",
                       "v": "Gate Date",
                       "t": "s",
                       "raw": "Gate Date",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "D19",
                       "v": "Release %",
                       "t": "s",
                       "raw": "Release %",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "E19",
                       "v": "Tranche Value (EUR)",
                       "t": "s",
                       "raw": "Tranche Value (EUR)",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "F19",
                       "v": "Trigger Event",
                       "t": "s",
                       "raw": "Trigger Event",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "G19",
                       "v": "Holdback / Gate Condition",
                       "t": "s",
                       "raw": "Holdback / Gate Condition",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "H19",
                       "v": "Authorizer",
                       "t": "s",
                       "raw": "Authorizer",
-                      "kind": "input"
+                      "kind": "header"
                     }
                   ],
                   [
@@ -15388,21 +15388,21 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "TR-01",
                       "t": "s",
                       "raw": "TR-01",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B20",
                       "v": "M1000",
                       "t": "s",
                       "raw": "M1000",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C20",
                       "v": "2027-01-04",
                       "t": "s",
                       "raw": "2027-01-04",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D20",
@@ -15424,21 +15424,21 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "RIBA Stage 1 NTP, Land Option, PSDP/PSCS Letter, EirGrid Filing",
                       "t": "s",
                       "raw": "RIBA Stage 1 NTP, Land Option, PSDP/PSCS Letter, EirGrid Filing",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G20",
                       "v": "Executed ORD, ISO 19650 BEP & Written PSDP/PSCS Appointments",
                       "t": "s",
                       "raw": "Executed ORD, ISO 19650 BEP & Written PSDP/PSCS Appointments",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "H20",
                       "v": "Sponsor / IC (Supermajority)",
                       "t": "s",
                       "raw": "Sponsor / IC (Supermajority)",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -15447,21 +15447,21 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "TR-02",
                       "t": "s",
                       "raw": "TR-02",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B21",
                       "v": "M1090",
                       "t": "s",
                       "raw": "M1090",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C21",
                       "v": "2027-10-18",
                       "t": "s",
                       "raw": "2027-10-18",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D21",
@@ -15483,21 +15483,21 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "An Bord Pleanala / Local Planning Grant, EPA IEL, EirGrid ECP, BCAR Notice",
                       "t": "s",
                       "raw": "An Bord Pleanala / Local Planning Grant, EPA IEL, EirGrid ECP, BCAR Notice",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G21",
                       "v": "Zero Judicial Review stay; FSC & DAC lodged; HSA AF1 active",
                       "t": "s",
                       "raw": "Zero Judicial Review stay; FSC & DAC lodged; HSA AF1 active",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "H21",
                       "v": "SteerCo Supermajority (>= 80%)",
                       "t": "s",
                       "raw": "SteerCo Supermajority (>= 80%)",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -15506,21 +15506,21 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "TR-03",
                       "t": "s",
                       "raw": "TR-03",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B22",
                       "v": "M3120",
                       "t": "s",
                       "raw": "M3120",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C22",
                       "v": "2027-12-20",
                       "t": "s",
                       "raw": "2027-12-20",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D22",
@@ -15542,21 +15542,21 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Witnessed FAT & Port Delivery of 63MVA Tx, SF6-Free GIS, HVO Gensets, BESS, Chillers",
                       "t": "s",
                       "raw": "Witnessed FAT & Port Delivery of 63MVA Tx, SF6-Free GIS, HVO Gensets, BESS, Chillers",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G22",
                       "v": "Signed Cx L1/L2 Factory QA & Transit Shock-Logger Clearances",
                       "t": "s",
                       "raw": "Signed Cx L1/L2 Factory QA & Transit Shock-Logger Clearances",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "H22",
                       "v": "Project Director + CFO Counter-Sign",
                       "t": "s",
                       "raw": "Project Director + CFO Counter-Sign",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -15565,21 +15565,21 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "TR-04",
                       "t": "s",
                       "raw": "TR-04",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B23",
                       "v": "M4350",
                       "t": "s",
                       "raw": "M4350",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C23",
                       "v": "2028-12-25",
                       "t": "s",
                       "raw": "2028-12-25",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D23",
@@ -15601,21 +15601,21 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Building Shell 100% Weather-Tight, 48h Roof Ponding & Airtightness Passed",
                       "t": "s",
                       "raw": "Building Shell 100% Weather-Tight, 48h Roof Ponding & Airtightness Passed",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G23",
                       "v": "Assigned Certifier Envelope Inspection Sign-Off; PAS 68 pads ready",
                       "t": "s",
                       "raw": "Assigned Certifier Envelope Inspection Sign-Off; PAS 68 pads ready",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "H23",
                       "v": "Project Director + CFO Counter-Sign",
                       "t": "s",
                       "raw": "Project Director + CFO Counter-Sign",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -15624,21 +15624,21 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "TR-05",
                       "t": "s",
                       "raw": "TR-05",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B24",
                       "v": "M6470",
                       "t": "s",
                       "raw": "M6470",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C24",
                       "v": "2030-02-25",
                       "t": "s",
                       "raw": "2030-02-25",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D24",
@@ -15660,21 +15660,21 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Cx Level 5 45 MW 48-Hr Continuous IST & <10s BESS/HVO Blackout Transfer",
                       "t": "s",
                       "raw": "Cx Level 5 45 MW 48-Hr Continuous IST & <10s BESS/HVO Blackout Transfer",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G24",
                       "v": "Independent CxA L3-L5 Certificates; Zero Severity-1 Open Punchlist",
                       "t": "s",
                       "raw": "Independent CxA L3-L5 Certificates; Zero Severity-1 Open Punchlist",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "H24",
                       "v": "SteerCo + CxA Co-Sign",
                       "t": "s",
                       "raw": "SteerCo + CxA Co-Sign",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -15683,21 +15683,21 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "TR-06",
                       "t": "s",
                       "raw": "TR-06",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B25",
                       "v": "M7060+DLP",
                       "t": "s",
                       "raw": "M7060+DLP",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C25",
                       "v": "2030-05-20",
                       "t": "s",
                       "raw": "2030-05-20",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D25",
@@ -15719,21 +15719,21 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "BCAR CCC Validated, EN 50600 Class 3 / Tier III Audit, EED Sync, HSA Safety File",
                       "t": "s",
                       "raw": "BCAR CCC Validated, EN 50600 Class 3 / Tier III Audit, EED Sync, HSA Safety File",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G25",
                       "v": "5.0% at COD Acceptance + 5.0% held through 12/24m DLP Defect Expiry",
                       "t": "s",
                       "raw": "5.0% at COD Acceptance + 5.0% held through 12/24m DLP Defect Expiry",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "H25",
                       "v": "Full Board / IC Final Release",
                       "t": "s",
                       "raw": "Full Board / IC Final Release",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -15742,7 +15742,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "TOTAL",
                       "t": "s",
                       "raw": "TOTAL",
-                      "kind": "input"
+                      "kind": "total"
                     },
                     {
                       "coord": "B26",
@@ -15756,7 +15756,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Full Portfolio Release",
                       "t": "s",
                       "raw": "Full Portfolio Release",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D26",
@@ -15779,7 +15779,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Reconciles 100% to POL-BAC Input Cell C6",
                       "t": "s",
                       "raw": "Reconciles 100% to POL-BAC Input Cell C6",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G26",
@@ -16076,7 +16076,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Resolution Type [Select]:",
                       "t": "s",
                       "raw": "Resolution Type [Select]:",
-                      "kind": "input",
+                      "kind": "header",
                       "cspan": 2
                     },
                     {
@@ -16092,7 +16092,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Supermajority (>=80% + Chair & CFO)",
                       "t": "s",
                       "raw": "Supermajority (>=80% + Chair & CFO)",
-                      "kind": "input",
+                      "kind": "header",
                       "cspan": 3
                     },
                     {
@@ -16116,7 +16116,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Static Statutory Hold Check [Input]:",
                       "t": "s",
                       "raw": "Static Statutory Hold Check [Input]:",
-                      "kind": "input",
+                      "kind": "header",
                       "cspan": 2
                     },
                     {
@@ -16132,7 +16132,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "CLEAR",
                       "t": "s",
                       "raw": "CLEAR",
-                      "kind": "input"
+                      "kind": "header"
                     }
                   ],
                   [
@@ -16199,56 +16199,56 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Seat ID",
                       "t": "s",
                       "raw": "Seat ID",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B7",
                       "v": "Voting Member Role",
                       "t": "s",
                       "raw": "Voting Member Role",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C7",
                       "v": "Active Seat (1/0)",
                       "t": "s",
                       "raw": "Active Seat (1/0)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D7",
                       "v": "Weight",
                       "t": "s",
                       "raw": "Weight",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E7",
                       "v": "Present (1/0)",
                       "t": "s",
                       "raw": "Present (1/0)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F7",
                       "v": "Vote Cast (YES/NO/ABSTAIN)",
                       "t": "s",
                       "raw": "Vote Cast (YES/NO/ABSTAIN)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G7",
                       "v": "Active Weight",
                       "t": "s",
                       "raw": "Active Weight",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "H7",
                       "v": "Present Weight",
                       "t": "s",
                       "raw": "Present Weight",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -16257,14 +16257,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "SEAT-01",
                       "t": "s",
                       "raw": "SEAT-01",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B8",
                       "v": "Executive Sponsor / IC Chair (Casting)",
                       "t": "s",
                       "raw": "Executive Sponsor / IC Chair (Casting)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C8",
@@ -16317,14 +16317,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "SEAT-02",
                       "t": "s",
                       "raw": "SEAT-02",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B9",
                       "v": "Chief Financial Officer (Finance Veto)",
                       "t": "s",
                       "raw": "Chief Financial Officer (Finance Veto)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C9",
@@ -16377,14 +16377,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "SEAT-03",
                       "t": "s",
                       "raw": "SEAT-03",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B10",
                       "v": "Chief Technical Officer (ATD Lead)",
                       "t": "s",
                       "raw": "Chief Technical Officer (ATD Lead)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C10",
@@ -16437,14 +16437,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "SEAT-04",
                       "t": "s",
                       "raw": "SEAT-04",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B11",
                       "v": "Development / Portfolio Director",
                       "t": "s",
                       "raw": "Development / Portfolio Director",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C11",
@@ -16497,14 +16497,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "SEAT-05",
                       "t": "s",
                       "raw": "SEAT-05",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B12",
                       "v": "Anchor Hyperscale Tenant Rep (Post-Lease)",
                       "t": "s",
                       "raw": "Anchor Hyperscale Tenant Rep (Post-Lease)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C12",
@@ -16532,7 +16532,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "ABSTAIN",
                       "t": "s",
                       "raw": "ABSTAIN",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G12",
@@ -16557,14 +16557,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "TOTAL",
                       "t": "s",
                       "raw": "TOTAL",
-                      "kind": "input"
+                      "kind": "total"
                     },
                     {
                       "coord": "B13",
                       "v": "Active Voting Pool & Attendance Summary",
                       "t": "s",
                       "raw": "Active Voting Pool & Attendance Summary",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C13",
@@ -16743,28 +16743,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Evaluation Metric",
                       "t": "s",
                       "raw": "Evaluation Metric",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "B16",
                       "v": "Formula Result",
                       "t": "s",
                       "raw": "Formula Result",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "C16",
                       "v": "Rule / Benchmark",
                       "t": "s",
                       "raw": "Rule / Benchmark",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "D16",
                       "v": "Outcome Interpretation",
                       "t": "s",
                       "raw": "Outcome Interpretation",
-                      "kind": "section",
+                      "kind": "header",
                       "cspan": 5
                     },
                     {
@@ -16806,7 +16806,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Seat Attendance Ratio (%)",
                       "t": "s",
                       "raw": "Seat Attendance Ratio (%)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B17",
@@ -16821,14 +16821,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Ordinary >= 60% | Supermajority >= 80%",
                       "t": "s",
                       "raw": "Ordinary >= 60% | Supermajority >= 80%",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D17",
                       "v": "Share of active Voting Seats represented",
                       "t": "s",
                       "raw": "Share of active Voting Seats represented",
-                      "kind": "section",
+                      "kind": "plain",
                       "cspan": 5
                     },
                     {
@@ -16870,7 +16870,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Weighted Votes Present",
                       "t": "s",
                       "raw": "Weighted Votes Present",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B18",
@@ -16885,14 +16885,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Includes Chair Casting Weight (2)",
                       "t": "s",
                       "raw": "Includes Chair Casting Weight (2)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D18",
                       "v": "Total voting weight present in session",
                       "t": "s",
                       "raw": "Total voting weight present in session",
-                      "kind": "section",
+                      "kind": "total",
                       "cspan": 5
                     },
                     {
@@ -16934,7 +16934,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Chair (SEAT-01) Present?",
                       "t": "s",
                       "raw": "Chair (SEAT-01) Present?",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B19",
@@ -16949,14 +16949,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Mandatory for Quorum",
                       "t": "s",
                       "raw": "Mandatory for Quorum",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D19",
                       "v": "Chair or named Executive Alternate must attend",
                       "t": "s",
                       "raw": "Chair or named Executive Alternate must attend",
-                      "kind": "section",
+                      "kind": "plain",
                       "cspan": 5
                     },
                     {
@@ -16998,7 +16998,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Quorum Status",
                       "t": "s",
                       "raw": "Quorum Status",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B20",
@@ -17013,14 +17013,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Dynamic per C5 Rule",
                       "t": "s",
                       "raw": "Dynamic per C5 Rule",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D20",
                       "v": "Determines if meeting may legally resolve",
                       "t": "s",
                       "raw": "Determines if meeting may legally resolve",
-                      "kind": "section",
+                      "kind": "plain",
                       "cspan": 5
                     },
                     {
@@ -17062,7 +17062,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "YES Vote Share (of Present Weight)",
                       "t": "s",
                       "raw": "YES Vote Share (of Present Weight)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B21",
@@ -17077,14 +17077,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "> 50.0% Cast Required",
                       "t": "s",
                       "raw": "> 50.0% Cast Required",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D21",
                       "v": "Share of weighted votes in favor",
                       "t": "s",
                       "raw": "Share of weighted votes in favor",
-                      "kind": "section",
+                      "kind": "plain",
                       "cspan": 5
                     },
                     {
@@ -17126,7 +17126,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Final SteerCo Resolution Outcome",
                       "t": "s",
                       "raw": "Final SteerCo Resolution Outcome",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B22",
@@ -17141,14 +17141,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Checks C5, Hold, Quorum & Chair/CFO",
                       "t": "s",
                       "raw": "Checks C5, Hold, Quorum & Chair/CFO",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D22",
                       "v": "Enforces Clause 2.3 Statutory Non-Override automatically",
                       "t": "s",
                       "raw": "Enforces Clause 2.3 Statutory Non-Override automatically",
-                      "kind": "section",
+                      "kind": "plain",
                       "cspan": 5
                     },
                     {
@@ -17314,35 +17314,35 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Witness ID",
                       "t": "s",
                       "raw": "Witness ID",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "B25",
                       "v": "Role Title",
                       "t": "s",
                       "raw": "Role Title",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "C25",
                       "v": "Governance Class",
                       "t": "s",
                       "raw": "Governance Class",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "D25",
                       "v": "Veto Domain",
                       "t": "s",
                       "raw": "Veto Domain",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "E25",
                       "v": "Statutory Basis & Scope",
                       "t": "s",
                       "raw": "Statutory Basis & Scope",
-                      "kind": "section",
+                      "kind": "header",
                       "cspan": 4
                     },
                     {
@@ -17376,35 +17376,35 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "WIT-01",
                       "t": "s",
                       "raw": "WIT-01",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B26",
                       "v": "Authorized Project Director (PM)",
                       "t": "s",
                       "raw": "Authorized Project Director (PM)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C26",
                       "v": "Committee Secretary",
                       "t": "s",
                       "raw": "Committee Secretary",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D26",
                       "v": "Non-Voting (Tier 1)",
                       "t": "s",
                       "raw": "Non-Voting (Tier 1)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E26",
                       "v": "Presents Board Pack, owns P6 XER baseline, EVM/CPI/SPI, NEC4 CE & Risk escalation.",
                       "t": "s",
                       "raw": "Presents Board Pack, owns P6 XER baseline, EVM/CPI/SPI, NEC4 CE & Risk escalation.",
-                      "kind": "section",
+                      "kind": "plain",
                       "cspan": 4
                     },
                     {
@@ -17438,35 +17438,35 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "WIT-02",
                       "t": "s",
                       "raw": "WIT-02",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B27",
                       "v": "Project Supervisor Design Process (PSDP)",
                       "t": "s",
                       "raw": "Project Supervisor Design Process (PSDP)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C27",
                       "v": "Statutory Witness",
                       "t": "s",
                       "raw": "Statutory Witness",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D27",
                       "v": "Veto (Design Safety)",
                       "t": "s",
                       "raw": "Veto (Design Safety)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E27",
                       "v": "S.I. No. 291/2013 compliance, AF1 design safety, permanent Safety File gate (A6520).",
                       "t": "s",
                       "raw": "S.I. No. 291/2013 compliance, AF1 design safety, permanent Safety File gate (A6520).",
-                      "kind": "banner",
+                      "kind": "plain",
                       "cspan": 4
                     },
                     {
@@ -17500,35 +17500,35 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "WIT-03",
                       "t": "s",
                       "raw": "WIT-03",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B28",
                       "v": "Project Supervisor Construction (PSCS)",
                       "t": "s",
                       "raw": "Project Supervisor Construction (PSCS)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C28",
                       "v": "Statutory Witness",
                       "t": "s",
                       "raw": "Statutory Witness",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D28",
                       "v": "Veto (Site H&S)",
                       "t": "s",
                       "raw": "Veto (Site H&S)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E28",
                       "v": "Multi-contractor RAMS, Safe Pass / CSCS verification, HSA reporting & site stop authority.",
                       "t": "s",
                       "raw": "Multi-contractor RAMS, Safe Pass / CSCS verification, HSA reporting & site stop authority.",
-                      "kind": "section",
+                      "kind": "plain",
                       "cspan": 4
                     },
                     {
@@ -17562,35 +17562,35 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "WIT-04",
                       "t": "s",
                       "raw": "WIT-04",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B29",
                       "v": "BCAR Assigned Certifier (AC)",
                       "t": "s",
                       "raw": "BCAR Assigned Certifier (AC)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C29",
                       "v": "Statutory Certifier",
                       "t": "s",
                       "raw": "Statutory Certifier",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D29",
                       "v": "Veto (BCMS / CCC)",
                       "t": "s",
                       "raw": "Veto (BCMS / CCC)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E29",
                       "v": "BCAR 2014 Inspection Plan, Ancillary Certs, Part B FSC/DAC & final CCC (A7050).",
                       "t": "s",
                       "raw": "BCAR 2014 Inspection Plan, Ancillary Certs, Part B FSC/DAC & final CCC (A7050).",
-                      "kind": "section",
+                      "kind": "plain",
                       "cspan": 4
                     },
                     {
@@ -17624,35 +17624,35 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "WIT-05",
                       "t": "s",
                       "raw": "WIT-05",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B30",
                       "v": "Independent Commissioning Authority (CxA)",
                       "t": "s",
                       "raw": "Independent Commissioning Authority (CxA)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C30",
                       "v": "Technical Veto",
                       "t": "s",
                       "raw": "Technical Veto",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D30",
                       "v": "Veto (L3/L4/L5 Cx)",
                       "t": "s",
                       "raw": "Veto (L3/L4/L5 Cx)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E30",
                       "v": "Independent C1-C5 QA; retains absolute hold at M6260 (L3), M6370 (L4) & M6470 (IST).",
                       "t": "s",
                       "raw": "Independent C1-C5 QA; retains absolute hold at M6260 (L3), M6370 (L4) & M6470 (IST).",
-                      "kind": "section",
+                      "kind": "plain",
                       "cspan": 4
                     },
                     {
@@ -17686,35 +17686,35 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "WIT-06",
                       "t": "s",
                       "raw": "WIT-06",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B31",
                       "v": "Commercial / NEC4-FIDIC QS Lead",
                       "t": "s",
                       "raw": "Commercial / NEC4-FIDIC QS Lead",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C31",
                       "v": "Advisory Witness",
                       "t": "s",
                       "raw": "Advisory Witness",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D31",
                       "v": "Non-Voting",
                       "t": "s",
                       "raw": "Non-Voting",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E31",
                       "v": "NEC4 Early Warning / Compensation Event audit, FIDIC claims, final account validation.",
                       "t": "s",
                       "raw": "NEC4 Early Warning / Compensation Event audit, FIDIC claims, final account validation.",
-                      "kind": "section",
+                      "kind": "plain",
                       "cspan": 4
                     },
                     {
@@ -18004,21 +18004,21 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Owner",
                       "t": "s",
                       "raw": "Owner",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "D5",
                       "v": "Alert SLA",
                       "t": "s",
                       "raw": "Alert SLA",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "E5",
                       "v": "Decision SLA",
                       "t": "s",
                       "raw": "Decision SLA",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "F5",
@@ -18032,7 +18032,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Mandatory Governance Response",
                       "t": "s",
                       "raw": "Mandatory Governance Response",
-                      "kind": "input"
+                      "kind": "header"
                     }
                   ],
                   [
@@ -18041,49 +18041,49 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "ESC-01",
                       "t": "s",
                       "raw": "ESC-01",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B6",
                       "v": "H&S / HSA Prohibition or Fatal/RIDDOR Event",
                       "t": "s",
                       "raw": "H&S / HSA Prohibition or Fatal/RIDDOR Event",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C6",
                       "v": "PSCS / PSDP",
                       "t": "s",
                       "raw": "PSCS / PSDP",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D6",
                       "v": "Immediate (< 2h)",
                       "t": "s",
                       "raw": "Immediate (< 2h)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E6",
                       "v": "Emergency Session <= 24h",
                       "t": "s",
                       "raw": "Emergency Session <= 24h",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F6",
                       "v": "Sponsor Chair + Board",
                       "t": "s",
                       "raw": "Sponsor Chair + Board",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G6",
                       "v": "STOP WORKS: S.I. 291/2013 Statutory Hold",
                       "t": "s",
                       "raw": "STOP WORKS: S.I. 291/2013 Statutory Hold",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -18092,49 +18092,49 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "ESC-02",
                       "t": "s",
                       "raw": "ESC-02",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B7",
                       "v": "Critical Path Milestone Slip > 5 Workdays (TF <= 0d)",
                       "t": "s",
                       "raw": "Critical Path Milestone Slip > 5 Workdays (TF <= 0d)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C7",
                       "v": "Project Director",
                       "t": "s",
                       "raw": "Project Director",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D7",
                       "v": "24 hours",
                       "t": "s",
                       "raw": "24 hours",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E7",
                       "v": "5 Workdays",
                       "t": "s",
                       "raw": "5 Workdays",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F7",
                       "v": "Tier 2 SteerCo / Tier 3 if COD",
                       "t": "s",
                       "raw": "Tier 2 SteerCo / Tier 3 if COD",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G7",
                       "v": "Recovery Schedule / Compression Plan",
                       "t": "s",
                       "raw": "Recovery Schedule / Compression Plan",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -18143,49 +18143,49 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "ESC-03",
                       "t": "s",
                       "raw": "ESC-03",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B8",
                       "v": "Program EVM Cost Variance: CPI < 0.92 or EAC > BAC",
                       "t": "s",
                       "raw": "Program EVM Cost Variance: CPI < 0.92 or EAC > BAC",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C8",
                       "v": "QS Lead / CFO",
                       "t": "s",
                       "raw": "QS Lead / CFO",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D8",
                       "v": "48 hours",
                       "t": "s",
                       "raw": "48 hours",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E8",
                       "v": "Next Monthly / 5d if > 3%",
                       "t": "s",
                       "raw": "Next Monthly / 5d if > 3%",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F8",
                       "v": "Tier 3 Board / IC",
                       "t": "s",
                       "raw": "Tier 3 Board / IC",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G8",
                       "v": "Commercial Corrective Plan + Reserve Review",
                       "t": "s",
                       "raw": "Commercial Corrective Plan + Reserve Review",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -18194,49 +18194,49 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "ESC-04",
                       "t": "s",
                       "raw": "ESC-04",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B9",
                       "v": "Schedule Variance: SPI < 0.90 on MEP/Cx WBS 5.x-6.x",
                       "t": "s",
                       "raw": "Schedule Variance: SPI < 0.90 on MEP/Cx WBS 5.x-6.x",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C9",
                       "v": "Project Director",
                       "t": "s",
                       "raw": "Project Director",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D9",
                       "v": "48 hours",
                       "t": "s",
                       "raw": "48 hours",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E9",
                       "v": "5 Workdays",
                       "t": "s",
                       "raw": "5 Workdays",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F9",
                       "v": "Tier 2 SteerCo Panel",
                       "t": "s",
                       "raw": "Tier 2 SteerCo Panel",
-                      "kind": "header"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G9",
                       "v": "Dual-Gang HV / Out-of-Sequence Audit",
                       "t": "s",
                       "raw": "Dual-Gang HV / Out-of-Sequence Audit",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -18245,49 +18245,49 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "ESC-05",
                       "t": "s",
                       "raw": "ESC-05",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B10",
                       "v": "Critical Risk Score >= 20 (RSK-01, 03, 10, 12)",
                       "t": "s",
                       "raw": "Critical Risk Score >= 20 (RSK-01, 03, 10, 12)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C10",
                       "v": "Risk Owner",
                       "t": "s",
                       "raw": "Risk Owner",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D10",
                       "v": "24 hours",
                       "t": "s",
                       "raw": "24 hours",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E10",
                       "v": "48h Risk Workshop -> 5d SteerCo",
                       "t": "s",
                       "raw": "48h Risk Workshop -> 5d SteerCo",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F10",
                       "v": "Tier 3 Board / Chair",
                       "t": "s",
                       "raw": "Tier 3 Board / Chair",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G10",
                       "v": "Dedicated Mitigation Budget Activation",
                       "t": "s",
                       "raw": "Dedicated Mitigation Budget Activation",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -18296,49 +18296,49 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "ESC-06",
                       "t": "s",
                       "raw": "ESC-06",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B11",
                       "v": "ABP Planning Appeal / Judicial Review / EPA IEL Hold",
                       "t": "s",
                       "raw": "ABP Planning Appeal / Judicial Review / EPA IEL Hold",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C11",
                       "v": "Dev Director",
                       "t": "s",
                       "raw": "Dev Director",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D11",
                       "v": "24 hours",
                       "t": "s",
                       "raw": "24 hours",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E11",
                       "v": "72h Legal & Permitting Board",
                       "t": "s",
                       "raw": "72h Legal & Permitting Board",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F11",
                       "v": "Tier 3 Board / IC",
                       "t": "s",
                       "raw": "Tier 3 Board / IC",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G11",
                       "v": "Statutory Legal Strategy & Delay Claim",
                       "t": "s",
                       "raw": "Statutory Legal Strategy & Delay Claim",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -18347,49 +18347,49 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "ESC-07",
                       "t": "s",
                       "raw": "ESC-07",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B12",
                       "v": "EirGrid / CRU MIC Connection or BESS Capacity Shift",
                       "t": "s",
                       "raw": "EirGrid / CRU MIC Connection or BESS Capacity Shift",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C12",
                       "v": "Grid Director",
                       "t": "s",
                       "raw": "Grid Director",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D12",
                       "v": "48 hours",
                       "t": "s",
                       "raw": "48 hours",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E12",
                       "v": "5 Workdays",
                       "t": "s",
                       "raw": "5 Workdays",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F12",
                       "v": "Tier 2 -> Tier 3 if Capex > Cap",
                       "t": "s",
                       "raw": "Tier 2 -> Tier 3 if Capex > Cap",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G12",
                       "v": "Dynamic RMS Study & PPA Re-Sizing",
                       "t": "s",
                       "raw": "Dynamic RMS Study & PPA Re-Sizing",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -18398,49 +18398,49 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "ESC-08",
                       "t": "s",
                       "raw": "ESC-08",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B13",
                       "v": "BCAR Part B Fire Officer Query / AC Inspection Block",
                       "t": "s",
                       "raw": "BCAR Part B Fire Officer Query / AC Inspection Block",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C13",
                       "v": "Assigned Certifier",
                       "t": "s",
                       "raw": "Assigned Certifier",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D13",
                       "v": "24 hours",
                       "t": "s",
                       "raw": "24 hours",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E13",
                       "v": "72h Technical Resolution",
                       "t": "s",
                       "raw": "72h Technical Resolution",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F13",
                       "v": "Tier 2 SteerCo Panel",
                       "t": "s",
                       "raw": "Tier 2 SteerCo Panel",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G13",
                       "v": "STATUTORY HOLD: Zero Energisation / CCC",
                       "t": "s",
                       "raw": "STATUTORY HOLD: Zero Energisation / CCC",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -18449,49 +18449,49 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "ESC-09",
                       "t": "s",
                       "raw": "ESC-09",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B14",
                       "v": "CxA Level 3/4/5 Rejection or 45 MW Load-Bank Shortfall",
                       "t": "s",
                       "raw": "CxA Level 3/4/5 Rejection or 45 MW Load-Bank Shortfall",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C14",
                       "v": "Independent CxA",
                       "t": "s",
                       "raw": "Independent CxA",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D14",
                       "v": "Immediate",
                       "t": "s",
                       "raw": "Immediate",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E14",
                       "v": "48h Cx Recovery War Room",
                       "t": "s",
                       "raw": "48h Cx Recovery War Room",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F14",
                       "v": "Tier 2 SteerCo (Veto Retained)",
                       "t": "s",
                       "raw": "Tier 2 SteerCo (Veto Retained)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G14",
                       "v": "MANDATORY VETO: Cannot Override via Vote",
                       "t": "s",
                       "raw": "MANDATORY VETO: Cannot Override via Vote",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -18500,49 +18500,49 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "ESC-10",
                       "t": "s",
                       "raw": "ESC-10",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B15",
                       "v": "EU EED Drift (Proj. PUE > 1.25 / WUE > 0.25 / ERF < 0.15)",
                       "t": "s",
                       "raw": "EU EED Drift (Proj. PUE > 1.25 / WUE > 0.25 / ERF < 0.15)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C15",
                       "v": "CTO / Ops Lead",
                       "t": "s",
                       "raw": "CTO / Ops Lead",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D15",
                       "v": "5 Workdays",
                       "t": "s",
                       "raw": "5 Workdays",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E15",
                       "v": "Next Scheduled SteerCo",
                       "t": "s",
                       "raw": "Next Scheduled SteerCo",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F15",
                       "v": "Tier 3 Board",
                       "t": "s",
                       "raw": "Tier 3 Board",
-                      "kind": "header"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G15",
                       "v": "Commissioning & Heat-Recovery Re-Tuning",
                       "t": "s",
                       "raw": "Commissioning & Heat-Recovery Re-Tuning",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -18551,49 +18551,49 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "ESC-11",
                       "t": "s",
                       "raw": "ESC-11",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B16",
                       "v": "Single NEC4 Compensation Event / FIDIC Claim > Tier 1 Cap",
                       "t": "s",
                       "raw": "Single NEC4 Compensation Event / FIDIC Claim > Tier 1 Cap",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C16",
                       "v": "Commercial Lead",
                       "t": "s",
                       "raw": "Commercial Lead",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D16",
                       "v": "48 hours",
                       "t": "s",
                       "raw": "48 hours",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E16",
                       "v": "10 Workdays (NEC4 Reply Clock)",
                       "t": "s",
                       "raw": "10 Workdays (NEC4 Reply Clock)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F16",
                       "v": "Tier 2 / Tier 3 per EUR Value",
                       "t": "s",
                       "raw": "Tier 2 / Tier 3 per EUR Value",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G16",
                       "v": "Avoid Deemed Acceptance under NEC4 Cl. 61.4",
                       "t": "s",
                       "raw": "Avoid Deemed Acceptance under NEC4 Cl. 61.4",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -18602,49 +18602,49 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "ESC-12",
                       "t": "s",
                       "raw": "ESC-12",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B17",
                       "v": "Tier-1 OEM Slot Breach (> 200d Pre-M4350 Buffer Eaten)",
                       "t": "s",
                       "raw": "Tier-1 OEM Slot Breach (> 200d Pre-M4350 Buffer Eaten)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C17",
                       "v": "Procurement Dir.",
                       "t": "s",
                       "raw": "Procurement Dir.",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D17",
                       "v": "48 hours",
                       "t": "s",
                       "raw": "48 hours",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E17",
                       "v": "5 Workdays",
                       "t": "s",
                       "raw": "5 Workdays",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F17",
                       "v": "Tier 2 SteerCo Panel",
                       "t": "s",
                       "raw": "Tier 2 SteerCo Panel",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G17",
                       "v": "Air-Freight / Alternative OEM Qualification",
                       "t": "s",
                       "raw": "Air-Freight / Alternative OEM Qualification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -18762,49 +18762,49 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Gate ID",
                       "t": "s",
                       "raw": "Gate ID",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "B20",
                       "v": "Milestone Description",
                       "t": "s",
                       "raw": "Milestone Description",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "C20",
                       "v": "Baseline Date",
                       "t": "s",
                       "raw": "Baseline Date",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "D20",
                       "v": "Total Float",
                       "t": "s",
                       "raw": "Total Float",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "E20",
                       "v": "Critical",
                       "t": "s",
                       "raw": "Critical",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "F20",
                       "v": "Tranche Linked",
                       "t": "s",
                       "raw": "Tranche Linked",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "G20",
                       "v": "Stage-Gate Escalation Rule",
                       "t": "s",
                       "raw": "Stage-Gate Escalation Rule",
-                      "kind": "input"
+                      "kind": "header"
                     }
                   ],
                   [
@@ -18813,28 +18813,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "M1000",
                       "t": "s",
                       "raw": "M1000",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B21",
                       "v": "RIBA Stage 1 Notice to Proceed & Land Option Milestone",
                       "t": "s",
                       "raw": "RIBA Stage 1 Notice to Proceed & Land Option Milestone",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C21",
                       "v": "2027-01-04",
                       "t": "s",
                       "raw": "2027-01-04",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D21",
                       "v": "0d",
                       "t": "s",
                       "raw": "0d",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E21",
@@ -18848,14 +18848,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "TR-01 (10%)",
                       "t": "s",
                       "raw": "TR-01 (10%)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G21",
                       "v": "Any >0d variance triggers ESC-02 within 24h",
                       "t": "s",
                       "raw": "Any >0d variance triggers ESC-02 within 24h",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -18864,28 +18864,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "M2110",
                       "t": "s",
                       "raw": "M2110",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B22",
                       "v": "RIBA Stage 4 Technical Design Freeze & ISO 19650 Sign-Off",
                       "t": "s",
                       "raw": "RIBA Stage 4 Technical Design Freeze & ISO 19650 Sign-Off",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C22",
                       "v": "2027-07-12",
                       "t": "s",
                       "raw": "2027-07-12",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D22",
                       "v": "290d",
                       "t": "s",
                       "raw": "290d",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E22",
@@ -18899,14 +18899,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Review Gate",
                       "t": "s",
                       "raw": "Review Gate",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G22",
                       "v": "Buffer monitoring; escalate if float < 30d",
                       "t": "s",
                       "raw": "Buffer monitoring; escalate if float < 30d",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -18915,28 +18915,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "M1090",
                       "t": "s",
                       "raw": "M1090",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B23",
                       "v": "All Irish Statutory Planning, EPA IEL & BCAR Clearances Milestone",
                       "t": "s",
                       "raw": "All Irish Statutory Planning, EPA IEL & BCAR Clearances Milestone",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C23",
                       "v": "2027-10-18",
                       "t": "s",
                       "raw": "2027-10-18",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D23",
                       "v": "0d",
                       "t": "s",
                       "raw": "0d",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E23",
@@ -18950,14 +18950,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "TR-02 (20%)",
                       "t": "s",
                       "raw": "TR-02 (20%)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G23",
                       "v": "Any >0d variance triggers ESC-02 within 24h",
                       "t": "s",
                       "raw": "Any >0d variance triggers ESC-02 within 24h",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -18966,28 +18966,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "M3120",
                       "t": "s",
                       "raw": "M3120",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B24",
                       "v": "EU Long-Lead Plant Manufactured & Delivered On-Site Milestone",
                       "t": "s",
                       "raw": "EU Long-Lead Plant Manufactured & Delivered On-Site Milestone",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C24",
                       "v": "2028-01-03",
                       "t": "s",
                       "raw": "2028-01-03",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D24",
                       "v": "290d",
                       "t": "s",
                       "raw": "290d",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E24",
@@ -19001,14 +19001,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "TR-03 (25%)",
                       "t": "s",
                       "raw": "TR-03 (25%)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G24",
                       "v": "Buffer monitoring; escalate if float < 30d",
                       "t": "s",
                       "raw": "Buffer monitoring; escalate if float < 30d",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -19017,28 +19017,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "M4350",
                       "t": "s",
                       "raw": "M4350",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B25",
                       "v": "Building Shell 100% Weather-Tight & BCAR Envelope Ready Milestone",
                       "t": "s",
                       "raw": "Building Shell 100% Weather-Tight & BCAR Envelope Ready Milestone",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C25",
                       "v": "2029-02-12",
                       "t": "s",
                       "raw": "2029-02-12",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D25",
                       "v": "0d",
                       "t": "s",
                       "raw": "0d",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E25",
@@ -19052,14 +19052,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "TR-04 (20%)",
                       "t": "s",
                       "raw": "TR-04 (20%)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G25",
                       "v": "Any >0d variance triggers ESC-02 within 24h",
                       "t": "s",
                       "raw": "Any >0d variance triggers ESC-02 within 24h",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -19068,28 +19068,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "M5595",
                       "t": "s",
                       "raw": "M5595",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B26",
                       "v": "MEP Infrastructure & White Space Fit-Out Complete Milestone",
                       "t": "s",
                       "raw": "MEP Infrastructure & White Space Fit-Out Complete Milestone",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C26",
                       "v": "2029-09-24",
                       "t": "s",
                       "raw": "2029-09-24",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D26",
                       "v": "0d",
                       "t": "s",
                       "raw": "0d",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E26",
@@ -19103,14 +19103,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Review Gate",
                       "t": "s",
                       "raw": "Review Gate",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G26",
                       "v": "Any >0d variance triggers ESC-02 within 24h",
                       "t": "s",
                       "raw": "Any >0d variance triggers ESC-02 within 24h",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -19119,28 +19119,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "M6260",
                       "t": "s",
                       "raw": "M6260",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B27",
                       "v": "Cx Level 3 Pre-Functional Static & LOTO Ready Milestone",
                       "t": "s",
                       "raw": "Cx Level 3 Pre-Functional Static & LOTO Ready Milestone",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C27",
                       "v": "2029-10-15",
                       "t": "s",
                       "raw": "2029-10-15",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D27",
                       "v": "0d",
                       "t": "s",
                       "raw": "0d",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E27",
@@ -19154,14 +19154,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Review Gate",
                       "t": "s",
                       "raw": "Review Gate",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G27",
                       "v": "Any >0d variance triggers ESC-02 within 24h",
                       "t": "s",
                       "raw": "Any >0d variance triggers ESC-02 within 24h",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -19170,28 +19170,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "M6370",
                       "t": "s",
                       "raw": "M6370",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B28",
                       "v": "Cx Level 4 Functional Dynamic Performance Passed Milestone",
                       "t": "s",
                       "raw": "Cx Level 4 Functional Dynamic Performance Passed Milestone",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C28",
                       "v": "2029-12-10",
                       "t": "s",
                       "raw": "2029-12-10",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D28",
                       "v": "0d",
                       "t": "s",
                       "raw": "0d",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E28",
@@ -19205,14 +19205,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Review Gate",
                       "t": "s",
                       "raw": "Review Gate",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G28",
                       "v": "Any >0d variance triggers ESC-02 within 24h",
                       "t": "s",
                       "raw": "Any >0d variance triggers ESC-02 within 24h",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -19221,28 +19221,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "M6470",
                       "t": "s",
                       "raw": "M6470",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B29",
                       "v": "Cx Level 5 Integrated Systems Testing (45MW IST) Passed Milestone",
                       "t": "s",
                       "raw": "Cx Level 5 Integrated Systems Testing (45MW IST) Passed Milestone",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C29",
                       "v": "2030-02-25",
                       "t": "s",
                       "raw": "2030-02-25",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D29",
                       "v": "0d",
                       "t": "s",
                       "raw": "0d",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E29",
@@ -19256,14 +19256,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "TR-05 (15%)",
                       "t": "s",
                       "raw": "TR-05 (15%)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G29",
                       "v": "Any >0d variance triggers ESC-02 within 24h",
                       "t": "s",
                       "raw": "Any >0d variance triggers ESC-02 within 24h",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -19272,28 +19272,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "M7060",
                       "t": "s",
                       "raw": "M7060",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B30",
                       "v": "Commercial Operation Date (COD), Handover & Safety File Milestone",
                       "t": "s",
                       "raw": "Commercial Operation Date (COD), Handover & Safety File Milestone",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C30",
                       "v": "2030-05-20",
                       "t": "s",
                       "raw": "2030-05-20",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D30",
                       "v": "0d",
                       "t": "s",
                       "raw": "0d",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E30",
@@ -19307,14 +19307,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "TR-06 (10%)",
                       "t": "s",
                       "raw": "TR-06 (10%)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G30",
                       "v": "Any >0d variance triggers ESC-02 within 24h",
                       "t": "s",
                       "raw": "Any >0d variance triggers ESC-02 within 24h",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ]
                 ]
@@ -19533,42 +19533,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Audit KPI",
                       "t": "s",
                       "raw": "Audit KPI",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "B5",
                       "v": "Live Count / Score",
                       "t": "s",
                       "raw": "Live Count / Score",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "C5",
                       "v": "Total Controls",
                       "t": "s",
                       "raw": "Total Controls",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "D5",
                       "v": "Pass %",
                       "t": "s",
                       "raw": "Pass %",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "E5",
                       "v": "Target Gate",
                       "t": "s",
                       "raw": "Target Gate",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "F5",
                       "v": "Interpretation",
                       "t": "s",
                       "raw": "Interpretation",
-                      "kind": "input"
+                      "kind": "header"
                     }
                   ],
                   [
@@ -19577,7 +19577,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Total Governance Controls",
                       "t": "s",
                       "raw": "Total Governance Controls",
-                      "kind": "input"
+                      "kind": "total"
                     },
                     {
                       "coord": "B6",
@@ -19608,14 +19608,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Pre-NTP (M1000)",
                       "t": "s",
                       "raw": "Pre-NTP (M1000)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F6",
                       "v": "15 core RIBA Stage 0 / Ireland compliance controls",
                       "t": "s",
                       "raw": "15 core RIBA Stage 0 / Ireland compliance controls",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -19624,7 +19624,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Controls Verified PASS",
                       "t": "s",
                       "raw": "Controls Verified PASS",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B7",
@@ -19655,14 +19655,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "100% by M1000",
                       "t": "s",
                       "raw": "100% by M1000",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F7",
                       "v": "Fully codified & evidenced controls",
                       "t": "s",
                       "raw": "Fully codified & evidenced controls",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -19671,7 +19671,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Controls PARTIAL (In Progress)",
                       "t": "s",
                       "raw": "Controls PARTIAL (In Progress)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B8",
@@ -19702,14 +19702,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "0 by M1000",
                       "t": "s",
                       "raw": "0 by M1000",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F8",
                       "v": "Charter drafted; awaiting named FID / CDE integration",
                       "t": "s",
                       "raw": "Charter drafted; awaiting named FID / CDE integration",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -19718,7 +19718,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Controls OPEN (Action Req.)",
                       "t": "s",
                       "raw": "Controls OPEN (Action Req.)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B9",
@@ -19749,14 +19749,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "0 by M1000",
                       "t": "s",
                       "raw": "0 by M1000",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F9",
                       "v": "Requires formal executive signature & COI filing",
                       "t": "s",
                       "raw": "Requires formal executive signature & COI filing",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -19859,42 +19859,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Audit ID",
                       "t": "s",
                       "raw": "Audit ID",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "B12",
                       "v": "Governance Domain",
                       "t": "s",
                       "raw": "Governance Domain",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "C12",
                       "v": "Control Verification Criterion",
                       "t": "s",
                       "raw": "Control Verification Criterion",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "D12",
                       "v": "Documentary Reference",
                       "t": "s",
                       "raw": "Documentary Reference",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "E12",
                       "v": "Audit Status [Input]",
                       "t": "s",
                       "raw": "Audit Status [Input]",
-                      "kind": "input"
+                      "kind": "header"
                     },
                     {
                       "coord": "F12",
                       "v": "Auditor Notes / Remediation",
                       "t": "s",
                       "raw": "Auditor Notes / Remediation",
-                      "kind": "input"
+                      "kind": "header"
                     }
                   ],
                   [
@@ -19903,42 +19903,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "AUD-01",
                       "t": "s",
                       "raw": "AUD-01",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B13",
                       "v": "Legal Mandate",
                       "t": "s",
                       "raw": "Legal Mandate",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C13",
                       "v": "Project Charter & SteerCo ToR formally adopted by SPV Board prior to M1000 NTP.",
                       "t": "s",
                       "raw": "Project Charter & SteerCo ToR formally adopted by SPV Board prior to M1000 NTP.",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D13",
                       "v": "Charter Sec. 1 / Board Min.",
                       "t": "s",
                       "raw": "Charter Sec. 1 / Board Min.",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E13",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F13",
                       "v": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
                       "t": "s",
                       "raw": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -19947,42 +19947,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "AUD-02",
                       "t": "s",
                       "raw": "AUD-02",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B14",
                       "v": "Voting Structure",
                       "t": "s",
                       "raw": "Voting Structure",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C14",
                       "v": "Five voting seats (with Chair Casting Vote & CFO Finance Veto) formally named.",
                       "t": "s",
                       "raw": "Five voting seats (with Chair Casting Vote & CFO Finance Veto) formally named.",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D14",
                       "v": "Charter Sec. 2 / Appointment",
                       "t": "s",
                       "raw": "Charter Sec. 2 / Appointment",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E14",
                       "v": "PARTIAL",
                       "t": "s",
                       "raw": "PARTIAL",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F14",
                       "v": "Confirm named voting appointees / BAC limits at FID",
                       "t": "s",
                       "raw": "Confirm named voting appointees / BAC limits at FID",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -19991,42 +19991,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "AUD-03",
                       "t": "s",
                       "raw": "AUD-03",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B15",
                       "v": "Statutory Appointments",
                       "t": "s",
                       "raw": "Statutory Appointments",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C15",
                       "v": "Written PSDP (Design) & PSCS (Construction) letters executed before design/site start.",
                       "t": "s",
                       "raw": "Written PSDP (Design) & PSCS (Construction) letters executed before design/site start.",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D15",
                       "v": "S.I. No. 291/2013 / HSA AF1",
                       "t": "s",
                       "raw": "S.I. No. 291/2013 / HSA AF1",
-                      "kind": "banner"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E15",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F15",
                       "v": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
                       "t": "s",
                       "raw": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -20035,42 +20035,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "AUD-04",
                       "t": "s",
                       "raw": "AUD-04",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B16",
                       "v": "BCAR Independence",
                       "t": "s",
                       "raw": "BCAR Independence",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C16",
                       "v": "BCAR Design Certifier & Assigned Certifier engaged with direct Board reporting line.",
                       "t": "s",
                       "raw": "BCAR Design Certifier & Assigned Certifier engaged with direct Board reporting line.",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D16",
                       "v": "BCAR 2014 / BCMS Portal",
                       "t": "s",
                       "raw": "BCAR 2014 / BCMS Portal",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E16",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F16",
                       "v": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
                       "t": "s",
                       "raw": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -20079,42 +20079,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "AUD-05",
                       "t": "s",
                       "raw": "AUD-05",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B17",
                       "v": "Non-Override Rule",
                       "t": "s",
                       "raw": "Non-Override Rule",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C17",
                       "v": "Charter binds SteerCo never to override CxA L3-L5, HSA, Part B, EPA, or EirGrid holds.",
                       "t": "s",
                       "raw": "Charter binds SteerCo never to override CxA L3-L5, HSA, Part B, EPA, or EirGrid holds.",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D17",
                       "v": "ToR Clause 2.3",
                       "t": "s",
                       "raw": "ToR Clause 2.3",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E17",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F17",
                       "v": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
                       "t": "s",
                       "raw": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -20123,42 +20123,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "AUD-06",
                       "t": "s",
                       "raw": "AUD-06",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B18",
                       "v": "Conflict Register",
                       "t": "s",
                       "raw": "Conflict Register",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C18",
                       "v": "Annual & pre-meeting Conflict of Interest & Related-Party disclosure log active.",
                       "t": "s",
                       "raw": "Annual & pre-meeting Conflict of Interest & Related-Party disclosure log active.",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D18",
                       "v": "SPV Secretary Register",
                       "t": "s",
                       "raw": "SPV Secretary Register",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E18",
                       "v": "OPEN",
                       "t": "s",
                       "raw": "OPEN",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F18",
                       "v": "Complete Conflict declarations & Appendix C signatures at M1000",
                       "t": "s",
                       "raw": "Complete Conflict declarations & Appendix C signatures at M1000",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -20167,42 +20167,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "AUD-07",
                       "t": "s",
                       "raw": "AUD-07",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B19",
                       "v": "Quorum Thresholds",
                       "t": "s",
                       "raw": "Quorum Thresholds",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C19",
                       "v": "Ordinary (>= 60%) and Supermajority (>= 80% + Chair & CFO) thresholds codified.",
                       "t": "s",
                       "raw": "Ordinary (>= 60%) and Supermajority (>= 80% + Chair & CFO) thresholds codified.",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D19",
                       "v": "ToR Clause 4.1-4.2",
                       "t": "s",
                       "raw": "ToR Clause 4.1-4.2",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E19",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F19",
                       "v": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
                       "t": "s",
                       "raw": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -20211,42 +20211,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "AUD-08",
                       "t": "s",
                       "raw": "AUD-08",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B20",
                       "v": "Written Resolution",
                       "t": "s",
                       "raw": "Written Resolution",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C20",
                       "v": "72-hour Circular Written Resolution (CWR) protocol active for NEC4 EW timebars.",
                       "t": "s",
                       "raw": "72-hour Circular Written Resolution (CWR) protocol active for NEC4 EW timebars.",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D20",
                       "v": "ToR Clause 4.4 / App. B",
                       "t": "s",
                       "raw": "ToR Clause 4.4 / App. B",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E20",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F20",
                       "v": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
                       "t": "s",
                       "raw": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -20255,42 +20255,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "AUD-09",
                       "t": "s",
                       "raw": "AUD-09",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B21",
                       "v": "DoA Thresholds",
                       "t": "s",
                       "raw": "DoA Thresholds",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C21",
                       "v": "Tier 0-3 EUR & float delegation matrix signed and mapped to WBS 1.0-7.0 Cost Accounts.",
                       "t": "s",
                       "raw": "Tier 0-3 EUR & float delegation matrix signed and mapped to WBS 1.0-7.0 Cost Accounts.",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D21",
                       "v": "Workbook Tab 1 / DoA Policy",
                       "t": "s",
                       "raw": "Workbook Tab 1 / DoA Policy",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E21",
                       "v": "PARTIAL",
                       "t": "s",
                       "raw": "PARTIAL",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F21",
                       "v": "Confirm named voting appointees / BAC limits at FID",
                       "t": "s",
                       "raw": "Confirm named voting appointees / BAC limits at FID",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -20299,42 +20299,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "AUD-10",
                       "t": "s",
                       "raw": "AUD-10",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B22",
                       "v": "EVM & XER Sync",
                       "t": "s",
                       "raw": "EVM & XER Sync",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C22",
                       "v": "P6 baseline locked (144 tasks, DCMA-14 6/6) and synced to monthly CPI/SPI cutoff.",
                       "t": "s",
                       "raw": "P6 baseline locked (144 tasks, DCMA-14 6/6) and synced to monthly CPI/SPI cutoff.",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D22",
                       "v": "XER + PreNTP Controls Tab 3",
                       "t": "s",
                       "raw": "XER + PreNTP Controls Tab 3",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E22",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F22",
                       "v": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
                       "t": "s",
                       "raw": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -20343,42 +20343,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "AUD-11",
                       "t": "s",
                       "raw": "AUD-11",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B23",
                       "v": "Escalation SLAs",
                       "t": "s",
                       "raw": "Escalation SLAs",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C23",
                       "v": "24h alert / 48h workshop / 5d SteerCo SLA wired to CPI < 0.92, SPI < 0.90 & RSK >= 20.",
                       "t": "s",
                       "raw": "24h alert / 48h workshop / 5d SteerCo SLA wired to CPI < 0.92, SPI < 0.90 & RSK >= 20.",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D23",
                       "v": "Workbook Tab 3 / ToR Sec. 6",
                       "t": "s",
                       "raw": "Workbook Tab 3 / ToR Sec. 6",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E23",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F23",
                       "v": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
                       "t": "s",
                       "raw": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -20387,42 +20387,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "AUD-12",
                       "t": "s",
                       "raw": "AUD-12",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B24",
                       "v": "Tranche Guardrails",
                       "t": "s",
                       "raw": "Tranche Guardrails",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C24",
                       "v": "TR-01..TR-06 disbursement strictly gated on hard technical & statutory certificates.",
                       "t": "s",
                       "raw": "TR-01..TR-06 disbursement strictly gated on hard technical & statutory certificates.",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D24",
                       "v": "Charter Sheet 3 / ToR Sec. 7",
                       "t": "s",
                       "raw": "Charter Sheet 3 / ToR Sec. 7",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E24",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F24",
                       "v": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
                       "t": "s",
                       "raw": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -20431,42 +20431,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "AUD-13",
                       "t": "s",
                       "raw": "AUD-13",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B25",
                       "v": "NEC4 / FIDIC Clocks",
                       "t": "s",
                       "raw": "NEC4 / FIDIC Clocks",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C25",
                       "v": "Tier-1/2 approval turnarounds fit inside NEC4 Clause 61.4 / FIDIC 28-day notice limits.",
                       "t": "s",
                       "raw": "Tier-1/2 approval turnarounds fit inside NEC4 Clause 61.4 / FIDIC 28-day notice limits.",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D25",
                       "v": "ToR Clause 6.2",
                       "t": "s",
                       "raw": "ToR Clause 6.2",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E25",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F25",
                       "v": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
                       "t": "s",
                       "raw": "Codified in DC45EU_SteerCo_ToR_Escalation_Charter_Rev.001",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -20475,42 +20475,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "AUD-14",
                       "t": "s",
                       "raw": "AUD-14",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B26",
                       "v": "ISO 19650 Archive",
                       "t": "s",
                       "raw": "ISO 19650 Archive",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C26",
                       "v": "Board Packs (T-5d) & signed Minutes (T+2d) stored with S4/A1 Suitability in BIM CDE.",
                       "t": "s",
                       "raw": "Board Packs (T-5d) & signed Minutes (T+2d) stored with S4/A1 Suitability in BIM CDE.",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D26",
                       "v": "BS EN ISO 19650 CDE",
                       "t": "s",
                       "raw": "BS EN ISO 19650 CDE",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E26",
                       "v": "PARTIAL",
                       "t": "s",
                       "raw": "PARTIAL",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F26",
                       "v": "Confirm named voting appointees / BAC limits at FID",
                       "t": "s",
                       "raw": "Confirm named voting appointees / BAC limits at FID",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -20519,42 +20519,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "AUD-15",
                       "t": "s",
                       "raw": "AUD-15",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B27",
                       "v": "Executive Sign-Off",
                       "t": "s",
                       "raw": "Executive Sign-Off",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C27",
                       "v": "Formal signature block executed by Sponsor Chair, CFO, CTO & Authorized Project Dir.",
                       "t": "s",
                       "raw": "Formal signature block executed by Sponsor Chair, CFO, CTO & Authorized Project Dir.",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D27",
                       "v": "ToR Appendix C / Sheet 6",
                       "t": "s",
                       "raw": "ToR Appendix C / Sheet 6",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E27",
                       "v": "OPEN",
                       "t": "s",
                       "raw": "OPEN",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F27",
                       "v": "Complete Conflict declarations & Appendix C signatures at M1000",
                       "t": "s",
                       "raw": "Complete Conflict declarations & Appendix C signatures at M1000",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ]
                 ]
@@ -21270,63 +21270,63 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Criterion ID",
                       "t": "s",
                       "raw": "Criterion ID",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B4",
                       "v": "Due Diligence Factor",
                       "t": "s",
                       "raw": "Due Diligence Factor",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C4",
                       "v": "Weight (%)",
                       "t": "s",
                       "raw": "Weight (%)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D4",
                       "v": "Site A (Input 1-5)",
                       "t": "s",
                       "raw": "Site A (Input 1-5)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E4",
                       "v": "Site B (Input 1-5)",
                       "t": "s",
                       "raw": "Site B (Input 1-5)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F4",
                       "v": "Site C (Input 1-5)",
                       "t": "s",
                       "raw": "Site C (Input 1-5)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G4",
                       "v": "Site A Wtd",
                       "t": "s",
                       "raw": "Site A Wtd",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "H4",
                       "v": "Site B Wtd",
                       "t": "s",
                       "raw": "Site B Wtd",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "I4",
                       "v": "Site C Wtd",
                       "t": "s",
                       "raw": "Site C Wtd",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -21335,14 +21335,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "SIT-01",
                       "t": "s",
                       "raw": "SIT-01",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B5",
                       "v": "110kV Grid Proximity & EirGrid ECP Headroom",
                       "t": "s",
                       "raw": "110kV Grid Proximity & EirGrid ECP Headroom",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C5",
@@ -21403,14 +21403,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "SIT-02",
                       "t": "s",
                       "raw": "SIT-02",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B6",
                       "v": "OPW Flood Immunity (Fluvial / Coastal +20% CC)",
                       "t": "s",
                       "raw": "OPW Flood Immunity (Fluvial / Coastal +20% CC)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C6",
@@ -21471,14 +21471,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "SIT-03",
                       "t": "s",
                       "raw": "SIT-03",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B7",
                       "v": "Geotech Bearing Capacity & Karst / Groundwater",
                       "t": "s",
                       "raw": "Geotech Bearing Capacity & Karst / Groundwater",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C7",
@@ -21539,14 +21539,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "SIT-04",
                       "t": "s",
                       "raw": "SIT-04",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B8",
                       "v": "Zoning, Industrial Buffer & SID Planning Path",
                       "t": "s",
                       "raw": "Zoning, Industrial Buffer & SID Planning Path",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C8",
@@ -21607,14 +21607,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "SIT-05",
                       "t": "s",
                       "raw": "SIT-05",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B9",
                       "v": "Diverse Dark Fibre & Telecom Duct Proximity",
                       "t": "s",
                       "raw": "Diverse Dark Fibre & Telecom Duct Proximity",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C9",
@@ -21675,14 +21675,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "SIT-06",
                       "t": "s",
                       "raw": "SIT-06",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B10",
                       "v": "Acquisition Cost (EUR/Acre) & Ro-Ro Haulage Access",
                       "t": "s",
                       "raw": "Acquisition Cost (EUR/Acre) & Ro-Ro Haulage Access",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C10",
@@ -21743,14 +21743,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "TOTAL",
                       "t": "s",
                       "raw": "TOTAL",
-                      "kind": "input"
+                      "kind": "total"
                     },
                     {
                       "coord": "B11",
                       "v": "Weighted Evaluation Score (Max 5.00)",
                       "t": "s",
                       "raw": "Weighted Evaluation Score (Max 5.00)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C11",
@@ -21880,7 +21880,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "RECOMMENDED AWARD / SITE",
                       "t": "s",
                       "raw": "RECOMMENDED AWARD / SITE",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B13",
@@ -22058,28 +22058,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Metadata Key",
                       "t": "s",
                       "raw": "Metadata Key",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B4",
                       "v": "Value / Rule",
                       "t": "s",
                       "raw": "Value / Rule",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C4",
                       "v": "Linked Reference",
                       "t": "s",
                       "raw": "Linked Reference",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D4",
                       "v": "Verification Status",
                       "t": "s",
                       "raw": "Verification Status",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -22088,28 +22088,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "ISO 19650 Doc ID",
                       "t": "s",
                       "raw": "ISO 19650 Doc ID",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B5",
                       "v": "DC45EU-PM02-DOC3-Rev004",
                       "t": "s",
                       "raw": "DC45EU-PM02-DOC3-Rev004",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C5",
                       "v": "PM-12 CDE Naming",
                       "t": "s",
                       "raw": "PM-12 CDE Naming",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D5",
                       "v": "ACTIVE",
                       "t": "s",
                       "raw": "ACTIVE",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -22118,28 +22118,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Flashcard Module",
                       "t": "s",
                       "raw": "Flashcard Module",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B6",
                       "v": "PM-02: Site Selection Due Diligence & Pre-Feasibility Scoring",
                       "t": "s",
                       "raw": "PM-02: Site Selection Due Diligence & Pre-Feasibility Scoring",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C6",
                       "v": "RIBA Stage 0-1",
                       "t": "s",
                       "raw": "RIBA Stage 0-1",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D6",
                       "v": "ALIGNED",
                       "t": "s",
                       "raw": "ALIGNED",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -22148,28 +22148,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "P6 Gate & WBS",
                       "t": "s",
                       "raw": "P6 Gate & WBS",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B7",
                       "v": "A1020 / M1000 | WBS 1.0-PERM",
                       "t": "s",
                       "raw": "A1020 / M1000 | WBS 1.0-PERM",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C7",
                       "v": "144 Tasks / 213 Links",
                       "t": "s",
                       "raw": "144 Tasks / 213 Links",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D7",
                       "v": "SYNCED",
                       "t": "s",
                       "raw": "SYNCED",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -22178,28 +22178,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Governing Standards",
                       "t": "s",
                       "raw": "Governing Standards",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B8",
                       "v": "EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP",
                       "t": "s",
                       "raw": "EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C8",
                       "v": "Weighted Decision Model",
                       "t": "s",
                       "raw": "Weighted Decision Model",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D8",
                       "v": "ENFORCED",
                       "t": "s",
                       "raw": "ENFORCED",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -22208,28 +22208,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Study Takeaway",
                       "t": "s",
                       "raw": "Study Takeaway",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B9",
                       "v": "Quantify site trade-offs objectively across capex penalties and schedule risk.",
                       "t": "s",
                       "raw": "Quantify site trade-offs objectively across capex penalties and schedule risk.",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C9",
                       "v": "gogo Learning Dashboard",
                       "t": "s",
                       "raw": "gogo Learning Dashboard",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D9",
                       "v": "ACTIVE",
                       "t": "s",
                       "raw": "ACTIVE",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -22238,28 +22238,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Blue Cells Convention",
                       "t": "s",
                       "raw": "Blue Cells Convention",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B10",
                       "v": "All blue-shaded numeric inputs represent editable project parameters",
                       "t": "s",
                       "raw": "All blue-shaded numeric inputs represent editable project parameters",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C10",
                       "v": "Audit Formatting Rule",
                       "t": "s",
                       "raw": "Audit Formatting Rule",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D10",
                       "v": "STANDARD",
                       "t": "s",
                       "raw": "STANDARD",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ]
                 ]
@@ -22449,42 +22449,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Check ID",
                       "t": "s",
                       "raw": "Check ID",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B4",
                       "v": "Domain / Pillar",
                       "t": "s",
                       "raw": "Domain / Pillar",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C4",
                       "v": "Audit Verification Criterion",
                       "t": "s",
                       "raw": "Audit Verification Criterion",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D4",
                       "v": "Evidence / P6 Gate",
                       "t": "s",
                       "raw": "Evidence / P6 Gate",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E4",
                       "v": "Status (PASS/PARTIAL/OPEN)",
                       "t": "s",
                       "raw": "Status (PASS/PARTIAL/OPEN)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F4",
                       "v": "Auditor Sign-Off Notes",
                       "t": "s",
                       "raw": "Auditor Sign-Off Notes",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -22493,42 +22493,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM02-A01",
                       "t": "s",
                       "raw": "PM02-A01",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B5",
                       "v": "Power Proximity",
                       "t": "s",
                       "raw": "Power Proximity",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C5",
                       "v": "Verify formal compliance & documentary sign-off for Power Proximity against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for Power Proximity against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D5",
                       "v": "A1020 / M1000 / WBS 1.0-PERM",
                       "t": "s",
                       "raw": "A1020 / M1000 / WBS 1.0-PERM",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E5",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F5",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -22537,42 +22537,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM02-A02",
                       "t": "s",
                       "raw": "PM02-A02",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B6",
                       "v": "OPW Flood Risk",
                       "t": "s",
                       "raw": "OPW Flood Risk",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C6",
                       "v": "Verify formal compliance & documentary sign-off for OPW Flood Risk against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for OPW Flood Risk against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D6",
                       "v": "A1020 / M1000 / WBS 1.0-PERM",
                       "t": "s",
                       "raw": "A1020 / M1000 / WBS 1.0-PERM",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E6",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F6",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -22581,42 +22581,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM02-A03",
                       "t": "s",
                       "raw": "PM02-A03",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B7",
                       "v": "Geotech / Karst",
                       "t": "s",
                       "raw": "Geotech / Karst",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C7",
                       "v": "Verify formal compliance & documentary sign-off for Geotech / Karst against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for Geotech / Karst against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D7",
                       "v": "A1020 / M1000 / WBS 1.0-PERM",
                       "t": "s",
                       "raw": "A1020 / M1000 / WBS 1.0-PERM",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E7",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F7",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -22625,42 +22625,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM02-A04",
                       "t": "s",
                       "raw": "PM02-A04",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B8",
                       "v": "Fibre Diversity",
                       "t": "s",
                       "raw": "Fibre Diversity",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C8",
                       "v": "Verify formal compliance & documentary sign-off for Fibre Diversity against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for Fibre Diversity against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D8",
                       "v": "A1020 / M1000 / WBS 1.0-PERM",
                       "t": "s",
                       "raw": "A1020 / M1000 / WBS 1.0-PERM",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E8",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F8",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -22669,42 +22669,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM02-A05",
                       "t": "s",
                       "raw": "PM02-A05",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B9",
                       "v": "Zoning / SID",
                       "t": "s",
                       "raw": "Zoning / SID",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C9",
                       "v": "Verify formal compliance & documentary sign-off for Zoning / SID against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for Zoning / SID against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D9",
                       "v": "A1020 / M1000 / WBS 1.0-PERM",
                       "t": "s",
                       "raw": "A1020 / M1000 / WBS 1.0-PERM",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E9",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F9",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -22713,42 +22713,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM02-A06",
                       "t": "s",
                       "raw": "PM02-A06",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B10",
                       "v": "Power Proximity",
                       "t": "s",
                       "raw": "Power Proximity",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C10",
                       "v": "Verify formal compliance & documentary sign-off for Power Proximity against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for Power Proximity against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D10",
                       "v": "A1020 / M1000 / WBS 1.0-PERM",
                       "t": "s",
                       "raw": "A1020 / M1000 / WBS 1.0-PERM",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E10",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F10",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -22757,42 +22757,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM02-A07",
                       "t": "s",
                       "raw": "PM02-A07",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B11",
                       "v": "OPW Flood Risk",
                       "t": "s",
                       "raw": "OPW Flood Risk",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C11",
                       "v": "Verify formal compliance & documentary sign-off for OPW Flood Risk against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for OPW Flood Risk against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D11",
                       "v": "A1020 / M1000 / WBS 1.0-PERM",
                       "t": "s",
                       "raw": "A1020 / M1000 / WBS 1.0-PERM",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E11",
                       "v": "PARTIAL",
                       "t": "s",
                       "raw": "PARTIAL",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F11",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -22801,42 +22801,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM02-A08",
                       "t": "s",
                       "raw": "PM02-A08",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B12",
                       "v": "Geotech / Karst",
                       "t": "s",
                       "raw": "Geotech / Karst",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C12",
                       "v": "Verify formal compliance & documentary sign-off for Geotech / Karst against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for Geotech / Karst against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D12",
                       "v": "A1020 / M1000 / WBS 1.0-PERM",
                       "t": "s",
                       "raw": "A1020 / M1000 / WBS 1.0-PERM",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E12",
                       "v": "PARTIAL",
                       "t": "s",
                       "raw": "PARTIAL",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F12",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -22845,42 +22845,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM02-A09",
                       "t": "s",
                       "raw": "PM02-A09",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B13",
                       "v": "Fibre Diversity",
                       "t": "s",
                       "raw": "Fibre Diversity",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C13",
                       "v": "Verify formal compliance & documentary sign-off for Fibre Diversity against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for Fibre Diversity against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D13",
                       "v": "A1020 / M1000 / WBS 1.0-PERM",
                       "t": "s",
                       "raw": "A1020 / M1000 / WBS 1.0-PERM",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E13",
                       "v": "OPEN",
                       "t": "s",
                       "raw": "OPEN",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F13",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -22889,42 +22889,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM02-A10",
                       "t": "s",
                       "raw": "PM02-A10",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B14",
                       "v": "Zoning / SID",
                       "t": "s",
                       "raw": "Zoning / SID",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C14",
                       "v": "Verify formal compliance & documentary sign-off for Zoning / SID against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for Zoning / SID against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D14",
                       "v": "A1020 / M1000 / WBS 1.0-PERM",
                       "t": "s",
                       "raw": "A1020 / M1000 / WBS 1.0-PERM",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E14",
                       "v": "OPEN",
                       "t": "s",
                       "raw": "OPEN",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F14",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -22977,14 +22977,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "AUDIT KPI",
                       "t": "s",
                       "raw": "AUDIT KPI",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B16",
                       "v": "Total Checks",
                       "t": "s",
                       "raw": "Total Checks",
-                      "kind": "input"
+                      "kind": "total"
                     },
                     {
                       "coord": "C16",
@@ -23029,7 +23029,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PASS Count",
                       "t": "s",
                       "raw": "PASS Count",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C17",
@@ -23074,7 +23074,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "OPEN / PARTIAL",
                       "t": "s",
                       "raw": "OPEN / PARTIAL",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C18",
@@ -23119,7 +23119,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Compliance Rate",
                       "t": "s",
                       "raw": "Compliance Rate",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C19",
@@ -23269,28 +23269,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Metadata Key",
                       "t": "s",
                       "raw": "Metadata Key",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B4",
                       "v": "Value / Rule",
                       "t": "s",
                       "raw": "Value / Rule",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C4",
                       "v": "Linked Reference",
                       "t": "s",
                       "raw": "Linked Reference",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D4",
                       "v": "Verification Status",
                       "t": "s",
                       "raw": "Verification Status",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -23299,28 +23299,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "ISO 19650 Doc ID",
                       "t": "s",
                       "raw": "ISO 19650 Doc ID",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B5",
                       "v": "DC45EU-PM02-DOC4-Rev004",
                       "t": "s",
                       "raw": "DC45EU-PM02-DOC4-Rev004",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C5",
                       "v": "PM-12 CDE Naming",
                       "t": "s",
                       "raw": "PM-12 CDE Naming",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D5",
                       "v": "ACTIVE",
                       "t": "s",
                       "raw": "ACTIVE",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -23329,28 +23329,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Flashcard Module",
                       "t": "s",
                       "raw": "Flashcard Module",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B6",
                       "v": "PM-02: Site Selection Due Diligence & Pre-Feasibility Scoring",
                       "t": "s",
                       "raw": "PM-02: Site Selection Due Diligence & Pre-Feasibility Scoring",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C6",
                       "v": "RIBA Stage 0-1",
                       "t": "s",
                       "raw": "RIBA Stage 0-1",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D6",
                       "v": "ALIGNED",
                       "t": "s",
                       "raw": "ALIGNED",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -23359,28 +23359,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "P6 Gate & WBS",
                       "t": "s",
                       "raw": "P6 Gate & WBS",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B7",
                       "v": "A1020 / M1000 | WBS 1.0-PERM",
                       "t": "s",
                       "raw": "A1020 / M1000 | WBS 1.0-PERM",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C7",
                       "v": "144 Tasks / 213 Links",
                       "t": "s",
                       "raw": "144 Tasks / 213 Links",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D7",
                       "v": "SYNCED",
                       "t": "s",
                       "raw": "SYNCED",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -23389,28 +23389,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Governing Standards",
                       "t": "s",
                       "raw": "Governing Standards",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B8",
                       "v": "EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP",
                       "t": "s",
                       "raw": "EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C8",
                       "v": "Eurocode 7 / OPW Flood Maps",
                       "t": "s",
                       "raw": "Eurocode 7 / OPW Flood Maps",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D8",
                       "v": "ENFORCED",
                       "t": "s",
                       "raw": "ENFORCED",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -23419,28 +23419,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Study Takeaway",
                       "t": "s",
                       "raw": "Study Takeaway",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B9",
                       "v": "Eliminate fatal subsurface, contamination, UXO, or fluvial flood blockers before closing.",
                       "t": "s",
                       "raw": "Eliminate fatal subsurface, contamination, UXO, or fluvial flood blockers before closing.",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C9",
                       "v": "gogo Learning Dashboard",
                       "t": "s",
                       "raw": "gogo Learning Dashboard",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D9",
                       "v": "ACTIVE",
                       "t": "s",
                       "raw": "ACTIVE",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -23449,28 +23449,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Blue Cells Convention",
                       "t": "s",
                       "raw": "Blue Cells Convention",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B10",
                       "v": "All blue-shaded numeric inputs represent editable project parameters",
                       "t": "s",
                       "raw": "All blue-shaded numeric inputs represent editable project parameters",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C10",
                       "v": "Audit Formatting Rule",
                       "t": "s",
                       "raw": "Audit Formatting Rule",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D10",
                       "v": "STANDARD",
                       "t": "s",
                       "raw": "STANDARD",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ]
                 ]
@@ -24476,63 +24476,63 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Scenario ID",
                       "t": "s",
                       "raw": "Scenario ID",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B4",
                       "v": "Stress Case Description",
                       "t": "s",
                       "raw": "Stress Case Description",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C4",
                       "v": "Capex Var (%)",
                       "t": "s",
                       "raw": "Capex Var (%)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D4",
                       "v": "Power Tariff Var (%)",
                       "t": "s",
                       "raw": "Power Tariff Var (%)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E4",
                       "v": "Annual PUE",
                       "t": "s",
                       "raw": "Annual PUE",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F4",
                       "v": "Base NPV (EUR M)",
                       "t": "s",
                       "raw": "Base NPV (EUR M)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "G4",
                       "v": "Adjusted NPV (EUR M)",
                       "t": "s",
                       "raw": "Adjusted NPV (EUR M)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "H4",
                       "v": "Unlevered IRR (%)",
                       "t": "s",
                       "raw": "Unlevered IRR (%)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "I4",
                       "v": "FID Pass (>=8.5%)",
                       "t": "s",
                       "raw": "FID Pass (>=8.5%)",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -24541,14 +24541,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "SEN-01",
                       "t": "s",
                       "raw": "SEN-01",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B5",
                       "v": "Base Investment Case (PUE 1.25 / Approved BAC)",
                       "t": "s",
                       "raw": "Base Investment Case (PUE 1.25 / Approved BAC)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C5",
@@ -24609,14 +24609,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "SEN-02",
                       "t": "s",
                       "raw": "SEN-02",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B6",
                       "v": "Capex Overrun +10% (HV / MEP Inflation)",
                       "t": "s",
                       "raw": "Capex Overrun +10% (HV / MEP Inflation)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C6",
@@ -24677,14 +24677,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "SEN-03",
                       "t": "s",
                       "raw": "SEN-03",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B7",
                       "v": "Irish Grid / PPA Power Shock +15%",
                       "t": "s",
                       "raw": "Irish Grid / PPA Power Shock +15%",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C7",
@@ -24745,14 +24745,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "SEN-04",
                       "t": "s",
                       "raw": "SEN-04",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B8",
                       "v": "Design PUE Drift to 1.35 (Heat Reuse Offline)",
                       "t": "s",
                       "raw": "Design PUE Drift to 1.35 (Heat Reuse Offline)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C8",
@@ -24813,14 +24813,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "SEN-05",
                       "t": "s",
                       "raw": "SEN-05",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B9",
                       "v": "Combined Severe Downside (+10% Capex & +10% Power)",
                       "t": "s",
                       "raw": "Combined Severe Downside (+10% Capex & +10% Power)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C9",
@@ -24881,14 +24881,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "SEN-06",
                       "t": "s",
                       "raw": "SEN-06",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B10",
                       "v": "Upside Optimization (-5% Capex & Free-Cooling 1.20)",
                       "t": "s",
                       "raw": "Upside Optimization (-5% Capex & Free-Cooling 1.20)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C10",
@@ -24949,14 +24949,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "STATS",
                       "t": "s",
                       "raw": "STATS",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B11",
                       "v": "Scenario Stress Range Summary",
                       "t": "s",
                       "raw": "Scenario Stress Range Summary",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C11",
@@ -25129,28 +25129,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Metadata Key",
                       "t": "s",
                       "raw": "Metadata Key",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B4",
                       "v": "Value / Rule",
                       "t": "s",
                       "raw": "Value / Rule",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C4",
                       "v": "Linked Reference",
                       "t": "s",
                       "raw": "Linked Reference",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D4",
                       "v": "Verification Status",
                       "t": "s",
                       "raw": "Verification Status",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -25159,28 +25159,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "ISO 19650 Doc ID",
                       "t": "s",
                       "raw": "ISO 19650 Doc ID",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B5",
                       "v": "DC45EU-PM04-DOC4-Rev004",
                       "t": "s",
                       "raw": "DC45EU-PM04-DOC4-Rev004",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C5",
                       "v": "PM-12 CDE Naming",
                       "t": "s",
                       "raw": "PM-12 CDE Naming",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D5",
                       "v": "ACTIVE",
                       "t": "s",
                       "raw": "ACTIVE",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -25189,28 +25189,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Flashcard Module",
                       "t": "s",
                       "raw": "Flashcard Module",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B6",
                       "v": "PM-04: EUR Capex Modelling, 10-Yr DCF, NPV/IRR & Sensitivity",
                       "t": "s",
                       "raw": "PM-04: EUR Capex Modelling, 10-Yr DCF, NPV/IRR & Sensitivity",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C6",
                       "v": "RIBA Stage 1",
                       "t": "s",
                       "raw": "RIBA Stage 1",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D6",
                       "v": "ALIGNED",
                       "t": "s",
                       "raw": "ALIGNED",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -25219,28 +25219,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "P6 Gate & WBS",
                       "t": "s",
                       "raw": "P6 Gate & WBS",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B7",
                       "v": "M1000 FID | WBS 1.0-7.0",
                       "t": "s",
                       "raw": "M1000 FID | WBS 1.0-7.0",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C7",
                       "v": "144 Tasks / 213 Links",
                       "t": "s",
                       "raw": "144 Tasks / 213 Links",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D7",
                       "v": "SYNCED",
                       "t": "s",
                       "raw": "SYNCED",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -25249,28 +25249,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Governing Standards",
                       "t": "s",
                       "raw": "Governing Standards",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B8",
                       "v": "RICS NRM1, Institutional EUR DCF (WACC 8.5%, CIT 12.5%)",
                       "t": "s",
                       "raw": "RICS NRM1, Institutional EUR DCF (WACC 8.5%, CIT 12.5%)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C8",
                       "v": "IC Investment Stress Test",
                       "t": "s",
                       "raw": "IC Investment Stress Test",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D8",
                       "v": "ENFORCED",
                       "t": "s",
                       "raw": "ENFORCED",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -25279,28 +25279,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Study Takeaway",
                       "t": "s",
                       "raw": "Study Takeaway",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B9",
                       "v": "Quantify IRR resilience against construction inflation, grid delays, and energy spikes.",
                       "t": "s",
                       "raw": "Quantify IRR resilience against construction inflation, grid delays, and energy spikes.",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C9",
                       "v": "gogo Learning Dashboard",
                       "t": "s",
                       "raw": "gogo Learning Dashboard",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D9",
                       "v": "ACTIVE",
                       "t": "s",
                       "raw": "ACTIVE",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -25309,28 +25309,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Blue Cells Convention",
                       "t": "s",
                       "raw": "Blue Cells Convention",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B10",
                       "v": "All blue-shaded numeric inputs represent editable project parameters",
                       "t": "s",
                       "raw": "All blue-shaded numeric inputs represent editable project parameters",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C10",
                       "v": "Audit Formatting Rule",
                       "t": "s",
                       "raw": "Audit Formatting Rule",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D10",
                       "v": "STANDARD",
                       "t": "s",
                       "raw": "STANDARD",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ]
                 ]
@@ -25973,42 +25973,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Check ID",
                       "t": "s",
                       "raw": "Check ID",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B4",
                       "v": "Domain / Pillar",
                       "t": "s",
                       "raw": "Domain / Pillar",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C4",
                       "v": "Audit Verification Criterion",
                       "t": "s",
                       "raw": "Audit Verification Criterion",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D4",
                       "v": "Evidence / P6 Gate",
                       "t": "s",
                       "raw": "Evidence / P6 Gate",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E4",
                       "v": "Status (PASS/PARTIAL/OPEN)",
                       "t": "s",
                       "raw": "Status (PASS/PARTIAL/OPEN)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F4",
                       "v": "Auditor Sign-Off Notes",
                       "t": "s",
                       "raw": "Auditor Sign-Off Notes",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -26017,42 +26017,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM05-A01",
                       "t": "s",
                       "raw": "PM05-A01",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B5",
                       "v": "LNTP",
                       "t": "s",
                       "raw": "LNTP",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C5",
                       "v": "Verify formal compliance & documentary sign-off for LNTP against Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist (RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for LNTP against Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist (RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06).",
-                      "kind": "header"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D5",
                       "v": "M1000 -> M7060 / All WBS",
                       "t": "s",
                       "raw": "M1000 -> M7060 / All WBS",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E5",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F5",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -26061,42 +26061,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM05-A02",
                       "t": "s",
                       "raw": "PM05-A02",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B6",
                       "v": "FNTP",
                       "t": "s",
                       "raw": "FNTP",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C6",
                       "v": "Verify formal compliance & documentary sign-off for FNTP against Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist (RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for FNTP against Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist (RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06).",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D6",
                       "v": "M1000 -> M7060 / All WBS",
                       "t": "s",
                       "raw": "M1000 -> M7060 / All WBS",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E6",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F6",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -26105,42 +26105,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM05-A03",
                       "t": "s",
                       "raw": "PM05-A03",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B7",
                       "v": "TR-01..TR-06",
                       "t": "s",
                       "raw": "TR-01..TR-06",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C7",
                       "v": "Verify formal compliance & documentary sign-off for TR-01..TR-06 against Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist (RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for TR-01..TR-06 against Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist (RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06).",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D7",
                       "v": "M1000 -> M7060 / All WBS",
                       "t": "s",
                       "raw": "M1000 -> M7060 / All WBS",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E7",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F7",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -26149,42 +26149,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM05-A04",
                       "t": "s",
                       "raw": "PM05-A04",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B8",
                       "v": "Gate Freeze",
                       "t": "s",
                       "raw": "Gate Freeze",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C8",
                       "v": "Verify formal compliance & documentary sign-off for Gate Freeze against Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist (RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for Gate Freeze against Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist (RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06).",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D8",
                       "v": "M1000 -> M7060 / All WBS",
                       "t": "s",
                       "raw": "M1000 -> M7060 / All WBS",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E8",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F8",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -26193,42 +26193,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM05-A05",
                       "t": "s",
                       "raw": "PM05-A05",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B9",
                       "v": "FID Dossier",
                       "t": "s",
                       "raw": "FID Dossier",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C9",
                       "v": "Verify formal compliance & documentary sign-off for FID Dossier against Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist (RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for FID Dossier against Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist (RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06).",
-                      "kind": "header"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D9",
                       "v": "M1000 -> M7060 / All WBS",
                       "t": "s",
                       "raw": "M1000 -> M7060 / All WBS",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E9",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F9",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -26237,42 +26237,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM05-A06",
                       "t": "s",
                       "raw": "PM05-A06",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B10",
                       "v": "LNTP",
                       "t": "s",
                       "raw": "LNTP",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C10",
                       "v": "Verify formal compliance & documentary sign-off for LNTP against Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist (RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for LNTP against Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist (RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06).",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D10",
                       "v": "M1000 -> M7060 / All WBS",
                       "t": "s",
                       "raw": "M1000 -> M7060 / All WBS",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E10",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F10",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -26281,42 +26281,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM05-A07",
                       "t": "s",
                       "raw": "PM05-A07",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B11",
                       "v": "FNTP",
                       "t": "s",
                       "raw": "FNTP",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C11",
                       "v": "Verify formal compliance & documentary sign-off for FNTP against Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist (RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for FNTP against Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist (RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06).",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D11",
                       "v": "M1000 -> M7060 / All WBS",
                       "t": "s",
                       "raw": "M1000 -> M7060 / All WBS",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E11",
                       "v": "PARTIAL",
                       "t": "s",
                       "raw": "PARTIAL",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F11",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -26325,42 +26325,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM05-A08",
                       "t": "s",
                       "raw": "PM05-A08",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B12",
                       "v": "TR-01..TR-06",
                       "t": "s",
                       "raw": "TR-01..TR-06",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C12",
                       "v": "Verify formal compliance & documentary sign-off for TR-01..TR-06 against Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist (RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for TR-01..TR-06 against Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist (RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06).",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D12",
                       "v": "M1000 -> M7060 / All WBS",
                       "t": "s",
                       "raw": "M1000 -> M7060 / All WBS",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E12",
                       "v": "PARTIAL",
                       "t": "s",
                       "raw": "PARTIAL",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F12",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -26369,42 +26369,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM05-A09",
                       "t": "s",
                       "raw": "PM05-A09",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B13",
                       "v": "Gate Freeze",
                       "t": "s",
                       "raw": "Gate Freeze",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C13",
                       "v": "Verify formal compliance & documentary sign-off for Gate Freeze against Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist (RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for Gate Freeze against Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist (RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06).",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D13",
                       "v": "M1000 -> M7060 / All WBS",
                       "t": "s",
                       "raw": "M1000 -> M7060 / All WBS",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E13",
                       "v": "OPEN",
                       "t": "s",
                       "raw": "OPEN",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F13",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -26413,42 +26413,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM05-A10",
                       "t": "s",
                       "raw": "PM05-A10",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B14",
                       "v": "FID Dossier",
                       "t": "s",
                       "raw": "FID Dossier",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C14",
                       "v": "Verify formal compliance & documentary sign-off for FID Dossier against Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist (RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for FID Dossier against Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist (RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06).",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D14",
                       "v": "M1000 -> M7060 / All WBS",
                       "t": "s",
                       "raw": "M1000 -> M7060 / All WBS",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E14",
                       "v": "OPEN",
                       "t": "s",
                       "raw": "OPEN",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F14",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -26501,14 +26501,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "AUDIT KPI",
                       "t": "s",
                       "raw": "AUDIT KPI",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B16",
                       "v": "Total Checks",
                       "t": "s",
                       "raw": "Total Checks",
-                      "kind": "input"
+                      "kind": "total"
                     },
                     {
                       "coord": "C16",
@@ -26553,7 +26553,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PASS Count",
                       "t": "s",
                       "raw": "PASS Count",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C17",
@@ -26598,7 +26598,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "OPEN / PARTIAL",
                       "t": "s",
                       "raw": "OPEN / PARTIAL",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C18",
@@ -26643,7 +26643,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Compliance Rate",
                       "t": "s",
                       "raw": "Compliance Rate",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C19",
@@ -26793,28 +26793,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Metadata Key",
                       "t": "s",
                       "raw": "Metadata Key",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B4",
                       "v": "Value / Rule",
                       "t": "s",
                       "raw": "Value / Rule",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C4",
                       "v": "Linked Reference",
                       "t": "s",
                       "raw": "Linked Reference",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D4",
                       "v": "Verification Status",
                       "t": "s",
                       "raw": "Verification Status",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -26823,28 +26823,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "ISO 19650 Doc ID",
                       "t": "s",
                       "raw": "ISO 19650 Doc ID",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B5",
                       "v": "DC45EU-PM05-DOC4-Rev004",
                       "t": "s",
                       "raw": "DC45EU-PM05-DOC4-Rev004",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C5",
                       "v": "PM-12 CDE Naming",
                       "t": "s",
                       "raw": "PM-12 CDE Naming",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D5",
                       "v": "ACTIVE",
                       "t": "s",
                       "raw": "ACTIVE",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -26853,28 +26853,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Flashcard Module",
                       "t": "s",
                       "raw": "Flashcard Module",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B6",
                       "v": "PM-05: RIBA 0-7 Stage-Gate Framework & Pre-NTP FID Package",
                       "t": "s",
                       "raw": "PM-05: RIBA 0-7 Stage-Gate Framework & Pre-NTP FID Package",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C6",
                       "v": "RIBA Stages 0-7",
                       "t": "s",
                       "raw": "RIBA Stages 0-7",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D6",
                       "v": "ALIGNED",
                       "t": "s",
                       "raw": "ALIGNED",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -26883,28 +26883,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "P6 Gate & WBS",
                       "t": "s",
                       "raw": "P6 Gate & WBS",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B7",
                       "v": "M1000 -> M7060 | All WBS",
                       "t": "s",
                       "raw": "M1000 -> M7060 | All WBS",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C7",
                       "v": "144 Tasks / 213 Links",
                       "t": "s",
                       "raw": "144 Tasks / 213 Links",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D7",
                       "v": "SYNCED",
                       "t": "s",
                       "raw": "SYNCED",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -26913,28 +26913,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Governing Standards",
                       "t": "s",
                       "raw": "Governing Standards",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B8",
                       "v": "RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06",
                       "t": "s",
                       "raw": "RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C8",
                       "v": "Gate Review Governance",
                       "t": "s",
                       "raw": "Gate Review Governance",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D8",
                       "v": "ENFORCED",
                       "t": "s",
                       "raw": "ENFORCED",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -26943,28 +26943,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Study Takeaway",
                       "t": "s",
                       "raw": "Study Takeaway",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B9",
                       "v": "Verify design maturity, permit status, and funded contingency before unlocking next tranche.",
                       "t": "s",
                       "raw": "Verify design maturity, permit status, and funded contingency before unlocking next tranche.",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C9",
                       "v": "gogo Learning Dashboard",
                       "t": "s",
                       "raw": "gogo Learning Dashboard",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D9",
                       "v": "ACTIVE",
                       "t": "s",
                       "raw": "ACTIVE",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -26973,28 +26973,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Blue Cells Convention",
                       "t": "s",
                       "raw": "Blue Cells Convention",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B10",
                       "v": "All blue-shaded numeric inputs represent editable project parameters",
                       "t": "s",
                       "raw": "All blue-shaded numeric inputs represent editable project parameters",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C10",
                       "v": "Audit Formatting Rule",
                       "t": "s",
                       "raw": "Audit Formatting Rule",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D10",
                       "v": "STANDARD",
                       "t": "s",
                       "raw": "STANDARD",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ]
                 ]
@@ -27668,42 +27668,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Check ID",
                       "t": "s",
                       "raw": "Check ID",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B4",
                       "v": "Domain / Pillar",
                       "t": "s",
                       "raw": "Domain / Pillar",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C4",
                       "v": "Audit Verification Criterion",
                       "t": "s",
                       "raw": "Audit Verification Criterion",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D4",
                       "v": "Evidence / P6 Gate",
                       "t": "s",
                       "raw": "Evidence / P6 Gate",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E4",
                       "v": "Status (PASS/PARTIAL/OPEN)",
                       "t": "s",
                       "raw": "Status (PASS/PARTIAL/OPEN)",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F4",
                       "v": "Auditor Sign-Off Notes",
                       "t": "s",
                       "raw": "Auditor Sign-Off Notes",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -27712,42 +27712,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM06-A01",
                       "t": "s",
                       "raw": "PM06-A01",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B5",
                       "v": "Local Authority / ABP",
                       "t": "s",
                       "raw": "Local Authority / ABP",
-                      "kind": "header"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C5",
                       "v": "Verify formal compliance & documentary sign-off for Local Authority / ABP against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for Local Authority / ABP against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
-                      "kind": "header"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D5",
                       "v": "M1000 / M1090 / WBS 1.0 & 7.0",
                       "t": "s",
                       "raw": "M1000 / M1090 / WBS 1.0 & 7.0",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E5",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F5",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -27756,42 +27756,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM06-A02",
                       "t": "s",
                       "raw": "PM06-A02",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B6",
                       "v": "EPA IEL",
                       "t": "s",
                       "raw": "EPA IEL",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C6",
                       "v": "Verify formal compliance & documentary sign-off for EPA IEL against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for EPA IEL against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D6",
                       "v": "M1000 / M1090 / WBS 1.0 & 7.0",
                       "t": "s",
                       "raw": "M1000 / M1090 / WBS 1.0 & 7.0",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E6",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F6",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -27800,42 +27800,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM06-A03",
                       "t": "s",
                       "raw": "PM06-A03",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B7",
                       "v": "EirGrid / CRU",
                       "t": "s",
                       "raw": "EirGrid / CRU",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C7",
                       "v": "Verify formal compliance & documentary sign-off for EirGrid / CRU against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for EirGrid / CRU against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D7",
                       "v": "M1000 / M1090 / WBS 1.0 & 7.0",
                       "t": "s",
                       "raw": "M1000 / M1090 / WBS 1.0 & 7.0",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E7",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F7",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -27844,42 +27844,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM06-A04",
                       "t": "s",
                       "raw": "PM06-A04",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B8",
                       "v": "BCMS / Fire Officer",
                       "t": "s",
                       "raw": "BCMS / Fire Officer",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C8",
                       "v": "Verify formal compliance & documentary sign-off for BCMS / Fire Officer against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for BCMS / Fire Officer against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D8",
                       "v": "M1000 / M1090 / WBS 1.0 & 7.0",
                       "t": "s",
                       "raw": "M1000 / M1090 / WBS 1.0 & 7.0",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E8",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F8",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -27888,42 +27888,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM06-A05",
                       "t": "s",
                       "raw": "PM06-A05",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B9",
                       "v": "Anchor Tenant",
                       "t": "s",
                       "raw": "Anchor Tenant",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C9",
                       "v": "Verify formal compliance & documentary sign-off for Anchor Tenant against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for Anchor Tenant against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D9",
                       "v": "M1000 / M1090 / WBS 1.0 & 7.0",
                       "t": "s",
                       "raw": "M1000 / M1090 / WBS 1.0 & 7.0",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E9",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F9",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -27932,42 +27932,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM06-A06",
                       "t": "s",
                       "raw": "PM06-A06",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B10",
                       "v": "Local Authority / ABP",
                       "t": "s",
                       "raw": "Local Authority / ABP",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C10",
                       "v": "Verify formal compliance & documentary sign-off for Local Authority / ABP against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for Local Authority / ABP against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D10",
                       "v": "M1000 / M1090 / WBS 1.0 & 7.0",
                       "t": "s",
                       "raw": "M1000 / M1090 / WBS 1.0 & 7.0",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E10",
                       "v": "PASS",
                       "t": "s",
                       "raw": "PASS",
-                      "kind": "input"
+                      "kind": "pass"
                     },
                     {
                       "coord": "F10",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -27976,42 +27976,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM06-A07",
                       "t": "s",
                       "raw": "PM06-A07",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B11",
                       "v": "EPA IEL",
                       "t": "s",
                       "raw": "EPA IEL",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C11",
                       "v": "Verify formal compliance & documentary sign-off for EPA IEL against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for EPA IEL against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D11",
                       "v": "M1000 / M1090 / WBS 1.0 & 7.0",
                       "t": "s",
                       "raw": "M1000 / M1090 / WBS 1.0 & 7.0",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E11",
                       "v": "PARTIAL",
                       "t": "s",
                       "raw": "PARTIAL",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F11",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -28020,42 +28020,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM06-A08",
                       "t": "s",
                       "raw": "PM06-A08",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B12",
                       "v": "EirGrid / CRU",
                       "t": "s",
                       "raw": "EirGrid / CRU",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C12",
                       "v": "Verify formal compliance & documentary sign-off for EirGrid / CRU against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for EirGrid / CRU against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D12",
                       "v": "M1000 / M1090 / WBS 1.0 & 7.0",
                       "t": "s",
                       "raw": "M1000 / M1090 / WBS 1.0 & 7.0",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E12",
                       "v": "PARTIAL",
                       "t": "s",
                       "raw": "PARTIAL",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F12",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -28064,42 +28064,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM06-A09",
                       "t": "s",
                       "raw": "PM06-A09",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B13",
                       "v": "BCMS / Fire Officer",
                       "t": "s",
                       "raw": "BCMS / Fire Officer",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C13",
                       "v": "Verify formal compliance & documentary sign-off for BCMS / Fire Officer against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for BCMS / Fire Officer against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D13",
                       "v": "M1000 / M1090 / WBS 1.0 & 7.0",
                       "t": "s",
                       "raw": "M1000 / M1090 / WBS 1.0 & 7.0",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E13",
                       "v": "OPEN",
                       "t": "s",
                       "raw": "OPEN",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F13",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -28108,42 +28108,42 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PM06-A10",
                       "t": "s",
                       "raw": "PM06-A10",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B14",
                       "v": "Anchor Tenant",
                       "t": "s",
                       "raw": "Anchor Tenant",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C14",
                       "v": "Verify formal compliance & documentary sign-off for Anchor Tenant against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
                       "t": "s",
                       "raw": "Verify formal compliance & documentary sign-off for Anchor Tenant against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D14",
                       "v": "M1000 / M1090 / WBS 1.0 & 7.0",
                       "t": "s",
                       "raw": "M1000 / M1090 / WBS 1.0 & 7.0",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "E14",
                       "v": "OPEN",
                       "t": "s",
                       "raw": "OPEN",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "F14",
                       "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
                       "raw": "Ready for Assigned Certifier / CxA verification",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -28196,14 +28196,14 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "AUDIT KPI",
                       "t": "s",
                       "raw": "AUDIT KPI",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B16",
                       "v": "Total Checks",
                       "t": "s",
                       "raw": "Total Checks",
-                      "kind": "input"
+                      "kind": "total"
                     },
                     {
                       "coord": "C16",
@@ -28248,7 +28248,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "PASS Count",
                       "t": "s",
                       "raw": "PASS Count",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C17",
@@ -28293,7 +28293,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "OPEN / PARTIAL",
                       "t": "s",
                       "raw": "OPEN / PARTIAL",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C18",
@@ -28338,7 +28338,7 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Compliance Rate",
                       "t": "s",
                       "raw": "Compliance Rate",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C19",
@@ -28488,28 +28488,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Metadata Key",
                       "t": "s",
                       "raw": "Metadata Key",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B4",
                       "v": "Value / Rule",
                       "t": "s",
                       "raw": "Value / Rule",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C4",
                       "v": "Linked Reference",
                       "t": "s",
                       "raw": "Linked Reference",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D4",
                       "v": "Verification Status",
                       "t": "s",
                       "raw": "Verification Status",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -28518,28 +28518,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "ISO 19650 Doc ID",
                       "t": "s",
                       "raw": "ISO 19650 Doc ID",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B5",
                       "v": "DC45EU-PM06-DOC4-Rev004",
                       "t": "s",
                       "raw": "DC45EU-PM06-DOC4-Rev004",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C5",
                       "v": "PM-12 CDE Naming",
                       "t": "s",
                       "raw": "PM-12 CDE Naming",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D5",
                       "v": "ACTIVE",
                       "t": "s",
                       "raw": "ACTIVE",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -28548,28 +28548,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Flashcard Module",
                       "t": "s",
                       "raw": "Flashcard Module",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B6",
                       "v": "PM-06: Stakeholder Register, Engagement & Escalation Plan",
                       "t": "s",
                       "raw": "PM-06: Stakeholder Register, Engagement & Escalation Plan",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C6",
                       "v": "RIBA Stage 1-7",
                       "t": "s",
                       "raw": "RIBA Stage 1-7",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D6",
                       "v": "ALIGNED",
                       "t": "s",
                       "raw": "ALIGNED",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -28578,28 +28578,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "P6 Gate & WBS",
                       "t": "s",
                       "raw": "P6 Gate & WBS",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B7",
                       "v": "M1000 / M1090 | WBS 1.0 & 7.0",
                       "t": "s",
                       "raw": "M1000 / M1090 | WBS 1.0 & 7.0",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C7",
                       "v": "144 Tasks / 213 Links",
                       "t": "s",
                       "raw": "144 Tasks / 213 Links",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D7",
                       "v": "SYNCED",
                       "t": "s",
                       "raw": "SYNCED",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -28608,28 +28608,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Governing Standards",
                       "t": "s",
                       "raw": "Governing Standards",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B8",
                       "v": "ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA",
                       "t": "s",
                       "raw": "ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C8",
                       "v": "Decision Turnaround SLA",
                       "t": "s",
                       "raw": "Decision Turnaround SLA",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D8",
                       "v": "ENFORCED",
                       "t": "s",
                       "raw": "ENFORCED",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -28638,28 +28638,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Study Takeaway",
                       "t": "s",
                       "raw": "Study Takeaway",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B9",
                       "v": "Enforce time-boxed escalation paths so critical-path blockers never stall in committees.",
                       "t": "s",
                       "raw": "Enforce time-boxed escalation paths so critical-path blockers never stall in committees.",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C9",
                       "v": "gogo Learning Dashboard",
                       "t": "s",
                       "raw": "gogo Learning Dashboard",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D9",
                       "v": "ACTIVE",
                       "t": "s",
                       "raw": "ACTIVE",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ],
                   [
@@ -28668,28 +28668,28 @@ window.PHASE1_PORTAL_DATA = {
                       "v": "Blue Cells Convention",
                       "t": "s",
                       "raw": "Blue Cells Convention",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "B10",
                       "v": "All blue-shaded numeric inputs represent editable project parameters",
                       "t": "s",
                       "raw": "All blue-shaded numeric inputs represent editable project parameters",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "C10",
                       "v": "Audit Formatting Rule",
                       "t": "s",
                       "raw": "Audit Formatting Rule",
-                      "kind": "input"
+                      "kind": "plain"
                     },
                     {
                       "coord": "D10",
                       "v": "STANDARD",
                       "t": "s",
                       "raw": "STANDARD",
-                      "kind": "input"
+                      "kind": "plain"
                     }
                   ]
                 ]

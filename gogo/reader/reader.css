@@ -692,21 +692,23 @@ body {
 /* Inline Acronym Tooltip Highlights */
 .abbr-term {
   display: inline;
-  padding: 0 2px;
+  padding: 0 1px;
   margin: 0;
   border: none;
-  border-bottom: 1.5px dashed #0b57d0;
-  background: rgba(11, 87, 208, 0.05);
+  border-bottom: 1px dotted #94a3b8;
+  background: transparent;
   color: inherit;
   font: inherit;
-  font-weight: 700;
-  border-radius: 3px;
+  font-weight: 600;
+  border-radius: 2px;
   cursor: help;
+  transition: background 0.15s ease, border-color 0.15s ease;
 }
 
 .abbr-term:hover,
 .abbr-term:focus-visible {
-  background: #d3e3fd;
+  background: #e2e8f0;
+  border-bottom-color: #2563eb;
   outline: none;
 }
 
@@ -1038,83 +1040,127 @@ body {
 
 .table-scroll {
   overflow-x: auto;
-  border: 1px solid var(--md-outline-variant);
-  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   margin: 10px 0 18px;
 }
 
 table.detail-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 12.5px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #1e293b;
+  font-variant-numeric: tabular-nums;
 }
 
 table.detail-table td,
 table.detail-table th {
-  border: 1px solid #d8e0ec;
-  padding: 7px 10px;
+  border: 1px solid #e2e8f0;
+  padding: 8px 12px;
   vertical-align: top;
   text-align: left;
-  color: var(--md-text);
+  color: #1e293b;
 }
 
-table.detail-table tr:nth-child(even) td.cell-plain { background: #fafcff; }
+/* Base zebra striping & row hover */
+table.detail-table tr:nth-child(even) td.cell-plain,
+table.detail-table tr:nth-child(even) td.cell-input {
+  background: #f8fafc;
+}
 
+table.detail-table tr:hover td.cell-plain,
+table.detail-table tr:hover td.cell-input {
+  background: #f1f5f9;
+}
+
+/* Master Sheet Banner */
 table.detail-table tr td.cell-banner,
 table.detail-table tr th {
-  background: var(--md-navy);
+  background: #0f172a;
   color: #ffffff;
   font-weight: 800;
-  font-size: 13.5px;
+  font-size: 13px;
+  padding: 11px 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: 1px solid #1e293b;
+}
+
+/* Column Headers (across all sections) */
+table.detail-table tr td.cell-header {
+  background: #1e293b;
+  color: #f8fafc;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 9px 12px;
+  letter-spacing: 0.03em;
+  border: 1px solid #334155;
+}
+
+/* Section Divider Banners */
+table.detail-table tr td.cell-section {
+  background: #f8fafc;
+  color: #0f172a;
+  font-weight: 800;
+  font-size: 13px;
   padding: 10px 14px;
   letter-spacing: 0.02em;
+  border-top: 2px solid #cbd5e1;
+  border-bottom: 1px solid #e2e8f0;
+  border-left: 4px solid #2563eb;
 }
 
-table.detail-table tr td.cell-header {
-  background: var(--md-slate);
-  color: #ffffff;
-  font-weight: 700;
-}
-
-table.detail-table tr td.cell-section {
-  background: #d9e2ec;
-  color: var(--md-navy);
-  font-weight: 800;
-}
-
+/* Data Cells - Clean institutional slate text, NO electric blue */
+table.detail-table tr td.cell-plain,
 table.detail-table tr td.cell-input {
-  background: #eff6ff;
-  color: #1d4ed8;
+  color: #1e293b;
+  font-weight: 400;
+}
+
+/* First Column Key / Tier / Identifier emphasis */
+table.detail-table tr td:first-child.cell-input,
+table.detail-table tr td:first-child.cell-plain {
   font-weight: 600;
+  color: #0f172a;
 }
 
+/* Totals Row */
 table.detail-table tr td.cell-total {
-  background: #e2e8f0;
-  color: var(--md-navy);
-  font-weight: 800;
+  background: #f1f5f9;
+  color: #0f172a;
+  font-weight: 700;
+  border-top: 2px solid #cbd5e1;
+  border-bottom: 2px double #94a3b8;
 }
 
+/* Semantic Status Cells */
 table.detail-table tr td.cell-alert {
-  background: #fee2e2;
+  background: #fef2f2;
   color: #991b1b;
   font-weight: 600;
+  border-left: 3px solid #ef4444;
 }
 
 table.detail-table tr td.cell-pass {
-  background: #dcfce7;
+  background: #f0fdf4;
   color: #166534;
-  font-weight: 700;
+  font-weight: 600;
+  border-left: 3px solid #22c55e;
 }
 
 table.detail-table tr td.cell-warn {
-  background: #fef9c3;
-  color: #713f12;
-  font-weight: 700;
+  background: #fffbeb;
+  color: #92400e;
+  font-weight: 600;
+  border-left: 3px solid #f59e0b;
 }
 
 table.detail-table td.is-sandbox-recalc {
-  box-shadow: inset 3px 0 0 #0b57d0;
-  background-color: #eef5ff;
+  box-shadow: inset 3px 0 0 #2563eb;
+  background-color: #eff6ff;
 }
 
 .sandbox-cell-input {
