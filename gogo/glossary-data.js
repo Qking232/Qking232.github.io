@@ -39,7 +39,7 @@ const ABBREVIATIONS = [
   { abbr: 'OPR', full: 'Owner\'s Project Requirements', cat: 'PM & Controls', desc: 'Foundational Owner brief defining IT load, availability class, PUE, maintainability, and operational expectations (`ORD`).', where: 'PM-03, PM-25' },
   { abbr: 'P50 / P80', full: '50th / 80th Percentile Confidence Forecast', cat: 'PM & Controls', desc: 'Monte Carlo QRA output levels representing median (`P50`) and conservative institutional reserve (`P80`) cost/schedule bounds.', where: 'PM-09, PM-21' },
   { abbr: 'PD / PM', full: 'Project Director / Project Manager', cat: 'PM & Controls', desc: 'Authorized overall delivery leader accountable for schedule, cost, statutory coordination, and Tier-1 change governance.', where: 'PM-01, SteerCo' },
-  { abbr: 'PIP', full: 'Project Implementation Plan', cat: 'PM & Controls', desc: 'Master execution playbook (`DataCenter_45MW_EU_PIP.xlsx`) detailing WBS work packages, contracting, and Cx strategy.', where: 'PM-06, PM-07' },
+  { abbr: 'PIP', full: 'Project Implementation Plan', cat: 'PM & Controls', desc: 'Master execution playbook (`DataCenter_45MW_VN_PIP.xlsx`) detailing WBS work packages, contracting, and Cx strategy.', where: 'PM-06, PM-07' },
   { abbr: 'PMB', full: 'Performance Measurement Baseline', cat: 'PM & Controls', desc: 'Time-phased `PV` curve against which EVM performance (`CPI`/`SPI`) is audited monthly.', where: 'PM-19' },
   { abbr: 'PMBOK', full: 'Project Management Body of Knowledge', cat: 'PM & Controls', desc: 'PMI flagship reference framework governing project chartering, WBS, EVM, risk, and stakeholder processes.', where: 'PM-01, PM-06' },
   { abbr: 'PMI', full: 'Project Management Institute', cat: 'PM & Controls', desc: 'Global professional standards body for project management (`PMP`, `PMBOK`, Practice Standard for EVM).', where: 'PM-01, PM-19' },
@@ -277,6 +277,15 @@ const ABBREVIATIONS = [
   { abbr: 'QBAR', full: 'Mean Annual Flood Flow', cat: 'Data & Misc', desc: 'Pre-development greenfield catchment runoff rate limiting discharge from site `SuDS` attenuation ponds.', where: 'EU-06' },
   { abbr: 'SQL', full: 'Structured Query Language (Supabase Postgres)', cat: 'Data & Misc', desc: 'Database language powering `dc36_learning_schema.sql` for cross-device cloud sync (`dc_learning_modules`, `doc_checks`, `history`).', where: 'History & Sync' },
   { abbr: 'WS', full: 'White Space', cat: 'Data & Misc', desc: 'Conditioned IT server hall area (`Data Halls 1-5`, `800mm` raised floor) distinct from Grey Space MEP plant.', where: 'PM-24, PM-26, WBS 5.4' }
+
+  // Vietnam Statutory & Permitting Framework
+  { abbr: 'IPA', full: 'In-Principle Investment Approval', cat: 'Permitting', desc: 'Statutory approval by Provincial People\'s Committee (PPC) under Law on Investment 2020 authorizing project execution and land allocation.', where: 'PM-01, L1' },
+  { abbr: '1/500 DMP', full: '1/500 Detailed Master Plan', cat: 'Planning', desc: 'Approved municipal site zoning layout under Law on Urban Planning 2009 defining exact building envelope, setbacks, and density.', where: 'PM-01, L1' },
+  { abbr: 'MONRE', full: 'Ministry of Natural Resources and Environment', cat: 'Environmental', desc: 'National ministry governing Environmental Impact Assessment (EIA) appraisals and Environmental Permits under Law on Environmental Protection 2020.', where: 'PM-01, L1' },
+  { abbr: 'PC07', full: 'Fire Prevention and Fighting Police Department', cat: 'Safety & Permitting', desc: 'Provincial police division responsible for fire safety design appraisal under QCVN 06:2022/BXD and on-site testing.', where: 'PM-01, L3' },
+  { abbr: 'EVN', full: 'Vietnam Electricity', cat: 'Electrical & Grid', desc: 'National state power utility governing 110kV/220kV Grid Connection Agreements (GCA) and substation energization.', where: 'PM-01, L2' },
+  { abbr: 'NSMO', full: 'National Power System Dispatch Organization', cat: 'Electrical & Grid', desc: 'National system load dispatcher (formerly A0 / NLDC) governing real-time commercial grid synchronization and stability.', where: 'PM-01, L2' },
+  { abbr: 'CAC', full: 'Completion Acceptance Certificate', cat: 'Handover & QA', desc: 'Statutory completion certificate issued by State Authority for Construction Quality Inspection (SACQI / DOC) under Decree 06/2021/ND-CP.', where: 'PM-06, L3' },
 ];
 
   // Build normalized token -> entry map for inline tooltip matching

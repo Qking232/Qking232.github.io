@@ -57,42 +57,42 @@ const PILLARS = [
   { id: 'PM6', track: 'pm', code: 'Phase 6', shortName: '6. Handover & Closeout', name: 'Phase 6: Handover, OR&T & Closeout (RIBA 6-7)' },
 
   // Deferred Track: Legal & Permitting (3 Pillars x 6 = 18 Modules)
-  { id: 'L1', track: 'legal', code: 'Legal 1', shortName: 'L1. Planning & EPA', name: 'L1. Irish Planning & EPA IEL' },
-  { id: 'L2', track: 'legal', code: 'Legal 2', shortName: 'L2. EirGrid & CRU', name: 'L2. EirGrid, ESBN & CRU Grid' },
-  { id: 'L3', track: 'legal', code: 'Legal 3', shortName: 'L3. BCAR & SI 291', name: 'L3. BCAR & Statutory H&S (SI 291)' }
+  { id: 'L1', track: 'legal', code: 'Legal 1', shortName: 'L1. IPA, 1/500 & EIA', name: 'L1. Vietnam Investment Approval (IPA), 1/500 DMP & MONRE EIA' },
+  { id: 'L2', track: 'legal', code: 'Legal 2', shortName: 'L2. EVN 110kV & NSMO', name: 'L2. EVN 110kV Grid Connection & NLDC/NSMO Load Dispatch' },
+  { id: 'L3', track: 'legal', code: 'Legal 3', shortName: 'L3. Decree 15 & Police PC07', name: 'L3. Decree 15 Basic Design, Building Permit & Fire Police PC07' }
 ];
 
 const SECTION_DOCS = {
   PM1: [
-    { code: 'PM1-DOC-01', title: 'Project Charter, Sponsor Governance & Multi-Party RACI Matrix', std: 'PMI / RIBA Stage 0-1', artifact: 'DataCenter_45MW_EU_Project_Charter.xlsx', kind: 'built' },
+    { code: 'PM1-DOC-01', title: 'Project Charter, Sponsor Governance & Multi-Party RACI Matrix', std: 'PMI / RIBA Stage 0-1', artifact: 'DataCenter_45MW_VN_Project_Charter.xlsx', kind: 'built' },
     { code: 'PM1-DOC-02', title: 'Site Selection Due Diligence & Power / Flood Feasibility Scoring Memo', std: 'EN 50600-2-1 / OPW', artifact: 'Pre-Feasibility Matrix', kind: 'ref' },
-    { code: 'PM1-DOC-03', title: 'Basis of Design (BoD) — Availability Class 3 & Free-Cooling Envelope', std: 'I.S. EN 50600 / ISO 22237', artifact: 'DataCenter_45MW_EU_PreNTP_Controls.xlsx', kind: 'built' },
-    { code: 'PM1-DOC-04', title: 'EUR Capex/MW Baseline, 10-Year DCF Financial Model & Sensitivity Pack', std: 'IRR / NPV Institutional', artifact: 'DataCenter_45MW_EU_PreNTP_Controls.xlsx', kind: 'built' },
+    { code: 'PM1-DOC-03', title: 'Basis of Design (BoD) — Availability Class 3 & Free-Cooling Envelope', std: 'I.S. EN 50600 / ISO 22237', artifact: 'DataCenter_45MW_VN_PreNTP_Controls.xlsx', kind: 'built' },
+    { code: 'PM1-DOC-04', title: 'EUR Capex/MW Baseline, 10-Year DCF Financial Model & Sensitivity Pack', std: 'IRR / NPV Institutional', artifact: 'DataCenter_45MW_VN_PreNTP_Controls.xlsx', kind: 'built' },
     { code: 'PM1-DOC-05', title: 'Pre-NTP Final Investment Decision (FID) & Stage-Gate 1 Charter Pack', std: 'RIBA Stage 1 Gate', artifact: 'FID Stage-Gate Memo', kind: 'ref' }
   ],
   PM2: [
-    { code: 'PM2-DOC-01', title: 'Project Implementation Plan (PIP) & WBS Cost-Account Dictionary', std: 'PMI / RIBA Stage 2-3', artifact: 'DataCenter_45MW_EU_PIP.xlsx', kind: 'built' },
-    { code: 'PM2-DOC-02', title: 'Master Level 4 Primavera P6 Schedule (144 Tasks / 48 Critical)', std: 'DCMA-14 6/6 / CPM', artifact: 'DataCenter_45MW_EU_Ireland.xer', kind: 'built' },
+    { code: 'PM2-DOC-01', title: 'Project Implementation Plan (PIP) & WBS Cost-Account Dictionary', std: 'PMI / RIBA Stage 2-3', artifact: 'DataCenter_45MW_VN_PIP.xlsx', kind: 'built' },
+    { code: 'PM2-DOC-02', title: 'Master Level 4 Primavera P6 Schedule (144 Tasks / 48 Critical)', std: 'DCMA-14 6/6 / CPM', artifact: 'DataCenter_45MW_VN_Master.xer', kind: 'built' },
     { code: 'PM2-DOC-03', title: 'DCMA-14 Schedule Health Audit & Longest Path Diagnostic Report', std: 'DCMA 14-Point', artifact: 'P6 QA Audit Checksheet', kind: 'ref' },
-    { code: 'PM2-DOC-04', title: 'EU EED Telemetry Specification (PUE / WUE / ERF / REF Metering Plan)', std: 'EU EED 2023/1791 & 2024/1364', artifact: 'DataCenter_45MW_EU_PreNTP_Controls.xlsx', kind: 'built' },
+    { code: 'PM2-DOC-04', title: 'EU EED Telemetry Specification (PUE / WUE / ERF / REF Metering Plan)', std: 'EU EED 2023/1791 & 2024/1364', artifact: 'DataCenter_45MW_VN_PreNTP_Controls.xlsx', kind: 'built' },
     { code: 'PM2-DOC-05', title: 'BIM Exchange Info Requirements (EIR), BEP & Master Document Register', std: 'BS EN ISO 19650 CDE', artifact: 'Master_Document_Register_DC45EU_Rev.003.xlsx', kind: 'built' }
   ],
   PM3: [
-    { code: 'PM3-DOC-01', title: 'Contracting & Multi-Prime Work Packaging Strategy (EPCm vs. D&B)', std: 'RIBA Stage 4 / Procurement', artifact: 'DataCenter_45MW_EU_PIP.xlsx', kind: 'built' },
+    { code: 'PM3-DOC-01', title: 'Contracting & Multi-Prime Work Packaging Strategy (EPCm vs. D&B)', std: 'RIBA Stage 4 / Procurement', artifact: 'DataCenter_45MW_VN_PIP.xlsx', kind: 'built' },
     { code: 'PM3-DOC-02', title: 'NEC4 ECC (Option A/C) Works Information, Z-Clauses & Early Warning Register', std: 'NEC4 ECC (UK / IE)', artifact: 'NEC4 Contract Pack', kind: 'ref' },
     { code: 'PM3-DOC-03', title: 'FIDIC Silver / Yellow Book Employer Requirements & EOT Protocol', std: 'FIDIC 2017 (EU)', artifact: 'FIDIC Commercial Pack', kind: 'ref' },
-    { code: 'PM3-DOC-04', title: 'OFCI Long-Lead Equipment Schedule (110kV GIS, UPS, Chillers, BESS)', std: 'Supply Chain Reservation', artifact: 'DataCenter_45MW_EU_PIP.xlsx', kind: 'built' },
+    { code: 'PM3-DOC-04', title: 'OFCI Long-Lead Equipment Schedule (110kV GIS, UPS, Chillers, BESS)', std: 'Supply Chain Reservation', artifact: 'DataCenter_45MW_VN_PIP.xlsx', kind: 'built' },
     { code: 'PM3-DOC-05', title: 'Technical Bid Evaluation (TBE), BAFO Leveling & Vendor Expediting Log', std: 'Incoterms 2020 / DDP', artifact: 'Procurement Tracker', kind: 'ref' }
   ],
   PM4: [
-    { code: 'PM4-DOC-01', title: 'Monthly Earned Value Management (EVM) Report — CPI, SPI & EAC', std: 'PMI EVM / Cost Control', artifact: 'DataCenter_45MW_EU_PreNTP_Controls.xlsx', kind: 'built' },
+    { code: 'PM4-DOC-01', title: 'Monthly Earned Value Management (EVM) Report — CPI, SPI & EAC', std: 'PMI EVM / Cost Control', artifact: 'DataCenter_45MW_VN_PreNTP_Controls.xlsx', kind: 'built' },
     { code: 'PM4-DOC-02', title: 'Integrated Change Request Log & Change Control Board (CRB) Register', std: 'Baseline Governance', artifact: 'CRB Decision Log', kind: 'ref' },
-    { code: 'PM4-DOC-03', title: 'Quantitative Risk Register (L x I & Monte Carlo P50 / P80 Drawdown)', std: 'ISO 31000 / QRA', artifact: 'DataCenter_45MW_EU_PreNTP_Controls.xlsx', kind: 'built' },
+    { code: 'PM4-DOC-03', title: 'Quantitative Risk Register (L x I & Monte Carlo P50 / P80 Drawdown)', std: 'ISO 31000 / QRA', artifact: 'DataCenter_45MW_VN_PreNTP_Controls.xlsx', kind: 'built' },
     { code: 'PM4-DOC-04', title: 'Construction Quality Plan, Inspection & Test Plans (ITPs) & NCR Log', std: 'ISO 9001 / QA-QC', artifact: 'Site QA/QC Dossier', kind: 'ref' },
     { code: 'PM4-DOC-05', title: 'MEP / CSA Interface Matrix, Clash Sign-Off & 6-Week Lookahead Plan', std: 'Last Planner / Pull Plan', artifact: 'Weekly Lookahead Pack', kind: 'ref' }
   ],
   PM5: [
-    { code: 'PM5-DOC-01', title: 'Master Commissioning Management Plan (L1-L5 Governance & Matrix)', std: 'CIBSE Code M / ASHRAE 0', artifact: 'DataCenter_45MW_EU_PIP.xlsx', kind: 'built' },
+    { code: 'PM5-DOC-01', title: 'Master Commissioning Management Plan (L1-L5 Governance & Matrix)', std: 'CIBSE Code M / ASHRAE 0', artifact: 'DataCenter_45MW_VN_PIP.xlsx', kind: 'built' },
     { code: 'PM5-DOC-02', title: 'Level 1-2 Witnessed OEM Factory Acceptance (FAT) & Red-Tag Checklists', std: 'IEC / EN Factory QA', artifact: 'OEM FAT Witness Dossier', kind: 'planned' },
     { code: 'PM5-DOC-03', title: 'Level 3 Static Testing, BSRIA CHW Flush Certificates & LOTO Permits', std: 'BSRIA BG 29 / HV LOTO', artifact: 'L3 Energisation Pack', kind: 'planned' },
     { code: 'PM5-DOC-04', title: 'Level 4 Dynamic Step-Load, SCR Abatement & BESS Sync Test Scripts', std: 'CIBSE Code M L4', artifact: 'Dynamic Cx Scripts', kind: 'planned' },
@@ -636,7 +636,7 @@ const CURRICULUM = [
     tags: ['Planning Act', 'SID', 'Sec 247'],
     docs: [
       { cat: 'Standard', title: 'Ireland Planning and Development Act & An Bord Pleanala SID Threshold Guide', ref: 'Planning & Dev. Act (IE)', artifact: 'Planning Act SID Standard', why: 'Determine whether your 45 MW campus routes via Local Council or direct SID board.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Statutory Permitting Master Sequence Schedule Mapped to P6 Critical Path', ref: 'Sheet 4. Ireland Statutory', artifact: 'DataCenter_45MW_EU_PIP.xlsx', why: 'Sequence Sec 247, public notice, EPA IEL, and appeal windows before FNTP.', kind: 'built' },
+      { cat: 'Deliverable', title: 'Statutory Permitting Master Sequence Schedule Mapped to P6 Critical Path', ref: 'Sheet 3. Vietnam Statutory Approvals', artifact: 'DataCenter_45MW_VN_PIP.xlsx', why: 'Sequence Sec 247, public notice, EPA IEL, and appeal windows before FNTP.', kind: 'built' },
       { cat: 'Template', title: 'Section 247 Pre-Planning Meeting Pack & SID Determination Request Dossier', ref: 'Stage 2 Planning Submission', artifact: 'Stage 2 Planning Dossier', why: 'Secure early council planner alignment on height, substation siting, and traffic.', kind: 'planned' },
       { cat: 'Audit', title: 'Planning Application Public Site Notice, Drawings & Statutory Timeline Audit', ref: '5-Week Public Objection Gate', artifact: 'Statutory Notice Readiness Log', why: 'Eliminate technical invalidation errors (Newspaper/Site notice dates) on Day-1 filing.', kind: 'ref' }
     ]
@@ -710,7 +710,7 @@ const CURRICULUM = [
     tags: ['EirGrid', 'ESBN', 'ECP', 'MIC'],
     docs: [
       { cat: 'Standard', title: 'EirGrid Enduring Connection Policy (ECP) & ESB Networks Contestability Rules', ref: 'EirGrid ECP / ESBN Policy', artifact: 'Irish Grid Connection Standard', why: 'Master Ireland grid queue batch processing, deposits, and customer-build rules.', kind: 'ref' },
-      { cat: 'Deliverable', title: 'Grid Connection Milestones Integrated into Project Master Schedule', ref: 'Sheet 4. Ireland Statutory', artifact: 'DataCenter_45MW_EU_PIP.xlsx', why: 'Align TSO GIS substation civil works with transformer OEM delivery in P6.', kind: 'built' },
+      { cat: 'Deliverable', title: 'Grid Connection Milestones Integrated into Project Master Schedule', ref: 'Sheet 3. Vietnam Statutory Approvals', artifact: 'DataCenter_45MW_VN_PIP.xlsx', why: 'Align TSO GIS substation civil works with transformer OEM delivery in P6.', kind: 'built' },
       { cat: 'Template', title: 'Maximum Import Capacity (MIC 45 MW) Connection Application & Offer Pack', ref: '45 MW MIC Connection Offer', artifact: 'Grid Connection Offer Pack', why: 'Track security bond postings, ramp-up MIC profiles, and contestable scope elections.', kind: 'planned' },
       { cat: 'Audit', title: 'Contestable (Customer Build) vs. Non-Contestable (TSO Shallow Works) Table', ref: 'TSO Demarcation Audit', artifact: 'Substation Demarcation Audit', why: 'Avoid interface disputes on 110kV GIS bay ownership, protection panels, and vesting.', kind: 'ref' }
     ]
@@ -852,10 +852,10 @@ const CURRICULUM = [
 ];
 
 const PORTFOLIO_ITEMS = [
-  { id: 'PORT-01', track: 'pm', doc: 'DC45-EU Master Level 4 P6 Schedule', standard: 'DCMA-14 6/6, RIBA 0-7, EN 50600', artifact: 'DataCenter_45MW_EU_Ireland.xer (144 Tasks / 48 Crit)', status: 'Complete' },
-  { id: 'PORT-02', track: 'pm', doc: 'Project Charter (Ireland / EU Standard)', standard: 'Governance, RACI, EUR Stage-Gates', artifact: 'DataCenter_45MW_EU_Project_Charter.xlsx (6 Tabs)', status: 'Complete' },
-  { id: 'PORT-03', track: 'pm', doc: 'Project Implementation Plan (PIP)', standard: '144-Task Gantt, NEC4/FIDIC, L1-L5', artifact: 'DataCenter_45MW_EU_PIP.xlsx (6 Tabs)', status: 'Complete' },
-  { id: 'PORT-04', track: 'pm', doc: 'Feasibility, EN 50600 BoD & Controls', standard: 'EUR 10-Yr DCF, EED KPIs, EVM, Risks', artifact: 'DataCenter_45MW_EU_PreNTP_Controls.xlsx (5 Tabs)', status: 'Complete' },
+  { id: 'PORT-01', track: 'pm', doc: 'DC45-VN Master Level 4 P6 Schedule', standard: 'DCMA-14 6/6, TIA-942 Rated 3, QCVN 02', artifact: 'DataCenter_45MW_VN_Master.xer (144 Tasks / 48 Crit)', status: 'Complete' },
+  { id: 'PORT-02', track: 'pm', doc: 'Project Charter (Vietnam Standard)', standard: 'Governance, RACI, USD Stage-Gates ($360M)', artifact: 'DataCenter_45MW_VN_Project_Charter.xlsx (6 Tabs)', status: 'Complete' },
+  { id: 'PORT-03', track: 'pm', doc: 'Project Implementation Plan (PIP)', standard: '144-Task Gantt, Vietnam Statutory, L1-L5', artifact: 'DataCenter_45MW_VN_PIP.xlsx (6 Tabs)', status: 'Complete' },
+  { id: 'PORT-04', track: 'pm', doc: 'Feasibility, TIA-942 BoD & Controls', standard: 'USD 10-Yr DCF, High-Tech CIT 10%, EVM, Risks', artifact: 'DataCenter_45MW_VN_PreNTP_Controls.xlsx (5 Tabs)', status: 'Complete' },
   { id: 'PORT-05', track: 'pm', doc: 'ISO 19650 CDE Folder & Document Register', standard: 'BS EN ISO 19650, Suitability S0-A7', artifact: 'Master_Document_Register_DC45EU_Rev.003.xlsx', status: 'Built' },
   { id: 'PORT-06', track: 'legal', doc: 'EirGrid ECP / EPA IEL / BCAR FSC Pack', standard: 'Planning Act, EPA Act, Part B FSC', artifact: 'Stage 2 Statutory Permitting Dossier', status: 'Planned' },
   { id: 'PORT-07', track: 'pm', doc: 'CIBSE Code M / ASHRAE L1-L5 Master Cx Plan', standard: 'L3-L5 Scripts & 45MW IST Playbook', artifact: 'Stage 6 Commissioning & OR&T Pack', status: 'Planned' }
@@ -1888,7 +1888,7 @@ function renderAnalytics() {
     <p><strong>Deferred Legal &amp; Permitting:</strong> ${legal.readiness}% (${legal.mastered}/${legal.count} mastered, parked for later)</p>
     <p><strong>Portfolio Completeness:</strong> ${pDone} / ${PORTFOLIO_ITEMS.length} EU/Ireland Deliverables Completed</p>
     <p><strong>PM Interview Drill Readiness:</strong> ${iReadyPm} / ${iTotalPm} Core PM Scenarios Rehearsed</p>
-    <p><strong>Active P6 Benchmark:</strong> <span class="mono">DataCenter_45MW_EU_Ireland.xer</span> (144 tasks, DCMA-14 6/6, 880 workdays)</p>
+    <p><strong>Active P6 Benchmark:</strong> <span class="mono">DataCenter_45MW_VN_Master.xer</span> (144 tasks, DCMA-14 6/6, 880 workdays, $360.0M USD / 9,162.0 B VND)</p>
     <p><strong>PM Lifecycle Frameworks:</strong> RIBA 0-7, PMI/PMBOK, Primavera P6 DCMA-14, NEC4 ECC &amp; FIDIC, EVM/QRA, ISO 19650 CDE/AIM, CIBSE L1-L5.</p>
   `;
 }

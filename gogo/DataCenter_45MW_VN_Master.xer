@@ -1,0 +1,551 @@
+ERMHDR	23.12	2026-11-13	PROJECT	PMDB	admin	en	VNM	USD	USD
+%T	CALENDAR
+%F	clndr_id	default_flag	clndr_name	proj_id	base_clndr_id	last_chng_date	clndr_type	day_hr_cnt	week_hr_cnt	month_hr_cnt	year_hr_cnt	rsrc_private	clndr_data
+%R	1	Y	Standard 5 Day EU Data Centre Workweek			2026-11-12 08:00	CA_Base	8.0	40.0	173.3	2080.0	N	((0||1()|(0||2()|(0||s|08:00|f|12:00)|(0||s|13:00|f|17:00))|(0||3()|(0||s|08:00|f|12:00)|(0||s|13:00|f|17:00))|(0||4()|(0||s|08:00|f|12:00)|(0||s|13:00|f|17:00))|(0||5()|(0||s|08:00|f|12:00)|(0||s|13:00|f|17:00))|(0||6()|(0||s|08:00|f|12:00)|(0||s|13:00|f|17:00))|(0||7()))
+%T	SCHEDOPTIONS
+%F	schedoptions_id	proj_id	sched_outer_depend_type	sched_open_critical_flag	sched_lag_early_start_flag	sched_retained_logic	sched_setplantoforecast	sched_float_type	sched_calendar_on_relationship_lag	sched_use_expect_end_flag	sched_progress_override	sched_use_project_end_date_for_float	max_multiple_longest_path	use_total_float_multiple_longest_paths
+%R	1	2001	OD_Actual	N	Y	Y	N	TF_Start	CR_Predecessor	N	N	N	1	N
+%T	PROJECT
+%F	proj_id	fy_start_month_num	rsrc_self_add_flag	allow_complete_flag	rsrc_multi_assign_flag	checkout_flag	project_flag	step_complete_flag	cost_qty_recalc_flag	batch_sum_flag	name_sep_char	def_complete_pct_type	proj_short_name	acct_id	orig_proj_id	source_proj_id	base_type_id	clndr_id	sum_base_proj_id	task_code_base	task_code_step	priority_num	wbs_max_sum_level	strgy_priority_num	last_checksum	critical_drtn_hr_cnt	def_cost_per_qty	last_recalc_date	plan_start_date	plan_end_date	scd_end_date	add_date	last_tasksum_date	fcst_start_date	def_duration_type	task_code_prefix	guid	def_qty_type	add_by_name	web_local_root_path	proj_url	def_rate_type	add_act_remain_flag	act_this_per_link_flag	def_task_type	act_pct_link_flag	critical_path_type	task_code_prefix_flag	def_rollup_dates_flag	use_project_baseline_flag	rem_target_link_flag	reset_planned_flag	allow_neg_act_flag	sum_assign_level	last_fin_dates_id	fintmpl_id	last_baseline_update_date	cr_external_key	apply_actuals_date	last_schedule_date	location_id	loaded_scope_level	export_flag	new_fin_dates_id	baselines_to_export	baseline_names_to_export	next_data_date	close_period_flag	sum_refresh_date	trsrcsum_loaded	sumtask_loaded
+%R	2001	1	Y	Y	Y	N	Y	Y	N	Y	.	CP_Phys	DC45-VN					1		1000	10	10	0	500	0	0.0	100.0	2027-01-04 08:00	2027-01-04 08:00	2030-05-20 08:00	2030-05-20 08:00	2026-11-12 08:00			DT_FixedDuration	EU	DC45MW-EU-EN50600-GUID	QT_Hour	admin			COST_PER_QTY	N	Y	TT_Task	N	CP_LongestPath	N	Y	Y	Y	N	N	SL_Taskrsrc						2027-01-04 08:00		7	Y								
+%T	PROJWBS
+%F	wbs_id	proj_id	obs_id	seq_num	est_wt	proj_node_flag	sum_data_flag	status_code	wbs_short_name	wbs_name	phase_id	parent_wbs_id	ev_user_pct	ev_etc_user_value	orig_cost	indep_remain_total_cost	ann_dscnt_rate_pct	dscnt_period_type	indep_remain_work_qty	anticip_start_date	anticip_end_date	ev_compute_type	ev_etc_compute_type	guid	tmpl_guid	plan_open_state
+%R	100	2001		1	1.0	Y	Y	WS_Open	DC45-VN	Vietnam Hyperscale Data Center 45MW (TIA-942 Rated 3)												EC_Cmp_pct	EE_PF_cpi	EU-WBS-GUID-100		
+%R	110	2001		10	1.0	N	Y	WS_Open	1.0-PERM	1.0 Investment Approval (IPA), 1/500 DMP, EIA (MONRE) & EVN 110kV Grid Agreement		100			12500000.00							EC_Cmp_pct	EE_PF_cpi	EU-WBS-GUID-110		
+%R	120	2001		20	1.0	N	Y	WS_Open	2.0-ENG	2.0 Feasibility Study (Decree 15), Fire Safety Appraisal (PC07) & Building Permit		100			14800000.00							EC_Cmp_pct	EE_PF_cpi	EU-WBS-GUID-120		
+%R	130	2001		30	1.0	N	Y	WS_Open	3.0-PROC	3.0 Major OFCI Equipment Procurement, Sea Freight Customs Clearance & FAT		100			124500000.00							EC_Cmp_pct	EE_PF_cpi	EU-WBS-GUID-130		
+%R	140	2001		40	1.0	N	Y	WS_Open	4.0-CIVIL	4.0 Civil Engineering, Deep Bored Piling, Structural Steel & Envelope (QCVN 02)		100										EC_Cmp_pct	EE_PF_cpi	EU-WBS-GUID-140		
+%R	141	2001		41	1.0	N	Y	WS_Open	4.1-SUB	4.1 Deep Foundation Works, 750 Bored Piles & Underground Attenuation Tanks		140			22000000.00							EC_Cmp_pct	EE_PF_cpi	EU-WBS-GUID-141		
+%R	142	2001		42	1.0	N	Y	WS_Open	4.2-SUPER	4.2 Heavy Structural Steel Superstructure & Roof Plant Support Platforms		140			24000000.00							EC_Cmp_pct	EE_PF_cpi	EU-WBS-GUID-142		
+%R	143	2001		43	1.0	N	Y	WS_Open	4.3-ENVEL	4.3 Insulated Wall Sandwich Panels, Membrane Roofing & QCVN 02 Weather Seal		140			18500000.00							EC_Cmp_pct	EE_PF_cpi	EU-WBS-GUID-143		
+%R	144	2001		44	1.0	N	Y	WS_Open	4.4-SITE	4.4 Substation Yard Civil Works, Heavy Logistics Roads, SuDS & Water Storage		140			12000000.00							EC_Cmp_pct	EE_PF_cpi	EU-WBS-GUID-144		
+%R	150	2001		50	1.0	N	Y	WS_Open	5.0-MEP	5.0 MEP Installation, 110kV GIS Substation, White Space Halls 1-5 & Heat Reuse		100										EC_Cmp_pct	EE_PF_cpi	EU-WBS-GUID-150		
+%R	151	2001		51	1.0	N	Y	WS_Open	5.1-ELEC	5.1 110kV GIS Substation Installation, Dual 63MVA Transformers & MV Switchgear		150			26000000.00							EC_Cmp_pct	EE_PF_cpi	EU-WBS-GUID-151		
+%R	152	2001		52	1.0	N	Y	WS_Open	5.2-GEN	5.2 Standby Generator Farm (20x 2.5MVA HVO), SCR Abatement & 5MW BESS		150			22000000.00							EC_Cmp_pct	EE_PF_cpi	EU-WBS-GUID-152		
+%R	153	2001		53	1.0	N	Y	WS_Open	5.3-MECH	5.3 Water-Cooled Chiller Plant, Cooling Towers, CHW Headers & Heat Reuse Skids		150			28500000.00							EC_Cmp_pct	EE_PF_cpi	EU-WBS-GUID-153		
+%R	154	2001		54	1.0	N	Y	WS_Open	5.4-WS	5.4 Data Halls 1-5 White Space Fit-Out: 2N UPS, Overhead Busways & In-Row CRAHs		150			62000000.00							EC_Cmp_pct	EE_PF_cpi	EU-WBS-GUID-154		
+%R	155	2001		55	1.0	N	Y	WS_Open	5.5-ICT	5.5 EPMS, BMS DDC Automation, Optical Fiber Ring, Life Safety & SOC Facility		150			12000000.00							EC_Cmp_pct	EE_PF_cpi	EU-WBS-GUID-155		
+%R	160	2001		60	1.0	N	Y	WS_Open	6.0-CX	6.0 Commissioning Levels 1-5, 45MW Integrated Systems Testing & Statutory Inspection		100										EC_Cmp_pct	EE_PF_cpi	EU-WBS-GUID-160		
+%R	161	2001		61	1.0	N	Y	WS_Open	6.1-L12	6.1 Cx Levels 1 & 2: Factory Witness Testing (FAT) & Site Receipt Quality Assurance		160			1800000.00							EC_Cmp_pct	EE_PF_cpi	EU-WBS-GUID-161		
+%R	162	2001		62	1.0	N	Y	WS_Open	6.2-L3	6.2 Cx Level 3: Pre-Functional Static Testing, Loop Checks & Substation Hipot		160			4200000.00							EC_Cmp_pct	EE_PF_cpi	EU-WBS-GUID-162		
+%R	163	2001		63	1.0	N	Y	WS_Open	6.3-L4	6.3 Cx Level 4: Functional Dynamic Systems Testing & Generator Step-Load Trials		160			5200000.00							EC_Cmp_pct	EE_PF_cpi	EU-WBS-GUID-163		
+%R	164	2001		64	1.0	N	Y	WS_Open	6.4-L5	6.4 Cx Level 5: 45MW 48-Hour Integrated Systems Testing (IST) Blackout Simulation		160			7800000.00							EC_Cmp_pct	EE_PF_cpi	EU-WBS-GUID-164		
+%R	165	2001		65	1.0	N	Y	WS_Open	6.5-OPS	6.5 Operations Readiness, Facility Staff SOP Training & As-Built Safety File		160			600000.00							EC_Cmp_pct	EE_PF_cpi	EU-WBS-GUID-165		
+%R	170	2001		70	1.0	N	Y	WS_Open	7.0-COD	7.0 Fire Police PC07 Acceptance, EVN Live Grid Sync & Commercial Operation (COD)		100			5000000.00							EC_Cmp_pct	EE_PF_cpi	EU-WBS-GUID-170		
+%T	RSRC
+%F	rsrc_id	rsrc_short_name	rsrc_name	parent_rsrc_id	rsrc_seq_num	clndr_id	rsrc_type
+%R	1001	RES-PERM	Statutory Permitting, Cadastral Land Option & EVN Deposit		1	1	RT_Mat
+%R	1002	RES-ENG	Lead Architect, Feasibility Study & Detailed Engineering Design		2	1	RT_Labor
+%R	1003	RES-PROC	Major OFCI Critical Plant & Sea Freight Customs Clearance		3	1	RT_Mat
+%R	1004	RES-CIVIL	Civil Enabling, 750 Bored Piles, Structural Frame & Envelope		4	1	RT_Nonlabor
+%R	1005	RES-MEP	110kV GIS Substation, White Space Electrical & Mechanical Fitout		5	1	RT_Nonlabor
+%R	1006	RES-CX	Commissioning Authority, 45MW IST Load Banks & Testing Fuel		6	1	RT_Labor
+%R	1007	RES-COD	Statutory Fire PC07 Certification, DOC Acceptance & EVN Sync		7	1	RT_Labor
+%T	TASK
+%F	task_id	proj_id	wbs_id	clndr_id	phys_complete_pct	rev_fdbk_flag	est_wt	lock_plan_flag	auto_compute_act_flag	complete_pct_type	task_type	duration_type	status_code	task_code	task_name	rsrc_id	total_float_hr_cnt	free_float_hr_cnt	remain_drtn_hr_cnt	act_work_qty	remain_work_qty	target_work_qty	target_drtn_hr_cnt	target_equip_qty	act_equip_qty	remain_equip_qty	cstr_date	act_start_date	act_end_date	late_start_date	late_end_date	expect_end_date	early_start_date	early_end_date	restart_date	reend_date	target_start_date	target_end_date	rem_late_start_date	rem_late_end_date	cstr_type	priority_type	suspend_date	resume_date	float_path	float_path_order	guid	tmpl_guid	cstr_date2	cstr_type2	driving_path_flag	act_this_per_work_qty	act_this_per_equip_qty	external_early_start_date	external_late_end_date	create_date	update_date	create_user	update_user	location_id
+%R	2001	2001	110	1	0.0	N	1.0	N	N	CP_Phys	TT_Mile	DT_FixedDuration	TK_NotStart	M1000	Project Kickoff & Statutory Permitting Commencement		0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0				2027-01-04 08:00	2027-01-04 08:00		2027-01-04 08:00	2027-01-04 08:00			2027-01-04 08:00	2027-01-04 08:00	2027-01-04 08:00	2027-01-04 08:00					1	1	EU-TASK-GUID-2001				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2002	2001	110	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A1010	Appoint Statutory Project Management Consultant & Permitting Advisory Team (Decree 15/2021)		120.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2027-01-25 08:00	2027-02-15 08:00		2027-01-04 08:00	2027-01-25 08:00			2027-01-04 08:00	2027-01-25 08:00	2027-01-25 08:00	2027-02-15 08:00					1	1	EU-TASK-GUID-2002				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2003	2001	110	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A1020	Industrial Park Sublease Agreement, Cadastral Boundary Survey & Land Deposit		0.0	0.0	240.0	0.0	0.0	0.0	240.0	0.0	0.0	0.0				2027-01-04 08:00	2027-02-15 08:00		2027-01-04 08:00	2027-02-15 08:00			2027-01-04 08:00	2027-02-15 08:00	2027-01-04 08:00	2027-02-15 08:00					1	1	EU-TASK-GUID-2003				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2004	2001	110	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A1030	Consult Provincial People Committee (PPC) & Industrial Zone Authority on 1/500 DMP		0.0	0.0	400.0	0.0	0.0	0.0	400.0	0.0	0.0	0.0				2027-02-15 08:00	2027-04-26 08:00		2027-02-15 08:00	2027-04-26 08:00			2027-02-15 08:00	2027-04-26 08:00	2027-02-15 08:00	2027-04-26 08:00					1	1	EU-TASK-GUID-2004				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2005	2001	110	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A1040	Formulate & Submit Environmental Impact Assessment (EIA) to MONRE (Law on Environment 2020)		0.0	0.0	600.0	0.0	0.0	0.0	600.0	0.0	0.0	0.0				2027-04-26 08:00	2027-08-09 08:00		2027-04-26 08:00	2027-08-09 08:00			2027-04-26 08:00	2027-08-09 08:00	2027-04-26 08:00	2027-08-09 08:00					1	1	EU-TASK-GUID-2005				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2006	2001	110	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A1050	Formal Application for In-Principle Investment Approval (IPA) & Investment Certificate (IRC)		200.0	0.0	680.0	0.0	0.0	0.0	680.0	0.0	0.0	0.0				2027-05-31 08:00	2027-09-27 08:00		2027-04-26 08:00	2027-08-23 08:00			2027-04-26 08:00	2027-08-23 08:00	2027-05-31 08:00	2027-09-27 08:00					1	1	EU-TASK-GUID-2006				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2007	2001	110	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A1060	Authority RFI Review, Inter-Ministerial Appraisal & Statutory Technical Clarification		560.0	0.0	640.0	0.0	0.0	0.0	640.0	0.0	0.0	0.0				2027-04-12 08:00	2027-08-02 08:00		2027-01-04 08:00	2027-04-26 08:00			2027-01-04 08:00	2027-04-26 08:00	2027-04-12 08:00	2027-08-02 08:00					1	1	EU-TASK-GUID-2007				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2008	2001	110	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A1070	Receive Formal In-Principle Investment Approval (IPA) & Approved 1/500 Master Plan		560.0	0.0	320.0	0.0	0.0	0.0	320.0	0.0	0.0	0.0				2027-08-02 08:00	2027-09-27 08:00		2027-04-26 08:00	2027-06-21 08:00			2027-04-26 08:00	2027-06-21 08:00	2027-08-02 08:00	2027-09-27 08:00					1	1	EU-TASK-GUID-2008				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2009	2001	110	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A1080	Execute EVN 110kV Grid Connection Agreement, System Impact Study & PPA Contract		0.0	0.0	280.0	0.0	0.0	0.0	280.0	0.0	0.0	0.0				2027-08-09 08:00	2027-09-27 08:00		2027-08-09 08:00	2027-09-27 08:00			2027-08-09 08:00	2027-09-27 08:00	2027-08-09 08:00	2027-09-27 08:00					1	1	EU-TASK-GUID-2009				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2010	2001	110	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A1085	Environmental Permit (EP) Application & Air Emissions / Wastewater Compliance Audit (MONRE)		0.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2027-09-27 08:00	2027-10-18 08:00		2027-09-27 08:00	2027-10-18 08:00			2027-09-27 08:00	2027-10-18 08:00	2027-09-27 08:00	2027-10-18 08:00					1	1	EU-TASK-GUID-2010				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2011	2001	110	1	0.0	N	1.0	N	N	CP_Phys	TT_FinMile	DT_FixedDuration	TK_NotStart	M1090	All Vietnamese Statutory Investment, Environmental & Grid Approvals Granted Gate		0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0				2027-10-18 08:00	2027-10-18 08:00		2027-10-18 08:00	2027-10-18 08:00			2027-10-18 08:00	2027-10-18 08:00	2027-10-18 08:00	2027-10-18 08:00					1	1	EU-TASK-GUID-2011				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2020	2001	120	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A2010	ISO 19650 BIM Execution Plan (BEP) & Common Data Environment (CDE) Setup		280.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2027-02-22 08:00	2027-03-15 08:00		2027-01-04 08:00	2027-01-25 08:00			2027-01-04 08:00	2027-01-25 08:00	2027-02-22 08:00	2027-03-15 08:00					1	1	EU-TASK-GUID-2020				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2021	2001	120	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A2020	Feasibility Study (FS) Preparation & Basis of Design (BOD) under Decree 15/2021/ND-CP		200.0	0.0	200.0	0.0	0.0	0.0	200.0	0.0	0.0	0.0				2027-02-08 08:00	2027-03-15 08:00		2027-01-04 08:00	2027-02-08 08:00			2027-01-04 08:00	2027-02-08 08:00	2027-02-08 08:00	2027-03-15 08:00					1	1	EU-TASK-GUID-2021				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2022	2001	120	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A2030	Civil & Structural Engineering Foundation Design (750 Bored Piles to Bedrock)		200.0	0.0	280.0	0.0	0.0	0.0	280.0	0.0	0.0	0.0				2027-03-15 08:00	2027-05-03 08:00		2027-02-08 08:00	2027-03-29 08:00			2027-02-08 08:00	2027-03-29 08:00	2027-03-15 08:00	2027-05-03 08:00					1	1	EU-TASK-GUID-2022				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2023	2001	120	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A2040	Detailed 3D MEP Design: 110kV/22kV Substation, 2N UPS & Tropical Cooling Infrastructure		200.0	0.0	320.0	0.0	0.0	0.0	320.0	0.0	0.0	0.0				2027-05-03 08:00	2027-06-28 08:00		2027-03-29 08:00	2027-05-24 08:00			2027-03-29 08:00	2027-05-24 08:00	2027-05-03 08:00	2027-06-28 08:00					1	1	EU-TASK-GUID-2023				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2024	2001	120	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A2050	Mechanical Cooling Plant & Water-Cooled Chiller Plant Design (TCVN 9250 / TIA-942)		760.0	0.0	320.0	0.0	0.0	0.0	320.0	0.0	0.0	0.0				2027-06-07 08:00	2027-08-02 08:00		2027-01-25 08:00	2027-03-22 08:00			2027-01-25 08:00	2027-03-22 08:00	2027-06-07 08:00	2027-08-02 08:00					1	1	EU-TASK-GUID-2024				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2025	2001	120	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A2060	ANSI/TIA-942-B Rated 3 & Uptime Tier III Concurrent Maintainability Engineering		2320.0	0.0	360.0	0.0	0.0	0.0	360.0	0.0	0.0	0.0				2028-05-01 08:00	2028-07-03 08:00		2027-03-22 08:00	2027-05-24 08:00			2027-03-22 08:00	2027-05-24 08:00	2028-05-01 08:00	2028-07-03 08:00					1	1	EU-TASK-GUID-2025				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2026	2001	120	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A2070	Fire Prevention and Fighting Police Department (PC07) Design Appraisal under QCVN 06:2022		2440.0	0.0	320.0	0.0	0.0	0.0	320.0	0.0	0.0	0.0				2028-03-27 08:00	2028-05-22 08:00		2027-01-25 08:00	2027-03-22 08:00			2027-01-25 08:00	2027-03-22 08:00	2028-03-27 08:00	2028-05-22 08:00					1	1	EU-TASK-GUID-2026				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2027	2001	120	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A2080	Department of Construction (DOC) Basic Design Technical Appraisal under Decree 15/2021		2440.0	0.0	240.0	0.0	0.0	0.0	240.0	0.0	0.0	0.0				2028-05-22 08:00	2028-07-03 08:00		2027-03-22 08:00	2027-05-03 08:00			2027-03-22 08:00	2027-05-03 08:00	2028-05-22 08:00	2028-07-03 08:00					1	1	EU-TASK-GUID-2027				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2028	2001	120	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A2090	Environmental Acoustic Attenuation, Silencers & Generator Emission Scrubber Engineering		2320.0	0.0	280.0	0.0	0.0	0.0	280.0	0.0	0.0	0.0				2028-07-03 08:00	2028-08-21 08:00		2027-05-24 08:00	2027-07-12 08:00			2027-05-24 08:00	2027-07-12 08:00	2028-07-03 08:00	2028-08-21 08:00					1	1	EU-TASK-GUID-2028				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2029	2001	120	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A2100	Multi-Disciplinary Navisworks Clash Freeze & Issue for Construction (IFC) Drawing Package		200.0	0.0	240.0	0.0	0.0	0.0	240.0	0.0	0.0	0.0				2027-06-28 08:00	2027-08-09 08:00		2027-05-24 08:00	2027-07-05 08:00			2027-05-24 08:00	2027-07-05 08:00	2027-06-28 08:00	2027-08-09 08:00					1	1	EU-TASK-GUID-2029				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2030	2001	120	1	0.0	N	1.0	N	N	CP_Phys	TT_FinMile	DT_FixedDuration	TK_NotStart	M2110	Formal Statutory Building Permit (BP) Issued by Department of Construction (DOC)		2320.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0				2028-08-21 08:00	2028-08-21 08:00		2027-07-12 08:00	2027-07-12 08:00			2027-07-12 08:00	2027-07-12 08:00	2028-08-21 08:00	2028-08-21 08:00					1	1	EU-TASK-GUID-2030				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2040	2001	130	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A3010	Manufacture & FAT 110kV/22kV Substation Transformers (2x 63MVA Low-Loss)		2440.0	0.0	760.0	0.0	0.0	0.0	760.0	0.0	0.0	0.0				2028-09-11 08:00	2029-01-22 08:00		2027-07-12 08:00	2027-11-22 08:00			2027-07-12 08:00	2027-11-22 08:00	2028-09-11 08:00	2029-01-22 08:00					1	1	EU-TASK-GUID-2040				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2041	2001	130	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A3015	Manufacture & FAT SF6-Free 110kV Gas Insulated Switchgear (GIS)		2440.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2029-01-22 08:00	2029-02-12 08:00		2027-11-22 08:00	2027-12-13 08:00			2027-11-22 08:00	2027-12-13 08:00	2029-01-22 08:00	2029-02-12 08:00					1	1	EU-TASK-GUID-2041				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2042	2001	130	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A3020	Manufacture & FAT Standby Generators (20x 2.5MVA HVO-Ready with SCR Emission Systems)		2560.0	0.0	760.0	0.0	0.0	0.0	760.0	0.0	0.0	0.0				2028-10-02 08:00	2029-02-12 08:00		2027-07-12 08:00	2027-11-22 08:00			2027-07-12 08:00	2027-11-22 08:00	2028-10-02 08:00	2029-02-12 08:00					1	1	EU-TASK-GUID-2042				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2043	2001	130	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A3030	Manufacture & FAT High-Efficiency Water-Cooled Chillers & Cooling Towers (Tropical Monsoon)		2320.0	0.0	880.0	0.0	0.0	0.0	880.0	0.0	0.0	0.0				2028-08-21 08:00	2029-01-22 08:00		2027-07-12 08:00	2027-12-13 08:00			2027-07-12 08:00	2027-12-13 08:00	2028-08-21 08:00	2029-01-22 08:00					1	1	EU-TASK-GUID-2043				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2044	2001	130	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A3035	Manufacture & FAT 5MW / 10MWh Grid-Forming Battery Energy Storage System (BESS)		2320.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2029-01-22 08:00	2029-02-12 08:00		2027-12-13 08:00	2028-01-03 08:00			2027-12-13 08:00	2028-01-03 08:00	2029-01-22 08:00	2029-02-12 08:00					1	1	EU-TASK-GUID-2044				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2045	2001	130	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A3040	Manufacture & FAT 10x 1,500kVA High-Efficiency Modular 2N UPS Suites		2680.0	0.0	640.0	0.0	0.0	0.0	640.0	0.0	0.0	0.0				2028-10-23 08:00	2029-02-12 08:00		2027-07-12 08:00	2027-11-01 08:00			2027-07-12 08:00	2027-11-01 08:00	2028-10-23 08:00	2029-02-12 08:00					1	1	EU-TASK-GUID-2045				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2046	2001	130	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A3045	Manufacture & FAT 22kV Primary Medium Voltage (MV) Switchgear & Protection Relays		2680.0	0.0	640.0	0.0	0.0	0.0	640.0	0.0	0.0	0.0				2028-10-23 08:00	2029-02-12 08:00		2027-07-12 08:00	2027-11-01 08:00			2027-07-12 08:00	2027-11-01 08:00	2028-10-23 08:00	2029-02-12 08:00					1	1	EU-TASK-GUID-2046				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2047	2001	130	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A3050	Manufacture & FAT 415V Low Voltage Main Distribution Boards (MDBs) & Auto-Transfer Switches		2440.0	0.0	760.0	0.0	0.0	0.0	760.0	0.0	0.0	0.0				2028-09-11 08:00	2029-01-22 08:00		2027-07-12 08:00	2027-11-22 08:00			2027-07-12 08:00	2027-11-22 08:00	2028-09-11 08:00	2029-01-22 08:00					1	1	EU-TASK-GUID-2047				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2048	2001	130	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A3055	Manufacture & FAT High-Density In-Row CRAH Units & Hot Aisle Containment Systems		2440.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2029-01-22 08:00	2029-02-12 08:00		2027-11-22 08:00	2027-12-13 08:00			2027-11-22 08:00	2027-12-13 08:00	2029-01-22 08:00	2029-02-12 08:00					1	1	EU-TASK-GUID-2048				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2049	2001	130	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A3060	Procure & Deliver 4000A / 2500A Overhead Copper Busway Trunking & Tap-Off Boxes		2760.0	0.0	560.0	0.0	0.0	0.0	560.0	0.0	0.0	0.0				2028-11-06 08:00	2029-02-12 08:00		2027-07-12 08:00	2027-10-18 08:00			2027-07-12 08:00	2027-10-18 08:00	2028-11-06 08:00	2029-02-12 08:00					1	1	EU-TASK-GUID-2049				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2050	2001	130	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A3070	Procure Seismic Restraints, Spring Vibration Isolators & Heavy Plant Rigging Gear		2360.0	0.0	840.0	0.0	0.0	0.0	840.0	0.0	0.0	0.0				2028-08-28 08:00	2029-01-22 08:00		2027-07-12 08:00	2027-12-06 08:00			2027-07-12 08:00	2027-12-06 08:00	2028-08-28 08:00	2029-01-22 08:00					1	1	EU-TASK-GUID-2050				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2051	2001	130	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A3075	Procure Bulk Fuel Storage Tanks (HVO 72-Hour Reserve) & Duplex Fuel Transfer Skids		2360.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2029-01-22 08:00	2029-02-12 08:00		2027-12-06 08:00	2027-12-27 08:00			2027-12-06 08:00	2027-12-27 08:00	2029-01-22 08:00	2029-02-12 08:00					1	1	EU-TASK-GUID-2051				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2052	2001	130	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A3080	Procure Thermal Energy Storage (TES) Buffer Tanks & Primary Chilled Water Header Skids		2680.0	0.0	640.0	0.0	0.0	0.0	640.0	0.0	0.0	0.0				2028-10-23 08:00	2029-02-12 08:00		2027-07-12 08:00	2027-11-01 08:00			2027-07-12 08:00	2027-11-01 08:00	2028-10-23 08:00	2029-02-12 08:00					1	1	EU-TASK-GUID-2052				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2053	2001	130	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A3090	Procure Plate Heat Exchangers, Secondary Balancing Valves & Variable Frequency Drives		2840.0	0.0	480.0	0.0	0.0	0.0	480.0	0.0	0.0	0.0				2028-11-20 08:00	2029-02-12 08:00		2027-07-12 08:00	2027-10-04 08:00			2027-07-12 08:00	2027-10-04 08:00	2028-11-20 08:00	2029-02-12 08:00					1	1	EU-TASK-GUID-2053				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2054	2001	130	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A3100	Procure Server Rack Cabinets, Intelligent Rack PDUs & Structured Cabling Assemblies		2920.0	0.0	400.0	0.0	0.0	0.0	400.0	0.0	0.0	0.0				2028-12-04 08:00	2029-02-12 08:00		2027-07-12 08:00	2027-09-20 08:00			2027-07-12 08:00	2027-09-20 08:00	2028-12-04 08:00	2029-02-12 08:00					1	1	EU-TASK-GUID-2054				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2055	2001	130	1	0.0	N	1.0	N	N	CP_Phys	TT_FinMile	DT_FixedDuration	TK_NotStart	M3120	Sea Freight Ocean Transit, Port Customs Clearance & Heavy Haulage to Site Gate		2320.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0				2029-02-12 08:00	2029-02-12 08:00		2028-01-03 08:00	2028-01-03 08:00			2028-01-03 08:00	2028-01-03 08:00	2029-02-12 08:00	2029-02-12 08:00					1	1	EU-TASK-GUID-2055				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2060	2001	141	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A4110	Site Mobilisation, Enabling Earthworks, Temporary Power & Safety Fencing (Decree 06)		0.0	0.0	240.0	0.0	0.0	0.0	240.0	0.0	0.0	0.0				2027-10-18 08:00	2027-11-29 08:00		2027-10-18 08:00	2027-11-29 08:00			2027-10-18 08:00	2027-11-29 08:00	2027-10-18 08:00	2027-11-29 08:00					1	1	EU-TASK-GUID-2060				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2061	2001	141	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A4120	Bulk Earthworks, Grading, Geotechnical Cavity Grouting & Subgrade Stabilisation		0.0	0.0	440.0	0.0	0.0	0.0	440.0	0.0	0.0	0.0				2027-11-29 08:00	2028-02-14 08:00		2027-11-29 08:00	2028-02-14 08:00			2027-11-29 08:00	2028-02-14 08:00	2027-11-29 08:00	2028-02-14 08:00					1	1	EU-TASK-GUID-2061				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2062	2001	141	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A4130	Drill & Cast 750 Continuous Bored Piles Socketed into Hard Bedrock		0.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2028-02-14 08:00	2028-03-06 08:00		2028-02-14 08:00	2028-03-06 08:00			2028-02-14 08:00	2028-03-06 08:00	2028-02-14 08:00	2028-03-06 08:00					1	1	EU-TASK-GUID-2062				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2063	2001	141	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A4140	Construct Reinforced Concrete Pile Caps, Grade Beams & Waterproof Ground Slab		0.0	0.0	320.0	0.0	0.0	0.0	320.0	0.0	0.0	0.0				2028-03-06 08:00	2028-05-01 08:00		2028-03-06 08:00	2028-05-01 08:00			2028-03-06 08:00	2028-05-01 08:00	2028-03-06 08:00	2028-05-01 08:00					1	1	EU-TASK-GUID-2063				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2064	2001	141	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A4150	Install Underground Stormwater Retention Tanks, Sedimentation Basins & Oil-Water Separators		0.0	0.0	160.0	0.0	0.0	0.0	160.0	0.0	0.0	0.0				2028-05-01 08:00	2028-05-29 08:00		2028-05-01 08:00	2028-05-29 08:00			2028-05-01 08:00	2028-05-29 08:00	2028-05-01 08:00	2028-05-29 08:00					1	1	EU-TASK-GUID-2064				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2070	2001	142	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A4210	Structural Steel Delivery, Heavy Mobile Crane Mobilisation & Lifting Rigging Setup		0.0	0.0	280.0	0.0	0.0	0.0	280.0	0.0	0.0	0.0				2028-05-29 08:00	2028-07-17 08:00		2028-05-29 08:00	2028-07-17 08:00			2028-05-29 08:00	2028-07-17 08:00	2028-05-29 08:00	2028-07-17 08:00					1	1	EU-TASK-GUID-2070				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2071	2001	142	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A4220	Erect Heavy Structural Steel Superstructure & Overhead MEP Distribution Gantries		0.0	0.0	240.0	0.0	0.0	0.0	240.0	0.0	0.0	0.0				2028-07-17 08:00	2028-08-28 08:00		2028-07-17 08:00	2028-08-28 08:00			2028-07-17 08:00	2028-08-28 08:00	2028-07-17 08:00	2028-08-28 08:00					1	1	EU-TASK-GUID-2071				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2072	2001	142	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A4230	Install Precast Reinforced Concrete Floors & Data Hall Blast/Fire Partition Walls		0.0	0.0	240.0	0.0	0.0	0.0	240.0	0.0	0.0	0.0				2028-08-28 08:00	2028-10-09 08:00		2028-08-28 08:00	2028-10-09 08:00			2028-08-28 08:00	2028-10-09 08:00	2028-08-28 08:00	2028-10-09 08:00					1	1	EU-TASK-GUID-2072				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2073	2001	142	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A4240	Fabricate & Erect Heavy Roof Plant Steel Platforms for Chillers & Cooling Towers		0.0	0.0	240.0	0.0	0.0	0.0	240.0	0.0	0.0	0.0				2028-10-09 08:00	2028-11-20 08:00		2028-10-09 08:00	2028-11-20 08:00			2028-10-09 08:00	2028-11-20 08:00	2028-10-09 08:00	2028-11-20 08:00					1	1	EU-TASK-GUID-2073				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2074	2001	142	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A4250	Apply Passive Fireproofing (Intumescent Coating with 120-Min Rating under QCVN 06)		80.0	0.0	160.0	0.0	0.0	0.0	160.0	0.0	0.0	0.0				2028-10-23 08:00	2028-11-20 08:00		2028-10-09 08:00	2028-11-06 08:00			2028-10-09 08:00	2028-11-06 08:00	2028-10-23 08:00	2028-11-20 08:00					1	1	EU-TASK-GUID-2074				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2080	2001	143	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A4310	Install Insulated Architectural Metal Wall Sandwich Panels (QCVN 02 Weather Resistance)		0.0	0.0	320.0	0.0	0.0	0.0	320.0	0.0	0.0	0.0				2028-11-20 08:00	2029-01-15 08:00		2028-11-20 08:00	2029-01-15 08:00			2028-11-20 08:00	2029-01-15 08:00	2028-11-20 08:00	2029-01-15 08:00					1	1	EU-TASK-GUID-2080				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2081	2001	143	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A4320	Install Heavy-Duty Reinforced Waterproofing Membrane Roof System & Parapet Flashings		80.0	0.0	200.0	0.0	0.0	0.0	200.0	0.0	0.0	0.0				2028-12-04 08:00	2029-01-08 08:00		2028-11-20 08:00	2028-12-25 08:00			2028-11-20 08:00	2028-12-25 08:00	2028-12-04 08:00	2029-01-08 08:00					1	1	EU-TASK-GUID-2081				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2082	2001	143	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A4330	Install Acoustic Louvre Enclosures & Stormproof Generator Ventilation Dampers		80.0	0.0	40.0	0.0	0.0	0.0	40.0	0.0	0.0	0.0				2029-01-08 08:00	2029-01-15 08:00		2028-12-25 08:00	2029-01-01 08:00			2028-12-25 08:00	2029-01-01 08:00	2029-01-08 08:00	2029-01-15 08:00					1	1	EU-TASK-GUID-2082				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2083	2001	143	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A4340	Seal Building Envelope Penetrations & Conduct Negative-Pressure Airtightness Testing		0.0	0.0	160.0	0.0	0.0	0.0	160.0	0.0	0.0	0.0				2029-01-15 08:00	2029-02-12 08:00		2029-01-15 08:00	2029-02-12 08:00			2029-01-15 08:00	2029-02-12 08:00	2029-01-15 08:00	2029-02-12 08:00					1	1	EU-TASK-GUID-2083				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2084	2001	143	1	0.0	N	1.0	N	N	CP_Phys	TT_FinMile	DT_FixedDuration	TK_NotStart	M4350	Building Shell Weathertight Enclosure Milestone		0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0				2029-02-12 08:00	2029-02-12 08:00		2029-02-12 08:00	2029-02-12 08:00			2029-02-12 08:00	2029-02-12 08:00	2029-02-12 08:00	2029-02-12 08:00					1	1	EU-TASK-GUID-2084				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2090	2001	144	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A4410	Construct 110kV Substation Yard Foundations, Blast Firewall Barriers & Perimeter Retaining Walls		2440.0	0.0	320.0	0.0	0.0	0.0	320.0	0.0	0.0	0.0				2028-12-18 08:00	2029-02-12 08:00		2027-10-18 08:00	2027-12-13 08:00			2027-10-18 08:00	2027-12-13 08:00	2028-12-18 08:00	2029-02-12 08:00					1	1	EU-TASK-GUID-2090				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2091	2001	144	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A4420	Install Heavy-Duty High-Security Perimeter Fencing, PAS 68 Crash Barriers & CCTV Towers		2520.0	0.0	240.0	0.0	0.0	0.0	240.0	0.0	0.0	0.0				2029-01-01 08:00	2029-02-12 08:00		2027-10-18 08:00	2027-11-29 08:00			2027-10-18 08:00	2027-11-29 08:00	2029-01-01 08:00	2029-02-12 08:00					1	1	EU-TASK-GUID-2091				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2092	2001	144	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A4430	Pour Reinforced Concrete Pavements, Logistics Heavy Haulage Roads & Equipment Delivery Yard		2360.0	0.0	240.0	0.0	0.0	0.0	240.0	0.0	0.0	0.0				2028-12-04 08:00	2029-01-15 08:00		2027-10-18 08:00	2027-11-29 08:00			2027-10-18 08:00	2027-11-29 08:00	2028-12-04 08:00	2029-01-15 08:00					1	1	EU-TASK-GUID-2092				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2093	2001	144	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A4440	Construct Site Stormwater Drainage Network, Swales & Detention Retention Basin		2360.0	0.0	160.0	0.0	0.0	0.0	160.0	0.0	0.0	0.0				2029-01-15 08:00	2029-02-12 08:00		2027-11-29 08:00	2027-12-27 08:00			2027-11-29 08:00	2027-12-27 08:00	2029-01-15 08:00	2029-02-12 08:00					1	1	EU-TASK-GUID-2093				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2094	2001	144	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A4450	Install Dedicated Underground Fire Hydrant Water Loop & 500m3 Water Storage Reservoirs		2520.0	0.0	240.0	0.0	0.0	0.0	240.0	0.0	0.0	0.0				2029-01-01 08:00	2029-02-12 08:00		2027-10-18 08:00	2027-11-29 08:00			2027-10-18 08:00	2027-11-29 08:00	2029-01-01 08:00	2029-02-12 08:00					1	1	EU-TASK-GUID-2094				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2100	2001	151	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5110	Position Dual 63MVA 110kV/22kV Transformers & Concrete Oil-Containment Bund		0.0	0.0	200.0	0.0	0.0	0.0	200.0	0.0	0.0	0.0				2029-02-12 08:00	2029-03-19 08:00		2029-02-12 08:00	2029-03-19 08:00			2029-02-12 08:00	2029-03-19 08:00	2029-02-12 08:00	2029-03-19 08:00					1	1	EU-TASK-GUID-2100				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2101	2001	151	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5120	Install & SF6-Free Gas-Charge 110kV Gas Insulated Switchgear (GIS) Substation		0.0	0.0	200.0	0.0	0.0	0.0	200.0	0.0	0.0	0.0				2029-03-19 08:00	2029-04-23 08:00		2029-03-19 08:00	2029-04-23 08:00			2029-03-19 08:00	2029-04-23 08:00	2029-03-19 08:00	2029-04-23 08:00					1	1	EU-TASK-GUID-2101				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2102	2001	151	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5130	Terminate 110kV High-Voltage XLPE Cables & EVN Substation Protection SCADA Interface		0.0	0.0	240.0	0.0	0.0	0.0	240.0	0.0	0.0	0.0				2029-04-23 08:00	2029-06-04 08:00		2029-04-23 08:00	2029-06-04 08:00			2029-04-23 08:00	2029-06-04 08:00	2029-04-23 08:00	2029-06-04 08:00					1	1	EU-TASK-GUID-2102				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2103	2001	151	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5140	Erect 22kV Primary Distribution Switchboards, Busducts & Inter-Tie Breakers		0.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2029-06-04 08:00	2029-06-25 08:00		2029-06-04 08:00	2029-06-25 08:00			2029-06-04 08:00	2029-06-25 08:00	2029-06-04 08:00	2029-06-25 08:00					1	1	EU-TASK-GUID-2103				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2104	2001	151	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5150	Construct Substation Control Room, DC Battery Backups & EVN Telemetry Gateway		160.0	0.0	160.0	0.0	0.0	0.0	160.0	0.0	0.0	0.0				2029-03-12 08:00	2029-04-09 08:00		2029-02-12 08:00	2029-03-12 08:00			2029-02-12 08:00	2029-03-12 08:00	2029-03-12 08:00	2029-04-09 08:00					1	1	EU-TASK-GUID-2104				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2110	2001	152	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5210	Position & Anchor 20x 2.5MVA Standby Diesel/HVO Generators on Inertia Spring Mounts		880.0	0.0	240.0	0.0	0.0	0.0	240.0	0.0	0.0	0.0				2029-07-16 08:00	2029-08-27 08:00		2029-02-12 08:00	2029-03-26 08:00			2029-02-12 08:00	2029-03-26 08:00	2029-07-16 08:00	2029-08-27 08:00					1	1	EU-TASK-GUID-2110				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2111	2001	152	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5220	Install Generator Fuel Day Tanks, Stainless Steel Fuel Pipework & Leak Detection Systems		800.0	0.0	280.0	0.0	0.0	0.0	280.0	0.0	0.0	0.0				2029-07-02 08:00	2029-08-20 08:00		2029-02-12 08:00	2029-04-02 08:00			2029-02-12 08:00	2029-04-02 08:00	2029-07-02 08:00	2029-08-20 08:00					1	1	EU-TASK-GUID-2111				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2112	2001	152	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5230	Erect Generator Exhaust Flues, Mufflers & Selective Catalytic Reduction (SCR) Towers		800.0	0.0	200.0	0.0	0.0	0.0	200.0	0.0	0.0	0.0				2029-08-20 08:00	2029-09-24 08:00		2029-04-02 08:00	2029-05-07 08:00			2029-04-02 08:00	2029-05-07 08:00	2029-08-20 08:00	2029-09-24 08:00					1	1	EU-TASK-GUID-2112				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2113	2001	152	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5240	Position 5MW / 10MWh BESS Enclosures, Power Conversion System (PCS) & Step-Up Transformers		880.0	0.0	160.0	0.0	0.0	0.0	160.0	0.0	0.0	0.0				2029-08-27 08:00	2029-09-24 08:00		2029-03-26 08:00	2029-04-23 08:00			2029-03-26 08:00	2029-04-23 08:00	2029-08-27 08:00	2029-09-24 08:00					1	1	EU-TASK-GUID-2113				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2114	2001	152	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5250	Install Dedicated Clean Agent Fire Extinguishing & Deflagration Exhaust Systems for BESS		1080.0	0.0	200.0	0.0	0.0	0.0	200.0	0.0	0.0	0.0				2029-08-20 08:00	2029-09-24 08:00		2029-02-12 08:00	2029-03-19 08:00			2029-02-12 08:00	2029-03-19 08:00	2029-08-20 08:00	2029-09-24 08:00					1	1	EU-TASK-GUID-2114				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2120	2001	153	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5310	Hoist & Mount Water-Cooled Chillers, Cooling Towers & Chilled Water Headers		240.0	0.0	200.0	0.0	0.0	0.0	200.0	0.0	0.0	0.0				2029-03-26 08:00	2029-04-30 08:00		2029-02-12 08:00	2029-03-19 08:00			2029-02-12 08:00	2029-03-19 08:00	2029-03-26 08:00	2029-04-30 08:00					1	1	EU-TASK-GUID-2120				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2121	2001	153	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5320	Fabricate & Weld Primary Chilled Water Carbon Steel Piping Network (DN500)		240.0	0.0	200.0	0.0	0.0	0.0	200.0	0.0	0.0	0.0				2029-03-26 08:00	2029-04-30 08:00		2029-02-12 08:00	2029-03-19 08:00			2029-02-12 08:00	2029-03-19 08:00	2029-03-26 08:00	2029-04-30 08:00					1	1	EU-TASK-GUID-2121				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2122	2001	153	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5330	Install Variable Speed Chilled Water & Condenser Water Pump Skids with VFDs		240.0	0.0	360.0	0.0	0.0	0.0	360.0	0.0	0.0	0.0				2029-04-30 08:00	2029-07-02 08:00		2029-03-19 08:00	2029-05-21 08:00			2029-03-19 08:00	2029-05-21 08:00	2029-04-30 08:00	2029-07-02 08:00					1	1	EU-TASK-GUID-2122				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2123	2001	153	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5340	Chemical Flush, Hydrostatically Pressure Test & Passivate Chilled Water Pipework		240.0	0.0	160.0	0.0	0.0	0.0	160.0	0.0	0.0	0.0				2029-07-02 08:00	2029-07-30 08:00		2029-05-21 08:00	2029-06-18 08:00			2029-05-21 08:00	2029-06-18 08:00	2029-07-02 08:00	2029-07-30 08:00					1	1	EU-TASK-GUID-2123				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2124	2001	153	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5350	Apply Closed-Cell Elastomeric Insulation & Aluminum Weather Jacketing to Chilled Water Pipes		240.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2029-07-30 08:00	2029-08-20 08:00		2029-06-18 08:00	2029-07-09 08:00			2029-06-18 08:00	2029-07-09 08:00	2029-07-30 08:00	2029-08-20 08:00					1	1	EU-TASK-GUID-2124				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2125	2001	153	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5360	Install Plate Heat Exchangers for Energy Efficiency Optimization & Future Heat Reuse Skids		240.0	0.0	200.0	0.0	0.0	0.0	200.0	0.0	0.0	0.0				2029-08-20 08:00	2029-09-24 08:00		2029-07-09 08:00	2029-08-13 08:00			2029-07-09 08:00	2029-08-13 08:00	2029-08-20 08:00	2029-09-24 08:00					1	1	EU-TASK-GUID-2125				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2126	2001	153	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5370	Install Condenser Water Treatment, Automatic Blowdown & Chemical Dosing Systems		920.0	0.0	240.0	0.0	0.0	0.0	240.0	0.0	0.0	0.0				2029-07-23 08:00	2029-09-03 08:00		2029-02-12 08:00	2029-03-26 08:00			2029-02-12 08:00	2029-03-26 08:00	2029-07-23 08:00	2029-09-03 08:00					1	1	EU-TASK-GUID-2126				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2127	2001	153	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5380	Perform Hydronic System Balancing & Acoustic Vibration Isolator Calibration		1120.0	0.0	160.0	0.0	0.0	0.0	160.0	0.0	0.0	0.0				2029-08-27 08:00	2029-09-24 08:00		2029-02-12 08:00	2029-03-12 08:00			2029-02-12 08:00	2029-03-12 08:00	2029-08-27 08:00	2029-09-24 08:00					1	1	EU-TASK-GUID-2127				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2128	2001	153	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5390	Energise Mechanical Plant Motors & Commission Automated Chiller Plant Sequencer		920.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2029-09-03 08:00	2029-09-24 08:00		2029-03-26 08:00	2029-04-16 08:00			2029-03-26 08:00	2029-04-16 08:00	2029-09-03 08:00	2029-09-24 08:00					1	1	EU-TASK-GUID-2128				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2130	2001	154	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5405	Install Main 400V Low-Voltage Switchgear (MSB-A/B) & Static Transfer Switches (STS)		160.0	0.0	200.0	0.0	0.0	0.0	200.0	0.0	0.0	0.0				2029-04-09 08:00	2029-05-14 08:00		2029-03-12 08:00	2029-04-16 08:00			2029-03-12 08:00	2029-04-16 08:00	2029-04-09 08:00	2029-05-14 08:00					1	1	EU-TASK-GUID-2130				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2131	2001	154	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5410	Position & Wire 45x 1000kVA Static Modular 2N UPS Units & Maintenance Bypass Boards		440.0	0.0	280.0	0.0	0.0	0.0	280.0	0.0	0.0	0.0				2029-07-02 08:00	2029-08-20 08:00		2029-04-16 08:00	2029-06-04 08:00			2029-04-16 08:00	2029-06-04 08:00	2029-07-02 08:00	2029-08-20 08:00					1	1	EU-TASK-GUID-2131				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2132	2001	154	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5415	Install Floor-Mounted Power Distribution Units (PDUs) & Remote Power Panels (RPPs)		160.0	0.0	200.0	0.0	0.0	0.0	200.0	0.0	0.0	0.0				2029-05-14 08:00	2029-06-18 08:00		2029-04-16 08:00	2029-05-21 08:00			2029-04-16 08:00	2029-05-21 08:00	2029-05-14 08:00	2029-06-18 08:00					1	1	EU-TASK-GUID-2132				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2133	2001	154	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5420	Install Battery Racks, Off-Gas Thermal Detectors & Dedicated Hydrogen Extraction Fans		440.0	0.0	200.0	0.0	0.0	0.0	200.0	0.0	0.0	0.0				2029-08-20 08:00	2029-09-24 08:00		2029-06-04 08:00	2029-07-09 08:00			2029-06-04 08:00	2029-07-09 08:00	2029-08-20 08:00	2029-09-24 08:00					1	1	EU-TASK-GUID-2133				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2134	2001	154	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5430	Data Hall 1 (9MW): Erect 800mm Heavy-Duty Raised Access Floor & Overhead Busways		360.0	0.0	280.0	0.0	0.0	0.0	280.0	0.0	0.0	0.0				2029-04-16 08:00	2029-06-04 08:00		2029-02-12 08:00	2029-04-02 08:00			2029-02-12 08:00	2029-04-02 08:00	2029-04-16 08:00	2029-06-04 08:00					1	1	EU-TASK-GUID-2134				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2135	2001	154	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5435	Data Hall 1 (9MW): Install 18x EC-Fan In-Row CRAH Units & Hot Aisle Containment Pods		360.0	0.0	200.0	0.0	0.0	0.0	200.0	0.0	0.0	0.0				2029-06-04 08:00	2029-07-09 08:00		2029-04-02 08:00	2029-05-07 08:00			2029-04-02 08:00	2029-05-07 08:00	2029-06-04 08:00	2029-07-09 08:00					1	1	EU-TASK-GUID-2135				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2136	2001	154	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5440	Data Hall 2 (9MW): Erect 800mm Heavy-Duty Raised Access Floor & Overhead Busways		360.0	0.0	280.0	0.0	0.0	0.0	280.0	0.0	0.0	0.0				2029-04-16 08:00	2029-06-04 08:00		2029-02-12 08:00	2029-04-02 08:00			2029-02-12 08:00	2029-04-02 08:00	2029-04-16 08:00	2029-06-04 08:00					1	1	EU-TASK-GUID-2136				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2137	2001	154	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5445	Data Hall 2 (9MW): Install 18x EC-Fan In-Row CRAH Units & Hot Aisle Containment Pods		360.0	0.0	200.0	0.0	0.0	0.0	200.0	0.0	0.0	0.0				2029-06-04 08:00	2029-07-09 08:00		2029-04-02 08:00	2029-05-07 08:00			2029-04-02 08:00	2029-05-07 08:00	2029-06-04 08:00	2029-07-09 08:00					1	1	EU-TASK-GUID-2137				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2138	2001	154	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5450	Data Hall 3 (9MW): Erect 800mm Heavy-Duty Raised Access Floor & Overhead Busways		360.0	0.0	280.0	0.0	0.0	0.0	280.0	0.0	0.0	0.0				2029-04-16 08:00	2029-06-04 08:00		2029-02-12 08:00	2029-04-02 08:00			2029-02-12 08:00	2029-04-02 08:00	2029-04-16 08:00	2029-06-04 08:00					1	1	EU-TASK-GUID-2138				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2139	2001	154	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5455	Data Hall 3 (9MW): Install 18x EC-Fan In-Row CRAH Units & Hot Aisle Containment Pods		360.0	0.0	200.0	0.0	0.0	0.0	200.0	0.0	0.0	0.0				2029-06-04 08:00	2029-07-09 08:00		2029-04-02 08:00	2029-05-07 08:00			2029-04-02 08:00	2029-05-07 08:00	2029-06-04 08:00	2029-07-09 08:00					1	1	EU-TASK-GUID-2139				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2140	2001	154	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5460	Data Hall 4 (9MW): Erect 800mm Heavy-Duty Raised Access Floor & Overhead Busways		360.0	0.0	280.0	0.0	0.0	0.0	280.0	0.0	0.0	0.0				2029-04-16 08:00	2029-06-04 08:00		2029-02-12 08:00	2029-04-02 08:00			2029-02-12 08:00	2029-04-02 08:00	2029-04-16 08:00	2029-06-04 08:00					1	1	EU-TASK-GUID-2140				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2141	2001	154	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5465	Data Hall 4 (9MW): Install 18x EC-Fan In-Row CRAH Units & Hot Aisle Containment Pods		360.0	0.0	200.0	0.0	0.0	0.0	200.0	0.0	0.0	0.0				2029-06-04 08:00	2029-07-09 08:00		2029-04-02 08:00	2029-05-07 08:00			2029-04-02 08:00	2029-05-07 08:00	2029-06-04 08:00	2029-07-09 08:00					1	1	EU-TASK-GUID-2141				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2151	2001	154	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5468	Data Hall 5 (9MW): Erect 800mm Heavy-Duty Raised Access Floor & Overhead Busways		360.0	0.0	280.0	0.0	0.0	0.0	280.0	0.0	0.0	0.0				2029-04-16 08:00	2029-06-04 08:00		2029-02-12 08:00	2029-04-02 08:00			2029-02-12 08:00	2029-04-02 08:00	2029-04-16 08:00	2029-06-04 08:00					1	1	EU-TASK-GUID-2151				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2152	2001	154	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5469	Data Hall 5 (9MW): Install 18x EC-Fan In-Row CRAH Units & Hot Aisle Containment Pods		360.0	0.0	200.0	0.0	0.0	0.0	200.0	0.0	0.0	0.0				2029-06-04 08:00	2029-07-09 08:00		2029-04-02 08:00	2029-05-07 08:00			2029-04-02 08:00	2029-05-07 08:00	2029-06-04 08:00	2029-07-09 08:00					1	1	EU-TASK-GUID-2152				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2142	2001	154	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5470	Pull Vertical Copper Busbar Feeders, Tap-Off Boxes & Heavy Cable Tray Infrastructure		160.0	0.0	200.0	0.0	0.0	0.0	200.0	0.0	0.0	0.0				2029-06-18 08:00	2029-07-23 08:00		2029-05-21 08:00	2029-06-25 08:00			2029-05-21 08:00	2029-06-25 08:00	2029-06-18 08:00	2029-07-23 08:00					1	1	EU-TASK-GUID-2142				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2143	2001	154	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5475	Install Equipotential Grounding Grid & Overhead Fiber Optic Raceway Baskets		160.0	0.0	160.0	0.0	0.0	0.0	160.0	0.0	0.0	0.0				2029-07-23 08:00	2029-08-20 08:00		2029-06-25 08:00	2029-07-23 08:00			2029-06-25 08:00	2029-07-23 08:00	2029-07-23 08:00	2029-08-20 08:00					1	1	EU-TASK-GUID-2143				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2144	2001	154	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5480	Fit Out Dual Diverse Meet-Me-Rooms (MMR-A/B) & Optical Distribution Frames (ODF)		160.0	0.0	200.0	0.0	0.0	0.0	200.0	0.0	0.0	0.0				2029-08-20 08:00	2029-09-24 08:00		2029-07-23 08:00	2029-08-27 08:00			2029-07-23 08:00	2029-08-27 08:00	2029-08-20 08:00	2029-09-24 08:00					1	1	EU-TASK-GUID-2144				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2145	2001	154	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5482	Complete Hall 1 Clean-Room Epoxy Floor Coating, Sealant & Architectural Finishes		360.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2029-07-09 08:00	2029-07-30 08:00		2029-05-07 08:00	2029-05-28 08:00			2029-05-07 08:00	2029-05-28 08:00	2029-07-09 08:00	2029-07-30 08:00					1	1	EU-TASK-GUID-2145				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2146	2001	154	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5484	Complete Hall 2 Clean-Room Epoxy Floor Coating, Sealant & Architectural Finishes		360.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2029-07-09 08:00	2029-07-30 08:00		2029-05-07 08:00	2029-05-28 08:00			2029-05-07 08:00	2029-05-28 08:00	2029-07-09 08:00	2029-07-30 08:00					1	1	EU-TASK-GUID-2146				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2147	2001	154	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5486	Complete Hall 3 Clean-Room Epoxy Floor Coating, Sealant & Architectural Finishes		360.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2029-07-09 08:00	2029-07-30 08:00		2029-05-07 08:00	2029-05-28 08:00			2029-05-07 08:00	2029-05-28 08:00	2029-07-09 08:00	2029-07-30 08:00					1	1	EU-TASK-GUID-2147				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2148	2001	154	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5488	Complete Hall 4 Clean-Room Epoxy Floor Coating, Sealant & Architectural Finishes		360.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2029-07-09 08:00	2029-07-30 08:00		2029-05-07 08:00	2029-05-28 08:00			2029-05-07 08:00	2029-05-28 08:00	2029-07-09 08:00	2029-07-30 08:00					1	1	EU-TASK-GUID-2148				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2153	2001	154	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5489	Complete Hall 5 Clean-Room Epoxy Floor Coating, Sealant & Architectural Finishes		360.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2029-07-09 08:00	2029-07-30 08:00		2029-05-07 08:00	2029-05-28 08:00			2029-05-07 08:00	2029-05-28 08:00	2029-07-09 08:00	2029-07-30 08:00					1	1	EU-TASK-GUID-2153				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2149	2001	154	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5490	Install High-Efficiency LED Lighting, Emergency Exit Battery Packs & QCVN 06 Firestops		360.0	0.0	160.0	0.0	0.0	0.0	160.0	0.0	0.0	0.0				2029-07-30 08:00	2029-08-27 08:00		2029-05-28 08:00	2029-06-25 08:00			2029-05-28 08:00	2029-06-25 08:00	2029-07-30 08:00	2029-08-27 08:00					1	1	EU-TASK-GUID-2149				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2150	2001	154	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5495	Install Data Hall Security Air-Locks, Biometric Mantraps & Rated Steel Doors		360.0	0.0	160.0	0.0	0.0	0.0	160.0	0.0	0.0	0.0				2029-08-27 08:00	2029-09-24 08:00		2029-06-25 08:00	2029-07-23 08:00			2029-06-25 08:00	2029-07-23 08:00	2029-08-27 08:00	2029-09-24 08:00					1	1	EU-TASK-GUID-2150				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2160	2001	155	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5510	Install BACnet/IP Building Management System (BMS) DDC Panels, Actuators & Sensors		720.0	0.0	240.0	0.0	0.0	0.0	240.0	0.0	0.0	0.0				2029-06-18 08:00	2029-07-30 08:00		2029-02-12 08:00	2029-03-26 08:00			2029-02-12 08:00	2029-03-26 08:00	2029-06-18 08:00	2029-07-30 08:00					1	1	EU-TASK-GUID-2160				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2161	2001	155	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5520	Deploy Electrical Power Monitoring System (EPMS) Revenue-Grade Meters & PUE Telemetry		0.0	0.0	200.0	0.0	0.0	0.0	200.0	0.0	0.0	0.0				2029-06-25 08:00	2029-07-30 08:00		2029-06-25 08:00	2029-07-30 08:00			2029-06-25 08:00	2029-07-30 08:00	2029-06-25 08:00	2029-07-30 08:00					1	1	EU-TASK-GUID-2161				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2162	2001	155	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5530	Install Very Early Smoke Detection Apparatus (VESDA-E) Sampling Pipework in Data Halls		800.0	0.0	200.0	0.0	0.0	0.0	200.0	0.0	0.0	0.0				2029-07-02 08:00	2029-08-06 08:00		2029-02-12 08:00	2029-03-19 08:00			2029-02-12 08:00	2029-03-19 08:00	2029-07-02 08:00	2029-08-06 08:00					1	1	EU-TASK-GUID-2162				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2163	2001	155	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5540	Install Clean Agent (Inergen / Novec 1230) Gas Extinguishing Systems in Electrical Suites		800.0	0.0	200.0	0.0	0.0	0.0	200.0	0.0	0.0	0.0				2029-07-02 08:00	2029-08-06 08:00		2029-02-12 08:00	2029-03-19 08:00			2029-02-12 08:00	2029-03-19 08:00	2029-07-02 08:00	2029-08-06 08:00					1	1	EU-TASK-GUID-2163				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2164	2001	155	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5550	Install Double-Interlock Pre-Action Sprinkler Piping & Deluge Valves in White Space		760.0	0.0	240.0	0.0	0.0	0.0	240.0	0.0	0.0	0.0				2029-06-25 08:00	2029-08-06 08:00		2029-02-12 08:00	2029-03-26 08:00			2029-02-12 08:00	2029-03-26 08:00	2029-06-25 08:00	2029-08-06 08:00					1	1	EU-TASK-GUID-2164				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2165	2001	155	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5560	Terminate Structured Cabling & Fiber Optic Ring Backbone for BMS/EPMS Networks		0.0	0.0	160.0	0.0	0.0	0.0	160.0	0.0	0.0	0.0				2029-07-30 08:00	2029-08-27 08:00		2029-07-30 08:00	2029-08-27 08:00			2029-07-30 08:00	2029-08-27 08:00	2029-07-30 08:00	2029-08-27 08:00					1	1	EU-TASK-GUID-2165				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2166	2001	155	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5570	Program & Test Addressable Fire Alarm Control Panels & Automated Gas Extinguishing Matrix		760.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2029-08-06 08:00	2029-08-27 08:00		2029-03-26 08:00	2029-04-16 08:00			2029-03-26 08:00	2029-04-16 08:00	2029-08-06 08:00	2029-08-27 08:00					1	1	EU-TASK-GUID-2166				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2167	2001	155	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5580	Install Post-Discharge Smoke Extraction System & Stairwell Pressurisation Fans		760.0	0.0	160.0	0.0	0.0	0.0	160.0	0.0	0.0	0.0				2029-08-27 08:00	2029-09-24 08:00		2029-04-16 08:00	2029-05-14 08:00			2029-04-16 08:00	2029-05-14 08:00	2029-08-27 08:00	2029-09-24 08:00					1	1	EU-TASK-GUID-2167				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2168	2001	155	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A5590	Commission Security Operations Center (SOC) Master Monitoring Console & CCTV Surveillance		0.0	0.0	160.0	0.0	0.0	0.0	160.0	0.0	0.0	0.0				2029-08-27 08:00	2029-09-24 08:00		2029-08-27 08:00	2029-09-24 08:00			2029-08-27 08:00	2029-09-24 08:00	2029-08-27 08:00	2029-09-24 08:00					1	1	EU-TASK-GUID-2168				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2169	2001	155	1	0.0	N	1.0	N	N	CP_Phys	TT_FinMile	DT_FixedDuration	TK_NotStart	M5595	MEP Infrastructure & Data Hall White Space Fit-Out Completion Milestone		0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0				2029-09-24 08:00	2029-09-24 08:00		2029-09-24 08:00	2029-09-24 08:00			2029-09-24 08:00	2029-09-24 08:00	2029-09-24 08:00	2029-09-24 08:00					1	1	EU-TASK-GUID-2169				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2170	2001	161	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A6110	Cx Level 1: Witnessed Factory Acceptance Testing (FAT) Reports & Quality Verification		3200.0	0.0	160.0	0.0	0.0	0.0	160.0	0.0	0.0	0.0				2029-07-16 08:00	2029-08-13 08:00		2028-01-03 08:00	2028-01-31 08:00			2028-01-03 08:00	2028-01-31 08:00	2029-07-16 08:00	2029-08-13 08:00					1	1	EU-TASK-GUID-2170				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2171	2001	161	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A6120	Cx Level 2: Site Receipt Inspection, Rigging Quality Assurance & Storage Preservation		3200.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2029-08-13 08:00	2029-09-03 08:00		2028-01-31 08:00	2028-02-21 08:00			2028-01-31 08:00	2028-02-21 08:00	2029-08-13 08:00	2029-09-03 08:00					1	1	EU-TASK-GUID-2171				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2172	2001	161	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A6130	Quality Assurance Compliance Verification Dossier under Decree 06/2021/ND-CP		3200.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2029-09-03 08:00	2029-09-24 08:00		2028-02-21 08:00	2028-03-13 08:00			2028-02-21 08:00	2028-03-13 08:00	2029-09-03 08:00	2029-09-24 08:00					1	1	EU-TASK-GUID-2172				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2180	2001	162	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A6210	Cx Level 3: Cold Loop Point-to-Point Continuity, Insulation Resistance & Torque Verification		0.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2029-09-24 08:00	2029-10-15 08:00		2029-09-24 08:00	2029-10-15 08:00			2029-09-24 08:00	2029-10-15 08:00	2029-09-24 08:00	2029-10-15 08:00					1	1	EU-TASK-GUID-2180				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2181	2001	162	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A6220	Substation 110kV GIS Protection Relay Secondary Injection & High-Potential (Hipot) Testing		0.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2029-09-24 08:00	2029-10-15 08:00		2029-09-24 08:00	2029-10-15 08:00			2029-09-24 08:00	2029-10-15 08:00	2029-09-24 08:00	2029-10-15 08:00					1	1	EU-TASK-GUID-2181				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2182	2001	162	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A6230	Chilled Water Flushing Chemical Analysis & Hydronic Flow Balancing Sign-Off		0.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2029-09-24 08:00	2029-10-15 08:00		2029-09-24 08:00	2029-10-15 08:00			2029-09-24 08:00	2029-10-15 08:00	2029-09-24 08:00	2029-10-15 08:00					1	1	EU-TASK-GUID-2182				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2183	2001	162	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A6240	Standby Generator Pre-Start Mechanical, Lubrication & Electrical Interlock Verification		0.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2029-09-24 08:00	2029-10-15 08:00		2029-09-24 08:00	2029-10-15 08:00			2029-09-24 08:00	2029-10-15 08:00	2029-09-24 08:00	2029-10-15 08:00					1	1	EU-TASK-GUID-2183				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2184	2001	162	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A6250	Static Energisation Safety Permit & Lockout/Tagout (LOTO) Clearance Procedure		40.0	0.0	80.0	0.0	0.0	0.0	80.0	0.0	0.0	0.0				2029-10-01 08:00	2029-10-15 08:00		2029-09-24 08:00	2029-10-08 08:00			2029-09-24 08:00	2029-10-08 08:00	2029-10-01 08:00	2029-10-15 08:00					1	1	EU-TASK-GUID-2184				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2185	2001	162	1	0.0	N	1.0	N	N	CP_Phys	TT_FinMile	DT_FixedDuration	TK_NotStart	M6260	110kV Substation Static Energisation Complete Milestone		0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0				2029-10-15 08:00	2029-10-15 08:00		2029-10-15 08:00	2029-10-15 08:00			2029-10-15 08:00	2029-10-15 08:00	2029-10-15 08:00	2029-10-15 08:00					1	1	EU-TASK-GUID-2185				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2190	2001	163	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A6310	Cx Level 4: 110kV Live Energisation, Phasing Verification & Main MV Switchgear Commissioning		0.0	0.0	80.0	0.0	0.0	0.0	80.0	0.0	0.0	0.0				2029-10-15 08:00	2029-10-29 08:00		2029-10-15 08:00	2029-10-29 08:00			2029-10-15 08:00	2029-10-29 08:00	2029-10-15 08:00	2029-10-29 08:00					1	1	EU-TASK-GUID-2190				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2191	2001	163	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A6320	Generator Step-Load Testing (25%, 50%, 75%, 100%, 110%) & Automatic Fuel Transfer Trials		40.0	0.0	200.0	0.0	0.0	0.0	200.0	0.0	0.0	0.0				2029-11-05 08:00	2029-12-10 08:00		2029-10-29 08:00	2029-12-03 08:00			2029-10-29 08:00	2029-12-03 08:00	2029-11-05 08:00	2029-12-10 08:00					1	1	EU-TASK-GUID-2191				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2192	2001	163	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A6330	5MW BESS Dynamic Fast-Frequency Response & Microgrid Grid-Forming Integration Testing		120.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2029-11-19 08:00	2029-12-10 08:00		2029-10-29 08:00	2029-11-19 08:00			2029-10-29 08:00	2029-11-19 08:00	2029-11-19 08:00	2029-12-10 08:00					1	1	EU-TASK-GUID-2192				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2193	2001	163	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A6340	Chiller Plant Automatic Lead-Lag Sequencing & Cooling Failure Ride-Through Testing		0.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2029-10-29 08:00	2029-11-19 08:00		2029-10-29 08:00	2029-11-19 08:00			2029-10-29 08:00	2029-11-19 08:00	2029-10-29 08:00	2029-11-19 08:00					1	1	EU-TASK-GUID-2193				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2194	2001	163	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A6350	Data Halls 1-5 UPS Module Load Bank Thermal Dissipation & Battery Discharge Proof		0.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2029-11-19 08:00	2029-12-10 08:00		2029-11-19 08:00	2029-12-10 08:00			2029-11-19 08:00	2029-12-10 08:00	2029-11-19 08:00	2029-12-10 08:00					1	1	EU-TASK-GUID-2194				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2195	2001	163	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A6360	EPMS / BMS Sensor End-to-End Calibration & Critical Alarm Escalation Verification		280.0	0.0	80.0	0.0	0.0	0.0	80.0	0.0	0.0	0.0				2029-11-26 08:00	2029-12-10 08:00		2029-10-08 08:00	2029-10-22 08:00			2029-10-08 08:00	2029-10-22 08:00	2029-11-26 08:00	2029-12-10 08:00					1	1	EU-TASK-GUID-2195				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2196	2001	163	1	0.0	N	1.0	N	N	CP_Phys	TT_FinMile	DT_FixedDuration	TK_NotStart	M6370	Cx Level 4 Functional Systems Testing Complete Milestone		0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0				2029-12-10 08:00	2029-12-10 08:00		2029-12-10 08:00	2029-12-10 08:00			2029-12-10 08:00	2029-12-10 08:00	2029-12-10 08:00	2029-12-10 08:00					1	1	EU-TASK-GUID-2196				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2200	2001	164	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A6410	Deliver & Connect 45MW Portable Resistive-Reactive Load Banks & Server Simulators		0.0	0.0	96.0	0.0	0.0	0.0	96.0	0.0	0.0	0.0				2029-12-10 08:00	2029-12-26 08:00		2029-12-10 08:00	2029-12-26 08:00			2029-12-10 08:00	2029-12-26 08:00	2029-12-10 08:00	2029-12-26 08:00					1	1	EU-TASK-GUID-2200				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2201	2001	164	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A6420	45MW Full Facility Heat Load Soak Test (100% Load across 5 Halls / 24 Hours)		0.0	0.0	96.0	0.0	0.0	0.0	96.0	0.0	0.0	0.0				2029-12-26 08:00	2030-01-11 08:00		2029-12-26 08:00	2030-01-11 08:00			2029-12-26 08:00	2030-01-11 08:00	2029-12-26 08:00	2030-01-11 08:00					1	1	EU-TASK-GUID-2201				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2202	2001	164	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A6430	45MW 48-Hour Integrated Systems Testing (IST) under Full Thermal & Electrical Load		0.0	0.0	64.0	0.0	0.0	0.0	64.0	0.0	0.0	0.0				2030-01-11 08:00	2030-01-23 08:00		2030-01-11 08:00	2030-01-23 08:00			2030-01-11 08:00	2030-01-23 08:00	2030-01-11 08:00	2030-01-23 08:00					1	1	EU-TASK-GUID-2202				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2203	2001	164	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A6440	Black Building Utility Outage Simulation & Generator Fast Black-Start Under Full Load		0.0	0.0	64.0	0.0	0.0	0.0	64.0	0.0	0.0	0.0				2030-01-23 08:00	2030-02-04 08:00		2030-01-23 08:00	2030-02-04 08:00			2030-01-23 08:00	2030-02-04 08:00	2030-01-23 08:00	2030-02-04 08:00					1	1	EU-TASK-GUID-2203				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2204	2001	164	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A6450	Complete Cooling Loss Scenario & Thermal Energy Storage (TES) Ride-Through Demonstration		0.0	0.0	56.0	0.0	0.0	0.0	56.0	0.0	0.0	0.0				2030-02-04 08:00	2030-02-13 08:00		2030-02-04 08:00	2030-02-13 08:00			2030-02-04 08:00	2030-02-13 08:00	2030-02-04 08:00	2030-02-13 08:00					1	1	EU-TASK-GUID-2204				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2205	2001	164	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A6460	EPMS / BMS Automated Emergency Matrix Validation & SCADA Redundant Server Failover Proof		0.0	0.0	64.0	0.0	0.0	0.0	64.0	0.0	0.0	0.0				2030-02-13 08:00	2030-02-25 08:00		2030-02-13 08:00	2030-02-25 08:00			2030-02-13 08:00	2030-02-25 08:00	2030-02-13 08:00	2030-02-25 08:00					1	1	EU-TASK-GUID-2205				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2206	2001	164	1	0.0	N	1.0	N	N	CP_Phys	TT_FinMile	DT_FixedDuration	TK_NotStart	M6470	45MW Integrated Systems Testing (IST) Blackout Simulation Passed Milestone		0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0				2030-02-25 08:00	2030-02-25 08:00		2030-02-25 08:00	2030-02-25 08:00			2030-02-25 08:00	2030-02-25 08:00	2030-02-25 08:00	2030-02-25 08:00					1	1	EU-TASK-GUID-2206				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2210	2001	165	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A6510	Operations & Maintenance Facility Staff Training on SOP, AOP and EOP Procedures		600.0	0.0	160.0	0.0	0.0	0.0	160.0	0.0	0.0	0.0				2030-01-07 08:00	2030-02-04 08:00		2029-09-24 08:00	2029-10-22 08:00			2029-09-24 08:00	2029-10-22 08:00	2030-01-07 08:00	2030-02-04 08:00					1	1	EU-TASK-GUID-2210				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2211	2001	165	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A6520	Statutory As-Built Dossier Compilation & Construction Safety File (Decree 06/2021)		400.0	0.0	240.0	0.0	0.0	0.0	240.0	0.0	0.0	0.0				2029-12-24 08:00	2030-02-04 08:00		2029-10-15 08:00	2029-11-26 08:00			2029-10-15 08:00	2029-11-26 08:00	2029-12-24 08:00	2030-02-04 08:00					1	1	EU-TASK-GUID-2211				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2212	2001	165	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A6530	Spare Parts Inventory Handover & Critical Capital Equipment Spares Delivery		400.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2030-02-04 08:00	2030-02-25 08:00		2029-11-26 08:00	2029-12-17 08:00			2029-11-26 08:00	2029-12-17 08:00	2030-02-04 08:00	2030-02-25 08:00					1	1	EU-TASK-GUID-2212				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2213	2001	165	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A6540	Conduct Full Emergency Drill Simulations (Fire, Power Loss & Cyber Breach Scenarios)		4720.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2030-04-08 08:00	2030-04-29 08:00		2028-01-03 08:00	2028-01-24 08:00			2028-01-03 08:00	2028-01-24 08:00	2030-04-08 08:00	2030-04-29 08:00					1	1	EU-TASK-GUID-2213				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2220	2001	170	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A7010	Fire Prevention and Fighting Police Department (PC07) Final Inspection & Certificate		0.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2030-02-25 08:00	2030-03-18 08:00		2030-02-25 08:00	2030-03-18 08:00			2030-02-25 08:00	2030-03-18 08:00	2030-02-25 08:00	2030-03-18 08:00					1	1	EU-TASK-GUID-2220				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2221	2001	170	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A7020	Department of Construction (DOC) Statutory Completion Acceptance Approval (Decree 06)		240.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2030-04-08 08:00	2030-04-29 08:00		2030-02-25 08:00	2030-03-18 08:00			2030-02-25 08:00	2030-03-18 08:00	2030-04-08 08:00	2030-04-29 08:00					1	1	EU-TASK-GUID-2221				N					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2222	2001	170	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A7030	EVN / National Power Dispatch (NLDC/NSMO) Grid Synchronization & COD Agreement		0.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2030-03-18 08:00	2030-04-08 08:00		2030-03-18 08:00	2030-04-08 08:00			2030-03-18 08:00	2030-04-08 08:00	2030-03-18 08:00	2030-04-08 08:00					1	1	EU-TASK-GUID-2222				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2223	2001	170	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A7040	ANSI/TIA-942-B Rated 3 & Uptime Tier III Facility Certification Audit Verification		0.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2030-04-08 08:00	2030-04-29 08:00		2030-04-08 08:00	2030-04-29 08:00			2030-04-08 08:00	2030-04-29 08:00	2030-04-08 08:00	2030-04-29 08:00					1	1	EU-TASK-GUID-2223				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2224	2001	170	1	0.0	N	1.0	N	N	CP_Phys	TT_Task	DT_FixedDuration	TK_NotStart	A7050	Client Practical Completion Handover, Facility Keys Release & Operations Transition		0.0	0.0	120.0	0.0	0.0	0.0	120.0	0.0	0.0	0.0				2030-04-29 08:00	2030-05-20 08:00		2030-04-29 08:00	2030-05-20 08:00			2030-04-29 08:00	2030-05-20 08:00	2030-04-29 08:00	2030-05-20 08:00					1	1	EU-TASK-GUID-2224				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%R	2225	2001	170	1	0.0	N	1.0	N	N	CP_Phys	TT_FinMile	DT_FixedDuration	TK_NotStart	M7060	Commercial Operation Date (COD), Handover & Safety File Formal Milestone		0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0				2030-05-20 08:00	2030-05-20 08:00		2030-05-20 08:00	2030-05-20 08:00			2030-05-20 08:00	2030-05-20 08:00	2030-05-20 08:00	2030-05-20 08:00					1	1	EU-TASK-GUID-2225				Y					2026-11-12 08:00	2026-11-12 08:00	admin	admin	
+%T	TASKRSRC
+%F	taskrsrc_id	task_id	proj_id	acct_id	rsrc_id	remain_qty	target_qty	act_ot_qty	act_reg_qty	target_cost	act_reg_cost	act_ot_cost	remain_cost	act_start_date	act_end_date	restart_date	reend_date	target_start_date	target_end_date	target_lag_drtn_hr_cnt	rem_late_start_date	rem_late_end_date	act_this_per_cost	act_this_per_qty	rsrc_type
+%R	5001	2001	2001		1001	1.0	1.0	0.0	0.0	0.00	0.0	0.0	0.00			2027-01-04 08:00	2027-01-04 08:00	2027-01-04 08:00	2027-01-04 08:00	0.0	2027-01-04 08:00	2027-01-04 08:00	0.0	0.0	RT_Mat
+%R	5002	2002	2001		1001	120.0	120.0	0.0	0.0	350000.00	0.0	0.0	350000.00			2027-01-04 08:00	2027-01-25 08:00	2027-01-04 08:00	2027-01-25 08:00	0.0	2027-01-25 08:00	2027-02-15 08:00	0.0	0.0	RT_Mat
+%R	5003	2003	2001		1001	240.0	240.0	0.0	0.0	4200000.00	0.0	0.0	4200000.00			2027-01-04 08:00	2027-02-15 08:00	2027-01-04 08:00	2027-02-15 08:00	0.0	2027-01-04 08:00	2027-02-15 08:00	0.0	0.0	RT_Mat
+%R	5004	2004	2001		1001	400.0	400.0	0.0	0.0	750000.00	0.0	0.0	750000.00			2027-02-15 08:00	2027-04-26 08:00	2027-02-15 08:00	2027-04-26 08:00	0.0	2027-02-15 08:00	2027-04-26 08:00	0.0	0.0	RT_Mat
+%R	5005	2005	2001		1001	600.0	600.0	0.0	0.0	1150000.00	0.0	0.0	1150000.00			2027-04-26 08:00	2027-08-09 08:00	2027-04-26 08:00	2027-08-09 08:00	0.0	2027-04-26 08:00	2027-08-09 08:00	0.0	0.0	RT_Mat
+%R	5006	2006	2001		1001	680.0	680.0	0.0	0.0	250000.00	0.0	0.0	250000.00			2027-04-26 08:00	2027-08-23 08:00	2027-04-26 08:00	2027-08-23 08:00	0.0	2027-05-31 08:00	2027-09-27 08:00	0.0	0.0	RT_Mat
+%R	5007	2007	2001		1001	640.0	640.0	0.0	0.0	150000.00	0.0	0.0	150000.00			2027-01-04 08:00	2027-04-26 08:00	2027-01-04 08:00	2027-04-26 08:00	0.0	2027-04-12 08:00	2027-08-02 08:00	0.0	0.0	RT_Mat
+%R	5008	2008	2001		1001	320.0	320.0	0.0	0.0	100000.00	0.0	0.0	100000.00			2027-04-26 08:00	2027-06-21 08:00	2027-04-26 08:00	2027-06-21 08:00	0.0	2027-08-02 08:00	2027-09-27 08:00	0.0	0.0	RT_Mat
+%R	5009	2009	2001		1001	280.0	280.0	0.0	0.0	4850000.00	0.0	0.0	4850000.00			2027-08-09 08:00	2027-09-27 08:00	2027-08-09 08:00	2027-09-27 08:00	0.0	2027-08-09 08:00	2027-09-27 08:00	0.0	0.0	RT_Mat
+%R	5010	2010	2001		1001	120.0	120.0	0.0	0.0	200000.00	0.0	0.0	200000.00			2027-09-27 08:00	2027-10-18 08:00	2027-09-27 08:00	2027-10-18 08:00	0.0	2027-09-27 08:00	2027-10-18 08:00	0.0	0.0	RT_Mat
+%R	5011	2011	2001		1001	1.0	1.0	0.0	0.0	0.00	0.0	0.0	0.00			2027-10-18 08:00	2027-10-18 08:00	2027-10-18 08:00	2027-10-18 08:00	0.0	2027-10-18 08:00	2027-10-18 08:00	0.0	0.0	RT_Mat
+%R	5012	2020	2001		1002	120.0	120.0	0.0	0.0	350000.00	0.0	0.0	350000.00			2027-01-04 08:00	2027-01-25 08:00	2027-01-04 08:00	2027-01-25 08:00	0.0	2027-02-22 08:00	2027-03-15 08:00	0.0	0.0	RT_Labor
+%R	5013	2021	2001		1002	200.0	200.0	0.0	0.0	1650000.00	0.0	0.0	1650000.00			2027-01-04 08:00	2027-02-08 08:00	2027-01-04 08:00	2027-02-08 08:00	0.0	2027-02-08 08:00	2027-03-15 08:00	0.0	0.0	RT_Labor
+%R	5014	2022	2001		1002	280.0	280.0	0.0	0.0	2000000.00	0.0	0.0	2000000.00			2027-02-08 08:00	2027-03-29 08:00	2027-02-08 08:00	2027-03-29 08:00	0.0	2027-03-15 08:00	2027-05-03 08:00	0.0	0.0	RT_Labor
+%R	5015	2023	2001		1002	320.0	320.0	0.0	0.0	4100000.00	0.0	0.0	4100000.00			2027-03-29 08:00	2027-05-24 08:00	2027-03-29 08:00	2027-05-24 08:00	0.0	2027-05-03 08:00	2027-06-28 08:00	0.0	0.0	RT_Labor
+%R	5016	2024	2001		1002	320.0	320.0	0.0	0.0	2300000.00	0.0	0.0	2300000.00			2027-01-25 08:00	2027-03-22 08:00	2027-01-25 08:00	2027-03-22 08:00	0.0	2027-06-07 08:00	2027-08-02 08:00	0.0	0.0	RT_Labor
+%R	5017	2025	2001		1002	360.0	360.0	0.0	0.0	600000.00	0.0	0.0	600000.00			2027-03-22 08:00	2027-05-24 08:00	2027-03-22 08:00	2027-05-24 08:00	0.0	2028-05-01 08:00	2028-07-03 08:00	0.0	0.0	RT_Labor
+%R	5018	2026	2001		1002	320.0	320.0	0.0	0.0	800000.00	0.0	0.0	800000.00			2027-01-25 08:00	2027-03-22 08:00	2027-01-25 08:00	2027-03-22 08:00	0.0	2028-03-27 08:00	2028-05-22 08:00	0.0	0.0	RT_Labor
+%R	5019	2027	2001		1002	240.0	240.0	0.0	0.0	300000.00	0.0	0.0	300000.00			2027-03-22 08:00	2027-05-03 08:00	2027-03-22 08:00	2027-05-03 08:00	0.0	2028-05-22 08:00	2028-07-03 08:00	0.0	0.0	RT_Labor
+%R	5020	2028	2001		1002	280.0	280.0	0.0	0.0	650000.00	0.0	0.0	650000.00			2027-05-24 08:00	2027-07-12 08:00	2027-05-24 08:00	2027-07-12 08:00	0.0	2028-07-03 08:00	2028-08-21 08:00	0.0	0.0	RT_Labor
+%R	5021	2029	2001		1002	240.0	240.0	0.0	0.0	750000.00	0.0	0.0	750000.00			2027-05-24 08:00	2027-07-05 08:00	2027-05-24 08:00	2027-07-05 08:00	0.0	2027-06-28 08:00	2027-08-09 08:00	0.0	0.0	RT_Labor
+%R	5022	2030	2001		1002	1.0	1.0	0.0	0.0	0.00	0.0	0.0	0.00			2027-07-12 08:00	2027-07-12 08:00	2027-07-12 08:00	2027-07-12 08:00	0.0	2028-08-21 08:00	2028-08-21 08:00	0.0	0.0	RT_Labor
+%R	5023	2040	2001		1003	760.0	760.0	0.0	0.0	16000000.00	0.0	0.0	16000000.00			2027-07-12 08:00	2027-11-22 08:00	2027-07-12 08:00	2027-11-22 08:00	0.0	2028-09-11 08:00	2029-01-22 08:00	0.0	0.0	RT_Mat
+%R	5024	2041	2001		1003	120.0	120.0	0.0	0.0	12000000.00	0.0	0.0	12000000.00			2027-11-22 08:00	2027-12-13 08:00	2027-11-22 08:00	2027-12-13 08:00	0.0	2029-01-22 08:00	2029-02-12 08:00	0.0	0.0	RT_Mat
+%R	5025	2042	2001		1003	760.0	760.0	0.0	0.0	20500000.00	0.0	0.0	20500000.00			2027-07-12 08:00	2027-11-22 08:00	2027-07-12 08:00	2027-11-22 08:00	0.0	2028-10-02 08:00	2029-02-12 08:00	0.0	0.0	RT_Mat
+%R	5026	2043	2001		1003	880.0	880.0	0.0	0.0	15000000.00	0.0	0.0	15000000.00			2027-07-12 08:00	2027-12-13 08:00	2027-07-12 08:00	2027-12-13 08:00	0.0	2028-08-21 08:00	2029-01-22 08:00	0.0	0.0	RT_Mat
+%R	5027	2044	2001		1003	120.0	120.0	0.0	0.0	13500000.00	0.0	0.0	13500000.00			2027-12-13 08:00	2028-01-03 08:00	2027-12-13 08:00	2028-01-03 08:00	0.0	2029-01-22 08:00	2029-02-12 08:00	0.0	0.0	RT_Mat
+%R	5028	2045	2001		1003	640.0	640.0	0.0	0.0	10500000.00	0.0	0.0	10500000.00			2027-07-12 08:00	2027-11-01 08:00	2027-07-12 08:00	2027-11-01 08:00	0.0	2028-10-23 08:00	2029-02-12 08:00	0.0	0.0	RT_Mat
+%R	5029	2046	2001		1003	640.0	640.0	0.0	0.0	6500000.00	0.0	0.0	6500000.00			2027-07-12 08:00	2027-11-01 08:00	2027-07-12 08:00	2027-11-01 08:00	0.0	2028-10-23 08:00	2029-02-12 08:00	0.0	0.0	RT_Mat
+%R	5030	2047	2001		1003	760.0	760.0	0.0	0.0	5200000.00	0.0	0.0	5200000.00			2027-07-12 08:00	2027-11-22 08:00	2027-07-12 08:00	2027-11-22 08:00	0.0	2028-09-11 08:00	2029-01-22 08:00	0.0	0.0	RT_Mat
+%R	5031	2048	2001		1003	120.0	120.0	0.0	0.0	3800000.00	0.0	0.0	3800000.00			2027-11-22 08:00	2027-12-13 08:00	2027-11-22 08:00	2027-12-13 08:00	0.0	2029-01-22 08:00	2029-02-12 08:00	0.0	0.0	RT_Mat
+%R	5032	2049	2001		1003	560.0	560.0	0.0	0.0	2800000.00	0.0	0.0	2800000.00			2027-07-12 08:00	2027-10-18 08:00	2027-07-12 08:00	2027-10-18 08:00	0.0	2028-11-06 08:00	2029-02-12 08:00	0.0	0.0	RT_Mat
+%R	5033	2050	2001		1003	840.0	840.0	0.0	0.0	1000000.00	0.0	0.0	1000000.00			2027-07-12 08:00	2027-12-06 08:00	2027-07-12 08:00	2027-12-06 08:00	0.0	2028-08-28 08:00	2029-01-22 08:00	0.0	0.0	RT_Mat
+%R	5034	2051	2001		1003	120.0	120.0	0.0	0.0	1400000.00	0.0	0.0	1400000.00			2027-12-06 08:00	2027-12-27 08:00	2027-12-06 08:00	2027-12-27 08:00	0.0	2029-01-22 08:00	2029-02-12 08:00	0.0	0.0	RT_Mat
+%R	5035	2052	2001		1003	640.0	640.0	0.0	0.0	1600000.00	0.0	0.0	1600000.00			2027-07-12 08:00	2027-11-01 08:00	2027-07-12 08:00	2027-11-01 08:00	0.0	2028-10-23 08:00	2029-02-12 08:00	0.0	0.0	RT_Mat
+%R	5036	2053	2001		1003	480.0	480.0	0.0	0.0	1300000.00	0.0	0.0	1300000.00			2027-07-12 08:00	2027-10-04 08:00	2027-07-12 08:00	2027-10-04 08:00	0.0	2028-11-20 08:00	2029-02-12 08:00	0.0	0.0	RT_Mat
+%R	5037	2054	2001		1003	400.0	400.0	0.0	0.0	1400000.00	0.0	0.0	1400000.00			2027-07-12 08:00	2027-09-20 08:00	2027-07-12 08:00	2027-09-20 08:00	0.0	2028-12-04 08:00	2029-02-12 08:00	0.0	0.0	RT_Mat
+%R	5038	2055	2001		1003	1.0	1.0	0.0	0.0	0.00	0.0	0.0	0.00			2028-01-03 08:00	2028-01-03 08:00	2028-01-03 08:00	2028-01-03 08:00	0.0	2029-02-12 08:00	2029-02-12 08:00	0.0	0.0	RT_Mat
+%R	5039	2060	2001		1004	240.0	240.0	0.0	0.0	1600000.00	0.0	0.0	1600000.00			2027-10-18 08:00	2027-11-29 08:00	2027-10-18 08:00	2027-11-29 08:00	0.0	2027-10-18 08:00	2027-11-29 08:00	0.0	0.0	RT_Nonlabor
+%R	5040	2061	2001		1004	440.0	440.0	0.0	0.0	2200000.00	0.0	0.0	2200000.00			2027-11-29 08:00	2028-02-14 08:00	2027-11-29 08:00	2028-02-14 08:00	0.0	2027-11-29 08:00	2028-02-14 08:00	0.0	0.0	RT_Nonlabor
+%R	5041	2062	2001		1004	120.0	120.0	0.0	0.0	7500000.00	0.0	0.0	7500000.00			2028-02-14 08:00	2028-03-06 08:00	2028-02-14 08:00	2028-03-06 08:00	0.0	2028-02-14 08:00	2028-03-06 08:00	0.0	0.0	RT_Nonlabor
+%R	5042	2063	2001		1004	320.0	320.0	0.0	0.0	4600000.00	0.0	0.0	4600000.00			2028-03-06 08:00	2028-05-01 08:00	2028-03-06 08:00	2028-05-01 08:00	0.0	2028-03-06 08:00	2028-05-01 08:00	0.0	0.0	RT_Nonlabor
+%R	5043	2064	2001		1004	160.0	160.0	0.0	0.0	3600000.00	0.0	0.0	3600000.00			2028-05-01 08:00	2028-05-29 08:00	2028-05-01 08:00	2028-05-29 08:00	0.0	2028-05-01 08:00	2028-05-29 08:00	0.0	0.0	RT_Nonlabor
+%R	5044	2070	2001		1004	280.0	280.0	0.0	0.0	7500000.00	0.0	0.0	7500000.00			2028-05-29 08:00	2028-07-17 08:00	2028-05-29 08:00	2028-07-17 08:00	0.0	2028-05-29 08:00	2028-07-17 08:00	0.0	0.0	RT_Nonlabor
+%R	5045	2071	2001		1004	240.0	240.0	0.0	0.0	5800000.00	0.0	0.0	5800000.00			2028-07-17 08:00	2028-08-28 08:00	2028-07-17 08:00	2028-08-28 08:00	0.0	2028-07-17 08:00	2028-08-28 08:00	0.0	0.0	RT_Nonlabor
+%R	5046	2072	2001		1004	240.0	240.0	0.0	0.0	4000000.00	0.0	0.0	4000000.00			2028-08-28 08:00	2028-10-09 08:00	2028-08-28 08:00	2028-10-09 08:00	0.0	2028-08-28 08:00	2028-10-09 08:00	0.0	0.0	RT_Nonlabor
+%R	5047	2073	2001		1004	240.0	240.0	0.0	0.0	2700000.00	0.0	0.0	2700000.00			2028-10-09 08:00	2028-11-20 08:00	2028-10-09 08:00	2028-11-20 08:00	0.0	2028-10-09 08:00	2028-11-20 08:00	0.0	0.0	RT_Nonlabor
+%R	5048	2074	2001		1004	160.0	160.0	0.0	0.0	1300000.00	0.0	0.0	1300000.00			2028-10-09 08:00	2028-11-06 08:00	2028-10-09 08:00	2028-11-06 08:00	0.0	2028-10-23 08:00	2028-11-20 08:00	0.0	0.0	RT_Nonlabor
+%R	5049	2080	2001		1004	320.0	320.0	0.0	0.0	5800000.00	0.0	0.0	5800000.00			2028-11-20 08:00	2029-01-15 08:00	2028-11-20 08:00	2029-01-15 08:00	0.0	2028-11-20 08:00	2029-01-15 08:00	0.0	0.0	RT_Nonlabor
+%R	5050	2081	2001		1004	200.0	200.0	0.0	0.0	4000000.00	0.0	0.0	4000000.00			2028-11-20 08:00	2028-12-25 08:00	2028-11-20 08:00	2028-12-25 08:00	0.0	2028-12-04 08:00	2029-01-08 08:00	0.0	0.0	RT_Nonlabor
+%R	5051	2082	2001		1004	40.0	40.0	0.0	0.0	2800000.00	0.0	0.0	2800000.00			2028-12-25 08:00	2029-01-01 08:00	2028-12-25 08:00	2029-01-01 08:00	0.0	2029-01-08 08:00	2029-01-15 08:00	0.0	0.0	RT_Nonlabor
+%R	5052	2083	2001		1004	160.0	160.0	0.0	0.0	3800000.00	0.0	0.0	3800000.00			2029-01-15 08:00	2029-02-12 08:00	2029-01-15 08:00	2029-02-12 08:00	0.0	2029-01-15 08:00	2029-02-12 08:00	0.0	0.0	RT_Nonlabor
+%R	5053	2084	2001		1004	1.0	1.0	0.0	0.0	0.00	0.0	0.0	0.00			2029-02-12 08:00	2029-02-12 08:00	2029-02-12 08:00	2029-02-12 08:00	0.0	2029-02-12 08:00	2029-02-12 08:00	0.0	0.0	RT_Nonlabor
+%R	5054	2090	2001		1004	320.0	320.0	0.0	0.0	2900000.00	0.0	0.0	2900000.00			2027-10-18 08:00	2027-12-13 08:00	2027-10-18 08:00	2027-12-13 08:00	0.0	2028-12-18 08:00	2029-02-12 08:00	0.0	0.0	RT_Nonlabor
+%R	5055	2091	2001		1004	240.0	240.0	0.0	0.0	2700000.00	0.0	0.0	2700000.00			2027-10-18 08:00	2027-11-29 08:00	2027-10-18 08:00	2027-11-29 08:00	0.0	2029-01-01 08:00	2029-02-12 08:00	0.0	0.0	RT_Nonlabor
+%R	5056	2092	2001		1004	240.0	240.0	0.0	0.0	2200000.00	0.0	0.0	2200000.00			2027-10-18 08:00	2027-11-29 08:00	2027-10-18 08:00	2027-11-29 08:00	0.0	2028-12-04 08:00	2029-01-15 08:00	0.0	0.0	RT_Nonlabor
+%R	5057	2093	2001		1004	160.0	160.0	0.0	0.0	1900000.00	0.0	0.0	1900000.00			2027-11-29 08:00	2027-12-27 08:00	2027-11-29 08:00	2027-12-27 08:00	0.0	2029-01-15 08:00	2029-02-12 08:00	0.0	0.0	RT_Nonlabor
+%R	5058	2094	2001		1004	240.0	240.0	0.0	0.0	1100000.00	0.0	0.0	1100000.00			2027-10-18 08:00	2027-11-29 08:00	2027-10-18 08:00	2027-11-29 08:00	0.0	2029-01-01 08:00	2029-02-12 08:00	0.0	0.0	RT_Nonlabor
+%R	5059	2100	2001		1005	200.0	200.0	0.0	0.0	5000000.00	0.0	0.0	5000000.00			2029-02-12 08:00	2029-03-19 08:00	2029-02-12 08:00	2029-03-19 08:00	0.0	2029-02-12 08:00	2029-03-19 08:00	0.0	0.0	RT_Nonlabor
+%R	5060	2101	2001		1005	200.0	200.0	0.0	0.0	6600000.00	0.0	0.0	6600000.00			2029-03-19 08:00	2029-04-23 08:00	2029-03-19 08:00	2029-04-23 08:00	0.0	2029-03-19 08:00	2029-04-23 08:00	0.0	0.0	RT_Nonlabor
+%R	5061	2102	2001		1005	240.0	240.0	0.0	0.0	5500000.00	0.0	0.0	5500000.00			2029-04-23 08:00	2029-06-04 08:00	2029-04-23 08:00	2029-06-04 08:00	0.0	2029-04-23 08:00	2029-06-04 08:00	0.0	0.0	RT_Nonlabor
+%R	5062	2103	2001		1005	120.0	120.0	0.0	0.0	4200000.00	0.0	0.0	4200000.00			2029-06-04 08:00	2029-06-25 08:00	2029-06-04 08:00	2029-06-25 08:00	0.0	2029-06-04 08:00	2029-06-25 08:00	0.0	0.0	RT_Nonlabor
+%R	5063	2104	2001		1005	160.0	160.0	0.0	0.0	1700000.00	0.0	0.0	1700000.00			2029-02-12 08:00	2029-03-12 08:00	2029-02-12 08:00	2029-03-12 08:00	0.0	2029-03-12 08:00	2029-04-09 08:00	0.0	0.0	RT_Nonlabor
+%R	5064	2110	2001		1005	240.0	240.0	0.0	0.0	5400000.00	0.0	0.0	5400000.00			2029-02-12 08:00	2029-03-26 08:00	2029-02-12 08:00	2029-03-26 08:00	0.0	2029-07-16 08:00	2029-08-27 08:00	0.0	0.0	RT_Nonlabor
+%R	5065	2111	2001		1005	280.0	280.0	0.0	0.0	4200000.00	0.0	0.0	4200000.00			2029-02-12 08:00	2029-04-02 08:00	2029-02-12 08:00	2029-04-02 08:00	0.0	2029-07-02 08:00	2029-08-20 08:00	0.0	0.0	RT_Nonlabor
+%R	5066	2112	2001		1005	200.0	200.0	0.0	0.0	3700000.00	0.0	0.0	3700000.00			2029-04-02 08:00	2029-05-07 08:00	2029-04-02 08:00	2029-05-07 08:00	0.0	2029-08-20 08:00	2029-09-24 08:00	0.0	0.0	RT_Nonlabor
+%R	5067	2113	2001		1005	160.0	160.0	0.0	0.0	4000000.00	0.0	0.0	4000000.00			2029-03-26 08:00	2029-04-23 08:00	2029-03-26 08:00	2029-04-23 08:00	0.0	2029-08-27 08:00	2029-09-24 08:00	0.0	0.0	RT_Nonlabor
+%R	5068	2114	2001		1005	200.0	200.0	0.0	0.0	2200000.00	0.0	0.0	2200000.00			2029-02-12 08:00	2029-03-19 08:00	2029-02-12 08:00	2029-03-19 08:00	0.0	2029-08-20 08:00	2029-09-24 08:00	0.0	0.0	RT_Nonlabor
+%R	5069	2120	2001		1005	200.0	200.0	0.0	0.0	6200000.00	0.0	0.0	6200000.00			2029-02-12 08:00	2029-03-19 08:00	2029-02-12 08:00	2029-03-19 08:00	0.0	2029-03-26 08:00	2029-04-30 08:00	0.0	0.0	RT_Nonlabor
+%R	5070	2121	2001		1005	200.0	200.0	0.0	0.0	4800000.00	0.0	0.0	4800000.00			2029-02-12 08:00	2029-03-19 08:00	2029-02-12 08:00	2029-03-19 08:00	0.0	2029-03-26 08:00	2029-04-30 08:00	0.0	0.0	RT_Nonlabor
+%R	5071	2122	2001		1005	360.0	360.0	0.0	0.0	4000000.00	0.0	0.0	4000000.00			2029-03-19 08:00	2029-05-21 08:00	2029-03-19 08:00	2029-05-21 08:00	0.0	2029-04-30 08:00	2029-07-02 08:00	0.0	0.0	RT_Nonlabor
+%R	5072	2123	2001		1005	160.0	160.0	0.0	0.0	2500000.00	0.0	0.0	2500000.00			2029-05-21 08:00	2029-06-18 08:00	2029-05-21 08:00	2029-06-18 08:00	0.0	2029-07-02 08:00	2029-07-30 08:00	0.0	0.0	RT_Nonlabor
+%R	5073	2124	2001		1005	120.0	120.0	0.0	0.0	2200000.00	0.0	0.0	2200000.00			2029-06-18 08:00	2029-07-09 08:00	2029-06-18 08:00	2029-07-09 08:00	0.0	2029-07-30 08:00	2029-08-20 08:00	0.0	0.0	RT_Nonlabor
+%R	5074	2125	2001		1005	200.0	200.0	0.0	0.0	1900000.00	0.0	0.0	1900000.00			2029-07-09 08:00	2029-08-13 08:00	2029-07-09 08:00	2029-08-13 08:00	0.0	2029-08-20 08:00	2029-09-24 08:00	0.0	0.0	RT_Nonlabor
+%R	5075	2126	2001		1005	240.0	240.0	0.0	0.0	1600000.00	0.0	0.0	1600000.00			2029-02-12 08:00	2029-03-26 08:00	2029-02-12 08:00	2029-03-26 08:00	0.0	2029-07-23 08:00	2029-09-03 08:00	0.0	0.0	RT_Nonlabor
+%R	5076	2127	2001		1005	160.0	160.0	0.0	0.0	1000000.00	0.0	0.0	1000000.00			2029-02-12 08:00	2029-03-12 08:00	2029-02-12 08:00	2029-03-12 08:00	0.0	2029-08-27 08:00	2029-09-24 08:00	0.0	0.0	RT_Nonlabor
+%R	5077	2128	2001		1005	120.0	120.0	0.0	0.0	800000.00	0.0	0.0	800000.00			2029-03-26 08:00	2029-04-16 08:00	2029-03-26 08:00	2029-04-16 08:00	0.0	2029-09-03 08:00	2029-09-24 08:00	0.0	0.0	RT_Nonlabor
+%R	5078	2130	2001		1005	200.0	200.0	0.0	0.0	4000000.00	0.0	0.0	4000000.00			2029-03-12 08:00	2029-04-16 08:00	2029-03-12 08:00	2029-04-16 08:00	0.0	2029-04-09 08:00	2029-05-14 08:00	0.0	0.0	RT_Nonlabor
+%R	5079	2131	2001		1005	280.0	280.0	0.0	0.0	4600000.00	0.0	0.0	4600000.00			2029-04-16 08:00	2029-06-04 08:00	2029-04-16 08:00	2029-06-04 08:00	0.0	2029-07-02 08:00	2029-08-20 08:00	0.0	0.0	RT_Nonlabor
+%R	5080	2132	2001		1005	200.0	200.0	0.0	0.0	3300000.00	0.0	0.0	3300000.00			2029-04-16 08:00	2029-05-21 08:00	2029-04-16 08:00	2029-05-21 08:00	0.0	2029-05-14 08:00	2029-06-18 08:00	0.0	0.0	RT_Nonlabor
+%R	5081	2133	2001		1005	200.0	200.0	0.0	0.0	3100000.00	0.0	0.0	3100000.00			2029-06-04 08:00	2029-07-09 08:00	2029-06-04 08:00	2029-07-09 08:00	0.0	2029-08-20 08:00	2029-09-24 08:00	0.0	0.0	RT_Nonlabor
+%R	5082	2134	2001		1005	280.0	280.0	0.0	0.0	2500000.00	0.0	0.0	2500000.00			2029-02-12 08:00	2029-04-02 08:00	2029-02-12 08:00	2029-04-02 08:00	0.0	2029-04-16 08:00	2029-06-04 08:00	0.0	0.0	RT_Nonlabor
+%R	5083	2135	2001		1005	200.0	200.0	0.0	0.0	2800000.00	0.0	0.0	2800000.00			2029-04-02 08:00	2029-05-07 08:00	2029-04-02 08:00	2029-05-07 08:00	0.0	2029-06-04 08:00	2029-07-09 08:00	0.0	0.0	RT_Nonlabor
+%R	5084	2136	2001		1005	280.0	280.0	0.0	0.0	2500000.00	0.0	0.0	2500000.00			2029-02-12 08:00	2029-04-02 08:00	2029-02-12 08:00	2029-04-02 08:00	0.0	2029-04-16 08:00	2029-06-04 08:00	0.0	0.0	RT_Nonlabor
+%R	5085	2137	2001		1005	200.0	200.0	0.0	0.0	2800000.00	0.0	0.0	2800000.00			2029-04-02 08:00	2029-05-07 08:00	2029-04-02 08:00	2029-05-07 08:00	0.0	2029-06-04 08:00	2029-07-09 08:00	0.0	0.0	RT_Nonlabor
+%R	5086	2138	2001		1005	280.0	280.0	0.0	0.0	2500000.00	0.0	0.0	2500000.00			2029-02-12 08:00	2029-04-02 08:00	2029-02-12 08:00	2029-04-02 08:00	0.0	2029-04-16 08:00	2029-06-04 08:00	0.0	0.0	RT_Nonlabor
+%R	5087	2139	2001		1005	200.0	200.0	0.0	0.0	2800000.00	0.0	0.0	2800000.00			2029-04-02 08:00	2029-05-07 08:00	2029-04-02 08:00	2029-05-07 08:00	0.0	2029-06-04 08:00	2029-07-09 08:00	0.0	0.0	RT_Nonlabor
+%R	5088	2140	2001		1005	280.0	280.0	0.0	0.0	2500000.00	0.0	0.0	2500000.00			2029-02-12 08:00	2029-04-02 08:00	2029-02-12 08:00	2029-04-02 08:00	0.0	2029-04-16 08:00	2029-06-04 08:00	0.0	0.0	RT_Nonlabor
+%R	5089	2141	2001		1005	200.0	200.0	0.0	0.0	2800000.00	0.0	0.0	2800000.00			2029-04-02 08:00	2029-05-07 08:00	2029-04-02 08:00	2029-05-07 08:00	0.0	2029-06-04 08:00	2029-07-09 08:00	0.0	0.0	RT_Nonlabor
+%R	5090	2151	2001		1005	280.0	280.0	0.0	0.0	2500000.00	0.0	0.0	2500000.00			2029-02-12 08:00	2029-04-02 08:00	2029-02-12 08:00	2029-04-02 08:00	0.0	2029-04-16 08:00	2029-06-04 08:00	0.0	0.0	RT_Nonlabor
+%R	5091	2152	2001		1005	200.0	200.0	0.0	0.0	2800000.00	0.0	0.0	2800000.00			2029-04-02 08:00	2029-05-07 08:00	2029-04-02 08:00	2029-05-07 08:00	0.0	2029-06-04 08:00	2029-07-09 08:00	0.0	0.0	RT_Nonlabor
+%R	5092	2142	2001		1005	200.0	200.0	0.0	0.0	2200000.00	0.0	0.0	2200000.00			2029-05-21 08:00	2029-06-25 08:00	2029-05-21 08:00	2029-06-25 08:00	0.0	2029-06-18 08:00	2029-07-23 08:00	0.0	0.0	RT_Nonlabor
+%R	5093	2143	2001		1005	160.0	160.0	0.0	0.0	1400000.00	0.0	0.0	1400000.00			2029-06-25 08:00	2029-07-23 08:00	2029-06-25 08:00	2029-07-23 08:00	0.0	2029-07-23 08:00	2029-08-20 08:00	0.0	0.0	RT_Nonlabor
+%R	5094	2144	2001		1005	200.0	200.0	0.0	0.0	1800000.00	0.0	0.0	1800000.00			2029-07-23 08:00	2029-08-27 08:00	2029-07-23 08:00	2029-08-27 08:00	0.0	2029-08-20 08:00	2029-09-24 08:00	0.0	0.0	RT_Nonlabor
+%R	5095	2145	2001		1005	120.0	120.0	0.0	0.0	900000.00	0.0	0.0	900000.00			2029-05-07 08:00	2029-05-28 08:00	2029-05-07 08:00	2029-05-28 08:00	0.0	2029-07-09 08:00	2029-07-30 08:00	0.0	0.0	RT_Nonlabor
+%R	5096	2146	2001		1005	120.0	120.0	0.0	0.0	900000.00	0.0	0.0	900000.00			2029-05-07 08:00	2029-05-28 08:00	2029-05-07 08:00	2029-05-28 08:00	0.0	2029-07-09 08:00	2029-07-30 08:00	0.0	0.0	RT_Nonlabor
+%R	5097	2147	2001		1005	120.0	120.0	0.0	0.0	900000.00	0.0	0.0	900000.00			2029-05-07 08:00	2029-05-28 08:00	2029-05-07 08:00	2029-05-28 08:00	0.0	2029-07-09 08:00	2029-07-30 08:00	0.0	0.0	RT_Nonlabor
+%R	5098	2148	2001		1005	120.0	120.0	0.0	0.0	900000.00	0.0	0.0	900000.00			2029-05-07 08:00	2029-05-28 08:00	2029-05-07 08:00	2029-05-28 08:00	0.0	2029-07-09 08:00	2029-07-30 08:00	0.0	0.0	RT_Nonlabor
+%R	5099	2153	2001		1005	120.0	120.0	0.0	0.0	900000.00	0.0	0.0	900000.00			2029-05-07 08:00	2029-05-28 08:00	2029-05-07 08:00	2029-05-28 08:00	0.0	2029-07-09 08:00	2029-07-30 08:00	0.0	0.0	RT_Nonlabor
+%R	5100	2149	2001		1005	160.0	160.0	0.0	0.0	1800000.00	0.0	0.0	1800000.00			2029-05-28 08:00	2029-06-25 08:00	2029-05-28 08:00	2029-06-25 08:00	0.0	2029-07-30 08:00	2029-08-27 08:00	0.0	0.0	RT_Nonlabor
+%R	5101	2150	2001		1005	160.0	160.0	0.0	0.0	1600000.00	0.0	0.0	1600000.00			2029-06-25 08:00	2029-07-23 08:00	2029-06-25 08:00	2029-07-23 08:00	0.0	2029-08-27 08:00	2029-09-24 08:00	0.0	0.0	RT_Nonlabor
+%R	5102	2160	2001		1005	240.0	240.0	0.0	0.0	2000000.00	0.0	0.0	2000000.00			2029-02-12 08:00	2029-03-26 08:00	2029-02-12 08:00	2029-03-26 08:00	0.0	2029-06-18 08:00	2029-07-30 08:00	0.0	0.0	RT_Nonlabor
+%R	5103	2161	2001		1005	200.0	200.0	0.0	0.0	2200000.00	0.0	0.0	2200000.00			2029-06-25 08:00	2029-07-30 08:00	2029-06-25 08:00	2029-07-30 08:00	0.0	2029-06-25 08:00	2029-07-30 08:00	0.0	0.0	RT_Nonlabor
+%R	5104	2162	2001		1005	200.0	200.0	0.0	0.0	1100000.00	0.0	0.0	1100000.00			2029-02-12 08:00	2029-03-19 08:00	2029-02-12 08:00	2029-03-19 08:00	0.0	2029-07-02 08:00	2029-08-06 08:00	0.0	0.0	RT_Nonlabor
+%R	5105	2163	2001		1005	200.0	200.0	0.0	0.0	1300000.00	0.0	0.0	1300000.00			2029-02-12 08:00	2029-03-19 08:00	2029-02-12 08:00	2029-03-19 08:00	0.0	2029-07-02 08:00	2029-08-06 08:00	0.0	0.0	RT_Nonlabor
+%R	5106	2164	2001		1005	240.0	240.0	0.0	0.0	1200000.00	0.0	0.0	1200000.00			2029-02-12 08:00	2029-03-26 08:00	2029-02-12 08:00	2029-03-26 08:00	0.0	2029-06-25 08:00	2029-08-06 08:00	0.0	0.0	RT_Nonlabor
+%R	5107	2165	2001		1005	160.0	160.0	0.0	0.0	1000000.00	0.0	0.0	1000000.00			2029-07-30 08:00	2029-08-27 08:00	2029-07-30 08:00	2029-08-27 08:00	0.0	2029-07-30 08:00	2029-08-27 08:00	0.0	0.0	RT_Nonlabor
+%R	5108	2166	2001		1005	120.0	120.0	0.0	0.0	600000.00	0.0	0.0	600000.00			2029-03-26 08:00	2029-04-16 08:00	2029-03-26 08:00	2029-04-16 08:00	0.0	2029-08-06 08:00	2029-08-27 08:00	0.0	0.0	RT_Nonlabor
+%R	5109	2167	2001		1005	160.0	160.0	0.0	0.0	500000.00	0.0	0.0	500000.00			2029-04-16 08:00	2029-05-14 08:00	2029-04-16 08:00	2029-05-14 08:00	0.0	2029-08-27 08:00	2029-09-24 08:00	0.0	0.0	RT_Nonlabor
+%R	5110	2168	2001		1005	160.0	160.0	0.0	0.0	800000.00	0.0	0.0	800000.00			2029-08-27 08:00	2029-09-24 08:00	2029-08-27 08:00	2029-09-24 08:00	0.0	2029-08-27 08:00	2029-09-24 08:00	0.0	0.0	RT_Nonlabor
+%R	5111	2169	2001		1005	1.0	1.0	0.0	0.0	0.00	0.0	0.0	0.00			2029-09-24 08:00	2029-09-24 08:00	2029-09-24 08:00	2029-09-24 08:00	0.0	2029-09-24 08:00	2029-09-24 08:00	0.0	0.0	RT_Nonlabor
+%R	5112	2170	2001		1006	160.0	160.0	0.0	0.0	550000.00	0.0	0.0	550000.00			2028-01-03 08:00	2028-01-31 08:00	2028-01-03 08:00	2028-01-31 08:00	0.0	2029-07-16 08:00	2029-08-13 08:00	0.0	0.0	RT_Labor
+%R	5113	2171	2001		1006	120.0	120.0	0.0	0.0	600000.00	0.0	0.0	600000.00			2028-01-31 08:00	2028-02-21 08:00	2028-01-31 08:00	2028-02-21 08:00	0.0	2029-08-13 08:00	2029-09-03 08:00	0.0	0.0	RT_Labor
+%R	5114	2172	2001		1006	120.0	120.0	0.0	0.0	450000.00	0.0	0.0	450000.00			2028-02-21 08:00	2028-03-13 08:00	2028-02-21 08:00	2028-03-13 08:00	0.0	2029-09-03 08:00	2029-09-24 08:00	0.0	0.0	RT_Labor
+%R	5115	2180	2001		1006	120.0	120.0	0.0	0.0	750000.00	0.0	0.0	750000.00			2029-09-24 08:00	2029-10-15 08:00	2029-09-24 08:00	2029-10-15 08:00	0.0	2029-09-24 08:00	2029-10-15 08:00	0.0	0.0	RT_Labor
+%R	5116	2181	2001		1006	120.0	120.0	0.0	0.0	1000000.00	0.0	0.0	1000000.00			2029-09-24 08:00	2029-10-15 08:00	2029-09-24 08:00	2029-10-15 08:00	0.0	2029-09-24 08:00	2029-10-15 08:00	0.0	0.0	RT_Labor
+%R	5117	2182	2001		1006	120.0	120.0	0.0	0.0	700000.00	0.0	0.0	700000.00			2029-09-24 08:00	2029-10-15 08:00	2029-09-24 08:00	2029-10-15 08:00	0.0	2029-09-24 08:00	2029-10-15 08:00	0.0	0.0	RT_Labor
+%R	5118	2183	2001		1006	120.0	120.0	0.0	0.0	550000.00	0.0	0.0	550000.00			2029-09-24 08:00	2029-10-15 08:00	2029-09-24 08:00	2029-10-15 08:00	0.0	2029-09-24 08:00	2029-10-15 08:00	0.0	0.0	RT_Labor
+%R	5119	2184	2001		1006	80.0	80.0	0.0	0.0	500000.00	0.0	0.0	500000.00			2029-09-24 08:00	2029-10-08 08:00	2029-09-24 08:00	2029-10-08 08:00	0.0	2029-10-01 08:00	2029-10-15 08:00	0.0	0.0	RT_Labor
+%R	5120	2185	2001		1006	1.0	1.0	0.0	0.0	0.00	0.0	0.0	0.00			2029-10-15 08:00	2029-10-15 08:00	2029-10-15 08:00	2029-10-15 08:00	0.0	2029-10-15 08:00	2029-10-15 08:00	0.0	0.0	RT_Labor
+%R	5121	2190	2001		1006	80.0	80.0	0.0	0.0	850000.00	0.0	0.0	850000.00			2029-10-15 08:00	2029-10-29 08:00	2029-10-15 08:00	2029-10-29 08:00	0.0	2029-10-15 08:00	2029-10-29 08:00	0.0	0.0	RT_Labor
+%R	5122	2191	2001		1006	200.0	200.0	0.0	0.0	850000.00	0.0	0.0	850000.00			2029-10-29 08:00	2029-12-03 08:00	2029-10-29 08:00	2029-12-03 08:00	0.0	2029-11-05 08:00	2029-12-10 08:00	0.0	0.0	RT_Labor
+%R	5123	2192	2001		1006	120.0	120.0	0.0	0.0	650000.00	0.0	0.0	650000.00			2029-10-29 08:00	2029-11-19 08:00	2029-10-29 08:00	2029-11-19 08:00	0.0	2029-11-19 08:00	2029-12-10 08:00	0.0	0.0	RT_Labor
+%R	5124	2193	2001		1006	120.0	120.0	0.0	0.0	850000.00	0.0	0.0	850000.00			2029-10-29 08:00	2029-11-19 08:00	2029-10-29 08:00	2029-11-19 08:00	0.0	2029-10-29 08:00	2029-11-19 08:00	0.0	0.0	RT_Labor
+%R	5125	2194	2001		1006	120.0	120.0	0.0	0.0	600000.00	0.0	0.0	600000.00			2029-11-19 08:00	2029-12-10 08:00	2029-11-19 08:00	2029-12-10 08:00	0.0	2029-11-19 08:00	2029-12-10 08:00	0.0	0.0	RT_Labor
+%R	5126	2195	2001		1006	80.0	80.0	0.0	0.0	500000.00	0.0	0.0	500000.00			2029-10-08 08:00	2029-10-22 08:00	2029-10-08 08:00	2029-10-22 08:00	0.0	2029-11-26 08:00	2029-12-10 08:00	0.0	0.0	RT_Labor
+%R	5127	2196	2001		1006	1.0	1.0	0.0	0.0	0.00	0.0	0.0	0.00			2029-12-10 08:00	2029-12-10 08:00	2029-12-10 08:00	2029-12-10 08:00	0.0	2029-12-10 08:00	2029-12-10 08:00	0.0	0.0	RT_Labor
+%R	5128	2200	2001		1006	96.0	96.0	0.0	0.0	1000000.00	0.0	0.0	1000000.00			2029-12-10 08:00	2029-12-26 08:00	2029-12-10 08:00	2029-12-26 08:00	0.0	2029-12-10 08:00	2029-12-26 08:00	0.0	0.0	RT_Labor
+%R	5129	2201	2001		1006	96.0	96.0	0.0	0.0	1300000.00	0.0	0.0	1300000.00			2029-12-26 08:00	2030-01-11 08:00	2029-12-26 08:00	2030-01-11 08:00	0.0	2029-12-26 08:00	2030-01-11 08:00	0.0	0.0	RT_Labor
+%R	5130	2202	2001		1006	64.0	64.0	0.0	0.0	1700000.00	0.0	0.0	1700000.00			2030-01-11 08:00	2030-01-23 08:00	2030-01-11 08:00	2030-01-23 08:00	0.0	2030-01-11 08:00	2030-01-23 08:00	0.0	0.0	RT_Labor
+%R	5131	2203	2001		1006	64.0	64.0	0.0	0.0	1300000.00	0.0	0.0	1300000.00			2030-01-23 08:00	2030-02-04 08:00	2030-01-23 08:00	2030-02-04 08:00	0.0	2030-01-23 08:00	2030-02-04 08:00	0.0	0.0	RT_Labor
+%R	5132	2204	2001		1006	56.0	56.0	0.0	0.0	750000.00	0.0	0.0	750000.00			2030-02-04 08:00	2030-02-13 08:00	2030-02-04 08:00	2030-02-13 08:00	0.0	2030-02-04 08:00	2030-02-13 08:00	0.0	0.0	RT_Labor
+%R	5133	2205	2001		1006	64.0	64.0	0.0	0.0	550000.00	0.0	0.0	550000.00			2030-02-13 08:00	2030-02-25 08:00	2030-02-13 08:00	2030-02-25 08:00	0.0	2030-02-13 08:00	2030-02-25 08:00	0.0	0.0	RT_Labor
+%R	5134	2206	2001		1006	1.0	1.0	0.0	0.0	0.00	0.0	0.0	0.00			2030-02-25 08:00	2030-02-25 08:00	2030-02-25 08:00	2030-02-25 08:00	0.0	2030-02-25 08:00	2030-02-25 08:00	0.0	0.0	RT_Labor
+%R	5135	2210	2001		1006	160.0	160.0	0.0	0.0	160000.00	0.0	0.0	160000.00			2029-09-24 08:00	2029-10-22 08:00	2029-09-24 08:00	2029-10-22 08:00	0.0	2030-01-07 08:00	2030-02-04 08:00	0.0	0.0	RT_Labor
+%R	5136	2211	2001		1006	240.0	240.0	0.0	0.0	130000.00	0.0	0.0	130000.00			2029-10-15 08:00	2029-11-26 08:00	2029-10-15 08:00	2029-11-26 08:00	0.0	2029-12-24 08:00	2030-02-04 08:00	0.0	0.0	RT_Labor
+%R	5137	2212	2001		1006	120.0	120.0	0.0	0.0	130000.00	0.0	0.0	130000.00			2029-11-26 08:00	2029-12-17 08:00	2029-11-26 08:00	2029-12-17 08:00	0.0	2030-02-04 08:00	2030-02-25 08:00	0.0	0.0	RT_Labor
+%R	5138	2213	2001		1006	120.0	120.0	0.0	0.0	80000.00	0.0	0.0	80000.00			2028-01-03 08:00	2028-01-24 08:00	2028-01-03 08:00	2028-01-24 08:00	0.0	2030-04-08 08:00	2030-04-29 08:00	0.0	0.0	RT_Labor
+%R	5139	2220	2001		1007	120.0	120.0	0.0	0.0	400000.00	0.0	0.0	400000.00			2030-02-25 08:00	2030-03-18 08:00	2030-02-25 08:00	2030-03-18 08:00	0.0	2030-02-25 08:00	2030-03-18 08:00	0.0	0.0	RT_Labor
+%R	5140	2221	2001		1007	120.0	120.0	0.0	0.0	1100000.00	0.0	0.0	1100000.00			2030-02-25 08:00	2030-03-18 08:00	2030-02-25 08:00	2030-03-18 08:00	0.0	2030-04-08 08:00	2030-04-29 08:00	0.0	0.0	RT_Labor
+%R	5141	2222	2001		1007	120.0	120.0	0.0	0.0	1350000.00	0.0	0.0	1350000.00			2030-03-18 08:00	2030-04-08 08:00	2030-03-18 08:00	2030-04-08 08:00	0.0	2030-03-18 08:00	2030-04-08 08:00	0.0	0.0	RT_Labor
+%R	5142	2223	2001		1007	120.0	120.0	0.0	0.0	1200000.00	0.0	0.0	1200000.00			2030-04-08 08:00	2030-04-29 08:00	2030-04-08 08:00	2030-04-29 08:00	0.0	2030-04-08 08:00	2030-04-29 08:00	0.0	0.0	RT_Labor
+%R	5143	2224	2001		1007	120.0	120.0	0.0	0.0	450000.00	0.0	0.0	450000.00			2030-04-29 08:00	2030-05-20 08:00	2030-04-29 08:00	2030-05-20 08:00	0.0	2030-04-29 08:00	2030-05-20 08:00	0.0	0.0	RT_Labor
+%R	5144	2225	2001		1007	1.0	1.0	0.0	0.0	0.00	0.0	0.0	0.00			2030-05-20 08:00	2030-05-20 08:00	2030-05-20 08:00	2030-05-20 08:00	0.0	2030-05-20 08:00	2030-05-20 08:00	0.0	0.0	RT_Labor
+%T	TASKPRED
+%F	task_pred_id	task_id	pred_task_id	proj_id	pred_proj_id	pred_type	lag_hr_cnt	comments	float_path	aref	arls
+%R	19501	2002	2001	2001	2001	PR_FS	0		1		
+%R	19502	2003	2001	2001	2001	PR_FS	0		1		
+%R	19503	2007	2001	2001	2001	PR_FS	0		1		
+%R	19504	2004	2002	2001	2001	PR_FS	0		1		
+%R	19505	2004	2003	2001	2001	PR_FS	0		1		
+%R	19506	2005	2004	2001	2001	PR_FS	0		1		
+%R	19507	2006	2004	2001	2001	PR_FS	0		1		
+%R	19508	2008	2007	2001	2001	PR_FS	0		1		
+%R	19509	2009	2005	2001	2001	PR_FS	0		1		
+%R	19510	2010	2006	2001	2001	PR_FS	0		1		
+%R	19511	2010	2009	2001	2001	PR_FS	0		1		
+%R	19512	2010	2008	2001	2001	PR_FS	0		1		
+%R	19513	2011	2010	2001	2001	PR_FS	0		1		
+%R	19514	2020	2001	2001	2001	PR_FS	0		1		
+%R	19515	2021	2001	2001	2001	PR_FS	0		1		
+%R	19516	2022	2020	2001	2001	PR_FS	0		1		
+%R	19517	2022	2021	2001	2001	PR_FS	0		1		
+%R	19518	2023	2022	2001	2001	PR_FS	0		1		
+%R	19519	2024	2020	2001	2001	PR_FS	0		1		
+%R	19520	2025	2024	2001	2001	PR_FS	0		1		
+%R	19521	2026	2020	2001	2001	PR_FS	0		1		
+%R	19522	2027	2026	2001	2001	PR_FS	0		1		
+%R	19523	2028	2025	2001	2001	PR_FS	0		1		
+%R	19524	2028	2027	2001	2001	PR_FS	0		1		
+%R	19525	2029	2023	2001	2001	PR_FS	0		1		
+%R	19526	2009	2023	2001	2001	PR_FS	0		1		
+%R	19527	2009	2029	2001	2001	PR_FS	0		1		
+%R	19528	2008	2024	2001	2001	PR_FS	0		1		
+%R	19529	2030	2022	2001	2001	PR_FS	0		1		
+%R	19530	2030	2023	2001	2001	PR_FS	0		1		
+%R	19531	2030	2024	2001	2001	PR_FS	0		1		
+%R	19532	2030	2025	2001	2001	PR_FS	0		1		
+%R	19533	2030	2026	2001	2001	PR_FS	0		1		
+%R	19534	2030	2027	2001	2001	PR_FS	0		1		
+%R	19535	2030	2028	2001	2001	PR_FS	0		1		
+%R	19536	2030	2029	2001	2001	PR_FS	0		1		
+%R	19537	2040	2030	2001	2001	PR_FS	0		1		
+%R	19538	2041	2040	2001	2001	PR_FS	0		1		
+%R	19539	2042	2030	2001	2001	PR_FS	0		1		
+%R	19540	2043	2030	2001	2001	PR_FS	0		1		
+%R	19541	2044	2043	2001	2001	PR_FS	0		1		
+%R	19542	2045	2030	2001	2001	PR_FS	0		1		
+%R	19543	2046	2030	2001	2001	PR_FS	0		1		
+%R	19544	2047	2030	2001	2001	PR_FS	0		1		
+%R	19545	2048	2047	2001	2001	PR_FS	0		1		
+%R	19546	2049	2030	2001	2001	PR_FS	0		1		
+%R	19547	2050	2030	2001	2001	PR_FS	0		1		
+%R	19548	2051	2050	2001	2001	PR_FS	0		1		
+%R	19549	2052	2030	2001	2001	PR_FS	0		1		
+%R	19550	2053	2030	2001	2001	PR_FS	0		1		
+%R	19551	2054	2030	2001	2001	PR_FS	0		1		
+%R	19552	2055	2041	2001	2001	PR_FS	0		1		
+%R	19553	2055	2042	2001	2001	PR_FS	0		1		
+%R	19554	2055	2044	2001	2001	PR_FS	0		1		
+%R	19555	2055	2045	2001	2001	PR_FS	0		1		
+%R	19556	2055	2046	2001	2001	PR_FS	0		1		
+%R	19557	2055	2048	2001	2001	PR_FS	0		1		
+%R	19558	2055	2049	2001	2001	PR_FS	0		1		
+%R	19559	2055	2051	2001	2001	PR_FS	0		1		
+%R	19560	2055	2052	2001	2001	PR_FS	0		1		
+%R	19561	2055	2053	2001	2001	PR_FS	0		1		
+%R	19562	2055	2054	2001	2001	PR_FS	0		1		
+%R	19563	2060	2011	2001	2001	PR_FS	0		1		
+%R	19564	2090	2011	2001	2001	PR_FS	0		1		
+%R	19565	2091	2011	2001	2001	PR_FS	0		1		
+%R	19566	2092	2011	2001	2001	PR_FS	0		1		
+%R	19567	2094	2011	2001	2001	PR_FS	0		1		
+%R	19568	2061	2060	2001	2001	PR_FS	0		1		
+%R	19569	2062	2061	2001	2001	PR_FS	0		1		
+%R	19570	2063	2062	2001	2001	PR_FS	0		1		
+%R	19571	2064	2063	2001	2001	PR_FS	0		1		
+%R	19572	2093	2092	2001	2001	PR_FS	0		1		
+%R	19573	2070	2064	2001	2001	PR_FS	0		1		
+%R	19574	2071	2070	2001	2001	PR_FS	0		1		
+%R	19575	2072	2071	2001	2001	PR_FS	0		1		
+%R	19576	2073	2072	2001	2001	PR_FS	0		1		
+%R	19577	2074	2072	2001	2001	PR_FS	0		1		
+%R	19578	2080	2073	2001	2001	PR_FS	0		1		
+%R	19579	2081	2073	2001	2001	PR_FS	0		1		
+%R	19580	2080	2074	2001	2001	PR_FS	0		1		
+%R	19581	2082	2081	2001	2001	PR_FS	0		1		
+%R	19582	2083	2080	2001	2001	PR_FS	0		1		
+%R	19583	2083	2082	2001	2001	PR_FS	0		1		
+%R	19584	2084	2083	2001	2001	PR_FS	0		1		
+%R	19585	2084	2090	2001	2001	PR_FS	0		1		
+%R	19586	2084	2091	2001	2001	PR_FS	0		1		
+%R	19587	2084	2093	2001	2001	PR_FS	0		1		
+%R	19588	2084	2094	2001	2001	PR_FS	0		1		
+%R	19589	2100	2084	2001	2001	PR_FS	0		1		
+%R	19590	2100	2055	2001	2001	PR_FS	0		1		
+%R	19591	2101	2100	2001	2001	PR_FS	0		1		
+%R	19592	2102	2101	2001	2001	PR_FS	0		1		
+%R	19593	2103	2102	2001	2001	PR_FS	0		1		
+%R	19594	2104	2084	2001	2001	PR_FS	0		1		
+%R	19595	2169	2103	2001	2001	PR_FS	0		1		
+%R	19596	2130	2104	2001	2001	PR_FS	0		1		
+%R	19597	2110	2084	2001	2001	PR_FS	0		1		
+%R	19598	2111	2084	2001	2001	PR_FS	0		1		
+%R	19599	2114	2084	2001	2001	PR_FS	0		1		
+%R	19600	2111	2055	2001	2001	PR_FS	0		1		
+%R	19601	2112	2111	2001	2001	PR_FS	0		1		
+%R	19602	2113	2110	2001	2001	PR_FS	0		1		
+%R	19603	2169	2112	2001	2001	PR_FS	0		1		
+%R	19604	2169	2113	2001	2001	PR_FS	0		1		
+%R	19605	2169	2114	2001	2001	PR_FS	0		1		
+%R	19606	2120	2084	2001	2001	PR_FS	0		1		
+%R	19607	2121	2084	2001	2001	PR_FS	0		1		
+%R	19608	2126	2084	2001	2001	PR_FS	0		1		
+%R	19609	2127	2084	2001	2001	PR_FS	0		1		
+%R	19610	2120	2055	2001	2001	PR_FS	0		1		
+%R	19611	2122	2120	2001	2001	PR_FS	0		1		
+%R	19612	2122	2121	2001	2001	PR_FS	0		1		
+%R	19613	2123	2122	2001	2001	PR_FS	0		1		
+%R	19614	2124	2123	2001	2001	PR_FS	0		1		
+%R	19615	2125	2124	2001	2001	PR_FS	0		1		
+%R	19616	2128	2126	2001	2001	PR_FS	0		1		
+%R	19617	2169	2127	2001	2001	PR_FS	0		1		
+%R	19618	2169	2125	2001	2001	PR_FS	0		1		
+%R	19619	2169	2128	2001	2001	PR_FS	0		1		
+%R	19620	2130	2084	2001	2001	PR_FS	0		1		
+%R	19621	2130	2055	2001	2001	PR_FS	0		1		
+%R	19622	2131	2130	2001	2001	PR_FS	0		1		
+%R	19623	2132	2130	2001	2001	PR_FS	0		1		
+%R	19624	2133	2131	2001	2001	PR_FS	0		1		
+%R	19625	2142	2132	2001	2001	PR_FS	0		1		
+%R	19626	2169	2133	2001	2001	PR_FS	0		1		
+%R	19627	2134	2084	2001	2001	PR_FS	0		1		
+%R	19628	2135	2134	2001	2001	PR_FS	0		1		
+%R	19629	2145	2135	2001	2001	PR_FS	0		1		
+%R	19630	2136	2084	2001	2001	PR_FS	0		1		
+%R	19631	2137	2136	2001	2001	PR_FS	0		1		
+%R	19632	2146	2137	2001	2001	PR_FS	0		1		
+%R	19633	2138	2084	2001	2001	PR_FS	0		1		
+%R	19634	2139	2138	2001	2001	PR_FS	0		1		
+%R	19635	2147	2139	2001	2001	PR_FS	0		1		
+%R	19636	2140	2084	2001	2001	PR_FS	0		1		
+%R	19637	2141	2140	2001	2001	PR_FS	0		1		
+%R	19638	2148	2141	2001	2001	PR_FS	0		1		
+%R	19639	2151	2084	2001	2001	PR_FS	0		1		
+%R	19640	2152	2151	2001	2001	PR_FS	0		1		
+%R	19641	2153	2152	2001	2001	PR_FS	0		1		
+%R	19642	2143	2142	2001	2001	PR_FS	0		1		
+%R	19643	2144	2143	2001	2001	PR_FS	0		1		
+%R	19644	2169	2144	2001	2001	PR_FS	0		1		
+%R	19645	2149	2145	2001	2001	PR_FS	0		1		
+%R	19646	2149	2146	2001	2001	PR_FS	0		1		
+%R	19647	2149	2147	2001	2001	PR_FS	0		1		
+%R	19648	2149	2148	2001	2001	PR_FS	0		1		
+%R	19649	2149	2153	2001	2001	PR_FS	0		1		
+%R	19650	2150	2149	2001	2001	PR_FS	0		1		
+%R	19651	2169	2150	2001	2001	PR_FS	0		1		
+%R	19652	2160	2084	2001	2001	PR_FS	0		1		
+%R	19653	2161	2103	2001	2001	PR_FS	0		1		
+%R	19654	2161	2132	2001	2001	PR_FS	0		1		
+%R	19655	2162	2084	2001	2001	PR_FS	0		1		
+%R	19656	2163	2084	2001	2001	PR_FS	0		1		
+%R	19657	2164	2084	2001	2001	PR_FS	0		1		
+%R	19658	2165	2160	2001	2001	PR_FS	0		1		
+%R	19659	2165	2161	2001	2001	PR_FS	0		1		
+%R	19660	2166	2162	2001	2001	PR_FS	0		1		
+%R	19661	2166	2163	2001	2001	PR_FS	0		1		
+%R	19662	2166	2164	2001	2001	PR_FS	0		1		
+%R	19663	2167	2166	2001	2001	PR_FS	0		1		
+%R	19664	2168	2165	2001	2001	PR_FS	0		1		
+%R	19665	2169	2167	2001	2001	PR_FS	0		1		
+%R	19666	2169	2168	2001	2001	PR_FS	0		1		
+%R	19667	2170	2055	2001	2001	PR_FS	0		1		
+%R	19668	2171	2170	2001	2001	PR_FS	0		1		
+%R	19669	2172	2171	2001	2001	PR_FS	0		1		
+%R	19670	2180	2172	2001	2001	PR_FS	0		1		
+%R	19671	2180	2169	2001	2001	PR_FS	0		1		
+%R	19672	2181	2169	2001	2001	PR_FS	0		1		
+%R	19673	2182	2169	2001	2001	PR_FS	0		1		
+%R	19674	2183	2169	2001	2001	PR_FS	0		1		
+%R	19675	2184	2169	2001	2001	PR_FS	0		1		
+%R	19676	2185	2180	2001	2001	PR_FS	0		1		
+%R	19677	2185	2181	2001	2001	PR_FS	0		1		
+%R	19678	2185	2182	2001	2001	PR_FS	0		1		
+%R	19679	2185	2183	2001	2001	PR_FS	0		1		
+%R	19680	2185	2184	2001	2001	PR_FS	0		1		
+%R	19681	2190	2185	2001	2001	PR_FS	0		1		
+%R	19682	2191	2190	2001	2001	PR_FS	0		1		
+%R	19683	2192	2190	2001	2001	PR_FS	0		1		
+%R	19684	2193	2190	2001	2001	PR_FS	0		1		
+%R	19685	2194	2193	2001	2001	PR_FS	0		1		
+%R	19686	2195	2184	2001	2001	PR_FS	0		1		
+%R	19687	2196	2191	2001	2001	PR_FS	0		1		
+%R	19688	2196	2192	2001	2001	PR_FS	0		1		
+%R	19689	2196	2194	2001	2001	PR_FS	0		1		
+%R	19690	2196	2195	2001	2001	PR_FS	0		1		
+%R	19691	2200	2196	2001	2001	PR_FS	0		1		
+%R	19692	2201	2200	2001	2001	PR_FS	0		1		
+%R	19693	2202	2201	2001	2001	PR_FS	0		1		
+%R	19694	2203	2202	2001	2001	PR_FS	0		1		
+%R	19695	2204	2203	2001	2001	PR_FS	0		1		
+%R	19696	2205	2204	2001	2001	PR_FS	0		1		
+%R	19697	2206	2205	2001	2001	PR_FS	0		1		
+%R	19698	2210	2169	2001	2001	PR_FS	0		1		
+%R	19699	2211	2185	2001	2001	PR_FS	0		1		
+%R	19700	2212	2210	2001	2001	PR_FS	0		1		
+%R	19701	2212	2211	2001	2001	PR_FS	0		1		
+%R	19702	2213	2055	2001	2001	PR_FS	0		1		
+%R	19703	2206	2212	2001	2001	PR_FS	0		1		
+%R	19704	2224	2213	2001	2001	PR_FS	0		1		
+%R	19705	2220	2206	2001	2001	PR_FS	0		1		
+%R	19706	2221	2206	2001	2001	PR_FS	0		1		
+%R	19707	2222	2220	2001	2001	PR_FS	0		1		
+%R	19708	2222	2008	2001	2001	PR_FS	0		1		
+%R	19709	2223	2222	2001	2001	PR_FS	0		1		
+%R	19710	2224	2220	2001	2001	PR_FS	0		1		
+%R	19711	2224	2221	2001	2001	PR_FS	0		1		
+%R	19712	2224	2223	2001	2001	PR_FS	0		1		
+%R	19713	2225	2224	2001	2001	PR_FS	0		1		
+%E
