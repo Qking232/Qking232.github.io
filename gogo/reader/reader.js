@@ -179,6 +179,39 @@
     return parts.join(' ').toLowerCase();
   }
 
+  const LEGACY_DOC_ALIAS = {
+    'PM-01-D1': 'PKG-01-D1',
+    'PM-01-D2': 'PKG-01-D1',
+    'PM-01-D3': 'PKG-01-D2',
+    'PM-01-D4': 'PKG-01-D4',
+    'PM-01-README': 'PKG-01-README',
+    'PM-06-D1': 'PKG-01-D1',
+    'PM-06-D2': 'PKG-01-D3',
+    'PM-06-D3': 'PKG-01-D3',
+    'PM-06-D4': 'PKG-01-D4',
+    'PM-06-README': 'PKG-01-README',
+    'PM-02-D1': 'PKG-02-D1',
+    'PM-02-D2': 'PKG-02-D1',
+    'PM-02-D3': 'PKG-02-D2',
+    'PM-02-D4': 'PKG-02-D2',
+    'PM-02-README': 'PKG-02-README',
+    'PM-03-D1': 'PKG-02-D3',
+    'PM-03-D2': 'PKG-02-D3',
+    'PM-03-D3': 'PKG-02-D4',
+    'PM-03-D4': 'PKG-02-D4',
+    'PM-03-README': 'PKG-02-README',
+    'PM-04-D1': 'PKG-03-D1',
+    'PM-04-D2': 'PKG-03-D1',
+    'PM-04-D3': 'PKG-03-D2',
+    'PM-04-D4': 'PKG-03-D2',
+    'PM-04-README': 'PKG-03-README',
+    'PM-05-D1': 'PKG-03-D4',
+    'PM-05-D2': 'PKG-03-D3',
+    'PM-05-D3': 'PKG-03-D4',
+    'PM-05-D4': 'PKG-03-D4',
+    'PM-05-README': 'PKG-03-README',
+  };
+
   function resolveInitialTarget() {
     const firstMod = (DATA.modules || [])[0];
     if (firstMod && firstMod.docs && firstMod.docs[0]) {
@@ -186,8 +219,9 @@
     } else if (firstMod) {
       activeDocId = `${firstMod.id}-README`;
     }
-    const h = (window.location.hash || '').replace(/^#/, '').trim();
-    if (!h) return;
+    const rawH = (window.location.hash || '').replace(/^#/, '').trim();
+    if (!rawH) return;
+    const h = LEGACY_DOC_ALIAS[rawH] || rawH;
     for (const m of DATA.modules || []) {
       if (h === `${m.id}-README`) {
         activeDocId = h;
@@ -394,7 +428,7 @@
     const hasAnyEditable = allowSandbox && current.rows.some(r => r.some(c => isEditableSandboxCell(c)));
 
     const rowsHtml = (current.rows || []).map(row => {
-      const tds = row.map(cell => {
+      const tds = row.filter(cell => !cell.skip).map(cell => {
         const cls = CELL_CLASS_BY_KIND[cell.kind] || 'cell-plain';
         const coord = cell.coord || '';
         const fullKey = coord ? `${current.name}!${coord}` : '';
@@ -414,6 +448,10 @@
       return `<tr>${tds}</tr>`;
     }).join('');
 
+    const formulaCount = typeof current.formulaCount === 'number'
+      ? current.formulaCount
+      : (current.rows || []).reduce((acc, r) => acc + r.filter(c => c && c.f).length, 0);
+
     const sandboxControlsHtml = hasAnyEditable ? `
       <label style="font-size:12px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:6px;">
         <input type="checkbox" class="toggle-sandbox-chk" ${extrasState.interactiveSandbox ? 'checked' : ''} />
@@ -429,7 +467,7 @@
           ${sandboxControlsHtml}
           <label style="font-size:12px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:6px;">
             <input type="checkbox" class="toggle-formulas-chk" ${showFormulas ? 'checked' : ''} />
-            <span>Show Excel Formulas (${current.formulaCount})</span>
+            <span>Show Excel Formulas (${formulaCount})</span>
           </label>
         </div>
       </div>

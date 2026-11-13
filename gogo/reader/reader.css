@@ -1064,7 +1064,10 @@ table.detail-table tr td.cell-banner,
 table.detail-table tr th {
   background: var(--md-navy);
   color: #ffffff;
-  font-weight: 700;
+  font-weight: 800;
+  font-size: 13.5px;
+  padding: 10px 14px;
+  letter-spacing: 0.02em;
 }
 
 table.detail-table tr td.cell-header {

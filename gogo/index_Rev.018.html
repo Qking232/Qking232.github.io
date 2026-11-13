@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <title>Ireland &amp; EU Data Centre Development Tracker | DC45-EU Mastery</title>
+  <meta name="description" content="Interactive career learning and portfolio tracker for Ireland and EU Data Centre Development (EN 50600, EirGrid, EPA IEL, BCAR, PSDP/PSCS, P6 DCMA-14, CIBSE L1-L5)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20261112-18" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="hero-card">
+      <div>
+        <div class="hero-eyebrow">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          <span>Ireland / EU Hyperscale Portfolio (DC45-EU)</span>
+        </div>
+        <h1 class="hero-title">Data Centre Development Mastery Tracker</h1>
+        <p class="hero-sub">
+          Primary track centered on full end-to-end Project Management delivery (RIBA 0-7, P6 DCMA-14,
+          NEC4/FIDIC, EVM, EN 50600, ISO 19650, CIBSE L1-L5 &amp; OR&amp;T). Legal &amp; Permitting modules remain
+          parked separately in the Deferred track for later review.
+        </p>
+        <div class="hero-actions">
+          <button type="button" id="btn-export" class="btn-m3 btn-tonal-light">Export JSON Backup</button>
+          <label class="btn-m3 btn-ghost-light" style="cursor:pointer;">
+            Import JSON
+            <input type="file" id="file-import" accept=".json" hidden />
+          </label>
+          <button type="button" id="btn-reset" class="btn-m3 btn-danger-ghost">Reset Progress</button>
+        </div>
+      </div>
+
+      <div class="kpi-grid">
+        <div class="kpi-tile">
+          <div class="kpi-label">PM Lifecycle Readiness</div>
+          <div class="kpi-value" id="kpi-readiness">0%</div>
+          <div class="kpi-note" id="kpi-readiness-sub">Active Track (36 PM modules)</div>
+        </div>
+        <div class="kpi-tile">
+          <div class="kpi-label">PM Modules Mastered</div>
+          <div class="kpi-value" id="kpi-completed">0 / 36</div>
+          <div class="kpi-note" id="kpi-completed-sub">0 in progress | Legal deferred</div>
+        </div>
+        <div class="kpi-tile">
+          <div class="kpi-label">Logged Study Time</div>
+          <div class="kpi-value" id="kpi-hours">0.0h</div>
+          <div class="kpi-note" id="kpi-hours-sub">0.0h PM / 0.0h Legal</div>
+        </div>
+        <div class="kpi-tile">
+          <div class="kpi-label">PM Mean Confidence</div>
+          <div class="kpi-value" id="kpi-confidence">3.0 / 5.0</div>
+          <div class="kpi-note">Active end-to-end PM fluency</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="wave-progress-card" aria-label="Overall progression">
+      <div class="wave-meta">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0b57d0" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <div>
+          <div class="wave-title" id="wave-label">0% End-to-End Project Management Readiness</div>
+          <div class="wave-sub" id="wave-sub">6 Lifecycle Phases x 6 Modules = 36 Active PM Modules (+ 18 Deferred Legal Modules) | 216 Curated Learning Documents (4 per Module)</div>
+        </div>
+      </div>
+      <div class="wave-track-wrap">
+        <div class="wave-fill" id="wave-fill"></div>
+      </div>
+    </section>
+
+    <section class="sync-bar" aria-label="Supabase cloud sync">
+      <div class="sync-left">
+        <span id="sync-pill" class="sync-pill">Checking Supabase...</span>
+        <label class="profile-label">
+          Profile Key:
+          <input type="text" id="profile-id-input" class="profile-input" value="dc36-quan-eu" maxlength="64" title="Workspace profile key used to isolate your rows in Supabase" />
+        </label>
+      </div>
+      <div class="sync-right">
+        <button type="button" id="btn-sync-pull" class="btn-m3 btn-outline-m3">Pull Cloud</button>
+        <button type="button" id="btn-sync-push" class="btn-m3 btn-tonal">Push Local to Cloud</button>
+        <button type="button" id="btn-checkin" class="btn-m3 btn-outline-m3">Log Study Check-In</button>
+      </div>
+    </section>
+
+    <nav class="nav-tabs" aria-label="Dashboard sections">
+      <button type="button" class="tab-btn active" data-target="view-pm">1. PM Full Lifecycle (36)</button>
+      <button type="button" class="tab-btn" data-target="view-legal">
+        2. Legal &amp; Permitting (18)
+        <span class="tab-badge-later">Later</span>
+      </button>
+      <button type="button" class="tab-btn" data-target="view-analytics">3. Lifecycle &amp; Pillar Analytics</button>
+      <button type="button" class="tab-btn" data-target="view-portfolio">4. DC45-EU Portfolio &amp; Gaps</button>
+      <button type="button" class="tab-btn" data-target="view-interviews">5. Dublin / EU Interview Prep</button>
+      <button type="button" class="tab-btn" data-target="view-history">6. Study History &amp; Log</button>
+      <button type="button" class="tab-btn" data-target="view-abbr">
+        7. Abbr &amp; Glossary
+        <span class="tab-badge-count" id="tab-abbr-count"></span>
+      </button>
+    </nav>
+
+    <section id="srs-due-banner" class="srs-due-panel" aria-label="Due Today Spaced Repetition"></section>
+
+    <main>
+      <section id="view-pm" class="view-panel active">
+        <div class="track-banner track-banner-pm">
+          <div>
+            <h2 class="track-banner-title">Active Focus: Project Management Full Lifecycle (End-to-End)</h2>
+            <p class="track-banner-sub">Complete delivery sequence from Stage 0 Charter &amp; Feasibility through P6 Planning, NEC4/FIDIC Procurement, EVM Controls, CIBSE L1-L5 Commissioning, and Stage 7 Handover/Closeout.</p>
+          </div>
+          <span class="track-badge track-badge-pm">Active Track</span>
+        </div>
+
+        <div id="pm-stepper" class="lifecycle-stepper" aria-label="End-to-End Project Management Lifecycle Phases"></div>
+
+        <div class="toolbar">
+          <div class="toolbar-top">
+            <input type="search" id="pm-search-box" class="search-input" placeholder="Search PM Lifecycle modules or documents (Charter, WBS, P6, DCMA-14, NEC4, FIDIC, EVM, Cx L1-L5, OR&T)..." />
+            <button type="button" id="btn-pm-toggle-docs" class="btn-m3 btn-outline-m3">Expand All Item Docs</button>
+          </div>
+          <div class="chip-row" id="pm-phase-chips"></div>
+          <div class="chip-row" id="pm-status-chips"></div>
+        </div>
+        <div id="pm-modules-grid" class="sections-stack"></div>
+      </section>
+
+      <section id="view-legal" class="view-panel">
+        <div class="track-banner track-banner-deferred">
+          <div>
+            <h2 class="track-banner-title">Deferred Track: Irish &amp; EU Legal, Grid &amp; Statutory Permitting</h2>
+            <p class="track-banner-sub">Parked here for later study while focusing on Project Management execution. Existing notes and completion states remain auto-saved.</p>
+          </div>
+          <span class="track-badge track-badge-legal">Revisit Later</span>
+        </div>
+
+        <div class="toolbar">
+          <div class="toolbar-top">
+            <input type="search" id="legal-search-box" class="search-input" placeholder="Search Legal & Permitting modules or documents (SID, EIAR, EPA IEL, EirGrid, CRU, BCAR, PSDP/PSCS)..." />
+            <button type="button" id="btn-legal-toggle-docs" class="btn-m3 btn-outline-m3">Expand All Item Docs</button>
+          </div>
+          <div class="chip-row" id="legal-pillar-chips"></div>
+          <div class="chip-row" id="legal-status-chips"></div>
+        </div>
+        <div id="legal-modules-grid" class="sections-stack"></div>
+      </section>
+
+      <section id="view-analytics" class="view-panel">
+        <div class="analytics-grid">
+          <div class="panel-card">
+            <h3>End-to-End PM Lifecycle &amp; Deferred Legal Progress</h3>
+            <div id="pillar-bars"></div>
+          </div>
+          <div class="panel-card">
+            <h3>Benchmark &amp; Certification Alignment</h3>
+            <div id="analytics-summary"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="view-portfolio" class="view-panel">
+        <div class="toolbar">
+          <div class="chip-row" id="portfolio-filter-chips"></div>
+        </div>
+        <div class="table-wrap">
+          <table class="m3-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Track</th>
+                <th>Portfolio Deliverable</th>
+                <th>Governing EU / Irish Standards</th>
+                <th>Target Artifact / Metric</th>
+                <th>Update Status</th>
+                <th>Current State</th>
+              </tr>
+            </thead>
+            <tbody id="portfolio-tbody"></tbody>
+          </table>
+        </div>
+
+        <div id="repo-map-section" class="repo-map-panel"></div>
+      </section>
+
+      <section id="view-interviews" class="view-panel">
+        <div class="toolbar">
+          <div class="chip-row" id="interview-filter-chips"></div>
+        </div>
+        <div id="interview-list"></div>
+      </section>
+
+      <section id="view-history" class="view-panel">
+        <div id="history-setup-banner" class="sql-setup-box" style="display:none;">
+          <div>
+            <strong>Supabase Schema Not Initialized Yet:</strong> Run <span class="mono">supabase/dc36_learning_schema.sql</span> once in Supabase Dashboard -&gt; SQL Editor to activate cloud persistence across devices. History continues logging locally in the meantime.
+          </div>
+          <button type="button" id="btn-copy-sql" class="btn-m3 btn-outline-m3">Copy SQL Script</button>
+        </div>
+
+        <div class="history-kpi-grid">
+          <div class="history-kpi-card">
+            <div class="history-kpi-label">Logged History Events</div>
+            <div class="history-kpi-value" id="hist-kpi-events">0</div>
+          </div>
+          <div class="history-kpi-card">
+            <div class="history-kpi-label">Study Hours (Last 7 Days)</div>
+            <div class="history-kpi-value" id="hist-kpi-hours7">0.0h</div>
+          </div>
+          <div class="history-kpi-card">
+            <div class="history-kpi-label">Modules Mastered (Last 7 Days)</div>
+            <div class="history-kpi-value" id="hist-kpi-mastered7">0</div>
+          </div>
+          <div class="history-kpi-card">
+            <div class="history-kpi-label">Latest Recorded PM Readiness</div>
+            <div class="history-kpi-value" id="hist-kpi-readiness">0%</div>
+          </div>
+        </div>
+
+        <div class="sparkline-card">
+          <div class="sparkline-head">
+            <h3>PM Readiness Progression Trajectory</h3>
+            <span class="mono" style="font-size:12px;color:#44474f;" id="sparkline-meta">Chronological event snapshots</span>
+          </div>
+          <svg id="history-sparkline" viewBox="0 0 800 130" width="100%" height="130" preserveAspectRatio="none" aria-label="Readiness history chart"></svg>
+        </div>
+
+        <div class="toolbar">
+          <div class="toolbar-top">
+            <div class="chip-row" id="history-track-chips"></div>
+            <button type="button" id="btn-export-history-csv" class="btn-m3 btn-outline-m3">Export History CSV</button>
+          </div>
+          <div class="chip-row" id="history-type-chips"></div>
+        </div>
+
+        <div class="table-wrap">
+          <table class="m3-table">
+            <thead>
+              <tr>
+                <th>Timestamp</th>
+                <th>Track</th>
+                <th>Event</th>
+                <th>Item / Module</th>
+                <th>Transition</th>
+                <th>Hours Delta</th>
+                <th>PM %</th>
+                <th>Summary</th>
+              </tr>
+            </thead>
+            <tbody id="history-tbody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="view-abbr" class="view-panel">
+        <div class="track-banner track-banner-abbr">
+          <div>
+            <h2 class="track-banner-title">Abbreviations, Acronyms &amp; Technical Glossary</h2>
+            <p class="track-banner-sub">Complete plain-English reference for all project management, contractual, statutory, financial, engineering, BIM, and commissioning acronyms used across the DC45-EU dashboard.</p>
+          </div>
+          <span class="track-badge track-badge-abbr" id="abbr-total-badge">0 Terms</span>
+        </div>
+
+        <div class="toolbar">
+          <div class="toolbar-top">
+            <input type="search" id="abbr-search-box" class="search-input" placeholder="Search abbreviation, full term, explanation, or module ID (e.g., BCAR, PUE, PSDP, EVM, FIDIC, LOTO, EN 50600, IST)..." />
+            <span class="mono abbr-count-label" id="abbr-match-count">Showing 0 terms</span>
+            <button type="button" id="btn-abbr-reset" class="btn-m3 btn-outline-m3">Reset Filters</button>
+          </div>
+          <div class="chip-row" id="abbr-cat-chips"></div>
+          <div class="chip-row abbr-alpha-row" id="abbr-alpha-chips"></div>
+        </div>
+
+        <div class="table-wrap">
+          <table class="m3-table abbr-table">
+            <thead>
+              <tr>
+                <th>Abbreviation</th>
+                <th>Full Expansion</th>
+                <th>Domain</th>
+                <th>Explanation &amp; DC45-EU Context</th>
+                <th>Where Seen</th>
+              </tr>
+            </thead>
+            <tbody id="abbr-tbody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="glossary-data.js?v=20261112-18"></script>
+  <script src="flashcards-data.js?v=20261112-18"></script>
+  <script src="reader/learning-store.js?v=20261112-18"></script>
+  <script src="supabase-sync.js?v=20261112-18"></script>
+  <script src="app.js?v=20261112-18"></script>
+</body>
+</html>
