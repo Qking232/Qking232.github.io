@@ -34,9 +34,9 @@
   }
 
   function getActiveModuleId() {
-    const m = /^PM-\d+/.exec(activeDocId);
-    if (m) return m[0];
-    return (DATA.modules && DATA.modules[0] && DATA.modules[0].id) || 'PM-01';
+    const m = /^(?:PKG|PM)-\d+/i.exec(activeDocId);
+    if (m) return m[0].toUpperCase();
+    return (DATA.modules && DATA.modules[0] && DATA.modules[0].id) || 'PKG-01';
   }
 
   function initExpandedModules() {
@@ -206,11 +206,18 @@
     const host = document.getElementById('p1-cat-chips');
     if (!host) return;
     let docCount = 0;
-    (DATA.modules || []).forEach(m => { docCount += (m.docs || []).length; });
-    const opts = ['ALL', 'Standard', 'Deliverable', 'Template', 'Audit'];
+    const catSet = new Set();
+    (DATA.modules || []).forEach(m => {
+      (m.docs || []).forEach(d => {
+        docCount += 1;
+        if (d.cat) catSet.add(d.cat);
+      });
+    });
+    const opts = ['ALL', ...Array.from(catSet)];
     const chipsHtml = opts.map(k => {
       const tagAttr = k === 'ALL' ? 'ALL' : k.toUpperCase();
-      return `<button type="button" class="chip ${catFilter === k ? 'active' : ''}" data-cat-val="${k}" data-cat="${tagAttr}">${k === 'ALL' ? `All Categories (${docCount})` : k}</button>`;
+      const label = k === 'ALL' ? `All Documents (${docCount})` : k;
+      return `<button type="button" class="chip ${catFilter === k ? 'active' : ''}" data-cat-val="${k}" data-cat="${tagAttr}">${escapeHtml(label)}</button>`;
     }).join('');
     const acronymBtnHtml = `<button type="button" id="btn-toggle-acronyms" class="btn-toolbar-toggle ${extrasState.acronymHighlight ? 'is-active' : ''}" title="Highlight & explain DC45-EU engineering/statutory acronyms on hover">Acronyms: ${extrasState.acronymHighlight ? 'ON' : 'OFF'}</button>`;
     host.innerHTML = chipsHtml + acronymBtnHtml;
@@ -491,7 +498,9 @@
 
   function renderLearningSuiteHtml(modId, docId) {
     const noteObj = extrasState.notes[docId] || { text: '', updatedAt: null };
-    const cards = (window.DC45_FLASHCARDS || []).filter(c => c.modId === modId);
+    const curMod = (DATA.modules || []).find(m => m.id === modId);
+    const legacyIds = (curMod && curMod.legacyModIds) || [];
+    const cards = (window.DC45_FLASHCARDS || []).filter(c => c.modId === modId || legacyIds.includes(c.modId));
     const now = Date.now();
 
     const cardsHtml = cards.map(c => {
