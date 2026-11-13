@@ -1454,17 +1454,8 @@ function renderModuleDocsDrawerHtml(m, forceOpen) {
       : '';
     const phaseSlugMap = { PM1: 'phase1', PM2: 'phase2', PM3: 'phase3', PM4: 'phase4', PM5: 'phase5', PM6: 'phase6' };
     const pSlug = phaseSlugMap[m.pillar] || '';
-    const p1AliasMap = {
-      'PM-01-D1': 'PKG-01-D1', 'PM-01-D2': 'PKG-01-D1', 'PM-01-D3': 'PKG-01-D2', 'PM-01-D4': 'PKG-01-D4',
-      'PM-06-D1': 'PKG-01-D1', 'PM-06-D2': 'PKG-01-D3', 'PM-06-D3': 'PKG-01-D3', 'PM-06-D4': 'PKG-01-D4',
-      'PM-02-D1': 'PKG-02-D1', 'PM-02-D2': 'PKG-02-D1', 'PM-02-D3': 'PKG-02-D2', 'PM-02-D4': 'PKG-02-D2',
-      'PM-03-D1': 'PKG-02-D3', 'PM-03-D2': 'PKG-02-D3', 'PM-03-D3': 'PKG-02-D4', 'PM-03-D4': 'PKG-02-D4',
-      'PM-04-D1': 'PKG-03-D1', 'PM-04-D2': 'PKG-03-D1', 'PM-04-D3': 'PKG-03-D2', 'PM-04-D4': 'PKG-03-D2',
-      'PM-05-D1': 'PKG-03-D4', 'PM-05-D2': 'PKG-03-D3', 'PM-05-D3': 'PKG-03-D4', 'PM-05-D4': 'PKG-03-D4'
-    };
-    const docTargetId = m.pillar === 'PM1' ? (p1AliasMap[`${m.id}-D${idx + 1}`] || `${m.id}-D${idx + 1}`) : `${m.id}-D${idx + 1}`;
     const liveReadBtnHtml = pSlug
-      ? `<a href="${pSlug}/#${docTargetId}" class="btn-read-live mono" title="Open full rendered document & download">Read Live</a>`
+      ? `<a href="${pSlug}/#${m.id}-D${idx + 1}" class="btn-read-live mono" title="Open full rendered document & download">Read Live</a>`
       : '';
     return `
       <li class="module-doc-item ${isChecked ? 'is-done' : ''}" data-doc-row="${k}">
@@ -1607,7 +1598,7 @@ function renderTrackModules(trackName, gridId) {
           <div class="section-title-group">
             <span class="track-badge ${badgeCls}">${p.code}</span>
             <h3 class="section-title">${p.name}</h3>
-            ${({ PM1: '<a href="phase1/index.html" class="btn-read-live mono" style="padding:5px 12px;">Open Phase 1 Live Reader (Path B: 3 Master Packages / 18 Files)</a>', PM2: '<a href="phase2/index.html" class="btn-read-live mono" style="padding:5px 12px;">Open Phase 2 Live Reader (30 Files)</a>', PM3: '<a href="phase3/index.html" class="btn-read-live mono" style="padding:5px 12px;">Open Phase 3 Live Reader (30 Files)</a>', PM4: '<a href="phase4/index.html" class="btn-read-live mono" style="padding:5px 12px;">Open Phase 4 Live Reader (30 Files)</a>', PM5: '<a href="phase5/index.html" class="btn-read-live mono" style="padding:5px 12px;">Open Phase 5 Live Reader (30 Files)</a>', PM6: '<a href="phase6/index.html" class="btn-read-live mono" style="padding:5px 12px;">Open Phase 6 Live Reader (30 Files)</a>' })[p.id] || ''}
+            ${({ PM1: '<a href="phase1/index.html" class="btn-read-live mono" style="padding:5px 12px;">Open Phase 1 Live Reader (31 Files)</a>', PM2: '<a href="phase2/index.html" class="btn-read-live mono" style="padding:5px 12px;">Open Phase 2 Live Reader (30 Files)</a>', PM3: '<a href="phase3/index.html" class="btn-read-live mono" style="padding:5px 12px;">Open Phase 3 Live Reader (30 Files)</a>', PM4: '<a href="phase4/index.html" class="btn-read-live mono" style="padding:5px 12px;">Open Phase 4 Live Reader (30 Files)</a>', PM5: '<a href="phase5/index.html" class="btn-read-live mono" style="padding:5px 12px;">Open Phase 5 Live Reader (30 Files)</a>', PM6: '<a href="phase6/index.html" class="btn-read-live mono" style="padding:5px 12px;">Open Phase 6 Live Reader (30 Files)</a>' })[p.id] || ''}
           </div>
           <div class="section-stats mono">
             <span>${done}/${allSectionMods.length} Mastered</span>

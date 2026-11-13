@@ -1,44 +1,13103 @@
-// Auto-generated full-detail Phase 1 Path B document repository payload (Rev.002)
+// Auto-generated full-detail Phase 1 document repository payload (PM-01..PM-06 Canonical)
 window.PHASE1_PORTAL_DATA = {
-  "generatedAt": "2026-11-13 04:03 UTC",
-  "phaseTitle": "Phase 1 (45 MW DC45-EU): Initiation, Charter & Business Case (PKG-01 to PKG-03)",
-  "fileCount": 18,
-  "masterPackages": 3,
-  "totalDocs": 12,
-  "masterWorkbooks": {},
+  "generatedAt": "2026-11-13 04:14 UTC",
+  "phaseTitle": "Phase 1 (45 MW DC45-EU): Initiation, Charter & Business Case (PM-01 to PM-06)",
+  "fileCount": 31,
+  "masterWorkbooks": {
+    "CHARTER": {
+      "fileName": "PM01_Doc2_Deliverable_Project_Charter_Summary_Master_Rev.004.xlsx",
+      "sheetCount": 6,
+      "totalCells": 979,
+      "formulaCells": 52,
+      "sheets": [
+        {
+          "name": "1. Charter Executive Brief",
+          "maxRow": 25,
+          "maxCol": 8,
+          "formulaCount": 6,
+          "columns": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H"
+          ],
+          "rows": [
+            [
+              {
+                "coord": "A1",
+                "v": "PROJECT CHARTER - IRELAND / EU 45 MW DATA CENTRE (EN 50600 CLASS 3 / TIER III)",
+                "t": "s",
+                "raw": "PROJECT CHARTER - IRELAND / EU 45 MW DATA CENTRE (EN 50600 CLASS 3 / TIER III)",
+                "kind": "banner",
+                "cspan": 8
+              },
+              {
+                "coord": "B1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A2",
+                "v": "Project Code: DC45-EU | RIBA Stages 0-7 | EirGrid / EPA IEL / BCAR / PSDP-PSCS / EU EED (2023/1791)",
+                "t": "s",
+                "raw": "Project Code: DC45-EU | RIBA Stages 0-7 | EirGrid / EPA IEL / BCAR / PSDP-PSCS / EU EED (2023/1791)",
+                "kind": "banner",
+                "cspan": 8
+              },
+              {
+                "coord": "B2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "B3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "C3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "D3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "E3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "F3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "G3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "H3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              }
+            ],
+            [
+              {
+                "coord": "A4",
+                "v": "1. EXECUTIVE AUTHORIZATION & IRISH STATUTORY MANDATE",
+                "t": "s",
+                "raw": "1. EXECUTIVE AUTHORIZATION & IRISH STATUTORY MANDATE",
+                "kind": "section",
+                "cspan": 8
+              },
+              {
+                "coord": "B4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A5",
+                "v": "This Project Charter authorizes planning (SID/EIAR), EPA Industrial Emissions Licensing (IEL), EirGrid 110kV grid connection, ISO 19650 BIM design, EN 50600 Class 3 construction under BCAR & S.I. No. 291/2013 (PSDP/PSCS), CIBSE/ASHRAE L1-L5 commissioning (48-hr 45 MW IST), and BCAR Certificate of Compliance on Completion for a 45 MW hyperscale facility in Ireland.",
+                "t": "s",
+                "raw": "This Project Charter authorizes planning (SID/EIAR), EPA Industrial Emissions Licensing (IEL), EirGrid 110kV grid connection, ISO 19650 BIM design, EN 50600 Class 3 construction under BCAR & S.I. No. 291/2013 (PSDP/PSCS), CIBSE/ASHRAE L1-L5 commissioning (48-hr 45 MW IST), and BCAR Certificate of Compliance on Completion for a 45 MW hyperscale facility in Ireland.",
+                "kind": "banner",
+                "cspan": 8
+              },
+              {
+                "coord": "B5",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C5",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D5",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E5",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F5",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G5",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H5",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A6",
+                "v": "Organization Field",
+                "t": "s",
+                "raw": "Organization Field",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B6",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C6",
+                "v": "Authorized Detail",
+                "t": "s",
+                "raw": "Authorized Detail",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "D6",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E6",
+                "v": "Baseline Parameter",
+                "t": "s",
+                "raw": "Baseline Parameter",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "F6",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G6",
+                "v": "EU / Ireland Standard",
+                "t": "s",
+                "raw": "EU / Ireland Standard",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "H6",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A7",
+                "v": "Legal Entity / SPV",
+                "t": "s",
+                "raw": "Legal Entity / SPV",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B7",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C7",
+                "v": "[TBD - Client / Developer SPV]",
+                "t": "s",
+                "raw": "[TBD - Client / Developer SPV]",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "D7",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E7",
+                "v": "Location / Grid Zone",
+                "t": "s",
+                "raw": "Location / Grid Zone",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "F7",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G7",
+                "v": "[TBD - Greater Dublin / Ireland IDA Zone]",
+                "t": "s",
+                "raw": "[TBD - Greater Dublin / Ireland IDA Zone]",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "H7",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A8",
+                "v": "Executive Sponsor / IC",
+                "t": "s",
+                "raw": "Executive Sponsor / IC",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B8",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C8",
+                "v": "[TBD - Sponsor Input]",
+                "t": "s",
+                "raw": "[TBD - Sponsor Input]",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "D8",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E8",
+                "v": "Project Director / PM",
+                "t": "s",
+                "raw": "Project Director / PM",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "F8",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G8",
+                "v": "[TBD - Chartered Engineer]",
+                "t": "s",
+                "raw": "[TBD - Chartered Engineer]",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "H8",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A9",
+                "v": "Statutory PSDP / PSCS",
+                "t": "s",
+                "raw": "Statutory PSDP / PSCS",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B9",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C9",
+                "v": "Appointed in Writing pre-Design / pre-Site (SI 291)",
+                "t": "s",
+                "raw": "Appointed in Writing pre-Design / pre-Site (SI 291)",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "D9",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E9",
+                "v": "BCAR Assigned Certifier",
+                "t": "s",
+                "raw": "BCAR Assigned Certifier",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "F9",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G9",
+                "v": "Chartered Architect / Engineer (BCMS)",
+                "t": "s",
+                "raw": "Chartered Architect / Engineer (BCMS)",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "H9",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A10",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "B10",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "C10",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "D10",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "E10",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "F10",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "G10",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "H10",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              }
+            ],
+            [
+              {
+                "coord": "A11",
+                "v": "2. LIVE CHARTER KPI DASHBOARD (LINKED DYNAMICALLY TO TABS 3 & 6)",
+                "t": "s",
+                "raw": "2. LIVE CHARTER KPI DASHBOARD (LINKED DYNAMICALLY TO TABS 3 & 6)",
+                "kind": "section",
+                "cspan": 8
+              },
+              {
+                "coord": "B11",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C11",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D11",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E11",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F11",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G11",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H11",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A12",
+                "v": "Control KPI",
+                "t": "s",
+                "raw": "Control KPI",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B12",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C12",
+                "v": "Live Value",
+                "t": "s",
+                "raw": "Live Value",
+                "kind": "input"
+              },
+              {
+                "coord": "D12",
+                "v": "Unit / Source",
+                "t": "s",
+                "raw": "Unit / Source",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "E12",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F12",
+                "v": "EU / Ireland Benchmark",
+                "t": "s",
+                "raw": "EU / Ireland Benchmark",
+                "kind": "input",
+                "cspan": 3
+              },
+              {
+                "coord": "G12",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H12",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A13",
+                "v": "Authorized Master Control Gates",
+                "t": "s",
+                "raw": "Authorized Master Control Gates",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B13",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C13",
+                "v": "10",
+                "f": "=COUNTA('3. Milestones & Budget'!A6:A15)",
+                "raw": 10,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "D13",
+                "v": "Gates (M1000-M7060)",
+                "t": "s",
+                "raw": "Gates (M1000-M7060)",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "E13",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F13",
+                "v": "Synchronized with DataCenter_45MW_EU_Ireland.xer",
+                "t": "s",
+                "raw": "Synchronized with DataCenter_45MW_EU_Ireland.xer",
+                "kind": "input",
+                "cspan": 3
+              },
+              {
+                "coord": "G13",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H13",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A14",
+                "v": "Driving Critical-Path Gates",
+                "t": "s",
+                "raw": "Driving Critical-Path Gates",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B14",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C14",
+                "v": "8",
+                "f": "=COUNTIF('3. Milestones & Budget'!G6:G15,\"YES\")",
+                "raw": 8,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "D14",
+                "v": "Zero-Float Gates",
+                "t": "s",
+                "raw": "Zero-Float Gates",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "E14",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F14",
+                "v": "Strict 8.0 hr/day 5-day calendar enforced",
+                "t": "s",
+                "raw": "Strict 8.0 hr/day 5-day calendar enforced",
+                "kind": "input",
+                "cspan": 3
+              },
+              {
+                "coord": "G14",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H14",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A15",
+                "v": "Notice to Proceed (RIBA Stage 1)",
+                "t": "s",
+                "raw": "Notice to Proceed (RIBA Stage 1)",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B15",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C15",
+                "v": "0",
+                "f": "=MIN('3. Milestones & Budget'!E6:E15)",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "D15",
+                "v": "YYYY-MM-DD (M1000)",
+                "t": "s",
+                "raw": "YYYY-MM-DD (M1000)",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "E15",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F15",
+                "v": "Day-1 Land Option & PSDP/EirGrid initiation",
+                "t": "s",
+                "raw": "Day-1 Land Option & PSDP/EirGrid initiation",
+                "kind": "input",
+                "cspan": 3
+              },
+              {
+                "coord": "G15",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H15",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A16",
+                "v": "Commercial Operation Date (COD)",
+                "t": "s",
+                "raw": "Commercial Operation Date (COD)",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C16",
+                "v": "0",
+                "f": "=MAX('3. Milestones & Budget'!E6:E15)",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "D16",
+                "v": "YYYY-MM-DD (M7060)",
+                "t": "s",
+                "raw": "YYYY-MM-DD (M7060)",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "E16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F16",
+                "v": "BCAR CCC validated & Safety File accepted (880 workdays)",
+                "t": "s",
+                "raw": "BCAR CCC validated & Safety File accepted (880 workdays)",
+                "kind": "input",
+                "cspan": 3
+              },
+              {
+                "coord": "G16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A17",
+                "v": "Authorized Capex Baseline (BAC)",
+                "t": "s",
+                "raw": "Authorized Capex Baseline (BAC)",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C17",
+                "v": "\u20ac0",
+                "f": "='3. Milestones & Budget'!F26",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "D17",
+                "v": "EUR (WBS 1.0-7.0)",
+                "t": "s",
+                "raw": "EUR (WBS 1.0-7.0)",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "E17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F17",
+                "v": "Linked dynamically to Tab 3 EUR Capex table",
+                "t": "s",
+                "raw": "Linked dynamically to Tab 3 EUR Capex table",
+                "kind": "input",
+                "cspan": 3
+              },
+              {
+                "coord": "G17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A18",
+                "v": "Critical Strategic Risks (Score>=20)",
+                "t": "s",
+                "raw": "Critical Strategic Risks (Score>=20)",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B18",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C18",
+                "v": "6",
+                "f": "=COUNTIF('6. Risks & Sign-Off'!G6:G11,\"CRITICAL\")",
+                "raw": 6,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "D18",
+                "v": "Executive Escalation",
+                "t": "s",
+                "raw": "Executive Escalation",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "E18",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F18",
+                "v": "Calculated via L x I matrix on Tab 6",
+                "t": "s",
+                "raw": "Calculated via L x I matrix on Tab 6",
+                "kind": "input",
+                "cspan": 3
+              },
+              {
+                "coord": "G18",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H18",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A19",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "B19",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "C19",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "D19",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "E19",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "F19",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "G19",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "H19",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              }
+            ],
+            [
+              {
+                "coord": "A20",
+                "v": "3. CONTROLLED PORTFOLIO HIERARCHY (IRELAND / EU STANDARD)",
+                "t": "s",
+                "raw": "3. CONTROLLED PORTFOLIO HIERARCHY (IRELAND / EU STANDARD)",
+                "kind": "section",
+                "cspan": 8
+              },
+              {
+                "coord": "B20",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C20",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D20",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E20",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F20",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G20",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H20",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A21",
+                "v": "Level",
+                "t": "s",
+                "raw": "Level",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B21",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C21",
+                "v": "Deliverable File",
+                "t": "s",
+                "raw": "Deliverable File",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "D21",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E21",
+                "v": "Standards Covered",
+                "t": "s",
+                "raw": "Standards Covered",
+                "kind": "input",
+                "cspan": 3
+              },
+              {
+                "coord": "F21",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G21",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H21",
+                "v": "Status",
+                "t": "s",
+                "raw": "Status",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A22",
+                "v": "L1 Project Charter",
+                "t": "s",
+                "raw": "L1 Project Charter",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B22",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C22",
+                "v": "DataCenter_45MW_EU_Project_Charter.xlsx",
+                "t": "s",
+                "raw": "DataCenter_45MW_EU_Project_Charter.xlsx",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "D22",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E22",
+                "v": "BCAR, PSDP/PSCS, EirGrid/CRU, EUR Stage-Gates & COD Exit",
+                "t": "s",
+                "raw": "BCAR, PSDP/PSCS, EirGrid/CRU, EUR Stage-Gates & COD Exit",
+                "kind": "input",
+                "cspan": 3
+              },
+              {
+                "coord": "F22",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G22",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H22",
+                "v": "ACTIVE",
+                "t": "s",
+                "raw": "ACTIVE",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A23",
+                "v": "L2 Impl. Plan (PIP)",
+                "t": "s",
+                "raw": "L2 Impl. Plan (PIP)",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B23",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C23",
+                "v": "DataCenter_45MW_EU_PIP.xlsx",
+                "t": "s",
+                "raw": "DataCenter_45MW_EU_PIP.xlsx",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "D23",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E23",
+                "v": "144-task RIBA/EN 50600 Gantt, Ireland Statutory & CIBSE L1-L5",
+                "t": "s",
+                "raw": "144-task RIBA/EN 50600 Gantt, Ireland Statutory & CIBSE L1-L5",
+                "kind": "input",
+                "cspan": 3
+              },
+              {
+                "coord": "F23",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G23",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H23",
+                "v": "ACTIVE",
+                "t": "s",
+                "raw": "ACTIVE",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A24",
+                "v": "L3 Pre-NTP Controls",
+                "t": "s",
+                "raw": "L3 Pre-NTP Controls",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B24",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C24",
+                "v": "DataCenter_45MW_EU_PreNTP_Controls.xlsx",
+                "t": "s",
+                "raw": "DataCenter_45MW_EU_PreNTP_Controls.xlsx",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "D24",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E24",
+                "v": "EUR 10-yr DCF, EED KPIs (PUE/WUE/ERF), FIDIC/NEC4 EVM & Risks",
+                "t": "s",
+                "raw": "EUR 10-yr DCF, EED KPIs (PUE/WUE/ERF), FIDIC/NEC4 EVM & Risks",
+                "kind": "input",
+                "cspan": 3
+              },
+              {
+                "coord": "F24",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G24",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H24",
+                "v": "ACTIVE",
+                "t": "s",
+                "raw": "ACTIVE",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A25",
+                "v": "L4 Master P6 Schedule",
+                "t": "s",
+                "raw": "L4 Master P6 Schedule",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B25",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C25",
+                "v": "DataCenter_45MW_EU_Ireland.xer",
+                "t": "s",
+                "raw": "DataCenter_45MW_EU_Ireland.xer",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "D25",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E25",
+                "v": "144 tasks, 22 WBS, 213 FS links; DCMA-14 6/6 PASS (880 workdays)",
+                "t": "s",
+                "raw": "144 tasks, 22 WBS, 213 FS links; DCMA-14 6/6 PASS (880 workdays)",
+                "kind": "input",
+                "cspan": 3
+              },
+              {
+                "coord": "F25",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G25",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H25",
+                "v": "LOCKED",
+                "t": "s",
+                "raw": "LOCKED",
+                "kind": "input"
+              }
+            ]
+          ]
+        },
+        {
+          "name": "2. Scope & Constraints",
+          "maxRow": 22,
+          "maxCol": 4,
+          "formulaCount": 0,
+          "columns": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "rows": [
+            [
+              {
+                "coord": "A1",
+                "v": "SCOPE BOUNDARIES, EXCLUSIONS & IRISH / EU STATUTORY CONSTRAINTS",
+                "t": "s",
+                "raw": "SCOPE BOUNDARIES, EXCLUSIONS & IRISH / EU STATUTORY CONSTRAINTS",
+                "kind": "banner",
+                "cspan": 8
+              },
+              {
+                "coord": "B1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A2",
+                "v": "EN 50600 Class 3, BCAR, EPA IEL, EirGrid / CRU & S.I. No. 291/2013 Constraints",
+                "t": "s",
+                "raw": "EN 50600 Class 3, BCAR, EPA IEL, EirGrid / CRU & S.I. No. 291/2013 Constraints",
+                "kind": "banner",
+                "cspan": 8
+              },
+              {
+                "coord": "B2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "B3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "C3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "D3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              }
+            ],
+            [
+              {
+                "coord": "A4",
+                "v": "1. IN-SCOPE DELIVERABLES (WBS 1.0 - 7.0)",
+                "t": "s",
+                "raw": "1. IN-SCOPE DELIVERABLES (WBS 1.0 - 7.0)",
+                "kind": "section",
+                "cspan": 8
+              },
+              {
+                "coord": "B4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A5",
+                "v": "WBS",
+                "t": "s",
+                "raw": "WBS",
+                "kind": "input"
+              },
+              {
+                "coord": "B5",
+                "v": "Package Title",
+                "t": "s",
+                "raw": "Package Title",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "C5",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D5",
+                "v": "Scope Deliverables",
+                "t": "s",
+                "raw": "Scope Deliverables",
+                "kind": "section",
+                "cspan": 5
+              }
+            ],
+            [
+              {
+                "coord": "A6",
+                "v": "1.0-PERM",
+                "t": "s",
+                "raw": "1.0-PERM",
+                "kind": "input"
+              },
+              {
+                "coord": "B6",
+                "v": "Planning, EPA IEL & EirGrid",
+                "t": "s",
+                "raw": "Planning, EPA IEL & EirGrid",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "C6",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D6",
+                "v": "PSDP/PSCS appointments, Section 247, EIAR, SID/Local Authority Planning, EPA IEL, EirGrid ECP/RMS, CRU BESS, FSC & DAC.",
+                "t": "s",
+                "raw": "PSDP/PSCS appointments, Section 247, EIAR, SID/Local Authority Planning, EPA IEL, EirGrid ECP/RMS, CRU BESS, FSC & DAC.",
+                "kind": "section",
+                "cspan": 5
+              }
+            ],
+            [
+              {
+                "coord": "A7",
+                "v": "2.0 & 3.0",
+                "t": "s",
+                "raw": "2.0 & 3.0",
+                "kind": "input"
+              },
+              {
+                "coord": "B7",
+                "v": "ISO 19650 BIM & EU Plant",
+                "t": "s",
+                "raw": "ISO 19650 BIM & EU Plant",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "C7",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D7",
+                "v": "BIM CDE, GI boreholes, RIBA Stage 4 IFC, EED telemetry schema, FAT & port logistics for 63MVA tx, SF6-free GIS, HVO gensets & BESS.",
+                "t": "s",
+                "raw": "BIM CDE, GI boreholes, RIBA Stage 4 IFC, EED telemetry schema, FAT & port logistics for 63MVA tx, SF6-free GIS, HVO gensets & BESS.",
+                "kind": "section",
+                "cspan": 5
+              }
+            ],
+            [
+              {
+                "coord": "A8",
+                "v": "4.x & 5.x",
+                "t": "s",
+                "raw": "4.x & 5.x",
+                "kind": "input"
+              },
+              {
+                "coord": "B8",
+                "v": "Shell, Substation, MEP & Halls",
+                "t": "s",
+                "raw": "Shell, Substation, MEP & Halls",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "C8",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D8",
+                "v": "750 CFA piles, 18 kN/m2 decks, Part L envelope, PAS 68 perimeter, 110kV/22kV GIS, 20x HVO+SCR gensets, BESS, CHW+ERF+TES & Halls 1-5.",
+                "t": "s",
+                "raw": "750 CFA piles, 18 kN/m2 decks, Part L envelope, PAS 68 perimeter, 110kV/22kV GIS, 20x HVO+SCR gensets, BESS, CHW+ERF+TES & Halls 1-5.",
+                "kind": "section",
+                "cspan": 5
+              }
+            ],
+            [
+              {
+                "coord": "A9",
+                "v": "6.0 & 7.0",
+                "t": "s",
+                "raw": "6.0 & 7.0",
+                "kind": "input"
+              },
+              {
+                "coord": "B9",
+                "v": "CIBSE Cx L1-L5 & BCAR COD",
+                "t": "s",
+                "raw": "CIBSE Cx L1-L5 & BCAR COD",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "C9",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D9",
+                "v": "Witnessed FAT/BCAR QA, L3 static/LOTO, L4 BESS/black-start, L5 45MW 48h IST, HSA Safety File, Part B Fire, EED, EirGrid & BCAR CCC.",
+                "t": "s",
+                "raw": "Witnessed FAT/BCAR QA, L3 static/LOTO, L4 BESS/black-start, L5 45MW 48h IST, HSA Safety File, Part B Fire, EED, EirGrid & BCAR CCC.",
+                "kind": "section",
+                "cspan": 5
+              }
+            ],
+            [
+              {
+                "coord": "A10",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "B10",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "C10",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "D10",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              }
+            ],
+            [
+              {
+                "coord": "A11",
+                "v": "2. EXPLICIT SCOPE EXCLUSIONS",
+                "t": "s",
+                "raw": "2. EXPLICIT SCOPE EXCLUSIONS",
+                "kind": "section",
+                "cspan": 8
+              },
+              {
+                "coord": "B11",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C11",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D11",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A12",
+                "v": "ID",
+                "t": "s",
+                "raw": "ID",
+                "kind": "input"
+              },
+              {
+                "coord": "B12",
+                "v": "Exclusion",
+                "t": "s",
+                "raw": "Exclusion",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "C12",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D12",
+                "v": "Contractual Boundary",
+                "t": "s",
+                "raw": "Contractual Boundary",
+                "kind": "section",
+                "cspan": 5
+              }
+            ],
+            [
+              {
+                "coord": "A13",
+                "v": "EX-01",
+                "t": "s",
+                "raw": "EX-01",
+                "kind": "input"
+              },
+              {
+                "coord": "B13",
+                "v": "Tenant Active IT Equipment",
+                "t": "s",
+                "raw": "Tenant Active IT Equipment",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "C13",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D13",
+                "v": "Customer compute racks, servers, storage & optical patching beyond Meet-Me-Rooms MMR-A/B.",
+                "t": "s",
+                "raw": "Customer compute racks, servers, storage & optical patching beyond Meet-Me-Rooms MMR-A/B.",
+                "kind": "section",
+                "cspan": 5
+              }
+            ],
+            [
+              {
+                "coord": "A14",
+                "v": "EX-02",
+                "t": "s",
+                "raw": "EX-02",
+                "kind": "input"
+              },
+              {
+                "coord": "B14",
+                "v": "Upstream EirGrid Transmission",
+                "t": "s",
+                "raw": "Upstream EirGrid Transmission",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "C14",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D14",
+                "v": "EirGrid 220kV/400kV regional transmission reinforcements outside the site 110kV GIS boundary.",
+                "t": "s",
+                "raw": "EirGrid 220kV/400kV regional transmission reinforcements outside the site 110kV GIS boundary.",
+                "kind": "section",
+                "cspan": 5
+              }
+            ],
+            [
+              {
+                "coord": "A15",
+                "v": "EX-03",
+                "t": "s",
+                "raw": "EX-03",
+                "kind": "input"
+              },
+              {
+                "coord": "B15",
+                "v": "District Heating Network Pipe",
+                "t": "s",
+                "raw": "District Heating Network Pipe",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "C15",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D15",
+                "v": "Off-site Municipal District Heating distribution mains beyond the ERF Heat-Reuse Export Valve Skid (A5390).",
+                "t": "s",
+                "raw": "Off-site Municipal District Heating distribution mains beyond the ERF Heat-Reuse Export Valve Skid (A5390).",
+                "kind": "section",
+                "cspan": 5
+              }
+            ],
+            [
+              {
+                "coord": "A16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "B16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "C16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "D16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              }
+            ],
+            [
+              {
+                "coord": "A17",
+                "v": "3. BINDING IRISH / EU STATUTORY & TECHNICAL CONSTRAINTS",
+                "t": "s",
+                "raw": "3. BINDING IRISH / EU STATUTORY & TECHNICAL CONSTRAINTS",
+                "kind": "section",
+                "cspan": 8
+              },
+              {
+                "coord": "B17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A18",
+                "v": "ID",
+                "t": "s",
+                "raw": "ID",
+                "kind": "input"
+              },
+              {
+                "coord": "B18",
+                "v": "Constraint",
+                "t": "s",
+                "raw": "Constraint",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "C18",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D18",
+                "v": "Non-Negotiable Requirement",
+                "t": "s",
+                "raw": "Non-Negotiable Requirement",
+                "kind": "section",
+                "cspan": 5
+              }
+            ],
+            [
+              {
+                "coord": "A19",
+                "v": "CON-01",
+                "t": "s",
+                "raw": "CON-01",
+                "kind": "input"
+              },
+              {
+                "coord": "B19",
+                "v": "S.I. 291/2013 & HSA AF1",
+                "t": "s",
+                "raw": "S.I. 291/2013 & HSA AF1",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "C19",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D19",
+                "v": "Written PSDP/PSCS appointments and HSA AF1 notification legally precede any enabling or excavation works.",
+                "t": "s",
+                "raw": "Written PSDP/PSCS appointments and HSA AF1 notification legally precede any enabling or excavation works.",
+                "kind": "section",
+                "cspan": 5
+              }
+            ],
+            [
+              {
+                "coord": "A20",
+                "v": "CON-02",
+                "t": "s",
+                "raw": "CON-02",
+                "kind": "input"
+              },
+              {
+                "coord": "B20",
+                "v": "BCAR CCC & Part B Gate",
+                "t": "s",
+                "raw": "BCAR CCC & Part B Gate",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "C20",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D20",
+                "v": "Building cannot legally open without Assigned Certifier BCMS validation, Part B Fire Clearance (A7010), FSC & DAC.",
+                "t": "s",
+                "raw": "Building cannot legally open without Assigned Certifier BCMS validation, Part B Fire Clearance (A7010), FSC & DAC.",
+                "kind": "section",
+                "cspan": 5
+              }
+            ],
+            [
+              {
+                "coord": "A21",
+                "v": "CON-03",
+                "t": "s",
+                "raw": "CON-03",
+                "kind": "input"
+              },
+              {
+                "coord": "B21",
+                "v": "CRU Dispatchable BESS/Gen",
+                "t": "s",
+                "raw": "CRU Dispatchable BESS/Gen",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "C21",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D21",
+                "v": "EirGrid MIC energisation requires CRU-compliant on-site dispatchable BESS/generation and RMS dynamic verification.",
+                "t": "s",
+                "raw": "EirGrid MIC energisation requires CRU-compliant on-site dispatchable BESS/generation and RMS dynamic verification.",
+                "kind": "section",
+                "cspan": 5
+              }
+            ],
+            [
+              {
+                "coord": "A22",
+                "v": "CON-04",
+                "t": "s",
+                "raw": "CON-04",
+                "kind": "input"
+              },
+              {
+                "coord": "B22",
+                "v": "EU EED (2023/1791) Reporting",
+                "t": "s",
+                "raw": "EU EED (2023/1791) Reporting",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "C22",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D22",
+                "v": "Mandatory automated metering infrastructure for annual EU Union Database PUE, WUE, ERF & REF disclosures (>=500kW).",
+                "t": "s",
+                "raw": "Mandatory automated metering infrastructure for annual EU Union Database PUE, WUE, ERF & REF disclosures (>=500kW).",
+                "kind": "section",
+                "cspan": 5
+              }
+            ]
+          ]
+        },
+        {
+          "name": "3. Milestones & Budget",
+          "maxRow": 36,
+          "maxCol": 8,
+          "formulaCount": 34,
+          "columns": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H"
+          ],
+          "rows": [
+            [
+              {
+                "coord": "A1",
+                "v": "CONTROL MILESTONES, EUR CAPEX ENVELOPE & STAGE-GATE FUNDING RELEASES",
+                "t": "s",
+                "raw": "CONTROL MILESTONES, EUR CAPEX ENVELOPE & STAGE-GATE FUNDING RELEASES",
+                "kind": "banner",
+                "cspan": 8
+              },
+              {
+                "coord": "B1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A2",
+                "v": "Synced to DataCenter_45MW_EU_Ireland.xer | Enter Approved EUR Capex in Blue [Input] Cells (D19:E25)",
+                "t": "s",
+                "raw": "Synced to DataCenter_45MW_EU_Ireland.xer | Enter Approved EUR Capex in Blue [Input] Cells (D19:E25)",
+                "kind": "banner",
+                "cspan": 8
+              },
+              {
+                "coord": "B2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "B3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "C3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "D3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "E3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "F3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "G3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "H3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              }
+            ],
+            [
+              {
+                "coord": "A4",
+                "v": "1. AUTHORIZED MASTER CONTROL MILESTONES (10 GATES)",
+                "t": "s",
+                "raw": "1. AUTHORIZED MASTER CONTROL MILESTONES (10 GATES)",
+                "kind": "section",
+                "cspan": 8
+              },
+              {
+                "coord": "B4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A5",
+                "v": "Milestone ID",
+                "t": "s",
+                "raw": "Milestone ID",
+                "kind": "input"
+              },
+              {
+                "coord": "B5",
+                "v": "WBS",
+                "t": "s",
+                "raw": "WBS",
+                "kind": "input"
+              },
+              {
+                "coord": "C5",
+                "v": "Milestone Gate Description",
+                "t": "s",
+                "raw": "Milestone Gate Description",
+                "kind": "input"
+              },
+              {
+                "coord": "D5",
+                "v": "P6 Type",
+                "t": "s",
+                "raw": "P6 Type",
+                "kind": "input"
+              },
+              {
+                "coord": "E5",
+                "v": "Baseline Date",
+                "t": "s",
+                "raw": "Baseline Date",
+                "kind": "input"
+              },
+              {
+                "coord": "F5",
+                "v": "Float (d)",
+                "t": "s",
+                "raw": "Float (d)",
+                "kind": "input"
+              },
+              {
+                "coord": "G5",
+                "v": "Critical",
+                "t": "s",
+                "raw": "Critical",
+                "kind": "input"
+              },
+              {
+                "coord": "H5",
+                "v": "Approving / Statutory Authority",
+                "t": "s",
+                "raw": "Approving / Statutory Authority",
+                "kind": "header"
+              }
+            ],
+            [
+              {
+                "coord": "A6",
+                "v": "M1000",
+                "t": "s",
+                "raw": "M1000",
+                "kind": "input"
+              },
+              {
+                "coord": "B6",
+                "v": "1.0-PERM",
+                "t": "s",
+                "raw": "1.0-PERM",
+                "kind": "input"
+              },
+              {
+                "coord": "C6",
+                "v": "RIBA Stage 1 Notice to Proceed & Land Option Milestone",
+                "t": "s",
+                "raw": "RIBA Stage 1 Notice to Proceed & Land Option Milestone",
+                "kind": "input"
+              },
+              {
+                "coord": "D6",
+                "v": "Start Gate",
+                "t": "s",
+                "raw": "Start Gate",
+                "kind": "input"
+              },
+              {
+                "coord": "E6",
+                "v": "2027-01-04",
+                "t": "empty",
+                "raw": "2027-01-04 00:00:00",
+                "kind": "input"
+              },
+              {
+                "coord": "F6",
+                "v": "0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "G6",
+                "v": "YES",
+                "t": "s",
+                "raw": "YES",
+                "kind": "input"
+              },
+              {
+                "coord": "H6",
+                "v": "Board / Investment Committee",
+                "t": "s",
+                "raw": "Board / Investment Committee",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A7",
+                "v": "M2110",
+                "t": "s",
+                "raw": "M2110",
+                "kind": "input"
+              },
+              {
+                "coord": "B7",
+                "v": "2.0-ENG",
+                "t": "s",
+                "raw": "2.0-ENG",
+                "kind": "input"
+              },
+              {
+                "coord": "C7",
+                "v": "RIBA Stage 4 Technical Design Freeze & ISO 19650 Sign-Off",
+                "t": "s",
+                "raw": "RIBA Stage 4 Technical Design Freeze & ISO 19650 Sign-Off",
+                "kind": "input"
+              },
+              {
+                "coord": "D7",
+                "v": "Finish Gate",
+                "t": "s",
+                "raw": "Finish Gate",
+                "kind": "input"
+              },
+              {
+                "coord": "E7",
+                "v": "2027-07-12",
+                "t": "empty",
+                "raw": "2027-07-12 00:00:00",
+                "kind": "input"
+              },
+              {
+                "coord": "F7",
+                "v": "290",
+                "t": "n",
+                "raw": 290,
+                "kind": "input"
+              },
+              {
+                "coord": "G7",
+                "v": "NO",
+                "t": "s",
+                "raw": "NO",
+                "kind": "input"
+              },
+              {
+                "coord": "H7",
+                "v": "Lead Designer / ISO 19650 BIM Lead",
+                "t": "s",
+                "raw": "Lead Designer / ISO 19650 BIM Lead",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A8",
+                "v": "M1090",
+                "t": "s",
+                "raw": "M1090",
+                "kind": "input"
+              },
+              {
+                "coord": "B8",
+                "v": "1.0-PERM",
+                "t": "s",
+                "raw": "1.0-PERM",
+                "kind": "input"
+              },
+              {
+                "coord": "C8",
+                "v": "All Irish Statutory Planning, EPA IEL & BCAR Clearances Milestone",
+                "t": "s",
+                "raw": "All Irish Statutory Planning, EPA IEL & BCAR Clearances Milestone",
+                "kind": "input"
+              },
+              {
+                "coord": "D8",
+                "v": "Finish Gate",
+                "t": "s",
+                "raw": "Finish Gate",
+                "kind": "input"
+              },
+              {
+                "coord": "E8",
+                "v": "2027-10-18",
+                "t": "empty",
+                "raw": "2027-10-18 00:00:00",
+                "kind": "input"
+              },
+              {
+                "coord": "F8",
+                "v": "0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "G8",
+                "v": "YES",
+                "t": "s",
+                "raw": "YES",
+                "kind": "input"
+              },
+              {
+                "coord": "H8",
+                "v": "Local Auth / EPA / EirGrid / BCMS",
+                "t": "s",
+                "raw": "Local Auth / EPA / EirGrid / BCMS",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A9",
+                "v": "M3120",
+                "t": "s",
+                "raw": "M3120",
+                "kind": "input"
+              },
+              {
+                "coord": "B9",
+                "v": "3.0-PROC",
+                "t": "s",
+                "raw": "3.0-PROC",
+                "kind": "input"
+              },
+              {
+                "coord": "C9",
+                "v": "EU Long-Lead Plant Manufactured & Delivered On-Site Milestone",
+                "t": "s",
+                "raw": "EU Long-Lead Plant Manufactured & Delivered On-Site Milestone",
+                "kind": "input"
+              },
+              {
+                "coord": "D9",
+                "v": "Finish Gate",
+                "t": "s",
+                "raw": "Finish Gate",
+                "kind": "input"
+              },
+              {
+                "coord": "E9",
+                "v": "2028-01-03",
+                "t": "empty",
+                "raw": "2028-01-03 00:00:00",
+                "kind": "input"
+              },
+              {
+                "coord": "F9",
+                "v": "290",
+                "t": "n",
+                "raw": 290,
+                "kind": "input"
+              },
+              {
+                "coord": "G9",
+                "v": "NO",
+                "t": "s",
+                "raw": "NO",
+                "kind": "input"
+              },
+              {
+                "coord": "H9",
+                "v": "Procurement Dir. / Client QA",
+                "t": "s",
+                "raw": "Procurement Dir. / Client QA",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A10",
+                "v": "M4350",
+                "t": "s",
+                "raw": "M4350",
+                "kind": "input"
+              },
+              {
+                "coord": "B10",
+                "v": "4.3-ENVEL",
+                "t": "s",
+                "raw": "4.3-ENVEL",
+                "kind": "input"
+              },
+              {
+                "coord": "C10",
+                "v": "Building Shell 100% Weather-Tight & BCAR Envelope Ready Milestone",
+                "t": "s",
+                "raw": "Building Shell 100% Weather-Tight & BCAR Envelope Ready Milestone",
+                "kind": "input"
+              },
+              {
+                "coord": "D10",
+                "v": "Finish Gate",
+                "t": "s",
+                "raw": "Finish Gate",
+                "kind": "input"
+              },
+              {
+                "coord": "E10",
+                "v": "2029-02-12",
+                "t": "empty",
+                "raw": "2029-02-12 00:00:00",
+                "kind": "input"
+              },
+              {
+                "coord": "F10",
+                "v": "0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "G10",
+                "v": "YES",
+                "t": "s",
+                "raw": "YES",
+                "kind": "input"
+              },
+              {
+                "coord": "H10",
+                "v": "Assigned Certifier / Civil PSCS",
+                "t": "s",
+                "raw": "Assigned Certifier / Civil PSCS",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A11",
+                "v": "M5595",
+                "t": "s",
+                "raw": "M5595",
+                "kind": "input"
+              },
+              {
+                "coord": "B11",
+                "v": "5.5-ICT",
+                "t": "s",
+                "raw": "5.5-ICT",
+                "kind": "input"
+              },
+              {
+                "coord": "C11",
+                "v": "MEP Infrastructure & White Space Fit-Out Complete Milestone",
+                "t": "s",
+                "raw": "MEP Infrastructure & White Space Fit-Out Complete Milestone",
+                "kind": "input"
+              },
+              {
+                "coord": "D11",
+                "v": "Finish Gate",
+                "t": "s",
+                "raw": "Finish Gate",
+                "kind": "input"
+              },
+              {
+                "coord": "E11",
+                "v": "2029-09-24",
+                "t": "empty",
+                "raw": "2029-09-24 00:00:00",
+                "kind": "input"
+              },
+              {
+                "coord": "F11",
+                "v": "0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "G11",
+                "v": "YES",
+                "t": "s",
+                "raw": "YES",
+                "kind": "input"
+              },
+              {
+                "coord": "H11",
+                "v": "MEP Lead / Commissioning Manager",
+                "t": "s",
+                "raw": "MEP Lead / Commissioning Manager",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A12",
+                "v": "M6260",
+                "t": "s",
+                "raw": "M6260",
+                "kind": "input"
+              },
+              {
+                "coord": "B12",
+                "v": "6.2-L3",
+                "t": "s",
+                "raw": "6.2-L3",
+                "kind": "input"
+              },
+              {
+                "coord": "C12",
+                "v": "Cx Level 3 Pre-Functional Static & LOTO Ready Milestone",
+                "t": "s",
+                "raw": "Cx Level 3 Pre-Functional Static & LOTO Ready Milestone",
+                "kind": "input"
+              },
+              {
+                "coord": "D12",
+                "v": "Finish Gate",
+                "t": "s",
+                "raw": "Finish Gate",
+                "kind": "input"
+              },
+              {
+                "coord": "E12",
+                "v": "2029-10-15",
+                "t": "empty",
+                "raw": "2029-10-15 00:00:00",
+                "kind": "input"
+              },
+              {
+                "coord": "F12",
+                "v": "0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "G12",
+                "v": "YES",
+                "t": "s",
+                "raw": "YES",
+                "kind": "input"
+              },
+              {
+                "coord": "H12",
+                "v": "Independent CxA / HV AP",
+                "t": "s",
+                "raw": "Independent CxA / HV AP",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A13",
+                "v": "M6370",
+                "t": "s",
+                "raw": "M6370",
+                "kind": "input"
+              },
+              {
+                "coord": "B13",
+                "v": "6.3-L4",
+                "t": "s",
+                "raw": "6.3-L4",
+                "kind": "input"
+              },
+              {
+                "coord": "C13",
+                "v": "Cx Level 4 Functional Dynamic Performance Passed Milestone",
+                "t": "s",
+                "raw": "Cx Level 4 Functional Dynamic Performance Passed Milestone",
+                "kind": "input"
+              },
+              {
+                "coord": "D13",
+                "v": "Finish Gate",
+                "t": "s",
+                "raw": "Finish Gate",
+                "kind": "input"
+              },
+              {
+                "coord": "E13",
+                "v": "2029-12-10",
+                "t": "empty",
+                "raw": "2029-12-10 00:00:00",
+                "kind": "input"
+              },
+              {
+                "coord": "F13",
+                "v": "0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "G13",
+                "v": "YES",
+                "t": "s",
+                "raw": "YES",
+                "kind": "input"
+              },
+              {
+                "coord": "H13",
+                "v": "Independent CxA",
+                "t": "s",
+                "raw": "Independent CxA",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A14",
+                "v": "M6470",
+                "t": "s",
+                "raw": "M6470",
+                "kind": "input"
+              },
+              {
+                "coord": "B14",
+                "v": "6.4-L5",
+                "t": "s",
+                "raw": "6.4-L5",
+                "kind": "input"
+              },
+              {
+                "coord": "C14",
+                "v": "Cx Level 5 Integrated Systems Testing (45MW IST) Passed Milestone",
+                "t": "s",
+                "raw": "Cx Level 5 Integrated Systems Testing (45MW IST) Passed Milestone",
+                "kind": "input"
+              },
+              {
+                "coord": "D14",
+                "v": "Finish Gate",
+                "t": "s",
+                "raw": "Finish Gate",
+                "kind": "input"
+              },
+              {
+                "coord": "E14",
+                "v": "2030-02-25",
+                "t": "empty",
+                "raw": "2030-02-25 00:00:00",
+                "kind": "input"
+              },
+              {
+                "coord": "F14",
+                "v": "0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "G14",
+                "v": "YES",
+                "t": "s",
+                "raw": "YES",
+                "kind": "input"
+              },
+              {
+                "coord": "H14",
+                "v": "Client Tech Rep / CxA",
+                "t": "s",
+                "raw": "Client Tech Rep / CxA",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A15",
+                "v": "M7060",
+                "t": "s",
+                "raw": "M7060",
+                "kind": "input"
+              },
+              {
+                "coord": "B15",
+                "v": "7.0-COD",
+                "t": "s",
+                "raw": "7.0-COD",
+                "kind": "input"
+              },
+              {
+                "coord": "C15",
+                "v": "Commercial Operation Date (COD), Handover & Safety File Milestone",
+                "t": "s",
+                "raw": "Commercial Operation Date (COD), Handover & Safety File Milestone",
+                "kind": "input"
+              },
+              {
+                "coord": "D15",
+                "v": "Finish Gate",
+                "t": "s",
+                "raw": "Finish Gate",
+                "kind": "input"
+              },
+              {
+                "coord": "E15",
+                "v": "2030-05-20",
+                "t": "empty",
+                "raw": "2030-05-20 00:00:00",
+                "kind": "input"
+              },
+              {
+                "coord": "F15",
+                "v": "0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "G15",
+                "v": "YES",
+                "t": "s",
+                "raw": "YES",
+                "kind": "input"
+              },
+              {
+                "coord": "H15",
+                "v": "Assigned Certifier / EN 50600 / Client",
+                "t": "s",
+                "raw": "Assigned Certifier / EN 50600 / Client",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "B16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "C16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "D16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "E16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "F16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "G16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "H16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              }
+            ],
+            [
+              {
+                "coord": "A17",
+                "v": "2. EUR CAPEX BUDGET ALLOCATION ENVELOPE (ENTER SPONSOR EUR IN BLUE CELLS D19:E25)",
+                "t": "s",
+                "raw": "2. EUR CAPEX BUDGET ALLOCATION ENVELOPE (ENTER SPONSOR EUR IN BLUE CELLS D19:E25)",
+                "kind": "section",
+                "cspan": 8
+              },
+              {
+                "coord": "B17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A18",
+                "v": "WBS",
+                "t": "s",
+                "raw": "WBS",
+                "kind": "input"
+              },
+              {
+                "coord": "B18",
+                "v": "Cost Package Description (FIDIC / NEC4)",
+                "t": "s",
+                "raw": "Cost Package Description (FIDIC / NEC4)",
+                "kind": "input"
+              },
+              {
+                "coord": "C18",
+                "v": "Contract Form",
+                "t": "s",
+                "raw": "Contract Form",
+                "kind": "input"
+              },
+              {
+                "coord": "D18",
+                "v": "Base Capex (EUR)",
+                "t": "s",
+                "raw": "Base Capex (EUR)",
+                "kind": "input"
+              },
+              {
+                "coord": "E18",
+                "v": "Contingency (EUR)",
+                "t": "s",
+                "raw": "Contingency (EUR)",
+                "kind": "input"
+              },
+              {
+                "coord": "F18",
+                "v": "Total Capex (EUR)",
+                "t": "s",
+                "raw": "Total Capex (EUR)",
+                "kind": "input"
+              },
+              {
+                "coord": "G18",
+                "v": "% Share",
+                "t": "s",
+                "raw": "% Share",
+                "kind": "input"
+              },
+              {
+                "coord": "H18",
+                "v": "Contingency %",
+                "t": "s",
+                "raw": "Contingency %",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A19",
+                "v": "1.0-PERM",
+                "t": "s",
+                "raw": "1.0-PERM",
+                "kind": "input"
+              },
+              {
+                "coord": "B19",
+                "v": "Land Option, EIAR, EPA IEL, EirGrid Deposit & BCAR Fees",
+                "t": "s",
+                "raw": "Land Option, EIAR, EPA IEL, EirGrid Deposit & BCAR Fees",
+                "kind": "input"
+              },
+              {
+                "coord": "C19",
+                "v": "Client Direct",
+                "t": "s",
+                "raw": "Client Direct",
+                "kind": "input"
+              },
+              {
+                "coord": "D19",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "E19",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "F19",
+                "v": "\u20ac0",
+                "f": "=D19+E19",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "G19",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(F19/$F$26,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "H19",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(E19/D19,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A20",
+                "v": "2.0-ENG",
+                "t": "s",
+                "raw": "2.0-ENG",
+                "kind": "input"
+              },
+              {
+                "coord": "B20",
+                "v": "ISO 19650 Design, PSDP, Assigned Certifier & Fire Eng.",
+                "t": "s",
+                "raw": "ISO 19650 Design, PSDP, Assigned Certifier & Fire Eng.",
+                "kind": "input"
+              },
+              {
+                "coord": "C20",
+                "v": "NEC4 PSC",
+                "t": "s",
+                "raw": "NEC4 PSC",
+                "kind": "input"
+              },
+              {
+                "coord": "D20",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "E20",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "F20",
+                "v": "\u20ac0",
+                "f": "=D20+E20",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "G20",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(F20/$F$26,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "H20",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(E20/D20,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A21",
+                "v": "3.0-PROC",
+                "t": "s",
+                "raw": "3.0-PROC",
+                "kind": "input"
+              },
+              {
+                "coord": "B21",
+                "v": "63MVA Tx, SF6-Free GIS, HVO+SCR Gensets, BESS & Chillers",
+                "t": "s",
+                "raw": "63MVA Tx, SF6-Free GIS, HVO+SCR Gensets, BESS & Chillers",
+                "kind": "input"
+              },
+              {
+                "coord": "C21",
+                "v": "FIDIC Supply / OFCI",
+                "t": "s",
+                "raw": "FIDIC Supply / OFCI",
+                "kind": "input"
+              },
+              {
+                "coord": "D21",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "E21",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "F21",
+                "v": "\u20ac0",
+                "f": "=D21+E21",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "G21",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(F21/$F$26,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "H21",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(E21/D21,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A22",
+                "v": "4.0-CIVIL",
+                "t": "s",
+                "raw": "4.0-CIVIL",
+                "kind": "input"
+              },
+              {
+                "coord": "B22",
+                "v": "PSCS Enabling, 750 CFA Piles, Shell, SuDS & PAS 68 Site",
+                "t": "s",
+                "raw": "PSCS Enabling, 750 CFA Piles, Shell, SuDS & PAS 68 Site",
+                "kind": "input"
+              },
+              {
+                "coord": "C22",
+                "v": "FIDIC Yellow / NEC4 ECC",
+                "t": "s",
+                "raw": "FIDIC Yellow / NEC4 ECC",
+                "kind": "input"
+              },
+              {
+                "coord": "D22",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "E22",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "F22",
+                "v": "\u20ac0",
+                "f": "=D22+E22",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "G22",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(F22/$F$26,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "H22",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(E22/D22,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A23",
+                "v": "5.0-MEP",
+                "t": "s",
+                "raw": "5.0-MEP",
+                "kind": "input"
+              },
+              {
+                "coord": "B23",
+                "v": "110kV GIS, BESS, CHW/ERF, Halls 1-5 & EED Metering",
+                "t": "s",
+                "raw": "110kV GIS, BESS, CHW/ERF, Halls 1-5 & EED Metering",
+                "kind": "input"
+              },
+              {
+                "coord": "C23",
+                "v": "NEC4 ECC Option A/C",
+                "t": "s",
+                "raw": "NEC4 ECC Option A/C",
+                "kind": "input"
+              },
+              {
+                "coord": "D23",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "E23",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "F23",
+                "v": "\u20ac0",
+                "f": "=D23+E23",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "G23",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(F23/$F$26,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "H23",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(E23/D23,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A24",
+                "v": "6.0-CX",
+                "t": "s",
+                "raw": "6.0-CX",
+                "kind": "input"
+              },
+              {
+                "coord": "B24",
+                "v": "CIBSE/ASHRAE CxA L1-L5, 45MW Load Banks & Safety File",
+                "t": "s",
+                "raw": "CIBSE/ASHRAE CxA L1-L5, 45MW Load Banks & Safety File",
+                "kind": "input"
+              },
+              {
+                "coord": "C24",
+                "v": "Direct Cx Contract",
+                "t": "s",
+                "raw": "Direct Cx Contract",
+                "kind": "input"
+              },
+              {
+                "coord": "D24",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "E24",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "F24",
+                "v": "\u20ac0",
+                "f": "=D24+E24",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "G24",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(F24/$F$26,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "H24",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(E24/D24,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A25",
+                "v": "7.0-COD",
+                "t": "s",
+                "raw": "7.0-COD",
+                "kind": "input"
+              },
+              {
+                "coord": "B25",
+                "v": "EN 50600 Class 3 / Tier III Audit & BCAR CCC Closeout",
+                "t": "s",
+                "raw": "EN 50600 Class 3 / Tier III Audit & BCAR CCC Closeout",
+                "kind": "input"
+              },
+              {
+                "coord": "C25",
+                "v": "Direct Compliance",
+                "t": "s",
+                "raw": "Direct Compliance",
+                "kind": "input"
+              },
+              {
+                "coord": "D25",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "E25",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "F25",
+                "v": "\u20ac0",
+                "f": "=D25+E25",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "G25",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(F25/$F$26,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "H25",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(E25/D25,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A26",
+                "v": "TOTAL",
+                "t": "s",
+                "raw": "TOTAL",
+                "kind": "input"
+              },
+              {
+                "coord": "B26",
+                "v": "Total Authorized EUR Capex Baseline (Links to Sheet 1)",
+                "t": "s",
+                "raw": "Total Authorized EUR Capex Baseline (Links to Sheet 1)",
+                "kind": "input"
+              },
+              {
+                "coord": "C26",
+                "v": "All 7 Packages",
+                "t": "s",
+                "raw": "All 7 Packages",
+                "kind": "input"
+              },
+              {
+                "coord": "D26",
+                "v": "\u20ac0",
+                "f": "=SUM(D19:D25)",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "E26",
+                "v": "\u20ac0",
+                "f": "=SUM(E19:E25)",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "F26",
+                "v": "\u20ac0",
+                "f": "=SUM(F19:F25)",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "G26",
+                "v": "0%",
+                "f": "=SUM(G19:G25)",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "H26",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(E26/D26,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A27",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "B27",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "C27",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "D27",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "E27",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "F27",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "G27",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "H27",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              }
+            ],
+            [
+              {
+                "coord": "A28",
+                "v": "3. STAGE-GATE CAPEX FUNDING RELEASE TRANCHES (TR-01 TO TR-06)",
+                "t": "s",
+                "raw": "3. STAGE-GATE CAPEX FUNDING RELEASE TRANCHES (TR-01 TO TR-06)",
+                "kind": "section",
+                "cspan": 8
+              },
+              {
+                "coord": "B28",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C28",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D28",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E28",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F28",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G28",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H28",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A29",
+                "v": "Tranche",
+                "t": "s",
+                "raw": "Tranche",
+                "kind": "input"
+              },
+              {
+                "coord": "B29",
+                "v": "Gate ID",
+                "t": "s",
+                "raw": "Gate ID",
+                "kind": "input"
+              },
+              {
+                "coord": "C29",
+                "v": "Funding Release Milestone Trigger",
+                "t": "s",
+                "raw": "Funding Release Milestone Trigger",
+                "kind": "input"
+              },
+              {
+                "coord": "D29",
+                "v": "Target Date",
+                "t": "s",
+                "raw": "Target Date",
+                "kind": "input"
+              },
+              {
+                "coord": "E29",
+                "v": "Release %",
+                "t": "s",
+                "raw": "Release %",
+                "kind": "input"
+              },
+              {
+                "coord": "F29",
+                "v": "Tranche Amount (EUR)",
+                "t": "s",
+                "raw": "Tranche Amount (EUR)",
+                "kind": "input"
+              },
+              {
+                "coord": "G29",
+                "v": "Holdback / Guardrail",
+                "t": "s",
+                "raw": "Holdback / Guardrail",
+                "kind": "input"
+              },
+              {
+                "coord": "H29",
+                "v": "Approver",
+                "t": "s",
+                "raw": "Approver",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A30",
+                "v": "TR-01",
+                "t": "s",
+                "raw": "TR-01",
+                "kind": "input"
+              },
+              {
+                "coord": "B30",
+                "v": "M1000",
+                "t": "s",
+                "raw": "M1000",
+                "kind": "input"
+              },
+              {
+                "coord": "C30",
+                "v": "Land Option, RIBA Stage 1 & PSDP / EirGrid Filing",
+                "t": "s",
+                "raw": "Land Option, RIBA Stage 1 & PSDP / EirGrid Filing",
+                "kind": "input"
+              },
+              {
+                "coord": "D30",
+                "v": "2027-01-04",
+                "t": "s",
+                "raw": "2027-01-04",
+                "kind": "input"
+              },
+              {
+                "coord": "E30",
+                "v": "10%",
+                "t": "n",
+                "raw": 0.1,
+                "kind": "input"
+              },
+              {
+                "coord": "F30",
+                "v": "\u20ac0",
+                "f": "=$F$26*E30",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "G30",
+                "v": "Signed ISO 19650 BEP & ORD",
+                "t": "s",
+                "raw": "Signed ISO 19650 BEP & ORD",
+                "kind": "input"
+              },
+              {
+                "coord": "H30",
+                "v": "Sponsor / Board",
+                "t": "s",
+                "raw": "Sponsor / Board",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A31",
+                "v": "TR-02",
+                "t": "s",
+                "raw": "TR-02",
+                "kind": "input"
+              },
+              {
+                "coord": "B31",
+                "v": "M1090",
+                "t": "s",
+                "raw": "M1090",
+                "kind": "input"
+              },
+              {
+                "coord": "C31",
+                "v": "Planning Grant, EPA IEL, EirGrid ECP & BCAR Notice",
+                "t": "s",
+                "raw": "Planning Grant, EPA IEL, EirGrid ECP & BCAR Notice",
+                "kind": "input"
+              },
+              {
+                "coord": "D31",
+                "v": "2027-10-18",
+                "t": "s",
+                "raw": "2027-10-18",
+                "kind": "input"
+              },
+              {
+                "coord": "E31",
+                "v": "20%",
+                "t": "n",
+                "raw": 0.2,
+                "kind": "input"
+              },
+              {
+                "coord": "F31",
+                "v": "\u20ac0",
+                "f": "=$F$26*E31",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "G31",
+                "v": "Zero appeal / judicial stay",
+                "t": "s",
+                "raw": "Zero appeal / judicial stay",
+                "kind": "input"
+              },
+              {
+                "coord": "H31",
+                "v": "Sponsor / Board",
+                "t": "s",
+                "raw": "Sponsor / Board",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A32",
+                "v": "TR-03",
+                "t": "s",
+                "raw": "TR-03",
+                "kind": "input"
+              },
+              {
+                "coord": "B32",
+                "v": "M3120",
+                "t": "s",
+                "raw": "M3120",
+                "kind": "input"
+              },
+              {
+                "coord": "C32",
+                "v": "Witnessed FAT & Port Delivery of HV/HVO/BESS/Chillers",
+                "t": "s",
+                "raw": "Witnessed FAT & Port Delivery of HV/HVO/BESS/Chillers",
+                "kind": "input"
+              },
+              {
+                "coord": "D32",
+                "v": "2027-12-20",
+                "t": "s",
+                "raw": "2027-12-20",
+                "kind": "input"
+              },
+              {
+                "coord": "E32",
+                "v": "25%",
+                "t": "n",
+                "raw": 0.25,
+                "kind": "input"
+              },
+              {
+                "coord": "F32",
+                "v": "\u20ac0",
+                "f": "=$F$26*E32",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "G32",
+                "v": "L1/L2 shock-logger QA pass",
+                "t": "s",
+                "raw": "L1/L2 shock-logger QA pass",
+                "kind": "input"
+              },
+              {
+                "coord": "H32",
+                "v": "Project Director",
+                "t": "s",
+                "raw": "Project Director",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A33",
+                "v": "TR-04",
+                "t": "s",
+                "raw": "TR-04",
+                "kind": "input"
+              },
+              {
+                "coord": "B33",
+                "v": "M4350",
+                "t": "s",
+                "raw": "M4350",
+                "kind": "input"
+              },
+              {
+                "coord": "C33",
+                "v": "Shell Weather-Tight, Flood Ponding & Airtightness",
+                "t": "s",
+                "raw": "Shell Weather-Tight, Flood Ponding & Airtightness",
+                "kind": "input"
+              },
+              {
+                "coord": "D33",
+                "v": "2028-12-25",
+                "t": "s",
+                "raw": "2028-12-25",
+                "kind": "input"
+              },
+              {
+                "coord": "E33",
+                "v": "20%",
+                "t": "n",
+                "raw": 0.2,
+                "kind": "input"
+              },
+              {
+                "coord": "F33",
+                "v": "\u20ac0",
+                "f": "=$F$26*E33",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "G33",
+                "v": "Assigned Certifier Envelope OK",
+                "t": "s",
+                "raw": "Assigned Certifier Envelope OK",
+                "kind": "input"
+              },
+              {
+                "coord": "H33",
+                "v": "Project Director",
+                "t": "s",
+                "raw": "Project Director",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A34",
+                "v": "TR-05",
+                "t": "s",
+                "raw": "TR-05",
+                "kind": "input"
+              },
+              {
+                "coord": "B34",
+                "v": "M6470",
+                "t": "s",
+                "raw": "M6470",
+                "kind": "input"
+              },
+              {
+                "coord": "C34",
+                "v": "Cx Level 5 45MW 48h IST & Grid Blackout Transfer",
+                "t": "s",
+                "raw": "Cx Level 5 45MW 48h IST & Grid Blackout Transfer",
+                "kind": "input"
+              },
+              {
+                "coord": "D34",
+                "v": "2030-02-25",
+                "t": "s",
+                "raw": "2030-02-25",
+                "kind": "input"
+              },
+              {
+                "coord": "E34",
+                "v": "15%",
+                "t": "n",
+                "raw": 0.15,
+                "kind": "input"
+              },
+              {
+                "coord": "F34",
+                "v": "\u20ac0",
+                "f": "=$F$26*E34",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "G34",
+                "v": "Zero Sev-1 CxA punch items",
+                "t": "s",
+                "raw": "Zero Sev-1 CxA punch items",
+                "kind": "input"
+              },
+              {
+                "coord": "H34",
+                "v": "CCB / CxA",
+                "t": "s",
+                "raw": "CCB / CxA",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A35",
+                "v": "TR-06",
+                "t": "s",
+                "raw": "TR-06",
+                "kind": "input"
+              },
+              {
+                "coord": "B35",
+                "v": "M7060+DLP",
+                "t": "s",
+                "raw": "M7060+DLP",
+                "kind": "input"
+              },
+              {
+                "coord": "C35",
+                "v": "BCAR CCC, EN 50600 Audit, Safety File & DLP Expiry",
+                "t": "s",
+                "raw": "BCAR CCC, EN 50600 Audit, Safety File & DLP Expiry",
+                "kind": "input"
+              },
+              {
+                "coord": "D35",
+                "v": "2030-05-20",
+                "t": "s",
+                "raw": "2030-05-20",
+                "kind": "input"
+              },
+              {
+                "coord": "E35",
+                "v": "10%",
+                "t": "n",
+                "raw": 0.1,
+                "kind": "input"
+              },
+              {
+                "coord": "F35",
+                "v": "\u20ac0",
+                "f": "=$F$26*E35",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "G35",
+                "v": "5% COD + 5% post-12m DLP",
+                "t": "s",
+                "raw": "5% COD + 5% post-12m DLP",
+                "kind": "input"
+              },
+              {
+                "coord": "H35",
+                "v": "Board / Client",
+                "t": "s",
+                "raw": "Board / Client",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A36",
+                "v": "TOTAL",
+                "t": "s",
+                "raw": "TOTAL",
+                "kind": "input"
+              },
+              {
+                "coord": "B36",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "C36",
+                "v": "Full EUR Capex Tranche Reconciliation",
+                "t": "s",
+                "raw": "Full EUR Capex Tranche Reconciliation",
+                "kind": "input"
+              },
+              {
+                "coord": "D36",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "E36",
+                "v": "100%",
+                "f": "=SUM(E30:E35)",
+                "raw": 1.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "F36",
+                "v": "\u20ac0",
+                "f": "=SUM(F30:F35)",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "G36",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "H36",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              }
+            ]
+          ]
+        },
+        {
+          "name": "4. Governance & Organization",
+          "maxRow": 27,
+          "maxCol": 8,
+          "formulaCount": 0,
+          "columns": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H"
+          ],
+          "rows": [
+            [
+              {
+                "coord": "A1",
+                "v": "PROJECT GOVERNANCE, IRISH STATUTORY APPOINTMENTS & RACI MATRIX",
+                "t": "s",
+                "raw": "PROJECT GOVERNANCE, IRISH STATUTORY APPOINTMENTS & RACI MATRIX",
+                "kind": "banner",
+                "cspan": 8
+              },
+              {
+                "coord": "B1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A2",
+                "v": "S.I. No. 291/2013 PSDP/PSCS, BCAR Design/Assigned Certifier & NEC4/FIDIC Escalation",
+                "t": "s",
+                "raw": "S.I. No. 291/2013 PSDP/PSCS, BCAR Design/Assigned Certifier & NEC4/FIDIC Escalation",
+                "kind": "banner",
+                "cspan": 8
+              },
+              {
+                "coord": "B2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "B3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "C3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "D3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "E3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "F3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "G3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "H3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              }
+            ],
+            [
+              {
+                "coord": "A4",
+                "v": "1. CHANGE CONTROL ESCALATION TIERS",
+                "t": "s",
+                "raw": "1. CHANGE CONTROL ESCALATION TIERS",
+                "kind": "section",
+                "cspan": 8
+              },
+              {
+                "coord": "B4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A5",
+                "v": "Tier",
+                "t": "s",
+                "raw": "Tier",
+                "kind": "header",
+                "cspan": 2
+              },
+              {
+                "coord": "B5",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C5",
+                "v": "Delegated Authority",
+                "t": "s",
+                "raw": "Delegated Authority",
+                "kind": "header",
+                "cspan": 3
+              },
+              {
+                "coord": "D5",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E5",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F5",
+                "v": "Escalation Trigger",
+                "t": "s",
+                "raw": "Escalation Trigger",
+                "kind": "header",
+                "cspan": 2
+              },
+              {
+                "coord": "G5",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H5",
+                "v": "Record",
+                "t": "s",
+                "raw": "Record",
+                "kind": "header"
+              }
+            ],
+            [
+              {
+                "coord": "A6",
+                "v": "Tier 1: Project Director",
+                "t": "s",
+                "raw": "Tier 1: Project Director",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B6",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C6",
+                "v": "Non-critical float (>0d), NEC4 Compensation Events within package contingency.",
+                "t": "s",
+                "raw": "Non-critical float (>0d), NEC4 Compensation Events within package contingency.",
+                "kind": "input",
+                "cspan": 3
+              },
+              {
+                "coord": "D6",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E6",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F6",
+                "v": "Within BAC & float > 0d",
+                "t": "s",
+                "raw": "Within BAC & float > 0d",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "G6",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H6",
+                "v": "Monthly EVM Report",
+                "t": "s",
+                "raw": "Monthly EVM Report",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A7",
+                "v": "Tier 2: Change Control Board",
+                "t": "s",
+                "raw": "Tier 2: Change Control Board",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B7",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C7",
+                "v": "Impacts to Planning conditions, EPA IEL limits, BCAR FSC, EirGrid MIC or EN 50600 Class 3.",
+                "t": "s",
+                "raw": "Impacts to Planning conditions, EPA IEL limits, BCAR FSC, EirGrid MIC or EN 50600 Class 3.",
+                "kind": "input",
+                "cspan": 3
+              },
+              {
+                "coord": "D7",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E7",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F7",
+                "v": "Critical Path or Statutory Spec",
+                "t": "s",
+                "raw": "Critical Path or Statutory Spec",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "G7",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H7",
+                "v": "Formal CCB Instruction",
+                "t": "s",
+                "raw": "Formal CCB Instruction",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A8",
+                "v": "Tier 3: Board / Investment Comm.",
+                "t": "s",
+                "raw": "Tier 3: Board / Investment Comm.",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B8",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C8",
+                "v": "Total EUR BAC overrun, COD shift beyond 2030-05-20 or <45 MW critical capacity.",
+                "t": "s",
+                "raw": "Total EUR BAC overrun, COD shift beyond 2030-05-20 or <45 MW critical capacity.",
+                "kind": "input",
+                "cspan": 3
+              },
+              {
+                "coord": "D8",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E8",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F8",
+                "v": "Total BAC or COD > 2030-05-20",
+                "t": "s",
+                "raw": "Total BAC or COD > 2030-05-20",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "G8",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H8",
+                "v": "Board Resolution",
+                "t": "s",
+                "raw": "Board Resolution",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A9",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "B9",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "C9",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "D9",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "E9",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "F9",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "G9",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "H9",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              }
+            ],
+            [
+              {
+                "coord": "A10",
+                "v": "2. IRISH STATUTORY & EU TECHNICAL ROLE MANDATES",
+                "t": "s",
+                "raw": "2. IRISH STATUTORY & EU TECHNICAL ROLE MANDATES",
+                "kind": "section",
+                "cspan": 8
+              },
+              {
+                "coord": "B10",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C10",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D10",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E10",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F10",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G10",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H10",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A11",
+                "v": "Statutory / Key Role",
+                "t": "s",
+                "raw": "Statutory / Key Role",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B11",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C11",
+                "v": "Mandatory Qualification / Law",
+                "t": "s",
+                "raw": "Mandatory Qualification / Law",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "D11",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E11",
+                "v": "Core Accountability & Veto Rights",
+                "t": "s",
+                "raw": "Core Accountability & Veto Rights",
+                "kind": "section",
+                "cspan": 4
+              },
+              {
+                "coord": "F11",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G11",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H11",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A12",
+                "v": "PSDP (Design Supervisor)",
+                "t": "s",
+                "raw": "PSDP (Design Supervisor)",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B12",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C12",
+                "v": "SI 291/2013 Competent Designer Appointment",
+                "t": "s",
+                "raw": "SI 291/2013 Competent Designer Appointment",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "D12",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E12",
+                "v": "Design risk elimination, AF1 design safety, compiles statutory Safety File (A6520).",
+                "t": "s",
+                "raw": "Design risk elimination, AF1 design safety, compiles statutory Safety File (A6520).",
+                "kind": "section",
+                "cspan": 4
+              },
+              {
+                "coord": "F12",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G12",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H12",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A13",
+                "v": "PSCS (Construction Sup.)",
+                "t": "s",
+                "raw": "PSCS (Construction Sup.)",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B13",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C13",
+                "v": "SI 291/2013 Principal Contractor Appointment",
+                "t": "s",
+                "raw": "SI 291/2013 Principal Contractor Appointment",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "D13",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E13",
+                "v": "Coordinates multi-contractor M&E site safety, Safe Pass / CSCS checks, HSA AF1.",
+                "t": "s",
+                "raw": "Coordinates multi-contractor M&E site safety, Safe Pass / CSCS checks, HSA AF1.",
+                "kind": "section",
+                "cspan": 4
+              },
+              {
+                "coord": "F13",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G13",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H13",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A14",
+                "v": "Assigned Certifier",
+                "t": "s",
+                "raw": "Assigned Certifier",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B14",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C14",
+                "v": "Chartered Engineer/Architect (BCAR 2014)",
+                "t": "s",
+                "raw": "Chartered Engineer/Architect (BCAR 2014)",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "D14",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E14",
+                "v": "BCMS Commencement Notice, Ancillary Certs, Inspection Plan & Certificate of Compliance (A7050).",
+                "t": "s",
+                "raw": "BCMS Commencement Notice, Ancillary Certs, Inspection Plan & Certificate of Compliance (A7050).",
+                "kind": "section",
+                "cspan": 4
+              },
+              {
+                "coord": "F14",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G14",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H14",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A15",
+                "v": "EN 50600 / Uptime Lead",
+                "t": "s",
+                "raw": "EN 50600 / Uptime Lead",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B15",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C15",
+                "v": "CEI / Uptime ATD-ATS Specialist",
+                "t": "s",
+                "raw": "CEI / Uptime ATD-ATS Specialist",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "D15",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E15",
+                "v": "Verifies EN 50600-2-x Class 3, Tier III concurrent maintainability & EED ERF readiness.",
+                "t": "s",
+                "raw": "Verifies EN 50600-2-x Class 3, Tier III concurrent maintainability & EED ERF readiness.",
+                "kind": "section",
+                "cspan": 4
+              },
+              {
+                "coord": "F15",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G15",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H15",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A16",
+                "v": "Independent CxA",
+                "t": "s",
+                "raw": "Independent CxA",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C16",
+                "v": "CIBSE / ASHRAE Accredited Cx Authority",
+                "t": "s",
+                "raw": "CIBSE / ASHRAE Accredited Cx Authority",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "D16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E16",
+                "v": "Independent veto at M6260 (L3), M6370 (L4) & M6470 (45 MW 48h IST).",
+                "t": "s",
+                "raw": "Independent veto at M6260 (L3), M6370 (L4) & M6470 (45 MW 48h IST).",
+                "kind": "section",
+                "cspan": 4
+              },
+              {
+                "coord": "F16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "B17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "C17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "D17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "E17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "F17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "G17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "H17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              }
+            ],
+            [
+              {
+                "coord": "A18",
+                "v": "3. CROSS-FUNCTIONAL RACI MATRIX",
+                "t": "s",
+                "raw": "3. CROSS-FUNCTIONAL RACI MATRIX",
+                "kind": "section",
+                "cspan": 8
+              },
+              {
+                "coord": "B18",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C18",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D18",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E18",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F18",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G18",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H18",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A19",
+                "v": "WBS",
+                "t": "s",
+                "raw": "WBS",
+                "kind": "input"
+              },
+              {
+                "coord": "B19",
+                "v": "Deliverable / Gate",
+                "t": "s",
+                "raw": "Deliverable / Gate",
+                "kind": "input"
+              },
+              {
+                "coord": "C19",
+                "v": "Sponsor",
+                "t": "s",
+                "raw": "Sponsor",
+                "kind": "input"
+              },
+              {
+                "coord": "D19",
+                "v": "Proj. Dir",
+                "t": "s",
+                "raw": "Proj. Dir",
+                "kind": "input"
+              },
+              {
+                "coord": "E19",
+                "v": "PSDP / Des",
+                "t": "s",
+                "raw": "PSDP / Des",
+                "kind": "input"
+              },
+              {
+                "coord": "F19",
+                "v": "PSCS / EPC",
+                "t": "s",
+                "raw": "PSCS / EPC",
+                "kind": "input"
+              },
+              {
+                "coord": "G19",
+                "v": "CxA / AC",
+                "t": "s",
+                "raw": "CxA / AC",
+                "kind": "input"
+              },
+              {
+                "coord": "H19",
+                "v": "Ops",
+                "t": "s",
+                "raw": "Ops",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A20",
+                "v": "1.0-PERM",
+                "t": "s",
+                "raw": "1.0-PERM",
+                "kind": "input"
+              },
+              {
+                "coord": "B20",
+                "v": "Planning (SID), EPA IEL, EirGrid & BCAR Start (M1090)",
+                "t": "s",
+                "raw": "Planning (SID), EPA IEL, EirGrid & BCAR Start (M1090)",
+                "kind": "input"
+              },
+              {
+                "coord": "C20",
+                "v": "A",
+                "t": "s",
+                "raw": "A",
+                "kind": "input"
+              },
+              {
+                "coord": "D20",
+                "v": "R",
+                "t": "s",
+                "raw": "R",
+                "kind": "input"
+              },
+              {
+                "coord": "E20",
+                "v": "C",
+                "t": "s",
+                "raw": "C",
+                "kind": "input"
+              },
+              {
+                "coord": "F20",
+                "v": "I",
+                "t": "s",
+                "raw": "I",
+                "kind": "input"
+              },
+              {
+                "coord": "G20",
+                "v": "C",
+                "t": "s",
+                "raw": "C",
+                "kind": "input"
+              },
+              {
+                "coord": "H20",
+                "v": "I",
+                "t": "s",
+                "raw": "I",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A21",
+                "v": "2.0-ENG",
+                "t": "s",
+                "raw": "2.0-ENG",
+                "kind": "input"
+              },
+              {
+                "coord": "B21",
+                "v": "ISO 19650 BIM Freeze, EN 50600 & EED Schema (M2110)",
+                "t": "s",
+                "raw": "ISO 19650 BIM Freeze, EN 50600 & EED Schema (M2110)",
+                "kind": "input"
+              },
+              {
+                "coord": "C21",
+                "v": "I",
+                "t": "s",
+                "raw": "I",
+                "kind": "input"
+              },
+              {
+                "coord": "D21",
+                "v": "A",
+                "t": "s",
+                "raw": "A",
+                "kind": "input"
+              },
+              {
+                "coord": "E21",
+                "v": "R",
+                "t": "s",
+                "raw": "R",
+                "kind": "input"
+              },
+              {
+                "coord": "F21",
+                "v": "C",
+                "t": "s",
+                "raw": "C",
+                "kind": "input"
+              },
+              {
+                "coord": "G21",
+                "v": "C",
+                "t": "s",
+                "raw": "C",
+                "kind": "input"
+              },
+              {
+                "coord": "H21",
+                "v": "C",
+                "t": "s",
+                "raw": "C",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A22",
+                "v": "3.0-PROC",
+                "t": "s",
+                "raw": "3.0-PROC",
+                "kind": "input"
+              },
+              {
+                "coord": "B22",
+                "v": "EU Plant Manufacture, FAT & Port Logistics (M3120)",
+                "t": "s",
+                "raw": "EU Plant Manufacture, FAT & Port Logistics (M3120)",
+                "kind": "input"
+              },
+              {
+                "coord": "C22",
+                "v": "I",
+                "t": "s",
+                "raw": "I",
+                "kind": "input"
+              },
+              {
+                "coord": "D22",
+                "v": "A",
+                "t": "s",
+                "raw": "A",
+                "kind": "input"
+              },
+              {
+                "coord": "E22",
+                "v": "C",
+                "t": "s",
+                "raw": "C",
+                "kind": "input"
+              },
+              {
+                "coord": "F22",
+                "v": "R",
+                "t": "s",
+                "raw": "R",
+                "kind": "input"
+              },
+              {
+                "coord": "G22",
+                "v": "C",
+                "t": "s",
+                "raw": "C",
+                "kind": "input"
+              },
+              {
+                "coord": "H22",
+                "v": "I",
+                "t": "s",
+                "raw": "I",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A23",
+                "v": "4.x-CIVIL",
+                "t": "s",
+                "raw": "4.x-CIVIL",
+                "kind": "input"
+              },
+              {
+                "coord": "B23",
+                "v": "Piling, Shell, Weather-Tight & Security (M4350)",
+                "t": "s",
+                "raw": "Piling, Shell, Weather-Tight & Security (M4350)",
+                "kind": "input"
+              },
+              {
+                "coord": "C23",
+                "v": "I",
+                "t": "s",
+                "raw": "I",
+                "kind": "input"
+              },
+              {
+                "coord": "D23",
+                "v": "A",
+                "t": "s",
+                "raw": "A",
+                "kind": "input"
+              },
+              {
+                "coord": "E23",
+                "v": "C",
+                "t": "s",
+                "raw": "C",
+                "kind": "input"
+              },
+              {
+                "coord": "F23",
+                "v": "R",
+                "t": "s",
+                "raw": "R",
+                "kind": "input"
+              },
+              {
+                "coord": "G23",
+                "v": "C",
+                "t": "s",
+                "raw": "C",
+                "kind": "input"
+              },
+              {
+                "coord": "H23",
+                "v": "I",
+                "t": "s",
+                "raw": "I",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A24",
+                "v": "5.x-MEP",
+                "t": "s",
+                "raw": "5.x-MEP",
+                "kind": "input"
+              },
+              {
+                "coord": "B24",
+                "v": "110kV GIS, HVO/BESS, CHW/ERF & Halls 1-5 (M5595)",
+                "t": "s",
+                "raw": "110kV GIS, HVO/BESS, CHW/ERF & Halls 1-5 (M5595)",
+                "kind": "input"
+              },
+              {
+                "coord": "C24",
+                "v": "I",
+                "t": "s",
+                "raw": "I",
+                "kind": "input"
+              },
+              {
+                "coord": "D24",
+                "v": "A",
+                "t": "s",
+                "raw": "A",
+                "kind": "input"
+              },
+              {
+                "coord": "E24",
+                "v": "C",
+                "t": "s",
+                "raw": "C",
+                "kind": "input"
+              },
+              {
+                "coord": "F24",
+                "v": "R",
+                "t": "s",
+                "raw": "R",
+                "kind": "input"
+              },
+              {
+                "coord": "G24",
+                "v": "C",
+                "t": "s",
+                "raw": "C",
+                "kind": "input"
+              },
+              {
+                "coord": "H24",
+                "v": "I",
+                "t": "s",
+                "raw": "I",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A25",
+                "v": "6.1-6.4",
+                "t": "s",
+                "raw": "6.1-6.4",
+                "kind": "input"
+              },
+              {
+                "coord": "B25",
+                "v": "CIBSE/ASHRAE Cx L1-L5 & 45MW IST (M6470)",
+                "t": "s",
+                "raw": "CIBSE/ASHRAE Cx L1-L5 & 45MW IST (M6470)",
+                "kind": "input"
+              },
+              {
+                "coord": "C25",
+                "v": "I",
+                "t": "s",
+                "raw": "I",
+                "kind": "input"
+              },
+              {
+                "coord": "D25",
+                "v": "A",
+                "t": "s",
+                "raw": "A",
+                "kind": "input"
+              },
+              {
+                "coord": "E25",
+                "v": "C",
+                "t": "s",
+                "raw": "C",
+                "kind": "input"
+              },
+              {
+                "coord": "F25",
+                "v": "R",
+                "t": "s",
+                "raw": "R",
+                "kind": "input"
+              },
+              {
+                "coord": "G25",
+                "v": "R",
+                "t": "s",
+                "raw": "R",
+                "kind": "input"
+              },
+              {
+                "coord": "H25",
+                "v": "C",
+                "t": "s",
+                "raw": "C",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A26",
+                "v": "6.5-OPS",
+                "t": "s",
+                "raw": "6.5-OPS",
+                "kind": "input"
+              },
+              {
+                "coord": "B26",
+                "v": "EED Pipeline, Safety File, Black-Hat & Spares (A6540)",
+                "t": "s",
+                "raw": "EED Pipeline, Safety File, Black-Hat & Spares (A6540)",
+                "kind": "input"
+              },
+              {
+                "coord": "C26",
+                "v": "I",
+                "t": "s",
+                "raw": "I",
+                "kind": "input"
+              },
+              {
+                "coord": "D26",
+                "v": "A",
+                "t": "s",
+                "raw": "A",
+                "kind": "input"
+              },
+              {
+                "coord": "E26",
+                "v": "C",
+                "t": "s",
+                "raw": "C",
+                "kind": "input"
+              },
+              {
+                "coord": "F26",
+                "v": "C",
+                "t": "s",
+                "raw": "C",
+                "kind": "input"
+              },
+              {
+                "coord": "G26",
+                "v": "C",
+                "t": "s",
+                "raw": "C",
+                "kind": "input"
+              },
+              {
+                "coord": "H26",
+                "v": "R",
+                "t": "s",
+                "raw": "R",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A27",
+                "v": "7.0-COD",
+                "t": "s",
+                "raw": "7.0-COD",
+                "kind": "input"
+              },
+              {
+                "coord": "B27",
+                "v": "BCAR CCC, EirGrid Sync & EN 50600 Handover (M7060)",
+                "t": "s",
+                "raw": "BCAR CCC, EirGrid Sync & EN 50600 Handover (M7060)",
+                "kind": "input"
+              },
+              {
+                "coord": "C27",
+                "v": "A",
+                "t": "s",
+                "raw": "A",
+                "kind": "input"
+              },
+              {
+                "coord": "D27",
+                "v": "R",
+                "t": "s",
+                "raw": "R",
+                "kind": "input"
+              },
+              {
+                "coord": "E27",
+                "v": "C",
+                "t": "s",
+                "raw": "C",
+                "kind": "input"
+              },
+              {
+                "coord": "F27",
+                "v": "R",
+                "t": "s",
+                "raw": "R",
+                "kind": "input"
+              },
+              {
+                "coord": "G27",
+                "v": "R",
+                "t": "s",
+                "raw": "R",
+                "kind": "input"
+              },
+              {
+                "coord": "H27",
+                "v": "C",
+                "t": "s",
+                "raw": "C",
+                "kind": "input"
+              }
+            ]
+          ]
+        },
+        {
+          "name": "5. COD Exit & Handover",
+          "maxRow": 17,
+          "maxCol": 4,
+          "formulaCount": 0,
+          "columns": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "rows": [
+            [
+              {
+                "coord": "A1",
+                "v": "CONDITIONS PRECEDENT TO COD (M7060), BCAR CCC & DLP HANDOVER",
+                "t": "s",
+                "raw": "CONDITIONS PRECEDENT TO COD (M7060), BCAR CCC & DLP HANDOVER",
+                "kind": "banner",
+                "cspan": 8
+              },
+              {
+                "coord": "B1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A2",
+                "v": "Mandatory Regulatory, CIBSE/ASHRAE Cx & EN 50600 Exit Requirements Prior to Beneficial Occupancy",
+                "t": "s",
+                "raw": "Mandatory Regulatory, CIBSE/ASHRAE Cx & EN 50600 Exit Requirements Prior to Beneficial Occupancy",
+                "kind": "banner",
+                "cspan": 8
+              },
+              {
+                "coord": "B2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "B3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "C3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "D3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              }
+            ],
+            [
+              {
+                "coord": "A4",
+                "v": "1. MANDATORY CONDITIONS PRECEDENT TO COD (CP-01 TO CP-07)",
+                "t": "s",
+                "raw": "1. MANDATORY CONDITIONS PRECEDENT TO COD (CP-01 TO CP-07)",
+                "kind": "section",
+                "cspan": 8
+              },
+              {
+                "coord": "B4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A5",
+                "v": "CP ID",
+                "t": "s",
+                "raw": "CP ID",
+                "kind": "input"
+              },
+              {
+                "coord": "B5",
+                "v": "Exit Requirement",
+                "t": "s",
+                "raw": "Exit Requirement",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "C5",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D5",
+                "v": "Acceptance Evidence & Standard",
+                "t": "s",
+                "raw": "Acceptance Evidence & Standard",
+                "kind": "section",
+                "cspan": 4
+              }
+            ],
+            [
+              {
+                "coord": "A6",
+                "v": "CP-01",
+                "t": "s",
+                "raw": "CP-01",
+                "kind": "input"
+              },
+              {
+                "coord": "B6",
+                "v": "CIBSE / ASHRAE Cx L3-L5",
+                "t": "s",
+                "raw": "CIBSE / ASHRAE Cx L3-L5",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "C6",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D6",
+                "v": "Signed M6260, M6370 & M6470 with zero Sev-1 punch items; 48h 45MW IST & <10s blackout transfer.",
+                "t": "s",
+                "raw": "Signed M6260, M6370 & M6470 with zero Sev-1 punch items; 48h 45MW IST & <10s blackout transfer.",
+                "kind": "section",
+                "cspan": 4
+              }
+            ],
+            [
+              {
+                "coord": "A7",
+                "v": "CP-02",
+                "t": "s",
+                "raw": "CP-02",
+                "kind": "input"
+              },
+              {
+                "coord": "B7",
+                "v": "Part B Fire Clearance",
+                "t": "s",
+                "raw": "Part B Fire Clearance",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "C7",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D7",
+                "v": "Local Authority Fire Officer inspection & Part B final clearance under FSC terms (A7010).",
+                "t": "s",
+                "raw": "Local Authority Fire Officer inspection & Part B final clearance under FSC terms (A7010).",
+                "kind": "section",
+                "cspan": 4
+              }
+            ],
+            [
+              {
+                "coord": "A8",
+                "v": "CP-03",
+                "t": "s",
+                "raw": "CP-03",
+                "kind": "input"
+              },
+              {
+                "coord": "B8",
+                "v": "EU EED & NIS2/GDPR",
+                "t": "s",
+                "raw": "EU EED & NIS2/GDPR",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "C8",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D8",
+                "v": "Automated PUE/WUE/ERF/REF feed verified for EU EED (2023/1791) & NIS2 cyber checks (A7020).",
+                "t": "s",
+                "raw": "Automated PUE/WUE/ERF/REF feed verified for EU EED (2023/1791) & NIS2 cyber checks (A7020).",
+                "kind": "section",
+                "cspan": 4
+              }
+            ],
+            [
+              {
+                "coord": "A9",
+                "v": "CP-04",
+                "t": "s",
+                "raw": "CP-04",
+                "kind": "input"
+              },
+              {
+                "coord": "B9",
+                "v": "EirGrid 110kV Live Sync",
+                "t": "s",
+                "raw": "EirGrid 110kV Live Sync",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "C9",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D9",
+                "v": "Full EirGrid / ESB Demand Connection Code RMS/BESS verification & commercial import sync (A7030).",
+                "t": "s",
+                "raw": "Full EirGrid / ESB Demand Connection Code RMS/BESS verification & commercial import sync (A7030).",
+                "kind": "section",
+                "cspan": 4
+              }
+            ],
+            [
+              {
+                "coord": "A10",
+                "v": "CP-05",
+                "t": "s",
+                "raw": "CP-05",
+                "kind": "input"
+              },
+              {
+                "coord": "B10",
+                "v": "EN 50600 & Tier III Audit",
+                "t": "s",
+                "raw": "EN 50600 & Tier III Audit",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "C10",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D10",
+                "v": "Passed dual EN 50600 Availability Class 3 & Uptime Tier III Constructed Facility site audit (A7040).",
+                "t": "s",
+                "raw": "Passed dual EN 50600 Availability Class 3 & Uptime Tier III Constructed Facility site audit (A7040).",
+                "kind": "section",
+                "cspan": 4
+              }
+            ],
+            [
+              {
+                "coord": "A11",
+                "v": "CP-06",
+                "t": "s",
+                "raw": "CP-06",
+                "kind": "input"
+              },
+              {
+                "coord": "B11",
+                "v": "BCAR Certificate (CCC)",
+                "t": "s",
+                "raw": "BCAR Certificate (CCC)",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "C11",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D11",
+                "v": "Assigned Certifier statutory Certificate of Compliance on Completion registered on BCMS (A7050).",
+                "t": "s",
+                "raw": "Assigned Certifier statutory Certificate of Compliance on Completion registered on BCMS (A7050).",
+                "kind": "section",
+                "cspan": 4
+              }
+            ],
+            [
+              {
+                "coord": "A12",
+                "v": "CP-07",
+                "t": "s",
+                "raw": "CP-07",
+                "kind": "input"
+              },
+              {
+                "coord": "B12",
+                "v": "Safety File & 2-Yr Spares",
+                "t": "s",
+                "raw": "Safety File & 2-Yr Spares",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "C12",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D12",
+                "v": "Statutory PSDP/PSCS Safety File (A6520), SOP/EOP/MOPs, Black-Hat drills & 2-yr spares delivered (A6540).",
+                "t": "s",
+                "raw": "Statutory PSDP/PSCS Safety File (A6520), SOP/EOP/MOPs, Black-Hat drills & 2-yr spares delivered (A6540).",
+                "kind": "section",
+                "cspan": 4
+              }
+            ],
+            [
+              {
+                "coord": "A13",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "B13",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "C13",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "D13",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              }
+            ],
+            [
+              {
+                "coord": "A14",
+                "v": "2. DEFECTS LIABILITY PERIOD (DLP) & CLOSEOUT",
+                "t": "s",
+                "raw": "2. DEFECTS LIABILITY PERIOD (DLP) & CLOSEOUT",
+                "kind": "section",
+                "cspan": 8
+              },
+              {
+                "coord": "B14",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C14",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D14",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A15",
+                "v": "Clause",
+                "t": "s",
+                "raw": "Clause",
+                "kind": "input"
+              },
+              {
+                "coord": "B15",
+                "v": "Closeout Item",
+                "t": "s",
+                "raw": "Closeout Item",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "C15",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D15",
+                "v": "Contractual Retention & Transition Standard",
+                "t": "s",
+                "raw": "Contractual Retention & Transition Standard",
+                "kind": "section",
+                "cspan": 5
+              }
+            ],
+            [
+              {
+                "coord": "A16",
+                "v": "DLP-01",
+                "t": "s",
+                "raw": "DLP-01",
+                "kind": "input"
+              },
+              {
+                "coord": "B16",
+                "v": "ISO 19650 Asset Info Model",
+                "t": "s",
+                "raw": "ISO 19650 Asset Info Model",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "C16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D16",
+                "v": "As-Built BIM Asset Information Model (AIM) handed over within 30 days of M7060.",
+                "t": "s",
+                "raw": "As-Built BIM Asset Information Model (AIM) handed over within 30 days of M7060.",
+                "kind": "section",
+                "cspan": 5
+              }
+            ],
+            [
+              {
+                "coord": "A17",
+                "v": "DLP-02",
+                "t": "s",
+                "raw": "DLP-02",
+                "kind": "input"
+              },
+              {
+                "coord": "B17",
+                "v": "DLP Retention (TR-06 5%)",
+                "t": "s",
+                "raw": "DLP Retention (TR-06 5%)",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "C17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D17",
+                "v": "12-24 month NEC4/FIDIC Defects Liability Period starts at COD; final 5% released on defect-free sign-off.",
+                "t": "s",
+                "raw": "12-24 month NEC4/FIDIC Defects Liability Period starts at COD; final 5% released on defect-free sign-off.",
+                "kind": "section",
+                "cspan": 5
+              }
+            ]
+          ]
+        },
+        {
+          "name": "6. Risks & Sign-Off",
+          "maxRow": 17,
+          "maxCol": 7,
+          "formulaCount": 12,
+          "columns": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G"
+          ],
+          "rows": [
+            [
+              {
+                "coord": "A1",
+                "v": "QUANTITATIVE CHARTER RISKS (L x I) & EXECUTIVE AUTHORIZATION SIGN-OFF",
+                "t": "s",
+                "raw": "QUANTITATIVE CHARTER RISKS (L x I) & EXECUTIVE AUTHORIZATION SIGN-OFF",
+                "kind": "banner",
+                "cspan": 8
+              },
+              {
+                "coord": "B1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A2",
+                "v": "Ireland / EU Statutory, Grid & Commissioning Risk Controls Flowing Live to Tab 1",
+                "t": "s",
+                "raw": "Ireland / EU Statutory, Grid & Commissioning Risk Controls Flowing Live to Tab 1",
+                "kind": "banner",
+                "cspan": 8
+              },
+              {
+                "coord": "B2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "B3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "C3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "D3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "E3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "F3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "G3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              }
+            ],
+            [
+              {
+                "coord": "A4",
+                "v": "1. QUANTITATIVE CHARTER STRATEGIC RISK REGISTER",
+                "t": "s",
+                "raw": "1. QUANTITATIVE CHARTER STRATEGIC RISK REGISTER",
+                "kind": "section",
+                "cspan": 8
+              },
+              {
+                "coord": "B4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A5",
+                "v": "Risk ID",
+                "t": "s",
+                "raw": "Risk ID",
+                "kind": "input"
+              },
+              {
+                "coord": "B5",
+                "v": "XER Ref",
+                "t": "s",
+                "raw": "XER Ref",
+                "kind": "input"
+              },
+              {
+                "coord": "C5",
+                "v": "Strategic Risk Description",
+                "t": "s",
+                "raw": "Strategic Risk Description",
+                "kind": "input"
+              },
+              {
+                "coord": "D5",
+                "v": "Likelihood",
+                "t": "s",
+                "raw": "Likelihood",
+                "kind": "input"
+              },
+              {
+                "coord": "E5",
+                "v": "Impact",
+                "t": "s",
+                "raw": "Impact",
+                "kind": "input"
+              },
+              {
+                "coord": "F5",
+                "v": "Score (LxI)",
+                "t": "s",
+                "raw": "Score (LxI)",
+                "kind": "input"
+              },
+              {
+                "coord": "G5",
+                "v": "Severity Band",
+                "t": "s",
+                "raw": "Severity Band",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A6",
+                "v": "CR-01",
+                "t": "s",
+                "raw": "CR-01",
+                "kind": "input"
+              },
+              {
+                "coord": "B6",
+                "v": "A1030-A1040",
+                "t": "s",
+                "raw": "A1030-A1040",
+                "kind": "input"
+              },
+              {
+                "coord": "C6",
+                "v": "Planning Judicial Review or EIAR further information request slips Planning Grant.",
+                "t": "s",
+                "raw": "Planning Judicial Review or EIAR further information request slips Planning Grant.",
+                "kind": "input"
+              },
+              {
+                "coord": "D6",
+                "v": "4",
+                "t": "n",
+                "raw": 4,
+                "kind": "input"
+              },
+              {
+                "coord": "E6",
+                "v": "5",
+                "t": "n",
+                "raw": 5,
+                "kind": "input"
+              },
+              {
+                "coord": "F6",
+                "v": "20",
+                "f": "=D6*E6",
+                "raw": 20.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "G6",
+                "v": "CRITICAL",
+                "f": "=IF(F6>=20,\"CRITICAL\",IF(F6>=15,\"HIGH\",IF(F6>=8,\"MODERATE\",\"LOW\")))",
+                "raw": "CRITICAL",
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A7",
+                "v": "CR-02",
+                "t": "s",
+                "raw": "CR-02",
+                "kind": "input"
+              },
+              {
+                "coord": "B7",
+                "v": "A1050",
+                "t": "s",
+                "raw": "A1050",
+                "kind": "input"
+              },
+              {
+                "coord": "C7",
+                "v": "EPA Industrial Emissions Licence (IEL) appeal over backup diesel emissions.",
+                "t": "s",
+                "raw": "EPA Industrial Emissions Licence (IEL) appeal over backup diesel emissions.",
+                "kind": "input"
+              },
+              {
+                "coord": "D7",
+                "v": "3",
+                "t": "n",
+                "raw": 3,
+                "kind": "input"
+              },
+              {
+                "coord": "E7",
+                "v": "5",
+                "t": "n",
+                "raw": 5,
+                "kind": "input"
+              },
+              {
+                "coord": "F7",
+                "v": "15",
+                "f": "=D7*E7",
+                "raw": 15.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "G7",
+                "v": "CRITICAL",
+                "f": "=IF(F7>=20,\"CRITICAL\",IF(F7>=15,\"HIGH\",IF(F7>=8,\"MODERATE\",\"LOW\")))",
+                "raw": "CRITICAL",
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A8",
+                "v": "CR-03",
+                "t": "s",
+                "raw": "CR-03",
+                "kind": "input"
+              },
+              {
+                "coord": "B8",
+                "v": "A1060-A1070",
+                "t": "s",
+                "raw": "A1060-A1070",
+                "kind": "input"
+              },
+              {
+                "coord": "C8",
+                "v": "EirGrid / CRU policy requires expanded BESS / dispatchable power before MIC offer.",
+                "t": "s",
+                "raw": "EirGrid / CRU policy requires expanded BESS / dispatchable power before MIC offer.",
+                "kind": "input"
+              },
+              {
+                "coord": "D8",
+                "v": "4",
+                "t": "n",
+                "raw": 4,
+                "kind": "input"
+              },
+              {
+                "coord": "E8",
+                "v": "5",
+                "t": "n",
+                "raw": 5,
+                "kind": "input"
+              },
+              {
+                "coord": "F8",
+                "v": "20",
+                "f": "=D8*E8",
+                "raw": 20.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "G8",
+                "v": "CRITICAL",
+                "f": "=IF(F8>=20,\"CRITICAL\",IF(F8>=15,\"HIGH\",IF(F8>=8,\"MODERATE\",\"LOW\")))",
+                "raw": "CRITICAL",
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A9",
+                "v": "CR-04",
+                "t": "s",
+                "raw": "CR-04",
+                "kind": "input"
+              },
+              {
+                "coord": "B9",
+                "v": "A3015-M3120",
+                "t": "s",
+                "raw": "A3015-M3120",
+                "kind": "input"
+              },
+              {
+                "coord": "C9",
+                "v": "Abnormal-load transformer haulage permits or EU switchgear lead-time slip.",
+                "t": "s",
+                "raw": "Abnormal-load transformer haulage permits or EU switchgear lead-time slip.",
+                "kind": "input"
+              },
+              {
+                "coord": "D9",
+                "v": "3",
+                "t": "n",
+                "raw": 3,
+                "kind": "input"
+              },
+              {
+                "coord": "E9",
+                "v": "4",
+                "t": "n",
+                "raw": 4,
+                "kind": "input"
+              },
+              {
+                "coord": "F9",
+                "v": "12",
+                "f": "=D9*E9",
+                "raw": 12.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "G9",
+                "v": "CRITICAL",
+                "f": "=IF(F9>=20,\"CRITICAL\",IF(F9>=15,\"HIGH\",IF(F9>=8,\"MODERATE\",\"LOW\")))",
+                "raw": "CRITICAL",
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A10",
+                "v": "CR-05",
+                "t": "s",
+                "raw": "CR-05",
+                "kind": "input"
+              },
+              {
+                "coord": "B10",
+                "v": "A6410-M6470",
+                "t": "s",
+                "raw": "A6410-M6470",
+                "kind": "input"
+              },
+              {
+                "coord": "C10",
+                "v": "45 MW load bank availability or weather interrupts 48-hr continuous IST.",
+                "t": "s",
+                "raw": "45 MW load bank availability or weather interrupts 48-hr continuous IST.",
+                "kind": "input"
+              },
+              {
+                "coord": "D10",
+                "v": "4",
+                "t": "n",
+                "raw": 4,
+                "kind": "input"
+              },
+              {
+                "coord": "E10",
+                "v": "5",
+                "t": "n",
+                "raw": 5,
+                "kind": "input"
+              },
+              {
+                "coord": "F10",
+                "v": "20",
+                "f": "=D10*E10",
+                "raw": 20.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "G10",
+                "v": "CRITICAL",
+                "f": "=IF(F10>=20,\"CRITICAL\",IF(F10>=15,\"HIGH\",IF(F10>=8,\"MODERATE\",\"LOW\")))",
+                "raw": "CRITICAL",
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A11",
+                "v": "CR-06",
+                "t": "s",
+                "raw": "CR-06",
+                "kind": "input"
+              },
+              {
+                "coord": "B11",
+                "v": "A7010-A7050",
+                "t": "s",
+                "raw": "A7010-A7050",
+                "kind": "input"
+              },
+              {
+                "coord": "C11",
+                "v": "Unresolved Part B Fire or BCAR Assigned Certifier ancillary certs hold up CCC.",
+                "t": "s",
+                "raw": "Unresolved Part B Fire or BCAR Assigned Certifier ancillary certs hold up CCC.",
+                "kind": "input"
+              },
+              {
+                "coord": "D11",
+                "v": "4",
+                "t": "n",
+                "raw": 4,
+                "kind": "input"
+              },
+              {
+                "coord": "E11",
+                "v": "5",
+                "t": "n",
+                "raw": 5,
+                "kind": "input"
+              },
+              {
+                "coord": "F11",
+                "v": "20",
+                "f": "=D11*E11",
+                "raw": 20.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "G11",
+                "v": "CRITICAL",
+                "f": "=IF(F11>=20,\"CRITICAL\",IF(F11>=15,\"HIGH\",IF(F11>=8,\"MODERATE\",\"LOW\")))",
+                "raw": "CRITICAL",
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A12",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "B12",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "C12",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "D12",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "E12",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "F12",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "G12",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              }
+            ],
+            [
+              {
+                "coord": "A13",
+                "v": "2. EXECUTIVE AUTHORIZATION SIGN-OFF BLOCK",
+                "t": "s",
+                "raw": "2. EXECUTIVE AUTHORIZATION SIGN-OFF BLOCK",
+                "kind": "section",
+                "cspan": 8
+              },
+              {
+                "coord": "B13",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C13",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D13",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E13",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F13",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G13",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A14",
+                "v": "Approving Role",
+                "t": "s",
+                "raw": "Approving Role",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B14",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C14",
+                "v": "Name & Title",
+                "t": "s",
+                "raw": "Name & Title",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "D14",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E14",
+                "v": "Authorized Signature",
+                "t": "s",
+                "raw": "Authorized Signature",
+                "kind": "input",
+                "cspan": 3
+              },
+              {
+                "coord": "F14",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G14",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A15",
+                "v": "Executive Project Sponsor",
+                "t": "s",
+                "raw": "Executive Project Sponsor",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B15",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C15",
+                "v": "[TBD - Sponsor Input]",
+                "t": "s",
+                "raw": "[TBD - Sponsor Input]",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "D15",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E15",
+                "v": "______________________________",
+                "t": "s",
+                "raw": "______________________________",
+                "kind": "input",
+                "cspan": 3
+              },
+              {
+                "coord": "F15",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G15",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A16",
+                "v": "Investment Committee Chair",
+                "t": "s",
+                "raw": "Investment Committee Chair",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C16",
+                "v": "[TBD - Sponsor Input]",
+                "t": "s",
+                "raw": "[TBD - Sponsor Input]",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "D16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E16",
+                "v": "______________________________",
+                "t": "s",
+                "raw": "______________________________",
+                "kind": "input",
+                "cspan": 3
+              },
+              {
+                "coord": "F16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A17",
+                "v": "Authorized Project Director",
+                "t": "s",
+                "raw": "Authorized Project Director",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C17",
+                "v": "[TBD - Sponsor Input]",
+                "t": "s",
+                "raw": "[TBD - Sponsor Input]",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "D17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E17",
+                "v": "______________________________",
+                "t": "s",
+                "raw": "______________________________",
+                "kind": "input",
+                "cspan": 3
+              },
+              {
+                "coord": "F17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    "CONTROLS": {
+      "fileName": "PM03_Doc2_Deliverable_EN50600_BoD_Controls_Master_Rev.004.xlsx",
+      "sheetCount": 5,
+      "totalCells": 676,
+      "formulaCells": 124,
+      "sheets": [
+        {
+          "name": "1. Feasibility & Financial",
+          "maxRow": 34,
+          "maxCol": 6,
+          "formulaCount": 41,
+          "columns": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "rows": [
+            [
+              {
+                "coord": "A1",
+                "v": "STAGE 1 PRE-NTP FEASIBILITY, EU EED KPI & 10-YEAR EUR FINANCIAL MODEL",
+                "t": "s",
+                "raw": "STAGE 1 PRE-NTP FEASIBILITY, EU EED KPI & 10-YEAR EUR FINANCIAL MODEL",
+                "kind": "banner",
+                "cspan": 12
+              },
+              {
+                "coord": "B1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A2",
+                "v": "45 MW EN 50600 Class 3 | Enter Blue [Input] Cells for Live EUR EBITDA, NPV & IRR + EED (2023/1791) Targets",
+                "t": "s",
+                "raw": "45 MW EN 50600 Class 3 | Enter Blue [Input] Cells for Live EUR EBITDA, NPV & IRR + EED (2023/1791) Targets",
+                "kind": "banner",
+                "cspan": 12
+              },
+              {
+                "coord": "B2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "B3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "C3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "D3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "E3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "F3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              }
+            ],
+            [
+              {
+                "coord": "A4",
+                "v": "1. TECHNICAL BASELINE, EU EED (2023/1791) METRICS & EDITABLE EUR INPUTS",
+                "t": "s",
+                "raw": "1. TECHNICAL BASELINE, EU EED (2023/1791) METRICS & EDITABLE EUR INPUTS",
+                "kind": "section",
+                "cspan": 12
+              },
+              {
+                "coord": "B4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F4",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A5",
+                "v": "Input ID",
+                "t": "s",
+                "raw": "Input ID",
+                "kind": "input"
+              },
+              {
+                "coord": "B5",
+                "v": "Parameter Description",
+                "t": "s",
+                "raw": "Parameter Description",
+                "kind": "input"
+              },
+              {
+                "coord": "C5",
+                "v": "Value",
+                "t": "s",
+                "raw": "Value",
+                "kind": "input"
+              },
+              {
+                "coord": "D5",
+                "v": "Unit",
+                "t": "s",
+                "raw": "Unit",
+                "kind": "input"
+              },
+              {
+                "coord": "E5",
+                "v": "Basis / EU Directive Standard",
+                "t": "s",
+                "raw": "Basis / EU Directive Standard",
+                "kind": "section",
+                "cspan": 8
+              },
+              {
+                "coord": "F5",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A6",
+                "v": "CAP-01",
+                "t": "s",
+                "raw": "CAP-01",
+                "kind": "input"
+              },
+              {
+                "coord": "B6",
+                "v": "Critical IT Load Capacity",
+                "t": "s",
+                "raw": "Critical IT Load Capacity",
+                "kind": "input"
+              },
+              {
+                "coord": "C6",
+                "v": "45,000",
+                "t": "n",
+                "raw": 45000,
+                "kind": "input"
+              },
+              {
+                "coord": "D6",
+                "v": "kW",
+                "t": "s",
+                "raw": "kW",
+                "kind": "input"
+              },
+              {
+                "coord": "E6",
+                "v": "Locked to 5x 9,000 kW Halls (DataCenter_45MW_EU_Ireland.xer)",
+                "t": "s",
+                "raw": "Locked to 5x 9,000 kW Halls (DataCenter_45MW_EU_Ireland.xer)",
+                "kind": "section",
+                "cspan": 8
+              },
+              {
+                "coord": "F6",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A7",
+                "v": "EED-01",
+                "t": "s",
+                "raw": "EED-01",
+                "kind": "input"
+              },
+              {
+                "coord": "B7",
+                "v": "Design Annualized PUE Target",
+                "t": "s",
+                "raw": "Design Annualized PUE Target",
+                "kind": "input"
+              },
+              {
+                "coord": "C7",
+                "v": "1.25",
+                "t": "n",
+                "raw": 1.25,
+                "kind": "input"
+              },
+              {
+                "coord": "D7",
+                "v": "Ratio",
+                "t": "s",
+                "raw": "Ratio",
+                "kind": "input"
+              },
+              {
+                "coord": "E7",
+                "v": "EU EED (2023/1791) & Free-Cooling Chiller Irish Climate Target",
+                "t": "s",
+                "raw": "EU EED (2023/1791) & Free-Cooling Chiller Irish Climate Target",
+                "kind": "section",
+                "cspan": 8
+              },
+              {
+                "coord": "F7",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A8",
+                "v": "EED-02",
+                "t": "s",
+                "raw": "EED-02",
+                "kind": "input"
+              },
+              {
+                "coord": "B8",
+                "v": "Design Water Usage Effectiveness (WUE)",
+                "t": "s",
+                "raw": "Design Water Usage Effectiveness (WUE)",
+                "kind": "input"
+              },
+              {
+                "coord": "C8",
+                "v": "0.25",
+                "t": "n",
+                "raw": 0.25,
+                "kind": "input"
+              },
+              {
+                "coord": "D8",
+                "v": "L/kWh",
+                "t": "s",
+                "raw": "L/kWh",
+                "kind": "input"
+              },
+              {
+                "coord": "E8",
+                "v": "Closed-circuit adiabatic/free-cooling + rainwater harvesting target",
+                "t": "s",
+                "raw": "Closed-circuit adiabatic/free-cooling + rainwater harvesting target",
+                "kind": "section",
+                "cspan": 8
+              },
+              {
+                "coord": "F8",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A9",
+                "v": "EED-03",
+                "t": "s",
+                "raw": "EED-03",
+                "kind": "input"
+              },
+              {
+                "coord": "B9",
+                "v": "Energy Reuse Factor (ERF Target)",
+                "t": "s",
+                "raw": "Energy Reuse Factor (ERF Target)",
+                "kind": "input"
+              },
+              {
+                "coord": "C9",
+                "v": "0.15",
+                "t": "n",
+                "raw": 0.15,
+                "kind": "input"
+              },
+              {
+                "coord": "D9",
+                "v": "Ratio",
+                "t": "s",
+                "raw": "Ratio",
+                "kind": "input"
+              },
+              {
+                "coord": "E9",
+                "v": "District Heating Heat-Reuse Export Valve Skid readiness (A5390)",
+                "t": "s",
+                "raw": "District Heating Heat-Reuse Export Valve Skid readiness (A5390)",
+                "kind": "section",
+                "cspan": 8
+              },
+              {
+                "coord": "F9",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A10",
+                "v": "COM-01",
+                "t": "s",
+                "raw": "COM-01",
+                "kind": "input"
+              },
+              {
+                "coord": "B10",
+                "v": "Monthly Wholesale Colocation Rate",
+                "t": "s",
+                "raw": "Monthly Wholesale Colocation Rate",
+                "kind": "input"
+              },
+              {
+                "coord": "C10",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "D10",
+                "v": "EUR/kW/mo",
+                "t": "s",
+                "raw": "EUR/kW/mo",
+                "kind": "input"
+              },
+              {
+                "coord": "E10",
+                "v": "[Input] Enter contracted EUR/kW/month tariff",
+                "t": "s",
+                "raw": "[Input] Enter contracted EUR/kW/month tariff",
+                "kind": "section",
+                "cspan": 8
+              },
+              {
+                "coord": "F10",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A11",
+                "v": "COM-02",
+                "t": "s",
+                "raw": "COM-02",
+                "kind": "input"
+              },
+              {
+                "coord": "B11",
+                "v": "Irish Blended Industrial Power Price",
+                "t": "s",
+                "raw": "Irish Blended Industrial Power Price",
+                "kind": "input"
+              },
+              {
+                "coord": "C11",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "D11",
+                "v": "EUR/kWh",
+                "t": "s",
+                "raw": "EUR/kWh",
+                "kind": "input"
+              },
+              {
+                "coord": "E11",
+                "v": "[Input] Enter EirGrid/PPA blended electricity price (EUR/kWh)",
+                "t": "s",
+                "raw": "[Input] Enter EirGrid/PPA blended electricity price (EUR/kWh)",
+                "kind": "section",
+                "cspan": 8
+              },
+              {
+                "coord": "F11",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A12",
+                "v": "COM-03",
+                "t": "s",
+                "raw": "COM-03",
+                "kind": "input"
+              },
+              {
+                "coord": "B12",
+                "v": "Annual Fixed Opex (O&M, Staff, Rates)",
+                "t": "s",
+                "raw": "Annual Fixed Opex (O&M, Staff, Rates)",
+                "kind": "input"
+              },
+              {
+                "coord": "C12",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "D12",
+                "v": "EUR/yr",
+                "t": "s",
+                "raw": "EUR/yr",
+                "kind": "input"
+              },
+              {
+                "coord": "E12",
+                "v": "[Input] Enter fixed annual facility Opex (EUR/yr)",
+                "t": "s",
+                "raw": "[Input] Enter fixed annual facility Opex (EUR/yr)",
+                "kind": "section",
+                "cspan": 8
+              },
+              {
+                "coord": "F12",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A13",
+                "v": "COM-04",
+                "t": "s",
+                "raw": "COM-04",
+                "kind": "input"
+              },
+              {
+                "coord": "B13",
+                "v": "Sponsor Discount Rate (WACC)",
+                "t": "s",
+                "raw": "Sponsor Discount Rate (WACC)",
+                "kind": "input"
+              },
+              {
+                "coord": "C13",
+                "v": "8.5%",
+                "t": "n",
+                "raw": 0.085,
+                "kind": "input"
+              },
+              {
+                "coord": "D13",
+                "v": "%",
+                "t": "s",
+                "raw": "%",
+                "kind": "input"
+              },
+              {
+                "coord": "E13",
+                "v": "Editable Euro institutional hurdle discount rate",
+                "t": "s",
+                "raw": "Editable Euro institutional hurdle discount rate",
+                "kind": "section",
+                "cspan": 8
+              },
+              {
+                "coord": "F13",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A14",
+                "v": "COM-05",
+                "t": "s",
+                "raw": "COM-05",
+                "kind": "input"
+              },
+              {
+                "coord": "B14",
+                "v": "Irish Corporate Tax Rate (CIT)",
+                "t": "s",
+                "raw": "Irish Corporate Tax Rate (CIT)",
+                "kind": "input"
+              },
+              {
+                "coord": "C14",
+                "v": "12.5%",
+                "t": "n",
+                "raw": 0.125,
+                "kind": "input"
+              },
+              {
+                "coord": "D14",
+                "v": "%",
+                "t": "s",
+                "raw": "%",
+                "kind": "input"
+              },
+              {
+                "coord": "E14",
+                "v": "Ireland 12.5% trading tax baseline (verify Pillar Two 15% if in scope)",
+                "t": "s",
+                "raw": "Ireland 12.5% trading tax baseline (verify Pillar Two 15% if in scope)",
+                "kind": "section",
+                "cspan": 8
+              },
+              {
+                "coord": "F14",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A15",
+                "v": "CAP-02",
+                "t": "s",
+                "raw": "CAP-02",
+                "kind": "input"
+              },
+              {
+                "coord": "B15",
+                "v": "Total Development Capex (Linked BAC)",
+                "t": "s",
+                "raw": "Total Development Capex (Linked BAC)",
+                "kind": "input"
+              },
+              {
+                "coord": "C15",
+                "v": "\u20ac0",
+                "f": "='3. Cost Control & EVM'!E13",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "D15",
+                "v": "EUR",
+                "t": "s",
+                "raw": "EUR",
+                "kind": "input"
+              },
+              {
+                "coord": "E15",
+                "v": "Linked dynamically from Sheet '3. Cost Control & EVM' Total BAC",
+                "t": "s",
+                "raw": "Linked dynamically from Sheet '3. Cost Control & EVM' Total BAC",
+                "kind": "section",
+                "cspan": 8
+              },
+              {
+                "coord": "F15",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "B16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "C16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "D16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "E16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "F16",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              }
+            ],
+            [
+              {
+                "coord": "A17",
+                "v": "2. LIVE FINANCIAL VIABILITY SCORECARD (EUR)",
+                "t": "s",
+                "raw": "2. LIVE FINANCIAL VIABILITY SCORECARD (EUR)",
+                "kind": "section",
+                "cspan": 12
+              },
+              {
+                "coord": "B17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F17",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A18",
+                "v": "Metric",
+                "t": "s",
+                "raw": "Metric",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B18",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C18",
+                "v": "Calculated Output",
+                "t": "s",
+                "raw": "Calculated Output",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "D18",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E18",
+                "v": "Rule",
+                "t": "s",
+                "raw": "Rule",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "F18",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A19",
+                "v": "Steady-State Annual Revenue (100%)",
+                "t": "s",
+                "raw": "Steady-State Annual Revenue (100%)",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B19",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C19",
+                "v": "\u20ac0",
+                "f": "=C6*12*C10",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc",
+                "cspan": 2
+              },
+              {
+                "coord": "D19",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E19",
+                "v": "45,000 kW x 12m x Rate",
+                "t": "s",
+                "raw": "45,000 kW x 12m x Rate",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "F19",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A20",
+                "v": "Steady-State Annual Power Cost",
+                "t": "s",
+                "raw": "Steady-State Annual Power Cost",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B20",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C20",
+                "v": "\u20ac0",
+                "f": "=C6*C7*8760*C11",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc",
+                "cspan": 2
+              },
+              {
+                "coord": "D20",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E20",
+                "v": "kW x PUE x 8760h x Price",
+                "t": "s",
+                "raw": "kW x PUE x 8760h x Price",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "F20",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A21",
+                "v": "Net Present Value (NPV @ WACC)",
+                "t": "s",
+                "raw": "Net Present Value (NPV @ WACC)",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B21",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C21",
+                "v": "\u20ac0",
+                "f": "=IF(AND(C15=0,SUM(C33:L33)=0),0,NPV(C13,C33:L33)+B33)",
+                "raw": 0,
+                "t": "f",
+                "kind": "calc",
+                "cspan": 2
+              },
+              {
+                "coord": "D21",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E21",
+                "v": "> EUR 0 Required",
+                "t": "s",
+                "raw": "> EUR 0 Required",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "F21",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A22",
+                "v": "Project Unlevered IRR (10-Yr)",
+                "t": "s",
+                "raw": "Project Unlevered IRR (10-Yr)",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "B22",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C22",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(IRR(B33:L33),\"Enter Inputs\")",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc",
+                "cspan": 2
+              },
+              {
+                "coord": "D22",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E22",
+                "v": "> COM-04 WACC",
+                "t": "s",
+                "raw": "> COM-04 WACC",
+                "kind": "input",
+                "cspan": 2
+              },
+              {
+                "coord": "F22",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A23",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "B23",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "C23",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "D23",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "E23",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "F23",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              }
+            ],
+            [
+              {
+                "coord": "A24",
+                "v": "3. 10-YEAR OPERATING CASH FLOW & DCF SCHEDULE (EUR, FY1 - FY10)",
+                "t": "s",
+                "raw": "3. 10-YEAR OPERATING CASH FLOW & DCF SCHEDULE (EUR, FY1 - FY10)",
+                "kind": "section",
+                "cspan": 12
+              },
+              {
+                "coord": "B24",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C24",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D24",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E24",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F24",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A25",
+                "v": "Line Item (EUR)",
+                "t": "s",
+                "raw": "Line Item (EUR)",
+                "kind": "input"
+              },
+              {
+                "coord": "B25",
+                "v": "Dev (Y0)",
+                "t": "s",
+                "raw": "Dev (Y0)",
+                "kind": "input"
+              },
+              {
+                "coord": "C25",
+                "v": "FY1",
+                "t": "s",
+                "raw": "FY1",
+                "kind": "input"
+              },
+              {
+                "coord": "D25",
+                "v": "FY2",
+                "t": "s",
+                "raw": "FY2",
+                "kind": "input"
+              },
+              {
+                "coord": "E25",
+                "v": "FY3",
+                "t": "s",
+                "raw": "FY3",
+                "kind": "input"
+              },
+              {
+                "coord": "F25",
+                "v": "FY4",
+                "t": "s",
+                "raw": "FY4",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A26",
+                "v": "IT Load Occupancy Ramp (%) [Input]",
+                "t": "s",
+                "raw": "IT Load Occupancy Ramp (%) [Input]",
+                "kind": "input"
+              },
+              {
+                "coord": "B26",
+                "v": "0%",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "C26",
+                "v": "25%",
+                "t": "n",
+                "raw": 0.25,
+                "kind": "input"
+              },
+              {
+                "coord": "D26",
+                "v": "50%",
+                "t": "n",
+                "raw": 0.5,
+                "kind": "input"
+              },
+              {
+                "coord": "E26",
+                "v": "75%",
+                "t": "n",
+                "raw": 0.75,
+                "kind": "input"
+              },
+              {
+                "coord": "F26",
+                "v": "90%",
+                "t": "n",
+                "raw": 0.9,
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A27",
+                "v": "Utilized IT Load (kW)",
+                "t": "s",
+                "raw": "Utilized IT Load (kW)",
+                "kind": "input"
+              },
+              {
+                "coord": "B27",
+                "v": "0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "C27",
+                "v": "11,250",
+                "f": "=$C$6*C26",
+                "raw": 11250.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "D27",
+                "v": "22,500",
+                "f": "=$C$6*D26",
+                "raw": 22500.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "E27",
+                "v": "33,750",
+                "f": "=$C$6*E26",
+                "raw": 33750.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "F27",
+                "v": "40,500",
+                "f": "=$C$6*F26",
+                "raw": 40500.0,
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A28",
+                "v": "Gross Colocation Revenue",
+                "t": "s",
+                "raw": "Gross Colocation Revenue",
+                "kind": "input"
+              },
+              {
+                "coord": "B28",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "C28",
+                "v": "\u20ac0",
+                "f": "=C27*12*$C$10",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "D28",
+                "v": "\u20ac0",
+                "f": "=D27*12*$C$10",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "E28",
+                "v": "\u20ac0",
+                "f": "=E27*12*$C$10",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "F28",
+                "v": "\u20ac0",
+                "f": "=F27*12*$C$10",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A29",
+                "v": "Electricity Draw Cost",
+                "t": "s",
+                "raw": "Electricity Draw Cost",
+                "kind": "input"
+              },
+              {
+                "coord": "B29",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "C29",
+                "v": "\u20ac0",
+                "f": "=-C27*$C$7*8760*$C$11",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "D29",
+                "v": "\u20ac0",
+                "f": "=-D27*$C$7*8760*$C$11",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "E29",
+                "v": "\u20ac0",
+                "f": "=-E27*$C$7*8760*$C$11",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "F29",
+                "v": "\u20ac0",
+                "f": "=-F27*$C$7*8760*$C$11",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A30",
+                "v": "Fixed Facility Opex",
+                "t": "s",
+                "raw": "Fixed Facility Opex",
+                "kind": "input"
+              },
+              {
+                "coord": "B30",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "C30",
+                "v": "\u20ac0",
+                "f": "=-$C$12",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "D30",
+                "v": "\u20ac0",
+                "f": "=-$C$12",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "E30",
+                "v": "\u20ac0",
+                "f": "=-$C$12",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "F30",
+                "v": "\u20ac0",
+                "f": "=-$C$12",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A31",
+                "v": "Facility EBITDA",
+                "t": "s",
+                "raw": "Facility EBITDA",
+                "kind": "input"
+              },
+              {
+                "coord": "B31",
+                "v": "\u20ac0",
+                "f": "=SUM(B28:B30)",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "C31",
+                "v": "\u20ac0",
+                "f": "=SUM(C28:C30)",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "D31",
+                "v": "\u20ac0",
+                "f": "=SUM(D28:D30)",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "E31",
+                "v": "\u20ac0",
+                "f": "=SUM(E28:E30)",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "F31",
+                "v": "\u20ac0",
+                "f": "=SUM(F28:F30)",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A32",
+                "v": "Development Capex & CIT Tax",
+                "t": "s",
+                "raw": "Development Capex & CIT Tax",
+                "kind": "input"
+              },
+              {
+                "coord": "B32",
+                "v": "\u20ac0",
+                "f": "=-$C$15",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "C32",
+                "v": "\u20ac0",
+                "f": "=-MAX(0,C31)*$C$14",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "D32",
+                "v": "\u20ac0",
+                "f": "=-MAX(0,D31)*$C$14",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "E32",
+                "v": "\u20ac0",
+                "f": "=-MAX(0,E31)*$C$14",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "F32",
+                "v": "\u20ac0",
+                "f": "=-MAX(0,F31)*$C$14",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A33",
+                "v": "Net Free Cash Flow (FCF)",
+                "t": "s",
+                "raw": "Net Free Cash Flow (FCF)",
+                "kind": "input"
+              },
+              {
+                "coord": "B33",
+                "v": "\u20ac0",
+                "f": "=B31+B32",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "C33",
+                "v": "\u20ac0",
+                "f": "=C31+C32",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "D33",
+                "v": "\u20ac0",
+                "f": "=D31+D32",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "E33",
+                "v": "\u20ac0",
+                "f": "=E31+E32",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "F33",
+                "v": "\u20ac0",
+                "f": "=F31+F32",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A34",
+                "v": "Cumulative Cash Flow",
+                "t": "s",
+                "raw": "Cumulative Cash Flow",
+                "kind": "input"
+              },
+              {
+                "coord": "B34",
+                "v": "\u20ac0",
+                "f": "=B33",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "C34",
+                "v": "\u20ac0",
+                "f": "=B34+C33",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "D34",
+                "v": "\u20ac0",
+                "f": "=C34+D33",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "E34",
+                "v": "\u20ac0",
+                "f": "=D34+E33",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "F34",
+                "v": "\u20ac0",
+                "f": "=E34+F33",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              }
+            ]
+          ]
+        },
+        {
+          "name": "2. EN 50600 Basis of Design",
+          "maxRow": 10,
+          "maxCol": 6,
+          "formulaCount": 0,
+          "columns": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "rows": [
+            [
+              {
+                "coord": "A1",
+                "v": "OWNER'S REQUIREMENTS (ORD) & EN 50600 TECHNICAL BASIS OF DESIGN",
+                "t": "s",
+                "raw": "OWNER'S REQUIREMENTS (ORD) & EN 50600 TECHNICAL BASIS OF DESIGN",
+                "kind": "banner",
+                "cspan": 6
+              },
+              {
+                "coord": "B1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A2",
+                "v": "Aligned to I.S. EN 50600-2-x, ISO/IEC 22237, Irish Part B/L/M & EU EED 2023/1791",
+                "t": "s",
+                "raw": "Aligned to I.S. EN 50600-2-x, ISO/IEC 22237, Irish Part B/L/M & EU EED 2023/1791",
+                "kind": "banner",
+                "cspan": 6
+              },
+              {
+                "coord": "B2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "B3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "C3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "D3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "E3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "F3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              }
+            ],
+            [
+              {
+                "coord": "A4",
+                "v": "ID",
+                "t": "s",
+                "raw": "ID",
+                "kind": "input"
+              },
+              {
+                "coord": "B4",
+                "v": "Engineering System",
+                "t": "s",
+                "raw": "Engineering System",
+                "kind": "input"
+              },
+              {
+                "coord": "C4",
+                "v": "Owner Mandatory Requirement",
+                "t": "s",
+                "raw": "Owner Mandatory Requirement",
+                "kind": "input"
+              },
+              {
+                "coord": "D4",
+                "v": "Verified Design Architecture",
+                "t": "s",
+                "raw": "Verified Design Architecture",
+                "kind": "input"
+              },
+              {
+                "coord": "E4",
+                "v": "EU / Irish Standard",
+                "t": "s",
+                "raw": "EU / Irish Standard",
+                "kind": "input"
+              },
+              {
+                "coord": "F4",
+                "v": "XER Ref",
+                "t": "s",
+                "raw": "XER Ref",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A5",
+                "v": "BOD-01",
+                "t": "s",
+                "raw": "BOD-01",
+                "kind": "input"
+              },
+              {
+                "coord": "B5",
+                "v": "White Space & Floor Plate",
+                "t": "s",
+                "raw": "White Space & Floor Plate",
+                "kind": "input"
+              },
+              {
+                "coord": "C5",
+                "v": "45 MW IT load across 5x 9 MW suites; Class 3 maintainability.",
+                "t": "s",
+                "raw": "45 MW IT load across 5x 9 MW suites; Class 3 maintainability.",
+                "kind": "input"
+              },
+              {
+                "coord": "D5",
+                "v": "Data Halls 1-5 (A5430-A5469), 800mm floor, 18 kN/m2 hollowcore/composite slab, HAC.",
+                "t": "s",
+                "raw": "Data Halls 1-5 (A5430-A5469), 800mm floor, 18 kN/m2 hollowcore/composite slab, HAC.",
+                "kind": "input"
+              },
+              {
+                "coord": "E5",
+                "v": "EN 50600-2-1 / Tier III",
+                "t": "s",
+                "raw": "EN 50600-2-1 / Tier III",
+                "kind": "header"
+              },
+              {
+                "coord": "F5",
+                "v": "A5430-A5465",
+                "t": "s",
+                "raw": "A5430-A5465",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A6",
+                "v": "BOD-02",
+                "t": "s",
+                "raw": "BOD-02",
+                "kind": "input"
+              },
+              {
+                "coord": "B6",
+                "v": "110kV Grid & MV Power",
+                "t": "s",
+                "raw": "110kV Grid & MV Power",
+                "kind": "input"
+              },
+              {
+                "coord": "C6",
+                "v": "CRU-compliant EirGrid connection with SF6-free switchgear.",
+                "t": "s",
+                "raw": "CRU-compliant EirGrid connection with SF6-free switchgear.",
+                "kind": "input"
+              },
+              {
+                "coord": "D6",
+                "v": "Dual 110kV/22kV 63MVA low-loss transformers, 22kV SF6-free GIS Rings A & B.",
+                "t": "s",
+                "raw": "Dual 110kV/22kV 63MVA low-loss transformers, 22kV SF6-free GIS Rings A & B.",
+                "kind": "input"
+              },
+              {
+                "coord": "E6",
+                "v": "EN 50600-2-2 / EU 2016/1388",
+                "t": "s",
+                "raw": "EN 50600-2-2 / EU 2016/1388",
+                "kind": "input"
+              },
+              {
+                "coord": "F6",
+                "v": "A1060, A5110-A5150",
+                "t": "s",
+                "raw": "A1060, A5110-A5150",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A7",
+                "v": "BOD-03",
+                "t": "s",
+                "raw": "BOD-03",
+                "kind": "input"
+              },
+              {
+                "coord": "B7",
+                "v": "HVO Standby Gen & BESS",
+                "t": "s",
+                "raw": "HVO Standby Gen & BESS",
+                "kind": "input"
+              },
+              {
+                "coord": "C7",
+                "v": "Low-NOx dispatchable backup compliant with EPA IEL & CRU.",
+                "t": "s",
+                "raw": "Low-NOx dispatchable backup compliant with EPA IEL & CRU.",
+                "kind": "input"
+              },
+              {
+                "coord": "D7",
+                "v": "20x 2.5MVA HVO-ready gensets + SCR flues + 4x 80m3 tanks + on-site Grid BESS.",
+                "t": "s",
+                "raw": "20x 2.5MVA HVO-ready gensets + SCR flues + 4x 80m3 tanks + on-site Grid BESS.",
+                "kind": "input"
+              },
+              {
+                "coord": "E7",
+                "v": "EPA IEL / ISO 8528",
+                "t": "s",
+                "raw": "EPA IEL / ISO 8528",
+                "kind": "input"
+              },
+              {
+                "coord": "F7",
+                "v": "A1050, A5210-A5250",
+                "t": "s",
+                "raw": "A1050, A5210-A5250",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A8",
+                "v": "BOD-04",
+                "t": "s",
+                "raw": "BOD-04",
+                "kind": "input"
+              },
+              {
+                "coord": "B8",
+                "v": "Cooling & Heat Recovery",
+                "t": "s",
+                "raw": "Cooling & Heat Recovery",
+                "kind": "input"
+              },
+              {
+                "coord": "C8",
+                "v": "Zero-refrigeration free-cooling bias & EU EED waste-heat capture.",
+                "t": "s",
+                "raw": "Zero-refrigeration free-cooling bias & EU EED waste-heat capture.",
+                "kind": "input"
+              },
+              {
+                "coord": "D8",
+                "v": "8x 1200 RT low-GWP chillers, closed coolers, TES tanks, RO rainwater, District Heating HEX.",
+                "t": "s",
+                "raw": "8x 1200 RT low-GWP chillers, closed coolers, TES tanks, RO rainwater, District Heating HEX.",
+                "kind": "input"
+              },
+              {
+                "coord": "E8",
+                "v": "EN 50600-2-3 / EED 2023/1791",
+                "t": "s",
+                "raw": "EN 50600-2-3 / EED 2023/1791",
+                "kind": "input"
+              },
+              {
+                "coord": "F8",
+                "v": "A5310-A5390",
+                "t": "s",
+                "raw": "A5310-A5390",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A9",
+                "v": "BOD-05",
+                "t": "s",
+                "raw": "BOD-05",
+                "kind": "input"
+              },
+              {
+                "coord": "B9",
+                "v": "EED Telemetry & BMS",
+                "t": "s",
+                "raw": "EED Telemetry & BMS",
+                "kind": "input"
+              },
+              {
+                "coord": "C9",
+                "v": "Automated Union Database reporting for PUE, WUE, ERF & REF.",
+                "t": "s",
+                "raw": "Automated Union Database reporting for PUE, WUE, ERF & REF.",
+                "kind": "input"
+              },
+              {
+                "coord": "D9",
+                "v": "EPMS Class-0.2 revenue meters + BACnet BMS + DCIM EU EED pipeline.",
+                "t": "s",
+                "raw": "EPMS Class-0.2 revenue meters + BACnet BMS + DCIM EU EED pipeline.",
+                "kind": "input"
+              },
+              {
+                "coord": "E9",
+                "v": "EN 50600-4 / Reg 2024/1364",
+                "t": "s",
+                "raw": "EN 50600-4 / Reg 2024/1364",
+                "kind": "input"
+              },
+              {
+                "coord": "F9",
+                "v": "A5510-A5520, A6510",
+                "t": "s",
+                "raw": "A5510-A5520, A6510",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A10",
+                "v": "BOD-06",
+                "t": "s",
+                "raw": "BOD-06",
+                "kind": "input"
+              },
+              {
+                "coord": "B10",
+                "v": "Fire & Physical Security",
+                "t": "s",
+                "raw": "Fire & Physical Security",
+                "kind": "input"
+              },
+              {
+                "coord": "C10",
+                "v": "Part B compartmentation + Class 4 anti-ram physical security.",
+                "t": "s",
+                "raw": "Part B compartmentation + Class 4 anti-ram physical security.",
+                "kind": "input"
+              },
+              {
+                "coord": "D10",
+                "v": "VESDA-E, water-mist/clean agent, pre-action, PAS 68 barriers, PIDS fence & SOC.",
+                "t": "s",
+                "raw": "VESDA-E, water-mist/clean agent, pre-action, PAS 68 barriers, PIDS fence & SOC.",
+                "kind": "input"
+              },
+              {
+                "coord": "E10",
+                "v": "BCAR Part B / EN 50600-2-5",
+                "t": "s",
+                "raw": "BCAR Part B / EN 50600-2-5",
+                "kind": "input"
+              },
+              {
+                "coord": "F10",
+                "v": "A1080, A4430, A5530-90",
+                "t": "s",
+                "raw": "A1080, A4430, A5530-90",
+                "kind": "input"
+              }
+            ]
+          ]
+        },
+        {
+          "name": "3. Cost Control & EVM",
+          "maxRow": 13,
+          "maxCol": 14,
+          "formulaCount": 59,
+          "columns": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N"
+          ],
+          "rows": [
+            [
+              {
+                "coord": "A1",
+                "v": "EUR COST BASELINE & EARNED VALUE MANAGEMENT (NEC4 / FIDIC CBS)",
+                "t": "s",
+                "raw": "EUR COST BASELINE & EARNED VALUE MANAGEMENT (NEC4 / FIDIC CBS)",
+                "kind": "banner",
+                "cspan": 14
+              },
+              {
+                "coord": "B1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "I1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "J1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "K1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "L1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "M1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "N1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A2",
+                "v": "7 WBS Packages Synced to 144 XER Tasks | Linked Dynamically to Tab 1 DCF",
+                "t": "s",
+                "raw": "7 WBS Packages Synced to 144 XER Tasks | Linked Dynamically to Tab 1 DCF",
+                "kind": "banner",
+                "cspan": 14
+              },
+              {
+                "coord": "B2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "I2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "J2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "K2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "L2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "M2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "N2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "B3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "C3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "D3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "E3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "F3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "G3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "H3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "I3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "J3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "K3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "L3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "M3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "N3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              }
+            ],
+            [
+              {
+                "coord": "A4",
+                "v": "WBS",
+                "t": "s",
+                "raw": "WBS",
+                "kind": "input"
+              },
+              {
+                "coord": "B4",
+                "v": "Cost Package (CBS)",
+                "t": "s",
+                "raw": "Cost Package (CBS)",
+                "kind": "input"
+              },
+              {
+                "coord": "C4",
+                "v": "Tasks",
+                "t": "s",
+                "raw": "Tasks",
+                "kind": "input"
+              },
+              {
+                "coord": "D4",
+                "v": "Baseline Window",
+                "t": "s",
+                "raw": "Baseline Window",
+                "kind": "input"
+              },
+              {
+                "coord": "E4",
+                "v": "BAC (EUR)",
+                "t": "s",
+                "raw": "BAC (EUR)",
+                "kind": "input"
+              },
+              {
+                "coord": "F4",
+                "v": "PV (EUR)",
+                "t": "s",
+                "raw": "PV (EUR)",
+                "kind": "input"
+              },
+              {
+                "coord": "G4",
+                "v": "EV (EUR)",
+                "t": "s",
+                "raw": "EV (EUR)",
+                "kind": "input"
+              },
+              {
+                "coord": "H4",
+                "v": "AC (EUR)",
+                "t": "s",
+                "raw": "AC (EUR)",
+                "kind": "input"
+              },
+              {
+                "coord": "I4",
+                "v": "CV",
+                "t": "s",
+                "raw": "CV",
+                "kind": "input"
+              },
+              {
+                "coord": "J4",
+                "v": "SV",
+                "t": "s",
+                "raw": "SV",
+                "kind": "input"
+              },
+              {
+                "coord": "K4",
+                "v": "CPI",
+                "t": "s",
+                "raw": "CPI",
+                "kind": "input"
+              },
+              {
+                "coord": "L4",
+                "v": "SPI",
+                "t": "s",
+                "raw": "SPI",
+                "kind": "input"
+              },
+              {
+                "coord": "M4",
+                "v": "EAC (EUR)",
+                "t": "s",
+                "raw": "EAC (EUR)",
+                "kind": "input"
+              },
+              {
+                "coord": "N4",
+                "v": "VAC (EUR)",
+                "t": "s",
+                "raw": "VAC (EUR)",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A5",
+                "v": "1.0-PERM",
+                "t": "s",
+                "raw": "1.0-PERM",
+                "kind": "input"
+              },
+              {
+                "coord": "B5",
+                "v": "Land Option, EIAR, EPA IEL, EirGrid & BCAR (1.0-PERM)",
+                "t": "s",
+                "raw": "Land Option, EIAR, EPA IEL, EirGrid & BCAR (1.0-PERM)",
+                "kind": "input"
+              },
+              {
+                "coord": "C5",
+                "v": "11",
+                "t": "n",
+                "raw": 11,
+                "kind": "input"
+              },
+              {
+                "coord": "D5",
+                "v": "2027-01-04 to 2027-10-18",
+                "t": "s",
+                "raw": "2027-01-04 to 2027-10-18",
+                "kind": "input"
+              },
+              {
+                "coord": "E5",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "F5",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "G5",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "H5",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "I5",
+                "v": "\u20ac0",
+                "f": "=G5-H5",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "J5",
+                "v": "\u20ac0",
+                "f": "=G5-F5",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "K5",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(G5/H5,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "L5",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(G5/F5,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "M5",
+                "v": "\u20ac0",
+                "f": "=IF(K5=0,E5,E5/K5)",
+                "raw": 0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "N5",
+                "v": "\u20ac0",
+                "f": "=E5-M5",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A6",
+                "v": "2.0-ENG",
+                "t": "s",
+                "raw": "2.0-ENG",
+                "kind": "input"
+              },
+              {
+                "coord": "B6",
+                "v": "ISO 19650 Design, PSDP, Assigned Certifier & Fire (2.0-ENG)",
+                "t": "s",
+                "raw": "ISO 19650 Design, PSDP, Assigned Certifier & Fire (2.0-ENG)",
+                "kind": "input"
+              },
+              {
+                "coord": "C6",
+                "v": "11",
+                "t": "n",
+                "raw": 11,
+                "kind": "input"
+              },
+              {
+                "coord": "D6",
+                "v": "2027-01-04 to 2027-07-12",
+                "t": "s",
+                "raw": "2027-01-04 to 2027-07-12",
+                "kind": "input"
+              },
+              {
+                "coord": "E6",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "F6",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "G6",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "H6",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "I6",
+                "v": "\u20ac0",
+                "f": "=G6-H6",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "J6",
+                "v": "\u20ac0",
+                "f": "=G6-F6",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "K6",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(G6/H6,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "L6",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(G6/F6,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "M6",
+                "v": "\u20ac0",
+                "f": "=IF(K6=0,E6,E6/K6)",
+                "raw": 0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "N6",
+                "v": "\u20ac0",
+                "f": "=E6-M6",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A7",
+                "v": "3.0-PROC",
+                "t": "s",
+                "raw": "3.0-PROC",
+                "kind": "input"
+              },
+              {
+                "coord": "B7",
+                "v": "63MVA Tx, SF6-Free GIS, HVO Gensets, BESS & Chillers (3.0)",
+                "t": "s",
+                "raw": "63MVA Tx, SF6-Free GIS, HVO Gensets, BESS & Chillers (3.0)",
+                "kind": "input"
+              },
+              {
+                "coord": "C7",
+                "v": "16",
+                "t": "n",
+                "raw": 16,
+                "kind": "input"
+              },
+              {
+                "coord": "D7",
+                "v": "2027-07-12 to 2028-01-03",
+                "t": "s",
+                "raw": "2027-07-12 to 2028-01-03",
+                "kind": "input"
+              },
+              {
+                "coord": "E7",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "F7",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "G7",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "H7",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "I7",
+                "v": "\u20ac0",
+                "f": "=G7-H7",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "J7",
+                "v": "\u20ac0",
+                "f": "=G7-F7",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "K7",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(G7/H7,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "L7",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(G7/F7,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "M7",
+                "v": "\u20ac0",
+                "f": "=IF(K7=0,E7,E7/K7)",
+                "raw": 0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "N7",
+                "v": "\u20ac0",
+                "f": "=E7-M7",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A8",
+                "v": "4.0-CIVIL",
+                "t": "s",
+                "raw": "4.0-CIVIL",
+                "kind": "input"
+              },
+              {
+                "coord": "B8",
+                "v": "PSCS Enabling, 750 Piles, Frame, Shell & PAS 68 (4.1-4.4)",
+                "t": "s",
+                "raw": "PSCS Enabling, 750 Piles, Frame, Shell & PAS 68 (4.1-4.4)",
+                "kind": "input"
+              },
+              {
+                "coord": "C8",
+                "v": "20",
+                "t": "n",
+                "raw": 20,
+                "kind": "input"
+              },
+              {
+                "coord": "D8",
+                "v": "2027-10-18 to 2029-02-12",
+                "t": "s",
+                "raw": "2027-10-18 to 2029-02-12",
+                "kind": "input"
+              },
+              {
+                "coord": "E8",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "F8",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "G8",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "H8",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "I8",
+                "v": "\u20ac0",
+                "f": "=G8-H8",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "J8",
+                "v": "\u20ac0",
+                "f": "=G8-F8",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "K8",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(G8/H8,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "L8",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(G8/F8,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "M8",
+                "v": "\u20ac0",
+                "f": "=IF(K8=0,E8,E8/K8)",
+                "raw": 0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "N8",
+                "v": "\u20ac0",
+                "f": "=E8-M8",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A9",
+                "v": "5.0-MEP",
+                "t": "s",
+                "raw": "5.0-MEP",
+                "kind": "input"
+              },
+              {
+                "coord": "B9",
+                "v": "110kV GIS, BESS, CHW/ERF, Halls 1-5 & EED/SOC (5.1-5.5)",
+                "t": "s",
+                "raw": "110kV GIS, BESS, CHW/ERF, Halls 1-5 & EED/SOC (5.1-5.5)",
+                "kind": "input"
+              },
+              {
+                "coord": "C9",
+                "v": "53",
+                "t": "n",
+                "raw": 53,
+                "kind": "input"
+              },
+              {
+                "coord": "D9",
+                "v": "2029-02-12 to 2029-09-24",
+                "t": "s",
+                "raw": "2029-02-12 to 2029-09-24",
+                "kind": "input"
+              },
+              {
+                "coord": "E9",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "F9",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "G9",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "H9",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "I9",
+                "v": "\u20ac0",
+                "f": "=G9-H9",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "J9",
+                "v": "\u20ac0",
+                "f": "=G9-F9",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "K9",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(G9/H9,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "L9",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(G9/F9,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "M9",
+                "v": "\u20ac0",
+                "f": "=IF(K9=0,E9,E9/K9)",
+                "raw": 0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "N9",
+                "v": "\u20ac0",
+                "f": "=E9-M9",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A10",
+                "v": "6.0-CX",
+                "t": "s",
+                "raw": "6.0-CX",
+                "kind": "input"
+              },
+              {
+                "coord": "B10",
+                "v": "CIBSE/ASHRAE L1-L5, 45MW IST & HSA Safety File (6.1-6.5)",
+                "t": "s",
+                "raw": "CIBSE/ASHRAE L1-L5, 45MW IST & HSA Safety File (6.1-6.5)",
+                "kind": "input"
+              },
+              {
+                "coord": "C10",
+                "v": "27",
+                "t": "n",
+                "raw": 27,
+                "kind": "input"
+              },
+              {
+                "coord": "D10",
+                "v": "2028-01-03 to 2030-02-25",
+                "t": "s",
+                "raw": "2028-01-03 to 2030-02-25",
+                "kind": "input"
+              },
+              {
+                "coord": "E10",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "F10",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "G10",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "H10",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "I10",
+                "v": "\u20ac0",
+                "f": "=G10-H10",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "J10",
+                "v": "\u20ac0",
+                "f": "=G10-F10",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "K10",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(G10/H10,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "L10",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(G10/F10,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "M10",
+                "v": "\u20ac0",
+                "f": "=IF(K10=0,E10,E10/K10)",
+                "raw": 0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "N10",
+                "v": "\u20ac0",
+                "f": "=E10-M10",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A11",
+                "v": "7.0-COD",
+                "t": "s",
+                "raw": "7.0-COD",
+                "kind": "input"
+              },
+              {
+                "coord": "B11",
+                "v": "Part B Fire, EirGrid Sync, EN 50600 & BCAR CCC (7.0-COD)",
+                "t": "s",
+                "raw": "Part B Fire, EirGrid Sync, EN 50600 & BCAR CCC (7.0-COD)",
+                "kind": "input"
+              },
+              {
+                "coord": "C11",
+                "v": "6",
+                "t": "n",
+                "raw": 6,
+                "kind": "input"
+              },
+              {
+                "coord": "D11",
+                "v": "2030-02-25 to 2030-05-20",
+                "t": "s",
+                "raw": "2030-02-25 to 2030-05-20",
+                "kind": "input"
+              },
+              {
+                "coord": "E11",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "F11",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "G11",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "H11",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "I11",
+                "v": "\u20ac0",
+                "f": "=G11-H11",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "J11",
+                "v": "\u20ac0",
+                "f": "=G11-F11",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "K11",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(G11/H11,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "L11",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(G11/F11,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "M11",
+                "v": "\u20ac0",
+                "f": "=IF(K11=0,E11,E11/K11)",
+                "raw": 0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "N11",
+                "v": "\u20ac0",
+                "f": "=E11-M11",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A12",
+                "v": "RESERVE",
+                "t": "s",
+                "raw": "RESERVE",
+                "kind": "input"
+              },
+              {
+                "coord": "B12",
+                "v": "Sponsor & NEC4 Early-Warning Contingency Reserve",
+                "t": "s",
+                "raw": "Sponsor & NEC4 Early-Warning Contingency Reserve",
+                "kind": "input"
+              },
+              {
+                "coord": "C12",
+                "v": "0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "D12",
+                "v": "Program Reserve",
+                "t": "s",
+                "raw": "Program Reserve",
+                "kind": "input"
+              },
+              {
+                "coord": "E12",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "F12",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "G12",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "H12",
+                "v": "\u20ac0",
+                "t": "n",
+                "raw": 0,
+                "kind": "input"
+              },
+              {
+                "coord": "I12",
+                "v": "\u20ac0",
+                "f": "=G12-H12",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "J12",
+                "v": "\u20ac0",
+                "f": "=G12-F12",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "K12",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(G12/H12,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "L12",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(G12/F12,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "M12",
+                "v": "\u20ac0",
+                "f": "=IF(K12=0,E12,E12/K12)",
+                "raw": 0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "N12",
+                "v": "\u20ac0",
+                "f": "=E12-M12",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              }
+            ],
+            [
+              {
+                "coord": "A13",
+                "v": "TOTAL BAC",
+                "t": "s",
+                "raw": "TOTAL BAC",
+                "kind": "input"
+              },
+              {
+                "coord": "B13",
+                "v": "Total Authorized EUR BAC (Links to Sheet 1 Capex)",
+                "t": "s",
+                "raw": "Total Authorized EUR BAC (Links to Sheet 1 Capex)",
+                "kind": "input"
+              },
+              {
+                "coord": "C13",
+                "v": "144",
+                "f": "=SUM(C5:C11)",
+                "raw": 144.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "D13",
+                "v": "2027-01-04 to 2030-05-20",
+                "t": "s",
+                "raw": "2027-01-04 to 2030-05-20",
+                "kind": "input"
+              },
+              {
+                "coord": "E13",
+                "v": "\u20ac0",
+                "f": "=SUM(E5:E12)",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "F13",
+                "v": "\u20ac0",
+                "f": "=SUM(F5:F12)",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "G13",
+                "v": "\u20ac0",
+                "f": "=SUM(G5:G12)",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "H13",
+                "v": "\u20ac0",
+                "f": "=SUM(H5:H12)",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "I13",
+                "v": "\u20ac0",
+                "f": "=SUM(I5:I12)",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "J13",
+                "v": "\u20ac0",
+                "f": "=SUM(J5:J12)",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "K13",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(G13/H13,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "L13",
+                "v": "#IFERROR?",
+                "f": "=IFERROR(G13/F13,0)",
+                "raw": "#IFERROR?",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "M13",
+                "v": "\u20ac0",
+                "f": "=SUM(M5:M12)",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "N13",
+                "v": "\u20ac0",
+                "f": "=SUM(N5:N12)",
+                "raw": 0.0,
+                "t": "f",
+                "kind": "calc"
+              }
+            ]
+          ]
+        },
+        {
+          "name": "4. Quantitative Risk Register",
+          "maxRow": 16,
+          "maxCol": 10,
+          "formulaCount": 24,
+          "columns": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "rows": [
+            [
+              {
+                "coord": "A1",
+                "v": "IRELAND & EU QUANTITATIVE RISK REGISTER (12 PROGRAM RISKS)",
+                "t": "s",
+                "raw": "IRELAND & EU QUANTITATIVE RISK REGISTER (12 PROGRAM RISKS)",
+                "kind": "banner",
+                "cspan": 10
+              },
+              {
+                "coord": "B1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "I1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "J1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A2",
+                "v": "Planning Appeals, EPA IEL, EirGrid/CRU, BCAR & 45 MW IST Mapped to XER Task IDs",
+                "t": "s",
+                "raw": "Planning Appeals, EPA IEL, EirGrid/CRU, BCAR & 45 MW IST Mapped to XER Task IDs",
+                "kind": "banner",
+                "cspan": 10
+              },
+              {
+                "coord": "B2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "H2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "I2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "J2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "B3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "C3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "D3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "E3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "F3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "G3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "H3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "I3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "J3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              }
+            ],
+            [
+              {
+                "coord": "A4",
+                "v": "Risk ID",
+                "t": "s",
+                "raw": "Risk ID",
+                "kind": "input"
+              },
+              {
+                "coord": "B4",
+                "v": "XER Ref",
+                "t": "s",
+                "raw": "XER Ref",
+                "kind": "input"
+              },
+              {
+                "coord": "C4",
+                "v": "Domain",
+                "t": "s",
+                "raw": "Domain",
+                "kind": "input"
+              },
+              {
+                "coord": "D4",
+                "v": "Risk Description",
+                "t": "s",
+                "raw": "Risk Description",
+                "kind": "input"
+              },
+              {
+                "coord": "E4",
+                "v": "L",
+                "t": "s",
+                "raw": "L",
+                "kind": "input"
+              },
+              {
+                "coord": "F4",
+                "v": "I",
+                "t": "s",
+                "raw": "I",
+                "kind": "input"
+              },
+              {
+                "coord": "G4",
+                "v": "Score",
+                "t": "s",
+                "raw": "Score",
+                "kind": "input"
+              },
+              {
+                "coord": "H4",
+                "v": "Band",
+                "t": "s",
+                "raw": "Band",
+                "kind": "input"
+              },
+              {
+                "coord": "I4",
+                "v": "Owner",
+                "t": "s",
+                "raw": "Owner",
+                "kind": "input"
+              },
+              {
+                "coord": "J4",
+                "v": "Preventive Mitigation",
+                "t": "s",
+                "raw": "Preventive Mitigation",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A5",
+                "v": "RSK-01",
+                "t": "s",
+                "raw": "RSK-01",
+                "kind": "input"
+              },
+              {
+                "coord": "B5",
+                "v": "A1030-A1040",
+                "t": "s",
+                "raw": "A1030-A1040",
+                "kind": "input"
+              },
+              {
+                "coord": "C5",
+                "v": "Planning / ABP",
+                "t": "s",
+                "raw": "Planning / ABP",
+                "kind": "input"
+              },
+              {
+                "coord": "D5",
+                "v": "Third-party planning appeal or Judicial Review delays Planning Grant (A1040).",
+                "t": "s",
+                "raw": "Third-party planning appeal or Judicial Review delays Planning Grant (A1040).",
+                "kind": "input"
+              },
+              {
+                "coord": "E5",
+                "v": "4",
+                "t": "n",
+                "raw": 4,
+                "kind": "input"
+              },
+              {
+                "coord": "F5",
+                "v": "5",
+                "t": "n",
+                "raw": 5,
+                "kind": "input"
+              },
+              {
+                "coord": "G5",
+                "v": "20",
+                "f": "=E5*F5",
+                "raw": 20.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "H5",
+                "v": "CRITICAL",
+                "f": "=IF(G5>=20,\"CRITICAL\",IF(G5>=15,\"HIGH\",IF(G5>=8,\"MODERATE\",\"LOW\")))",
+                "raw": "CRITICAL",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "I5",
+                "v": "Planning Lead",
+                "t": "s",
+                "raw": "Planning Lead",
+                "kind": "input"
+              },
+              {
+                "coord": "J5",
+                "v": "Early Section 247 alignment & exhaustive EIAR ecological/acoustic evidence.",
+                "t": "s",
+                "raw": "Early Section 247 alignment & exhaustive EIAR ecological/acoustic evidence.",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A6",
+                "v": "RSK-02",
+                "t": "s",
+                "raw": "RSK-02",
+                "kind": "input"
+              },
+              {
+                "coord": "B6",
+                "v": "A1050",
+                "t": "s",
+                "raw": "A1050",
+                "kind": "input"
+              },
+              {
+                "coord": "C6",
+                "v": "EPA IEL",
+                "t": "s",
+                "raw": "EPA IEL",
+                "kind": "input"
+              },
+              {
+                "coord": "D6",
+                "v": "EPA Industrial Emissions Licence objection regarding standby genset emissions.",
+                "t": "s",
+                "raw": "EPA Industrial Emissions Licence objection regarding standby genset emissions.",
+                "kind": "input"
+              },
+              {
+                "coord": "E6",
+                "v": "3",
+                "t": "n",
+                "raw": 3,
+                "kind": "input"
+              },
+              {
+                "coord": "F6",
+                "v": "5",
+                "t": "n",
+                "raw": 5,
+                "kind": "input"
+              },
+              {
+                "coord": "G6",
+                "v": "15",
+                "f": "=E6*F6",
+                "raw": 15.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "H6",
+                "v": "CRITICAL",
+                "f": "=IF(G6>=20,\"CRITICAL\",IF(G6>=15,\"HIGH\",IF(G6>=8,\"MODERATE\",\"LOW\")))",
+                "raw": "CRITICAL",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "I6",
+                "v": "Env. Lead",
+                "t": "s",
+                "raw": "Env. Lead",
+                "kind": "input"
+              },
+              {
+                "coord": "J6",
+                "v": "Specify HVO fuel & SCR NOx abatement; align tightly with Climate Action Plan.",
+                "t": "s",
+                "raw": "Specify HVO fuel & SCR NOx abatement; align tightly with Climate Action Plan.",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A7",
+                "v": "RSK-03",
+                "t": "s",
+                "raw": "RSK-03",
+                "kind": "input"
+              },
+              {
+                "coord": "B7",
+                "v": "A1060-A1070",
+                "t": "s",
+                "raw": "A1060-A1070",
+                "kind": "input"
+              },
+              {
+                "coord": "C7",
+                "v": "EirGrid / CRU",
+                "t": "s",
+                "raw": "EirGrid / CRU",
+                "kind": "input"
+              },
+              {
+                "coord": "D7",
+                "v": "CRU Large Energy User rules require higher on-site BESS capacity before MIC grant.",
+                "t": "s",
+                "raw": "CRU Large Energy User rules require higher on-site BESS capacity before MIC grant.",
+                "kind": "input"
+              },
+              {
+                "coord": "E7",
+                "v": "4",
+                "t": "n",
+                "raw": 4,
+                "kind": "input"
+              },
+              {
+                "coord": "F7",
+                "v": "5",
+                "t": "n",
+                "raw": 5,
+                "kind": "input"
+              },
+              {
+                "coord": "G7",
+                "v": "20",
+                "f": "=E7*F7",
+                "raw": 20.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "H7",
+                "v": "CRITICAL",
+                "f": "=IF(G7>=20,\"CRITICAL\",IF(G7>=15,\"HIGH\",IF(G7>=8,\"MODERATE\",\"LOW\")))",
+                "raw": "CRITICAL",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "I7",
+                "v": "Grid Director",
+                "t": "s",
+                "raw": "Grid Director",
+                "kind": "input"
+              },
+              {
+                "coord": "J7",
+                "v": "Integrate CRU-compliant BESS & additional renewable PPA from Stage 1.",
+                "t": "s",
+                "raw": "Integrate CRU-compliant BESS & additional renewable PPA from Stage 1.",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A8",
+                "v": "RSK-04",
+                "t": "s",
+                "raw": "RSK-04",
+                "kind": "input"
+              },
+              {
+                "coord": "B8",
+                "v": "A1080-A1085",
+                "t": "s",
+                "raw": "A1080-A1085",
+                "kind": "input"
+              },
+              {
+                "coord": "C8",
+                "v": "BCAR / Fire",
+                "t": "s",
+                "raw": "BCAR / Fire",
+                "kind": "input"
+              },
+              {
+                "coord": "D8",
+                "v": "Local Authority Fire Safety Certificate (FSC) queries delay Commencement Notice.",
+                "t": "s",
+                "raw": "Local Authority Fire Safety Certificate (FSC) queries delay Commencement Notice.",
+                "kind": "input"
+              },
+              {
+                "coord": "E8",
+                "v": "3",
+                "t": "n",
+                "raw": 3,
+                "kind": "input"
+              },
+              {
+                "coord": "F8",
+                "v": "5",
+                "t": "n",
+                "raw": 5,
+                "kind": "input"
+              },
+              {
+                "coord": "G8",
+                "v": "15",
+                "f": "=E8*F8",
+                "raw": 15.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "H8",
+                "v": "CRITICAL",
+                "f": "=IF(G8>=20,\"CRITICAL\",IF(G8>=15,\"HIGH\",IF(G8>=8,\"MODERATE\",\"LOW\")))",
+                "raw": "CRITICAL",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "I8",
+                "v": "Design Cert.",
+                "t": "s",
+                "raw": "Design Cert.",
+                "kind": "input"
+              },
+              {
+                "coord": "J8",
+                "v": "Submit Part B strategy early (A2100); avoid 7-Day Notice rework exposure.",
+                "t": "s",
+                "raw": "Submit Part B strategy early (A2100); avoid 7-Day Notice rework exposure.",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A9",
+                "v": "RSK-05",
+                "t": "s",
+                "raw": "RSK-05",
+                "kind": "input"
+              },
+              {
+                "coord": "B9",
+                "v": "A2020, A4120",
+                "t": "s",
+                "raw": "A2020, A4120",
+                "kind": "input"
+              },
+              {
+                "coord": "C9",
+                "v": "Geotech / SuDS",
+                "t": "s",
+                "raw": "Geotech / SuDS",
+                "kind": "input"
+              },
+              {
+                "coord": "D9",
+                "v": "High water table / limestone karst complicates 750 CFA piles & SuDS attenuation.",
+                "t": "s",
+                "raw": "High water table / limestone karst complicates 750 CFA piles & SuDS attenuation.",
+                "kind": "input"
+              },
+              {
+                "coord": "E9",
+                "v": "3",
+                "t": "n",
+                "raw": 3,
+                "kind": "input"
+              },
+              {
+                "coord": "F9",
+                "v": "4",
+                "t": "n",
+                "raw": 4,
+                "kind": "input"
+              },
+              {
+                "coord": "G9",
+                "v": "12",
+                "f": "=E9*F9",
+                "raw": 12.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "H9",
+                "v": "CRITICAL",
+                "f": "=IF(G9>=20,\"CRITICAL\",IF(G9>=15,\"HIGH\",IF(G9>=8,\"MODERATE\",\"LOW\")))",
+                "raw": "CRITICAL",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "I9",
+                "v": "Civil Lead",
+                "t": "s",
+                "raw": "Civil Lead",
+                "kind": "input"
+              },
+              {
+                "coord": "J9",
+                "v": "Execute early GI boreholes (A2020) and temporary dewatering contingencies.",
+                "t": "s",
+                "raw": "Execute early GI boreholes (A2020) and temporary dewatering contingencies.",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A10",
+                "v": "RSK-06",
+                "t": "s",
+                "raw": "RSK-06",
+                "kind": "input"
+              },
+              {
+                "coord": "B10",
+                "v": "A3015-M3120",
+                "t": "s",
+                "raw": "A3015-M3120",
+                "kind": "input"
+              },
+              {
+                "coord": "C10",
+                "v": "Supply Chain",
+                "t": "s",
+                "raw": "Supply Chain",
+                "kind": "input"
+              },
+              {
+                "coord": "D10",
+                "v": "EU transformer / SF6-free GIS lead time or Dublin Port Ro-Ro congestion.",
+                "t": "s",
+                "raw": "EU transformer / SF6-free GIS lead time or Dublin Port Ro-Ro congestion.",
+                "kind": "input"
+              },
+              {
+                "coord": "E10",
+                "v": "3",
+                "t": "n",
+                "raw": 3,
+                "kind": "input"
+              },
+              {
+                "coord": "F10",
+                "v": "4",
+                "t": "n",
+                "raw": 4,
+                "kind": "input"
+              },
+              {
+                "coord": "G10",
+                "v": "12",
+                "f": "=E10*F10",
+                "raw": 12.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "H10",
+                "v": "CRITICAL",
+                "f": "=IF(G10>=20,\"CRITICAL\",IF(G10>=15,\"HIGH\",IF(G10>=8,\"MODERATE\",\"LOW\")))",
+                "raw": "CRITICAL",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "I10",
+                "v": "Procurement",
+                "t": "s",
+                "raw": "Procurement",
+                "kind": "input"
+              },
+              {
+                "coord": "J10",
+                "v": "Lock manufacturing slots at M2110 preserving +200d arrival buffer pre-M4350.",
+                "t": "s",
+                "raw": "Lock manufacturing slots at M2110 preserving +200d arrival buffer pre-M4350.",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A11",
+                "v": "RSK-07",
+                "t": "s",
+                "raw": "RSK-07",
+                "kind": "input"
+              },
+              {
+                "coord": "B11",
+                "v": "A4330, M4350",
+                "t": "s",
+                "raw": "A4330, M4350",
+                "kind": "input"
+              },
+              {
+                "coord": "C11",
+                "v": "Weather / Envelope",
+                "t": "s",
+                "raw": "Weather / Envelope",
+                "kind": "input"
+              },
+              {
+                "coord": "D11",
+                "v": "Atlantic storm rain fails 48h roof ponding / airtightness test (A4330).",
+                "t": "s",
+                "raw": "Atlantic storm rain fails 48h roof ponding / airtightness test (A4330).",
+                "kind": "input"
+              },
+              {
+                "coord": "E11",
+                "v": "3",
+                "t": "n",
+                "raw": 3,
+                "kind": "input"
+              },
+              {
+                "coord": "F11",
+                "v": "4",
+                "t": "n",
+                "raw": 4,
+                "kind": "input"
+              },
+              {
+                "coord": "G11",
+                "v": "12",
+                "f": "=E11*F11",
+                "raw": 12.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "H11",
+                "v": "CRITICAL",
+                "f": "=IF(G11>=20,\"CRITICAL\",IF(G11>=15,\"HIGH\",IF(G11>=8,\"MODERATE\",\"LOW\")))",
+                "raw": "CRITICAL",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "I11",
+                "v": "Civil PSCS",
+                "t": "s",
+                "raw": "Civil PSCS",
+                "kind": "input"
+              },
+              {
+                "coord": "J11",
+                "v": "Sequence early parapet flashing & modular membrane zones pre-winter.",
+                "t": "s",
+                "raw": "Sequence early parapet flashing & modular membrane zones pre-winter.",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A12",
+                "v": "RSK-08",
+                "t": "s",
+                "raw": "RSK-08",
+                "kind": "input"
+              },
+              {
+                "coord": "B12",
+                "v": "A5110-A5405",
+                "t": "s",
+                "raw": "A5110-A5405",
+                "kind": "input"
+              },
+              {
+                "coord": "C12",
+                "v": "HV / MV Works",
+                "t": "s",
+                "raw": "HV / MV Works",
+                "kind": "input"
+              },
+              {
+                "coord": "D12",
+                "v": "110kV GIS & MV ring termination shortage creates critical pinch before M5595.",
+                "t": "s",
+                "raw": "110kV GIS & MV ring termination shortage creates critical pinch before M5595.",
+                "kind": "input"
+              },
+              {
+                "coord": "E12",
+                "v": "3",
+                "t": "n",
+                "raw": 3,
+                "kind": "input"
+              },
+              {
+                "coord": "F12",
+                "v": "5",
+                "t": "n",
+                "raw": 5,
+                "kind": "input"
+              },
+              {
+                "coord": "G12",
+                "v": "15",
+                "f": "=E12*F12",
+                "raw": 15.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "H12",
+                "v": "CRITICAL",
+                "f": "=IF(G12>=20,\"CRITICAL\",IF(G12>=15,\"HIGH\",IF(G12>=8,\"MODERATE\",\"LOW\")))",
+                "raw": "CRITICAL",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "I12",
+                "v": "MEP Director",
+                "t": "s",
+                "raw": "MEP Director",
+                "kind": "input"
+              },
+              {
+                "coord": "J12",
+                "v": "Dual-gang certified HV jointers and completed crane hardstands (A4450).",
+                "t": "s",
+                "raw": "Dual-gang certified HV jointers and completed crane hardstands (A4450).",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A13",
+                "v": "RSK-09",
+                "t": "s",
+                "raw": "RSK-09",
+                "kind": "input"
+              },
+              {
+                "coord": "B13",
+                "v": "A6130-M6260",
+                "t": "s",
+                "raw": "A6130-M6260",
+                "kind": "input"
+              },
+              {
+                "coord": "C13",
+                "v": "BCAR Ancillary",
+                "t": "s",
+                "raw": "BCAR Ancillary",
+                "kind": "input"
+              },
+              {
+                "coord": "D13",
+                "v": "Missing Assigned Certifier inspection records block M6260 static energisation.",
+                "t": "s",
+                "raw": "Missing Assigned Certifier inspection records block M6260 static energisation.",
+                "kind": "input"
+              },
+              {
+                "coord": "E13",
+                "v": "3",
+                "t": "n",
+                "raw": 3,
+                "kind": "input"
+              },
+              {
+                "coord": "F13",
+                "v": "4",
+                "t": "n",
+                "raw": 4,
+                "kind": "input"
+              },
+              {
+                "coord": "G13",
+                "v": "12",
+                "f": "=E13*F13",
+                "raw": 12.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "H13",
+                "v": "CRITICAL",
+                "f": "=IF(G13>=20,\"CRITICAL\",IF(G13>=15,\"HIGH\",IF(G13>=8,\"MODERATE\",\"LOW\")))",
+                "raw": "CRITICAL",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "I13",
+                "v": "Assigned Cert.",
+                "t": "s",
+                "raw": "Assigned Cert.",
+                "kind": "input"
+              },
+              {
+                "coord": "J13",
+                "v": "Track digital BCAR field inspection tags weekly in BIM CDE (A6130).",
+                "t": "s",
+                "raw": "Track digital BCAR field inspection tags weekly in BIM CDE (A6130).",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A14",
+                "v": "RSK-10",
+                "t": "s",
+                "raw": "RSK-10",
+                "kind": "input"
+              },
+              {
+                "coord": "B14",
+                "v": "A6410-M6470",
+                "t": "s",
+                "raw": "A6410-M6470",
+                "kind": "input"
+              },
+              {
+                "coord": "C14",
+                "v": "Commissioning",
+                "t": "s",
+                "raw": "Commissioning",
+                "kind": "input"
+              },
+              {
+                "coord": "D14",
+                "v": "Portable 45 MW load bank shortfall interrupts 48h IST & EN 50600 isolation.",
+                "t": "s",
+                "raw": "Portable 45 MW load bank shortfall interrupts 48h IST & EN 50600 isolation.",
+                "kind": "input"
+              },
+              {
+                "coord": "E14",
+                "v": "4",
+                "t": "n",
+                "raw": 4,
+                "kind": "input"
+              },
+              {
+                "coord": "F14",
+                "v": "5",
+                "t": "n",
+                "raw": 5,
+                "kind": "input"
+              },
+              {
+                "coord": "G14",
+                "v": "20",
+                "f": "=E14*F14",
+                "raw": 20.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "H14",
+                "v": "CRITICAL",
+                "f": "=IF(G14>=20,\"CRITICAL\",IF(G14>=15,\"HIGH\",IF(G14>=8,\"MODERATE\",\"LOW\")))",
+                "raw": "CRITICAL",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "I14",
+                "v": "CxA / Logistics",
+                "t": "s",
+                "raw": "CxA / Logistics",
+                "kind": "input"
+              },
+              {
+                "coord": "J14",
+                "v": "Execute binding load bank & HVO fuel tanker contracts 6 months pre-M6260.",
+                "t": "s",
+                "raw": "Execute binding load bank & HVO fuel tanker contracts 6 months pre-M6260.",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A15",
+                "v": "RSK-11",
+                "t": "s",
+                "raw": "RSK-11",
+                "kind": "input"
+              },
+              {
+                "coord": "B15",
+                "v": "A7020, A7040",
+                "t": "s",
+                "raw": "A7020, A7040",
+                "kind": "input"
+              },
+              {
+                "coord": "C15",
+                "v": "EU Compliance",
+                "t": "s",
+                "raw": "EU Compliance",
+                "kind": "input"
+              },
+              {
+                "coord": "D15",
+                "v": "EU EED telemetry gap fails automated PUE/WUE/ERF validation or EN 50600 audit.",
+                "t": "s",
+                "raw": "EU EED telemetry gap fails automated PUE/WUE/ERF validation or EN 50600 audit.",
+                "kind": "input"
+              },
+              {
+                "coord": "E15",
+                "v": "2",
+                "t": "n",
+                "raw": 2,
+                "kind": "input"
+              },
+              {
+                "coord": "F15",
+                "v": "4",
+                "t": "n",
+                "raw": 4,
+                "kind": "input"
+              },
+              {
+                "coord": "G15",
+                "v": "8",
+                "f": "=E15*F15",
+                "raw": 8.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "H15",
+                "v": "CRITICAL",
+                "f": "=IF(G15>=20,\"CRITICAL\",IF(G15>=15,\"HIGH\",IF(G15>=8,\"MODERATE\",\"LOW\")))",
+                "raw": "CRITICAL",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "I15",
+                "v": "BMS / Ops",
+                "t": "s",
+                "raw": "BMS / Ops",
+                "kind": "input"
+              },
+              {
+                "coord": "J15",
+                "v": "Validate EPMS/BMS revenue tags against Reg. (EU) 2024/1364 schema at L3 (A6240).",
+                "t": "s",
+                "raw": "Validate EPMS/BMS revenue tags against Reg. (EU) 2024/1364 schema at L3 (A6240).",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A16",
+                "v": "RSK-12",
+                "t": "s",
+                "raw": "RSK-12",
+                "kind": "input"
+              },
+              {
+                "coord": "B16",
+                "v": "A7010, A7050",
+                "t": "s",
+                "raw": "A7010, A7050",
+                "kind": "input"
+              },
+              {
+                "coord": "C16",
+                "v": "BCAR Handover",
+                "t": "s",
+                "raw": "BCAR Handover",
+                "kind": "input"
+              },
+              {
+                "coord": "D16",
+                "v": "Late Fire Officer comments or missing Safety File delays BCAR CCC (M7060).",
+                "t": "s",
+                "raw": "Late Fire Officer comments or missing Safety File delays BCAR CCC (M7060).",
+                "kind": "input"
+              },
+              {
+                "coord": "E16",
+                "v": "4",
+                "t": "n",
+                "raw": 4,
+                "kind": "input"
+              },
+              {
+                "coord": "F16",
+                "v": "5",
+                "t": "n",
+                "raw": 5,
+                "kind": "input"
+              },
+              {
+                "coord": "G16",
+                "v": "20",
+                "f": "=E16*F16",
+                "raw": 20.0,
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "H16",
+                "v": "CRITICAL",
+                "f": "=IF(G16>=20,\"CRITICAL\",IF(G16>=15,\"HIGH\",IF(G16>=8,\"MODERATE\",\"LOW\")))",
+                "raw": "CRITICAL",
+                "t": "f",
+                "kind": "calc"
+              },
+              {
+                "coord": "I16",
+                "v": "PSDP / AC",
+                "t": "s",
+                "raw": "PSDP / AC",
+                "kind": "input"
+              },
+              {
+                "coord": "J16",
+                "v": "Compile Safety File progressively (A6520) & run Fire Officer mock walkdowns.",
+                "t": "s",
+                "raw": "Compile Safety File progressively (A6520) & run Fire Officer mock walkdowns.",
+                "kind": "input"
+              }
+            ]
+          ]
+        },
+        {
+          "name": "5. Stakeholder & Comms Plan",
+          "maxRow": 10,
+          "maxCol": 7,
+          "formulaCount": 0,
+          "columns": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G"
+          ],
+          "rows": [
+            [
+              {
+                "coord": "A1",
+                "v": "IRELAND & EU STAKEHOLDER REGISTRY & REPORTING CADENCE",
+                "t": "s",
+                "raw": "IRELAND & EU STAKEHOLDER REGISTRY & REPORTING CADENCE",
+                "kind": "banner",
+                "cspan": 7
+              },
+              {
+                "coord": "B1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G1",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A2",
+                "v": "Local Authorities, An Bord Pleanala, EPA, EirGrid, CRU, BCMS, HSA & EU EED Database",
+                "t": "s",
+                "raw": "Local Authorities, An Bord Pleanala, EPA, EirGrid, CRU, BCMS, HSA & EU EED Database",
+                "kind": "banner",
+                "cspan": 7
+              },
+              {
+                "coord": "B2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "C2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "D2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "E2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "F2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              },
+              {
+                "coord": "G2",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty",
+                "skip": true
+              }
+            ],
+            [
+              {
+                "coord": "A3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "B3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "C3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "D3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "E3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "F3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              },
+              {
+                "coord": "G3",
+                "v": "",
+                "t": "empty",
+                "raw": "",
+                "kind": "empty"
+              }
+            ],
+            [
+              {
+                "coord": "A4",
+                "v": "ID",
+                "t": "s",
+                "raw": "ID",
+                "kind": "input"
+              },
+              {
+                "coord": "B4",
+                "v": "Stakeholder / Authority",
+                "t": "s",
+                "raw": "Stakeholder / Authority",
+                "kind": "input"
+              },
+              {
+                "coord": "C4",
+                "v": "Jurisdiction / Interest",
+                "t": "s",
+                "raw": "Jurisdiction / Interest",
+                "kind": "input"
+              },
+              {
+                "coord": "D4",
+                "v": "Influence",
+                "t": "s",
+                "raw": "Influence",
+                "kind": "input"
+              },
+              {
+                "coord": "E4",
+                "v": "Owner",
+                "t": "s",
+                "raw": "Owner",
+                "kind": "input"
+              },
+              {
+                "coord": "F4",
+                "v": "Engagement Strategy",
+                "t": "s",
+                "raw": "Engagement Strategy",
+                "kind": "input"
+              },
+              {
+                "coord": "G4",
+                "v": "Key XER Gates",
+                "t": "s",
+                "raw": "Key XER Gates",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A5",
+                "v": "STK-01",
+                "t": "s",
+                "raw": "STK-01",
+                "kind": "input"
+              },
+              {
+                "coord": "B5",
+                "v": "Local Authority / An Bord Pleanala",
+                "t": "s",
+                "raw": "Local Authority / An Bord Pleanala",
+                "kind": "header"
+              },
+              {
+                "coord": "C5",
+                "v": "Planning Permission / SID & Section 247 Pre-Planning",
+                "t": "s",
+                "raw": "Planning Permission / SID & Section 247 Pre-Planning",
+                "kind": "input"
+              },
+              {
+                "coord": "D5",
+                "v": "Critical",
+                "t": "s",
+                "raw": "Critical",
+                "kind": "input"
+              },
+              {
+                "coord": "E5",
+                "v": "Planning Lead",
+                "t": "s",
+                "raw": "Planning Lead",
+                "kind": "input"
+              },
+              {
+                "coord": "F5",
+                "v": "Pre-consult early; submit robust EIAR & local infrastructure mitigation.",
+                "t": "s",
+                "raw": "Pre-consult early; submit robust EIAR & local infrastructure mitigation.",
+                "kind": "input"
+              },
+              {
+                "coord": "G5",
+                "v": "A1020-A1040",
+                "t": "s",
+                "raw": "A1020-A1040",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A6",
+                "v": "STK-02",
+                "t": "s",
+                "raw": "STK-02",
+                "kind": "input"
+              },
+              {
+                "coord": "B6",
+                "v": "Environmental Protection Agency (EPA)",
+                "t": "s",
+                "raw": "Environmental Protection Agency (EPA)",
+                "kind": "input"
+              },
+              {
+                "coord": "C6",
+                "v": "Industrial Emissions Licence (IEL) & NOx/Noise limits",
+                "t": "s",
+                "raw": "Industrial Emissions Licence (IEL) & NOx/Noise limits",
+                "kind": "input"
+              },
+              {
+                "coord": "D6",
+                "v": "Critical",
+                "t": "s",
+                "raw": "Critical",
+                "kind": "input"
+              },
+              {
+                "coord": "E6",
+                "v": "Env. Manager",
+                "t": "s",
+                "raw": "Env. Manager",
+                "kind": "input"
+              },
+              {
+                "coord": "F6",
+                "v": "Demonstrate HVO fuel transition, SCR abatement & climate alignment.",
+                "t": "s",
+                "raw": "Demonstrate HVO fuel transition, SCR abatement & climate alignment.",
+                "kind": "input"
+              },
+              {
+                "coord": "G6",
+                "v": "A1050, A6320",
+                "t": "s",
+                "raw": "A1050, A6320",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A7",
+                "v": "STK-03",
+                "t": "s",
+                "raw": "STK-03",
+                "kind": "input"
+              },
+              {
+                "coord": "B7",
+                "v": "EirGrid / ESB Networks / CRU",
+                "t": "s",
+                "raw": "EirGrid / ESB Networks / CRU",
+                "kind": "input"
+              },
+              {
+                "coord": "C7",
+                "v": "110kV ECP Offer, MIC, BESS Grid Stability & PPA",
+                "t": "s",
+                "raw": "110kV ECP Offer, MIC, BESS Grid Stability & PPA",
+                "kind": "input"
+              },
+              {
+                "coord": "D7",
+                "v": "Critical",
+                "t": "s",
+                "raw": "Critical",
+                "kind": "input"
+              },
+              {
+                "coord": "E7",
+                "v": "Grid Director",
+                "t": "s",
+                "raw": "Grid Director",
+                "kind": "input"
+              },
+              {
+                "coord": "F7",
+                "v": "Maintain dynamic RMS studies & dispatchable BESS readiness.",
+                "t": "s",
+                "raw": "Maintain dynamic RMS studies & dispatchable BESS readiness.",
+                "kind": "input"
+              },
+              {
+                "coord": "G7",
+                "v": "A1060, A1070, A7030",
+                "t": "s",
+                "raw": "A1060, A1070, A7030",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A8",
+                "v": "STK-04",
+                "t": "s",
+                "raw": "STK-04",
+                "kind": "input"
+              },
+              {
+                "coord": "B8",
+                "v": "Building Control Authority (BCMS)",
+                "t": "s",
+                "raw": "Building Control Authority (BCMS)",
+                "kind": "input"
+              },
+              {
+                "coord": "C8",
+                "v": "BCAR Commencement, FSC, DAC & Completion Certificate",
+                "t": "s",
+                "raw": "BCAR Commencement, FSC, DAC & Completion Certificate",
+                "kind": "input"
+              },
+              {
+                "coord": "D8",
+                "v": "Critical",
+                "t": "s",
+                "raw": "Critical",
+                "kind": "input"
+              },
+              {
+                "coord": "E8",
+                "v": "Assigned Cert.",
+                "t": "s",
+                "raw": "Assigned Cert.",
+                "kind": "input"
+              },
+              {
+                "coord": "F8",
+                "v": "Zero-deviation progressive inspection logs & ancillary certs.",
+                "t": "s",
+                "raw": "Zero-deviation progressive inspection logs & ancillary certs.",
+                "kind": "input"
+              },
+              {
+                "coord": "G8",
+                "v": "A1080, A1085, A7050",
+                "t": "s",
+                "raw": "A1080, A1085, A7050",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A9",
+                "v": "STK-05",
+                "t": "s",
+                "raw": "STK-05",
+                "kind": "input"
+              },
+              {
+                "coord": "B9",
+                "v": "Health & Safety Authority (HSA)",
+                "t": "s",
+                "raw": "Health & Safety Authority (HSA)",
+                "kind": "header"
+              },
+              {
+                "coord": "C9",
+                "v": "SI 291/2013 PSDP/PSCS Compliance, AF1 & Safe Pass",
+                "t": "s",
+                "raw": "SI 291/2013 PSDP/PSCS Compliance, AF1 & Safe Pass",
+                "kind": "input"
+              },
+              {
+                "coord": "D9",
+                "v": "High",
+                "t": "s",
+                "raw": "High",
+                "kind": "input"
+              },
+              {
+                "coord": "E9",
+                "v": "PSDP / PSCS",
+                "t": "s",
+                "raw": "PSDP / PSCS",
+                "kind": "input"
+              },
+              {
+                "coord": "F9",
+                "v": "Submit AF1 pre-start, audit weekly CSCS cards & finalize Safety File.",
+                "t": "s",
+                "raw": "Submit AF1 pre-start, audit weekly CSCS cards & finalize Safety File.",
+                "kind": "input"
+              },
+              {
+                "coord": "G9",
+                "v": "A1010, A1085, A6520",
+                "t": "s",
+                "raw": "A1010, A1085, A6520",
+                "kind": "input"
+              }
+            ],
+            [
+              {
+                "coord": "A10",
+                "v": "STK-06",
+                "t": "s",
+                "raw": "STK-06",
+                "kind": "input"
+              },
+              {
+                "coord": "B10",
+                "v": "EU EED Database / EN 50600 Auditors",
+                "t": "s",
+                "raw": "EU EED Database / EN 50600 Auditors",
+                "kind": "input"
+              },
+              {
+                "coord": "C10",
+                "v": "Reg (EU) 2024/1364 PUE/WUE/ERF & Class 3 Audit",
+                "t": "s",
+                "raw": "Reg (EU) 2024/1364 PUE/WUE/ERF & Class 3 Audit",
+                "kind": "input"
+              },
+              {
+                "coord": "D10",
+                "v": "High",
+                "t": "s",
+                "raw": "High",
+                "kind": "input"
+              },
+              {
+                "coord": "E10",
+                "v": "FM Ops / CxA",
+                "t": "s",
+                "raw": "FM Ops / CxA",
+                "kind": "input"
+              },
+              {
+                "coord": "F10",
+                "v": "Validate automated EPMS telemetry & Uptime/EN 50600 dual sign-off.",
+                "t": "s",
+                "raw": "Validate automated EPMS telemetry & Uptime/EN 50600 dual sign-off.",
+                "kind": "input"
+              },
+              {
+                "coord": "G10",
+                "v": "A2090, A7020, A7040",
+                "t": "s",
+                "raw": "A2090, A7020, A7040",
+                "kind": "input"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  },
   "modules": [
     {
-      "id": "PKG-01",
-      "title": "Project Mandate, Multi-Party Governance & Stakeholder SLA",
-      "desc": "Unifies the formal executive charter, multi-party RACI accountability, SteerCo ToR and statutory permitting escalation into one coherent governance framework.",
+      "id": "PM-01",
+      "title": "Project Charter, Governance Structure & RACI Matrix",
+      "desc": "Establish Project Charter, Sponsor authority, Steering Committee cadence, success thresholds, and multi-party RACI governance.",
       "tags": [
-        "PMI PMBOK",
-        "ISO 21502",
-        "S.I. 291/2013",
-        "SteerCo Quorum",
-        "72h Escalation SLA"
+        "Charter",
+        "Governance",
+        "RACI"
       ],
-      "legacyModIds": [
-        "PM-01",
-        "PM-06"
-      ],
-      "folder": "G:\\My Drive\\7. AI\\DataCenter_EU_Ireland\\Phase_1_Consolidated_Path_B_RIBA_0_1\\PKG-01_Governance_Mandate_SLA",
-      "readme": "# PKG-01: Project Mandate, Multi-Party Governance & Stakeholder SLA\n\n- **Phase**: `Phase 1: Initiation, Charter & Business Case (RIBA 0-1)`\n- **P6 Milestone Gate**: `M1000 (2027-01-04)`\n- **RIBA Stage**: `RIBA Stage 0-1`\n- **Governing Standards**: PMI PMBOK 7th Ed, ISO 21502, S.I. 291/2013 (PSDP/PSCS), BCAR 2014, Irish Planning & Development Act Section 247\n- **WBS Scope**: `WBS 1.0-PERM & WBS 7.0-CORP`\n- **Focus Areas**: Executive Sponsor Mandate, SteerCo Constitution & Quorum (>=60%/80%), DoA Tiers 0-3, Multi-Party RACI Matrix, Statutory Stakeholder Relations (An Bord Pleanala, EPA, EirGrid/ESB, HSA, BCMS), and 72-Hour Fast-Track Escalation SLA.\n\n## Module Overview\nPKG-01 establishes the institutional foundation for the DC45-EU campus. It unifies internal corporate authorization with external statutory engagement into one coherent governance framework.\n\n## Consolidated Deliverables (`Doc 1` -> `Doc 4`)\n\n| Doc | Category | Title | Dedicated Local Artifact | Purpose & Regulatory Focus |\n| :--- | :--- | :--- | :--- | :--- |\n| Doc 1 | MANDATE | Executive Project Charter & Statutory Authority Mandate | `PKG01_Doc1_Mandate_Executive_Project_Charter_Statutory_Rev.001.docx` | Formal business objectives, sponsor delegations, and statutory consent boundaries. |\n| Doc 2 | GOVERNANCE | Multi-Party Governance Framework & RACI Responsibility Matrix | `PKG01_Doc2_Governance_MultiParty_RACI_Matrix_Rev.001.xlsx` | Single-point accountability across Sponsor, PM, EPCm, PSDP, PSCS, Assigned Certifier, and CxA. |\n| Doc 3 | STAKEHOLDER | Stakeholder Influence Register & Statutory Engagement Matrix | `PKG01_Doc3_Stakeholder_Influence_Statutory_Matrix_Rev.001.xlsx` | Institutional engagement rhythm across hyperscale anchor tenants, utilities, planning authorities, and public. |\n| Doc 4 | AUDIT | SteerCo Terms of Reference, Quorum & 72-Hour Escalation SLA | `PKG01_Doc4_Audit_SteerCo_ToR_Quorum_Escalation_SLA_Rev.001.docx` | Voting thresholds, financial sign-off caps (Tiers 0-3), Non-Override rules, and critical 72h escalation SLA. |\n\nCompanion Workbook: `PKG01_Doc4_Audit_SteerCo_DoA_Quorum_Audit_Rev.001.xlsx` (Interactive DoA Calculator, Quorum Simulation, Escalation Triggers).\n",
+      "folder": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-01_Project_Charter_Governance_RACI",
+      "readme": "# PM-01: Project Charter, Governance Structure & RACI Matrix\n\n- **Phase**: `Phase 1: Initiation, Charter & Business Case (RIBA 0-1)`\n- **RIBA Stage**: `RIBA Stage 0-1`\n- **P6 Milestone Gate**: `M1000 (2027-01-04)`\n- **WBS Scope**: `WBS 1.0-PERM`\n- **Governing Standards**: PMI PMBOK, I.S. EN 50600, S.I. 291/2013 PSDP/PSCS\n- **Focus Areas**: Sponsor, PM, PSDP, PSCS, Assigned Certifier, CxA\n\n## Module Overview\nEstablish Project Charter, Sponsor authority, Steering Committee cadence, success thresholds, and multi-party RACI governance.\n\n## Ordered Flashcard Documents (`Doc 1` -> `Doc 4`)\n\n| Doc | Category | Title | Exact Local File | Companion / Notes |\n| :--- | :--- | :--- | :--- | :--- |\n| Doc 1 | Standard | PMI PMBOK Project Charter Guideline & RIBA Stage 0-1 Client Brief | `PM01_Doc1_Standard_PMI_PMBOK_Project_Charter_Guideline_Rev.004.docx` | PMBOK / RIBA Stage 0-1 |\n| Doc 2 | Deliverable | Executive Project Charter Document (Objectives, 45 MW Scope & PM Authority) | `PM01_Doc2_Deliverable_Project_Charter_Summary_Master_Rev.004.xlsx` | Sheet 1. Charter Summary |\n| Doc 3 | Template | Multi-Party Governance Framework & RACI Responsibility Matrix | `PM01_Doc3_Template_Governance_RACI_Charter_Master_Rev.004.xlsx` | Sheet 2. Governance & RACI |\n| Doc 4 | Audit | Steering Committee Terms of Reference, Quorum & Escalation Charter | `PM01_Doc4_Audit_SteerCo_ToR_Escalation_Charter_Rev.004.docx` | Companion workbook: `PM01_Doc4_Audit_SteerCo_DoA_Quorum_Audit_Rev.004.xlsx` |\n\n## Study Takeaway (`Why Each Document Matters`)\n- **Doc 1 (Standard)**: Understand sponsor authority, business objectives, and formal project authorization.\n- **Doc 2 (Deliverable)**: Benchmark real DC45-EU charter scope boundaries, KPIs, and stage-gate mandates.\n- **Doc 3 (Template)**: Map Responsible, Accountable, Consulted, and Informed roles across Sponsor, EPCm, and CxA.\n- **Doc 4 (Audit)**: Define executive voting thresholds, financial sign-off limits, and escalation paths.\n",
       "docs": [
         {
-          "docId": "PKG-01-D1",
+          "docId": "PM-01-D1",
           "idx0": 0,
-          "cat": "MANDATE",
-          "title": "Executive Project Charter & Statutory Authority Mandate",
-          "ref": "PMI PMBOK / RIBA Stage 0-1 / Irish Planning Acts",
-          "why": "Authorizes the 45 MW Dublin campus under RIBA Stage 0-1, establishes business objectives, defines PM financial delegations, and sets statutory consent boundaries.",
-          "fileName": "PKG01_Doc1_Mandate_Executive_Project_Charter_Statutory_Rev.001.docx",
+          "cat": "Standard",
+          "title": "PMI PMBOK Project Charter Guideline & RIBA Stage 0-1 Client Brief",
+          "ref": "PMBOK / RIBA Stage 0-1",
+          "why": "Understand sponsor authority, business objectives, and formal project authorization.",
+          "fileName": "PM01_Doc1_Standard_PMI_PMBOK_Project_Charter_Guideline_Rev.004.docx",
           "ext": "DOCX",
-          "downloadUrl": "files/PKG-01/PKG01_Doc1_Mandate_Executive_Project_Charter_Statutory_Rev.001.docx",
-          "localPath": "G:\\My Drive\\7. AI\\DataCenter_EU_Ireland\\Phase_1_Consolidated_Path_B_RIBA_0_1\\PKG-01_Governance_Mandate_SLA\\PKG01_Doc1_Mandate_Executive_Project_Charter_Statutory_Rev.001.docx",
+          "downloadUrl": "files/PM-01/PM01_Doc1_Standard_PMI_PMBOK_Project_Charter_Guideline_Rev.004.docx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-01_Project_Charter_Governance_RACI\\PM01_Doc1_Standard_PMI_PMBOK_Project_Charter_Guideline_Rev.004.docx",
           "renderType": "docx",
           "docx": {
-            "fileName": "PKG01_Doc1_Mandate_Executive_Project_Charter_Statutory_Rev.001.docx",
+            "fileName": "PM01_Doc1_Standard_PMI_PMBOK_Project_Charter_Guideline_Rev.004.docx",
             "blocks": [
               {
                 "type": "banner",
@@ -248,2302 +13307,49 @@ window.PHASE1_PORTAL_DATA = {
           }
         },
         {
-          "docId": "PKG-01-D2",
+          "docId": "PM-01-D2",
           "idx0": 1,
-          "cat": "GOVERNANCE",
-          "title": "Multi-Party Governance Framework & RACI Responsibility Matrix",
-          "ref": "ISO 21502 / S.I. 291/2013 / BCAR 2014",
-          "why": "Maps single-point accountability (A), execution (R), consultation (C), and informing (I) across Sponsor, PM, EPCm, PSDP, PSCS, Assigned Certifier, and CxA.",
-          "fileName": "PKG01_Doc2_Governance_MultiParty_RACI_Matrix_Rev.001.xlsx",
+          "cat": "Deliverable",
+          "title": "Executive Project Charter Document (Objectives, 45 MW Scope & PM Authority)",
+          "ref": "Sheet 1. Charter Summary",
+          "why": "Benchmark real DC45-EU charter scope boundaries, KPIs, and stage-gate mandates.",
+          "fileName": "PM01_Doc2_Deliverable_Project_Charter_Summary_Master_Rev.004.xlsx",
           "ext": "XLSX",
-          "downloadUrl": "files/PKG-01/PKG01_Doc2_Governance_MultiParty_RACI_Matrix_Rev.001.xlsx",
-          "localPath": "G:\\My Drive\\7. AI\\DataCenter_EU_Ireland\\Phase_1_Consolidated_Path_B_RIBA_0_1\\PKG-01_Governance_Mandate_SLA\\PKG01_Doc2_Governance_MultiParty_RACI_Matrix_Rev.001.xlsx",
-          "renderType": "xlsx",
-          "xlsx": {
-            "fileName": "PKG01_Doc2_Governance_MultiParty_RACI_Matrix_Rev.001.xlsx",
-            "sheetCount": 1,
-            "totalCells": 216,
-            "formulaCells": 0,
-            "sheets": [
-              {
-                "name": "4. Governance & Organization",
-                "maxRow": 27,
-                "maxCol": 8,
-                "formulaCount": 0,
-                "columns": [
-                  "A",
-                  "B",
-                  "C",
-                  "D",
-                  "E",
-                  "F",
-                  "G",
-                  "H"
-                ],
-                "rows": [
-                  [
-                    {
-                      "coord": "A1",
-                      "v": "PROJECT GOVERNANCE, IRISH STATUTORY APPOINTMENTS & RACI MATRIX",
-                      "t": "s",
-                      "raw": "PROJECT GOVERNANCE, IRISH STATUTORY APPOINTMENTS & RACI MATRIX",
-                      "kind": "banner",
-                      "cspan": 8
-                    },
-                    {
-                      "coord": "B1",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C1",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "D1",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E1",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F1",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G1",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H1",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A2",
-                      "v": "S.I. No. 291/2013 PSDP/PSCS, BCAR Design/Assigned Certifier & NEC4/FIDIC Escalation",
-                      "t": "s",
-                      "raw": "S.I. No. 291/2013 PSDP/PSCS, BCAR Design/Assigned Certifier & NEC4/FIDIC Escalation",
-                      "kind": "banner",
-                      "cspan": 8
-                    },
-                    {
-                      "coord": "B2",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C2",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "D2",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E2",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F2",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G2",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H2",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A3",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "B3",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "C3",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "D3",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "E3",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "F3",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "G3",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "H3",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A4",
-                      "v": "1. CHANGE CONTROL ESCALATION TIERS",
-                      "t": "s",
-                      "raw": "1. CHANGE CONTROL ESCALATION TIERS",
-                      "kind": "section",
-                      "cspan": 8
-                    },
-                    {
-                      "coord": "B4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "D4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A5",
-                      "v": "Tier",
-                      "t": "s",
-                      "raw": "Tier",
-                      "kind": "header",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "B5",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C5",
-                      "v": "Delegated Authority",
-                      "t": "s",
-                      "raw": "Delegated Authority",
-                      "kind": "header",
-                      "cspan": 3
-                    },
-                    {
-                      "coord": "D5",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E5",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F5",
-                      "v": "Escalation Trigger",
-                      "t": "s",
-                      "raw": "Escalation Trigger",
-                      "kind": "header",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "G5",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H5",
-                      "v": "Record",
-                      "t": "s",
-                      "raw": "Record",
-                      "kind": "header"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A6",
-                      "v": "Tier 1: Project Director",
-                      "t": "s",
-                      "raw": "Tier 1: Project Director",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "B6",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C6",
-                      "v": "Non-critical float (>0d), NEC4 Compensation Events within package contingency.",
-                      "t": "s",
-                      "raw": "Non-critical float (>0d), NEC4 Compensation Events within package contingency.",
-                      "kind": "input",
-                      "cspan": 3
-                    },
-                    {
-                      "coord": "D6",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E6",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F6",
-                      "v": "Within BAC & float > 0d",
-                      "t": "s",
-                      "raw": "Within BAC & float > 0d",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "G6",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H6",
-                      "v": "Monthly EVM Report",
-                      "t": "s",
-                      "raw": "Monthly EVM Report",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A7",
-                      "v": "Tier 2: Change Control Board",
-                      "t": "s",
-                      "raw": "Tier 2: Change Control Board",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "B7",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C7",
-                      "v": "Impacts to Planning conditions, EPA IEL limits, BCAR FSC, EirGrid MIC or EN 50600 Class 3.",
-                      "t": "s",
-                      "raw": "Impacts to Planning conditions, EPA IEL limits, BCAR FSC, EirGrid MIC or EN 50600 Class 3.",
-                      "kind": "input",
-                      "cspan": 3
-                    },
-                    {
-                      "coord": "D7",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E7",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F7",
-                      "v": "Critical Path or Statutory Spec",
-                      "t": "s",
-                      "raw": "Critical Path or Statutory Spec",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "G7",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H7",
-                      "v": "Formal CCB Instruction",
-                      "t": "s",
-                      "raw": "Formal CCB Instruction",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A8",
-                      "v": "Tier 3: Board / Investment Comm.",
-                      "t": "s",
-                      "raw": "Tier 3: Board / Investment Comm.",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "B8",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C8",
-                      "v": "Total EUR BAC overrun, COD shift beyond 2030-05-20 or <45 MW critical capacity.",
-                      "t": "s",
-                      "raw": "Total EUR BAC overrun, COD shift beyond 2030-05-20 or <45 MW critical capacity.",
-                      "kind": "input",
-                      "cspan": 3
-                    },
-                    {
-                      "coord": "D8",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E8",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F8",
-                      "v": "Total BAC or COD > 2030-05-20",
-                      "t": "s",
-                      "raw": "Total BAC or COD > 2030-05-20",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "G8",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H8",
-                      "v": "Board Resolution",
-                      "t": "s",
-                      "raw": "Board Resolution",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A9",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "B9",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "C9",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "D9",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "E9",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "F9",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "G9",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "H9",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A10",
-                      "v": "2. IRISH STATUTORY & EU TECHNICAL ROLE MANDATES",
-                      "t": "s",
-                      "raw": "2. IRISH STATUTORY & EU TECHNICAL ROLE MANDATES",
-                      "kind": "section",
-                      "cspan": 8
-                    },
-                    {
-                      "coord": "B10",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C10",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "D10",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E10",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F10",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G10",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H10",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A11",
-                      "v": "Statutory / Key Role",
-                      "t": "s",
-                      "raw": "Statutory / Key Role",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "B11",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C11",
-                      "v": "Mandatory Qualification / Law",
-                      "t": "s",
-                      "raw": "Mandatory Qualification / Law",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "D11",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E11",
-                      "v": "Core Accountability & Veto Rights",
-                      "t": "s",
-                      "raw": "Core Accountability & Veto Rights",
-                      "kind": "section",
-                      "cspan": 4
-                    },
-                    {
-                      "coord": "F11",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G11",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H11",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A12",
-                      "v": "PSDP (Design Supervisor)",
-                      "t": "s",
-                      "raw": "PSDP (Design Supervisor)",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "B12",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C12",
-                      "v": "SI 291/2013 Competent Designer Appointment",
-                      "t": "s",
-                      "raw": "SI 291/2013 Competent Designer Appointment",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "D12",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E12",
-                      "v": "Design risk elimination, AF1 design safety, compiles statutory Safety File (A6520).",
-                      "t": "s",
-                      "raw": "Design risk elimination, AF1 design safety, compiles statutory Safety File (A6520).",
-                      "kind": "section",
-                      "cspan": 4
-                    },
-                    {
-                      "coord": "F12",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G12",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H12",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A13",
-                      "v": "PSCS (Construction Sup.)",
-                      "t": "s",
-                      "raw": "PSCS (Construction Sup.)",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "B13",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C13",
-                      "v": "SI 291/2013 Principal Contractor Appointment",
-                      "t": "s",
-                      "raw": "SI 291/2013 Principal Contractor Appointment",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "D13",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E13",
-                      "v": "Coordinates multi-contractor M&E site safety, Safe Pass / CSCS checks, HSA AF1.",
-                      "t": "s",
-                      "raw": "Coordinates multi-contractor M&E site safety, Safe Pass / CSCS checks, HSA AF1.",
-                      "kind": "section",
-                      "cspan": 4
-                    },
-                    {
-                      "coord": "F13",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G13",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H13",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A14",
-                      "v": "Assigned Certifier",
-                      "t": "s",
-                      "raw": "Assigned Certifier",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "B14",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C14",
-                      "v": "Chartered Engineer/Architect (BCAR 2014)",
-                      "t": "s",
-                      "raw": "Chartered Engineer/Architect (BCAR 2014)",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "D14",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E14",
-                      "v": "BCMS Commencement Notice, Ancillary Certs, Inspection Plan & Certificate of Compliance (A7050).",
-                      "t": "s",
-                      "raw": "BCMS Commencement Notice, Ancillary Certs, Inspection Plan & Certificate of Compliance (A7050).",
-                      "kind": "section",
-                      "cspan": 4
-                    },
-                    {
-                      "coord": "F14",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G14",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H14",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A15",
-                      "v": "EN 50600 / Uptime Lead",
-                      "t": "s",
-                      "raw": "EN 50600 / Uptime Lead",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "B15",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C15",
-                      "v": "CEI / Uptime ATD-ATS Specialist",
-                      "t": "s",
-                      "raw": "CEI / Uptime ATD-ATS Specialist",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "D15",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E15",
-                      "v": "Verifies EN 50600-2-x Class 3, Tier III concurrent maintainability & EED ERF readiness.",
-                      "t": "s",
-                      "raw": "Verifies EN 50600-2-x Class 3, Tier III concurrent maintainability & EED ERF readiness.",
-                      "kind": "section",
-                      "cspan": 4
-                    },
-                    {
-                      "coord": "F15",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G15",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H15",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A16",
-                      "v": "Independent CxA",
-                      "t": "s",
-                      "raw": "Independent CxA",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "B16",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C16",
-                      "v": "CIBSE / ASHRAE Accredited Cx Authority",
-                      "t": "s",
-                      "raw": "CIBSE / ASHRAE Accredited Cx Authority",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "D16",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E16",
-                      "v": "Independent veto at M6260 (L3), M6370 (L4) & M6470 (45 MW 48h IST).",
-                      "t": "s",
-                      "raw": "Independent veto at M6260 (L3), M6370 (L4) & M6470 (45 MW 48h IST).",
-                      "kind": "section",
-                      "cspan": 4
-                    },
-                    {
-                      "coord": "F16",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G16",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H16",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A17",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "B17",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "C17",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "D17",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "E17",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "F17",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "G17",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "H17",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A18",
-                      "v": "3. CROSS-FUNCTIONAL RACI MATRIX",
-                      "t": "s",
-                      "raw": "3. CROSS-FUNCTIONAL RACI MATRIX",
-                      "kind": "section",
-                      "cspan": 8
-                    },
-                    {
-                      "coord": "B18",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C18",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "D18",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E18",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F18",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G18",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H18",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A19",
-                      "v": "WBS",
-                      "t": "s",
-                      "raw": "WBS",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B19",
-                      "v": "Deliverable / Gate",
-                      "t": "s",
-                      "raw": "Deliverable / Gate",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C19",
-                      "v": "Sponsor",
-                      "t": "s",
-                      "raw": "Sponsor",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D19",
-                      "v": "Proj. Dir",
-                      "t": "s",
-                      "raw": "Proj. Dir",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E19",
-                      "v": "PSDP / Des",
-                      "t": "s",
-                      "raw": "PSDP / Des",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F19",
-                      "v": "PSCS / EPC",
-                      "t": "s",
-                      "raw": "PSCS / EPC",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G19",
-                      "v": "CxA / AC",
-                      "t": "s",
-                      "raw": "CxA / AC",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H19",
-                      "v": "Ops",
-                      "t": "s",
-                      "raw": "Ops",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A20",
-                      "v": "1.0-PERM",
-                      "t": "s",
-                      "raw": "1.0-PERM",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B20",
-                      "v": "Planning (SID), EPA IEL, EirGrid & BCAR Start (M1090)",
-                      "t": "s",
-                      "raw": "Planning (SID), EPA IEL, EirGrid & BCAR Start (M1090)",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C20",
-                      "v": "A",
-                      "t": "s",
-                      "raw": "A",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D20",
-                      "v": "R",
-                      "t": "s",
-                      "raw": "R",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E20",
-                      "v": "C",
-                      "t": "s",
-                      "raw": "C",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F20",
-                      "v": "I",
-                      "t": "s",
-                      "raw": "I",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G20",
-                      "v": "C",
-                      "t": "s",
-                      "raw": "C",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H20",
-                      "v": "I",
-                      "t": "s",
-                      "raw": "I",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A21",
-                      "v": "2.0-ENG",
-                      "t": "s",
-                      "raw": "2.0-ENG",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B21",
-                      "v": "ISO 19650 BIM Freeze, EN 50600 & EED Schema (M2110)",
-                      "t": "s",
-                      "raw": "ISO 19650 BIM Freeze, EN 50600 & EED Schema (M2110)",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C21",
-                      "v": "I",
-                      "t": "s",
-                      "raw": "I",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D21",
-                      "v": "A",
-                      "t": "s",
-                      "raw": "A",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E21",
-                      "v": "R",
-                      "t": "s",
-                      "raw": "R",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F21",
-                      "v": "C",
-                      "t": "s",
-                      "raw": "C",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G21",
-                      "v": "C",
-                      "t": "s",
-                      "raw": "C",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H21",
-                      "v": "C",
-                      "t": "s",
-                      "raw": "C",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A22",
-                      "v": "3.0-PROC",
-                      "t": "s",
-                      "raw": "3.0-PROC",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B22",
-                      "v": "EU Plant Manufacture, FAT & Port Logistics (M3120)",
-                      "t": "s",
-                      "raw": "EU Plant Manufacture, FAT & Port Logistics (M3120)",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C22",
-                      "v": "I",
-                      "t": "s",
-                      "raw": "I",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D22",
-                      "v": "A",
-                      "t": "s",
-                      "raw": "A",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E22",
-                      "v": "C",
-                      "t": "s",
-                      "raw": "C",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F22",
-                      "v": "R",
-                      "t": "s",
-                      "raw": "R",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G22",
-                      "v": "C",
-                      "t": "s",
-                      "raw": "C",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H22",
-                      "v": "I",
-                      "t": "s",
-                      "raw": "I",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A23",
-                      "v": "4.x-CIVIL",
-                      "t": "s",
-                      "raw": "4.x-CIVIL",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B23",
-                      "v": "Piling, Shell, Weather-Tight & Security (M4350)",
-                      "t": "s",
-                      "raw": "Piling, Shell, Weather-Tight & Security (M4350)",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C23",
-                      "v": "I",
-                      "t": "s",
-                      "raw": "I",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D23",
-                      "v": "A",
-                      "t": "s",
-                      "raw": "A",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E23",
-                      "v": "C",
-                      "t": "s",
-                      "raw": "C",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F23",
-                      "v": "R",
-                      "t": "s",
-                      "raw": "R",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G23",
-                      "v": "C",
-                      "t": "s",
-                      "raw": "C",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H23",
-                      "v": "I",
-                      "t": "s",
-                      "raw": "I",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A24",
-                      "v": "5.x-MEP",
-                      "t": "s",
-                      "raw": "5.x-MEP",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B24",
-                      "v": "110kV GIS, HVO/BESS, CHW/ERF & Halls 1-5 (M5595)",
-                      "t": "s",
-                      "raw": "110kV GIS, HVO/BESS, CHW/ERF & Halls 1-5 (M5595)",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C24",
-                      "v": "I",
-                      "t": "s",
-                      "raw": "I",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D24",
-                      "v": "A",
-                      "t": "s",
-                      "raw": "A",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E24",
-                      "v": "C",
-                      "t": "s",
-                      "raw": "C",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F24",
-                      "v": "R",
-                      "t": "s",
-                      "raw": "R",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G24",
-                      "v": "C",
-                      "t": "s",
-                      "raw": "C",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H24",
-                      "v": "I",
-                      "t": "s",
-                      "raw": "I",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A25",
-                      "v": "6.1-6.4",
-                      "t": "s",
-                      "raw": "6.1-6.4",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B25",
-                      "v": "CIBSE/ASHRAE Cx L1-L5 & 45MW IST (M6470)",
-                      "t": "s",
-                      "raw": "CIBSE/ASHRAE Cx L1-L5 & 45MW IST (M6470)",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C25",
-                      "v": "I",
-                      "t": "s",
-                      "raw": "I",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D25",
-                      "v": "A",
-                      "t": "s",
-                      "raw": "A",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E25",
-                      "v": "C",
-                      "t": "s",
-                      "raw": "C",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F25",
-                      "v": "R",
-                      "t": "s",
-                      "raw": "R",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G25",
-                      "v": "R",
-                      "t": "s",
-                      "raw": "R",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H25",
-                      "v": "C",
-                      "t": "s",
-                      "raw": "C",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A26",
-                      "v": "6.5-OPS",
-                      "t": "s",
-                      "raw": "6.5-OPS",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B26",
-                      "v": "EED Pipeline, Safety File, Black-Hat & Spares (A6540)",
-                      "t": "s",
-                      "raw": "EED Pipeline, Safety File, Black-Hat & Spares (A6540)",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C26",
-                      "v": "I",
-                      "t": "s",
-                      "raw": "I",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D26",
-                      "v": "A",
-                      "t": "s",
-                      "raw": "A",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E26",
-                      "v": "C",
-                      "t": "s",
-                      "raw": "C",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F26",
-                      "v": "C",
-                      "t": "s",
-                      "raw": "C",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G26",
-                      "v": "C",
-                      "t": "s",
-                      "raw": "C",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H26",
-                      "v": "R",
-                      "t": "s",
-                      "raw": "R",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A27",
-                      "v": "7.0-COD",
-                      "t": "s",
-                      "raw": "7.0-COD",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B27",
-                      "v": "BCAR CCC, EirGrid Sync & EN 50600 Handover (M7060)",
-                      "t": "s",
-                      "raw": "BCAR CCC, EirGrid Sync & EN 50600 Handover (M7060)",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C27",
-                      "v": "A",
-                      "t": "s",
-                      "raw": "A",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D27",
-                      "v": "R",
-                      "t": "s",
-                      "raw": "R",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E27",
-                      "v": "C",
-                      "t": "s",
-                      "raw": "C",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F27",
-                      "v": "R",
-                      "t": "s",
-                      "raw": "R",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G27",
-                      "v": "R",
-                      "t": "s",
-                      "raw": "R",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H27",
-                      "v": "C",
-                      "t": "s",
-                      "raw": "C",
-                      "kind": "input"
-                    }
-                  ]
-                ]
-              }
-            ]
-          }
+          "downloadUrl": "files/PM-01/PM01_Doc2_Deliverable_Project_Charter_Summary_Master_Rev.004.xlsx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-01_Project_Charter_Governance_RACI\\PM01_Doc2_Deliverable_Project_Charter_Summary_Master_Rev.004.xlsx",
+          "renderType": "xlsx_master",
+          "masterKey": "CHARTER",
+          "focalSheet": "1. Charter Executive Brief"
         },
         {
-          "docId": "PKG-01-D3",
+          "docId": "PM-01-D3",
           "idx0": 2,
-          "cat": "STAKEHOLDER",
-          "title": "Stakeholder Influence Register & Statutory Engagement Matrix",
-          "ref": "ISO 21502 / Section 247 Pre-Planning / CRU / EPA / EirGrid",
-          "why": "Catalogs internal sponsors, hyperscale anchor tenants, statutory authorities (An Bord Pleanala, EPA, EirGrid/ESB, HSA, BCMS), and local communities with engagement cadence.",
-          "fileName": "PKG01_Doc3_Stakeholder_Influence_Statutory_Matrix_Rev.001.xlsx",
+          "cat": "Template",
+          "title": "Multi-Party Governance Framework & RACI Responsibility Matrix",
+          "ref": "Sheet 2. Governance & RACI",
+          "why": "Map Responsible, Accountable, Consulted, and Informed roles across Sponsor, EPCm, and CxA.",
+          "fileName": "PM01_Doc3_Template_Governance_RACI_Charter_Master_Rev.004.xlsx",
           "ext": "XLSX",
-          "downloadUrl": "files/PKG-01/PKG01_Doc3_Stakeholder_Influence_Statutory_Matrix_Rev.001.xlsx",
-          "localPath": "G:\\My Drive\\7. AI\\DataCenter_EU_Ireland\\Phase_1_Consolidated_Path_B_RIBA_0_1\\PKG-01_Governance_Mandate_SLA\\PKG01_Doc3_Stakeholder_Influence_Statutory_Matrix_Rev.001.xlsx",
-          "renderType": "xlsx",
-          "xlsx": {
-            "fileName": "PKG01_Doc3_Stakeholder_Influence_Statutory_Matrix_Rev.001.xlsx",
-            "sheetCount": 1,
-            "totalCells": 70,
-            "formulaCells": 0,
-            "sheets": [
-              {
-                "name": "5. Stakeholder & Comms Plan",
-                "maxRow": 10,
-                "maxCol": 7,
-                "formulaCount": 0,
-                "columns": [
-                  "A",
-                  "B",
-                  "C",
-                  "D",
-                  "E",
-                  "F",
-                  "G"
-                ],
-                "rows": [
-                  [
-                    {
-                      "coord": "A1",
-                      "v": "IRELAND & EU STAKEHOLDER REGISTRY & REPORTING CADENCE",
-                      "t": "s",
-                      "raw": "IRELAND & EU STAKEHOLDER REGISTRY & REPORTING CADENCE",
-                      "kind": "banner",
-                      "cspan": 7
-                    },
-                    {
-                      "coord": "B1",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C1",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "D1",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E1",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F1",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G1",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A2",
-                      "v": "Local Authorities, An Bord Pleanala, EPA, EirGrid, CRU, BCMS, HSA & EU EED Database",
-                      "t": "s",
-                      "raw": "Local Authorities, An Bord Pleanala, EPA, EirGrid, CRU, BCMS, HSA & EU EED Database",
-                      "kind": "banner",
-                      "cspan": 7
-                    },
-                    {
-                      "coord": "B2",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C2",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "D2",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E2",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F2",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G2",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A3",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "B3",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "C3",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "D3",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "E3",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "F3",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "G3",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A4",
-                      "v": "ID",
-                      "t": "s",
-                      "raw": "ID",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B4",
-                      "v": "Stakeholder / Authority",
-                      "t": "s",
-                      "raw": "Stakeholder / Authority",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C4",
-                      "v": "Jurisdiction / Interest",
-                      "t": "s",
-                      "raw": "Jurisdiction / Interest",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D4",
-                      "v": "Influence",
-                      "t": "s",
-                      "raw": "Influence",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E4",
-                      "v": "Owner",
-                      "t": "s",
-                      "raw": "Owner",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F4",
-                      "v": "Engagement Strategy",
-                      "t": "s",
-                      "raw": "Engagement Strategy",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G4",
-                      "v": "Key XER Gates",
-                      "t": "s",
-                      "raw": "Key XER Gates",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A5",
-                      "v": "STK-01",
-                      "t": "s",
-                      "raw": "STK-01",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B5",
-                      "v": "Local Authority / An Bord Pleanala",
-                      "t": "s",
-                      "raw": "Local Authority / An Bord Pleanala",
-                      "kind": "header"
-                    },
-                    {
-                      "coord": "C5",
-                      "v": "Planning Permission / SID & Section 247 Pre-Planning",
-                      "t": "s",
-                      "raw": "Planning Permission / SID & Section 247 Pre-Planning",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D5",
-                      "v": "Critical",
-                      "t": "s",
-                      "raw": "Critical",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E5",
-                      "v": "Planning Lead",
-                      "t": "s",
-                      "raw": "Planning Lead",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F5",
-                      "v": "Pre-consult early; submit robust EIAR & local infrastructure mitigation.",
-                      "t": "s",
-                      "raw": "Pre-consult early; submit robust EIAR & local infrastructure mitigation.",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G5",
-                      "v": "A1020-A1040",
-                      "t": "s",
-                      "raw": "A1020-A1040",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A6",
-                      "v": "STK-02",
-                      "t": "s",
-                      "raw": "STK-02",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B6",
-                      "v": "Environmental Protection Agency (EPA)",
-                      "t": "s",
-                      "raw": "Environmental Protection Agency (EPA)",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C6",
-                      "v": "Industrial Emissions Licence (IEL) & NOx/Noise limits",
-                      "t": "s",
-                      "raw": "Industrial Emissions Licence (IEL) & NOx/Noise limits",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D6",
-                      "v": "Critical",
-                      "t": "s",
-                      "raw": "Critical",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E6",
-                      "v": "Env. Manager",
-                      "t": "s",
-                      "raw": "Env. Manager",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F6",
-                      "v": "Demonstrate HVO fuel transition, SCR abatement & climate alignment.",
-                      "t": "s",
-                      "raw": "Demonstrate HVO fuel transition, SCR abatement & climate alignment.",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G6",
-                      "v": "A1050, A6320",
-                      "t": "s",
-                      "raw": "A1050, A6320",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A7",
-                      "v": "STK-03",
-                      "t": "s",
-                      "raw": "STK-03",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B7",
-                      "v": "EirGrid / ESB Networks / CRU",
-                      "t": "s",
-                      "raw": "EirGrid / ESB Networks / CRU",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C7",
-                      "v": "110kV ECP Offer, MIC, BESS Grid Stability & PPA",
-                      "t": "s",
-                      "raw": "110kV ECP Offer, MIC, BESS Grid Stability & PPA",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D7",
-                      "v": "Critical",
-                      "t": "s",
-                      "raw": "Critical",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E7",
-                      "v": "Grid Director",
-                      "t": "s",
-                      "raw": "Grid Director",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F7",
-                      "v": "Maintain dynamic RMS studies & dispatchable BESS readiness.",
-                      "t": "s",
-                      "raw": "Maintain dynamic RMS studies & dispatchable BESS readiness.",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G7",
-                      "v": "A1060, A1070, A7030",
-                      "t": "s",
-                      "raw": "A1060, A1070, A7030",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A8",
-                      "v": "STK-04",
-                      "t": "s",
-                      "raw": "STK-04",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B8",
-                      "v": "Building Control Authority (BCMS)",
-                      "t": "s",
-                      "raw": "Building Control Authority (BCMS)",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C8",
-                      "v": "BCAR Commencement, FSC, DAC & Completion Certificate",
-                      "t": "s",
-                      "raw": "BCAR Commencement, FSC, DAC & Completion Certificate",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D8",
-                      "v": "Critical",
-                      "t": "s",
-                      "raw": "Critical",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E8",
-                      "v": "Assigned Cert.",
-                      "t": "s",
-                      "raw": "Assigned Cert.",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F8",
-                      "v": "Zero-deviation progressive inspection logs & ancillary certs.",
-                      "t": "s",
-                      "raw": "Zero-deviation progressive inspection logs & ancillary certs.",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G8",
-                      "v": "A1080, A1085, A7050",
-                      "t": "s",
-                      "raw": "A1080, A1085, A7050",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A9",
-                      "v": "STK-05",
-                      "t": "s",
-                      "raw": "STK-05",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B9",
-                      "v": "Health & Safety Authority (HSA)",
-                      "t": "s",
-                      "raw": "Health & Safety Authority (HSA)",
-                      "kind": "header"
-                    },
-                    {
-                      "coord": "C9",
-                      "v": "SI 291/2013 PSDP/PSCS Compliance, AF1 & Safe Pass",
-                      "t": "s",
-                      "raw": "SI 291/2013 PSDP/PSCS Compliance, AF1 & Safe Pass",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D9",
-                      "v": "High",
-                      "t": "s",
-                      "raw": "High",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E9",
-                      "v": "PSDP / PSCS",
-                      "t": "s",
-                      "raw": "PSDP / PSCS",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F9",
-                      "v": "Submit AF1 pre-start, audit weekly CSCS cards & finalize Safety File.",
-                      "t": "s",
-                      "raw": "Submit AF1 pre-start, audit weekly CSCS cards & finalize Safety File.",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G9",
-                      "v": "A1010, A1085, A6520",
-                      "t": "s",
-                      "raw": "A1010, A1085, A6520",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A10",
-                      "v": "STK-06",
-                      "t": "s",
-                      "raw": "STK-06",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B10",
-                      "v": "EU EED Database / EN 50600 Auditors",
-                      "t": "s",
-                      "raw": "EU EED Database / EN 50600 Auditors",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C10",
-                      "v": "Reg (EU) 2024/1364 PUE/WUE/ERF & Class 3 Audit",
-                      "t": "s",
-                      "raw": "Reg (EU) 2024/1364 PUE/WUE/ERF & Class 3 Audit",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D10",
-                      "v": "High",
-                      "t": "s",
-                      "raw": "High",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E10",
-                      "v": "FM Ops / CxA",
-                      "t": "s",
-                      "raw": "FM Ops / CxA",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F10",
-                      "v": "Validate automated EPMS telemetry & Uptime/EN 50600 dual sign-off.",
-                      "t": "s",
-                      "raw": "Validate automated EPMS telemetry & Uptime/EN 50600 dual sign-off.",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G10",
-                      "v": "A2090, A7020, A7040",
-                      "t": "s",
-                      "raw": "A2090, A7020, A7040",
-                      "kind": "input"
-                    }
-                  ]
-                ]
-              }
-            ]
-          }
+          "downloadUrl": "files/PM-01/PM01_Doc3_Template_Governance_RACI_Charter_Master_Rev.004.xlsx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-01_Project_Charter_Governance_RACI\\PM01_Doc3_Template_Governance_RACI_Charter_Master_Rev.004.xlsx",
+          "renderType": "xlsx_master",
+          "masterKey": "CHARTER",
+          "focalSheet": "4. Governance & Organization"
         },
         {
-          "docId": "PKG-01-D4",
+          "docId": "PM-01-D4",
           "idx0": 3,
-          "cat": "AUDIT",
-          "title": "Steering Committee Terms of Reference, Quorum & 72-Hour Escalation SLA",
-          "ref": "Corporate Governance / Fiduciary Oversight / Critical Escalation SLA",
-          "why": "Defines SteerCo voting quorum (>=60%/80%), DoA approval thresholds (Tiers 0-3), Non-Override rules for statutory certifiers, and 72-hour Critical Work Request (CWR) turnaround SLAs.",
-          "fileName": "PKG01_Doc4_Audit_SteerCo_ToR_Quorum_Escalation_SLA_Rev.001.docx",
+          "cat": "Audit",
+          "title": "Steering Committee Terms of Reference, Quorum & Escalation Charter",
+          "ref": "DC45EU_SteerCo_DoA_Quorum_Audit.xlsx",
+          "why": "Define executive voting thresholds, financial sign-off limits, and escalation paths.",
+          "fileName": "PM01_Doc4_Audit_SteerCo_ToR_Escalation_Charter_Rev.004.docx",
           "ext": "DOCX",
-          "downloadUrl": "files/PKG-01/PKG01_Doc4_Audit_SteerCo_ToR_Quorum_Escalation_SLA_Rev.001.docx",
-          "localPath": "G:\\My Drive\\7. AI\\DataCenter_EU_Ireland\\Phase_1_Consolidated_Path_B_RIBA_0_1\\PKG-01_Governance_Mandate_SLA\\PKG01_Doc4_Audit_SteerCo_ToR_Quorum_Escalation_SLA_Rev.001.docx",
+          "downloadUrl": "files/PM-01/PM01_Doc4_Audit_SteerCo_ToR_Escalation_Charter_Rev.004.docx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-01_Project_Charter_Governance_RACI\\PM01_Doc4_Audit_SteerCo_ToR_Escalation_Charter_Rev.004.docx",
           "renderType": "docx",
           "docx": {
-            "fileName": "PKG01_Doc4_Audit_SteerCo_ToR_Quorum_Escalation_SLA_Rev.001.docx",
+            "fileName": "PM01_Doc4_Audit_SteerCo_ToR_Escalation_Charter_Rev.004.docx",
             "blocks": [
               {
                 "type": "table",
@@ -3401,11 +14207,11 @@ window.PHASE1_PORTAL_DATA = {
               }
             ]
           },
-          "companionDownloadUrl": "files/PKG-01/PKG01_Doc4_Audit_SteerCo_DoA_Quorum_Audit_Rev.001.xlsx",
-          "companionFileName": "PKG01_Doc4_Audit_SteerCo_DoA_Quorum_Audit_Rev.001.xlsx",
+          "companionDownloadUrl": "files/PM-01/PM01_Doc4_Audit_SteerCo_DoA_Quorum_Audit_Rev.004.xlsx",
+          "companionFileName": "PM01_Doc4_Audit_SteerCo_DoA_Quorum_Audit_Rev.004.xlsx",
           "companionExt": "XLSX",
           "companionXlsx": {
-            "fileName": "PKG01_Doc4_Audit_SteerCo_DoA_Quorum_Audit_Rev.001.xlsx",
+            "fileName": "PM01_Doc4_Audit_SteerCo_DoA_Quorum_Audit_Rev.004.xlsx",
             "sheetCount": 4,
             "totalCells": 828,
             "formulaCells": 48,
@@ -9759,37 +20565,251 @@ window.PHASE1_PORTAL_DATA = {
       ]
     },
     {
-      "id": "PKG-02",
-      "title": "Site Selection, 45 MW Basis of Design & Battery Limits",
-      "desc": "Unifies multi-criteria land due diligence, Dublin/Kildare site scoring, 45 MW critical IT sizing, EN 50600 Class 3 topology, and battery limits.",
+      "id": "PM-02",
+      "title": "Site Selection Due Diligence & Pre-Feasibility Scoring",
+      "desc": "Evaluate land parcels across power proximity, fibre diversity, geotechnical conditions, flood zones, and buildability constraints.",
       "tags": [
-        "EN 50600 Class 3",
-        "110kV Grid Substation",
-        "OPW CFRAM Zone C",
-        "Karst Geotech",
-        "Battery Limits"
+        "Feasibility",
+        "Due Diligence",
+        "Scoring"
       ],
-      "legacyModIds": [
-        "PM-02",
-        "PM-03"
-      ],
-      "folder": "G:\\My Drive\\7. AI\\DataCenter_EU_Ireland\\Phase_1_Consolidated_Path_B_RIBA_0_1\\PKG-02_Site_Technical_BoD",
-      "readme": "# PKG-02: Site Selection, 45 MW Basis of Design & Battery Limits\n\n- **Phase**: `Phase 1: Initiation, Charter & Business Case (RIBA 0-1)`\n- **P6 Milestone Gate**: `A1020 / M1000 / M2110`\n- **RIBA Stage**: `RIBA Stage 1-2`\n- **Governing Standards**: I.S. EN 50600-1/-2-1/-2-2/-2-3, ISO/IEC 22237 Availability Class 3, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP, ASHRAE TC 9.9, EU F-Gas 2024/573\n- **WBS Scope**: `WBS 1.0-PERM & WBS 2.0-ENG`\n- **Focus Areas**: Land parcel due diligence (Dublin/Kildare), 110kV grid connection, OPW flood risk (Zone C + 20% climate change), karst geotechnical mitigation, 45.0 MW critical IT sizing (5x 9 MW halls, 2x 63MVA, 20x 2.5MVA HVO, 45x 1000kVA UPS, 8x 1200RT chillers), PUE <= 1.25, and multi-party battery limits.\n\n## Module Overview\nPKG-02 bridges physical land due diligence with 45 MW critical facility engineering, translating tenant SLA requirements and Uptime Tier III availability into concrete Irish site specifications.\n\n## Consolidated Deliverables (`Doc 1` -> `Doc 4`)\n\n| Doc | Category | Title | Dedicated Local Artifact | Purpose & Engineering Focus |\n| :--- | :--- | :--- | :--- | :--- |\n| Doc 1 | TECHNICAL | Site Selection & Environmental Due Diligence Report | `PKG02_Doc1_Technical_Site_Selection_Environmental_DD_Rev.001.docx` | Dublin/Kildare parcel comparison across 110kV grid headroom, flood, geotech, and zoning. |\n| Doc 2 | DECISION | Weighted Land Parcel Comparison Decision Scorecard | `PKG02_Doc2_Decision_Weighted_Land_Parcel_Comparison_Rev.001.xlsx` | Interactive 6-criterion decision model (Grid 25%, Flood 20%, Geotech 15%, Planning 15%, Fibre 10%, Commercial 15%). |\n| Doc 3 | SPECIFICATION | 45 MW Campus Basis of Design (BoD) Technical Specification | `PKG02_Doc3_Specification_45MW_Campus_BoD_Equipment_Rev.001.xlsx` | Quantitative equipment sizing for 45 MW IT load, EN 50600 Class 3 concurrent maintainability, and PUE <= 1.25. |\n| Doc 4 | AUDIT | Scope Demarcation, Battery Limits & Free-Cooling Audit | `PKG02_Doc4_Audit_Scope_Battery_Limits_Free_Cooling_Rev.001.xlsx` | Demarcation matrix (Client, Landlord, EirGrid, CSA, MEP, Tenant) + free-cooling compliance companion. |\n\nCompanion Engineering Audit: `PKG02_Doc4_Audit_Free_Cooling_Psychrometric_Audit_Rev.001.docx` (Dublin ambient psychrometrics & EU F-Gas 2024/573).\n",
+      "folder": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-02_Site_Selection_Due_Diligence",
+      "readme": "# PM-02: Site Selection Due Diligence & Pre-Feasibility Scoring\n\n- **Phase**: `Phase 1: Initiation, Charter & Business Case (RIBA 0-1)`\n- **RIBA Stage**: `RIBA Stage 0-1`\n- **P6 Milestone Gate**: `A1020 / M1000`\n- **WBS Scope**: `WBS 1.0-PERM`\n- **Governing Standards**: EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP\n- **Focus Areas**: Power Proximity, OPW Flood Risk, Geotech / Karst, Fibre Diversity, Zoning / SID\n\n## Module Overview\nEvaluate land parcels across power proximity, fibre diversity, geotechnical conditions, flood zones, and buildability constraints.\n\n## Ordered Flashcard Documents (`Doc 1` -> `Doc 4`)\n\n| Doc | Category | Title | Exact Local File | Companion / Notes |\n| :--- | :--- | :--- | :--- | :--- |\n| Doc 1 | Standard | I.S. EN 50600-2-1 Building Construction & Site Environmental Risk Guideline | `PM02_Doc1_Standard_I_S_EN_50600_2_1_Building_Rev.004.docx` | EN 50600-2-1 Siting |\n| Doc 2 | Deliverable | Multi-Criteria Site Selection & Land Acquisition Due Diligence Report | `PM02_Doc2_Deliverable_Multi_Criteria_Site_Selection_Land_Rev.004.docx` | Power / Fibre / Zoning |\n| Doc 3 | Template | Weighted Land Parcel Comparison Scorecard (Grid, Geotech, Flood, Cost) | `PM02_Doc3_Template_Weighted_Land_Parcel_Comparison_Rev.004.xlsx` | Weighted Decision Model |\n| Doc 4 | Audit | Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) | `PM02_Doc4_Audit_Pre_Purchase_Technical_Due_Rev.004.xlsx` | Eurocode 7 / OPW Flood Maps |\n\n## Study Takeaway (`Why Each Document Matters`)\n- **Doc 1 (Standard)**: Learn mandatory physical security setbacks, flood immunity, and external hazard rules.\n- **Doc 2 (Deliverable)**: Synthesize grid substation distance, dual-path dark fibre, and zoning viability for FID.\n- **Doc 3 (Template)**: Quantify site trade-offs objectively across capex penalties and schedule risk.\n- **Doc 4 (Audit)**: Eliminate fatal subsurface, contamination, UXO, or fluvial flood blockers before closing.\n",
       "docs": [
         {
-          "docId": "PKG-02-D1",
+          "docId": "PM-02-D1",
           "idx0": 0,
-          "cat": "TECHNICAL",
-          "title": "Site Selection & Environmental Due Diligence Report",
-          "ref": "EN 50600-2-1 Siting / Eurocode 7 / OPW Flood CFRAM",
-          "why": "Analyzes Dublin/Kildare candidate parcels across 110kV transmission proximity, OPW flood risk (Zone C + 20% climate change), karst geotech, UXO, and zoning constraints.",
-          "fileName": "PKG02_Doc1_Technical_Site_Selection_Environmental_DD_Rev.001.docx",
+          "cat": "Standard",
+          "title": "I.S. EN 50600-2-1 Building Construction & Site Environmental Risk Guideline",
+          "ref": "EN 50600-2-1 Siting",
+          "why": "Learn mandatory physical security setbacks, flood immunity, and external hazard rules.",
+          "fileName": "PM02_Doc1_Standard_I_S_EN_50600_2_1_Building_Rev.004.docx",
           "ext": "DOCX",
-          "downloadUrl": "files/PKG-02/PKG02_Doc1_Technical_Site_Selection_Environmental_DD_Rev.001.docx",
-          "localPath": "G:\\My Drive\\7. AI\\DataCenter_EU_Ireland\\Phase_1_Consolidated_Path_B_RIBA_0_1\\PKG-02_Site_Technical_BoD\\PKG02_Doc1_Technical_Site_Selection_Environmental_DD_Rev.001.docx",
+          "downloadUrl": "files/PM-02/PM02_Doc1_Standard_I_S_EN_50600_2_1_Building_Rev.004.docx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-02_Site_Selection_Due_Diligence\\PM02_Doc1_Standard_I_S_EN_50600_2_1_Building_Rev.004.docx",
           "renderType": "docx",
           "docx": {
-            "fileName": "PKG02_Doc1_Technical_Site_Selection_Environmental_DD_Rev.001.docx",
+            "fileName": "PM02_Doc1_Standard_I_S_EN_50600_2_1_Building_Rev.004.docx",
+            "blocks": [
+              {
+                "type": "banner",
+                "text": "PHASE 1: INITIATION, CHARTER & BUSINESS CASE (RIBA 0-1) | PM-02 | STANDARD DOCUMENT | I.S. EN 50600-2-1 Building Construction & Site Environmental Risk Guideline"
+              },
+              {
+                "type": "table",
+                "rows": [
+                  [
+                    "Document Control Field",
+                    "DC45-EU Repository Value"
+                  ],
+                  [
+                    "ISO 19650 Document Code",
+                    "DC45EU-PM02-DOC1-Rev004"
+                  ],
+                  [
+                    "Flashcard Module & Stage",
+                    "PM-02: Site Selection Due Diligence & Pre-Feasibility Scoring (RIBA Stage 0-1)"
+                  ],
+                  [
+                    "P6 Milestone / WBS Anchor",
+                    "A1020 / M1000 | WBS 1.0-PERM | Live Schedule: 144 Tasks / 213 Links"
+                  ],
+                  [
+                    "Governing Standards",
+                    "EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP"
+                  ],
+                  [
+                    "Dashboard Ref & Revision",
+                    "EN 50600-2-1 Siting | Status: Active Baseline (Rev.004)"
+                  ]
+                ]
+              },
+              {
+                "type": "h1",
+                "text": "1. Document Mandate & Operational Scope"
+              },
+              {
+                "type": "p",
+                "text": "Portfolio Context: This institutional standard establishes controlled governance, technical compliance rules, and auditable evidence for the 45 MW DC45-EU Hyperscale Data Centre development in Ireland (4 x 9.0 MW data halls, dual 110 kV grid incomers, 16 x 2.5 MVA HVO standby generation with SCR abatement, and EN 50600 Availability Class 3 / Uptime TCCF target). All schedules and resource assumptions synchronize against the master Primavera P6 baseline (DataCenter_45MW_EU_Ireland.xer: M1000 NTP 2027-01-04 through M7060 COD 2030-05-20)."
+              },
+              {
+                "type": "p",
+                "text": "Core Competency Objective: Learn mandatory physical security setbacks, flood immunity, and external hazard rules."
+              },
+              {
+                "type": "p",
+                "text": "Module Summary: Evaluate land parcels across power proximity, fibre diversity, geotechnical conditions, flood zones, and buildability constraints."
+              },
+              {
+                "type": "h1",
+                "text": "2. Governing Standards & Compliance Framework"
+              },
+              {
+                "type": "bullet",
+                "text": "EN 50600-2-1: Mandatory alignment enforced during RIBA Stage 0-1 under PM-02 controls, subject to Independent Verification / Assigned Certifier / CxA sign-off prior to stage progression."
+              },
+              {
+                "type": "bullet",
+                "text": "Eurocode 7: Mandatory alignment enforced during RIBA Stage 0-1 under PM-02 controls, subject to Independent Verification / Assigned Certifier / CxA sign-off prior to stage progression."
+              },
+              {
+                "type": "bullet",
+                "text": "OPW CFRAM Flood Maps: Mandatory alignment enforced during RIBA Stage 0-1 under PM-02 controls, subject to Independent Verification / Assigned Certifier / CxA sign-off prior to stage progression."
+              },
+              {
+                "type": "bullet",
+                "text": "EirGrid ECP: Mandatory alignment enforced during RIBA Stage 0-1 under PM-02 controls, subject to Independent Verification / Assigned Certifier / CxA sign-off prior to stage progression."
+              },
+              {
+                "type": "h1",
+                "text": "3. Key Control Elements & Stage-Gate Acceptance Criteria"
+              },
+              {
+                "type": "table",
+                "rows": [
+                  [
+                    "Item Code",
+                    "Control Focus Area",
+                    "DC45-EU Quantitative / Statutory Threshold",
+                    "Verification Authority"
+                  ],
+                  [
+                    "PM02-C01",
+                    "Power Proximity",
+                    "Formal standard evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to A1020 / M1000 and WBS 1.0-PERM.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ],
+                  [
+                    "PM02-C02",
+                    "OPW Flood Risk",
+                    "Formal standard evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to A1020 / M1000 and WBS 1.0-PERM.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ],
+                  [
+                    "PM02-C03",
+                    "Geotech / Karst",
+                    "Formal standard evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to A1020 / M1000 and WBS 1.0-PERM.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ],
+                  [
+                    "PM02-C04",
+                    "Fibre Diversity",
+                    "Formal standard evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to A1020 / M1000 and WBS 1.0-PERM.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ],
+                  [
+                    "PM02-C05",
+                    "Zoning / SID",
+                    "Formal standard evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to A1020 / M1000 and WBS 1.0-PERM.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ]
+                ]
+              },
+              {
+                "type": "h1",
+                "text": "4. Primavera P6 Milestone & Dependency Synchronization"
+              },
+              {
+                "type": "table",
+                "rows": [
+                  [
+                    "P6 Gate ID",
+                    "Baseline Target Date",
+                    "Gate Control Significance"
+                  ],
+                  [
+                    "M1000",
+                    "2027-01-04",
+                    "Final Investment Decision (FID) & Notice to Proceed (NTP)"
+                  ],
+                  [
+                    "M2110",
+                    "2027-07-12",
+                    "Detailed Design Freeze & Early Construction Release"
+                  ],
+                  [
+                    "M3120",
+                    "2028-01-03",
+                    "OFCI Long-Lead Equipment Delivery Buffer (+200d Lead)"
+                  ],
+                  [
+                    "M4350",
+                    "2029-02-12",
+                    "Core & Shell Weather-Tight Envelope Complete"
+                  ],
+                  [
+                    "M5595",
+                    "2029-09-24",
+                    "MEP Pre-Energisation Complete \u2014 L3/L4 Cx Handover"
+                  ],
+                  [
+                    "M6470",
+                    "2030-02-25",
+                    "Level 5 45 MW 48-Hr Integrated Systems Test (IST) Complete"
+                  ],
+                  [
+                    "M7060",
+                    "2030-05-20",
+                    "Practical Completion, BCAR CCC & Commercial Operation (COD)"
+                  ]
+                ]
+              },
+              {
+                "type": "h1",
+                "text": "5. Controlled Review & Authorization Block"
+              },
+              {
+                "type": "table",
+                "rows": [
+                  [
+                    "Role / Title",
+                    "Organization",
+                    "ISO 19650 Suitability",
+                    "Sign-Off Gate"
+                  ],
+                  [
+                    "Originator / Package Lead",
+                    "EPCm / Specialist Consultant",
+                    "S2 (Suitable for Info)",
+                    "A1020 / M1000"
+                  ],
+                  [
+                    "Technical & Statutory Reviewer",
+                    "PSDP / Assigned Certifier / CxA",
+                    "S3 (Suitable for Review)",
+                    "RIBA Stage 0-1"
+                  ],
+                  [
+                    "Approving Authority",
+                    "Project Director / SteerCo Tier 2",
+                    "A1 (Approved for Execution)",
+                    "Gate Freeze"
+                  ],
+                  [
+                    "Document Controller",
+                    "PMO CDE Administrator",
+                    "Published Archive",
+                    "Monthly Cutoff"
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "docId": "PM-02-D2",
+          "idx0": 1,
+          "cat": "Deliverable",
+          "title": "Multi-Criteria Site Selection & Land Acquisition Due Diligence Report",
+          "ref": "Power / Fibre / Zoning",
+          "why": "Synthesize grid substation distance, dual-path dark fibre, and zoning viability for FID.",
+          "fileName": "PM02_Doc2_Deliverable_Multi_Criteria_Site_Selection_Land_Rev.004.docx",
+          "ext": "DOCX",
+          "downloadUrl": "files/PM-02/PM02_Doc2_Deliverable_Multi_Criteria_Site_Selection_Land_Rev.004.docx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-02_Site_Selection_Due_Diligence\\PM02_Doc2_Deliverable_Multi_Criteria_Site_Selection_Land_Rev.004.docx",
+          "renderType": "docx",
+          "docx": {
+            "fileName": "PM02_Doc2_Deliverable_Multi_Criteria_Site_Selection_Land_Rev.004.docx",
             "blocks": [
               {
                 "type": "banner",
@@ -9997,21 +21017,21 @@ window.PHASE1_PORTAL_DATA = {
           }
         },
         {
-          "docId": "PKG-02-D2",
-          "idx0": 1,
-          "cat": "DECISION",
-          "title": "Weighted Land Parcel Comparison Decision Scorecard",
-          "ref": "Multi-Criteria Decision Analysis / EirGrid Queue / OPW CFRAM",
-          "why": "Interactive 6-criterion model (Grid 25%, Flood 20%, Geotech 15%, Planning 15%, Fibre 10%, Commercial 15%) evaluating Sites A, B, and C with sandbox sensitivity adjustments.",
-          "fileName": "PKG02_Doc2_Decision_Weighted_Land_Parcel_Comparison_Rev.001.xlsx",
+          "docId": "PM-02-D3",
+          "idx0": 2,
+          "cat": "Template",
+          "title": "Weighted Land Parcel Comparison Scorecard (Grid, Geotech, Flood, Cost)",
+          "ref": "Weighted Decision Model",
+          "why": "Quantify site trade-offs objectively across capex penalties and schedule risk.",
+          "fileName": "PM02_Doc3_Template_Weighted_Land_Parcel_Comparison_Rev.004.xlsx",
           "ext": "XLSX",
-          "downloadUrl": "files/PKG-02/PKG02_Doc2_Decision_Weighted_Land_Parcel_Comparison_Rev.001.xlsx",
-          "localPath": "G:\\My Drive\\7. AI\\DataCenter_EU_Ireland\\Phase_1_Consolidated_Path_B_RIBA_0_1\\PKG-02_Site_Technical_BoD\\PKG02_Doc2_Decision_Weighted_Land_Parcel_Comparison_Rev.001.xlsx",
+          "downloadUrl": "files/PM-02/PM02_Doc3_Template_Weighted_Land_Parcel_Comparison_Rev.004.xlsx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-02_Site_Selection_Due_Diligence\\PM02_Doc3_Template_Weighted_Land_Parcel_Comparison_Rev.004.xlsx",
           "renderType": "xlsx",
           "xlsx": {
-            "fileName": "PKG02_Doc2_Decision_Weighted_Land_Parcel_Comparison_Rev.001.xlsx",
-            "sheetCount": 1,
-            "totalCells": 117,
+            "fileName": "PM02_Doc3_Template_Weighted_Land_Parcel_Comparison_Rev.004.xlsx",
+            "sheetCount": 2,
+            "totalCells": 157,
             "formulaCells": 26,
             "sheets": [
               {
@@ -10921,33 +21941,355 @@ window.PHASE1_PORTAL_DATA = {
                     }
                   ]
                 ]
+              },
+              {
+                "name": "2. Doc Control & Gates",
+                "maxRow": 10,
+                "maxCol": 4,
+                "formulaCount": 0,
+                "columns": [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                "rows": [
+                  [
+                    {
+                      "coord": "A1",
+                      "v": "DC45-EU | PM-02 DOC 3 \u2014 DOCUMENT CONTROL & XER SYNCHRONIZATION",
+                      "t": "s",
+                      "raw": "DC45-EU | PM-02 DOC 3 \u2014 DOCUMENT CONTROL & XER SYNCHRONIZATION",
+                      "kind": "banner",
+                      "cspan": 4
+                    },
+                    {
+                      "coord": "B1",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    },
+                    {
+                      "coord": "C1",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    },
+                    {
+                      "coord": "D1",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A2",
+                      "v": "Weighted Land Parcel Comparison Scorecard (Grid, Geotech, Flood, Cost) | RIBA Stage 0-1",
+                      "t": "s",
+                      "raw": "Weighted Land Parcel Comparison Scorecard (Grid, Geotech, Flood, Cost) | RIBA Stage 0-1",
+                      "kind": "banner",
+                      "cspan": 4
+                    },
+                    {
+                      "coord": "B2",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    },
+                    {
+                      "coord": "C2",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    },
+                    {
+                      "coord": "D2",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A3",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "B3",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "C3",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "D3",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A4",
+                      "v": "Metadata Key",
+                      "t": "s",
+                      "raw": "Metadata Key",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B4",
+                      "v": "Value / Rule",
+                      "t": "s",
+                      "raw": "Value / Rule",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C4",
+                      "v": "Linked Reference",
+                      "t": "s",
+                      "raw": "Linked Reference",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D4",
+                      "v": "Verification Status",
+                      "t": "s",
+                      "raw": "Verification Status",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A5",
+                      "v": "ISO 19650 Doc ID",
+                      "t": "s",
+                      "raw": "ISO 19650 Doc ID",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B5",
+                      "v": "DC45EU-PM02-DOC3-Rev004",
+                      "t": "s",
+                      "raw": "DC45EU-PM02-DOC3-Rev004",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C5",
+                      "v": "PM-12 CDE Naming",
+                      "t": "s",
+                      "raw": "PM-12 CDE Naming",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D5",
+                      "v": "ACTIVE",
+                      "t": "s",
+                      "raw": "ACTIVE",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A6",
+                      "v": "Flashcard Module",
+                      "t": "s",
+                      "raw": "Flashcard Module",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B6",
+                      "v": "PM-02: Site Selection Due Diligence & Pre-Feasibility Scoring",
+                      "t": "s",
+                      "raw": "PM-02: Site Selection Due Diligence & Pre-Feasibility Scoring",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C6",
+                      "v": "RIBA Stage 0-1",
+                      "t": "s",
+                      "raw": "RIBA Stage 0-1",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D6",
+                      "v": "ALIGNED",
+                      "t": "s",
+                      "raw": "ALIGNED",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A7",
+                      "v": "P6 Gate & WBS",
+                      "t": "s",
+                      "raw": "P6 Gate & WBS",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B7",
+                      "v": "A1020 / M1000 | WBS 1.0-PERM",
+                      "t": "s",
+                      "raw": "A1020 / M1000 | WBS 1.0-PERM",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C7",
+                      "v": "144 Tasks / 213 Links",
+                      "t": "s",
+                      "raw": "144 Tasks / 213 Links",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D7",
+                      "v": "SYNCED",
+                      "t": "s",
+                      "raw": "SYNCED",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A8",
+                      "v": "Governing Standards",
+                      "t": "s",
+                      "raw": "Governing Standards",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B8",
+                      "v": "EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP",
+                      "t": "s",
+                      "raw": "EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C8",
+                      "v": "Weighted Decision Model",
+                      "t": "s",
+                      "raw": "Weighted Decision Model",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D8",
+                      "v": "ENFORCED",
+                      "t": "s",
+                      "raw": "ENFORCED",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A9",
+                      "v": "Study Takeaway",
+                      "t": "s",
+                      "raw": "Study Takeaway",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B9",
+                      "v": "Quantify site trade-offs objectively across capex penalties and schedule risk.",
+                      "t": "s",
+                      "raw": "Quantify site trade-offs objectively across capex penalties and schedule risk.",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C9",
+                      "v": "gogo Learning Dashboard",
+                      "t": "s",
+                      "raw": "gogo Learning Dashboard",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D9",
+                      "v": "ACTIVE",
+                      "t": "s",
+                      "raw": "ACTIVE",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A10",
+                      "v": "Blue Cells Convention",
+                      "t": "s",
+                      "raw": "Blue Cells Convention",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B10",
+                      "v": "All blue-shaded numeric inputs represent editable project parameters",
+                      "t": "s",
+                      "raw": "All blue-shaded numeric inputs represent editable project parameters",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C10",
+                      "v": "Audit Formatting Rule",
+                      "t": "s",
+                      "raw": "Audit Formatting Rule",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D10",
+                      "v": "STANDARD",
+                      "t": "s",
+                      "raw": "STANDARD",
+                      "kind": "input"
+                    }
+                  ]
+                ]
               }
             ]
           }
         },
         {
-          "docId": "PKG-02-D3",
-          "idx0": 2,
-          "cat": "SPECIFICATION",
-          "title": "45 MW Campus Basis of Design (BoD) Technical Specification",
-          "ref": "EN 50600 Class 3 / Uptime Tier III / ASHRAE TC 9.9",
-          "why": "Rigorous engineering schedules for 45.0 MW IT load: 5x 9.0 MW data halls, 2x 63 MVA 110/20kV transformers, 20x 2.5 MVA emergency HVO generators, 45x 1000 kVA UPS modules, 8x 1200 RT water-cooled chillers, PUE <= 1.25.",
-          "fileName": "PKG02_Doc3_Specification_45MW_Campus_BoD_Equipment_Rev.001.xlsx",
+          "docId": "PM-02-D4",
+          "idx0": 3,
+          "cat": "Audit",
+          "title": "Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood)",
+          "ref": "Eurocode 7 / OPW Flood Maps",
+          "why": "Eliminate fatal subsurface, contamination, UXO, or fluvial flood blockers before closing.",
+          "fileName": "PM02_Doc4_Audit_Pre_Purchase_Technical_Due_Rev.004.xlsx",
           "ext": "XLSX",
-          "downloadUrl": "files/PKG-02/PKG02_Doc3_Specification_45MW_Campus_BoD_Equipment_Rev.001.xlsx",
-          "localPath": "G:\\My Drive\\7. AI\\DataCenter_EU_Ireland\\Phase_1_Consolidated_Path_B_RIBA_0_1\\PKG-02_Site_Technical_BoD\\PKG02_Doc3_Specification_45MW_Campus_BoD_Equipment_Rev.001.xlsx",
+          "downloadUrl": "files/PM-02/PM02_Doc4_Audit_Pre_Purchase_Technical_Due_Rev.004.xlsx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-02_Site_Selection_Due_Diligence\\PM02_Doc4_Audit_Pre_Purchase_Technical_Due_Rev.004.xlsx",
           "renderType": "xlsx",
           "xlsx": {
-            "fileName": "PKG02_Doc3_Specification_45MW_Campus_BoD_Equipment_Rev.001.xlsx",
-            "sheetCount": 1,
-            "totalCells": 60,
-            "formulaCells": 0,
+            "fileName": "PM02_Doc4_Audit_Pre_Purchase_Technical_Due_Rev.004.xlsx",
+            "sheetCount": 2,
+            "totalCells": 154,
+            "formulaCells": 4,
             "sheets": [
               {
-                "name": "2. EN 50600 Basis of Design",
-                "maxRow": 10,
+                "name": "1. Compliance Audit",
+                "maxRow": 19,
                 "maxCol": 6,
-                "formulaCount": 0,
+                "formulaCount": 4,
                 "columns": [
                   "A",
                   "B",
@@ -10960,9 +22302,9 @@ window.PHASE1_PORTAL_DATA = {
                   [
                     {
                       "coord": "A1",
-                      "v": "OWNER'S REQUIREMENTS (ORD) & EN 50600 TECHNICAL BASIS OF DESIGN",
+                      "v": "DC45-EU | Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood)",
                       "t": "s",
-                      "raw": "OWNER'S REQUIREMENTS (ORD) & EN 50600 TECHNICAL BASIS OF DESIGN",
+                      "raw": "DC45-EU | Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood)",
                       "kind": "banner",
                       "cspan": 6
                     },
@@ -11010,9 +22352,9 @@ window.PHASE1_PORTAL_DATA = {
                   [
                     {
                       "coord": "A2",
-                      "v": "Aligned to I.S. EN 50600-2-x, ISO/IEC 22237, Irish Part B/L/M & EU EED 2023/1791",
+                      "v": "Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) | Gate: A1020 / M1000 | Basis: EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP",
                       "t": "s",
-                      "raw": "Aligned to I.S. EN 50600-2-x, ISO/IEC 22237, Irish Part B/L/M & EU EED 2023/1791",
+                      "raw": "Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) | Gate: A1020 / M1000 | Basis: EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP",
                       "kind": "banner",
                       "cspan": 6
                     },
@@ -11104,337 +22446,716 @@ window.PHASE1_PORTAL_DATA = {
                   [
                     {
                       "coord": "A4",
-                      "v": "ID",
+                      "v": "Check ID",
                       "t": "s",
-                      "raw": "ID",
+                      "raw": "Check ID",
                       "kind": "input"
                     },
                     {
                       "coord": "B4",
-                      "v": "Engineering System",
+                      "v": "Domain / Pillar",
                       "t": "s",
-                      "raw": "Engineering System",
+                      "raw": "Domain / Pillar",
                       "kind": "input"
                     },
                     {
                       "coord": "C4",
-                      "v": "Owner Mandatory Requirement",
+                      "v": "Audit Verification Criterion",
                       "t": "s",
-                      "raw": "Owner Mandatory Requirement",
+                      "raw": "Audit Verification Criterion",
                       "kind": "input"
                     },
                     {
                       "coord": "D4",
-                      "v": "Verified Design Architecture",
+                      "v": "Evidence / P6 Gate",
                       "t": "s",
-                      "raw": "Verified Design Architecture",
+                      "raw": "Evidence / P6 Gate",
                       "kind": "input"
                     },
                     {
                       "coord": "E4",
-                      "v": "EU / Irish Standard",
+                      "v": "Status (PASS/PARTIAL/OPEN)",
                       "t": "s",
-                      "raw": "EU / Irish Standard",
+                      "raw": "Status (PASS/PARTIAL/OPEN)",
                       "kind": "input"
                     },
                     {
                       "coord": "F4",
-                      "v": "XER Ref",
+                      "v": "Auditor Sign-Off Notes",
                       "t": "s",
-                      "raw": "XER Ref",
+                      "raw": "Auditor Sign-Off Notes",
                       "kind": "input"
                     }
                   ],
                   [
                     {
                       "coord": "A5",
-                      "v": "BOD-01",
+                      "v": "PM02-A01",
                       "t": "s",
-                      "raw": "BOD-01",
+                      "raw": "PM02-A01",
                       "kind": "input"
                     },
                     {
                       "coord": "B5",
-                      "v": "White Space & Floor Plate",
+                      "v": "Power Proximity",
                       "t": "s",
-                      "raw": "White Space & Floor Plate",
+                      "raw": "Power Proximity",
                       "kind": "input"
                     },
                     {
                       "coord": "C5",
-                      "v": "45 MW IT load across 5x 9 MW suites; Class 3 maintainability.",
+                      "v": "Verify formal compliance & documentary sign-off for Power Proximity against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
                       "t": "s",
-                      "raw": "45 MW IT load across 5x 9 MW suites; Class 3 maintainability.",
+                      "raw": "Verify formal compliance & documentary sign-off for Power Proximity against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
                       "kind": "input"
                     },
                     {
                       "coord": "D5",
-                      "v": "Data Halls 1-5 (A5430-A5469), 800mm floor, 18 kN/m2 hollowcore/composite slab, HAC.",
+                      "v": "A1020 / M1000 / WBS 1.0-PERM",
                       "t": "s",
-                      "raw": "Data Halls 1-5 (A5430-A5469), 800mm floor, 18 kN/m2 hollowcore/composite slab, HAC.",
+                      "raw": "A1020 / M1000 / WBS 1.0-PERM",
                       "kind": "input"
                     },
                     {
                       "coord": "E5",
-                      "v": "EN 50600-2-1 / Tier III",
+                      "v": "PASS",
                       "t": "s",
-                      "raw": "EN 50600-2-1 / Tier III",
-                      "kind": "header"
+                      "raw": "PASS",
+                      "kind": "input"
                     },
                     {
                       "coord": "F5",
-                      "v": "A5430-A5465",
+                      "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
-                      "raw": "A5430-A5465",
+                      "raw": "Ready for Assigned Certifier / CxA verification",
                       "kind": "input"
                     }
                   ],
                   [
                     {
                       "coord": "A6",
-                      "v": "BOD-02",
+                      "v": "PM02-A02",
                       "t": "s",
-                      "raw": "BOD-02",
+                      "raw": "PM02-A02",
                       "kind": "input"
                     },
                     {
                       "coord": "B6",
-                      "v": "110kV Grid & MV Power",
+                      "v": "OPW Flood Risk",
                       "t": "s",
-                      "raw": "110kV Grid & MV Power",
+                      "raw": "OPW Flood Risk",
                       "kind": "input"
                     },
                     {
                       "coord": "C6",
-                      "v": "CRU-compliant EirGrid connection with SF6-free switchgear.",
+                      "v": "Verify formal compliance & documentary sign-off for OPW Flood Risk against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
                       "t": "s",
-                      "raw": "CRU-compliant EirGrid connection with SF6-free switchgear.",
+                      "raw": "Verify formal compliance & documentary sign-off for OPW Flood Risk against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
                       "kind": "input"
                     },
                     {
                       "coord": "D6",
-                      "v": "Dual 110kV/22kV 63MVA low-loss transformers, 22kV SF6-free GIS Rings A & B.",
+                      "v": "A1020 / M1000 / WBS 1.0-PERM",
                       "t": "s",
-                      "raw": "Dual 110kV/22kV 63MVA low-loss transformers, 22kV SF6-free GIS Rings A & B.",
+                      "raw": "A1020 / M1000 / WBS 1.0-PERM",
                       "kind": "input"
                     },
                     {
                       "coord": "E6",
-                      "v": "EN 50600-2-2 / EU 2016/1388",
+                      "v": "PASS",
                       "t": "s",
-                      "raw": "EN 50600-2-2 / EU 2016/1388",
+                      "raw": "PASS",
                       "kind": "input"
                     },
                     {
                       "coord": "F6",
-                      "v": "A1060, A5110-A5150",
+                      "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
-                      "raw": "A1060, A5110-A5150",
+                      "raw": "Ready for Assigned Certifier / CxA verification",
                       "kind": "input"
                     }
                   ],
                   [
                     {
                       "coord": "A7",
-                      "v": "BOD-03",
+                      "v": "PM02-A03",
                       "t": "s",
-                      "raw": "BOD-03",
+                      "raw": "PM02-A03",
                       "kind": "input"
                     },
                     {
                       "coord": "B7",
-                      "v": "HVO Standby Gen & BESS",
+                      "v": "Geotech / Karst",
                       "t": "s",
-                      "raw": "HVO Standby Gen & BESS",
+                      "raw": "Geotech / Karst",
                       "kind": "input"
                     },
                     {
                       "coord": "C7",
-                      "v": "Low-NOx dispatchable backup compliant with EPA IEL & CRU.",
+                      "v": "Verify formal compliance & documentary sign-off for Geotech / Karst against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
                       "t": "s",
-                      "raw": "Low-NOx dispatchable backup compliant with EPA IEL & CRU.",
+                      "raw": "Verify formal compliance & documentary sign-off for Geotech / Karst against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
                       "kind": "input"
                     },
                     {
                       "coord": "D7",
-                      "v": "20x 2.5MVA HVO-ready gensets + SCR flues + 4x 80m3 tanks + on-site Grid BESS.",
+                      "v": "A1020 / M1000 / WBS 1.0-PERM",
                       "t": "s",
-                      "raw": "20x 2.5MVA HVO-ready gensets + SCR flues + 4x 80m3 tanks + on-site Grid BESS.",
+                      "raw": "A1020 / M1000 / WBS 1.0-PERM",
                       "kind": "input"
                     },
                     {
                       "coord": "E7",
-                      "v": "EPA IEL / ISO 8528",
+                      "v": "PASS",
                       "t": "s",
-                      "raw": "EPA IEL / ISO 8528",
+                      "raw": "PASS",
                       "kind": "input"
                     },
                     {
                       "coord": "F7",
-                      "v": "A1050, A5210-A5250",
+                      "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
-                      "raw": "A1050, A5210-A5250",
+                      "raw": "Ready for Assigned Certifier / CxA verification",
                       "kind": "input"
                     }
                   ],
                   [
                     {
                       "coord": "A8",
-                      "v": "BOD-04",
+                      "v": "PM02-A04",
                       "t": "s",
-                      "raw": "BOD-04",
+                      "raw": "PM02-A04",
                       "kind": "input"
                     },
                     {
                       "coord": "B8",
-                      "v": "Cooling & Heat Recovery",
+                      "v": "Fibre Diversity",
                       "t": "s",
-                      "raw": "Cooling & Heat Recovery",
+                      "raw": "Fibre Diversity",
                       "kind": "input"
                     },
                     {
                       "coord": "C8",
-                      "v": "Zero-refrigeration free-cooling bias & EU EED waste-heat capture.",
+                      "v": "Verify formal compliance & documentary sign-off for Fibre Diversity against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
                       "t": "s",
-                      "raw": "Zero-refrigeration free-cooling bias & EU EED waste-heat capture.",
+                      "raw": "Verify formal compliance & documentary sign-off for Fibre Diversity against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
                       "kind": "input"
                     },
                     {
                       "coord": "D8",
-                      "v": "8x 1200 RT low-GWP chillers, closed coolers, TES tanks, RO rainwater, District Heating HEX.",
+                      "v": "A1020 / M1000 / WBS 1.0-PERM",
                       "t": "s",
-                      "raw": "8x 1200 RT low-GWP chillers, closed coolers, TES tanks, RO rainwater, District Heating HEX.",
+                      "raw": "A1020 / M1000 / WBS 1.0-PERM",
                       "kind": "input"
                     },
                     {
                       "coord": "E8",
-                      "v": "EN 50600-2-3 / EED 2023/1791",
+                      "v": "PASS",
                       "t": "s",
-                      "raw": "EN 50600-2-3 / EED 2023/1791",
+                      "raw": "PASS",
                       "kind": "input"
                     },
                     {
                       "coord": "F8",
-                      "v": "A5310-A5390",
+                      "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
-                      "raw": "A5310-A5390",
+                      "raw": "Ready for Assigned Certifier / CxA verification",
                       "kind": "input"
                     }
                   ],
                   [
                     {
                       "coord": "A9",
-                      "v": "BOD-05",
+                      "v": "PM02-A05",
                       "t": "s",
-                      "raw": "BOD-05",
+                      "raw": "PM02-A05",
                       "kind": "input"
                     },
                     {
                       "coord": "B9",
-                      "v": "EED Telemetry & BMS",
+                      "v": "Zoning / SID",
                       "t": "s",
-                      "raw": "EED Telemetry & BMS",
+                      "raw": "Zoning / SID",
                       "kind": "input"
                     },
                     {
                       "coord": "C9",
-                      "v": "Automated Union Database reporting for PUE, WUE, ERF & REF.",
+                      "v": "Verify formal compliance & documentary sign-off for Zoning / SID against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
                       "t": "s",
-                      "raw": "Automated Union Database reporting for PUE, WUE, ERF & REF.",
+                      "raw": "Verify formal compliance & documentary sign-off for Zoning / SID against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
                       "kind": "input"
                     },
                     {
                       "coord": "D9",
-                      "v": "EPMS Class-0.2 revenue meters + BACnet BMS + DCIM EU EED pipeline.",
+                      "v": "A1020 / M1000 / WBS 1.0-PERM",
                       "t": "s",
-                      "raw": "EPMS Class-0.2 revenue meters + BACnet BMS + DCIM EU EED pipeline.",
+                      "raw": "A1020 / M1000 / WBS 1.0-PERM",
                       "kind": "input"
                     },
                     {
                       "coord": "E9",
-                      "v": "EN 50600-4 / Reg 2024/1364",
+                      "v": "PASS",
                       "t": "s",
-                      "raw": "EN 50600-4 / Reg 2024/1364",
+                      "raw": "PASS",
                       "kind": "input"
                     },
                     {
                       "coord": "F9",
-                      "v": "A5510-A5520, A6510",
+                      "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
-                      "raw": "A5510-A5520, A6510",
+                      "raw": "Ready for Assigned Certifier / CxA verification",
                       "kind": "input"
                     }
                   ],
                   [
                     {
                       "coord": "A10",
-                      "v": "BOD-06",
+                      "v": "PM02-A06",
                       "t": "s",
-                      "raw": "BOD-06",
+                      "raw": "PM02-A06",
                       "kind": "input"
                     },
                     {
                       "coord": "B10",
-                      "v": "Fire & Physical Security",
+                      "v": "Power Proximity",
                       "t": "s",
-                      "raw": "Fire & Physical Security",
+                      "raw": "Power Proximity",
                       "kind": "input"
                     },
                     {
                       "coord": "C10",
-                      "v": "Part B compartmentation + Class 4 anti-ram physical security.",
+                      "v": "Verify formal compliance & documentary sign-off for Power Proximity against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
                       "t": "s",
-                      "raw": "Part B compartmentation + Class 4 anti-ram physical security.",
+                      "raw": "Verify formal compliance & documentary sign-off for Power Proximity against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
                       "kind": "input"
                     },
                     {
                       "coord": "D10",
-                      "v": "VESDA-E, water-mist/clean agent, pre-action, PAS 68 barriers, PIDS fence & SOC.",
+                      "v": "A1020 / M1000 / WBS 1.0-PERM",
                       "t": "s",
-                      "raw": "VESDA-E, water-mist/clean agent, pre-action, PAS 68 barriers, PIDS fence & SOC.",
+                      "raw": "A1020 / M1000 / WBS 1.0-PERM",
                       "kind": "input"
                     },
                     {
                       "coord": "E10",
-                      "v": "BCAR Part B / EN 50600-2-5",
+                      "v": "PASS",
                       "t": "s",
-                      "raw": "BCAR Part B / EN 50600-2-5",
+                      "raw": "PASS",
                       "kind": "input"
                     },
                     {
                       "coord": "F10",
-                      "v": "A1080, A4430, A5530-90",
+                      "v": "Ready for Assigned Certifier / CxA verification",
                       "t": "s",
-                      "raw": "A1080, A4430, A5530-90",
+                      "raw": "Ready for Assigned Certifier / CxA verification",
                       "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A11",
+                      "v": "PM02-A07",
+                      "t": "s",
+                      "raw": "PM02-A07",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B11",
+                      "v": "OPW Flood Risk",
+                      "t": "s",
+                      "raw": "OPW Flood Risk",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C11",
+                      "v": "Verify formal compliance & documentary sign-off for OPW Flood Risk against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
+                      "t": "s",
+                      "raw": "Verify formal compliance & documentary sign-off for OPW Flood Risk against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D11",
+                      "v": "A1020 / M1000 / WBS 1.0-PERM",
+                      "t": "s",
+                      "raw": "A1020 / M1000 / WBS 1.0-PERM",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "E11",
+                      "v": "PARTIAL",
+                      "t": "s",
+                      "raw": "PARTIAL",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "F11",
+                      "v": "Ready for Assigned Certifier / CxA verification",
+                      "t": "s",
+                      "raw": "Ready for Assigned Certifier / CxA verification",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A12",
+                      "v": "PM02-A08",
+                      "t": "s",
+                      "raw": "PM02-A08",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B12",
+                      "v": "Geotech / Karst",
+                      "t": "s",
+                      "raw": "Geotech / Karst",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C12",
+                      "v": "Verify formal compliance & documentary sign-off for Geotech / Karst against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
+                      "t": "s",
+                      "raw": "Verify formal compliance & documentary sign-off for Geotech / Karst against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D12",
+                      "v": "A1020 / M1000 / WBS 1.0-PERM",
+                      "t": "s",
+                      "raw": "A1020 / M1000 / WBS 1.0-PERM",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "E12",
+                      "v": "PARTIAL",
+                      "t": "s",
+                      "raw": "PARTIAL",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "F12",
+                      "v": "Ready for Assigned Certifier / CxA verification",
+                      "t": "s",
+                      "raw": "Ready for Assigned Certifier / CxA verification",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A13",
+                      "v": "PM02-A09",
+                      "t": "s",
+                      "raw": "PM02-A09",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B13",
+                      "v": "Fibre Diversity",
+                      "t": "s",
+                      "raw": "Fibre Diversity",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C13",
+                      "v": "Verify formal compliance & documentary sign-off for Fibre Diversity against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
+                      "t": "s",
+                      "raw": "Verify formal compliance & documentary sign-off for Fibre Diversity against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D13",
+                      "v": "A1020 / M1000 / WBS 1.0-PERM",
+                      "t": "s",
+                      "raw": "A1020 / M1000 / WBS 1.0-PERM",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "E13",
+                      "v": "OPEN",
+                      "t": "s",
+                      "raw": "OPEN",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "F13",
+                      "v": "Ready for Assigned Certifier / CxA verification",
+                      "t": "s",
+                      "raw": "Ready for Assigned Certifier / CxA verification",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A14",
+                      "v": "PM02-A10",
+                      "t": "s",
+                      "raw": "PM02-A10",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B14",
+                      "v": "Zoning / SID",
+                      "t": "s",
+                      "raw": "Zoning / SID",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C14",
+                      "v": "Verify formal compliance & documentary sign-off for Zoning / SID against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
+                      "t": "s",
+                      "raw": "Verify formal compliance & documentary sign-off for Zoning / SID against Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) (EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP).",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D14",
+                      "v": "A1020 / M1000 / WBS 1.0-PERM",
+                      "t": "s",
+                      "raw": "A1020 / M1000 / WBS 1.0-PERM",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "E14",
+                      "v": "OPEN",
+                      "t": "s",
+                      "raw": "OPEN",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "F14",
+                      "v": "Ready for Assigned Certifier / CxA verification",
+                      "t": "s",
+                      "raw": "Ready for Assigned Certifier / CxA verification",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A15",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "B15",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "C15",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "D15",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "E15",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "F15",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A16",
+                      "v": "AUDIT KPI",
+                      "t": "s",
+                      "raw": "AUDIT KPI",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B16",
+                      "v": "Total Checks",
+                      "t": "s",
+                      "raw": "Total Checks",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C16",
+                      "v": "10",
+                      "f": "=COUNTA(A5:A14)",
+                      "raw": 10,
+                      "t": "f",
+                      "kind": "calc"
+                    },
+                    {
+                      "coord": "D16",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "E16",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "F16",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A17",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "B17",
+                      "v": "PASS Count",
+                      "t": "s",
+                      "raw": "PASS Count",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C17",
+                      "v": "6",
+                      "f": "=COUNTIF(E5:E14,\"PASS\")",
+                      "raw": 6,
+                      "t": "f",
+                      "kind": "calc"
+                    },
+                    {
+                      "coord": "D17",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "E17",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "F17",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A18",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "B18",
+                      "v": "OPEN / PARTIAL",
+                      "t": "s",
+                      "raw": "OPEN / PARTIAL",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C18",
+                      "v": "0",
+                      "f": "=COUNTIF(E5:E14,\"OPEN\")+COUNTIF(E5:E14,\"PARTIAL\")",
+                      "raw": 0,
+                      "t": "f",
+                      "kind": "calc"
+                    },
+                    {
+                      "coord": "D18",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "E18",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "F18",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A19",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "B19",
+                      "v": "Compliance Rate",
+                      "t": "s",
+                      "raw": "Compliance Rate",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C19",
+                      "v": "#IFERROR?",
+                      "f": "=IFERROR(COUNTIF(E5:E14,\"PASS\")/COUNTA(A5:A14),0)",
+                      "raw": "#IFERROR?",
+                      "t": "f",
+                      "kind": "calc"
+                    },
+                    {
+                      "coord": "D19",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "E19",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "F19",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
                     }
                   ]
                 ]
-              }
-            ]
-          }
-        },
-        {
-          "docId": "PKG-02-D4",
-          "idx0": 3,
-          "cat": "AUDIT",
-          "title": "Scope Demarcation, Battery Limits & Free-Cooling Compliance Audit",
-          "ref": "Battery Limits / EU F-Gas 2024/573 / Dublin Psychrometrics",
-          "why": "Demarcates physical and operational boundaries (Client, Landlord, EirGrid, CSA, MEP, Tenant) and audits Dublin ambient psychrometric free-cooling hours and EU F-Gas 2024/573 compliance.",
-          "fileName": "PKG02_Doc4_Audit_Scope_Battery_Limits_Free_Cooling_Rev.001.xlsx",
-          "ext": "XLSX",
-          "downloadUrl": "files/PKG-02/PKG02_Doc4_Audit_Scope_Battery_Limits_Free_Cooling_Rev.001.xlsx",
-          "localPath": "G:\\My Drive\\7. AI\\DataCenter_EU_Ireland\\Phase_1_Consolidated_Path_B_RIBA_0_1\\PKG-02_Site_Technical_BoD\\PKG02_Doc4_Audit_Scope_Battery_Limits_Free_Cooling_Rev.001.xlsx",
-          "renderType": "xlsx",
-          "xlsx": {
-            "fileName": "PKG02_Doc4_Audit_Scope_Battery_Limits_Free_Cooling_Rev.001.xlsx",
-            "sheetCount": 1,
-            "totalCells": 88,
-            "formulaCells": 0,
-            "sheets": [
+              },
               {
-                "name": "2. Scope & Constraints",
-                "maxRow": 22,
+                "name": "2. Doc Control & Gates",
+                "maxRow": 10,
                 "maxCol": 4,
                 "formulaCount": 0,
                 "columns": [
@@ -11447,11 +23168,11 @@ window.PHASE1_PORTAL_DATA = {
                   [
                     {
                       "coord": "A1",
-                      "v": "SCOPE BOUNDARIES, EXCLUSIONS & IRISH / EU STATUTORY CONSTRAINTS",
+                      "v": "DC45-EU | PM-02 DOC 4 \u2014 DOCUMENT CONTROL & XER SYNCHRONIZATION",
                       "t": "s",
-                      "raw": "SCOPE BOUNDARIES, EXCLUSIONS & IRISH / EU STATUTORY CONSTRAINTS",
+                      "raw": "DC45-EU | PM-02 DOC 4 \u2014 DOCUMENT CONTROL & XER SYNCHRONIZATION",
                       "kind": "banner",
-                      "cspan": 8
+                      "cspan": 4
                     },
                     {
                       "coord": "B1",
@@ -11481,11 +23202,11 @@ window.PHASE1_PORTAL_DATA = {
                   [
                     {
                       "coord": "A2",
-                      "v": "EN 50600 Class 3, BCAR, EPA IEL, EirGrid / CRU & S.I. No. 291/2013 Constraints",
+                      "v": "Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) | RIBA Stage 0-1",
                       "t": "s",
-                      "raw": "EN 50600 Class 3, BCAR, EPA IEL, EirGrid / CRU & S.I. No. 291/2013 Constraints",
+                      "raw": "Pre-Purchase Technical Due Diligence Checklist (Boreholes, Phase 1 ESA, OPW Flood) | RIBA Stage 0-1",
                       "kind": "banner",
-                      "cspan": 8
+                      "cspan": 4
                     },
                     {
                       "coord": "B2",
@@ -11545,636 +23266,496 @@ window.PHASE1_PORTAL_DATA = {
                   [
                     {
                       "coord": "A4",
-                      "v": "1. IN-SCOPE DELIVERABLES (WBS 1.0 - 7.0)",
+                      "v": "Metadata Key",
                       "t": "s",
-                      "raw": "1. IN-SCOPE DELIVERABLES (WBS 1.0 - 7.0)",
-                      "kind": "section",
-                      "cspan": 8
+                      "raw": "Metadata Key",
+                      "kind": "input"
                     },
                     {
                       "coord": "B4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "v": "Value / Rule",
+                      "t": "s",
+                      "raw": "Value / Rule",
+                      "kind": "input"
                     },
                     {
                       "coord": "C4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "v": "Linked Reference",
+                      "t": "s",
+                      "raw": "Linked Reference",
+                      "kind": "input"
                     },
                     {
                       "coord": "D4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "v": "Verification Status",
+                      "t": "s",
+                      "raw": "Verification Status",
+                      "kind": "input"
                     }
                   ],
                   [
                     {
                       "coord": "A5",
-                      "v": "WBS",
+                      "v": "ISO 19650 Doc ID",
                       "t": "s",
-                      "raw": "WBS",
+                      "raw": "ISO 19650 Doc ID",
                       "kind": "input"
                     },
                     {
                       "coord": "B5",
-                      "v": "Package Title",
+                      "v": "DC45EU-PM02-DOC4-Rev004",
                       "t": "s",
-                      "raw": "Package Title",
-                      "kind": "input",
-                      "cspan": 2
+                      "raw": "DC45EU-PM02-DOC4-Rev004",
+                      "kind": "input"
                     },
                     {
                       "coord": "C5",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "v": "PM-12 CDE Naming",
+                      "t": "s",
+                      "raw": "PM-12 CDE Naming",
+                      "kind": "input"
                     },
                     {
                       "coord": "D5",
-                      "v": "Scope Deliverables",
+                      "v": "ACTIVE",
                       "t": "s",
-                      "raw": "Scope Deliverables",
-                      "kind": "section",
-                      "cspan": 5
+                      "raw": "ACTIVE",
+                      "kind": "input"
                     }
                   ],
                   [
                     {
                       "coord": "A6",
-                      "v": "1.0-PERM",
+                      "v": "Flashcard Module",
                       "t": "s",
-                      "raw": "1.0-PERM",
+                      "raw": "Flashcard Module",
                       "kind": "input"
                     },
                     {
                       "coord": "B6",
-                      "v": "Planning, EPA IEL & EirGrid",
+                      "v": "PM-02: Site Selection Due Diligence & Pre-Feasibility Scoring",
                       "t": "s",
-                      "raw": "Planning, EPA IEL & EirGrid",
-                      "kind": "input",
-                      "cspan": 2
+                      "raw": "PM-02: Site Selection Due Diligence & Pre-Feasibility Scoring",
+                      "kind": "input"
                     },
                     {
                       "coord": "C6",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "v": "RIBA Stage 0-1",
+                      "t": "s",
+                      "raw": "RIBA Stage 0-1",
+                      "kind": "input"
                     },
                     {
                       "coord": "D6",
-                      "v": "PSDP/PSCS appointments, Section 247, EIAR, SID/Local Authority Planning, EPA IEL, EirGrid ECP/RMS, CRU BESS, FSC & DAC.",
+                      "v": "ALIGNED",
                       "t": "s",
-                      "raw": "PSDP/PSCS appointments, Section 247, EIAR, SID/Local Authority Planning, EPA IEL, EirGrid ECP/RMS, CRU BESS, FSC & DAC.",
-                      "kind": "section",
-                      "cspan": 5
+                      "raw": "ALIGNED",
+                      "kind": "input"
                     }
                   ],
                   [
                     {
                       "coord": "A7",
-                      "v": "2.0 & 3.0",
+                      "v": "P6 Gate & WBS",
                       "t": "s",
-                      "raw": "2.0 & 3.0",
+                      "raw": "P6 Gate & WBS",
                       "kind": "input"
                     },
                     {
                       "coord": "B7",
-                      "v": "ISO 19650 BIM & EU Plant",
+                      "v": "A1020 / M1000 | WBS 1.0-PERM",
                       "t": "s",
-                      "raw": "ISO 19650 BIM & EU Plant",
-                      "kind": "input",
-                      "cspan": 2
+                      "raw": "A1020 / M1000 | WBS 1.0-PERM",
+                      "kind": "input"
                     },
                     {
                       "coord": "C7",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "v": "144 Tasks / 213 Links",
+                      "t": "s",
+                      "raw": "144 Tasks / 213 Links",
+                      "kind": "input"
                     },
                     {
                       "coord": "D7",
-                      "v": "BIM CDE, GI boreholes, RIBA Stage 4 IFC, EED telemetry schema, FAT & port logistics for 63MVA tx, SF6-free GIS, HVO gensets & BESS.",
+                      "v": "SYNCED",
                       "t": "s",
-                      "raw": "BIM CDE, GI boreholes, RIBA Stage 4 IFC, EED telemetry schema, FAT & port logistics for 63MVA tx, SF6-free GIS, HVO gensets & BESS.",
-                      "kind": "section",
-                      "cspan": 5
+                      "raw": "SYNCED",
+                      "kind": "input"
                     }
                   ],
                   [
                     {
                       "coord": "A8",
-                      "v": "4.x & 5.x",
+                      "v": "Governing Standards",
                       "t": "s",
-                      "raw": "4.x & 5.x",
+                      "raw": "Governing Standards",
                       "kind": "input"
                     },
                     {
                       "coord": "B8",
-                      "v": "Shell, Substation, MEP & Halls",
+                      "v": "EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP",
                       "t": "s",
-                      "raw": "Shell, Substation, MEP & Halls",
-                      "kind": "input",
-                      "cspan": 2
+                      "raw": "EN 50600-2-1, Eurocode 7, OPW CFRAM Flood Maps, EirGrid ECP",
+                      "kind": "input"
                     },
                     {
                       "coord": "C8",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "v": "Eurocode 7 / OPW Flood Maps",
+                      "t": "s",
+                      "raw": "Eurocode 7 / OPW Flood Maps",
+                      "kind": "input"
                     },
                     {
                       "coord": "D8",
-                      "v": "750 CFA piles, 18 kN/m2 decks, Part L envelope, PAS 68 perimeter, 110kV/22kV GIS, 20x HVO+SCR gensets, BESS, CHW+ERF+TES & Halls 1-5.",
+                      "v": "ENFORCED",
                       "t": "s",
-                      "raw": "750 CFA piles, 18 kN/m2 decks, Part L envelope, PAS 68 perimeter, 110kV/22kV GIS, 20x HVO+SCR gensets, BESS, CHW+ERF+TES & Halls 1-5.",
-                      "kind": "section",
-                      "cspan": 5
+                      "raw": "ENFORCED",
+                      "kind": "input"
                     }
                   ],
                   [
                     {
                       "coord": "A9",
-                      "v": "6.0 & 7.0",
+                      "v": "Study Takeaway",
                       "t": "s",
-                      "raw": "6.0 & 7.0",
+                      "raw": "Study Takeaway",
                       "kind": "input"
                     },
                     {
                       "coord": "B9",
-                      "v": "CIBSE Cx L1-L5 & BCAR COD",
+                      "v": "Eliminate fatal subsurface, contamination, UXO, or fluvial flood blockers before closing.",
                       "t": "s",
-                      "raw": "CIBSE Cx L1-L5 & BCAR COD",
-                      "kind": "input",
-                      "cspan": 2
+                      "raw": "Eliminate fatal subsurface, contamination, UXO, or fluvial flood blockers before closing.",
+                      "kind": "input"
                     },
                     {
                       "coord": "C9",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "v": "gogo Learning Dashboard",
+                      "t": "s",
+                      "raw": "gogo Learning Dashboard",
+                      "kind": "input"
                     },
                     {
                       "coord": "D9",
-                      "v": "Witnessed FAT/BCAR QA, L3 static/LOTO, L4 BESS/black-start, L5 45MW 48h IST, HSA Safety File, Part B Fire, EED, EirGrid & BCAR CCC.",
+                      "v": "ACTIVE",
                       "t": "s",
-                      "raw": "Witnessed FAT/BCAR QA, L3 static/LOTO, L4 BESS/black-start, L5 45MW 48h IST, HSA Safety File, Part B Fire, EED, EirGrid & BCAR CCC.",
-                      "kind": "section",
-                      "cspan": 5
+                      "raw": "ACTIVE",
+                      "kind": "input"
                     }
                   ],
                   [
                     {
                       "coord": "A10",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
+                      "v": "Blue Cells Convention",
+                      "t": "s",
+                      "raw": "Blue Cells Convention",
+                      "kind": "input"
                     },
                     {
                       "coord": "B10",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
+                      "v": "All blue-shaded numeric inputs represent editable project parameters",
+                      "t": "s",
+                      "raw": "All blue-shaded numeric inputs represent editable project parameters",
+                      "kind": "input"
                     },
                     {
                       "coord": "C10",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
+                      "v": "Audit Formatting Rule",
+                      "t": "s",
+                      "raw": "Audit Formatting Rule",
+                      "kind": "input"
                     },
                     {
                       "coord": "D10",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A11",
-                      "v": "2. EXPLICIT SCOPE EXCLUSIONS",
+                      "v": "STANDARD",
                       "t": "s",
-                      "raw": "2. EXPLICIT SCOPE EXCLUSIONS",
-                      "kind": "section",
-                      "cspan": 8
-                    },
-                    {
-                      "coord": "B11",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C11",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "D11",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A12",
-                      "v": "ID",
-                      "t": "s",
-                      "raw": "ID",
+                      "raw": "STANDARD",
                       "kind": "input"
-                    },
-                    {
-                      "coord": "B12",
-                      "v": "Exclusion",
-                      "t": "s",
-                      "raw": "Exclusion",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "C12",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "D12",
-                      "v": "Contractual Boundary",
-                      "t": "s",
-                      "raw": "Contractual Boundary",
-                      "kind": "section",
-                      "cspan": 5
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A13",
-                      "v": "EX-01",
-                      "t": "s",
-                      "raw": "EX-01",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B13",
-                      "v": "Tenant Active IT Equipment",
-                      "t": "s",
-                      "raw": "Tenant Active IT Equipment",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "C13",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "D13",
-                      "v": "Customer compute racks, servers, storage & optical patching beyond Meet-Me-Rooms MMR-A/B.",
-                      "t": "s",
-                      "raw": "Customer compute racks, servers, storage & optical patching beyond Meet-Me-Rooms MMR-A/B.",
-                      "kind": "section",
-                      "cspan": 5
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A14",
-                      "v": "EX-02",
-                      "t": "s",
-                      "raw": "EX-02",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B14",
-                      "v": "Upstream EirGrid Transmission",
-                      "t": "s",
-                      "raw": "Upstream EirGrid Transmission",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "C14",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "D14",
-                      "v": "EirGrid 220kV/400kV regional transmission reinforcements outside the site 110kV GIS boundary.",
-                      "t": "s",
-                      "raw": "EirGrid 220kV/400kV regional transmission reinforcements outside the site 110kV GIS boundary.",
-                      "kind": "section",
-                      "cspan": 5
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A15",
-                      "v": "EX-03",
-                      "t": "s",
-                      "raw": "EX-03",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B15",
-                      "v": "District Heating Network Pipe",
-                      "t": "s",
-                      "raw": "District Heating Network Pipe",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "C15",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "D15",
-                      "v": "Off-site Municipal District Heating distribution mains beyond the ERF Heat-Reuse Export Valve Skid (A5390).",
-                      "t": "s",
-                      "raw": "Off-site Municipal District Heating distribution mains beyond the ERF Heat-Reuse Export Valve Skid (A5390).",
-                      "kind": "section",
-                      "cspan": 5
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A16",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "B16",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "C16",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "D16",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A17",
-                      "v": "3. BINDING IRISH / EU STATUTORY & TECHNICAL CONSTRAINTS",
-                      "t": "s",
-                      "raw": "3. BINDING IRISH / EU STATUTORY & TECHNICAL CONSTRAINTS",
-                      "kind": "section",
-                      "cspan": 8
-                    },
-                    {
-                      "coord": "B17",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C17",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "D17",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A18",
-                      "v": "ID",
-                      "t": "s",
-                      "raw": "ID",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B18",
-                      "v": "Constraint",
-                      "t": "s",
-                      "raw": "Constraint",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "C18",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "D18",
-                      "v": "Non-Negotiable Requirement",
-                      "t": "s",
-                      "raw": "Non-Negotiable Requirement",
-                      "kind": "section",
-                      "cspan": 5
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A19",
-                      "v": "CON-01",
-                      "t": "s",
-                      "raw": "CON-01",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B19",
-                      "v": "S.I. 291/2013 & HSA AF1",
-                      "t": "s",
-                      "raw": "S.I. 291/2013 & HSA AF1",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "C19",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "D19",
-                      "v": "Written PSDP/PSCS appointments and HSA AF1 notification legally precede any enabling or excavation works.",
-                      "t": "s",
-                      "raw": "Written PSDP/PSCS appointments and HSA AF1 notification legally precede any enabling or excavation works.",
-                      "kind": "section",
-                      "cspan": 5
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A20",
-                      "v": "CON-02",
-                      "t": "s",
-                      "raw": "CON-02",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B20",
-                      "v": "BCAR CCC & Part B Gate",
-                      "t": "s",
-                      "raw": "BCAR CCC & Part B Gate",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "C20",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "D20",
-                      "v": "Building cannot legally open without Assigned Certifier BCMS validation, Part B Fire Clearance (A7010), FSC & DAC.",
-                      "t": "s",
-                      "raw": "Building cannot legally open without Assigned Certifier BCMS validation, Part B Fire Clearance (A7010), FSC & DAC.",
-                      "kind": "section",
-                      "cspan": 5
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A21",
-                      "v": "CON-03",
-                      "t": "s",
-                      "raw": "CON-03",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B21",
-                      "v": "CRU Dispatchable BESS/Gen",
-                      "t": "s",
-                      "raw": "CRU Dispatchable BESS/Gen",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "C21",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "D21",
-                      "v": "EirGrid MIC energisation requires CRU-compliant on-site dispatchable BESS/generation and RMS dynamic verification.",
-                      "t": "s",
-                      "raw": "EirGrid MIC energisation requires CRU-compliant on-site dispatchable BESS/generation and RMS dynamic verification.",
-                      "kind": "section",
-                      "cspan": 5
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A22",
-                      "v": "CON-04",
-                      "t": "s",
-                      "raw": "CON-04",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B22",
-                      "v": "EU EED (2023/1791) Reporting",
-                      "t": "s",
-                      "raw": "EU EED (2023/1791) Reporting",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "C22",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "D22",
-                      "v": "Mandatory automated metering infrastructure for annual EU Union Database PUE, WUE, ERF & REF disclosures (>=500kW).",
-                      "t": "s",
-                      "raw": "Mandatory automated metering infrastructure for annual EU Union Database PUE, WUE, ERF & REF disclosures (>=500kW).",
-                      "kind": "section",
-                      "cspan": 5
                     }
                   ]
                 ]
               }
             ]
-          },
-          "companionDownloadUrl": "files/PKG-02/PKG02_Doc4_Audit_Free_Cooling_Psychrometric_Audit_Rev.001.docx",
-          "companionFileName": "PKG02_Doc4_Audit_Free_Cooling_Psychrometric_Audit_Rev.001.docx",
-          "companionExt": "DOCX",
-          "companionDocx": {
-            "fileName": "PKG02_Doc4_Audit_Free_Cooling_Psychrometric_Audit_Rev.001.docx",
+          }
+        }
+      ]
+    },
+    {
+      "id": "PM-03",
+      "title": "Basis of Design (BoD) & I.S. EN 50600 Class 3 Translation",
+      "desc": "Translate tenant SLAs and Uptime Tier III maintainability into EN 50600 Availability Classes, PUE targets, and free-cooling envelope.",
+      "tags": [
+        "EN 50600",
+        "BoD",
+        "ISO 22237"
+      ],
+      "folder": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-03_Basis_of_Design_EN50600_Class3",
+      "readme": "# PM-03: Basis of Design (BoD) & I.S. EN 50600 Class 3 Translation\n\n- **Phase**: `Phase 1: Initiation, Charter & Business Case (RIBA 0-1)`\n- **RIBA Stage**: `RIBA Stage 1-2`\n- **P6 Milestone Gate**: `M1000 / M2110`\n- **WBS Scope**: `WBS 2.0-ENG`\n- **Governing Standards**: I.S. EN 50600-1/-2-2/-2-3, ISO/IEC 22237 Class 3, ASHRAE TC 9.9, EU F-Gas 2024/573\n- **Focus Areas**: 45.0 MW IT Load, 5x 9 MW Halls, PUE <= 1.25, WUE <= 0.25 L/kWh, ERF >= 0.15\n\n## Module Overview\nTranslate tenant SLAs and Uptime Tier III maintainability into EN 50600 Availability Classes, PUE targets, and free-cooling envelope.\n\n## Ordered Flashcard Documents (`Doc 1` -> `Doc 4`)\n\n| Doc | Category | Title | Exact Local File | Companion / Notes |\n| :--- | :--- | :--- | :--- | :--- |\n| Doc 1 | Standard | I.S. EN 50600-1 / -2-2 / -2-3 & ISO/IEC 22237 Availability Class 3 Series | `PM03_Doc1_Standard_I_S_EN_50600_1_2_2_2_3_ISO_IEC_Rev.004.docx` | EN 50600 / ISO 22237 |\n| Doc 2 | Deliverable | 45 MW Campus Basis of Design (N+1/2N Topology, Density, SLAs & Redundancy) | `PM03_Doc2_Deliverable_EN50600_BoD_Controls_Master_Rev.004.xlsx` | Sheet 3. EN 50600 & EED |\n| Doc 3 | Template | Scope Boundaries, Client vs. Contractor Battery Limits & Exclusions Matrix | `PM03_Doc3_Template_Scope_Boundaries_Charter_Master_Rev.004.xlsx` | Sheet 4. Scope Boundaries |\n| Doc 4 | Audit | Atlantic Free-Cooling Psychrometric Study & Low-GWP Chiller (EU F-Gas) Review | `PM03_Doc4_Audit_Atlantic_Free_Cooling_Psychrometric_Rev.004.docx` | ASHRAE TC 9.9 / EU 2024/573 |\n\n## Study Takeaway (`Why Each Document Matters`)\n- **Doc 1 (Standard)**: Master European concurrent maintainability topology across power, cooling, and security.\n- **Doc 2 (Deliverable)**: Translate 45 MW IT load and kW/rack targets into distributable redundant MEP specs.\n- **Doc 3 (Template)**: Prevent scope gaps between core shell, white-space fit-out, and utility tie-ins.\n- **Doc 4 (Audit)**: Validate annualized PUE <= 1.22 using Irish ambient cooling hours and compliant refrigerants.\n",
+      "docs": [
+        {
+          "docId": "PM-03-D1",
+          "idx0": 0,
+          "cat": "Standard",
+          "title": "I.S. EN 50600-1 / -2-2 / -2-3 & ISO/IEC 22237 Availability Class 3 Series",
+          "ref": "EN 50600 / ISO 22237",
+          "why": "Master European concurrent maintainability topology across power, cooling, and security.",
+          "fileName": "PM03_Doc1_Standard_I_S_EN_50600_1_2_2_2_3_ISO_IEC_Rev.004.docx",
+          "ext": "DOCX",
+          "downloadUrl": "files/PM-03/PM03_Doc1_Standard_I_S_EN_50600_1_2_2_2_3_ISO_IEC_Rev.004.docx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-03_Basis_of_Design_EN50600_Class3\\PM03_Doc1_Standard_I_S_EN_50600_1_2_2_2_3_ISO_IEC_Rev.004.docx",
+          "renderType": "docx",
+          "docx": {
+            "fileName": "PM03_Doc1_Standard_I_S_EN_50600_1_2_2_2_3_ISO_IEC_Rev.004.docx",
+            "blocks": [
+              {
+                "type": "banner",
+                "text": "PHASE 1: INITIATION, CHARTER & BUSINESS CASE (RIBA 0-1) | PM-03 | STANDARD DOCUMENT | I.S. EN 50600-1 / -2-2 / -2-3 & ISO/IEC 22237 Availability Class 3 Series"
+              },
+              {
+                "type": "table",
+                "rows": [
+                  [
+                    "Document Control Field",
+                    "DC45-EU Repository Value"
+                  ],
+                  [
+                    "ISO 19650 Document Code",
+                    "DC45EU-PM03-DOC1-Rev004"
+                  ],
+                  [
+                    "Flashcard Module & Stage",
+                    "PM-03: Basis of Design (BoD) & I.S. EN 50600 Class 3 Translation (RIBA Stage 1-2)"
+                  ],
+                  [
+                    "P6 Milestone / WBS Anchor",
+                    "M1000 / M2110 | WBS 2.0-ENG | Live Schedule: 144 Tasks / 213 Links"
+                  ],
+                  [
+                    "Governing Standards",
+                    "I.S. EN 50600-1/-2-2/-2-3, ISO/IEC 22237 Class 3, ASHRAE TC 9.9, EU F-Gas 2024/573"
+                  ],
+                  [
+                    "Dashboard Ref & Revision",
+                    "EN 50600 / ISO 22237 | Status: Active Baseline (Rev.004)"
+                  ]
+                ]
+              },
+              {
+                "type": "h1",
+                "text": "1. Document Mandate & Operational Scope"
+              },
+              {
+                "type": "p",
+                "text": "Portfolio Context: This institutional standard establishes controlled governance, technical compliance rules, and auditable evidence for the 45 MW DC45-EU Hyperscale Data Centre development in Ireland (4 x 9.0 MW data halls, dual 110 kV grid incomers, 16 x 2.5 MVA HVO standby generation with SCR abatement, and EN 50600 Availability Class 3 / Uptime TCCF target). All schedules and resource assumptions synchronize against the master Primavera P6 baseline (DataCenter_45MW_EU_Ireland.xer: M1000 NTP 2027-01-04 through M7060 COD 2030-05-20)."
+              },
+              {
+                "type": "p",
+                "text": "Core Competency Objective: Master European concurrent maintainability topology across power, cooling, and security."
+              },
+              {
+                "type": "p",
+                "text": "Module Summary: Translate tenant SLAs and Uptime Tier III maintainability into EN 50600 Availability Classes, PUE targets, and free-cooling envelope."
+              },
+              {
+                "type": "h1",
+                "text": "2. Governing Standards & Compliance Framework"
+              },
+              {
+                "type": "bullet",
+                "text": "I.S. EN 50600-1/-2-2/-2-3: Mandatory alignment enforced during RIBA Stage 1-2 under PM-03 controls, subject to Independent Verification / Assigned Certifier / CxA sign-off prior to stage progression."
+              },
+              {
+                "type": "bullet",
+                "text": "ISO/IEC 22237 Class 3: Mandatory alignment enforced during RIBA Stage 1-2 under PM-03 controls, subject to Independent Verification / Assigned Certifier / CxA sign-off prior to stage progression."
+              },
+              {
+                "type": "bullet",
+                "text": "ASHRAE TC 9.9: Mandatory alignment enforced during RIBA Stage 1-2 under PM-03 controls, subject to Independent Verification / Assigned Certifier / CxA sign-off prior to stage progression."
+              },
+              {
+                "type": "bullet",
+                "text": "EU F-Gas 2024/573: Mandatory alignment enforced during RIBA Stage 1-2 under PM-03 controls, subject to Independent Verification / Assigned Certifier / CxA sign-off prior to stage progression."
+              },
+              {
+                "type": "h1",
+                "text": "3. Key Control Elements & Stage-Gate Acceptance Criteria"
+              },
+              {
+                "type": "table",
+                "rows": [
+                  [
+                    "Item Code",
+                    "Control Focus Area",
+                    "DC45-EU Quantitative / Statutory Threshold",
+                    "Verification Authority"
+                  ],
+                  [
+                    "PM03-C01",
+                    "45.0 MW IT Load",
+                    "Formal standard evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to M1000 / M2110 and WBS 2.0-ENG.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ],
+                  [
+                    "PM03-C02",
+                    "5x 9 MW Halls",
+                    "Formal standard evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to M1000 / M2110 and WBS 2.0-ENG.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ],
+                  [
+                    "PM03-C03",
+                    "PUE <= 1.25",
+                    "Formal standard evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to M1000 / M2110 and WBS 2.0-ENG.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ],
+                  [
+                    "PM03-C04",
+                    "WUE <= 0.25 L/kWh",
+                    "Formal standard evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to M1000 / M2110 and WBS 2.0-ENG.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ],
+                  [
+                    "PM03-C05",
+                    "ERF >= 0.15",
+                    "Formal standard evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to M1000 / M2110 and WBS 2.0-ENG.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ]
+                ]
+              },
+              {
+                "type": "h1",
+                "text": "4. Primavera P6 Milestone & Dependency Synchronization"
+              },
+              {
+                "type": "table",
+                "rows": [
+                  [
+                    "P6 Gate ID",
+                    "Baseline Target Date",
+                    "Gate Control Significance"
+                  ],
+                  [
+                    "M1000",
+                    "2027-01-04",
+                    "Final Investment Decision (FID) & Notice to Proceed (NTP)"
+                  ],
+                  [
+                    "M2110",
+                    "2027-07-12",
+                    "Detailed Design Freeze & Early Construction Release"
+                  ],
+                  [
+                    "M3120",
+                    "2028-01-03",
+                    "OFCI Long-Lead Equipment Delivery Buffer (+200d Lead)"
+                  ],
+                  [
+                    "M4350",
+                    "2029-02-12",
+                    "Core & Shell Weather-Tight Envelope Complete"
+                  ],
+                  [
+                    "M5595",
+                    "2029-09-24",
+                    "MEP Pre-Energisation Complete \u2014 L3/L4 Cx Handover"
+                  ],
+                  [
+                    "M6470",
+                    "2030-02-25",
+                    "Level 5 45 MW 48-Hr Integrated Systems Test (IST) Complete"
+                  ],
+                  [
+                    "M7060",
+                    "2030-05-20",
+                    "Practical Completion, BCAR CCC & Commercial Operation (COD)"
+                  ]
+                ]
+              },
+              {
+                "type": "h1",
+                "text": "5. Controlled Review & Authorization Block"
+              },
+              {
+                "type": "table",
+                "rows": [
+                  [
+                    "Role / Title",
+                    "Organization",
+                    "ISO 19650 Suitability",
+                    "Sign-Off Gate"
+                  ],
+                  [
+                    "Originator / Package Lead",
+                    "EPCm / Specialist Consultant",
+                    "S2 (Suitable for Info)",
+                    "M1000 / M2110"
+                  ],
+                  [
+                    "Technical & Statutory Reviewer",
+                    "PSDP / Assigned Certifier / CxA",
+                    "S3 (Suitable for Review)",
+                    "RIBA Stage 1-2"
+                  ],
+                  [
+                    "Approving Authority",
+                    "Project Director / SteerCo Tier 2",
+                    "A1 (Approved for Execution)",
+                    "Gate Freeze"
+                  ],
+                  [
+                    "Document Controller",
+                    "PMO CDE Administrator",
+                    "Published Archive",
+                    "Monthly Cutoff"
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "docId": "PM-03-D2",
+          "idx0": 1,
+          "cat": "Deliverable",
+          "title": "45 MW Campus Basis of Design (N+1/2N Topology, Density, SLAs & Redundancy)",
+          "ref": "Sheet 3. EN 50600 & EED",
+          "why": "Translate 45 MW IT load and kW/rack targets into distributable redundant MEP specs.",
+          "fileName": "PM03_Doc2_Deliverable_EN50600_BoD_Controls_Master_Rev.004.xlsx",
+          "ext": "XLSX",
+          "downloadUrl": "files/PM-03/PM03_Doc2_Deliverable_EN50600_BoD_Controls_Master_Rev.004.xlsx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-03_Basis_of_Design_EN50600_Class3\\PM03_Doc2_Deliverable_EN50600_BoD_Controls_Master_Rev.004.xlsx",
+          "renderType": "xlsx_master",
+          "masterKey": "CONTROLS",
+          "focalSheet": "2. EN 50600 Basis of Design"
+        },
+        {
+          "docId": "PM-03-D3",
+          "idx0": 2,
+          "cat": "Template",
+          "title": "Scope Boundaries, Client vs. Contractor Battery Limits & Exclusions Matrix",
+          "ref": "Sheet 4. Scope Boundaries",
+          "why": "Prevent scope gaps between core shell, white-space fit-out, and utility tie-ins.",
+          "fileName": "PM03_Doc3_Template_Scope_Boundaries_Charter_Master_Rev.004.xlsx",
+          "ext": "XLSX",
+          "downloadUrl": "files/PM-03/PM03_Doc3_Template_Scope_Boundaries_Charter_Master_Rev.004.xlsx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-03_Basis_of_Design_EN50600_Class3\\PM03_Doc3_Template_Scope_Boundaries_Charter_Master_Rev.004.xlsx",
+          "renderType": "xlsx_master",
+          "masterKey": "CHARTER",
+          "focalSheet": "2. Scope & Constraints"
+        },
+        {
+          "docId": "PM-03-D4",
+          "idx0": 3,
+          "cat": "Audit",
+          "title": "Atlantic Free-Cooling Psychrometric Study & Low-GWP Chiller (EU F-Gas) Review",
+          "ref": "ASHRAE TC 9.9 / EU 2024/573",
+          "why": "Validate annualized PUE <= 1.22 using Irish ambient cooling hours and compliant refrigerants.",
+          "fileName": "PM03_Doc4_Audit_Atlantic_Free_Cooling_Psychrometric_Rev.004.docx",
+          "ext": "DOCX",
+          "downloadUrl": "files/PM-03/PM03_Doc4_Audit_Atlantic_Free_Cooling_Psychrometric_Rev.004.docx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-03_Basis_of_Design_EN50600_Class3\\PM03_Doc4_Audit_Atlantic_Free_Cooling_Psychrometric_Rev.004.docx",
+          "renderType": "docx",
+          "docx": {
+            "fileName": "PM03_Doc4_Audit_Atlantic_Free_Cooling_Psychrometric_Rev.004.docx",
             "blocks": [
               {
                 "type": "banner",
@@ -12384,46 +23965,286 @@ window.PHASE1_PORTAL_DATA = {
       ]
     },
     {
-      "id": "PKG-03",
-      "title": "Capex Economics, 10-Year DCF Model & Board FID Sanction",
-      "desc": "Unifies RICS NRM1 capital cost planning, 10-year investment cash flows, sensitivity stress testing, stage-gate gating, and Board FID memorandum.",
+      "id": "PM-04",
+      "title": "EUR Capex Modelling, 10-Yr DCF, NPV/IRR & Sensitivity",
+      "desc": "Build EUR/MW Capex baselines, colocation yield curves, PUE/energy sensitivity tables, and institutional investment metrics.",
       "tags": [
-        "RICS NRM1",
-        "10-Yr DCF (8.5% WACC)",
-        "Board FID Paper",
-        "LNTP Release",
-        "Stage-Gate 1 Exit"
+        "EUR DCF",
+        "Capex/MW",
+        "NPV/IRR"
       ],
-      "legacyModIds": [
-        "PM-04",
-        "PM-05"
-      ],
-      "folder": "G:\\My Drive\\7. AI\\DataCenter_EU_Ireland\\Phase_1_Consolidated_Path_B_RIBA_0_1\\PKG-03_Capex_DCF_FID_Sanction",
-      "readme": "# PKG-03: Capex Economics, 10-Year DCF Model & Board FID Sanction\n\n- **Phase**: `Phase 1: Initiation, Charter & Business Case (RIBA 0-1)`\n- **P6 Milestone Gate**: `M1000 -> M7060`\n- **RIBA Stage**: `RIBA Stages 0-7`\n- **Governing Standards**: RICS NRM1, DCF Investment Appraisal, RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06\n- **WBS Scope**: `WBS 1.0 through 8.0 & All WBS`\n- **Focus Areas**: RICS NRM1 elemental capex budget benchmarked in EUR/MW, 10-year DCF financial returns (8.5% WACC hurdle, IRR, NPV, Payback), multi-variable stress testing (Capex +/-10%, Power Tariff +/-15%, PUE 1.18-1.35), Pre-NTP Final Investment Decision (FID) Board Memorandum, Stage-Gate 1 Exit Criteria (20-point checklist), and Limited Notice to Proceed (LNTP) release authorization.\n\n## Module Overview\nPKG-03 consolidates capital cost planning, financial underwriting, and stage-gate governance into the final investment decision dossier presented to the Board of Directors for full project funding.\n\n## Consolidated Deliverables (`Doc 1` -> `Doc 4`)\n\n| Doc | Category | Title | Dedicated Local Artifact | Purpose & Commercial Focus |\n| :--- | :--- | :--- | :--- | :--- |\n| Doc 1 | COMMERCIAL | RICS NRM1 Elemental Capex Baseline & Funding Tranches | `PKG03_Doc1_Commercial_RICS_NRM1_Capex_Baseline_Tranches_Rev.001.xlsx` | Detailed EUR capex baseline across WBS packages 1.0 to 8.0 mapped to funding tranches TR-01..TR-06. |\n| Doc 2 | FINANCIAL | 10-Year EUR DCF Investment Valuation & Stress Test Matrix | `PKG03_Doc2_Financial_10Yr_DCF_Investment_Stress_Model_Rev.001.xlsx` | Comprehensive DCF valuation model computing NPV, IRR, payback period, and sensitivity curves. |\n| Doc 3 | MEMORANDUM | Pre-NTP Final Investment Decision (FID) Board Dossier | `PKG03_Doc3_Memorandum_FID_Board_Sanction_Dossier_Rev.001.xlsx` | Board of Directors sanction paper synthesizing planning approvals, grid headroom confirmation, and P80 contingency. |\n| Doc 4 | AUDIT | Stage-Gate 1 Mandatory Exit Criteria & LNTP Authorization Protocol | `PKG03_Doc4_Audit_Stage_Gate_1_Exit_LNTP_Protocol_Rev.001.docx` | 20-point auditable checklist required to exit RIBA Stage 1 + LNTP commercial authorization memo. |\n\nCompanion Verification Checklist: `PKG03_Doc4_Audit_Stage_Gate_1_Mandatory_Exit_Checklist_Rev.001.xlsx` (Auditable Stage-Gate Verification).\n",
+      "folder": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-04_EUR_Capex_10Yr_DCF_NPV_IRR",
+      "readme": "# PM-04: EUR Capex Modelling, 10-Yr DCF, NPV/IRR & Sensitivity\n\n- **Phase**: `Phase 1: Initiation, Charter & Business Case (RIBA 0-1)`\n- **RIBA Stage**: `RIBA Stage 1`\n- **P6 Milestone Gate**: `M1000 FID`\n- **WBS Scope**: `WBS 1.0-7.0`\n- **Governing Standards**: RICS NRM1, Institutional EUR DCF (WACC 8.5%, CIT 12.5%)\n- **Focus Areas**: Capex EUR/MW, Opex EUR/yr, Tariff EUR/kW/mo, Power EUR/kWh, Unlevered IRR / NPV\n\n## Module Overview\nBuild EUR/MW Capex baselines, colocation yield curves, PUE/energy sensitivity tables, and institutional investment metrics.\n\n## Ordered Flashcard Documents (`Doc 1` -> `Doc 4`)\n\n| Doc | Category | Title | Exact Local File | Companion / Notes |\n| :--- | :--- | :--- | :--- | :--- |\n| Doc 1 | Standard | RICS New Rules of Measurement (NRM1) & Institutional Valuation Standard | `PM04_Doc1_Standard_RICS_New_Rules_of_Measurement_NRM1_Rev.004.docx` | RICS NRM1 / Real Estate Std |\n| Doc 2 | Deliverable | 45 MW Capex Cost Plan (Land, Grid, CSA, MEP, OFCI, Soft Costs & Contingency) | `PM04_Doc2_Deliverable_StageGate_Capex_Budget_Charter_Master_Rev.004.xlsx` | Sheet 6. Stage-Gate Budget |\n| Doc 3 | Template | 10-Year EUR Discounted Cashflow Model (IRR, NPV, Payback & EUR/kW Yield) | `PM04_Doc3_Template_EUR_10Yr_DCF_Model_Master_Rev.004.xlsx` | Sheet 2. EUR 10-Yr DCF |\n| Doc 4 | Audit | Sensitivity & Downside Stress Test Matrix (Power Tariff, PUE & Capex +/-10%) | `PM04_Doc4_Audit_Sensitivity_Downside_Stress_Test_Rev.004.xlsx` | IC Investment Stress Test |\n\n## Study Takeaway (`Why Each Document Matters`)\n- **Doc 1 (Standard)**: Structure institutional elemental cost planning benchmarked in EUR per MW of IT load.\n- **Doc 2 (Deliverable)**: Break down total development capex across stage-gate funding tranches.\n- **Doc 3 (Template)**: Model multi-year leasing ramp, WACC discounting, opex recovery, and terminal exit value.\n- **Doc 4 (Audit)**: Quantify IRR resilience against construction inflation, grid delays, and energy spikes.\n",
       "docs": [
         {
-          "docId": "PKG-03-D1",
+          "docId": "PM-04-D1",
           "idx0": 0,
-          "cat": "COMMERCIAL",
-          "title": "RICS NRM1 Elemental Capex Baseline & Funding Tranches",
-          "ref": "RICS NRM1 / WBS 1.0-8.0 / TR-01..TR-06",
-          "why": "Itemized EUR 45 MW capital budget across WBS packages 1.0 through 8.0 benchmarked in EUR/MW and aligned with RIBA Stage Tranches TR-01 through TR-06.",
-          "fileName": "PKG03_Doc1_Commercial_RICS_NRM1_Capex_Baseline_Tranches_Rev.001.xlsx",
+          "cat": "Standard",
+          "title": "RICS New Rules of Measurement (NRM1) & Institutional Valuation Standard",
+          "ref": "RICS NRM1 / Real Estate Std",
+          "why": "Structure institutional elemental cost planning benchmarked in EUR per MW of IT load.",
+          "fileName": "PM04_Doc1_Standard_RICS_New_Rules_of_Measurement_NRM1_Rev.004.docx",
+          "ext": "DOCX",
+          "downloadUrl": "files/PM-04/PM04_Doc1_Standard_RICS_New_Rules_of_Measurement_NRM1_Rev.004.docx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-04_EUR_Capex_10Yr_DCF_NPV_IRR\\PM04_Doc1_Standard_RICS_New_Rules_of_Measurement_NRM1_Rev.004.docx",
+          "renderType": "docx",
+          "docx": {
+            "fileName": "PM04_Doc1_Standard_RICS_New_Rules_of_Measurement_NRM1_Rev.004.docx",
+            "blocks": [
+              {
+                "type": "banner",
+                "text": "PHASE 1: INITIATION, CHARTER & BUSINESS CASE (RIBA 0-1) | PM-04 | STANDARD DOCUMENT | RICS New Rules of Measurement (NRM1) & Institutional Valuation Standard"
+              },
+              {
+                "type": "table",
+                "rows": [
+                  [
+                    "Document Control Field",
+                    "DC45-EU Repository Value"
+                  ],
+                  [
+                    "ISO 19650 Document Code",
+                    "DC45EU-PM04-DOC1-Rev004"
+                  ],
+                  [
+                    "Flashcard Module & Stage",
+                    "PM-04: EUR Capex Modelling, 10-Yr DCF, NPV/IRR & Sensitivity (RIBA Stage 1)"
+                  ],
+                  [
+                    "P6 Milestone / WBS Anchor",
+                    "M1000 FID | WBS 1.0-7.0 | Live Schedule: 144 Tasks / 213 Links"
+                  ],
+                  [
+                    "Governing Standards",
+                    "RICS NRM1, Institutional EUR DCF (WACC 8.5%, CIT 12.5%)"
+                  ],
+                  [
+                    "Dashboard Ref & Revision",
+                    "RICS NRM1 / Real Estate Std | Status: Active Baseline (Rev.004)"
+                  ]
+                ]
+              },
+              {
+                "type": "h1",
+                "text": "1. Document Mandate & Operational Scope"
+              },
+              {
+                "type": "p",
+                "text": "Portfolio Context: This institutional standard establishes controlled governance, technical compliance rules, and auditable evidence for the 45 MW DC45-EU Hyperscale Data Centre development in Ireland (4 x 9.0 MW data halls, dual 110 kV grid incomers, 16 x 2.5 MVA HVO standby generation with SCR abatement, and EN 50600 Availability Class 3 / Uptime TCCF target). All schedules and resource assumptions synchronize against the master Primavera P6 baseline (DataCenter_45MW_EU_Ireland.xer: M1000 NTP 2027-01-04 through M7060 COD 2030-05-20)."
+              },
+              {
+                "type": "p",
+                "text": "Core Competency Objective: Structure institutional elemental cost planning benchmarked in EUR per MW of IT load."
+              },
+              {
+                "type": "p",
+                "text": "Module Summary: Build EUR/MW Capex baselines, colocation yield curves, PUE/energy sensitivity tables, and institutional investment metrics."
+              },
+              {
+                "type": "h1",
+                "text": "2. Governing Standards & Compliance Framework"
+              },
+              {
+                "type": "bullet",
+                "text": "RICS NRM1: Mandatory alignment enforced during RIBA Stage 1 under PM-04 controls, subject to Independent Verification / Assigned Certifier / CxA sign-off prior to stage progression."
+              },
+              {
+                "type": "bullet",
+                "text": "Institutional EUR DCF (WACC 8.5%: Mandatory alignment enforced during RIBA Stage 1 under PM-04 controls, subject to Independent Verification / Assigned Certifier / CxA sign-off prior to stage progression."
+              },
+              {
+                "type": "bullet",
+                "text": "CIT 12.5%): Mandatory alignment enforced during RIBA Stage 1 under PM-04 controls, subject to Independent Verification / Assigned Certifier / CxA sign-off prior to stage progression."
+              },
+              {
+                "type": "h1",
+                "text": "3. Key Control Elements & Stage-Gate Acceptance Criteria"
+              },
+              {
+                "type": "table",
+                "rows": [
+                  [
+                    "Item Code",
+                    "Control Focus Area",
+                    "DC45-EU Quantitative / Statutory Threshold",
+                    "Verification Authority"
+                  ],
+                  [
+                    "PM04-C01",
+                    "Capex EUR/MW",
+                    "Formal standard evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to M1000 FID and WBS 1.0-7.0.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ],
+                  [
+                    "PM04-C02",
+                    "Opex EUR/yr",
+                    "Formal standard evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to M1000 FID and WBS 1.0-7.0.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ],
+                  [
+                    "PM04-C03",
+                    "Tariff EUR/kW/mo",
+                    "Formal standard evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to M1000 FID and WBS 1.0-7.0.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ],
+                  [
+                    "PM04-C04",
+                    "Power EUR/kWh",
+                    "Formal standard evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to M1000 FID and WBS 1.0-7.0.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ],
+                  [
+                    "PM04-C05",
+                    "Unlevered IRR / NPV",
+                    "Formal standard evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to M1000 FID and WBS 1.0-7.0.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ]
+                ]
+              },
+              {
+                "type": "h1",
+                "text": "4. Primavera P6 Milestone & Dependency Synchronization"
+              },
+              {
+                "type": "table",
+                "rows": [
+                  [
+                    "P6 Gate ID",
+                    "Baseline Target Date",
+                    "Gate Control Significance"
+                  ],
+                  [
+                    "M1000",
+                    "2027-01-04",
+                    "Final Investment Decision (FID) & Notice to Proceed (NTP)"
+                  ],
+                  [
+                    "M2110",
+                    "2027-07-12",
+                    "Detailed Design Freeze & Early Construction Release"
+                  ],
+                  [
+                    "M3120",
+                    "2028-01-03",
+                    "OFCI Long-Lead Equipment Delivery Buffer (+200d Lead)"
+                  ],
+                  [
+                    "M4350",
+                    "2029-02-12",
+                    "Core & Shell Weather-Tight Envelope Complete"
+                  ],
+                  [
+                    "M5595",
+                    "2029-09-24",
+                    "MEP Pre-Energisation Complete \u2014 L3/L4 Cx Handover"
+                  ],
+                  [
+                    "M6470",
+                    "2030-02-25",
+                    "Level 5 45 MW 48-Hr Integrated Systems Test (IST) Complete"
+                  ],
+                  [
+                    "M7060",
+                    "2030-05-20",
+                    "Practical Completion, BCAR CCC & Commercial Operation (COD)"
+                  ]
+                ]
+              },
+              {
+                "type": "h1",
+                "text": "5. Controlled Review & Authorization Block"
+              },
+              {
+                "type": "table",
+                "rows": [
+                  [
+                    "Role / Title",
+                    "Organization",
+                    "ISO 19650 Suitability",
+                    "Sign-Off Gate"
+                  ],
+                  [
+                    "Originator / Package Lead",
+                    "EPCm / Specialist Consultant",
+                    "S2 (Suitable for Info)",
+                    "M1000 FID"
+                  ],
+                  [
+                    "Technical & Statutory Reviewer",
+                    "PSDP / Assigned Certifier / CxA",
+                    "S3 (Suitable for Review)",
+                    "RIBA Stage 1"
+                  ],
+                  [
+                    "Approving Authority",
+                    "Project Director / SteerCo Tier 2",
+                    "A1 (Approved for Execution)",
+                    "Gate Freeze"
+                  ],
+                  [
+                    "Document Controller",
+                    "PMO CDE Administrator",
+                    "Published Archive",
+                    "Monthly Cutoff"
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "docId": "PM-04-D2",
+          "idx0": 1,
+          "cat": "Deliverable",
+          "title": "45 MW Capex Cost Plan (Land, Grid, CSA, MEP, OFCI, Soft Costs & Contingency)",
+          "ref": "Sheet 6. Stage-Gate Budget",
+          "why": "Break down total development capex across stage-gate funding tranches.",
+          "fileName": "PM04_Doc2_Deliverable_StageGate_Capex_Budget_Charter_Master_Rev.004.xlsx",
           "ext": "XLSX",
-          "downloadUrl": "files/PKG-03/PKG03_Doc1_Commercial_RICS_NRM1_Capex_Baseline_Tranches_Rev.001.xlsx",
-          "localPath": "G:\\My Drive\\7. AI\\DataCenter_EU_Ireland\\Phase_1_Consolidated_Path_B_RIBA_0_1\\PKG-03_Capex_DCF_FID_Sanction\\PKG03_Doc1_Commercial_RICS_NRM1_Capex_Baseline_Tranches_Rev.001.xlsx",
+          "downloadUrl": "files/PM-04/PM04_Doc2_Deliverable_StageGate_Capex_Budget_Charter_Master_Rev.004.xlsx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-04_EUR_Capex_10Yr_DCF_NPV_IRR\\PM04_Doc2_Deliverable_StageGate_Capex_Budget_Charter_Master_Rev.004.xlsx",
+          "renderType": "xlsx_master",
+          "masterKey": "CHARTER",
+          "focalSheet": "3. Milestones & Budget"
+        },
+        {
+          "docId": "PM-04-D3",
+          "idx0": 2,
+          "cat": "Template",
+          "title": "10-Year EUR Discounted Cashflow Model (IRR, NPV, Payback & EUR/kW Yield)",
+          "ref": "Sheet 2. EUR 10-Yr DCF",
+          "why": "Model multi-year leasing ramp, WACC discounting, opex recovery, and terminal exit value.",
+          "fileName": "PM04_Doc3_Template_EUR_10Yr_DCF_Model_Master_Rev.004.xlsx",
+          "ext": "XLSX",
+          "downloadUrl": "files/PM-04/PM04_Doc3_Template_EUR_10Yr_DCF_Model_Master_Rev.004.xlsx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-04_EUR_Capex_10Yr_DCF_NPV_IRR\\PM04_Doc3_Template_EUR_10Yr_DCF_Model_Master_Rev.004.xlsx",
+          "renderType": "xlsx_master",
+          "masterKey": "CONTROLS",
+          "focalSheet": "1. Feasibility & Financial"
+        },
+        {
+          "docId": "PM-04-D4",
+          "idx0": 3,
+          "cat": "Audit",
+          "title": "Sensitivity & Downside Stress Test Matrix (Power Tariff, PUE & Capex +/-10%)",
+          "ref": "IC Investment Stress Test",
+          "why": "Quantify IRR resilience against construction inflation, grid delays, and energy spikes.",
+          "fileName": "PM04_Doc4_Audit_Sensitivity_Downside_Stress_Test_Rev.004.xlsx",
+          "ext": "XLSX",
+          "downloadUrl": "files/PM-04/PM04_Doc4_Audit_Sensitivity_Downside_Stress_Test_Rev.004.xlsx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-04_EUR_Capex_10Yr_DCF_NPV_IRR\\PM04_Doc4_Audit_Sensitivity_Downside_Stress_Test_Rev.004.xlsx",
           "renderType": "xlsx",
           "xlsx": {
-            "fileName": "PKG03_Doc1_Commercial_RICS_NRM1_Capex_Baseline_Tranches_Rev.001.xlsx",
-            "sheetCount": 1,
-            "totalCells": 288,
-            "formulaCells": 34,
+            "fileName": "PM04_Doc4_Audit_Sensitivity_Downside_Stress_Test_Rev.004.xlsx",
+            "sheetCount": 2,
+            "totalCells": 139,
+            "formulaCells": 21,
             "sheets": [
               {
-                "name": "3. Milestones & Budget",
-                "maxRow": 36,
-                "maxCol": 8,
-                "formulaCount": 34,
+                "name": "1. Stress Test Matrix",
+                "maxRow": 11,
+                "maxCol": 9,
+                "formulaCount": 21,
                 "columns": [
                   "A",
                   "B",
@@ -12432,17 +24253,18 @@ window.PHASE1_PORTAL_DATA = {
                   "E",
                   "F",
                   "G",
-                  "H"
+                  "H",
+                  "I"
                 ],
                 "rows": [
                   [
                     {
                       "coord": "A1",
-                      "v": "CONTROL MILESTONES, EUR CAPEX ENVELOPE & STAGE-GATE FUNDING RELEASES",
+                      "v": "DC45-EU | Sensitivity & Downside Stress Test Matrix (Power Tariff, PUE & Capex +/-10%)",
                       "t": "s",
-                      "raw": "CONTROL MILESTONES, EUR CAPEX ENVELOPE & STAGE-GATE FUNDING RELEASES",
+                      "raw": "DC45-EU | Sensitivity & Downside Stress Test Matrix (Power Tariff, PUE & Capex +/-10%)",
                       "kind": "banner",
-                      "cspan": 8
+                      "cspan": 9
                     },
                     {
                       "coord": "B1",
@@ -12499,16 +24321,24 @@ window.PHASE1_PORTAL_DATA = {
                       "raw": "",
                       "kind": "empty",
                       "skip": true
+                    },
+                    {
+                      "coord": "I1",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
                     }
                   ],
                   [
                     {
                       "coord": "A2",
-                      "v": "Synced to DataCenter_45MW_EU_Ireland.xer | Enter Approved EUR Capex in Blue [Input] Cells (D19:E25)",
+                      "v": "IC Downside Sensitivity Modeling (+/-10% Capex, Power Price & PUE Shifts on 10-Yr Yield)",
                       "t": "s",
-                      "raw": "Synced to DataCenter_45MW_EU_Ireland.xer | Enter Approved EUR Capex in Blue [Input] Cells (D19:E25)",
+                      "raw": "IC Downside Sensitivity Modeling (+/-10% Capex, Power Price & PUE Shifts on 10-Yr Yield)",
                       "kind": "banner",
-                      "cspan": 8
+                      "cspan": 9
                     },
                     {
                       "coord": "B2",
@@ -12560,6 +24390,14 @@ window.PHASE1_PORTAL_DATA = {
                     },
                     {
                       "coord": "H2",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    },
+                    {
+                      "coord": "I2",
                       "v": "",
                       "t": "empty",
                       "raw": "",
@@ -12623,3683 +24461,578 @@ window.PHASE1_PORTAL_DATA = {
                       "t": "empty",
                       "raw": "",
                       "kind": "empty"
+                    },
+                    {
+                      "coord": "I3",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
                     }
                   ],
                   [
                     {
                       "coord": "A4",
-                      "v": "1. AUTHORIZED MASTER CONTROL MILESTONES (10 GATES)",
+                      "v": "Scenario ID",
                       "t": "s",
-                      "raw": "1. AUTHORIZED MASTER CONTROL MILESTONES (10 GATES)",
-                      "kind": "section",
-                      "cspan": 8
+                      "raw": "Scenario ID",
+                      "kind": "input"
                     },
                     {
                       "coord": "B4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "v": "Stress Case Description",
+                      "t": "s",
+                      "raw": "Stress Case Description",
+                      "kind": "input"
                     },
                     {
                       "coord": "C4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "v": "Capex Var (%)",
+                      "t": "s",
+                      "raw": "Capex Var (%)",
+                      "kind": "input"
                     },
                     {
                       "coord": "D4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "v": "Power Tariff Var (%)",
+                      "t": "s",
+                      "raw": "Power Tariff Var (%)",
+                      "kind": "input"
                     },
                     {
                       "coord": "E4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "v": "Annual PUE",
+                      "t": "s",
+                      "raw": "Annual PUE",
+                      "kind": "input"
                     },
                     {
                       "coord": "F4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "v": "Base NPV (EUR M)",
+                      "t": "s",
+                      "raw": "Base NPV (EUR M)",
+                      "kind": "input"
                     },
                     {
                       "coord": "G4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "v": "Adjusted NPV (EUR M)",
+                      "t": "s",
+                      "raw": "Adjusted NPV (EUR M)",
+                      "kind": "input"
                     },
                     {
                       "coord": "H4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "v": "Unlevered IRR (%)",
+                      "t": "s",
+                      "raw": "Unlevered IRR (%)",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "I4",
+                      "v": "FID Pass (>=8.5%)",
+                      "t": "s",
+                      "raw": "FID Pass (>=8.5%)",
+                      "kind": "input"
                     }
                   ],
                   [
                     {
                       "coord": "A5",
-                      "v": "Milestone ID",
+                      "v": "SEN-01",
                       "t": "s",
-                      "raw": "Milestone ID",
+                      "raw": "SEN-01",
                       "kind": "input"
                     },
                     {
                       "coord": "B5",
-                      "v": "WBS",
+                      "v": "Base Investment Case (PUE 1.25 / Approved BAC)",
                       "t": "s",
-                      "raw": "WBS",
+                      "raw": "Base Investment Case (PUE 1.25 / Approved BAC)",
                       "kind": "input"
                     },
                     {
                       "coord": "C5",
-                      "v": "Milestone Gate Description",
-                      "t": "s",
-                      "raw": "Milestone Gate Description",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D5",
-                      "v": "P6 Type",
-                      "t": "s",
-                      "raw": "P6 Type",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E5",
-                      "v": "Baseline Date",
-                      "t": "s",
-                      "raw": "Baseline Date",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F5",
-                      "v": "Float (d)",
-                      "t": "s",
-                      "raw": "Float (d)",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G5",
-                      "v": "Critical",
-                      "t": "s",
-                      "raw": "Critical",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H5",
-                      "v": "Approving / Statutory Authority",
-                      "t": "s",
-                      "raw": "Approving / Statutory Authority",
-                      "kind": "header"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A6",
-                      "v": "M1000",
-                      "t": "s",
-                      "raw": "M1000",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B6",
-                      "v": "1.0-PERM",
-                      "t": "s",
-                      "raw": "1.0-PERM",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C6",
-                      "v": "RIBA Stage 1 Notice to Proceed & Land Option Milestone",
-                      "t": "s",
-                      "raw": "RIBA Stage 1 Notice to Proceed & Land Option Milestone",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D6",
-                      "v": "Start Gate",
-                      "t": "s",
-                      "raw": "Start Gate",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E6",
-                      "v": "2027-01-04",
-                      "t": "empty",
-                      "raw": "2027-01-04 00:00:00",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F6",
-                      "v": "0",
-                      "t": "n",
-                      "raw": 0,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G6",
-                      "v": "YES",
-                      "t": "s",
-                      "raw": "YES",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H6",
-                      "v": "Board / Investment Committee",
-                      "t": "s",
-                      "raw": "Board / Investment Committee",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A7",
-                      "v": "M2110",
-                      "t": "s",
-                      "raw": "M2110",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B7",
-                      "v": "2.0-ENG",
-                      "t": "s",
-                      "raw": "2.0-ENG",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C7",
-                      "v": "RIBA Stage 4 Technical Design Freeze & ISO 19650 Sign-Off",
-                      "t": "s",
-                      "raw": "RIBA Stage 4 Technical Design Freeze & ISO 19650 Sign-Off",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D7",
-                      "v": "Finish Gate",
-                      "t": "s",
-                      "raw": "Finish Gate",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E7",
-                      "v": "2027-07-12",
-                      "t": "empty",
-                      "raw": "2027-07-12 00:00:00",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F7",
-                      "v": "290",
-                      "t": "n",
-                      "raw": 290,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G7",
-                      "v": "NO",
-                      "t": "s",
-                      "raw": "NO",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H7",
-                      "v": "Lead Designer / ISO 19650 BIM Lead",
-                      "t": "s",
-                      "raw": "Lead Designer / ISO 19650 BIM Lead",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A8",
-                      "v": "M1090",
-                      "t": "s",
-                      "raw": "M1090",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B8",
-                      "v": "1.0-PERM",
-                      "t": "s",
-                      "raw": "1.0-PERM",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C8",
-                      "v": "All Irish Statutory Planning, EPA IEL & BCAR Clearances Milestone",
-                      "t": "s",
-                      "raw": "All Irish Statutory Planning, EPA IEL & BCAR Clearances Milestone",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D8",
-                      "v": "Finish Gate",
-                      "t": "s",
-                      "raw": "Finish Gate",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E8",
-                      "v": "2027-10-18",
-                      "t": "empty",
-                      "raw": "2027-10-18 00:00:00",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F8",
-                      "v": "0",
-                      "t": "n",
-                      "raw": 0,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G8",
-                      "v": "YES",
-                      "t": "s",
-                      "raw": "YES",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H8",
-                      "v": "Local Auth / EPA / EirGrid / BCMS",
-                      "t": "s",
-                      "raw": "Local Auth / EPA / EirGrid / BCMS",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A9",
-                      "v": "M3120",
-                      "t": "s",
-                      "raw": "M3120",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B9",
-                      "v": "3.0-PROC",
-                      "t": "s",
-                      "raw": "3.0-PROC",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C9",
-                      "v": "EU Long-Lead Plant Manufactured & Delivered On-Site Milestone",
-                      "t": "s",
-                      "raw": "EU Long-Lead Plant Manufactured & Delivered On-Site Milestone",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D9",
-                      "v": "Finish Gate",
-                      "t": "s",
-                      "raw": "Finish Gate",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E9",
-                      "v": "2028-01-03",
-                      "t": "empty",
-                      "raw": "2028-01-03 00:00:00",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F9",
-                      "v": "290",
-                      "t": "n",
-                      "raw": 290,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G9",
-                      "v": "NO",
-                      "t": "s",
-                      "raw": "NO",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H9",
-                      "v": "Procurement Dir. / Client QA",
-                      "t": "s",
-                      "raw": "Procurement Dir. / Client QA",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A10",
-                      "v": "M4350",
-                      "t": "s",
-                      "raw": "M4350",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B10",
-                      "v": "4.3-ENVEL",
-                      "t": "s",
-                      "raw": "4.3-ENVEL",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C10",
-                      "v": "Building Shell 100% Weather-Tight & BCAR Envelope Ready Milestone",
-                      "t": "s",
-                      "raw": "Building Shell 100% Weather-Tight & BCAR Envelope Ready Milestone",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D10",
-                      "v": "Finish Gate",
-                      "t": "s",
-                      "raw": "Finish Gate",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E10",
-                      "v": "2029-02-12",
-                      "t": "empty",
-                      "raw": "2029-02-12 00:00:00",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F10",
-                      "v": "0",
-                      "t": "n",
-                      "raw": 0,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G10",
-                      "v": "YES",
-                      "t": "s",
-                      "raw": "YES",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H10",
-                      "v": "Assigned Certifier / Civil PSCS",
-                      "t": "s",
-                      "raw": "Assigned Certifier / Civil PSCS",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A11",
-                      "v": "M5595",
-                      "t": "s",
-                      "raw": "M5595",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B11",
-                      "v": "5.5-ICT",
-                      "t": "s",
-                      "raw": "5.5-ICT",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C11",
-                      "v": "MEP Infrastructure & White Space Fit-Out Complete Milestone",
-                      "t": "s",
-                      "raw": "MEP Infrastructure & White Space Fit-Out Complete Milestone",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D11",
-                      "v": "Finish Gate",
-                      "t": "s",
-                      "raw": "Finish Gate",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E11",
-                      "v": "2029-09-24",
-                      "t": "empty",
-                      "raw": "2029-09-24 00:00:00",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F11",
-                      "v": "0",
-                      "t": "n",
-                      "raw": 0,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G11",
-                      "v": "YES",
-                      "t": "s",
-                      "raw": "YES",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H11",
-                      "v": "MEP Lead / Commissioning Manager",
-                      "t": "s",
-                      "raw": "MEP Lead / Commissioning Manager",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A12",
-                      "v": "M6260",
-                      "t": "s",
-                      "raw": "M6260",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B12",
-                      "v": "6.2-L3",
-                      "t": "s",
-                      "raw": "6.2-L3",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C12",
-                      "v": "Cx Level 3 Pre-Functional Static & LOTO Ready Milestone",
-                      "t": "s",
-                      "raw": "Cx Level 3 Pre-Functional Static & LOTO Ready Milestone",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D12",
-                      "v": "Finish Gate",
-                      "t": "s",
-                      "raw": "Finish Gate",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E12",
-                      "v": "2029-10-15",
-                      "t": "empty",
-                      "raw": "2029-10-15 00:00:00",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F12",
-                      "v": "0",
-                      "t": "n",
-                      "raw": 0,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G12",
-                      "v": "YES",
-                      "t": "s",
-                      "raw": "YES",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H12",
-                      "v": "Independent CxA / HV AP",
-                      "t": "s",
-                      "raw": "Independent CxA / HV AP",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A13",
-                      "v": "M6370",
-                      "t": "s",
-                      "raw": "M6370",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B13",
-                      "v": "6.3-L4",
-                      "t": "s",
-                      "raw": "6.3-L4",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C13",
-                      "v": "Cx Level 4 Functional Dynamic Performance Passed Milestone",
-                      "t": "s",
-                      "raw": "Cx Level 4 Functional Dynamic Performance Passed Milestone",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D13",
-                      "v": "Finish Gate",
-                      "t": "s",
-                      "raw": "Finish Gate",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E13",
-                      "v": "2029-12-10",
-                      "t": "empty",
-                      "raw": "2029-12-10 00:00:00",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F13",
-                      "v": "0",
-                      "t": "n",
-                      "raw": 0,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G13",
-                      "v": "YES",
-                      "t": "s",
-                      "raw": "YES",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H13",
-                      "v": "Independent CxA",
-                      "t": "s",
-                      "raw": "Independent CxA",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A14",
-                      "v": "M6470",
-                      "t": "s",
-                      "raw": "M6470",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B14",
-                      "v": "6.4-L5",
-                      "t": "s",
-                      "raw": "6.4-L5",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C14",
-                      "v": "Cx Level 5 Integrated Systems Testing (45MW IST) Passed Milestone",
-                      "t": "s",
-                      "raw": "Cx Level 5 Integrated Systems Testing (45MW IST) Passed Milestone",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D14",
-                      "v": "Finish Gate",
-                      "t": "s",
-                      "raw": "Finish Gate",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E14",
-                      "v": "2030-02-25",
-                      "t": "empty",
-                      "raw": "2030-02-25 00:00:00",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F14",
-                      "v": "0",
-                      "t": "n",
-                      "raw": 0,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G14",
-                      "v": "YES",
-                      "t": "s",
-                      "raw": "YES",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H14",
-                      "v": "Client Tech Rep / CxA",
-                      "t": "s",
-                      "raw": "Client Tech Rep / CxA",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A15",
-                      "v": "M7060",
-                      "t": "s",
-                      "raw": "M7060",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B15",
-                      "v": "7.0-COD",
-                      "t": "s",
-                      "raw": "7.0-COD",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C15",
-                      "v": "Commercial Operation Date (COD), Handover & Safety File Milestone",
-                      "t": "s",
-                      "raw": "Commercial Operation Date (COD), Handover & Safety File Milestone",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D15",
-                      "v": "Finish Gate",
-                      "t": "s",
-                      "raw": "Finish Gate",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E15",
-                      "v": "2030-05-20",
-                      "t": "empty",
-                      "raw": "2030-05-20 00:00:00",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F15",
-                      "v": "0",
-                      "t": "n",
-                      "raw": 0,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G15",
-                      "v": "YES",
-                      "t": "s",
-                      "raw": "YES",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H15",
-                      "v": "Assigned Certifier / EN 50600 / Client",
-                      "t": "s",
-                      "raw": "Assigned Certifier / EN 50600 / Client",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A16",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "B16",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "C16",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "D16",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "E16",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "F16",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "G16",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "H16",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A17",
-                      "v": "2. EUR CAPEX BUDGET ALLOCATION ENVELOPE (ENTER SPONSOR EUR IN BLUE CELLS D19:E25)",
-                      "t": "s",
-                      "raw": "2. EUR CAPEX BUDGET ALLOCATION ENVELOPE (ENTER SPONSOR EUR IN BLUE CELLS D19:E25)",
-                      "kind": "section",
-                      "cspan": 8
-                    },
-                    {
-                      "coord": "B17",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C17",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "D17",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E17",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F17",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G17",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H17",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A18",
-                      "v": "WBS",
-                      "t": "s",
-                      "raw": "WBS",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B18",
-                      "v": "Cost Package Description (FIDIC / NEC4)",
-                      "t": "s",
-                      "raw": "Cost Package Description (FIDIC / NEC4)",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C18",
-                      "v": "Contract Form",
-                      "t": "s",
-                      "raw": "Contract Form",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D18",
-                      "v": "Base Capex (EUR)",
-                      "t": "s",
-                      "raw": "Base Capex (EUR)",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E18",
-                      "v": "Contingency (EUR)",
-                      "t": "s",
-                      "raw": "Contingency (EUR)",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F18",
-                      "v": "Total Capex (EUR)",
-                      "t": "s",
-                      "raw": "Total Capex (EUR)",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G18",
-                      "v": "% Share",
-                      "t": "s",
-                      "raw": "% Share",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H18",
-                      "v": "Contingency %",
-                      "t": "s",
-                      "raw": "Contingency %",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A19",
-                      "v": "1.0-PERM",
-                      "t": "s",
-                      "raw": "1.0-PERM",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B19",
-                      "v": "Land Option, EIAR, EPA IEL, EirGrid Deposit & BCAR Fees",
-                      "t": "s",
-                      "raw": "Land Option, EIAR, EPA IEL, EirGrid Deposit & BCAR Fees",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C19",
-                      "v": "Client Direct",
-                      "t": "s",
-                      "raw": "Client Direct",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D19",
-                      "v": "\u20ac0",
-                      "t": "n",
-                      "raw": 0,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E19",
-                      "v": "\u20ac0",
-                      "t": "n",
-                      "raw": 0,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F19",
-                      "v": "\u20ac0",
-                      "f": "=D19+E19",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "G19",
-                      "v": "#IFERROR?",
-                      "f": "=IFERROR(F19/$F$26,0)",
-                      "raw": "#IFERROR?",
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "H19",
-                      "v": "#IFERROR?",
-                      "f": "=IFERROR(E19/D19,0)",
-                      "raw": "#IFERROR?",
-                      "t": "f",
-                      "kind": "calc"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A20",
-                      "v": "2.0-ENG",
-                      "t": "s",
-                      "raw": "2.0-ENG",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B20",
-                      "v": "ISO 19650 Design, PSDP, Assigned Certifier & Fire Eng.",
-                      "t": "s",
-                      "raw": "ISO 19650 Design, PSDP, Assigned Certifier & Fire Eng.",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C20",
-                      "v": "NEC4 PSC",
-                      "t": "s",
-                      "raw": "NEC4 PSC",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D20",
-                      "v": "\u20ac0",
-                      "t": "n",
-                      "raw": 0,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E20",
-                      "v": "\u20ac0",
-                      "t": "n",
-                      "raw": 0,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F20",
-                      "v": "\u20ac0",
-                      "f": "=D20+E20",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "G20",
-                      "v": "#IFERROR?",
-                      "f": "=IFERROR(F20/$F$26,0)",
-                      "raw": "#IFERROR?",
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "H20",
-                      "v": "#IFERROR?",
-                      "f": "=IFERROR(E20/D20,0)",
-                      "raw": "#IFERROR?",
-                      "t": "f",
-                      "kind": "calc"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A21",
-                      "v": "3.0-PROC",
-                      "t": "s",
-                      "raw": "3.0-PROC",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B21",
-                      "v": "63MVA Tx, SF6-Free GIS, HVO+SCR Gensets, BESS & Chillers",
-                      "t": "s",
-                      "raw": "63MVA Tx, SF6-Free GIS, HVO+SCR Gensets, BESS & Chillers",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C21",
-                      "v": "FIDIC Supply / OFCI",
-                      "t": "s",
-                      "raw": "FIDIC Supply / OFCI",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D21",
-                      "v": "\u20ac0",
-                      "t": "n",
-                      "raw": 0,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E21",
-                      "v": "\u20ac0",
-                      "t": "n",
-                      "raw": 0,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F21",
-                      "v": "\u20ac0",
-                      "f": "=D21+E21",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "G21",
-                      "v": "#IFERROR?",
-                      "f": "=IFERROR(F21/$F$26,0)",
-                      "raw": "#IFERROR?",
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "H21",
-                      "v": "#IFERROR?",
-                      "f": "=IFERROR(E21/D21,0)",
-                      "raw": "#IFERROR?",
-                      "t": "f",
-                      "kind": "calc"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A22",
-                      "v": "4.0-CIVIL",
-                      "t": "s",
-                      "raw": "4.0-CIVIL",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B22",
-                      "v": "PSCS Enabling, 750 CFA Piles, Shell, SuDS & PAS 68 Site",
-                      "t": "s",
-                      "raw": "PSCS Enabling, 750 CFA Piles, Shell, SuDS & PAS 68 Site",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C22",
-                      "v": "FIDIC Yellow / NEC4 ECC",
-                      "t": "s",
-                      "raw": "FIDIC Yellow / NEC4 ECC",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D22",
-                      "v": "\u20ac0",
-                      "t": "n",
-                      "raw": 0,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E22",
-                      "v": "\u20ac0",
-                      "t": "n",
-                      "raw": 0,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F22",
-                      "v": "\u20ac0",
-                      "f": "=D22+E22",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "G22",
-                      "v": "#IFERROR?",
-                      "f": "=IFERROR(F22/$F$26,0)",
-                      "raw": "#IFERROR?",
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "H22",
-                      "v": "#IFERROR?",
-                      "f": "=IFERROR(E22/D22,0)",
-                      "raw": "#IFERROR?",
-                      "t": "f",
-                      "kind": "calc"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A23",
-                      "v": "5.0-MEP",
-                      "t": "s",
-                      "raw": "5.0-MEP",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B23",
-                      "v": "110kV GIS, BESS, CHW/ERF, Halls 1-5 & EED Metering",
-                      "t": "s",
-                      "raw": "110kV GIS, BESS, CHW/ERF, Halls 1-5 & EED Metering",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C23",
-                      "v": "NEC4 ECC Option A/C",
-                      "t": "s",
-                      "raw": "NEC4 ECC Option A/C",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D23",
-                      "v": "\u20ac0",
-                      "t": "n",
-                      "raw": 0,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E23",
-                      "v": "\u20ac0",
-                      "t": "n",
-                      "raw": 0,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F23",
-                      "v": "\u20ac0",
-                      "f": "=D23+E23",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "G23",
-                      "v": "#IFERROR?",
-                      "f": "=IFERROR(F23/$F$26,0)",
-                      "raw": "#IFERROR?",
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "H23",
-                      "v": "#IFERROR?",
-                      "f": "=IFERROR(E23/D23,0)",
-                      "raw": "#IFERROR?",
-                      "t": "f",
-                      "kind": "calc"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A24",
-                      "v": "6.0-CX",
-                      "t": "s",
-                      "raw": "6.0-CX",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B24",
-                      "v": "CIBSE/ASHRAE CxA L1-L5, 45MW Load Banks & Safety File",
-                      "t": "s",
-                      "raw": "CIBSE/ASHRAE CxA L1-L5, 45MW Load Banks & Safety File",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C24",
-                      "v": "Direct Cx Contract",
-                      "t": "s",
-                      "raw": "Direct Cx Contract",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D24",
-                      "v": "\u20ac0",
-                      "t": "n",
-                      "raw": 0,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E24",
-                      "v": "\u20ac0",
-                      "t": "n",
-                      "raw": 0,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F24",
-                      "v": "\u20ac0",
-                      "f": "=D24+E24",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "G24",
-                      "v": "#IFERROR?",
-                      "f": "=IFERROR(F24/$F$26,0)",
-                      "raw": "#IFERROR?",
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "H24",
-                      "v": "#IFERROR?",
-                      "f": "=IFERROR(E24/D24,0)",
-                      "raw": "#IFERROR?",
-                      "t": "f",
-                      "kind": "calc"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A25",
-                      "v": "7.0-COD",
-                      "t": "s",
-                      "raw": "7.0-COD",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B25",
-                      "v": "EN 50600 Class 3 / Tier III Audit & BCAR CCC Closeout",
-                      "t": "s",
-                      "raw": "EN 50600 Class 3 / Tier III Audit & BCAR CCC Closeout",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C25",
-                      "v": "Direct Compliance",
-                      "t": "s",
-                      "raw": "Direct Compliance",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D25",
-                      "v": "\u20ac0",
-                      "t": "n",
-                      "raw": 0,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E25",
-                      "v": "\u20ac0",
-                      "t": "n",
-                      "raw": 0,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F25",
-                      "v": "\u20ac0",
-                      "f": "=D25+E25",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "G25",
-                      "v": "#IFERROR?",
-                      "f": "=IFERROR(F25/$F$26,0)",
-                      "raw": "#IFERROR?",
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "H25",
-                      "v": "#IFERROR?",
-                      "f": "=IFERROR(E25/D25,0)",
-                      "raw": "#IFERROR?",
-                      "t": "f",
-                      "kind": "calc"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A26",
-                      "v": "TOTAL",
-                      "t": "s",
-                      "raw": "TOTAL",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B26",
-                      "v": "Total Authorized EUR Capex Baseline (Links to Sheet 1)",
-                      "t": "s",
-                      "raw": "Total Authorized EUR Capex Baseline (Links to Sheet 1)",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C26",
-                      "v": "All 7 Packages",
-                      "t": "s",
-                      "raw": "All 7 Packages",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D26",
-                      "v": "\u20ac0",
-                      "f": "=SUM(D19:D25)",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "E26",
-                      "v": "\u20ac0",
-                      "f": "=SUM(E19:E25)",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "F26",
-                      "v": "\u20ac0",
-                      "f": "=SUM(F19:F25)",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "G26",
                       "v": "0%",
-                      "f": "=SUM(G19:G25)",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "H26",
-                      "v": "#IFERROR?",
-                      "f": "=IFERROR(E26/D26,0)",
-                      "raw": "#IFERROR?",
-                      "t": "f",
-                      "kind": "calc"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A27",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "B27",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "C27",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "D27",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "E27",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "F27",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "G27",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "H27",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A28",
-                      "v": "3. STAGE-GATE CAPEX FUNDING RELEASE TRANCHES (TR-01 TO TR-06)",
-                      "t": "s",
-                      "raw": "3. STAGE-GATE CAPEX FUNDING RELEASE TRANCHES (TR-01 TO TR-06)",
-                      "kind": "section",
-                      "cspan": 8
-                    },
-                    {
-                      "coord": "B28",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C28",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "D28",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E28",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F28",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G28",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H28",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A29",
-                      "v": "Tranche",
-                      "t": "s",
-                      "raw": "Tranche",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B29",
-                      "v": "Gate ID",
-                      "t": "s",
-                      "raw": "Gate ID",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C29",
-                      "v": "Funding Release Milestone Trigger",
-                      "t": "s",
-                      "raw": "Funding Release Milestone Trigger",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D29",
-                      "v": "Target Date",
-                      "t": "s",
-                      "raw": "Target Date",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E29",
-                      "v": "Release %",
-                      "t": "s",
-                      "raw": "Release %",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F29",
-                      "v": "Tranche Amount (EUR)",
-                      "t": "s",
-                      "raw": "Tranche Amount (EUR)",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "G29",
-                      "v": "Holdback / Guardrail",
-                      "t": "s",
-                      "raw": "Holdback / Guardrail",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H29",
-                      "v": "Approver",
-                      "t": "s",
-                      "raw": "Approver",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A30",
-                      "v": "TR-01",
-                      "t": "s",
-                      "raw": "TR-01",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B30",
-                      "v": "M1000",
-                      "t": "s",
-                      "raw": "M1000",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C30",
-                      "v": "Land Option, RIBA Stage 1 & PSDP / EirGrid Filing",
-                      "t": "s",
-                      "raw": "Land Option, RIBA Stage 1 & PSDP / EirGrid Filing",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D30",
-                      "v": "2027-01-04",
-                      "t": "s",
-                      "raw": "2027-01-04",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E30",
-                      "v": "10%",
                       "t": "n",
-                      "raw": 0.1,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F30",
-                      "v": "\u20ac0",
-                      "f": "=$F$26*E30",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "G30",
-                      "v": "Signed ISO 19650 BEP & ORD",
-                      "t": "s",
-                      "raw": "Signed ISO 19650 BEP & ORD",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H30",
-                      "v": "Sponsor / Board",
-                      "t": "s",
-                      "raw": "Sponsor / Board",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A31",
-                      "v": "TR-02",
-                      "t": "s",
-                      "raw": "TR-02",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B31",
-                      "v": "M1090",
-                      "t": "s",
-                      "raw": "M1090",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C31",
-                      "v": "Planning Grant, EPA IEL, EirGrid ECP & BCAR Notice",
-                      "t": "s",
-                      "raw": "Planning Grant, EPA IEL, EirGrid ECP & BCAR Notice",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D31",
-                      "v": "2027-10-18",
-                      "t": "s",
-                      "raw": "2027-10-18",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E31",
-                      "v": "20%",
-                      "t": "n",
-                      "raw": 0.2,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F31",
-                      "v": "\u20ac0",
-                      "f": "=$F$26*E31",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "G31",
-                      "v": "Zero appeal / judicial stay",
-                      "t": "s",
-                      "raw": "Zero appeal / judicial stay",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H31",
-                      "v": "Sponsor / Board",
-                      "t": "s",
-                      "raw": "Sponsor / Board",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A32",
-                      "v": "TR-03",
-                      "t": "s",
-                      "raw": "TR-03",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B32",
-                      "v": "M3120",
-                      "t": "s",
-                      "raw": "M3120",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C32",
-                      "v": "Witnessed FAT & Port Delivery of HV/HVO/BESS/Chillers",
-                      "t": "s",
-                      "raw": "Witnessed FAT & Port Delivery of HV/HVO/BESS/Chillers",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D32",
-                      "v": "2027-12-20",
-                      "t": "s",
-                      "raw": "2027-12-20",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E32",
-                      "v": "25%",
-                      "t": "n",
-                      "raw": 0.25,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F32",
-                      "v": "\u20ac0",
-                      "f": "=$F$26*E32",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "G32",
-                      "v": "L1/L2 shock-logger QA pass",
-                      "t": "s",
-                      "raw": "L1/L2 shock-logger QA pass",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H32",
-                      "v": "Project Director",
-                      "t": "s",
-                      "raw": "Project Director",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A33",
-                      "v": "TR-04",
-                      "t": "s",
-                      "raw": "TR-04",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B33",
-                      "v": "M4350",
-                      "t": "s",
-                      "raw": "M4350",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C33",
-                      "v": "Shell Weather-Tight, Flood Ponding & Airtightness",
-                      "t": "s",
-                      "raw": "Shell Weather-Tight, Flood Ponding & Airtightness",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D33",
-                      "v": "2028-12-25",
-                      "t": "s",
-                      "raw": "2028-12-25",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E33",
-                      "v": "20%",
-                      "t": "n",
-                      "raw": 0.2,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F33",
-                      "v": "\u20ac0",
-                      "f": "=$F$26*E33",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "G33",
-                      "v": "Assigned Certifier Envelope OK",
-                      "t": "s",
-                      "raw": "Assigned Certifier Envelope OK",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H33",
-                      "v": "Project Director",
-                      "t": "s",
-                      "raw": "Project Director",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A34",
-                      "v": "TR-05",
-                      "t": "s",
-                      "raw": "TR-05",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B34",
-                      "v": "M6470",
-                      "t": "s",
-                      "raw": "M6470",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C34",
-                      "v": "Cx Level 5 45MW 48h IST & Grid Blackout Transfer",
-                      "t": "s",
-                      "raw": "Cx Level 5 45MW 48h IST & Grid Blackout Transfer",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D34",
-                      "v": "2030-02-25",
-                      "t": "s",
-                      "raw": "2030-02-25",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E34",
-                      "v": "15%",
-                      "t": "n",
-                      "raw": 0.15,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F34",
-                      "v": "\u20ac0",
-                      "f": "=$F$26*E34",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "G34",
-                      "v": "Zero Sev-1 CxA punch items",
-                      "t": "s",
-                      "raw": "Zero Sev-1 CxA punch items",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H34",
-                      "v": "CCB / CxA",
-                      "t": "s",
-                      "raw": "CCB / CxA",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A35",
-                      "v": "TR-06",
-                      "t": "s",
-                      "raw": "TR-06",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B35",
-                      "v": "M7060+DLP",
-                      "t": "s",
-                      "raw": "M7060+DLP",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C35",
-                      "v": "BCAR CCC, EN 50600 Audit, Safety File & DLP Expiry",
-                      "t": "s",
-                      "raw": "BCAR CCC, EN 50600 Audit, Safety File & DLP Expiry",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D35",
-                      "v": "2030-05-20",
-                      "t": "s",
-                      "raw": "2030-05-20",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E35",
-                      "v": "10%",
-                      "t": "n",
-                      "raw": 0.1,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F35",
-                      "v": "\u20ac0",
-                      "f": "=$F$26*E35",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "G35",
-                      "v": "5% COD + 5% post-12m DLP",
-                      "t": "s",
-                      "raw": "5% COD + 5% post-12m DLP",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "H35",
-                      "v": "Board / Client",
-                      "t": "s",
-                      "raw": "Board / Client",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A36",
-                      "v": "TOTAL",
-                      "t": "s",
-                      "raw": "TOTAL",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B36",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "C36",
-                      "v": "Full EUR Capex Tranche Reconciliation",
-                      "t": "s",
-                      "raw": "Full EUR Capex Tranche Reconciliation",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D36",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "E36",
-                      "v": "100%",
-                      "f": "=SUM(E30:E35)",
-                      "raw": 1.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "F36",
-                      "v": "\u20ac0",
-                      "f": "=SUM(F30:F35)",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "G36",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "H36",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    }
-                  ]
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "docId": "PKG-03-D2",
-          "idx0": 1,
-          "cat": "FINANCIAL",
-          "title": "10-Year EUR DCF Investment Valuation & Stress Test Matrix",
-          "ref": "10-Yr DCF / WACC 8.5% / Sensitivity Stress Matrix",
-          "why": "Institutional unlevered/levered DCF model computing NPV, IRR, payback, and EBITDA yield curves, with integrated multi-variable stress testing (Capex +/-10%, Tariff +/-15%, PUE 1.18-1.35).",
-          "fileName": "PKG03_Doc2_Financial_10Yr_DCF_Investment_Stress_Model_Rev.001.xlsx",
-          "ext": "XLSX",
-          "downloadUrl": "files/PKG-03/PKG03_Doc2_Financial_10Yr_DCF_Investment_Stress_Model_Rev.001.xlsx",
-          "localPath": "G:\\My Drive\\7. AI\\DataCenter_EU_Ireland\\Phase_1_Consolidated_Path_B_RIBA_0_1\\PKG-03_Capex_DCF_FID_Sanction\\PKG03_Doc2_Financial_10Yr_DCF_Investment_Stress_Model_Rev.001.xlsx",
-          "renderType": "xlsx",
-          "xlsx": {
-            "fileName": "PKG03_Doc2_Financial_10Yr_DCF_Investment_Stress_Model_Rev.001.xlsx",
-            "sheetCount": 1,
-            "totalCells": 204,
-            "formulaCells": 41,
-            "sheets": [
-              {
-                "name": "1. Feasibility & Financial",
-                "maxRow": 34,
-                "maxCol": 6,
-                "formulaCount": 41,
-                "columns": [
-                  "A",
-                  "B",
-                  "C",
-                  "D",
-                  "E",
-                  "F"
-                ],
-                "rows": [
-                  [
-                    {
-                      "coord": "A1",
-                      "v": "STAGE 1 PRE-NTP FEASIBILITY, EU EED KPI & 10-YEAR EUR FINANCIAL MODEL",
-                      "t": "s",
-                      "raw": "STAGE 1 PRE-NTP FEASIBILITY, EU EED KPI & 10-YEAR EUR FINANCIAL MODEL",
-                      "kind": "banner",
-                      "cspan": 12
-                    },
-                    {
-                      "coord": "B1",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C1",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "D1",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E1",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F1",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A2",
-                      "v": "45 MW EN 50600 Class 3 | Enter Blue [Input] Cells for Live EUR EBITDA, NPV & IRR + EED (2023/1791) Targets",
-                      "t": "s",
-                      "raw": "45 MW EN 50600 Class 3 | Enter Blue [Input] Cells for Live EUR EBITDA, NPV & IRR + EED (2023/1791) Targets",
-                      "kind": "banner",
-                      "cspan": 12
-                    },
-                    {
-                      "coord": "B2",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C2",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "D2",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E2",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F2",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A3",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "B3",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "C3",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "D3",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "E3",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "F3",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A4",
-                      "v": "1. TECHNICAL BASELINE, EU EED (2023/1791) METRICS & EDITABLE EUR INPUTS",
-                      "t": "s",
-                      "raw": "1. TECHNICAL BASELINE, EU EED (2023/1791) METRICS & EDITABLE EUR INPUTS",
-                      "kind": "section",
-                      "cspan": 12
-                    },
-                    {
-                      "coord": "B4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "D4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A5",
-                      "v": "Input ID",
-                      "t": "s",
-                      "raw": "Input ID",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B5",
-                      "v": "Parameter Description",
-                      "t": "s",
-                      "raw": "Parameter Description",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C5",
-                      "v": "Value",
-                      "t": "s",
-                      "raw": "Value",
+                      "raw": 0,
                       "kind": "input"
                     },
                     {
                       "coord": "D5",
-                      "v": "Unit",
-                      "t": "s",
-                      "raw": "Unit",
+                      "v": "0%",
+                      "t": "n",
+                      "raw": 0,
                       "kind": "input"
                     },
                     {
                       "coord": "E5",
-                      "v": "Basis / EU Directive Standard",
-                      "t": "s",
-                      "raw": "Basis / EU Directive Standard",
-                      "kind": "section",
-                      "cspan": 8
-                    },
-                    {
-                      "coord": "F5",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A6",
-                      "v": "CAP-01",
-                      "t": "s",
-                      "raw": "CAP-01",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B6",
-                      "v": "Critical IT Load Capacity",
-                      "t": "s",
-                      "raw": "Critical IT Load Capacity",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C6",
-                      "v": "45,000",
-                      "t": "n",
-                      "raw": 45000,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D6",
-                      "v": "kW",
-                      "t": "s",
-                      "raw": "kW",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E6",
-                      "v": "Locked to 5x 9,000 kW Halls (DataCenter_45MW_EU_Ireland.xer)",
-                      "t": "s",
-                      "raw": "Locked to 5x 9,000 kW Halls (DataCenter_45MW_EU_Ireland.xer)",
-                      "kind": "section",
-                      "cspan": 8
-                    },
-                    {
-                      "coord": "F6",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A7",
-                      "v": "EED-01",
-                      "t": "s",
-                      "raw": "EED-01",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B7",
-                      "v": "Design Annualized PUE Target",
-                      "t": "s",
-                      "raw": "Design Annualized PUE Target",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C7",
                       "v": "1.25",
                       "t": "n",
                       "raw": 1.25,
                       "kind": "input"
                     },
                     {
-                      "coord": "D7",
-                      "v": "Ratio",
-                      "t": "s",
-                      "raw": "Ratio",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E7",
-                      "v": "EU EED (2023/1791) & Free-Cooling Chiller Irish Climate Target",
-                      "t": "s",
-                      "raw": "EU EED (2023/1791) & Free-Cooling Chiller Irish Climate Target",
-                      "kind": "section",
-                      "cspan": 8
-                    },
-                    {
-                      "coord": "F7",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A8",
-                      "v": "EED-02",
-                      "t": "s",
-                      "raw": "EED-02",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B8",
-                      "v": "Design Water Usage Effectiveness (WUE)",
-                      "t": "s",
-                      "raw": "Design Water Usage Effectiveness (WUE)",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C8",
-                      "v": "0.25",
+                      "coord": "F5",
+                      "v": "84.50",
                       "t": "n",
-                      "raw": 0.25,
+                      "raw": 84.5,
                       "kind": "input"
                     },
                     {
-                      "coord": "D8",
-                      "v": "L/kWh",
-                      "t": "s",
-                      "raw": "L/kWh",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E8",
-                      "v": "Closed-circuit adiabatic/free-cooling + rainwater harvesting target",
-                      "t": "s",
-                      "raw": "Closed-circuit adiabatic/free-cooling + rainwater harvesting target",
-                      "kind": "section",
-                      "cspan": 8
-                    },
-                    {
-                      "coord": "F8",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A9",
-                      "v": "EED-03",
-                      "t": "s",
-                      "raw": "EED-03",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B9",
-                      "v": "Energy Reuse Factor (ERF Target)",
-                      "t": "s",
-                      "raw": "Energy Reuse Factor (ERF Target)",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C9",
-                      "v": "0.15",
-                      "t": "n",
-                      "raw": 0.15,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D9",
-                      "v": "Ratio",
-                      "t": "s",
-                      "raw": "Ratio",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E9",
-                      "v": "District Heating Heat-Reuse Export Valve Skid readiness (A5390)",
-                      "t": "s",
-                      "raw": "District Heating Heat-Reuse Export Valve Skid readiness (A5390)",
-                      "kind": "section",
-                      "cspan": 8
-                    },
-                    {
-                      "coord": "F9",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A10",
-                      "v": "COM-01",
-                      "t": "s",
-                      "raw": "COM-01",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B10",
-                      "v": "Monthly Wholesale Colocation Rate",
-                      "t": "s",
-                      "raw": "Monthly Wholesale Colocation Rate",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C10",
-                      "v": "\u20ac0",
-                      "t": "n",
-                      "raw": 0,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D10",
-                      "v": "EUR/kW/mo",
-                      "t": "s",
-                      "raw": "EUR/kW/mo",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E10",
-                      "v": "[Input] Enter contracted EUR/kW/month tariff",
-                      "t": "s",
-                      "raw": "[Input] Enter contracted EUR/kW/month tariff",
-                      "kind": "section",
-                      "cspan": 8
-                    },
-                    {
-                      "coord": "F10",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A11",
-                      "v": "COM-02",
-                      "t": "s",
-                      "raw": "COM-02",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B11",
-                      "v": "Irish Blended Industrial Power Price",
-                      "t": "s",
-                      "raw": "Irish Blended Industrial Power Price",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C11",
-                      "v": "\u20ac0",
-                      "t": "n",
-                      "raw": 0,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D11",
-                      "v": "EUR/kWh",
-                      "t": "s",
-                      "raw": "EUR/kWh",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E11",
-                      "v": "[Input] Enter EirGrid/PPA blended electricity price (EUR/kWh)",
-                      "t": "s",
-                      "raw": "[Input] Enter EirGrid/PPA blended electricity price (EUR/kWh)",
-                      "kind": "section",
-                      "cspan": 8
-                    },
-                    {
-                      "coord": "F11",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A12",
-                      "v": "COM-03",
-                      "t": "s",
-                      "raw": "COM-03",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B12",
-                      "v": "Annual Fixed Opex (O&M, Staff, Rates)",
-                      "t": "s",
-                      "raw": "Annual Fixed Opex (O&M, Staff, Rates)",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C12",
-                      "v": "\u20ac0",
-                      "t": "n",
-                      "raw": 0,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D12",
-                      "v": "EUR/yr",
-                      "t": "s",
-                      "raw": "EUR/yr",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E12",
-                      "v": "[Input] Enter fixed annual facility Opex (EUR/yr)",
-                      "t": "s",
-                      "raw": "[Input] Enter fixed annual facility Opex (EUR/yr)",
-                      "kind": "section",
-                      "cspan": 8
-                    },
-                    {
-                      "coord": "F12",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A13",
-                      "v": "COM-04",
-                      "t": "s",
-                      "raw": "COM-04",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B13",
-                      "v": "Sponsor Discount Rate (WACC)",
-                      "t": "s",
-                      "raw": "Sponsor Discount Rate (WACC)",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C13",
-                      "v": "8.5%",
-                      "t": "n",
-                      "raw": 0.085,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D13",
-                      "v": "%",
-                      "t": "s",
-                      "raw": "%",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E13",
-                      "v": "Editable Euro institutional hurdle discount rate",
-                      "t": "s",
-                      "raw": "Editable Euro institutional hurdle discount rate",
-                      "kind": "section",
-                      "cspan": 8
-                    },
-                    {
-                      "coord": "F13",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A14",
-                      "v": "COM-05",
-                      "t": "s",
-                      "raw": "COM-05",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B14",
-                      "v": "Irish Corporate Tax Rate (CIT)",
-                      "t": "s",
-                      "raw": "Irish Corporate Tax Rate (CIT)",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C14",
-                      "v": "12.5%",
-                      "t": "n",
-                      "raw": 0.125,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D14",
-                      "v": "%",
-                      "t": "s",
-                      "raw": "%",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E14",
-                      "v": "Ireland 12.5% trading tax baseline (verify Pillar Two 15% if in scope)",
-                      "t": "s",
-                      "raw": "Ireland 12.5% trading tax baseline (verify Pillar Two 15% if in scope)",
-                      "kind": "section",
-                      "cspan": 8
-                    },
-                    {
-                      "coord": "F14",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A15",
-                      "v": "CAP-02",
-                      "t": "s",
-                      "raw": "CAP-02",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B15",
-                      "v": "Total Development Capex (Linked BAC)",
-                      "t": "s",
-                      "raw": "Total Development Capex (Linked BAC)",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "C15",
-                      "v": "",
-                      "f": "='3. Cost Control & EVM'!E13",
-                      "raw": "",
+                      "coord": "G5",
+                      "v": "0",
+                      "f": "=F5*(1 - C5*1.65 - D5*0.55 - (E5-1.25)*1.2)",
+                      "raw": 0.0,
                       "t": "f",
                       "kind": "calc"
                     },
                     {
-                      "coord": "D15",
-                      "v": "EUR",
-                      "t": "s",
-                      "raw": "EUR",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E15",
-                      "v": "Linked dynamically from Sheet '3. Cost Control & EVM' Total BAC",
-                      "t": "s",
-                      "raw": "Linked dynamically from Sheet '3. Cost Control & EVM' Total BAC",
-                      "kind": "section",
-                      "cspan": 8
-                    },
-                    {
-                      "coord": "F15",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A16",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "B16",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "C16",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "D16",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "E16",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "F16",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A17",
-                      "v": "2. LIVE FINANCIAL VIABILITY SCORECARD (EUR)",
-                      "t": "s",
-                      "raw": "2. LIVE FINANCIAL VIABILITY SCORECARD (EUR)",
-                      "kind": "section",
-                      "cspan": 12
-                    },
-                    {
-                      "coord": "B17",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C17",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "D17",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E17",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F17",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A18",
-                      "v": "Metric",
-                      "t": "s",
-                      "raw": "Metric",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "B18",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C18",
-                      "v": "Calculated Output",
-                      "t": "s",
-                      "raw": "Calculated Output",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "D18",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E18",
-                      "v": "Rule",
-                      "t": "s",
-                      "raw": "Rule",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "F18",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A19",
-                      "v": "Steady-State Annual Revenue (100%)",
-                      "t": "s",
-                      "raw": "Steady-State Annual Revenue (100%)",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "B19",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C19",
-                      "v": "\u20ac0",
-                      "f": "=C6*12*C10",
-                      "raw": 0.0,
+                      "coord": "H5",
+                      "v": "11.8%",
+                      "f": "=0.118 - C5*0.19 - D5*0.08 - (E5-1.25)*0.11",
+                      "raw": 0.118,
                       "t": "f",
-                      "kind": "calc",
-                      "cspan": 2
+                      "kind": "calc"
                     },
                     {
-                      "coord": "D19",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E19",
-                      "v": "45,000 kW x 12m x Rate",
-                      "t": "s",
-                      "raw": "45,000 kW x 12m x Rate",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "F19",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A20",
-                      "v": "Steady-State Annual Power Cost",
-                      "t": "s",
-                      "raw": "Steady-State Annual Power Cost",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "B20",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C20",
-                      "v": "\u20ac0",
-                      "f": "=C6*C7*8760*C11",
-                      "raw": 0.0,
+                      "coord": "I5",
+                      "v": "PASS",
+                      "f": "=IF(H5>=0.085,\"PASS\",\"BREACH\")",
+                      "raw": "PASS",
                       "t": "f",
-                      "kind": "calc",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "D20",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E20",
-                      "v": "kW x PUE x 8760h x Price",
-                      "t": "s",
-                      "raw": "kW x PUE x 8760h x Price",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "F20",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "kind": "calc"
                     }
                   ],
                   [
                     {
-                      "coord": "A21",
-                      "v": "Net Present Value (NPV @ WACC)",
+                      "coord": "A6",
+                      "v": "SEN-02",
                       "t": "s",
-                      "raw": "Net Present Value (NPV @ WACC)",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "B21",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C21",
-                      "v": "\u20ac0",
-                      "f": "=IF(AND(C15=0,SUM(C33:L33)=0),0,NPV(C13,C33:L33)+B33)",
-                      "raw": 0,
-                      "t": "f",
-                      "kind": "calc",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "D21",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E21",
-                      "v": "> EUR 0 Required",
-                      "t": "s",
-                      "raw": "> EUR 0 Required",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "F21",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A22",
-                      "v": "Project Unlevered IRR (10-Yr)",
-                      "t": "s",
-                      "raw": "Project Unlevered IRR (10-Yr)",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "B22",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C22",
-                      "v": "#IFERROR?",
-                      "f": "=IFERROR(IRR(B33:L33),\"Enter Inputs\")",
-                      "raw": "#IFERROR?",
-                      "t": "f",
-                      "kind": "calc",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "D22",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E22",
-                      "v": "> COM-04 WACC",
-                      "t": "s",
-                      "raw": "> COM-04 WACC",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "F22",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A23",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "B23",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "C23",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "D23",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "E23",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "F23",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A24",
-                      "v": "3. 10-YEAR OPERATING CASH FLOW & DCF SCHEDULE (EUR, FY1 - FY10)",
-                      "t": "s",
-                      "raw": "3. 10-YEAR OPERATING CASH FLOW & DCF SCHEDULE (EUR, FY1 - FY10)",
-                      "kind": "section",
-                      "cspan": 12
-                    },
-                    {
-                      "coord": "B24",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C24",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "D24",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E24",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F24",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A25",
-                      "v": "Line Item (EUR)",
-                      "t": "s",
-                      "raw": "Line Item (EUR)",
+                      "raw": "SEN-02",
                       "kind": "input"
                     },
                     {
-                      "coord": "B25",
-                      "v": "Dev (Y0)",
+                      "coord": "B6",
+                      "v": "Capex Overrun +10% (HV / MEP Inflation)",
                       "t": "s",
-                      "raw": "Dev (Y0)",
+                      "raw": "Capex Overrun +10% (HV / MEP Inflation)",
                       "kind": "input"
                     },
                     {
-                      "coord": "C25",
-                      "v": "FY1",
-                      "t": "s",
-                      "raw": "FY1",
+                      "coord": "C6",
+                      "v": "10%",
+                      "t": "n",
+                      "raw": 0.1,
                       "kind": "input"
                     },
                     {
-                      "coord": "D25",
-                      "v": "FY2",
-                      "t": "s",
-                      "raw": "FY2",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "E25",
-                      "v": "FY3",
-                      "t": "s",
-                      "raw": "FY3",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F25",
-                      "v": "FY4",
-                      "t": "s",
-                      "raw": "FY4",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A26",
-                      "v": "IT Load Occupancy Ramp (%) [Input]",
-                      "t": "s",
-                      "raw": "IT Load Occupancy Ramp (%) [Input]",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B26",
+                      "coord": "D6",
                       "v": "0%",
                       "t": "n",
                       "raw": 0,
                       "kind": "input"
                     },
                     {
-                      "coord": "C26",
-                      "v": "25%",
+                      "coord": "E6",
+                      "v": "1.25",
                       "t": "n",
-                      "raw": 0.25,
+                      "raw": 1.25,
                       "kind": "input"
                     },
                     {
-                      "coord": "D26",
-                      "v": "50%",
+                      "coord": "F6",
+                      "v": "84.50",
                       "t": "n",
-                      "raw": 0.5,
+                      "raw": 84.5,
                       "kind": "input"
                     },
                     {
-                      "coord": "E26",
-                      "v": "75%",
-                      "t": "n",
-                      "raw": 0.75,
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "F26",
-                      "v": "90%",
-                      "t": "n",
-                      "raw": 0.9,
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A27",
-                      "v": "Utilized IT Load (kW)",
-                      "t": "s",
-                      "raw": "Utilized IT Load (kW)",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B27",
+                      "coord": "G6",
                       "v": "0",
+                      "f": "=F6*(1 - C6*1.65 - D6*0.55 - (E6-1.25)*1.2)",
+                      "raw": 0.0,
+                      "t": "f",
+                      "kind": "calc"
+                    },
+                    {
+                      "coord": "H6",
+                      "v": "9.9%",
+                      "f": "=0.118 - C6*0.19 - D6*0.08 - (E6-1.25)*0.11",
+                      "raw": 0.09899999999999999,
+                      "t": "f",
+                      "kind": "calc"
+                    },
+                    {
+                      "coord": "I6",
+                      "v": "PASS",
+                      "f": "=IF(H6>=0.085,\"PASS\",\"BREACH\")",
+                      "raw": "PASS",
+                      "t": "f",
+                      "kind": "calc"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A7",
+                      "v": "SEN-03",
+                      "t": "s",
+                      "raw": "SEN-03",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B7",
+                      "v": "Irish Grid / PPA Power Shock +15%",
+                      "t": "s",
+                      "raw": "Irish Grid / PPA Power Shock +15%",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C7",
+                      "v": "0%",
                       "t": "n",
                       "raw": 0,
                       "kind": "input"
                     },
                     {
-                      "coord": "C27",
-                      "v": "11,250",
-                      "f": "=$C$6*C26",
-                      "raw": 11250.0,
+                      "coord": "D7",
+                      "v": "15%",
+                      "t": "n",
+                      "raw": 0.15,
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "E7",
+                      "v": "1.25",
+                      "t": "n",
+                      "raw": 1.25,
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "F7",
+                      "v": "84.50",
+                      "t": "n",
+                      "raw": 84.5,
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "G7",
+                      "v": "0",
+                      "f": "=F7*(1 - C7*1.65 - D7*0.55 - (E7-1.25)*1.2)",
+                      "raw": 0.0,
                       "t": "f",
                       "kind": "calc"
                     },
                     {
-                      "coord": "D27",
-                      "v": "22,500",
-                      "f": "=$C$6*D26",
-                      "raw": 22500.0,
+                      "coord": "H7",
+                      "v": "10.6%",
+                      "f": "=0.118 - C7*0.19 - D7*0.08 - (E7-1.25)*0.11",
+                      "raw": 0.106,
                       "t": "f",
                       "kind": "calc"
                     },
                     {
-                      "coord": "E27",
-                      "v": "33,750",
-                      "f": "=$C$6*E26",
-                      "raw": 33750.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "F27",
-                      "v": "40,500",
-                      "f": "=$C$6*F26",
-                      "raw": 40500.0,
+                      "coord": "I7",
+                      "v": "PASS",
+                      "f": "=IF(H7>=0.085,\"PASS\",\"BREACH\")",
+                      "raw": "PASS",
                       "t": "f",
                       "kind": "calc"
                     }
                   ],
                   [
                     {
-                      "coord": "A28",
-                      "v": "Gross Colocation Revenue",
+                      "coord": "A8",
+                      "v": "SEN-04",
                       "t": "s",
-                      "raw": "Gross Colocation Revenue",
+                      "raw": "SEN-04",
                       "kind": "input"
                     },
                     {
-                      "coord": "B28",
-                      "v": "\u20ac0",
+                      "coord": "B8",
+                      "v": "Design PUE Drift to 1.35 (Heat Reuse Offline)",
+                      "t": "s",
+                      "raw": "Design PUE Drift to 1.35 (Heat Reuse Offline)",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C8",
+                      "v": "0%",
                       "t": "n",
                       "raw": 0,
                       "kind": "input"
                     },
                     {
-                      "coord": "C28",
-                      "v": "\u20ac0",
-                      "f": "=C27*12*$C$10",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "D28",
-                      "v": "\u20ac0",
-                      "f": "=D27*12*$C$10",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "E28",
-                      "v": "\u20ac0",
-                      "f": "=E27*12*$C$10",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "F28",
-                      "v": "\u20ac0",
-                      "f": "=F27*12*$C$10",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A29",
-                      "v": "Electricity Draw Cost",
-                      "t": "s",
-                      "raw": "Electricity Draw Cost",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B29",
-                      "v": "\u20ac0",
+                      "coord": "D8",
+                      "v": "0%",
                       "t": "n",
                       "raw": 0,
                       "kind": "input"
                     },
                     {
-                      "coord": "C29",
-                      "v": "\u20ac0",
-                      "f": "=-C27*$C$7*8760*$C$11",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "D29",
-                      "v": "\u20ac0",
-                      "f": "=-D27*$C$7*8760*$C$11",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "E29",
-                      "v": "\u20ac0",
-                      "f": "=-E27*$C$7*8760*$C$11",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "F29",
-                      "v": "\u20ac0",
-                      "f": "=-F27*$C$7*8760*$C$11",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A30",
-                      "v": "Fixed Facility Opex",
-                      "t": "s",
-                      "raw": "Fixed Facility Opex",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "B30",
-                      "v": "\u20ac0",
+                      "coord": "E8",
+                      "v": "1.35",
                       "t": "n",
-                      "raw": 0,
+                      "raw": 1.35,
                       "kind": "input"
                     },
                     {
-                      "coord": "C30",
-                      "v": "\u20ac0",
-                      "f": "=-$C$12",
+                      "coord": "F8",
+                      "v": "84.50",
+                      "t": "n",
+                      "raw": 84.5,
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "G8",
+                      "v": "0",
+                      "f": "=F8*(1 - C8*1.65 - D8*0.55 - (E8-1.25)*1.2)",
                       "raw": 0.0,
                       "t": "f",
                       "kind": "calc"
                     },
                     {
-                      "coord": "D30",
-                      "v": "\u20ac0",
-                      "f": "=-$C$12",
-                      "raw": 0.0,
+                      "coord": "H8",
+                      "v": "11.8%",
+                      "f": "=0.118 - C8*0.19 - D8*0.08 - (E8-1.25)*0.11",
+                      "raw": 0.118,
                       "t": "f",
                       "kind": "calc"
                     },
                     {
-                      "coord": "E30",
-                      "v": "\u20ac0",
-                      "f": "=-$C$12",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "F30",
-                      "v": "\u20ac0",
-                      "f": "=-$C$12",
-                      "raw": 0.0,
+                      "coord": "I8",
+                      "v": "PASS",
+                      "f": "=IF(H8>=0.085,\"PASS\",\"BREACH\")",
+                      "raw": "PASS",
                       "t": "f",
                       "kind": "calc"
                     }
                   ],
                   [
                     {
-                      "coord": "A31",
-                      "v": "Facility EBITDA",
+                      "coord": "A9",
+                      "v": "SEN-05",
                       "t": "s",
-                      "raw": "Facility EBITDA",
+                      "raw": "SEN-05",
                       "kind": "input"
                     },
                     {
-                      "coord": "B31",
-                      "v": "\u20ac0",
-                      "f": "=SUM(B28:B30)",
+                      "coord": "B9",
+                      "v": "Combined Severe Downside (+10% Capex & +10% Power)",
+                      "t": "s",
+                      "raw": "Combined Severe Downside (+10% Capex & +10% Power)",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C9",
+                      "v": "10%",
+                      "t": "n",
+                      "raw": 0.1,
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D9",
+                      "v": "10%",
+                      "t": "n",
+                      "raw": 0.1,
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "E9",
+                      "v": "1.30",
+                      "t": "n",
+                      "raw": 1.3,
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "F9",
+                      "v": "84.50",
+                      "t": "n",
+                      "raw": 84.5,
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "G9",
+                      "v": "0",
+                      "f": "=F9*(1 - C9*1.65 - D9*0.55 - (E9-1.25)*1.2)",
                       "raw": 0.0,
                       "t": "f",
                       "kind": "calc"
                     },
                     {
-                      "coord": "C31",
-                      "v": "\u20ac0",
-                      "f": "=SUM(C28:C30)",
-                      "raw": 0.0,
+                      "coord": "H9",
+                      "v": "9.1%",
+                      "f": "=0.118 - C9*0.19 - D9*0.08 - (E9-1.25)*0.11",
+                      "raw": 0.091,
                       "t": "f",
                       "kind": "calc"
                     },
                     {
-                      "coord": "D31",
-                      "v": "\u20ac0",
-                      "f": "=SUM(D28:D30)",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "E31",
-                      "v": "\u20ac0",
-                      "f": "=SUM(E28:E30)",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "F31",
-                      "v": "\u20ac0",
-                      "f": "=SUM(F28:F30)",
-                      "raw": 0.0,
+                      "coord": "I9",
+                      "v": "PASS",
+                      "f": "=IF(H9>=0.085,\"PASS\",\"BREACH\")",
+                      "raw": "PASS",
                       "t": "f",
                       "kind": "calc"
                     }
                   ],
                   [
                     {
-                      "coord": "A32",
-                      "v": "Development Capex & CIT Tax",
+                      "coord": "A10",
+                      "v": "SEN-06",
                       "t": "s",
-                      "raw": "Development Capex & CIT Tax",
+                      "raw": "SEN-06",
                       "kind": "input"
                     },
                     {
-                      "coord": "B32",
-                      "v": "\u20ac0",
-                      "f": "=-$C$15",
+                      "coord": "B10",
+                      "v": "Upside Optimization (-5% Capex & Free-Cooling 1.20)",
+                      "t": "s",
+                      "raw": "Upside Optimization (-5% Capex & Free-Cooling 1.20)",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C10",
+                      "v": "-5%",
+                      "t": "n",
+                      "raw": -0.05,
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D10",
+                      "v": "-5%",
+                      "t": "n",
+                      "raw": -0.05,
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "E10",
+                      "v": "1.20",
+                      "t": "n",
+                      "raw": 1.2,
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "F10",
+                      "v": "84.50",
+                      "t": "n",
+                      "raw": 84.5,
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "G10",
+                      "v": "0",
+                      "f": "=F10*(1 - C10*1.65 - D10*0.55 - (E10-1.25)*1.2)",
                       "raw": 0.0,
                       "t": "f",
                       "kind": "calc"
                     },
                     {
-                      "coord": "C32",
-                      "v": "\u20ac0",
-                      "f": "=-MAX(0,C31)*$C$14",
-                      "raw": 0.0,
+                      "coord": "H10",
+                      "v": "13.2%",
+                      "f": "=0.118 - C10*0.19 - D10*0.08 - (E10-1.25)*0.11",
+                      "raw": 0.1315,
                       "t": "f",
                       "kind": "calc"
                     },
                     {
-                      "coord": "D32",
-                      "v": "\u20ac0",
-                      "f": "=-MAX(0,D31)*$C$14",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "E32",
-                      "v": "\u20ac0",
-                      "f": "=-MAX(0,E31)*$C$14",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "F32",
-                      "v": "\u20ac0",
-                      "f": "=-MAX(0,F31)*$C$14",
-                      "raw": 0.0,
+                      "coord": "I10",
+                      "v": "PASS",
+                      "f": "=IF(H10>=0.085,\"PASS\",\"BREACH\")",
+                      "raw": "PASS",
                       "t": "f",
                       "kind": "calc"
                     }
                   ],
                   [
                     {
-                      "coord": "A33",
-                      "v": "Net Free Cash Flow (FCF)",
+                      "coord": "A11",
+                      "v": "STATS",
                       "t": "s",
-                      "raw": "Net Free Cash Flow (FCF)",
+                      "raw": "STATS",
                       "kind": "input"
                     },
                     {
-                      "coord": "B33",
-                      "v": "\u20ac0",
-                      "f": "=B31+B32",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "C33",
-                      "v": "\u20ac0",
-                      "f": "=C31+C32",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "D33",
-                      "v": "\u20ac0",
-                      "f": "=D31+D32",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "E33",
-                      "v": "\u20ac0",
-                      "f": "=E31+E32",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "F33",
-                      "v": "\u20ac0",
-                      "f": "=F31+F32",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A34",
-                      "v": "Cumulative Cash Flow",
+                      "coord": "B11",
+                      "v": "Scenario Stress Range Summary",
                       "t": "s",
-                      "raw": "Cumulative Cash Flow",
+                      "raw": "Scenario Stress Range Summary",
                       "kind": "input"
                     },
                     {
-                      "coord": "B34",
-                      "v": "\u20ac0",
-                      "f": "=B33",
+                      "coord": "C11",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "D11",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "E11",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "F11",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "G11",
+                      "v": "0",
+                      "f": "=MIN(G5:G10)",
                       "raw": 0.0,
                       "t": "f",
                       "kind": "calc"
                     },
                     {
-                      "coord": "C34",
-                      "v": "\u20ac0",
-                      "f": "=B34+C33",
-                      "raw": 0.0,
+                      "coord": "H11",
+                      "v": "9.1%",
+                      "f": "=MIN(H5:H10)",
+                      "raw": 0.091,
                       "t": "f",
                       "kind": "calc"
                     },
                     {
-                      "coord": "D34",
-                      "v": "\u20ac0",
-                      "f": "=C34+D33",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "E34",
-                      "v": "\u20ac0",
-                      "f": "=D34+E33",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "F34",
-                      "v": "\u20ac0",
-                      "f": "=E34+F33",
-                      "raw": 0.0,
+                      "coord": "I11",
+                      "v": "COUNTIF(I5:I10,\"PASS\")&\" / \"&COUNTA(I5:I10)&\" Pass\"",
+                      "f": "=COUNTIF(I5:I10,\"PASS\")&\" / \"&COUNTA(I5:I10)&\" Pass\"",
+                      "raw": "COUNTIF(I5:I10,\"PASS\")&\" / \"&COUNTA(I5:I10)&\" Pass\"",
                       "t": "f",
                       "kind": "calc"
                     }
                   ]
                 ]
-              }
-            ]
-          }
-        },
-        {
-          "docId": "PKG-03-D3",
-          "idx0": 2,
-          "cat": "MEMORANDUM",
-          "title": "Pre-NTP Final Investment Decision (FID) Board Dossier",
-          "ref": "Board FID Memo / Risk P80 Contingency / Hurdles",
-          "why": "Board of Directors sanction paper synthesizing planning approvals, grid headroom confirmation, financial hurdle verification (IRR > 8.5% WACC), and P80 contingency allocation.",
-          "fileName": "PKG03_Doc3_Memorandum_FID_Board_Sanction_Dossier_Rev.001.xlsx",
-          "ext": "XLSX",
-          "downloadUrl": "files/PKG-03/PKG03_Doc3_Memorandum_FID_Board_Sanction_Dossier_Rev.001.xlsx",
-          "localPath": "G:\\My Drive\\7. AI\\DataCenter_EU_Ireland\\Phase_1_Consolidated_Path_B_RIBA_0_1\\PKG-03_Capex_DCF_FID_Sanction\\PKG03_Doc3_Memorandum_FID_Board_Sanction_Dossier_Rev.001.xlsx",
-          "renderType": "xlsx",
-          "xlsx": {
-            "fileName": "PKG03_Doc3_Memorandum_FID_Board_Sanction_Dossier_Rev.001.xlsx",
-            "sheetCount": 1,
-            "totalCells": 200,
-            "formulaCells": 6,
-            "sheets": [
+              },
               {
-                "name": "1. Charter Executive Brief",
-                "maxRow": 25,
-                "maxCol": 8,
-                "formulaCount": 6,
+                "name": "2. Doc Control & Gates",
+                "maxRow": 10,
+                "maxCol": 4,
+                "formulaCount": 0,
                 "columns": [
                   "A",
                   "B",
                   "C",
-                  "D",
-                  "E",
-                  "F",
-                  "G",
-                  "H"
+                  "D"
                 ],
                 "rows": [
                   [
                     {
                       "coord": "A1",
-                      "v": "PROJECT CHARTER - IRELAND / EU 45 MW DATA CENTRE (EN 50600 CLASS 3 / TIER III)",
+                      "v": "DC45-EU | PM-04 DOC 4 \u2014 DOCUMENT CONTROL & XER SYNCHRONIZATION",
                       "t": "s",
-                      "raw": "PROJECT CHARTER - IRELAND / EU 45 MW DATA CENTRE (EN 50600 CLASS 3 / TIER III)",
+                      "raw": "DC45-EU | PM-04 DOC 4 \u2014 DOCUMENT CONTROL & XER SYNCHRONIZATION",
                       "kind": "banner",
-                      "cspan": 8
+                      "cspan": 4
                     },
                     {
                       "coord": "B1",
@@ -16324,48 +25057,16 @@ window.PHASE1_PORTAL_DATA = {
                       "raw": "",
                       "kind": "empty",
                       "skip": true
-                    },
-                    {
-                      "coord": "E1",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F1",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G1",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H1",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
                     }
                   ],
                   [
                     {
                       "coord": "A2",
-                      "v": "Project Code: DC45-EU | RIBA Stages 0-7 | EirGrid / EPA IEL / BCAR / PSDP-PSCS / EU EED (2023/1791)",
+                      "v": "Sensitivity & Downside Stress Test Matrix (Power Tariff, PUE & Capex +/-10%) | RIBA Stage 1",
                       "t": "s",
-                      "raw": "Project Code: DC45-EU | RIBA Stages 0-7 | EirGrid / EPA IEL / BCAR / PSDP-PSCS / EU EED (2023/1791)",
+                      "raw": "Sensitivity & Downside Stress Test Matrix (Power Tariff, PUE & Capex +/-10%) | RIBA Stage 1",
                       "kind": "banner",
-                      "cspan": 8
+                      "cspan": 4
                     },
                     {
                       "coord": "B2",
@@ -16385,38 +25086,6 @@ window.PHASE1_PORTAL_DATA = {
                     },
                     {
                       "coord": "D2",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E2",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F2",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G2",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H2",
                       "v": "",
                       "t": "empty",
                       "raw": "",
@@ -16452,1463 +25121,215 @@ window.PHASE1_PORTAL_DATA = {
                       "t": "empty",
                       "raw": "",
                       "kind": "empty"
-                    },
-                    {
-                      "coord": "E3",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "F3",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "G3",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "H3",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
                     }
                   ],
                   [
                     {
                       "coord": "A4",
-                      "v": "1. EXECUTIVE AUTHORIZATION & IRISH STATUTORY MANDATE",
+                      "v": "Metadata Key",
                       "t": "s",
-                      "raw": "1. EXECUTIVE AUTHORIZATION & IRISH STATUTORY MANDATE",
-                      "kind": "section",
-                      "cspan": 8
+                      "raw": "Metadata Key",
+                      "kind": "input"
                     },
                     {
                       "coord": "B4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "v": "Value / Rule",
+                      "t": "s",
+                      "raw": "Value / Rule",
+                      "kind": "input"
                     },
                     {
                       "coord": "C4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "v": "Linked Reference",
+                      "t": "s",
+                      "raw": "Linked Reference",
+                      "kind": "input"
                     },
                     {
                       "coord": "D4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H4",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "v": "Verification Status",
+                      "t": "s",
+                      "raw": "Verification Status",
+                      "kind": "input"
                     }
                   ],
                   [
                     {
                       "coord": "A5",
-                      "v": "This Project Charter authorizes planning (SID/EIAR), EPA Industrial Emissions Licensing (IEL), EirGrid 110kV grid connection, ISO 19650 BIM design, EN 50600 Class 3 construction under BCAR & S.I. No. 291/2013 (PSDP/PSCS), CIBSE/ASHRAE L1-L5 commissioning (48-hr 45 MW IST), and BCAR Certificate of Compliance on Completion for a 45 MW hyperscale facility in Ireland.",
+                      "v": "ISO 19650 Doc ID",
                       "t": "s",
-                      "raw": "This Project Charter authorizes planning (SID/EIAR), EPA Industrial Emissions Licensing (IEL), EirGrid 110kV grid connection, ISO 19650 BIM design, EN 50600 Class 3 construction under BCAR & S.I. No. 291/2013 (PSDP/PSCS), CIBSE/ASHRAE L1-L5 commissioning (48-hr 45 MW IST), and BCAR Certificate of Compliance on Completion for a 45 MW hyperscale facility in Ireland.",
-                      "kind": "banner",
-                      "cspan": 8
+                      "raw": "ISO 19650 Doc ID",
+                      "kind": "input"
                     },
                     {
                       "coord": "B5",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "v": "DC45EU-PM04-DOC4-Rev004",
+                      "t": "s",
+                      "raw": "DC45EU-PM04-DOC4-Rev004",
+                      "kind": "input"
                     },
                     {
                       "coord": "C5",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "v": "PM-12 CDE Naming",
+                      "t": "s",
+                      "raw": "PM-12 CDE Naming",
+                      "kind": "input"
                     },
                     {
                       "coord": "D5",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E5",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F5",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G5",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H5",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "v": "ACTIVE",
+                      "t": "s",
+                      "raw": "ACTIVE",
+                      "kind": "input"
                     }
                   ],
                   [
                     {
                       "coord": "A6",
-                      "v": "Organization Field",
+                      "v": "Flashcard Module",
                       "t": "s",
-                      "raw": "Organization Field",
-                      "kind": "input",
-                      "cspan": 2
+                      "raw": "Flashcard Module",
+                      "kind": "input"
                     },
                     {
                       "coord": "B6",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "v": "PM-04: EUR Capex Modelling, 10-Yr DCF, NPV/IRR & Sensitivity",
+                      "t": "s",
+                      "raw": "PM-04: EUR Capex Modelling, 10-Yr DCF, NPV/IRR & Sensitivity",
+                      "kind": "input"
                     },
                     {
                       "coord": "C6",
-                      "v": "Authorized Detail",
+                      "v": "RIBA Stage 1",
                       "t": "s",
-                      "raw": "Authorized Detail",
-                      "kind": "input",
-                      "cspan": 2
+                      "raw": "RIBA Stage 1",
+                      "kind": "input"
                     },
                     {
                       "coord": "D6",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E6",
-                      "v": "Baseline Parameter",
+                      "v": "ALIGNED",
                       "t": "s",
-                      "raw": "Baseline Parameter",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "F6",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G6",
-                      "v": "EU / Ireland Standard",
-                      "t": "s",
-                      "raw": "EU / Ireland Standard",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "H6",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "raw": "ALIGNED",
+                      "kind": "input"
                     }
                   ],
                   [
                     {
                       "coord": "A7",
-                      "v": "Legal Entity / SPV",
+                      "v": "P6 Gate & WBS",
                       "t": "s",
-                      "raw": "Legal Entity / SPV",
-                      "kind": "input",
-                      "cspan": 2
+                      "raw": "P6 Gate & WBS",
+                      "kind": "input"
                     },
                     {
                       "coord": "B7",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "v": "M1000 FID | WBS 1.0-7.0",
+                      "t": "s",
+                      "raw": "M1000 FID | WBS 1.0-7.0",
+                      "kind": "input"
                     },
                     {
                       "coord": "C7",
-                      "v": "[TBD - Client / Developer SPV]",
+                      "v": "144 Tasks / 213 Links",
                       "t": "s",
-                      "raw": "[TBD - Client / Developer SPV]",
-                      "kind": "input",
-                      "cspan": 2
+                      "raw": "144 Tasks / 213 Links",
+                      "kind": "input"
                     },
                     {
                       "coord": "D7",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E7",
-                      "v": "Location / Grid Zone",
+                      "v": "SYNCED",
                       "t": "s",
-                      "raw": "Location / Grid Zone",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "F7",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G7",
-                      "v": "[TBD - Greater Dublin / Ireland IDA Zone]",
-                      "t": "s",
-                      "raw": "[TBD - Greater Dublin / Ireland IDA Zone]",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "H7",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "raw": "SYNCED",
+                      "kind": "input"
                     }
                   ],
                   [
                     {
                       "coord": "A8",
-                      "v": "Executive Sponsor / IC",
+                      "v": "Governing Standards",
                       "t": "s",
-                      "raw": "Executive Sponsor / IC",
-                      "kind": "input",
-                      "cspan": 2
+                      "raw": "Governing Standards",
+                      "kind": "input"
                     },
                     {
                       "coord": "B8",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "v": "RICS NRM1, Institutional EUR DCF (WACC 8.5%, CIT 12.5%)",
+                      "t": "s",
+                      "raw": "RICS NRM1, Institutional EUR DCF (WACC 8.5%, CIT 12.5%)",
+                      "kind": "input"
                     },
                     {
                       "coord": "C8",
-                      "v": "[TBD - Sponsor Input]",
+                      "v": "IC Investment Stress Test",
                       "t": "s",
-                      "raw": "[TBD - Sponsor Input]",
-                      "kind": "input",
-                      "cspan": 2
+                      "raw": "IC Investment Stress Test",
+                      "kind": "input"
                     },
                     {
                       "coord": "D8",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E8",
-                      "v": "Project Director / PM",
+                      "v": "ENFORCED",
                       "t": "s",
-                      "raw": "Project Director / PM",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "F8",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G8",
-                      "v": "[TBD - Chartered Engineer]",
-                      "t": "s",
-                      "raw": "[TBD - Chartered Engineer]",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "H8",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "raw": "ENFORCED",
+                      "kind": "input"
                     }
                   ],
                   [
                     {
                       "coord": "A9",
-                      "v": "Statutory PSDP / PSCS",
+                      "v": "Study Takeaway",
                       "t": "s",
-                      "raw": "Statutory PSDP / PSCS",
-                      "kind": "input",
-                      "cspan": 2
+                      "raw": "Study Takeaway",
+                      "kind": "input"
                     },
                     {
                       "coord": "B9",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "v": "Quantify IRR resilience against construction inflation, grid delays, and energy spikes.",
+                      "t": "s",
+                      "raw": "Quantify IRR resilience against construction inflation, grid delays, and energy spikes.",
+                      "kind": "input"
                     },
                     {
                       "coord": "C9",
-                      "v": "Appointed in Writing pre-Design / pre-Site (SI 291)",
+                      "v": "gogo Learning Dashboard",
                       "t": "s",
-                      "raw": "Appointed in Writing pre-Design / pre-Site (SI 291)",
-                      "kind": "input",
-                      "cspan": 2
+                      "raw": "gogo Learning Dashboard",
+                      "kind": "input"
                     },
                     {
                       "coord": "D9",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E9",
-                      "v": "BCAR Assigned Certifier",
+                      "v": "ACTIVE",
                       "t": "s",
-                      "raw": "BCAR Assigned Certifier",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "F9",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G9",
-                      "v": "Chartered Architect / Engineer (BCMS)",
-                      "t": "s",
-                      "raw": "Chartered Architect / Engineer (BCMS)",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "H9",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
+                      "raw": "ACTIVE",
+                      "kind": "input"
                     }
                   ],
                   [
                     {
                       "coord": "A10",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
+                      "v": "Blue Cells Convention",
+                      "t": "s",
+                      "raw": "Blue Cells Convention",
+                      "kind": "input"
                     },
                     {
                       "coord": "B10",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
+                      "v": "All blue-shaded numeric inputs represent editable project parameters",
+                      "t": "s",
+                      "raw": "All blue-shaded numeric inputs represent editable project parameters",
+                      "kind": "input"
                     },
                     {
                       "coord": "C10",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
+                      "v": "Audit Formatting Rule",
+                      "t": "s",
+                      "raw": "Audit Formatting Rule",
+                      "kind": "input"
                     },
                     {
                       "coord": "D10",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "E10",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "F10",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "G10",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "H10",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A11",
-                      "v": "2. LIVE CHARTER KPI DASHBOARD (LINKED DYNAMICALLY TO TABS 3 & 6)",
+                      "v": "STANDARD",
                       "t": "s",
-                      "raw": "2. LIVE CHARTER KPI DASHBOARD (LINKED DYNAMICALLY TO TABS 3 & 6)",
-                      "kind": "section",
-                      "cspan": 8
-                    },
-                    {
-                      "coord": "B11",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C11",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "D11",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E11",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F11",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G11",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H11",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A12",
-                      "v": "Control KPI",
-                      "t": "s",
-                      "raw": "Control KPI",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "B12",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C12",
-                      "v": "Live Value",
-                      "t": "s",
-                      "raw": "Live Value",
-                      "kind": "input"
-                    },
-                    {
-                      "coord": "D12",
-                      "v": "Unit / Source",
-                      "t": "s",
-                      "raw": "Unit / Source",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "E12",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F12",
-                      "v": "EU / Ireland Benchmark",
-                      "t": "s",
-                      "raw": "EU / Ireland Benchmark",
-                      "kind": "input",
-                      "cspan": 3
-                    },
-                    {
-                      "coord": "G12",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H12",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A13",
-                      "v": "Authorized Master Control Gates",
-                      "t": "s",
-                      "raw": "Authorized Master Control Gates",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "B13",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C13",
-                      "v": "0",
-                      "f": "=COUNTA('3. Milestones & Budget'!A6:A15)",
-                      "raw": 0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "D13",
-                      "v": "Gates (M1000-M7060)",
-                      "t": "s",
-                      "raw": "Gates (M1000-M7060)",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "E13",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F13",
-                      "v": "Synchronized with DataCenter_45MW_EU_Ireland.xer",
-                      "t": "s",
-                      "raw": "Synchronized with DataCenter_45MW_EU_Ireland.xer",
-                      "kind": "input",
-                      "cspan": 3
-                    },
-                    {
-                      "coord": "G13",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H13",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A14",
-                      "v": "Driving Critical-Path Gates",
-                      "t": "s",
-                      "raw": "Driving Critical-Path Gates",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "B14",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C14",
-                      "v": "0",
-                      "f": "=COUNTIF('3. Milestones & Budget'!G6:G15,\"YES\")",
-                      "raw": 0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "D14",
-                      "v": "Zero-Float Gates",
-                      "t": "s",
-                      "raw": "Zero-Float Gates",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "E14",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F14",
-                      "v": "Strict 8.0 hr/day 5-day calendar enforced",
-                      "t": "s",
-                      "raw": "Strict 8.0 hr/day 5-day calendar enforced",
-                      "kind": "input",
-                      "cspan": 3
-                    },
-                    {
-                      "coord": "G14",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H14",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A15",
-                      "v": "Notice to Proceed (RIBA Stage 1)",
-                      "t": "s",
-                      "raw": "Notice to Proceed (RIBA Stage 1)",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "B15",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C15",
-                      "v": "0",
-                      "f": "=MIN('3. Milestones & Budget'!E6:E15)",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "D15",
-                      "v": "YYYY-MM-DD (M1000)",
-                      "t": "s",
-                      "raw": "YYYY-MM-DD (M1000)",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "E15",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F15",
-                      "v": "Day-1 Land Option & PSDP/EirGrid initiation",
-                      "t": "s",
-                      "raw": "Day-1 Land Option & PSDP/EirGrid initiation",
-                      "kind": "input",
-                      "cspan": 3
-                    },
-                    {
-                      "coord": "G15",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H15",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A16",
-                      "v": "Commercial Operation Date (COD)",
-                      "t": "s",
-                      "raw": "Commercial Operation Date (COD)",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "B16",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C16",
-                      "v": "0",
-                      "f": "=MAX('3. Milestones & Budget'!E6:E15)",
-                      "raw": 0.0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "D16",
-                      "v": "YYYY-MM-DD (M7060)",
-                      "t": "s",
-                      "raw": "YYYY-MM-DD (M7060)",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "E16",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F16",
-                      "v": "BCAR CCC validated & Safety File accepted (880 workdays)",
-                      "t": "s",
-                      "raw": "BCAR CCC validated & Safety File accepted (880 workdays)",
-                      "kind": "input",
-                      "cspan": 3
-                    },
-                    {
-                      "coord": "G16",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H16",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A17",
-                      "v": "Authorized Capex Baseline (BAC)",
-                      "t": "s",
-                      "raw": "Authorized Capex Baseline (BAC)",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "B17",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C17",
-                      "v": "",
-                      "f": "='3. Milestones & Budget'!F26",
-                      "raw": "",
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "D17",
-                      "v": "EUR (WBS 1.0-7.0)",
-                      "t": "s",
-                      "raw": "EUR (WBS 1.0-7.0)",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "E17",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F17",
-                      "v": "Linked dynamically to Tab 3 EUR Capex table",
-                      "t": "s",
-                      "raw": "Linked dynamically to Tab 3 EUR Capex table",
-                      "kind": "input",
-                      "cspan": 3
-                    },
-                    {
-                      "coord": "G17",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H17",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A18",
-                      "v": "Critical Strategic Risks (Score>=20)",
-                      "t": "s",
-                      "raw": "Critical Strategic Risks (Score>=20)",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "B18",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C18",
-                      "v": "0",
-                      "f": "=COUNTIF('6. Risks & Sign-Off'!G6:G11,\"CRITICAL\")",
-                      "raw": 0,
-                      "t": "f",
-                      "kind": "calc"
-                    },
-                    {
-                      "coord": "D18",
-                      "v": "Executive Escalation",
-                      "t": "s",
-                      "raw": "Executive Escalation",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "E18",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F18",
-                      "v": "Calculated via L x I matrix on Tab 6",
-                      "t": "s",
-                      "raw": "Calculated via L x I matrix on Tab 6",
-                      "kind": "input",
-                      "cspan": 3
-                    },
-                    {
-                      "coord": "G18",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H18",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A19",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "B19",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "C19",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "D19",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "E19",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "F19",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "G19",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    },
-                    {
-                      "coord": "H19",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A20",
-                      "v": "3. CONTROLLED PORTFOLIO HIERARCHY (IRELAND / EU STANDARD)",
-                      "t": "s",
-                      "raw": "3. CONTROLLED PORTFOLIO HIERARCHY (IRELAND / EU STANDARD)",
-                      "kind": "section",
-                      "cspan": 8
-                    },
-                    {
-                      "coord": "B20",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C20",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "D20",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E20",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "F20",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G20",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H20",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A21",
-                      "v": "Level",
-                      "t": "s",
-                      "raw": "Level",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "B21",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C21",
-                      "v": "Deliverable File",
-                      "t": "s",
-                      "raw": "Deliverable File",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "D21",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E21",
-                      "v": "Standards Covered",
-                      "t": "s",
-                      "raw": "Standards Covered",
-                      "kind": "input",
-                      "cspan": 3
-                    },
-                    {
-                      "coord": "F21",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G21",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H21",
-                      "v": "Status",
-                      "t": "s",
-                      "raw": "Status",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A22",
-                      "v": "L1 Project Charter",
-                      "t": "s",
-                      "raw": "L1 Project Charter",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "B22",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C22",
-                      "v": "DataCenter_45MW_EU_Project_Charter.xlsx",
-                      "t": "s",
-                      "raw": "DataCenter_45MW_EU_Project_Charter.xlsx",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "D22",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E22",
-                      "v": "BCAR, PSDP/PSCS, EirGrid/CRU, EUR Stage-Gates & COD Exit",
-                      "t": "s",
-                      "raw": "BCAR, PSDP/PSCS, EirGrid/CRU, EUR Stage-Gates & COD Exit",
-                      "kind": "input",
-                      "cspan": 3
-                    },
-                    {
-                      "coord": "F22",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G22",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H22",
-                      "v": "ACTIVE",
-                      "t": "s",
-                      "raw": "ACTIVE",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A23",
-                      "v": "L2 Impl. Plan (PIP)",
-                      "t": "s",
-                      "raw": "L2 Impl. Plan (PIP)",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "B23",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C23",
-                      "v": "DataCenter_45MW_EU_PIP.xlsx",
-                      "t": "s",
-                      "raw": "DataCenter_45MW_EU_PIP.xlsx",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "D23",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E23",
-                      "v": "144-task RIBA/EN 50600 Gantt, Ireland Statutory & CIBSE L1-L5",
-                      "t": "s",
-                      "raw": "144-task RIBA/EN 50600 Gantt, Ireland Statutory & CIBSE L1-L5",
-                      "kind": "input",
-                      "cspan": 3
-                    },
-                    {
-                      "coord": "F23",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G23",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H23",
-                      "v": "ACTIVE",
-                      "t": "s",
-                      "raw": "ACTIVE",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A24",
-                      "v": "L3 Pre-NTP Controls",
-                      "t": "s",
-                      "raw": "L3 Pre-NTP Controls",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "B24",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C24",
-                      "v": "DataCenter_45MW_EU_PreNTP_Controls.xlsx",
-                      "t": "s",
-                      "raw": "DataCenter_45MW_EU_PreNTP_Controls.xlsx",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "D24",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E24",
-                      "v": "EUR 10-yr DCF, EED KPIs (PUE/WUE/ERF), FIDIC/NEC4 EVM & Risks",
-                      "t": "s",
-                      "raw": "EUR 10-yr DCF, EED KPIs (PUE/WUE/ERF), FIDIC/NEC4 EVM & Risks",
-                      "kind": "input",
-                      "cspan": 3
-                    },
-                    {
-                      "coord": "F24",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G24",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H24",
-                      "v": "ACTIVE",
-                      "t": "s",
-                      "raw": "ACTIVE",
-                      "kind": "input"
-                    }
-                  ],
-                  [
-                    {
-                      "coord": "A25",
-                      "v": "L4 Master P6 Schedule",
-                      "t": "s",
-                      "raw": "L4 Master P6 Schedule",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "B25",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "C25",
-                      "v": "DataCenter_45MW_EU_Ireland.xer",
-                      "t": "s",
-                      "raw": "DataCenter_45MW_EU_Ireland.xer",
-                      "kind": "input",
-                      "cspan": 2
-                    },
-                    {
-                      "coord": "D25",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "E25",
-                      "v": "144 tasks, 22 WBS, 213 FS links; DCMA-14 6/6 PASS (880 workdays)",
-                      "t": "s",
-                      "raw": "144 tasks, 22 WBS, 213 FS links; DCMA-14 6/6 PASS (880 workdays)",
-                      "kind": "input",
-                      "cspan": 3
-                    },
-                    {
-                      "coord": "F25",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "G25",
-                      "v": "",
-                      "t": "empty",
-                      "raw": "",
-                      "kind": "empty",
-                      "skip": true
-                    },
-                    {
-                      "coord": "H25",
-                      "v": "LOCKED",
-                      "t": "s",
-                      "raw": "LOCKED",
+                      "raw": "STANDARD",
                       "kind": "input"
                     }
                   ]
@@ -17916,21 +25337,262 @@ window.PHASE1_PORTAL_DATA = {
               }
             ]
           }
-        },
+        }
+      ]
+    },
+    {
+      "id": "PM-05",
+      "title": "RIBA 0-7 Stage-Gate Framework & Pre-NTP FID Package",
+      "desc": "Structure formal Stage-Gate entry/exit criteria leading to Final Investment Decision (FID) and Full Notice to Proceed (NTP).",
+      "tags": [
+        "RIBA 0-7",
+        "Stage Gates",
+        "FID"
+      ],
+      "folder": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-05_RIBA_Stage_Gate_PreNTP_FID",
+      "readme": "# PM-05: RIBA 0-7 Stage-Gate Framework & Pre-NTP FID Package\n\n- **Phase**: `Phase 1: Initiation, Charter & Business Case (RIBA 0-1)`\n- **RIBA Stage**: `RIBA Stages 0-7`\n- **P6 Milestone Gate**: `M1000 -> M7060`\n- **WBS Scope**: `All WBS`\n- **Governing Standards**: RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06\n- **Focus Areas**: LNTP, FNTP, TR-01..TR-06, Gate Freeze, FID Dossier\n\n## Module Overview\nStructure formal Stage-Gate entry/exit criteria leading to Final Investment Decision (FID) and Full Notice to Proceed (NTP).\n\n## Ordered Flashcard Documents (`Doc 1` -> `Doc 4`)\n\n| Doc | Category | Title | Exact Local File | Companion / Notes |\n| :--- | :--- | :--- | :--- | :--- |\n| Doc 1 | Standard | RIBA Plan of Work 2020 (Stages 0-7) Mission-Critical Data Centre Overlay | `PM05_Doc1_Standard_RIBA_Plan_of_Work_2020_Stages_0_7_Rev.004.docx` | RIBA Plan of Work 2020 |\n| Doc 2 | Deliverable | Final Investment Decision (FID) Board Paper & Pre-NTP Executive Dossier | `PM05_Doc2_Deliverable_FID_PreNTP_Dossier_Controls_Master_Rev.004.xlsx` | Sheet 1. Executive Summary |\n| Doc 3 | Template | Limited Notice to Proceed (LNTP) vs. Full NTP Release Authorization Memo | `PM05_Doc3_Template_Limited_Notice_to_Proceed_LNTP_vs_Rev.004.docx` | Pre-NTP Commercial Release |\n| Doc 4 | Audit | Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist | `PM05_Doc4_Audit_Stage_Gate_0_to_7_Mandatory_Exit_Rev.004.xlsx` | Gate Review Governance |\n\n## Study Takeaway (`Why Each Document Matters`)\n- **Doc 1 (Standard)**: Align design freezes, statutory consents, and site construction gates cleanly.\n- **Doc 2 (Deliverable)**: Consolidate commercial returns, schedule baseline, and risk readiness for board sign-off.\n- **Doc 3 (Template)**: Commit early enabling works or OEM slots before unconditional full contract execution.\n- **Doc 4 (Audit)**: Verify design maturity, permit status, and funded contingency before unlocking next tranche.\n",
+      "docs": [
         {
-          "docId": "PKG-03-D4",
-          "idx0": 3,
-          "cat": "AUDIT",
-          "title": "Stage-Gate 1 Mandatory Exit Criteria & LNTP Authorization Protocol",
-          "ref": "Gate 1 Exit Criteria / LNTP Authorization / M1000",
-          "why": "20-point auditable checklist required to exit RIBA Stage 1, combined with the Limited Notice to Proceed (LNTP) contractual authorization template for early works and long-lead OEM slots.",
-          "fileName": "PKG03_Doc4_Audit_Stage_Gate_1_Exit_LNTP_Protocol_Rev.001.docx",
+          "docId": "PM-05-D1",
+          "idx0": 0,
+          "cat": "Standard",
+          "title": "RIBA Plan of Work 2020 (Stages 0-7) Mission-Critical Data Centre Overlay",
+          "ref": "RIBA Plan of Work 2020",
+          "why": "Align design freezes, statutory consents, and site construction gates cleanly.",
+          "fileName": "PM05_Doc1_Standard_RIBA_Plan_of_Work_2020_Stages_0_7_Rev.004.docx",
           "ext": "DOCX",
-          "downloadUrl": "files/PKG-03/PKG03_Doc4_Audit_Stage_Gate_1_Exit_LNTP_Protocol_Rev.001.docx",
-          "localPath": "G:\\My Drive\\7. AI\\DataCenter_EU_Ireland\\Phase_1_Consolidated_Path_B_RIBA_0_1\\PKG-03_Capex_DCF_FID_Sanction\\PKG03_Doc4_Audit_Stage_Gate_1_Exit_LNTP_Protocol_Rev.001.docx",
+          "downloadUrl": "files/PM-05/PM05_Doc1_Standard_RIBA_Plan_of_Work_2020_Stages_0_7_Rev.004.docx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-05_RIBA_Stage_Gate_PreNTP_FID\\PM05_Doc1_Standard_RIBA_Plan_of_Work_2020_Stages_0_7_Rev.004.docx",
           "renderType": "docx",
           "docx": {
-            "fileName": "PKG03_Doc4_Audit_Stage_Gate_1_Exit_LNTP_Protocol_Rev.001.docx",
+            "fileName": "PM05_Doc1_Standard_RIBA_Plan_of_Work_2020_Stages_0_7_Rev.004.docx",
+            "blocks": [
+              {
+                "type": "banner",
+                "text": "PHASE 1: INITIATION, CHARTER & BUSINESS CASE (RIBA 0-1) | PM-05 | STANDARD DOCUMENT | RIBA Plan of Work 2020 (Stages 0-7) Mission-Critical Data Centre Overlay"
+              },
+              {
+                "type": "table",
+                "rows": [
+                  [
+                    "Document Control Field",
+                    "DC45-EU Repository Value"
+                  ],
+                  [
+                    "ISO 19650 Document Code",
+                    "DC45EU-PM05-DOC1-Rev004"
+                  ],
+                  [
+                    "Flashcard Module & Stage",
+                    "PM-05: RIBA 0-7 Stage-Gate Framework & Pre-NTP FID Package (RIBA Stages 0-7)"
+                  ],
+                  [
+                    "P6 Milestone / WBS Anchor",
+                    "M1000 -> M7060 | All WBS | Live Schedule: 144 Tasks / 213 Links"
+                  ],
+                  [
+                    "Governing Standards",
+                    "RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06"
+                  ],
+                  [
+                    "Dashboard Ref & Revision",
+                    "RIBA Plan of Work 2020 | Status: Active Baseline (Rev.004)"
+                  ]
+                ]
+              },
+              {
+                "type": "h1",
+                "text": "1. Document Mandate & Operational Scope"
+              },
+              {
+                "type": "p",
+                "text": "Portfolio Context: This institutional standard establishes controlled governance, technical compliance rules, and auditable evidence for the 45 MW DC45-EU Hyperscale Data Centre development in Ireland (4 x 9.0 MW data halls, dual 110 kV grid incomers, 16 x 2.5 MVA HVO standby generation with SCR abatement, and EN 50600 Availability Class 3 / Uptime TCCF target). All schedules and resource assumptions synchronize against the master Primavera P6 baseline (DataCenter_45MW_EU_Ireland.xer: M1000 NTP 2027-01-04 through M7060 COD 2030-05-20)."
+              },
+              {
+                "type": "p",
+                "text": "Core Competency Objective: Align design freezes, statutory consents, and site construction gates cleanly."
+              },
+              {
+                "type": "p",
+                "text": "Module Summary: Structure formal Stage-Gate entry/exit criteria leading to Final Investment Decision (FID) and Full Notice to Proceed (NTP)."
+              },
+              {
+                "type": "h1",
+                "text": "2. Governing Standards & Compliance Framework"
+              },
+              {
+                "type": "bullet",
+                "text": "RIBA Plan of Work 2020 Data Centre Overlay: Mandatory alignment enforced during RIBA Stages 0-7 under PM-05 controls, subject to Independent Verification / Assigned Certifier / CxA sign-off prior to stage progression."
+              },
+              {
+                "type": "bullet",
+                "text": "Stage-Gate Tranches TR-01..TR-06: Mandatory alignment enforced during RIBA Stages 0-7 under PM-05 controls, subject to Independent Verification / Assigned Certifier / CxA sign-off prior to stage progression."
+              },
+              {
+                "type": "h1",
+                "text": "3. Key Control Elements & Stage-Gate Acceptance Criteria"
+              },
+              {
+                "type": "table",
+                "rows": [
+                  [
+                    "Item Code",
+                    "Control Focus Area",
+                    "DC45-EU Quantitative / Statutory Threshold",
+                    "Verification Authority"
+                  ],
+                  [
+                    "PM05-C01",
+                    "LNTP",
+                    "Formal standard evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to M1000 -> M7060 and All WBS.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ],
+                  [
+                    "PM05-C02",
+                    "FNTP",
+                    "Formal standard evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to M1000 -> M7060 and All WBS.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ],
+                  [
+                    "PM05-C03",
+                    "TR-01..TR-06",
+                    "Formal standard evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to M1000 -> M7060 and All WBS.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ],
+                  [
+                    "PM05-C04",
+                    "Gate Freeze",
+                    "Formal standard evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to M1000 -> M7060 and All WBS.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ],
+                  [
+                    "PM05-C05",
+                    "FID Dossier",
+                    "Formal standard evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to M1000 -> M7060 and All WBS.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ]
+                ]
+              },
+              {
+                "type": "h1",
+                "text": "4. Primavera P6 Milestone & Dependency Synchronization"
+              },
+              {
+                "type": "table",
+                "rows": [
+                  [
+                    "P6 Gate ID",
+                    "Baseline Target Date",
+                    "Gate Control Significance"
+                  ],
+                  [
+                    "M1000",
+                    "2027-01-04",
+                    "Final Investment Decision (FID) & Notice to Proceed (NTP)"
+                  ],
+                  [
+                    "M2110",
+                    "2027-07-12",
+                    "Detailed Design Freeze & Early Construction Release"
+                  ],
+                  [
+                    "M3120",
+                    "2028-01-03",
+                    "OFCI Long-Lead Equipment Delivery Buffer (+200d Lead)"
+                  ],
+                  [
+                    "M4350",
+                    "2029-02-12",
+                    "Core & Shell Weather-Tight Envelope Complete"
+                  ],
+                  [
+                    "M5595",
+                    "2029-09-24",
+                    "MEP Pre-Energisation Complete \u2014 L3/L4 Cx Handover"
+                  ],
+                  [
+                    "M6470",
+                    "2030-02-25",
+                    "Level 5 45 MW 48-Hr Integrated Systems Test (IST) Complete"
+                  ],
+                  [
+                    "M7060",
+                    "2030-05-20",
+                    "Practical Completion, BCAR CCC & Commercial Operation (COD)"
+                  ]
+                ]
+              },
+              {
+                "type": "h1",
+                "text": "5. Controlled Review & Authorization Block"
+              },
+              {
+                "type": "table",
+                "rows": [
+                  [
+                    "Role / Title",
+                    "Organization",
+                    "ISO 19650 Suitability",
+                    "Sign-Off Gate"
+                  ],
+                  [
+                    "Originator / Package Lead",
+                    "EPCm / Specialist Consultant",
+                    "S2 (Suitable for Info)",
+                    "M1000 -> M7060"
+                  ],
+                  [
+                    "Technical & Statutory Reviewer",
+                    "PSDP / Assigned Certifier / CxA",
+                    "S3 (Suitable for Review)",
+                    "RIBA Stages 0-7"
+                  ],
+                  [
+                    "Approving Authority",
+                    "Project Director / SteerCo Tier 2",
+                    "A1 (Approved for Execution)",
+                    "Gate Freeze"
+                  ],
+                  [
+                    "Document Controller",
+                    "PMO CDE Administrator",
+                    "Published Archive",
+                    "Monthly Cutoff"
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "docId": "PM-05-D2",
+          "idx0": 1,
+          "cat": "Deliverable",
+          "title": "Final Investment Decision (FID) Board Paper & Pre-NTP Executive Dossier",
+          "ref": "Sheet 1. Executive Summary",
+          "why": "Consolidate commercial returns, schedule baseline, and risk readiness for board sign-off.",
+          "fileName": "PM05_Doc2_Deliverable_FID_PreNTP_Dossier_Controls_Master_Rev.004.xlsx",
+          "ext": "XLSX",
+          "downloadUrl": "files/PM-05/PM05_Doc2_Deliverable_FID_PreNTP_Dossier_Controls_Master_Rev.004.xlsx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-05_RIBA_Stage_Gate_PreNTP_FID\\PM05_Doc2_Deliverable_FID_PreNTP_Dossier_Controls_Master_Rev.004.xlsx",
+          "renderType": "xlsx_master",
+          "masterKey": "CONTROLS",
+          "focalSheet": "1. Feasibility & Financial"
+        },
+        {
+          "docId": "PM-05-D3",
+          "idx0": 2,
+          "cat": "Template",
+          "title": "Limited Notice to Proceed (LNTP) vs. Full NTP Release Authorization Memo",
+          "ref": "Pre-NTP Commercial Release",
+          "why": "Commit early enabling works or OEM slots before unconditional full contract execution.",
+          "fileName": "PM05_Doc3_Template_Limited_Notice_to_Proceed_LNTP_vs_Rev.004.docx",
+          "ext": "DOCX",
+          "downloadUrl": "files/PM-05/PM05_Doc3_Template_Limited_Notice_to_Proceed_LNTP_vs_Rev.004.docx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-05_RIBA_Stage_Gate_PreNTP_FID\\PM05_Doc3_Template_Limited_Notice_to_Proceed_LNTP_vs_Rev.004.docx",
+          "renderType": "docx",
+          "docx": {
+            "fileName": "PM05_Doc3_Template_Limited_Notice_to_Proceed_LNTP_vs_Rev.004.docx",
             "blocks": [
               {
                 "type": "banner",
@@ -18127,14 +25789,24 @@ window.PHASE1_PORTAL_DATA = {
                 ]
               }
             ]
-          },
-          "companionDownloadUrl": "files/PKG-03/PKG03_Doc4_Audit_Stage_Gate_1_Mandatory_Exit_Checklist_Rev.001.xlsx",
-          "companionFileName": "PKG03_Doc4_Audit_Stage_Gate_1_Mandatory_Exit_Checklist_Rev.001.xlsx",
-          "companionExt": "XLSX",
-          "companionXlsx": {
-            "fileName": "PKG03_Doc4_Audit_Stage_Gate_1_Mandatory_Exit_Checklist_Rev.001.xlsx",
-            "sheetCount": 1,
-            "totalCells": 114,
+          }
+        },
+        {
+          "docId": "PM-05-D4",
+          "idx0": 3,
+          "cat": "Audit",
+          "title": "Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist",
+          "ref": "Gate Review Governance",
+          "why": "Verify design maturity, permit status, and funded contingency before unlocking next tranche.",
+          "fileName": "PM05_Doc4_Audit_Stage_Gate_0_to_7_Mandatory_Exit_Rev.004.xlsx",
+          "ext": "XLSX",
+          "downloadUrl": "files/PM-05/PM05_Doc4_Audit_Stage_Gate_0_to_7_Mandatory_Exit_Rev.004.xlsx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-05_RIBA_Stage_Gate_PreNTP_FID\\PM05_Doc4_Audit_Stage_Gate_0_to_7_Mandatory_Exit_Rev.004.xlsx",
+          "renderType": "xlsx",
+          "xlsx": {
+            "fileName": "PM05_Doc4_Audit_Stage_Gate_0_to_7_Mandatory_Exit_Rev.004.xlsx",
+            "sheetCount": 2,
+            "totalCells": 154,
             "formulaCells": 4,
             "sheets": [
               {
@@ -19001,6 +26673,2023 @@ window.PHASE1_PORTAL_DATA = {
                       "t": "empty",
                       "raw": "",
                       "kind": "empty"
+                    }
+                  ]
+                ]
+              },
+              {
+                "name": "2. Doc Control & Gates",
+                "maxRow": 10,
+                "maxCol": 4,
+                "formulaCount": 0,
+                "columns": [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                "rows": [
+                  [
+                    {
+                      "coord": "A1",
+                      "v": "DC45-EU | PM-05 DOC 4 \u2014 DOCUMENT CONTROL & XER SYNCHRONIZATION",
+                      "t": "s",
+                      "raw": "DC45-EU | PM-05 DOC 4 \u2014 DOCUMENT CONTROL & XER SYNCHRONIZATION",
+                      "kind": "banner",
+                      "cspan": 4
+                    },
+                    {
+                      "coord": "B1",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    },
+                    {
+                      "coord": "C1",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    },
+                    {
+                      "coord": "D1",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A2",
+                      "v": "Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist | RIBA Stages 0-7",
+                      "t": "s",
+                      "raw": "Stage-Gate 0 to 7 Mandatory Exit Criteria & Readiness Verification Checklist | RIBA Stages 0-7",
+                      "kind": "banner",
+                      "cspan": 4
+                    },
+                    {
+                      "coord": "B2",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    },
+                    {
+                      "coord": "C2",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    },
+                    {
+                      "coord": "D2",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A3",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "B3",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "C3",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "D3",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A4",
+                      "v": "Metadata Key",
+                      "t": "s",
+                      "raw": "Metadata Key",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B4",
+                      "v": "Value / Rule",
+                      "t": "s",
+                      "raw": "Value / Rule",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C4",
+                      "v": "Linked Reference",
+                      "t": "s",
+                      "raw": "Linked Reference",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D4",
+                      "v": "Verification Status",
+                      "t": "s",
+                      "raw": "Verification Status",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A5",
+                      "v": "ISO 19650 Doc ID",
+                      "t": "s",
+                      "raw": "ISO 19650 Doc ID",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B5",
+                      "v": "DC45EU-PM05-DOC4-Rev004",
+                      "t": "s",
+                      "raw": "DC45EU-PM05-DOC4-Rev004",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C5",
+                      "v": "PM-12 CDE Naming",
+                      "t": "s",
+                      "raw": "PM-12 CDE Naming",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D5",
+                      "v": "ACTIVE",
+                      "t": "s",
+                      "raw": "ACTIVE",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A6",
+                      "v": "Flashcard Module",
+                      "t": "s",
+                      "raw": "Flashcard Module",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B6",
+                      "v": "PM-05: RIBA 0-7 Stage-Gate Framework & Pre-NTP FID Package",
+                      "t": "s",
+                      "raw": "PM-05: RIBA 0-7 Stage-Gate Framework & Pre-NTP FID Package",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C6",
+                      "v": "RIBA Stages 0-7",
+                      "t": "s",
+                      "raw": "RIBA Stages 0-7",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D6",
+                      "v": "ALIGNED",
+                      "t": "s",
+                      "raw": "ALIGNED",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A7",
+                      "v": "P6 Gate & WBS",
+                      "t": "s",
+                      "raw": "P6 Gate & WBS",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B7",
+                      "v": "M1000 -> M7060 | All WBS",
+                      "t": "s",
+                      "raw": "M1000 -> M7060 | All WBS",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C7",
+                      "v": "144 Tasks / 213 Links",
+                      "t": "s",
+                      "raw": "144 Tasks / 213 Links",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D7",
+                      "v": "SYNCED",
+                      "t": "s",
+                      "raw": "SYNCED",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A8",
+                      "v": "Governing Standards",
+                      "t": "s",
+                      "raw": "Governing Standards",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B8",
+                      "v": "RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06",
+                      "t": "s",
+                      "raw": "RIBA Plan of Work 2020 Data Centre Overlay, Stage-Gate Tranches TR-01..TR-06",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C8",
+                      "v": "Gate Review Governance",
+                      "t": "s",
+                      "raw": "Gate Review Governance",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D8",
+                      "v": "ENFORCED",
+                      "t": "s",
+                      "raw": "ENFORCED",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A9",
+                      "v": "Study Takeaway",
+                      "t": "s",
+                      "raw": "Study Takeaway",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B9",
+                      "v": "Verify design maturity, permit status, and funded contingency before unlocking next tranche.",
+                      "t": "s",
+                      "raw": "Verify design maturity, permit status, and funded contingency before unlocking next tranche.",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C9",
+                      "v": "gogo Learning Dashboard",
+                      "t": "s",
+                      "raw": "gogo Learning Dashboard",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D9",
+                      "v": "ACTIVE",
+                      "t": "s",
+                      "raw": "ACTIVE",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A10",
+                      "v": "Blue Cells Convention",
+                      "t": "s",
+                      "raw": "Blue Cells Convention",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B10",
+                      "v": "All blue-shaded numeric inputs represent editable project parameters",
+                      "t": "s",
+                      "raw": "All blue-shaded numeric inputs represent editable project parameters",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C10",
+                      "v": "Audit Formatting Rule",
+                      "t": "s",
+                      "raw": "Audit Formatting Rule",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D10",
+                      "v": "STANDARD",
+                      "t": "s",
+                      "raw": "STANDARD",
+                      "kind": "input"
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "PM-06",
+      "title": "Stakeholder Register, Engagement & Escalation Plan",
+      "desc": "Map internal sponsors, hyperscale tenants, EPCm leads, local communities, and utility/certifier touchpoints across phases.",
+      "tags": [
+        "Stakeholders",
+        "Comms Plan"
+      ],
+      "folder": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-06_Stakeholder_Engagement_Escalation",
+      "readme": "# PM-06: Stakeholder Register, Engagement & Escalation Plan\n\n- **Phase**: `Phase 1: Initiation, Charter & Business Case (RIBA 0-1)`\n- **RIBA Stage**: `RIBA Stage 1-7`\n- **P6 Milestone Gate**: `M1000 / M1090`\n- **WBS Scope**: `WBS 1.0 & 7.0`\n- **Governing Standards**: ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA\n- **Focus Areas**: Local Authority / ABP, EPA IEL, EirGrid / CRU, BCMS / Fire Officer, Anchor Tenant\n\n## Module Overview\nMap internal sponsors, hyperscale tenants, EPCm leads, local communities, and utility/certifier touchpoints across phases.\n\n## Ordered Flashcard Documents (`Doc 1` -> `Doc 4`)\n\n| Doc | Category | Title | Exact Local File | Companion / Notes |\n| :--- | :--- | :--- | :--- | :--- |\n| Doc 1 | Standard | ISO 21502 Guidance on Project Management \u2014 Stakeholder Engagement | `PM06_Doc1_Standard_ISO_21502_Guidance_on_Project_Rev.004.docx` | ISO 21502 / PMI Stakeholder |\n| Doc 2 | Deliverable | Project Communications Management Plan & Weekly/Monthly Cadence Matrix | `PM06_Doc2_Deliverable_Project_Communications_Management_Rev.004.docx` | Reporting Governance |\n| Doc 3 | Template | Stakeholder Register & Power/Interest Matrix (Investors, Tenants, TSO, Public) | `PM06_Doc3_Template_Stakeholder_Register_Charter_Master_Rev.004.xlsx` | Sheet 3. Stakeholders |\n| Doc 4 | Audit | Executive Issue Escalation Flowchart & Decision Turnaround SLA Log | `PM06_Doc4_Audit_Executive_Issue_Escalation_Rev.004.xlsx` | Decision Turnaround SLA |\n\n## Study Takeaway (`Why Each Document Matters`)\n- **Doc 1 (Standard)**: Apply structured identification, cadence tailoring, and alignment feedback loops.\n- **Doc 2 (Deliverable)**: Establish predictable reporting rhythm across lenders, tenants, TSO, and site teams.\n- **Doc 3 (Template)**: Classify influence vs. interest for every internal executive and Irish statutory body.\n- **Doc 4 (Audit)**: Enforce time-boxed escalation paths so critical-path blockers never stall in committees.\n",
+      "docs": [
+        {
+          "docId": "PM-06-D1",
+          "idx0": 0,
+          "cat": "Standard",
+          "title": "ISO 21502 Guidance on Project Management \u2014 Stakeholder Engagement",
+          "ref": "ISO 21502 / PMI Stakeholder",
+          "why": "Apply structured identification, cadence tailoring, and alignment feedback loops.",
+          "fileName": "PM06_Doc1_Standard_ISO_21502_Guidance_on_Project_Rev.004.docx",
+          "ext": "DOCX",
+          "downloadUrl": "files/PM-06/PM06_Doc1_Standard_ISO_21502_Guidance_on_Project_Rev.004.docx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-06_Stakeholder_Engagement_Escalation\\PM06_Doc1_Standard_ISO_21502_Guidance_on_Project_Rev.004.docx",
+          "renderType": "docx",
+          "docx": {
+            "fileName": "PM06_Doc1_Standard_ISO_21502_Guidance_on_Project_Rev.004.docx",
+            "blocks": [
+              {
+                "type": "banner",
+                "text": "PHASE 1: INITIATION, CHARTER & BUSINESS CASE (RIBA 0-1) | PM-06 | STANDARD DOCUMENT | ISO 21502 Guidance on Project Management \u2014 Stakeholder Engagement"
+              },
+              {
+                "type": "table",
+                "rows": [
+                  [
+                    "Document Control Field",
+                    "DC45-EU Repository Value"
+                  ],
+                  [
+                    "ISO 19650 Document Code",
+                    "DC45EU-PM06-DOC1-Rev004"
+                  ],
+                  [
+                    "Flashcard Module & Stage",
+                    "PM-06: Stakeholder Register, Engagement & Escalation Plan (RIBA Stage 1-7)"
+                  ],
+                  [
+                    "P6 Milestone / WBS Anchor",
+                    "M1000 / M1090 | WBS 1.0 & 7.0 | Live Schedule: 144 Tasks / 213 Links"
+                  ],
+                  [
+                    "Governing Standards",
+                    "ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA"
+                  ],
+                  [
+                    "Dashboard Ref & Revision",
+                    "ISO 21502 / PMI Stakeholder | Status: Active Baseline (Rev.004)"
+                  ]
+                ]
+              },
+              {
+                "type": "h1",
+                "text": "1. Document Mandate & Operational Scope"
+              },
+              {
+                "type": "p",
+                "text": "Portfolio Context: This institutional standard establishes controlled governance, technical compliance rules, and auditable evidence for the 45 MW DC45-EU Hyperscale Data Centre development in Ireland (4 x 9.0 MW data halls, dual 110 kV grid incomers, 16 x 2.5 MVA HVO standby generation with SCR abatement, and EN 50600 Availability Class 3 / Uptime TCCF target). All schedules and resource assumptions synchronize against the master Primavera P6 baseline (DataCenter_45MW_EU_Ireland.xer: M1000 NTP 2027-01-04 through M7060 COD 2030-05-20)."
+              },
+              {
+                "type": "p",
+                "text": "Core Competency Objective: Apply structured identification, cadence tailoring, and alignment feedback loops."
+              },
+              {
+                "type": "p",
+                "text": "Module Summary: Map internal sponsors, hyperscale tenants, EPCm leads, local communities, and utility/certifier touchpoints across phases."
+              },
+              {
+                "type": "h1",
+                "text": "2. Governing Standards & Compliance Framework"
+              },
+              {
+                "type": "bullet",
+                "text": "ISO 21502: Mandatory alignment enforced during RIBA Stage 1-7 under PM-06 controls, subject to Independent Verification / Assigned Certifier / CxA sign-off prior to stage progression."
+              },
+              {
+                "type": "bullet",
+                "text": "Section 247 Pre-Planning: Mandatory alignment enforced during RIBA Stage 1-7 under PM-06 controls, subject to Independent Verification / Assigned Certifier / CxA sign-off prior to stage progression."
+              },
+              {
+                "type": "bullet",
+                "text": "EPA: Mandatory alignment enforced during RIBA Stage 1-7 under PM-06 controls, subject to Independent Verification / Assigned Certifier / CxA sign-off prior to stage progression."
+              },
+              {
+                "type": "bullet",
+                "text": "EirGrid/ESBN: Mandatory alignment enforced during RIBA Stage 1-7 under PM-06 controls, subject to Independent Verification / Assigned Certifier / CxA sign-off prior to stage progression."
+              },
+              {
+                "type": "bullet",
+                "text": "BCMS: Mandatory alignment enforced during RIBA Stage 1-7 under PM-06 controls, subject to Independent Verification / Assigned Certifier / CxA sign-off prior to stage progression."
+              },
+              {
+                "type": "bullet",
+                "text": "HSA: Mandatory alignment enforced during RIBA Stage 1-7 under PM-06 controls, subject to Independent Verification / Assigned Certifier / CxA sign-off prior to stage progression."
+              },
+              {
+                "type": "h1",
+                "text": "3. Key Control Elements & Stage-Gate Acceptance Criteria"
+              },
+              {
+                "type": "table",
+                "rows": [
+                  [
+                    "Item Code",
+                    "Control Focus Area",
+                    "DC45-EU Quantitative / Statutory Threshold",
+                    "Verification Authority"
+                  ],
+                  [
+                    "PM06-C01",
+                    "Local Authority / ABP",
+                    "Formal standard evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to M1000 / M1090 and WBS 1.0 & 7.0.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ],
+                  [
+                    "PM06-C02",
+                    "EPA IEL",
+                    "Formal standard evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to M1000 / M1090 and WBS 1.0 & 7.0.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ],
+                  [
+                    "PM06-C03",
+                    "EirGrid / CRU",
+                    "Formal standard evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to M1000 / M1090 and WBS 1.0 & 7.0.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ],
+                  [
+                    "PM06-C04",
+                    "BCMS / Fire Officer",
+                    "Formal standard evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to M1000 / M1090 and WBS 1.0 & 7.0.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ],
+                  [
+                    "PM06-C05",
+                    "Anchor Tenant",
+                    "Formal standard evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to M1000 / M1090 and WBS 1.0 & 7.0.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ]
+                ]
+              },
+              {
+                "type": "h1",
+                "text": "4. Primavera P6 Milestone & Dependency Synchronization"
+              },
+              {
+                "type": "table",
+                "rows": [
+                  [
+                    "P6 Gate ID",
+                    "Baseline Target Date",
+                    "Gate Control Significance"
+                  ],
+                  [
+                    "M1000",
+                    "2027-01-04",
+                    "Final Investment Decision (FID) & Notice to Proceed (NTP)"
+                  ],
+                  [
+                    "M2110",
+                    "2027-07-12",
+                    "Detailed Design Freeze & Early Construction Release"
+                  ],
+                  [
+                    "M3120",
+                    "2028-01-03",
+                    "OFCI Long-Lead Equipment Delivery Buffer (+200d Lead)"
+                  ],
+                  [
+                    "M4350",
+                    "2029-02-12",
+                    "Core & Shell Weather-Tight Envelope Complete"
+                  ],
+                  [
+                    "M5595",
+                    "2029-09-24",
+                    "MEP Pre-Energisation Complete \u2014 L3/L4 Cx Handover"
+                  ],
+                  [
+                    "M6470",
+                    "2030-02-25",
+                    "Level 5 45 MW 48-Hr Integrated Systems Test (IST) Complete"
+                  ],
+                  [
+                    "M7060",
+                    "2030-05-20",
+                    "Practical Completion, BCAR CCC & Commercial Operation (COD)"
+                  ]
+                ]
+              },
+              {
+                "type": "h1",
+                "text": "5. Controlled Review & Authorization Block"
+              },
+              {
+                "type": "table",
+                "rows": [
+                  [
+                    "Role / Title",
+                    "Organization",
+                    "ISO 19650 Suitability",
+                    "Sign-Off Gate"
+                  ],
+                  [
+                    "Originator / Package Lead",
+                    "EPCm / Specialist Consultant",
+                    "S2 (Suitable for Info)",
+                    "M1000 / M1090"
+                  ],
+                  [
+                    "Technical & Statutory Reviewer",
+                    "PSDP / Assigned Certifier / CxA",
+                    "S3 (Suitable for Review)",
+                    "RIBA Stage 1-7"
+                  ],
+                  [
+                    "Approving Authority",
+                    "Project Director / SteerCo Tier 2",
+                    "A1 (Approved for Execution)",
+                    "Gate Freeze"
+                  ],
+                  [
+                    "Document Controller",
+                    "PMO CDE Administrator",
+                    "Published Archive",
+                    "Monthly Cutoff"
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "docId": "PM-06-D2",
+          "idx0": 1,
+          "cat": "Deliverable",
+          "title": "Project Communications Management Plan & Weekly/Monthly Cadence Matrix",
+          "ref": "Reporting Governance",
+          "why": "Establish predictable reporting rhythm across lenders, tenants, TSO, and site teams.",
+          "fileName": "PM06_Doc2_Deliverable_Project_Communications_Management_Rev.004.docx",
+          "ext": "DOCX",
+          "downloadUrl": "files/PM-06/PM06_Doc2_Deliverable_Project_Communications_Management_Rev.004.docx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-06_Stakeholder_Engagement_Escalation\\PM06_Doc2_Deliverable_Project_Communications_Management_Rev.004.docx",
+          "renderType": "docx",
+          "docx": {
+            "fileName": "PM06_Doc2_Deliverable_Project_Communications_Management_Rev.004.docx",
+            "blocks": [
+              {
+                "type": "banner",
+                "text": "PHASE 1: INITIATION, CHARTER & BUSINESS CASE (RIBA 0-1) | PM-06 | DELIVERABLE DOCUMENT | Project Communications Management Plan & Weekly/Monthly Cadence Matrix"
+              },
+              {
+                "type": "table",
+                "rows": [
+                  [
+                    "Document Control Field",
+                    "DC45-EU Repository Value"
+                  ],
+                  [
+                    "ISO 19650 Document Code",
+                    "DC45EU-PM06-DOC2-Rev004"
+                  ],
+                  [
+                    "Flashcard Module & Stage",
+                    "PM-06: Stakeholder Register, Engagement & Escalation Plan (RIBA Stage 1-7)"
+                  ],
+                  [
+                    "P6 Milestone / WBS Anchor",
+                    "M1000 / M1090 | WBS 1.0 & 7.0 | Live Schedule: 144 Tasks / 213 Links"
+                  ],
+                  [
+                    "Governing Standards",
+                    "ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA"
+                  ],
+                  [
+                    "Dashboard Ref & Revision",
+                    "Reporting Governance | Status: Active Baseline (Rev.004)"
+                  ]
+                ]
+              },
+              {
+                "type": "h1",
+                "text": "1. Document Mandate & Operational Scope"
+              },
+              {
+                "type": "p",
+                "text": "Portfolio Context: This institutional deliverable establishes controlled governance, technical compliance rules, and auditable evidence for the 45 MW DC45-EU Hyperscale Data Centre development in Ireland (4 x 9.0 MW data halls, dual 110 kV grid incomers, 16 x 2.5 MVA HVO standby generation with SCR abatement, and EN 50600 Availability Class 3 / Uptime TCCF target). All schedules and resource assumptions synchronize against the master Primavera P6 baseline (DataCenter_45MW_EU_Ireland.xer: M1000 NTP 2027-01-04 through M7060 COD 2030-05-20)."
+              },
+              {
+                "type": "p",
+                "text": "Core Competency Objective: Establish predictable reporting rhythm across lenders, tenants, TSO, and site teams."
+              },
+              {
+                "type": "p",
+                "text": "Module Summary: Map internal sponsors, hyperscale tenants, EPCm leads, local communities, and utility/certifier touchpoints across phases."
+              },
+              {
+                "type": "h1",
+                "text": "2. Governing Standards & Compliance Framework"
+              },
+              {
+                "type": "bullet",
+                "text": "ISO 21502: Mandatory alignment enforced during RIBA Stage 1-7 under PM-06 controls, subject to Independent Verification / Assigned Certifier / CxA sign-off prior to stage progression."
+              },
+              {
+                "type": "bullet",
+                "text": "Section 247 Pre-Planning: Mandatory alignment enforced during RIBA Stage 1-7 under PM-06 controls, subject to Independent Verification / Assigned Certifier / CxA sign-off prior to stage progression."
+              },
+              {
+                "type": "bullet",
+                "text": "EPA: Mandatory alignment enforced during RIBA Stage 1-7 under PM-06 controls, subject to Independent Verification / Assigned Certifier / CxA sign-off prior to stage progression."
+              },
+              {
+                "type": "bullet",
+                "text": "EirGrid/ESBN: Mandatory alignment enforced during RIBA Stage 1-7 under PM-06 controls, subject to Independent Verification / Assigned Certifier / CxA sign-off prior to stage progression."
+              },
+              {
+                "type": "bullet",
+                "text": "BCMS: Mandatory alignment enforced during RIBA Stage 1-7 under PM-06 controls, subject to Independent Verification / Assigned Certifier / CxA sign-off prior to stage progression."
+              },
+              {
+                "type": "bullet",
+                "text": "HSA: Mandatory alignment enforced during RIBA Stage 1-7 under PM-06 controls, subject to Independent Verification / Assigned Certifier / CxA sign-off prior to stage progression."
+              },
+              {
+                "type": "h1",
+                "text": "3. Key Control Elements & Stage-Gate Acceptance Criteria"
+              },
+              {
+                "type": "table",
+                "rows": [
+                  [
+                    "Item Code",
+                    "Control Focus Area",
+                    "DC45-EU Quantitative / Statutory Threshold",
+                    "Verification Authority"
+                  ],
+                  [
+                    "PM06-C01",
+                    "Local Authority / ABP",
+                    "Formal deliverable evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to M1000 / M1090 and WBS 1.0 & 7.0.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ],
+                  [
+                    "PM06-C02",
+                    "EPA IEL",
+                    "Formal deliverable evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to M1000 / M1090 and WBS 1.0 & 7.0.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ],
+                  [
+                    "PM06-C03",
+                    "EirGrid / CRU",
+                    "Formal deliverable evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to M1000 / M1090 and WBS 1.0 & 7.0.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ],
+                  [
+                    "PM06-C04",
+                    "BCMS / Fire Officer",
+                    "Formal deliverable evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to M1000 / M1090 and WBS 1.0 & 7.0.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ],
+                  [
+                    "PM06-C05",
+                    "Anchor Tenant",
+                    "Formal deliverable evidence recorded in ISO 19650 CDE (Status A1/S4) aligned to M1000 / M1090 and WBS 1.0 & 7.0.",
+                    "Project Director / CxA / Assigned Certifier"
+                  ]
+                ]
+              },
+              {
+                "type": "h1",
+                "text": "4. Primavera P6 Milestone & Dependency Synchronization"
+              },
+              {
+                "type": "table",
+                "rows": [
+                  [
+                    "P6 Gate ID",
+                    "Baseline Target Date",
+                    "Gate Control Significance"
+                  ],
+                  [
+                    "M1000",
+                    "2027-01-04",
+                    "Final Investment Decision (FID) & Notice to Proceed (NTP)"
+                  ],
+                  [
+                    "M2110",
+                    "2027-07-12",
+                    "Detailed Design Freeze & Early Construction Release"
+                  ],
+                  [
+                    "M3120",
+                    "2028-01-03",
+                    "OFCI Long-Lead Equipment Delivery Buffer (+200d Lead)"
+                  ],
+                  [
+                    "M4350",
+                    "2029-02-12",
+                    "Core & Shell Weather-Tight Envelope Complete"
+                  ],
+                  [
+                    "M5595",
+                    "2029-09-24",
+                    "MEP Pre-Energisation Complete \u2014 L3/L4 Cx Handover"
+                  ],
+                  [
+                    "M6470",
+                    "2030-02-25",
+                    "Level 5 45 MW 48-Hr Integrated Systems Test (IST) Complete"
+                  ],
+                  [
+                    "M7060",
+                    "2030-05-20",
+                    "Practical Completion, BCAR CCC & Commercial Operation (COD)"
+                  ]
+                ]
+              },
+              {
+                "type": "h1",
+                "text": "5. Controlled Review & Authorization Block"
+              },
+              {
+                "type": "table",
+                "rows": [
+                  [
+                    "Role / Title",
+                    "Organization",
+                    "ISO 19650 Suitability",
+                    "Sign-Off Gate"
+                  ],
+                  [
+                    "Originator / Package Lead",
+                    "EPCm / Specialist Consultant",
+                    "S2 (Suitable for Info)",
+                    "M1000 / M1090"
+                  ],
+                  [
+                    "Technical & Statutory Reviewer",
+                    "PSDP / Assigned Certifier / CxA",
+                    "S3 (Suitable for Review)",
+                    "RIBA Stage 1-7"
+                  ],
+                  [
+                    "Approving Authority",
+                    "Project Director / SteerCo Tier 2",
+                    "A1 (Approved for Execution)",
+                    "Gate Freeze"
+                  ],
+                  [
+                    "Document Controller",
+                    "PMO CDE Administrator",
+                    "Published Archive",
+                    "Monthly Cutoff"
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "docId": "PM-06-D3",
+          "idx0": 2,
+          "cat": "Template",
+          "title": "Stakeholder Register & Power/Interest Matrix (Investors, Tenants, TSO, Public)",
+          "ref": "Sheet 3. Stakeholders",
+          "why": "Classify influence vs. interest for every internal executive and Irish statutory body.",
+          "fileName": "PM06_Doc3_Template_Stakeholder_Register_Charter_Master_Rev.004.xlsx",
+          "ext": "XLSX",
+          "downloadUrl": "files/PM-06/PM06_Doc3_Template_Stakeholder_Register_Charter_Master_Rev.004.xlsx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-06_Stakeholder_Engagement_Escalation\\PM06_Doc3_Template_Stakeholder_Register_Charter_Master_Rev.004.xlsx",
+          "renderType": "xlsx_master",
+          "masterKey": "CHARTER",
+          "focalSheet": "4. Governance & Organization"
+        },
+        {
+          "docId": "PM-06-D4",
+          "idx0": 3,
+          "cat": "Audit",
+          "title": "Executive Issue Escalation Flowchart & Decision Turnaround SLA Log",
+          "ref": "Decision Turnaround SLA",
+          "why": "Enforce time-boxed escalation paths so critical-path blockers never stall in committees.",
+          "fileName": "PM06_Doc4_Audit_Executive_Issue_Escalation_Rev.004.xlsx",
+          "ext": "XLSX",
+          "downloadUrl": "files/PM-06/PM06_Doc4_Audit_Executive_Issue_Escalation_Rev.004.xlsx",
+          "localPath": "Phase_1_Initiation_Charter_RIBA_0_1\\PM-06_Stakeholder_Engagement_Escalation\\PM06_Doc4_Audit_Executive_Issue_Escalation_Rev.004.xlsx",
+          "renderType": "xlsx",
+          "xlsx": {
+            "fileName": "PM06_Doc4_Audit_Executive_Issue_Escalation_Rev.004.xlsx",
+            "sheetCount": 2,
+            "totalCells": 154,
+            "formulaCells": 4,
+            "sheets": [
+              {
+                "name": "1. Compliance Audit",
+                "maxRow": 19,
+                "maxCol": 6,
+                "formulaCount": 4,
+                "columns": [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F"
+                ],
+                "rows": [
+                  [
+                    {
+                      "coord": "A1",
+                      "v": "DC45-EU | Executive Issue Escalation Flowchart & Decision Turnaround SLA Log",
+                      "t": "s",
+                      "raw": "DC45-EU | Executive Issue Escalation Flowchart & Decision Turnaround SLA Log",
+                      "kind": "banner",
+                      "cspan": 6
+                    },
+                    {
+                      "coord": "B1",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    },
+                    {
+                      "coord": "C1",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    },
+                    {
+                      "coord": "D1",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    },
+                    {
+                      "coord": "E1",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    },
+                    {
+                      "coord": "F1",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A2",
+                      "v": "Executive Issue Escalation Flowchart & Decision Turnaround SLA Log | Gate: M1000 / M1090 | Basis: ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA",
+                      "t": "s",
+                      "raw": "Executive Issue Escalation Flowchart & Decision Turnaround SLA Log | Gate: M1000 / M1090 | Basis: ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA",
+                      "kind": "banner",
+                      "cspan": 6
+                    },
+                    {
+                      "coord": "B2",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    },
+                    {
+                      "coord": "C2",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    },
+                    {
+                      "coord": "D2",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    },
+                    {
+                      "coord": "E2",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    },
+                    {
+                      "coord": "F2",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A3",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "B3",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "C3",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "D3",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "E3",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "F3",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A4",
+                      "v": "Check ID",
+                      "t": "s",
+                      "raw": "Check ID",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B4",
+                      "v": "Domain / Pillar",
+                      "t": "s",
+                      "raw": "Domain / Pillar",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C4",
+                      "v": "Audit Verification Criterion",
+                      "t": "s",
+                      "raw": "Audit Verification Criterion",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D4",
+                      "v": "Evidence / P6 Gate",
+                      "t": "s",
+                      "raw": "Evidence / P6 Gate",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "E4",
+                      "v": "Status (PASS/PARTIAL/OPEN)",
+                      "t": "s",
+                      "raw": "Status (PASS/PARTIAL/OPEN)",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "F4",
+                      "v": "Auditor Sign-Off Notes",
+                      "t": "s",
+                      "raw": "Auditor Sign-Off Notes",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A5",
+                      "v": "PM06-A01",
+                      "t": "s",
+                      "raw": "PM06-A01",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B5",
+                      "v": "Local Authority / ABP",
+                      "t": "s",
+                      "raw": "Local Authority / ABP",
+                      "kind": "header"
+                    },
+                    {
+                      "coord": "C5",
+                      "v": "Verify formal compliance & documentary sign-off for Local Authority / ABP against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
+                      "t": "s",
+                      "raw": "Verify formal compliance & documentary sign-off for Local Authority / ABP against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
+                      "kind": "header"
+                    },
+                    {
+                      "coord": "D5",
+                      "v": "M1000 / M1090 / WBS 1.0 & 7.0",
+                      "t": "s",
+                      "raw": "M1000 / M1090 / WBS 1.0 & 7.0",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "E5",
+                      "v": "PASS",
+                      "t": "s",
+                      "raw": "PASS",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "F5",
+                      "v": "Ready for Assigned Certifier / CxA verification",
+                      "t": "s",
+                      "raw": "Ready for Assigned Certifier / CxA verification",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A6",
+                      "v": "PM06-A02",
+                      "t": "s",
+                      "raw": "PM06-A02",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B6",
+                      "v": "EPA IEL",
+                      "t": "s",
+                      "raw": "EPA IEL",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C6",
+                      "v": "Verify formal compliance & documentary sign-off for EPA IEL against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
+                      "t": "s",
+                      "raw": "Verify formal compliance & documentary sign-off for EPA IEL against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D6",
+                      "v": "M1000 / M1090 / WBS 1.0 & 7.0",
+                      "t": "s",
+                      "raw": "M1000 / M1090 / WBS 1.0 & 7.0",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "E6",
+                      "v": "PASS",
+                      "t": "s",
+                      "raw": "PASS",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "F6",
+                      "v": "Ready for Assigned Certifier / CxA verification",
+                      "t": "s",
+                      "raw": "Ready for Assigned Certifier / CxA verification",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A7",
+                      "v": "PM06-A03",
+                      "t": "s",
+                      "raw": "PM06-A03",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B7",
+                      "v": "EirGrid / CRU",
+                      "t": "s",
+                      "raw": "EirGrid / CRU",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C7",
+                      "v": "Verify formal compliance & documentary sign-off for EirGrid / CRU against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
+                      "t": "s",
+                      "raw": "Verify formal compliance & documentary sign-off for EirGrid / CRU against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D7",
+                      "v": "M1000 / M1090 / WBS 1.0 & 7.0",
+                      "t": "s",
+                      "raw": "M1000 / M1090 / WBS 1.0 & 7.0",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "E7",
+                      "v": "PASS",
+                      "t": "s",
+                      "raw": "PASS",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "F7",
+                      "v": "Ready for Assigned Certifier / CxA verification",
+                      "t": "s",
+                      "raw": "Ready for Assigned Certifier / CxA verification",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A8",
+                      "v": "PM06-A04",
+                      "t": "s",
+                      "raw": "PM06-A04",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B8",
+                      "v": "BCMS / Fire Officer",
+                      "t": "s",
+                      "raw": "BCMS / Fire Officer",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C8",
+                      "v": "Verify formal compliance & documentary sign-off for BCMS / Fire Officer against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
+                      "t": "s",
+                      "raw": "Verify formal compliance & documentary sign-off for BCMS / Fire Officer against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D8",
+                      "v": "M1000 / M1090 / WBS 1.0 & 7.0",
+                      "t": "s",
+                      "raw": "M1000 / M1090 / WBS 1.0 & 7.0",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "E8",
+                      "v": "PASS",
+                      "t": "s",
+                      "raw": "PASS",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "F8",
+                      "v": "Ready for Assigned Certifier / CxA verification",
+                      "t": "s",
+                      "raw": "Ready for Assigned Certifier / CxA verification",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A9",
+                      "v": "PM06-A05",
+                      "t": "s",
+                      "raw": "PM06-A05",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B9",
+                      "v": "Anchor Tenant",
+                      "t": "s",
+                      "raw": "Anchor Tenant",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C9",
+                      "v": "Verify formal compliance & documentary sign-off for Anchor Tenant against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
+                      "t": "s",
+                      "raw": "Verify formal compliance & documentary sign-off for Anchor Tenant against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D9",
+                      "v": "M1000 / M1090 / WBS 1.0 & 7.0",
+                      "t": "s",
+                      "raw": "M1000 / M1090 / WBS 1.0 & 7.0",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "E9",
+                      "v": "PASS",
+                      "t": "s",
+                      "raw": "PASS",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "F9",
+                      "v": "Ready for Assigned Certifier / CxA verification",
+                      "t": "s",
+                      "raw": "Ready for Assigned Certifier / CxA verification",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A10",
+                      "v": "PM06-A06",
+                      "t": "s",
+                      "raw": "PM06-A06",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B10",
+                      "v": "Local Authority / ABP",
+                      "t": "s",
+                      "raw": "Local Authority / ABP",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C10",
+                      "v": "Verify formal compliance & documentary sign-off for Local Authority / ABP against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
+                      "t": "s",
+                      "raw": "Verify formal compliance & documentary sign-off for Local Authority / ABP against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D10",
+                      "v": "M1000 / M1090 / WBS 1.0 & 7.0",
+                      "t": "s",
+                      "raw": "M1000 / M1090 / WBS 1.0 & 7.0",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "E10",
+                      "v": "PASS",
+                      "t": "s",
+                      "raw": "PASS",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "F10",
+                      "v": "Ready for Assigned Certifier / CxA verification",
+                      "t": "s",
+                      "raw": "Ready for Assigned Certifier / CxA verification",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A11",
+                      "v": "PM06-A07",
+                      "t": "s",
+                      "raw": "PM06-A07",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B11",
+                      "v": "EPA IEL",
+                      "t": "s",
+                      "raw": "EPA IEL",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C11",
+                      "v": "Verify formal compliance & documentary sign-off for EPA IEL against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
+                      "t": "s",
+                      "raw": "Verify formal compliance & documentary sign-off for EPA IEL against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D11",
+                      "v": "M1000 / M1090 / WBS 1.0 & 7.0",
+                      "t": "s",
+                      "raw": "M1000 / M1090 / WBS 1.0 & 7.0",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "E11",
+                      "v": "PARTIAL",
+                      "t": "s",
+                      "raw": "PARTIAL",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "F11",
+                      "v": "Ready for Assigned Certifier / CxA verification",
+                      "t": "s",
+                      "raw": "Ready for Assigned Certifier / CxA verification",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A12",
+                      "v": "PM06-A08",
+                      "t": "s",
+                      "raw": "PM06-A08",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B12",
+                      "v": "EirGrid / CRU",
+                      "t": "s",
+                      "raw": "EirGrid / CRU",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C12",
+                      "v": "Verify formal compliance & documentary sign-off for EirGrid / CRU against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
+                      "t": "s",
+                      "raw": "Verify formal compliance & documentary sign-off for EirGrid / CRU against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D12",
+                      "v": "M1000 / M1090 / WBS 1.0 & 7.0",
+                      "t": "s",
+                      "raw": "M1000 / M1090 / WBS 1.0 & 7.0",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "E12",
+                      "v": "PARTIAL",
+                      "t": "s",
+                      "raw": "PARTIAL",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "F12",
+                      "v": "Ready for Assigned Certifier / CxA verification",
+                      "t": "s",
+                      "raw": "Ready for Assigned Certifier / CxA verification",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A13",
+                      "v": "PM06-A09",
+                      "t": "s",
+                      "raw": "PM06-A09",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B13",
+                      "v": "BCMS / Fire Officer",
+                      "t": "s",
+                      "raw": "BCMS / Fire Officer",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C13",
+                      "v": "Verify formal compliance & documentary sign-off for BCMS / Fire Officer against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
+                      "t": "s",
+                      "raw": "Verify formal compliance & documentary sign-off for BCMS / Fire Officer against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D13",
+                      "v": "M1000 / M1090 / WBS 1.0 & 7.0",
+                      "t": "s",
+                      "raw": "M1000 / M1090 / WBS 1.0 & 7.0",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "E13",
+                      "v": "OPEN",
+                      "t": "s",
+                      "raw": "OPEN",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "F13",
+                      "v": "Ready for Assigned Certifier / CxA verification",
+                      "t": "s",
+                      "raw": "Ready for Assigned Certifier / CxA verification",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A14",
+                      "v": "PM06-A10",
+                      "t": "s",
+                      "raw": "PM06-A10",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B14",
+                      "v": "Anchor Tenant",
+                      "t": "s",
+                      "raw": "Anchor Tenant",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C14",
+                      "v": "Verify formal compliance & documentary sign-off for Anchor Tenant against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
+                      "t": "s",
+                      "raw": "Verify formal compliance & documentary sign-off for Anchor Tenant against Executive Issue Escalation Flowchart & Decision Turnaround SLA Log (ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA).",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D14",
+                      "v": "M1000 / M1090 / WBS 1.0 & 7.0",
+                      "t": "s",
+                      "raw": "M1000 / M1090 / WBS 1.0 & 7.0",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "E14",
+                      "v": "OPEN",
+                      "t": "s",
+                      "raw": "OPEN",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "F14",
+                      "v": "Ready for Assigned Certifier / CxA verification",
+                      "t": "s",
+                      "raw": "Ready for Assigned Certifier / CxA verification",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A15",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "B15",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "C15",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "D15",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "E15",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "F15",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A16",
+                      "v": "AUDIT KPI",
+                      "t": "s",
+                      "raw": "AUDIT KPI",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B16",
+                      "v": "Total Checks",
+                      "t": "s",
+                      "raw": "Total Checks",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C16",
+                      "v": "10",
+                      "f": "=COUNTA(A5:A14)",
+                      "raw": 10,
+                      "t": "f",
+                      "kind": "calc"
+                    },
+                    {
+                      "coord": "D16",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "E16",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "F16",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A17",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "B17",
+                      "v": "PASS Count",
+                      "t": "s",
+                      "raw": "PASS Count",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C17",
+                      "v": "6",
+                      "f": "=COUNTIF(E5:E14,\"PASS\")",
+                      "raw": 6,
+                      "t": "f",
+                      "kind": "calc"
+                    },
+                    {
+                      "coord": "D17",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "E17",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "F17",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A18",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "B18",
+                      "v": "OPEN / PARTIAL",
+                      "t": "s",
+                      "raw": "OPEN / PARTIAL",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C18",
+                      "v": "0",
+                      "f": "=COUNTIF(E5:E14,\"OPEN\")+COUNTIF(E5:E14,\"PARTIAL\")",
+                      "raw": 0,
+                      "t": "f",
+                      "kind": "calc"
+                    },
+                    {
+                      "coord": "D18",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "E18",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "F18",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A19",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "B19",
+                      "v": "Compliance Rate",
+                      "t": "s",
+                      "raw": "Compliance Rate",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C19",
+                      "v": "#IFERROR?",
+                      "f": "=IFERROR(COUNTIF(E5:E14,\"PASS\")/COUNTA(A5:A14),0)",
+                      "raw": "#IFERROR?",
+                      "t": "f",
+                      "kind": "calc"
+                    },
+                    {
+                      "coord": "D19",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "E19",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "F19",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    }
+                  ]
+                ]
+              },
+              {
+                "name": "2. Doc Control & Gates",
+                "maxRow": 10,
+                "maxCol": 4,
+                "formulaCount": 0,
+                "columns": [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                "rows": [
+                  [
+                    {
+                      "coord": "A1",
+                      "v": "DC45-EU | PM-06 DOC 4 \u2014 DOCUMENT CONTROL & XER SYNCHRONIZATION",
+                      "t": "s",
+                      "raw": "DC45-EU | PM-06 DOC 4 \u2014 DOCUMENT CONTROL & XER SYNCHRONIZATION",
+                      "kind": "banner",
+                      "cspan": 4
+                    },
+                    {
+                      "coord": "B1",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    },
+                    {
+                      "coord": "C1",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    },
+                    {
+                      "coord": "D1",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A2",
+                      "v": "Executive Issue Escalation Flowchart & Decision Turnaround SLA Log | RIBA Stage 1-7",
+                      "t": "s",
+                      "raw": "Executive Issue Escalation Flowchart & Decision Turnaround SLA Log | RIBA Stage 1-7",
+                      "kind": "banner",
+                      "cspan": 4
+                    },
+                    {
+                      "coord": "B2",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    },
+                    {
+                      "coord": "C2",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    },
+                    {
+                      "coord": "D2",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty",
+                      "skip": true
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A3",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "B3",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "C3",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    },
+                    {
+                      "coord": "D3",
+                      "v": "",
+                      "t": "empty",
+                      "raw": "",
+                      "kind": "empty"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A4",
+                      "v": "Metadata Key",
+                      "t": "s",
+                      "raw": "Metadata Key",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B4",
+                      "v": "Value / Rule",
+                      "t": "s",
+                      "raw": "Value / Rule",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C4",
+                      "v": "Linked Reference",
+                      "t": "s",
+                      "raw": "Linked Reference",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D4",
+                      "v": "Verification Status",
+                      "t": "s",
+                      "raw": "Verification Status",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A5",
+                      "v": "ISO 19650 Doc ID",
+                      "t": "s",
+                      "raw": "ISO 19650 Doc ID",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B5",
+                      "v": "DC45EU-PM06-DOC4-Rev004",
+                      "t": "s",
+                      "raw": "DC45EU-PM06-DOC4-Rev004",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C5",
+                      "v": "PM-12 CDE Naming",
+                      "t": "s",
+                      "raw": "PM-12 CDE Naming",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D5",
+                      "v": "ACTIVE",
+                      "t": "s",
+                      "raw": "ACTIVE",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A6",
+                      "v": "Flashcard Module",
+                      "t": "s",
+                      "raw": "Flashcard Module",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B6",
+                      "v": "PM-06: Stakeholder Register, Engagement & Escalation Plan",
+                      "t": "s",
+                      "raw": "PM-06: Stakeholder Register, Engagement & Escalation Plan",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C6",
+                      "v": "RIBA Stage 1-7",
+                      "t": "s",
+                      "raw": "RIBA Stage 1-7",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D6",
+                      "v": "ALIGNED",
+                      "t": "s",
+                      "raw": "ALIGNED",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A7",
+                      "v": "P6 Gate & WBS",
+                      "t": "s",
+                      "raw": "P6 Gate & WBS",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B7",
+                      "v": "M1000 / M1090 | WBS 1.0 & 7.0",
+                      "t": "s",
+                      "raw": "M1000 / M1090 | WBS 1.0 & 7.0",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C7",
+                      "v": "144 Tasks / 213 Links",
+                      "t": "s",
+                      "raw": "144 Tasks / 213 Links",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D7",
+                      "v": "SYNCED",
+                      "t": "s",
+                      "raw": "SYNCED",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A8",
+                      "v": "Governing Standards",
+                      "t": "s",
+                      "raw": "Governing Standards",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B8",
+                      "v": "ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA",
+                      "t": "s",
+                      "raw": "ISO 21502, Section 247 Pre-Planning, EPA, EirGrid/ESBN, BCMS, HSA",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C8",
+                      "v": "Decision Turnaround SLA",
+                      "t": "s",
+                      "raw": "Decision Turnaround SLA",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D8",
+                      "v": "ENFORCED",
+                      "t": "s",
+                      "raw": "ENFORCED",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A9",
+                      "v": "Study Takeaway",
+                      "t": "s",
+                      "raw": "Study Takeaway",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B9",
+                      "v": "Enforce time-boxed escalation paths so critical-path blockers never stall in committees.",
+                      "t": "s",
+                      "raw": "Enforce time-boxed escalation paths so critical-path blockers never stall in committees.",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C9",
+                      "v": "gogo Learning Dashboard",
+                      "t": "s",
+                      "raw": "gogo Learning Dashboard",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D9",
+                      "v": "ACTIVE",
+                      "t": "s",
+                      "raw": "ACTIVE",
+                      "kind": "input"
+                    }
+                  ],
+                  [
+                    {
+                      "coord": "A10",
+                      "v": "Blue Cells Convention",
+                      "t": "s",
+                      "raw": "Blue Cells Convention",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "B10",
+                      "v": "All blue-shaded numeric inputs represent editable project parameters",
+                      "t": "s",
+                      "raw": "All blue-shaded numeric inputs represent editable project parameters",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "C10",
+                      "v": "Audit Formatting Rule",
+                      "t": "s",
+                      "raw": "Audit Formatting Rule",
+                      "kind": "input"
+                    },
+                    {
+                      "coord": "D10",
+                      "v": "STANDARD",
+                      "t": "s",
+                      "raw": "STANDARD",
+                      "kind": "input"
                     }
                   ]
                 ]

@@ -36,7 +36,7 @@
   function getActiveModuleId() {
     const m = /^(?:PKG|PM)-\d+/i.exec(activeDocId);
     if (m) return m[0].toUpperCase();
-    return (DATA.modules && DATA.modules[0] && DATA.modules[0].id) || 'PKG-01';
+    return (DATA.modules && DATA.modules[0] && DATA.modules[0].id) || 'PM-01';
   }
 
   function initExpandedModules() {
@@ -179,37 +179,22 @@
     return parts.join(' ').toLowerCase();
   }
 
-  const LEGACY_DOC_ALIAS = {
-    'PM-01-D1': 'PKG-01-D1',
-    'PM-01-D2': 'PKG-01-D1',
-    'PM-01-D3': 'PKG-01-D2',
-    'PM-01-D4': 'PKG-01-D4',
-    'PM-01-README': 'PKG-01-README',
-    'PM-06-D1': 'PKG-01-D1',
-    'PM-06-D2': 'PKG-01-D3',
-    'PM-06-D3': 'PKG-01-D3',
-    'PM-06-D4': 'PKG-01-D4',
-    'PM-06-README': 'PKG-01-README',
-    'PM-02-D1': 'PKG-02-D1',
-    'PM-02-D2': 'PKG-02-D1',
-    'PM-02-D3': 'PKG-02-D2',
-    'PM-02-D4': 'PKG-02-D2',
-    'PM-02-README': 'PKG-02-README',
-    'PM-03-D1': 'PKG-02-D3',
-    'PM-03-D2': 'PKG-02-D3',
-    'PM-03-D3': 'PKG-02-D4',
-    'PM-03-D4': 'PKG-02-D4',
-    'PM-03-README': 'PKG-02-README',
-    'PM-04-D1': 'PKG-03-D1',
-    'PM-04-D2': 'PKG-03-D1',
-    'PM-04-D3': 'PKG-03-D2',
-    'PM-04-D4': 'PKG-03-D2',
-    'PM-04-README': 'PKG-03-README',
-    'PM-05-D1': 'PKG-03-D4',
-    'PM-05-D2': 'PKG-03-D3',
-    'PM-05-D3': 'PKG-03-D4',
-    'PM-05-D4': 'PKG-03-D4',
-    'PM-05-README': 'PKG-03-README',
+  const PKG_TO_PM_ALIAS = {
+    'PKG-01-D1': 'PM-01-D1',
+    'PKG-01-D2': 'PM-01-D3',
+    'PKG-01-D3': 'PM-06-D2',
+    'PKG-01-D4': 'PM-01-D4',
+    'PKG-01-README': 'PM-01-README',
+    'PKG-02-D1': 'PM-02-D2',
+    'PKG-02-D2': 'PM-02-D3',
+    'PKG-02-D3': 'PM-03-D2',
+    'PKG-02-D4': 'PM-03-D3',
+    'PKG-02-README': 'PM-02-README',
+    'PKG-03-D1': 'PM-04-D2',
+    'PKG-03-D2': 'PM-04-D3',
+    'PKG-03-D3': 'PM-05-D2',
+    'PKG-03-D4': 'PM-05-D4',
+    'PKG-03-README': 'PM-03-README',
   };
 
   function resolveInitialTarget() {
@@ -221,7 +206,7 @@
     }
     const rawH = (window.location.hash || '').replace(/^#/, '').trim();
     if (!rawH) return;
-    const h = LEGACY_DOC_ALIAS[rawH] || rawH;
+    const h = PKG_TO_PM_ALIAS[rawH] || rawH;
     for (const m of DATA.modules || []) {
       if (h === `${m.id}-README`) {
         activeDocId = h;
