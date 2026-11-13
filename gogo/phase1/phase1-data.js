@@ -1,6 +1,6 @@
 // Auto-generated full-detail Phase 1 document repository payload (PM-01..PM-06 Canonical)
 window.PHASE1_PORTAL_DATA = {
-  "generatedAt": "2026-11-13 04:35 UTC",
+  "generatedAt": "2026-11-13 06:03 UTC",
   "phaseTitle": "Phase 1 (45 MW DC45-EU): Initiation, Charter & Business Case (PM-01 to PM-06)",
   "fileCount": 31,
   "masterWorkbooks": {
