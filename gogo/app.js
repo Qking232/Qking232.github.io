@@ -13,6 +13,40 @@ async function copyLocalRepoPath(relPath, label) {
   }
 }
 
+
+const FOCUS_PILLARS = {
+  all: {
+    id: 'all',
+    label: 'All 36 Modules',
+    title: 'Full End-to-End PM Lifecycle (Phases 1-6)',
+    moduleIds: []
+  },
+  p6: {
+    id: 'p6',
+    label: 'Pillar 1: Primavera P6 & Scheduling',
+    title: 'WBS, Level 4 Logic Network, CPM Critical Path, DCMA-14 QA & S-Curves',
+    badge: 'P6 Schedule',
+    cls: 'badge-focus-p6',
+    moduleIds: ['PM-07', 'PM-08', 'PM-09', 'PM-10', 'PM-19', 'PM-24']
+  },
+  capex: {
+    id: 'capex',
+    label: 'Pillar 2: Capex & Financials',
+    title: 'RICS NRM1 Capex, 10-Yr DCF, NPV/IRR, EVM Cost Control & Funding Tranches',
+    badge: 'Capex Financials',
+    cls: 'badge-focus-capex',
+    moduleIds: ['PM-04', 'PM-05', 'PM-10', 'PM-14', 'PM-19', 'PM-34']
+  },
+  mep: {
+    id: 'mep',
+    label: 'Pillar 3: MEP & Commissioning',
+    title: 'I.S. EN 50600 BoD, 110kV GIS, Free Cooling Chilled Water, EED Telemetry & Cx L1-L5 IST',
+    badge: 'MEP Engineering',
+    cls: 'badge-focus-mep',
+    moduleIds: ['PM-03', 'PM-11', 'PM-16', 'PM-23', 'PM-25', 'PM-26', 'PM-27', 'PM-28', 'PM-29', 'PM-30']
+  }
+};
+
 const PILLARS = [
   // Active Track: End-to-End Project Management Lifecycle (6 Phases x 6 = 36 Modules)
   { id: 'PM1', track: 'pm', code: 'Phase 1', shortName: '1. Initiation & Charter', name: 'Phase 1: Initiation, Charter & Business Case (RIBA 0-1)' },
@@ -954,7 +988,7 @@ let state = loadState();
 let historyEvents = loadLocalHistory();
 
 const trackFilters = {
-  pm: { pillar: 'ALL', status: 'ALL', search: '' },
+  pm: { pillar: 'ALL', status: 'ALL', search: '', focusPillar: 'all' },
   legal: { pillar: 'ALL', status: 'ALL', search: '' }
 };
 let portfolioTrackFilter = 'ALL';
@@ -1525,6 +1559,7 @@ function renderModuleCardHtml(m, forceDocsOpen) {
           <div class="card-head">
             <span class="badge-code mono">${m.id}</span>
             <span class="badge-pillar">${pLabel}</span>
+            ${Object.values(FOCUS_PILLARS).filter(fp => fp.id !== 'all' && fp.moduleIds.includes(m.id)).map(fp => `<span class="badge-focus ${fp.cls}">${fp.badge}</span>`).join('')}
           </div>
           <h3 class="card-title">${m.title}</h3>
           <p class="card-desc">${m.desc}</p>
@@ -1568,6 +1603,10 @@ function renderTrackModules(trackName, gridId) {
     const matchingMods = allSectionMods.filter(m => {
       const st = state.modules[m.id]?.status || 'todo';
       if (filter.status !== 'ALL' && st !== filter.status) return false;
+      if (trackName === 'pm' && filter.focusPillar && filter.focusPillar !== 'all') {
+        const allowed = FOCUS_PILLARS[filter.focusPillar]?.moduleIds || [];
+        if (!allowed.includes(m.id)) return false;
+      }
       if (q && !docsMatch) {
         const modDocsText = (m.docs || []).map(d => `${d.cat || ''} ${d.title} ${d.why || ''} ${d.ref} ${d.artifact}`).join(' ');
         const hay = `${m.id} ${m.title} ${m.desc} ${m.tags.join(' ')} ${modDocsText}`.toLowerCase();
@@ -1772,9 +1811,29 @@ function renderTrackModules(trackName, gridId) {
   });
 }
 
+
+function renderFocusChips() {
+  const host = document.getElementById('pm-focus-chips');
+  if (!host) return;
+  const current = trackFilters.pm.focusPillar || 'all';
+  host.innerHTML = Object.values(FOCUS_PILLARS).map(fp => {
+    const isSel = current === fp.id;
+    const count = fp.id === 'all' ? 36 : fp.moduleIds.length;
+    return `<button type="button" class="chip chip-focus ${isSel ? 'selected ' + (fp.cls || '') : ''}" data-focus="${fp.id}" title="${fp.title}">${fp.label} (${count})</button>`;
+  }).join('');
+
+  host.querySelectorAll('.chip-focus').forEach(btn => {
+    btn.onclick = () => {
+      trackFilters.pm.focusPillar = btn.dataset.focus;
+      renderTrackSection('pm');
+    };
+  });
+}
+
 function renderTrackSection(trackName) {
   if (trackName === 'pm') {
     renderPmStepper();
+    renderFocusChips();
     renderTrackFilters('pm', 'pm-phase-chips', 'pm-status-chips');
     renderTrackModules('pm', 'pm-modules-grid');
   } else {

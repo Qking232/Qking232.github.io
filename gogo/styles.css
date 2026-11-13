@@ -1673,3 +1673,96 @@ table.docs-mini-table tr:last-child td {
 .btn-srs-rate-dash[data-rate="1"] { background: #fffbeb; border-color: #fcd34d; color: #92400e; }
 .btn-srs-rate-dash[data-rate="2"] { background: #eff6ff; border-color: #93bbfc; color: #0b57d0; }
 .btn-srs-rate-dash[data-rate="3"] { background: #f0fdf4; border-color: #86efac; color: #166534; }
+
+
+/* ==========================================================================
+   TRI-PILLAR LEARNING FOCUS ARCHITECTURE (P6, Capex, MEP)
+   ========================================================================== */
+.chip-row-focus {
+  padding: 8px 12px;
+  background: #f1f5f9;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.chip-row-focus::before {
+  content: "FOCUS TRACK:";
+  font-size: 10.5px;
+  font-weight: 800;
+  color: #64748b;
+  letter-spacing: 0.05em;
+  margin-right: 4px;
+}
+
+.chip.chip-focus {
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #334155;
+  font-weight: 700;
+  padding: 6px 14px;
+}
+
+.chip.chip-focus:hover {
+  background: #f8fafc;
+  border-color: #94a3b8;
+}
+
+.chip.chip-focus.selected {
+  background: #0f172a;
+  color: #ffffff;
+  border-color: #0f172a;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);
+}
+
+.chip.chip-focus.selected.badge-focus-p6 {
+  background: #1e293b;
+  color: #ffffff;
+  border-color: #0f172a;
+}
+
+.chip.chip-focus.selected.badge-focus-capex {
+  background: #065f46;
+  color: #ffffff;
+  border-color: #047857;
+}
+
+.chip.chip-focus.selected.badge-focus-mep {
+  background: #1e40af;
+  color: #ffffff;
+  border-color: #1d4ed8;
+}
+
+/* Module Card Focus Badges */
+.badge-focus {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.badge-focus-p6 {
+  background: #f1f5f9;
+  color: #1e293b;
+  border: 1px solid #cbd5e1;
+}
+
+.badge-focus-capex {
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.badge-focus-mep {
+  background: #eff6ff;
+  color: #1e40af;
+  border: 1px solid #bfdbfe;
+}

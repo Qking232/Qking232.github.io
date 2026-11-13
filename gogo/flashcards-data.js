@@ -1,4 +1,5 @@
 // Auto-generated 108 Active Recall Scenario Flashcards & Module Key Facts (DC45-EU 45 MW)
+// Enhanced with Tri-Pillar Specialization Tags (p6, capex, mep, general)
 window.DC45_FLASHCARDS = [
   {
     "id": "PM-01-F1",
@@ -7,7 +8,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-01-D2",
     "cat": "Standard",
     "q": "Under DC45-EU SteerCo governance, what happens if a majority votes YES on a CR that breaks an EU IEL air condition or CxA Level 4 safety gate?",
-    "a": "Statutory Holds and CxA L3/L4/L5 holds are NON-OVERRIDABLE veto gates. SteerCo voting cannot bypass environmental law or CxA energization/safety certification."
+    "a": "Statutory Holds and CxA L3/L4/L5 holds are NON-OVERRIDABLE veto gates. SteerCo voting cannot bypass environmental law or CxA energization/safety certification.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-01-F2",
@@ -16,7 +21,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-01-D3",
     "cat": "Deliverable",
     "q": "State the DC45-EU Delegation of Authority (DoA) EUR approval limits across Tier 0, Tier 1, Tier 2, and Tier 3.",
-    "a": "Tier 0 (Project Director): <= EUR 25k; Tier 1 (CCB): <= EUR 250k; Tier 2 (SteerCo): <= EUR 2.5M; Tier 3 (Sponsor Board): > EUR 2.5M or COD/BAC changes."
+    "a": "Tier 0 (Project Director): <= EUR 25k; Tier 1 (CCB): <= EUR 250k; Tier 2 (SteerCo): <= EUR 2.5M; Tier 3 (Sponsor Board): > EUR 2.5M or COD/BAC changes.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-01-F3",
@@ -25,7 +34,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-01-D4",
     "cat": "Audit",
     "q": "What quorum rules and async resolution window govern DC45-EU SteerCo decisions?",
-    "a": "Ordinary resolution requires >= 60% quorum (50% majority + Chair); Supermajority (Reserved Matters) requires >= 80% quorum. Urgent gaps use a 72-hour Circular Written Resolution (CWR)."
+    "a": "Ordinary resolution requires >= 60% quorum (50% majority + Chair); Supermajority (Reserved Matters) requires >= 80% quorum. Urgent gaps use a 72-hour Circular Written Resolution (CWR).",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-02-F1",
@@ -34,7 +47,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-02-D1",
     "cat": "Standard",
     "q": "Which Ireland flood standard and climate allowance must a 45 MW site clear during Pre-Feasibility DD?",
-    "a": "OPW CFRAM Flood Maps proving Zone C immunity for 1-in-100yr fluvial and 1-in-1000yr events PLUS a mandatory +20% climate change allowance (SSFRA)."
+    "a": "OPW CFRAM Flood Maps proving Zone C immunity for 1-in-100yr fluvial and 1-in-1000yr events PLUS a mandatory +20% climate change allowance (SSFRA).",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-02-F2",
@@ -43,7 +60,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-02-D2",
     "cat": "Deliverable",
     "q": "In PM-02 Site Scoring, why does 110kV Grid & EirGrid ECP Headroom carry the highest weight (25%) for a 45 MW Ireland facility?",
-    "a": "Delivering 45 MW IT at PUE 1.25 requires ~56.25 MW gross load / 60 MVA MIC and 2x 63MVA transformers. Utility substation proximity and CRU LEU compliance dominate schedule critical path."
+    "a": "Delivering 45 MW IT at PUE 1.25 requires ~56.25 MW gross load / 60 MVA MIC and 2x 63MVA transformers. Utility substation proximity and CRU LEU compliance dominate schedule critical path.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-02-F3",
@@ -52,7 +73,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-02-D3",
     "cat": "Template",
     "q": "Which geotechnical foundation solution was engineered on DC45-EU to bypass variable Dublin overburden?",
-    "a": "750 Continuous Flight Auger (CFA) concrete piles socketed to competent bedrock following Phase 1/2 ESA and UXO clearance."
+    "a": "750 Continuous Flight Auger (CFA) concrete piles socketed to competent bedrock following Phase 1/2 ESA and UXO clearance.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-03-F1",
@@ -61,7 +86,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-03-D1",
     "cat": "Standard",
     "q": "What topology class under I.S. EN 50600 / ISO 22237 and Tier III governs DC45-EU mechanical and electrical systems?",
-    "a": "Availability Class 3 (Concurrent Maintainability, zero SPOF): dual A+B 110kV/22kV GIS power paths, 5x 9 MW IT halls, N+2 cooling, and 2x 63MVA transformers."
+    "a": "Availability Class 3 (Concurrent Maintainability, zero SPOF): dual A+B 110kV/22kV GIS power paths, 5x 9 MW IT halls, N+2 cooling, and 2x 63MVA transformers.",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-03-F2",
@@ -70,7 +99,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-03-D2",
     "cat": "Deliverable",
     "q": "List the four headline DC45-EU BoD performance targets for Power, Standby Fuel, PUE, WUE, and Heat Reuse.",
-    "a": "45.0 MW critical IT load (5x 9 MW halls), 72-hr autonomy (20x 2.5MVA HVO gensets + 4x 80 m3 tanks), PUE <= 1.25, WUE <= 0.25 L/kWh, and ERF >= 0.15."
+    "a": "45.0 MW critical IT load (5x 9 MW halls), 72-hr autonomy (20x 2.5MVA HVO gensets + 4x 80 m3 tanks), PUE <= 1.25, WUE <= 0.25 L/kWh, and ERF >= 0.15.",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-03-F3",
@@ -79,7 +112,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-03-D4",
     "cat": "Audit",
     "q": "Why are SF6-insulated 110kV/22kV GIS and high-GWP HFC chillers excluded from DC45-EU Basis of Design?",
-    "a": "EU F-Gas Regulation (2024/573) restricts high-GWP fluorocarbons and SF6 (GWP 24,300), requiring clean-air/vacuum SF6-free GIS and ultra-low GWP chillers."
+    "a": "EU F-Gas Regulation (2024/573) restricts high-GWP fluorocarbons and SF6 (GWP 24,300), requiring clean-air/vacuum SF6-free GIS and ultra-low GWP chillers.",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-04-F1",
@@ -88,7 +125,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-04-D1",
     "cat": "Standard",
     "q": "What institutional financial hurdle criteria must DC45-EU satisfy in the 10-Year EUR DCF Model to pass FID?",
-    "a": "Unlevered and Levered IRR must exceed the 8.5% WACC hurdle rate and yield positive Net Present Value (NPV > EUR 0) modeling 12.5% Irish Corporation Tax."
+    "a": "Unlevered and Levered IRR must exceed the 8.5% WACC hurdle rate and yield positive Net Present Value (NPV > EUR 0) modeling 12.5% Irish Corporation Tax.",
+    "pillars": [
+      "capex"
+    ],
+    "primaryPillar": "capex"
   },
   {
     "id": "PM-04-F2",
@@ -97,7 +138,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-04-D3",
     "cat": "Template",
     "q": "Name the four primary sensitivity variables stress-tested in PM-04 PreNTP Controls.",
-    "a": "Capex (EUR/MW), Colocation Tariff (EUR/kW/month), Grid Power Cost (EUR/kWh), and Annualized PUE (1.18 to 1.35 scenario range)."
+    "a": "Capex (EUR/MW), Colocation Tariff (EUR/kW/month), Grid Power Cost (EUR/kWh), and Annualized PUE (1.18 to 1.35 scenario range).",
+    "pillars": [
+      "capex"
+    ],
+    "primaryPillar": "capex"
   },
   {
     "id": "PM-04-F3",
@@ -106,7 +151,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-04-D4",
     "cat": "Audit",
     "q": "How do Stage-Gate Tranches (TR-01 to TR-06) protect Sponsor capital compared to lump-sum release at NTP?",
-    "a": "Sponsor releases cash sequentially only as gated physical/statutory milestones pass (e.g., TR-01 LNTP covers pre-FID design/slots, while construction/Cx tranches unlock only on verified readiness)."
+    "a": "Sponsor releases cash sequentially only as gated physical/statutory milestones pass (e.g., TR-01 LNTP covers pre-FID design/slots, while construction/Cx tranches unlock only on verified readiness).",
+    "pillars": [
+      "capex"
+    ],
+    "primaryPillar": "capex"
   },
   {
     "id": "PM-05-F1",
@@ -115,7 +164,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-05-D1",
     "cat": "Standard",
     "q": "Distinguish LNTP vs. FNTP on a hyperscale EU data centre project.",
-    "a": "Limited Notice to Proceed (LNTP, TR-01) caps early spend for design, geotech, and OEM slot reservation; Full NTP (FNTP, M1000) commits full construction BAC once FID and primary statutory gates clear."
+    "a": "Limited Notice to Proceed (LNTP, TR-01) caps early spend for design, geotech, and OEM slot reservation; Full NTP (FNTP, M1000) commits full construction BAC once FID and primary statutory gates clear.",
+    "pillars": [
+      "capex"
+    ],
+    "primaryPillar": "capex"
   },
   {
     "id": "PM-05-F2",
@@ -124,7 +177,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-05-D2",
     "cat": "Deliverable",
     "q": "At which milestone does Scope Freeze take effect, and what governs any post-freeze change?",
-    "a": "RIBA Stage 4 IFC issuance (M2110). Any subsequent engineering change requires a formal Change Request with cost, P6 float, and DoA Tier approval."
+    "a": "RIBA Stage 4 IFC issuance (M2110). Any subsequent engineering change requires a formal Change Request with cost, P6 float, and DoA Tier approval.",
+    "pillars": [
+      "capex"
+    ],
+    "primaryPillar": "capex"
   },
   {
     "id": "PM-05-F3",
@@ -133,7 +190,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-05-D4",
     "cat": "Audit",
     "q": "If EPA IEL or ABP SID planning approval faces delays near M1000, what action must the Pre-NTP FID Audit mandate?",
-    "a": "Hold FNTP release or split scope via capped LNTP (non-groundbreaking OFCI slots) rather than mobilizing civil earthworks illegally ahead of statutory grant."
+    "a": "Hold FNTP release or split scope via capped LNTP (non-groundbreaking OFCI slots) rather than mobilizing civil earthworks illegally ahead of statutory grant.",
+    "pillars": [
+      "capex"
+    ],
+    "primaryPillar": "capex"
   },
   {
     "id": "PM-06-F1",
@@ -142,7 +203,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-06-D1",
     "cat": "Standard",
     "q": "Which four Irish statutory authorities must be managed from Stage 1 alongside commercial stakeholders?",
-    "a": "An Bord Pleanala / Local Planning Authority (SID/EIAR), Environmental Protection Agency (EPA IEL), EirGrid/ESBN + CRU (110kV/LEU), and BCMS / Fire Officer + HSA (BCAR/SI 291)."
+    "a": "An Bord Pleanala / Local Planning Authority (SID/EIAR), Environmental Protection Agency (EPA IEL), EirGrid/ESBN + CRU (110kV/LEU), and BCMS / Fire Officer + HSA (BCAR/SI 291).",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-06-F2",
@@ -151,7 +216,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-06-D2",
     "cat": "Deliverable",
     "q": "What triggers mandatory EPA Industrial Emissions Licensing (IEL) on DC45-EU?",
-    "a": "Aggregated thermal input of the 20x 2.5MVA HVO standby generators exceeds the 50 MWth EU Industrial Emissions Directive threshold."
+    "a": "Aggregated thermal input of the 20x 2.5MVA HVO standby generators exceeds the 50 MWth EU Industrial Emissions Directive threshold.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-06-F3",
@@ -160,7 +229,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-06-D4",
     "cat": "Audit",
     "q": "When a Section 247 Pre-Planning Consultee flags acoustic or NO2 cumulative limits, what escalation rule applies?",
-    "a": "Log immediately in the Stakeholder & Statutory Matrix, run updated AERMOD / acoustic modeling before formal SID filing, and escalate cost/redesign impact to SteerCo if > Tier 0."
+    "a": "Log immediately in the Stakeholder & Statutory Matrix, run updated AERMOD / acoustic modeling before formal SID filing, and escalate cost/redesign impact to SteerCo if > Tier 0.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-07-F1",
@@ -169,7 +242,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-07-D1",
     "cat": "Standard",
     "q": "What are the 7 Level-1 WBS branches structuring DC45-EU from Permitting to COD?",
-    "a": "1.0-PERM (Permitting/Pre-Dev), 2.0-ENG (Engineering), 3.0-PROC (Procurement/OFCI), 4.0-CSA (Substructure/Shell), 5.0-MEP (Power/Cooling/Halls), 6.0-CX (Cx L1-L5 & ORT), 7.0-COD (Handover/Certificates)."
+    "a": "1.0-PERM (Permitting/Pre-Dev), 2.0-ENG (Engineering), 3.0-PROC (Procurement/OFCI), 4.0-CSA (Substructure/Shell), 5.0-MEP (Power/Cooling/Halls), 6.0-CX (Cx L1-L5 & ORT), 7.0-COD (Handover/Certificates).",
+    "pillars": [
+      "p6"
+    ],
+    "primaryPillar": "p6"
   },
   {
     "id": "PM-07-F2",
@@ -178,7 +255,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-07-D2",
     "cat": "Deliverable",
     "q": "Explain PMI's 100% Rule as enforced across the 22 WBS nodes and OBS matrix.",
-    "a": "All work within the project scope must be decomposed into the WBS so every child tier sums exactly to 100% of parent scope and budget, with zero orphan scope and 1 Accountable OBS owner per Control Account."
+    "a": "All work within the project scope must be decomposed into the WBS so every child tier sums exactly to 100% of parent scope and budget, with zero orphan scope and 1 Accountable OBS owner per Control Account.",
+    "pillars": [
+      "p6"
+    ],
+    "primaryPillar": "p6"
   },
   {
     "id": "PM-07-F3",
@@ -187,7 +268,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-07-D4",
     "cat": "Audit",
     "q": "Why is Control Account granularity critical before linking P6 activities to Earned Value?",
-    "a": "If Control Accounts mix CSA civil works with OFCI OEM deliveries under one bucket, CPI/SPI variances mask true trade slippage and corrupt EAC forecasts."
+    "a": "If Control Accounts mix CSA civil works with OFCI OEM deliveries under one bucket, CPI/SPI variances mask true trade slippage and corrupt EAC forecasts.",
+    "pillars": [
+      "p6"
+    ],
+    "primaryPillar": "p6"
   },
   {
     "id": "PM-08-F1",
@@ -196,7 +281,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-08-D2",
     "cat": "Deliverable",
     "q": "State the exact verified statistics of the DC45-EU Master Primavera P6 XER Schedule.",
-    "a": "144 tasks across 22 WBS nodes, 213 FS relationships, 48 critical tasks (33.3%), 880 workdays (8.0 hr/day 5-day EU calendar), running M1000 (2027-01-04) to M7060 (2030-05-20)."
+    "a": "144 tasks across 22 WBS nodes, 213 FS relationships, 48 critical tasks (33.3%), 880 workdays (8.0 hr/day 5-day EU calendar), running M1000 (2027-01-04) to M7060 (2030-05-20).",
+    "pillars": [
+      "p6"
+    ],
+    "primaryPillar": "p6"
   },
   {
     "id": "PM-08-F2",
@@ -205,7 +294,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-08-D3",
     "cat": "Template",
     "q": "Why does DC45-EU mandate zero Finish-to-Start lags and zero Start-to-Finish relationships in P6?",
-    "a": "Lags obscure physical handoff logic and distort Longest Path float; all waiting periods (concrete cure, statutory notices, shipping) are modeled as explicit duration tasks."
+    "a": "Lags obscure physical handoff logic and distort Longest Path float; all waiting periods (concrete cure, statutory notices, shipping) are modeled as explicit duration tasks.",
+    "pillars": [
+      "p6"
+    ],
+    "primaryPillar": "p6"
   },
   {
     "id": "PM-08-F3",
@@ -214,7 +307,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-08-D4",
     "cat": "Audit",
     "q": "Which primary equipment chain drives the longest path through Phase 5 Commissioning on DC45-EU?",
-    "a": "110kV GIS & 2x 63MVA Transformer long-lead manufacturing -> Substation/HV installation -> L3 HV Energization (M6260) -> L4 Dynamic FPT (M6370) -> 48-hr L5 IST (M6470) -> M7060 COD."
+    "a": "110kV GIS & 2x 63MVA Transformer long-lead manufacturing -> Substation/HV installation -> L3 HV Energization (M6260) -> L4 Dynamic FPT (M6370) -> 48-hr L5 IST (M6470) -> M7060 COD.",
+    "pillars": [
+      "p6"
+    ],
+    "primaryPillar": "p6"
   },
   {
     "id": "PM-09-F1",
@@ -223,7 +320,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-09-D1",
     "cat": "Standard",
     "q": "Name 5 critical thresholds checked by the DCMA 14-Point Schedule Quality Assessment.",
-    "a": "Missing Logic (<=5%), Leads (0%), Lags (<=5%), FS Links (>=90%), Hard Constraints (<=5%), High Float >44d (<=5%), Negative Float (0%), Invalid Dates (0%)."
+    "a": "Missing Logic (<=5%), Leads (0%), Lags (<=5%), FS Links (>=90%), Hard Constraints (<=5%), High Float >44d (<=5%), Negative Float (0%), Invalid Dates (0%).",
+    "pillars": [
+      "p6"
+    ],
+    "primaryPillar": "p6"
   },
   {
     "id": "PM-09-F2",
@@ -232,7 +333,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-09-D2",
     "cat": "Deliverable",
     "q": "What DCMA-14 score did the DC45-EU Master XER achieve in automated pyp6xer verification?",
-    "a": "6/6 Automated Health Checks PASS (0 open ends, 0 negative float, 0 leads/lags, 100% FS links, 0 hard non-milestone constraints, single continuous critical path)."
+    "a": "6/6 Automated Health Checks PASS (0 open ends, 0 negative float, 0 leads/lags, 100% FS links, 0 hard non-milestone constraints, single continuous critical path).",
+    "pillars": [
+      "p6"
+    ],
+    "primaryPillar": "p6"
   },
   {
     "id": "PM-09-F3",
@@ -241,7 +346,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-09-D3",
     "cat": "Template",
     "q": "If an EPC contractor submits a P6 update containing an imposed 'Must Finish By' constraint hiding -35 days of float, what must the PM do?",
-    "a": "Reject the baseline/update immediately under DCMA-14 audit rules; demand removal of artificial constraints so true negative Total Float triggers a Time Impact recovery plan."
+    "a": "Reject the baseline/update immediately under DCMA-14 audit rules; demand removal of artificial constraints so true negative Total Float triggers a Time Impact recovery plan.",
+    "pillars": [
+      "p6"
+    ],
+    "primaryPillar": "p6"
   },
   {
     "id": "PM-10-F1",
@@ -250,7 +359,12 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-10-D1",
     "cat": "Standard",
     "q": "Why must P6 manpower loading align with CSA-to-MEP transition peaks across Data Halls 1-5?",
-    "a": "Unleveled simultaneous fitout across all 5 halls creates trade stacking, breaches Irish HSA welfare ratios (canteen/toilets/turnstiles), and collapses productivity."
+    "a": "Unleveled simultaneous fitout across all 5 halls creates trade stacking, breaches Irish HSA welfare ratios (canteen/toilets/turnstiles), and collapses productivity.",
+    "pillars": [
+      "p6",
+      "capex"
+    ],
+    "primaryPillar": "p6"
   },
   {
     "id": "PM-10-F2",
@@ -259,7 +373,12 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-10-D2",
     "cat": "Deliverable",
     "q": "How does PMB Cost-Loaded S-Curve generation support Sponsor Treasury & Tranche Drawdowns?",
-    "a": "Integrating P6 task durations with resource budgets creates an auditable Planned Value (PV) cash curve per month, giving Treasury predictable EUR drawdowns vs. CPI/SPI."
+    "a": "Integrating P6 task durations with resource budgets creates an auditable Planned Value (PV) cash curve per month, giving Treasury predictable EUR drawdowns vs. CPI/SPI.",
+    "pillars": [
+      "p6",
+      "capex"
+    ],
+    "primaryPillar": "p6"
   },
   {
     "id": "PM-10-F3",
@@ -268,7 +387,12 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-10-D4",
     "cat": "Audit",
     "q": "What physical site logistics constraint in Ireland heavily dictates abnormal-load arrival windows?",
-    "a": "Garda/TII escort permits and port Ro-Ro transit clearance for 2x 63MVA transformers and 20x HVO gensets must match hardstand crane pad readiness."
+    "a": "Garda/TII escort permits and port Ro-Ro transit clearance for 2x 63MVA transformers and 20x HVO gensets must match hardstand crane pad readiness.",
+    "pillars": [
+      "p6",
+      "capex"
+    ],
+    "primaryPillar": "p6"
   },
   {
     "id": "PM-11-F1",
@@ -277,7 +401,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-11-D1",
     "cat": "Standard",
     "q": "Under Directive (EU) 2023/1791 (EED) & Reg. (EU) 2024/1364, which facilities must report annually by May 15?",
-    "a": "All EU data centres with installed IT power demand >= 500 kW must publish PUE, WUE, ERF, REF, energy totals, and waste heat data to the European Database."
+    "a": "All EU data centres with installed IT power demand >= 500 kW must publish PUE, WUE, ERF, REF, energy totals, and waste heat data to the European Database.",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-11-F2",
@@ -286,7 +414,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-11-D2",
     "cat": "Deliverable",
     "q": "What metering accuracy and physical plant feature satisfy EED Art. 12/26 on DC45-EU?",
-    "a": "Revenue-grade Class-0.2 EPMS sub-meters at IT PDU outputs and cooling/facility incomers PLUS the District Heating Waste-Heat Recovery HEX Skid (A5390) targeting ERF >= 0.15."
+    "a": "Revenue-grade Class-0.2 EPMS sub-meters at IT PDU outputs and cooling/facility incomers PLUS the District Heating Waste-Heat Recovery HEX Skid (A5390) targeting ERF >= 0.15.",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-11-F3",
@@ -295,7 +427,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-11-D4",
     "cat": "Audit",
     "q": "How can an audit prove PUE <= 1.25 isn't inflated by unmetered losses?",
-    "a": "Verify metering boundary compliance under EN 50600-4-2: UPS output / rack PDU feeds IT Energy denominator cleanly while Transformer/MV/Cooling/Lighting losses sit in Total Facility Energy numerator."
+    "a": "Verify metering boundary compliance under EN 50600-4-2: UPS output / rack PDU feeds IT Energy denominator cleanly while Transformer/MV/Cooling/Lighting losses sit in Total Facility Energy numerator.",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-12-F1",
@@ -304,7 +440,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-12-D1",
     "cat": "Standard",
     "q": "Name the four ISO 19650 Common Data Environment (CDE) information containers and their purpose.",
-    "a": "WIP (authoring draft), Shared (S0-S4 multi-discipline review/coordination), Published (A1-A7 client-authorized baseline), and Archive (immutable audit trail)."
+    "a": "WIP (authoring draft), Shared (S0-S4 multi-discipline review/coordination), Published (A1-A7 client-authorized baseline), and Archive (immutable audit trail).",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-12-F2",
@@ -313,7 +453,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-12-D3",
     "cat": "Template",
     "q": "Distinguish EIR, BEP, and MIDP under BS EN ISO 19650-2.",
-    "a": "EIR defines Client information requirements; BEP sets the delivery team's execution standard and LOD 400 rules; MIDP schedules every model, drawing, and COBie drop with owner/dates."
+    "a": "EIR defines Client information requirements; BEP sets the delivery team's execution standard and LOD 400 rules; MIDP schedules every model, drawing, and COBie drop with owner/dates.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-12-F3",
@@ -322,7 +466,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-12-D4",
     "cat": "Audit",
     "q": "Why does the Master Document Register (MDR, 144 docs) enforce strict Suitability Codes (S1-S4 vs. A1-A7)?",
-    "a": "Preventing unapproved WIP/S1 drafts from reaching site ensures field teams build ONLY from Published Status A4/IFC drawings."
+    "a": "Preventing unapproved WIP/S1 drafts from reaching site ensures field teams build ONLY from Published Status A4/IFC drawings.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-13-F1",
@@ -331,7 +479,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-13-D1",
     "cat": "Standard",
     "q": "Compare Multi-Prime EPCm vs. Lump-Sum D&B risk allocation for a 45 MW Irish data centre.",
-    "a": "Single D&B transfers design/interface coordination at a higher risk-wrap premium; Multi-Prime EPCm (CSA + HV + MEP + Client OFCI) saves wrapper fees and speeds long-lead slots but leaves interface risk with Client/EPCm."
+    "a": "Single D&B transfers design/interface coordination at a higher risk-wrap premium; Multi-Prime EPCm (CSA + HV + MEP + Client OFCI) saves wrapper fees and speeds long-lead slots but leaves interface risk with Client/EPCm.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-13-F2",
@@ -340,7 +492,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-13-D2",
     "cat": "Deliverable",
     "q": "Which three technical packages make up the core DC45-EU split-contracting matrix?",
-    "a": "Package 1: CSA & 750 CFA Piling/Shell; Package 2: 110kV GIS Contestable Substation & HV; Package 3: MEP Data Hall & Cooling Fitout (installing Client OFCI OEM plant)."
+    "a": "Package 1: CSA & 750 CFA Piling/Shell; Package 2: 110kV GIS Contestable Substation & HV; Package 3: MEP Data Hall & Cooling Fitout (installing Client OFCI OEM plant).",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-13-F3",
@@ -349,7 +505,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-13-D4",
     "cat": "Audit",
     "q": "What disqualifier checks happen during Pre-Qualification Questionnaire (PQQ) screening?",
-    "a": "Audited balance sheet solvency (bonding capacity), Irish HSA safety record / LTIFR, ISO 9001 QMS, and verified >= 20 MW hyperscale build references."
+    "a": "Audited balance sheet solvency (bonding capacity), Irish HSA safety record / LTIFR, ISO 9001 QMS, and verified >= 20 MW hyperscale build references.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-14-F1",
@@ -358,7 +518,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-14-D1",
     "cat": "Standard",
     "q": "What is the time-bar rule under NEC4 ECC Clause 61.3 for a Contractor-notified Compensation Event (CE)?",
-    "a": "8 weeks from becoming aware of the event. Failure to notify within 8 weeks time-bars entitlement unless the Project Manager was obligated to notify the event themselves."
+    "a": "8 weeks from becoming aware of the event. Failure to notify within 8 weeks time-bars entitlement unless the Project Manager was obligated to notify the event themselves.",
+    "pillars": [
+      "capex"
+    ],
+    "primaryPillar": "capex"
   },
   {
     "id": "PM-14-F2",
@@ -367,7 +531,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-14-D2",
     "cat": "Deliverable",
     "q": "Why does NEC4 Clause 31/32 empower the PM to withhold 25% of the Price for Work Done to Date if no Accepted Programme exists?",
-    "a": "Maintaining a current, accepted P6 schedule is a condition precedent so both PM and Contractor prospectively model CE time impacts cleanly rather than arguing post-hoc."
+    "a": "Maintaining a current, accepted P6 schedule is a condition precedent so both PM and Contractor prospectively model CE time impacts cleanly rather than arguing post-hoc.",
+    "pillars": [
+      "capex"
+    ],
+    "primaryPillar": "capex"
   },
   {
     "id": "PM-14-F3",
@@ -376,7 +544,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-14-D3",
     "cat": "Template",
     "q": "When an Early Warning (Cl. 15) is raised for 110kV switchgear cable trench clashes, how does NEC4 treat cost vs. time?",
-    "a": "Convene a Risk Reduction Meeting immediately; if the solution alters Works Information, issue a PM instruction triggering a Compensation Event assessed prospectively on Defined Cost + Fee."
+    "a": "Convene a Risk Reduction Meeting immediately; if the solution alters Works Information, issue a PM instruction triggering a Compensation Event assessed prospectively on Defined Cost + Fee.",
+    "pillars": [
+      "capex"
+    ],
+    "primaryPillar": "capex"
   },
   {
     "id": "PM-15-F1",
@@ -385,7 +557,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-15-D1",
     "cat": "Standard",
     "q": "Compare NEC4 ECC's CE time-bar (8 weeks) with FIDIC 2017 Yellow/Silver Book Clause 20.2.1.",
-    "a": "FIDIC 2017 imposes a strict 28-day Notice of Claim time-bar (from awareness), followed by a fully detailed claim within 84 days; Clause 21 standing DAAB handles unresolved disputes."
+    "a": "FIDIC 2017 imposes a strict 28-day Notice of Claim time-bar (from awareness), followed by a fully detailed claim within 84 days; Clause 21 standing DAAB handles unresolved disputes.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-15-F2",
@@ -394,7 +570,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-15-D3",
     "cat": "Template",
     "q": "Under FIDIC Yellow Book (D&B) vs. Silver Book (EPC), who carries unforeseen ground condition risk?",
-    "a": "Yellow Book Clause 4.12 grants EOT/Cost for unforeseeable physical/sub-surface conditions; Silver Book largely shifts ground-risk to Contractor unless expressly carved out."
+    "a": "Yellow Book Clause 4.12 grants EOT/Cost for unforeseeable physical/sub-surface conditions; Silver Book largely shifts ground-risk to Contractor unless expressly carved out.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-15-F3",
@@ -403,7 +583,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-15-D4",
     "cat": "Audit",
     "q": "Under the SCL Delay & Disruption Protocol, which analysis method proves EOT entitlement prospectively?",
-    "a": "Time Impact Analysis (TIA): insert the delaying Employer-risk fragnet into the latest accepted programme immediately prior to the event and measure shift in Contractual Completion Date."
+    "a": "Time Impact Analysis (TIA): insert the delaying Employer-risk fragnet into the latest accepted programme immediately prior to the event and measure shift in Contractual Completion Date.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-16-F1",
@@ -412,7 +596,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-16-D1",
     "cat": "Standard",
     "q": "List all 6 major OFCI long-lead equipment families procured directly by Owner on DC45-EU.",
-    "a": "2x 63MVA 110/22kV Power Transformers, 110kV/22kV SF6-Free GIS, 20x 2.5MVA HVO Gensets, 45x 1000kVA UPS, 8x 1200RT Chillers + 90x CRAHs, and Grid-Code BESS."
+    "a": "2x 63MVA 110/22kV Power Transformers, 110kV/22kV SF6-Free GIS, 20x 2.5MVA HVO Gensets, 45x 1000kVA UPS, 8x 1200RT Chillers + 90x CRAHs, and Grid-Code BESS.",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-16-F2",
@@ -421,7 +609,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-16-D2",
     "cat": "Deliverable",
     "q": "What protection is built around M3120 OEM Delivery in the DC45-EU OFCI matrix?",
-    "a": "Early LNTP factory slot booking deposits PLUS a dedicated +200-day Supply Chain Resilience buffer ahead of site MEP energization needs."
+    "a": "Early LNTP factory slot booking deposits PLUS a dedicated +200-day Supply Chain Resilience buffer ahead of site MEP energization needs.",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-16-F3",
@@ -430,7 +622,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-16-D3",
     "cat": "Template",
     "q": "Why must OFCI equipment POs include Novation or Custody Transfer deeds to the MEP contractor?",
-    "a": "Prevents a warranty void or split responsibility gap: once L2 Receiving Inspection/SAT passes on site, care, custody, installation warranty, and L3/L4 prep bind cleanly to the installing contractor."
+    "a": "Prevents a warranty void or split responsibility gap: once L2 Receiving Inspection/SAT passes on site, care, custody, installation warranty, and L3/L4 prep bind cleanly to the installing contractor.",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-17-F1",
@@ -439,7 +635,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-17-D1",
     "cat": "Standard",
     "q": "Why is Blind Technical Bid Evaluation (TBE) completed before opening commercial price envelopes?",
-    "a": "Prevents low-price anchoring bias; engineering evaluators score specs, program, HSE, and exclusions objectively before commercial leveling compares total normalized cost."
+    "a": "Prevents low-price anchoring bias; engineering evaluators score specs, program, HSE, and exclusions objectively before commercial leveling compares total normalized cost.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-17-F2",
@@ -448,7 +648,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-17-D3",
     "cat": "Template",
     "q": "How does BAFO Commercial Leveling ensure an apples-to-apples bid comparison?",
-    "a": "Quantifies every bidder's exclusions, qualifications, provisional sums, Incoterms differences, payment terms, and LDs tolerances as explicit EUR add-backs prior to RTA sign-off."
+    "a": "Quantifies every bidder's exclusions, qualifications, provisional sums, Incoterms differences, payment terms, and LDs tolerances as explicit EUR add-backs prior to RTA sign-off.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-17-F3",
@@ -457,7 +661,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-17-D4",
     "cat": "Audit",
     "q": "What governance sign-off converts a completed BAFO Recommendation to Award (RTA) into an executed contract?",
-    "a": "Verification of compliance with DoA Tier limits (SteerCo / Investment Committee for major packages), Tax Clearance / RCT readiness, and Performance Security / Parent Guarantee."
+    "a": "Verification of compliance with DoA Tier limits (SteerCo / Investment Committee for major packages), Tax Clearance / RCT readiness, and Performance Security / Parent Guarantee.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-18-F1",
@@ -466,7 +674,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-18-D1",
     "cat": "Standard",
     "q": "Compare EXW/FCA vs. DDP under ICC Incoterms 2020 for EU cross-border OFCI plant shipping to Ireland.",
-    "a": "Under EXW/FCA, Buyer takes transit risk, export/freight coordination, and customs clearance from OEM factory; under DDP, Seller delivers cleared and insured directly to the Irish site gate."
+    "a": "Under EXW/FCA, Buyer takes transit risk, export/freight coordination, and customs clearance from OEM factory; under DDP, Seller delivers cleared and insured directly to the Irish site gate.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-18-F2",
@@ -475,7 +687,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-18-D2",
     "cat": "Deliverable",
     "q": "What three mandatory preservation checks apply when 63MVA transformers or generators arrive before building dry-in?",
-    "a": "3-axis shock/tilt logger audit (<3g), energized anti-condensation space heaters, dry nitrogen blanket pressure check (Tx), and bi-weekly rotor/bearing shaft turning log."
+    "a": "3-axis shock/tilt logger audit (<3g), energized anti-condensation space heaters, dry nitrogen blanket pressure check (Tx), and bi-weekly rotor/bearing shaft turning log.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-18-F3",
@@ -484,7 +700,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-18-D4",
     "cat": "Audit",
     "q": "Why do OEM expediting audits track Tier-2 sub-suppliers (PLCs, HV breakers, PCB chips) months before L1 FAT?",
-    "a": "A missing Tier-2 protection relay or PLC chip stalls entire GIS/UPS assembly even when sheet metal and copper windings finish on time."
+    "a": "A missing Tier-2 protection relay or PLC chip stalls entire GIS/UPS assembly even when sheet metal and copper windings finish on time.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-19-F1",
@@ -493,7 +713,12 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-19-D1",
     "cat": "Standard",
     "q": "Write the core EVM formulas for CPI, SPI, Typical EAC, and TCPI.",
-    "a": "CPI = EV / AC; SPI = EV / PV; EAC = BAC / CPI (cumulative trend); TCPI = (BAC - EV) / (BAC - AC)."
+    "a": "CPI = EV / AC; SPI = EV / PV; EAC = BAC / CPI (cumulative trend); TCPI = (BAC - EV) / (BAC - AC).",
+    "pillars": [
+      "p6",
+      "capex"
+    ],
+    "primaryPillar": "p6"
   },
   {
     "id": "PM-19-F2",
@@ -502,7 +727,12 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-19-D2",
     "cat": "Deliverable",
     "q": "At what CPI and SPI thresholds are mandatory DC45-EU SteerCo Escalations triggered?",
-    "a": "CPI < 0.92 triggers Cost Escalation (ESC-03); SPI < 0.90 on MEP/Cx triggers Schedule Escalation (ESC-04) requiring formal Recovery Plan."
+    "a": "CPI < 0.92 triggers Cost Escalation (ESC-03); SPI < 0.90 on MEP/Cx triggers Schedule Escalation (ESC-04) requiring formal Recovery Plan.",
+    "pillars": [
+      "p6",
+      "capex"
+    ],
+    "primaryPillar": "p6"
   },
   {
     "id": "PM-19-F3",
@@ -511,7 +741,12 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-19-D4",
     "cat": "Audit",
     "q": "If PV = EUR 100M, EV = EUR 88M, and AC = EUR 95M, diagnose project health and projected EAC at BAC = EUR 450M.",
-    "a": "SPI = 0.88 (behind schedule, ESC-04 breach) and CPI = 0.926 (over budget, near ESC-03 trigger); Typical EAC = 450 / 0.926 = EUR 485.8M (+EUR 35.8M overrun trend)."
+    "a": "SPI = 0.88 (behind schedule, ESC-04 breach) and CPI = 0.926 (over budget, near ESC-03 trigger); Typical EAC = 450 / 0.926 = EUR 485.8M (+EUR 35.8M overrun trend).",
+    "pillars": [
+      "p6",
+      "capex"
+    ],
+    "primaryPillar": "p6"
   },
   {
     "id": "PM-20-F1",
@@ -520,7 +755,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-20-D1",
     "cat": "Standard",
     "q": "What principle from ISO 10007 prohibits adjusting Performance Measurement Baseline (PMB) retroactively?",
-    "a": "Any baseline cost, scope, or schedule change must be documented via an approved Change Request with formal DoA sign-off BEFORE modifying P6 or cost budgets, preserving audit trail."
+    "a": "Any baseline cost, scope, or schedule change must be documented via an approved Change Request with formal DoA sign-off BEFORE modifying P6 or cost budgets, preserving audit trail.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-20-F2",
@@ -529,7 +768,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-20-D3",
     "cat": "Template",
     "q": "How are Management Reserve (MR) drawdowns accounted differently from Contingency drawdowns?",
-    "a": "Contingency covers known-unknown project risks within PM/CCB/SteerCo budgets; MR sits outside PMB/BAC and requires Sponsor Board Tier-3 approval before transfer into PMB."
+    "a": "Contingency covers known-unknown project risks within PM/CCB/SteerCo budgets; MR sits outside PMB/BAC and requires Sponsor Board Tier-3 approval before transfer into PMB.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-20-F3",
@@ -538,7 +781,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-20-D4",
     "cat": "Audit",
     "q": "Why must a single Change Request reference its matching NEC4 CE / FIDIC VO and P6 Fragnet ID?",
-    "a": "Dual commercial-schedule traceability prevents contractors from claiming the same entitlement twice across variations and EOT logs."
+    "a": "Dual commercial-schedule traceability prevents contractors from claiming the same entitlement twice across variations and EOT logs.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-21-F1",
@@ -547,7 +794,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-21-D1",
     "cat": "Standard",
     "q": "How does Expected Monetary Value (EMV) size risk contingency across the 12 DC45-EU risks?",
-    "a": "EMV = Sum of (Probability % x Most Likely EUR Impact) across open weighted risks, cross-checked against Monte Carlo P50 (median) and P80 (conservative) QRA outputs."
+    "a": "EMV = Sum of (Probability % x Most Likely EUR Impact) across open weighted risks, cross-checked against Monte Carlo P50 (median) and P80 (conservative) QRA outputs.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-21-F2",
@@ -556,7 +807,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-21-D2",
     "cat": "Deliverable",
     "q": "Which external legal risk tops the DC45-EU Weighted Risk Register (RSK-01)?",
-    "a": "Judicial Review (JR) challenge to An Bord Pleanala SID planning or EPA IEL grant, capable of adding 6-12 months critical path delay if unmitigated."
+    "a": "Judicial Review (JR) challenge to An Bord Pleanala SID planning or EPA IEL grant, capable of adding 6-12 months critical path delay if unmitigated.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-21-F3",
@@ -565,7 +820,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-21-D4",
     "cat": "Audit",
     "q": "On what basis should Contingency be retired during Phase 5-6 execution?",
-    "a": "When a risk's milestone window passes cleanly without triggering (e.g., CFA piling complete or OEM FAT cleared), release unused EMV rather than absorbing it silently into scope creep."
+    "a": "When a risk's milestone window passes cleanly without triggering (e.g., CFA piling complete or OEM FAT cleared), release unused EMV rather than absorbing it silently into scope creep.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-22-F1",
@@ -574,7 +833,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-22-D1",
     "cat": "Standard",
     "q": "Distinguish Hold Point (H) vs. Witness Point (W) on a construction Inspection & Test Plan (ITP).",
-    "a": "Hold Point: mandatory full stop where work CANNOT proceed until signed off by Engineer/AC/CxA; Witness Point: scheduled advance notice allowing optional observation before proceeding."
+    "a": "Hold Point: mandatory full stop where work CANNOT proceed until signed off by Engineer/AC/CxA; Witness Point: scheduled advance notice allowing optional observation before proceeding.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-22-F2",
@@ -583,7 +846,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-22-D3",
     "cat": "Template",
     "q": "Define Category A, B, and C Non-Conformance Reports (NCRs) under the DC45-EU CQP.",
-    "a": "Cat A: structural, life-safety, or Tier III redundancy defect halting downstream work; Cat B: specification deviation needing Engineer disposition; Cat C: minor cosmetic defect."
+    "a": "Cat A: structural, life-safety, or Tier III redundancy defect halting downstream work; Cat B: specification deviation needing Engineer disposition; Cat C: minor cosmetic defect.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-22-F3",
@@ -592,7 +859,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-22-D4",
     "cat": "Audit",
     "q": "Why enforce a strict <= 5 working day SLA on field RFIs during MEP rough-in?",
-    "a": "RFI bottlenecks stall BIM clash resolution and force contractors into uncoordinated workarounds or NEC4 Compensation Event delay notices."
+    "a": "RFI bottlenecks stall BIM clash resolution and force contractors into uncoordinated workarounds or NEC4 Compensation Event delay notices.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-23-F1",
@@ -601,7 +872,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-23-D1",
     "cat": "Standard",
     "q": "Why must Federated BIM LOD 400 achieve zero hard clashes prior to structural concrete pours or MEP prefab?",
-    "a": "Core drilling post-tensioned or heavily reinforced slabs after pouring costs 10x pre-formed sleeves and threatens fire compartmentation / BCAR certification."
+    "a": "Core drilling post-tensioned or heavily reinforced slabs after pouring costs 10x pre-formed sleeves and threatens fire compartmentation / BCAR certification.",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-23-F2",
@@ -610,7 +885,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-23-D2",
     "cat": "Deliverable",
     "q": "What environmental readiness gate (M5595) separates dirty construction from white-space server hall equipment installation?",
-    "a": "Positive-pressure Cleanroom Transition (weather-tight envelope M4350, sealed concrete/epoxy slab, operating HVAC filtration, strict dust/ESD PPE controls)."
+    "a": "Positive-pressure Cleanroom Transition (weather-tight envelope M4350, sealed concrete/epoxy slab, operating HVAC filtration, strict dust/ESD PPE controls).",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-23-F3",
@@ -619,7 +898,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-23-D4",
     "cat": "Audit",
     "q": "Why do HV busways, CRAH supply risers, and chilled water mains share an interface sign-off matrix?",
-    "a": "Prevents multi-prime MEP/CSA elevation conflicts inside constrained 800mm raised floors and ceiling plenums above sensitive electrical rooms."
+    "a": "Prevents multi-prime MEP/CSA elevation conflicts inside constrained 800mm raised floors and ceiling plenums above sensitive electrical rooms.",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-24-F1",
@@ -628,7 +911,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-24-D1",
     "cat": "Standard",
     "q": "What KPI measures Weekly Work Plan reliability in the Last Planner System (LPS), and what is the DC45-EU floor?",
-    "a": "Percent Plan Complete (PPC) = Completed Weekly Commitments / Total Planned Commitments, targeting >= 80% alongside 6-week constraint-removal lookahead."
+    "a": "Percent Plan Complete (PPC) = Completed Weekly Commitments / Total Planned Commitments, targeting >= 80% alongside 6-week constraint-removal lookahead.",
+    "pillars": [
+      "p6"
+    ],
+    "primaryPillar": "p6"
   },
   {
     "id": "PM-24-F2",
@@ -637,7 +924,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-24-D3",
     "cat": "Template",
     "q": "Name the 7 constraints screened in a 6-Week Lookahead prior to releasing tasks to site crews.",
-    "a": "1. Design/IFC, 2. Materials/OFCI, 3. Permits/BCAR/LOTO, 4. Predecessor Ready, 5. Labor/Supervision, 6. Shared Space/Cranage, 7. RAMS/Safety."
+    "a": "1. Design/IFC, 2. Materials/OFCI, 3. Permits/BCAR/LOTO, 4. Predecessor Ready, 5. Labor/Supervision, 6. Shared Space/Cranage, 7. RAMS/Safety.",
+    "pillars": [
+      "p6"
+    ],
+    "primaryPillar": "p6"
   },
   {
     "id": "PM-24-F3",
@@ -646,7 +937,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-24-D4",
     "cat": "Audit",
     "q": "Why must the Monthly SteerCo Pack issue 5 business days ahead of meeting date with a 1-page RAG Executive Summary?",
-    "a": "Allows Sponsor voting directors time to pre-review EVM, QRA P80 drawdown, and DoA decision papers so SteerCo focuses on resolution rather than reading slides."
+    "a": "Allows Sponsor voting directors time to pre-review EVM, QRA P80 drawdown, and DoA decision papers so SteerCo focuses on resolution rather than reading slides.",
+    "pillars": [
+      "p6"
+    ],
+    "primaryPillar": "p6"
   },
   {
     "id": "PM-25-F1",
@@ -655,7 +950,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-25-D1",
     "cat": "Standard",
     "q": "Summarize ASHRAE Guideline 0 / CIBSE Code M Commissioning Levels L1 through L5.",
-    "a": "L1 Factory FAT -> L2 Site Receiving/Install -> L3 Static/Pre-Functional Energization -> L4 Dynamic Subsystem FPT -> L5 Full-Load Integrated Systems Testing (IST)."
+    "a": "L1 Factory FAT -> L2 Site Receiving/Install -> L3 Static/Pre-Functional Energization -> L4 Dynamic Subsystem FPT -> L5 Full-Load Integrated Systems Testing (IST).",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-25-F2",
@@ -664,7 +963,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-25-D3",
     "cat": "Template",
     "q": "How does CxA authority differ from MEP Contractor QC during Level 3-5 gates?",
-    "a": "The independent CxA witnesses and verifies compliance on behalf of Owner with SteerCo non-overridable Veto power at M6260 (L3), M6370 (L4), and M6470 (L5)."
+    "a": "The independent CxA witnesses and verifies compliance on behalf of Owner with SteerCo non-overridable Veto power at M6260 (L3), M6370 (L4), and M6470 (L5).",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-25-F3",
@@ -673,7 +976,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-25-D4",
     "cat": "Audit",
     "q": "Under CxIL governance, what defect threshold blocks entry into Level 5 IST and Practical Completion?",
-    "a": "Zero open Severity-1 (critical safety, single point of failure, or redundancy breach) CxIL issues are permitted before L5 IST or RFS sign-off."
+    "a": "Zero open Severity-1 (critical safety, single point of failure, or redundancy breach) CxIL issues are permitted before L5 IST or RFS sign-off.",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-26-F1",
@@ -682,7 +989,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-26-D1",
     "cat": "Standard",
     "q": "Decode the 4-color physical commissioning tag workflow used from delivery through L4.",
-    "a": "White Tag = Delivered/L1 FAT Verified -> Yellow Tag = Mechanically Installed/Torqued (L2) -> Green Tag = Static Checked/Ready to Energize (L3) -> Blue Tag = Dynamic FPT Passed (L4)."
+    "a": "White Tag = Delivered/L1 FAT Verified -> Yellow Tag = Mechanically Installed/Torqued (L2) -> Green Tag = Static Checked/Ready to Energize (L3) -> Blue Tag = Dynamic FPT Passed (L4).",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-26-F2",
@@ -691,7 +1002,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-26-D2",
     "cat": "Deliverable",
     "q": "What test on 63MVA transformers or GIS at OEM Factory (L1) prevents discovering defects only after shipping to Ireland?",
-    "a": "Witnessed IEC full-load temperature-rise, impulse/PD, protection relay bench test, and shock-logger calibration PRIOR to ex-works dispatch."
+    "a": "Witnessed IEC full-load temperature-rise, impulse/PD, protection relay bench test, and shock-logger calibration PRIOR to ex-works dispatch.",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-26-F3",
@@ -700,7 +1015,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-26-D4",
     "cat": "Audit",
     "q": "If an OFCI UPS arrives on site with a triggered 5g shock logger and dented busbar crate, what immediate L2 tag applies?",
-    "a": "Hold as Quarantine / Failed SAT, log immediate NCR + marine insurance claim, reject custody transfer, and trigger OEM inspection before rigging indoors."
+    "a": "Hold as Quarantine / Failed SAT, log immediate NCR + marine insurance claim, reject custody transfer, and trigger OEM inspection before rigging indoors.",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-27-F1",
@@ -709,7 +1028,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-27-D1",
     "cat": "Standard",
     "q": "Who holds legal switching and energy-isolation authority from M6260 Level 3 Energization onward?",
-    "a": "Only the certified Senior Authorized Person (SAP) operating a formal LOTO permit register and Sanction-for-Test control."
+    "a": "Only the certified Senior Authorized Person (SAP) operating a formal LOTO permit register and Sanction-for-Test control.",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-27-F2",
@@ -718,7 +1041,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-27-D2",
     "cat": "Deliverable",
     "q": "Why must BSRIA BG 29 chemical flushing and pressure testing pass before opening chiller evaporators and CRAH coils?",
-    "a": "Construction scale, weld slag, or glycol contamination fouls micro-channel coils, jams 3-way control valves, and degrades heat transfer/PUE."
+    "a": "Construction scale, weld slag, or glycol contamination fouls micro-channel coils, jams 3-way control valves, and degrades heat transfer/PUE.",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-27-F3",
@@ -727,7 +1054,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-27-D4",
     "cat": "Audit",
     "q": "What non-destructive HV test replaces destructive DC Hi-Pot on XLPE cables during Level 3 Static testing?",
-    "a": "0.1 Hz Very Low Frequency (VLF) AC cable withstand / Tan-Delta testing coupled with Megger insulation resistance and primary/secondary CT relay injection."
+    "a": "0.1 Hz Very Low Frequency (VLF) AC cable withstand / Tan-Delta testing coupled with Megger insulation resistance and primary/secondary CT relay injection.",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-28-F1",
@@ -736,7 +1067,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-28-D1",
     "cat": "Standard",
     "q": "What statutory emission tests must pass during Level 4 Dynamic testing of the 20x 2.5MVA HVO gensets?",
-    "a": "SCR Urea injection efficiency (>90% NOx reduction), opacity/particulate check, and HVO EN 15940 acoustic/emissions baseline verifying EPA IEL limits."
+    "a": "SCR Urea injection efficiency (>90% NOx reduction), opacity/particulate check, and HVO EN 15940 acoustic/emissions baseline verifying EPA IEL limits.",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-28-F2",
@@ -745,7 +1080,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-28-D2",
     "cat": "Deliverable",
     "q": "How do EirGrid Interim Operational Notification (ION) and BESS DS3 sync fit into Level 4 (M6370)?",
-    "a": "110kV/22kV BESS and STATCOM prove dynamic fault ride-through, FFR <150ms response, and harmonics compliance under EU 2016/1388 to transition from ION to FON."
+    "a": "110kV/22kV BESS and STATCOM prove dynamic fault ride-through, FFR <150ms response, and harmonics compliance under EU 2016/1388 to transition from ION to FON.",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-28-F3",
@@ -754,7 +1093,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-28-D4",
     "cat": "Audit",
     "q": "During BMS Cause-and-Effect dynamic testing, what behavior must NOT happen during a CRAH or pump trip?",
-    "a": "Chilled water header pressure must not collapse; standby redundant N+2 units must auto-stage via PLC SOO without dropping rack inlet supply beyond ASHRAE TC 9.9 bounds."
+    "a": "Chilled water header pressure must not collapse; standby redundant N+2 units must auto-stage via PLC SOO without dropping rack inlet supply beyond ASHRAE TC 9.9 bounds.",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-29-F1",
@@ -763,7 +1106,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-29-D1",
     "cat": "Standard",
     "q": "State the exact parameters of DC45-EU Level 5 Integrated Systems Testing (M6470).",
-    "a": "Full 45 MW portable load-bank thermal soak for 48 continuous hours across Data Halls 1-5, including utility pull-the-plug blackout simulation (<10s ATS+BESS transition) and TES cooling ride-through."
+    "a": "Full 45 MW portable load-bank thermal soak for 48 continuous hours across Data Halls 1-5, including utility pull-the-plug blackout simulation (<10s ATS+BESS transition) and TES cooling ride-through.",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-29-F2",
@@ -772,7 +1119,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-29-D2",
     "cat": "Deliverable",
     "q": "Why wait until Hour 36-48 of a full 45 MW IST heat-soak to run Infrared (IR) Thermography scans?",
-    "a": "Peak ambient heat rejection and steady-state copper thermal equilibrium expose loose busway torque joints or imbalanced PDU phases invisible in short 2-hour tests."
+    "a": "Peak ambient heat rejection and steady-state copper thermal equilibrium expose loose busway torque joints or imbalanced PDU phases invisible in short 2-hour tests.",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-29-F3",
@@ -781,7 +1132,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-29-D4",
     "cat": "Audit",
     "q": "During pull-the-plug blackout testing, what protects Data Halls while chillers drop utility power and wait for genset sync + restart?",
-    "a": "Stratified Chilled-Water Thermal Energy Storage (TES) tanks + UPS-backed secondary CHW pumps circulate stored cold water continuously until chillers re-ramp."
+    "a": "Stratified Chilled-Water Thermal Energy Storage (TES) tanks + UPS-backed secondary CHW pumps circulate stored cold water continuously until chillers re-ramp.",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-30-F1",
@@ -790,7 +1145,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-30-D1",
     "cat": "Standard",
     "q": "Compare Uptime Institute TCDD vs. TCCF and EN 50600 Class 3 audits.",
-    "a": "TCDD certifies Tier III Design Drawings; TCCF audits the physical constructed facility via live failure testing (A7040) alongside I.S. EN 50600-2-x Class 3 path isolation."
+    "a": "TCDD certifies Tier III Design Drawings; TCCF audits the physical constructed facility via live failure testing (A7040) alongside I.S. EN 50600-2-x Class 3 path isolation.",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-30-F2",
@@ -799,7 +1158,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-30-D3",
     "cat": "Template",
     "q": "Give 2 common hidden Single Points of Failure (SPOFs) caught in Pre-TCCF dry-run walkdowns.",
-    "a": "(1) Dual A/B feeds sharing one common maintenance bypass breaker or fire zone; (2) BMS DC power or VESDA monitoring fed off single non-redundant PSU."
+    "a": "(1) Dual A/B feeds sharing one common maintenance bypass breaker or fire zone; (2) BMS DC power or VESDA monitoring fed off single non-redundant PSU.",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-30-F3",
@@ -808,7 +1171,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-30-D4",
     "cat": "Audit",
     "q": "What proves true Concurrent Maintainability of any main MV breaker or cooling header during live operation?",
-    "a": "Physically isolating that single path for simulated maintenance under full hall design load while remaining N+2 / A+B paths sustain 100% IT SLA without interruption."
+    "a": "Physically isolating that single path for simulated maintenance under full hall design load while remaining N+2 / A+B paths sustain 100% IT SLA without interruption.",
+    "pillars": [
+      "mep"
+    ],
+    "primaryPillar": "mep"
   },
   {
     "id": "PM-31-F1",
@@ -817,7 +1184,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-31-D1",
     "cat": "Standard",
     "q": "Which single Irish statutory document blocks building occupation and RFS even if 100% of engineering testing passes?",
-    "a": "BCMS registration and acceptance of the BCAR Certificate of Compliance on Completion (CCC) signed by Builder and Assigned Certifier (plus Part B Fire & Part M DAC discharges)."
+    "a": "BCMS registration and acceptance of the BCAR Certificate of Compliance on Completion (CCC) signed by Builder and Assigned Certifier (plus Part B Fire & Part M DAC discharges).",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-31-F2",
@@ -826,7 +1197,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-31-D3",
     "cat": "Template",
     "q": "How are Snagging / Punch-List defects categorized at Practical Completion (M7060)?",
-    "a": "Cat A: safety, statutory, security, or SLA-critical (ZERO permitted at PC); Cat B: operational/functional minor defects (14-day closeout); Cat C: cosmetic (30-day closeout)."
+    "a": "Cat A: safety, statutory, security, or SLA-critical (ZERO permitted at PC); Cat B: operational/functional minor defects (14-day closeout); Cat C: cosmetic (30-day closeout).",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-31-F3",
@@ -835,7 +1210,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-31-D4",
     "cat": "Audit",
     "q": "What formal contractual notice shifts site insurance risk, DLP start, and 50% retention release on FIDIC/NEC?",
-    "a": "Issuance of the Taking-Over Certificate (TOC) / Completion Certificate once Cleanroom, Security, CxIL Zero-Cat-1, and BCAR CCC conditions clear."
+    "a": "Issuance of the Taking-Over Certificate (TOC) / Completion Certificate once Cleanroom, Security, CxIL Zero-Cat-1, and BCAR CCC conditions clear.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-32-F1",
@@ -844,7 +1223,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-32-D1",
     "cat": "Standard",
     "q": "Differentiate SOP, MOP, and EOP in 24/7 critical facility operations (OR&T).",
-    "a": "SOP governs routine daily operations; MOP defines step-by-step live switching/maintenance with rollback gates; EOP prescribes rapid emergency response to faults/blackouts."
+    "a": "SOP governs routine daily operations; MOP defines step-by-step live switching/maintenance with rollback gates; EOP prescribes rapid emergency response to faults/blackouts.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-32-F2",
@@ -853,7 +1236,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-32-D2",
     "cat": "Deliverable",
     "q": "What is the purpose of Black-Hat Drills before tenant IT server go-live?",
-    "a": "Stress-tests 24/7 Ops crew muscle memory against unannounced simulated faults (breaker trip, generator fail-to-start, VESDA alarm) using live EOPs before customer workloads land."
+    "a": "Stress-tests 24/7 Ops crew muscle memory against unannounced simulated faults (breaker trip, generator fail-to-start, VESDA alarm) using live EOPs before customer workloads land.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-32-F3",
@@ -862,7 +1249,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-32-D4",
     "cat": "Audit",
     "q": "What two operational readiness artifacts must be verified on site before achieving Uptime M&O Stamp readiness?",
-    "a": "1. Full 24/7 shift roster competency training/shadowing logs from L4/L5 Cx; 2. Two-year critical OEM spares inventory stored on site + 4-hour emergency callout SLAs."
+    "a": "1. Full 24/7 shift roster competency training/shadowing logs from L4/L5 Cx; 2. Two-year critical OEM spares inventory stored on site + 4-hour emergency callout SLAs.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-33-F1",
@@ -871,7 +1262,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-33-D1",
     "cat": "Standard",
     "q": "Define AIM and COBie v2.4 handover timeline under BS EN ISO 19650-3 on DC45-EU.",
-    "a": "Complete As-Built Asset Information Model (LOD 500 BIM) + COBie asset schema loaded into Facility CMMS within 30 calendar days post-COD (M7060 + 30d)."
+    "a": "Complete As-Built Asset Information Model (LOD 500 BIM) + COBie asset schema loaded into Facility CMMS within 30 calendar days post-COD (M7060 + 30d).",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-33-F2",
@@ -880,7 +1275,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-33-D3",
     "cat": "Template",
     "q": "Which mandatory statutory health & safety handover file is compiled by the PSDP for the Client?",
-    "a": "The Irish Safety File (S.I. No. 291/2013) detailing residual maintenance hazards, as-built underground MV/HV services, structural load limits, and safe access rules."
+    "a": "The Irish Safety File (S.I. No. 291/2013) detailing residual maintenance hazards, as-built underground MV/HV services, structural load limits, and safe access rules.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-33-F3",
@@ -889,7 +1288,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-33-D4",
     "cat": "Audit",
     "q": "Why tie contractual Final Retention or Handover Tranche payment to verified CMMS COBie barcode load?",
-    "a": "Without structured serial numbers, O&M manuals, and warranty expiry dates pre-loaded into CMMS, Operations misses OEM servicing windows and voids warranties."
+    "a": "Without structured serial numbers, O&M manuals, and warranty expiry dates pre-loaded into CMMS, Operations misses OEM servicing windows and voids warranties.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-34-F1",
@@ -898,7 +1301,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-34-D1",
     "cat": "Standard",
     "q": "Explain the two-stage contractor retention release across Practical Completion and Defects Liability Period (DLP).",
-    "a": "Typically 50% of held retention releases upon Practical Completion (PC/TOC); remaining final moiety (e.g. 5% final account balance) releases only upon DLP Expiry Certificate (12-24m)."
+    "a": "Typically 50% of held retention releases upon Practical Completion (PC/TOC); remaining final moiety (e.g. 5% final account balance) releases only upon DLP Expiry Certificate (12-24m).",
+    "pillars": [
+      "capex"
+    ],
+    "primaryPillar": "capex"
   },
   {
     "id": "PM-34-F2",
@@ -907,7 +1314,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-34-D3",
     "cat": "Template",
     "q": "What settles all contractor variations, contra-charges, and EOT claims permanently at Final Account?",
-    "a": "Execution of a binding Final Account Settlement Deed declaring full and final satisfaction of all claims and terminating further commercial exposure."
+    "a": "Execution of a binding Final Account Settlement Deed declaring full and final satisfaction of all claims and terminating further commercial exposure.",
+    "pillars": [
+      "capex"
+    ],
+    "primaryPillar": "capex"
   },
   {
     "id": "PM-34-F3",
@@ -916,7 +1327,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-34-D4",
     "cat": "Audit",
     "q": "Before releasing the final DLP retention moiety, what three closeout conditions must clear?",
-    "a": "100% DLP defect rectification sign-off, seasonal POE/PUE performance guarantee validation, and statutory/collateral warranty confirmations."
+    "a": "100% DLP defect rectification sign-off, seasonal POE/PUE performance guarantee validation, and statutory/collateral warranty confirmations.",
+    "pillars": [
+      "capex"
+    ],
+    "primaryPillar": "capex"
   },
   {
     "id": "PM-35-F1",
@@ -925,7 +1340,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-35-D1",
     "cat": "Standard",
     "q": "What does BSRIA BG 63 Soft Landings Post-Occupancy Evaluation audit across Year 1?",
-    "a": "Winter and summer seasonal tuning verifying real metered PUE (<=1.25), WUE (<=0.25 L/kWh), and District Heating ERF (>=0.15) at actual partial IT rack utilization."
+    "a": "Winter and summer seasonal tuning verifying real metered PUE (<=1.25), WUE (<=0.25 L/kWh), and District Heating ERF (>=0.15) at actual partial IT rack utilization.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-35-F2",
@@ -934,7 +1353,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-35-D3",
     "cat": "Template",
     "q": "When does EU EED Delegated Regulation (EU) 2024/1364 require annual telemetry submission?",
-    "a": "By May 15 each year covering prior calendar-year metered IT energy, total facility energy, water consumption, waste heat reused (GWh), and Hourly Renewable Factor (REF)."
+    "a": "By May 15 each year covering prior calendar-year metered IT energy, total facility energy, water consumption, waste heat reused (GWh), and Hourly Renewable Factor (REF).",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-35-F3",
@@ -943,7 +1366,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-35-D4",
     "cat": "Audit",
     "q": "If Year-1 measured PUE averages 1.34 instead of 1.25 at 40% IT load, what commercial vs. engineering levers apply?",
-    "a": "Check seasonal free-cooling economizer deadbands, VFD pump staging curves, and parasitic chiller minimum-load cycling before evaluating Contractual Performance LD remedies."
+    "a": "Check seasonal free-cooling economizer deadbands, VFD pump staging curves, and parasitic chiller minimum-load cycling before evaluating Contractual Performance LD remedies.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-36-F1",
@@ -952,7 +1379,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-36-D1",
     "cat": "Standard",
     "q": "What institutional benchmarks are reconciled in the Final Benefits Realization & Program Closeout Report?",
-    "a": "Actual delivered Capex EUR/MW vs. FID sanction, final M7060 COD vs. M1000 baseline, safety LTIFR, and operational sustainability KPIs (PUE/WUE/ERF)."
+    "a": "Actual delivered Capex EUR/MW vs. FID sanction, final M7060 COD vs. M1000 baseline, safety LTIFR, and operational sustainability KPIs (PUE/WUE/ERF).",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-36-F2",
@@ -961,7 +1392,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-36-D3",
     "cat": "Template",
     "q": "Which five lifecycle phases feed structured Lessons Learned into the Enterprise PMO playbook?",
-    "a": "1. Grid/Planning/FID timing, 2. OFCI slot & Incoterms logistics, 3. Multi-prime NEC4/FIDIC interfaces, 4. L3-L5 CxA hold management, 5. BCAR CCC & CMMS COBie handover."
+    "a": "1. Grid/Planning/FID timing, 2. OFCI slot & Incoterms logistics, 3. Multi-prime NEC4/FIDIC interfaces, 4. L3-L5 CxA hold management, 5. BCAR CCC & CMMS COBie handover.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   },
   {
     "id": "PM-36-F3",
@@ -970,7 +1405,11 @@ window.DC45_FLASHCARDS = [
     "docId": "PM-36-D4",
     "cat": "Audit",
     "q": "Which tax and security instruments must formally close before archiving a completed Irish DC project entity?",
-    "a": "Revenue RCT tax clearance sign-off, return/cancellation of Performance Bonds & Advance Payment Guarantees, and P6 As-Built XER CDE archival."
+    "a": "Revenue RCT tax clearance sign-off, return/cancellation of Performance Bonds & Advance Payment Guarantees, and P6 As-Built XER CDE archival.",
+    "pillars": [
+      "general"
+    ],
+    "primaryPillar": "general"
   }
 ];
 window.DC45_KEY_FACTS = {
