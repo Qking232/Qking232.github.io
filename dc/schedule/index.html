@@ -720,12 +720,12 @@
             left: 50%;
             transform: translateX(-50%);
             width: calc(100% - 32px);
-            max-width: 860px;
+            max-width: min(1160px, calc(100vw - 32px));
             height: 52px;
-            padding: 8px 18px;
+            padding: 8px 14px;
             display: flex;
             align-items: center;
-            gap: 14px;
+            gap: 10px;
             border-radius: 30px;
             background: var(--panel-bg);
             border: 1px solid var(--panel-border);
@@ -733,6 +733,24 @@
             z-index: 120;
             pointer-events: auto !important;
             color: var(--text-main);
+            box-sizing: border-box;
+        }
+        #btn-play, #btn-play-continuous, .speed-box, #scrubber-telemetry-badge, #btn-cutaway-xray, #btn-toggle-schedule {
+            flex-shrink: 0;
+        }
+        .timeline-slider-container {
+            flex: 1 1 120px;
+            min-width: 100px;
+        }
+        @media (max-width: 1160px) and (min-width: 901px) {
+            #bottom-bar {
+                gap: 8px;
+                padding: 6px 12px;
+            }
+            #btn-play-continuous .auto-lbl-long { display: none; }
+            #btn-play-continuous .auto-lbl-short { display: inline !important; }
+            #btn-cutaway-xray .xray-lbl-long { display: none; }
+            .scrubber-badge { padding: 4px 8px; font-size: 10px; gap: 4px; }
         }
         .play-btn {
             background: var(--accent-cyan); color: #ffffff; border: none; padding: 8px 16px;
@@ -1656,8 +1674,11 @@
                     </thead>
                     <tbody id="task-table-body">
                         <!-- Rendered by gantt_table.js -->
-                    </tbod
-            <!-- Pane 3: Cashflow S-Curve ($360M) -->
+                    </tbody>
+                </table>
+            </div>
+
+<!-- Pane 3: Cashflow S-Curve ($360M) -->
             <div class="dock-pane" id="dock-pane-scurve" style="display: none; padding: 12px;">
                 <div class="scurve-header-stats">
                     <div class="scurve-stat-card">
@@ -1711,15 +1732,12 @@
                     </div>
                 </div>
 
-                <div id="layout-canvas-container" style="position: relative; width: 100%; height: 380px; overflow: hidden; background: #ffffff; border-radius: 8px; border: 1px solid var(--panel-border); box-shadow: inset 0 2px 6px rgba(0,0,0,0.02);">
+                <div id="layout-canvas-container" style="position: relative; width: 100%; height: calc(100% - 65px); min-height: 380px; overflow: hidden; background: #ffffff; border-radius: 8px; border: 1px solid var(--panel-border); box-shadow: inset 0 2px 6px rgba(0,0,0,0.02);">
                     <svg id="layout-svg" width="100%" height="100%" viewBox="0 0 1100 560" style="display: block;">
                         <!-- Vector Architectural Drawings rendered by DC36_LAYOUT_2D -->
                     </svg>
                     <div id="layout-tooltip" style="position: absolute; pointer-events: none; display: none; background: rgba(15, 23, 42, 0.95); color: #fff; border: 1px solid #38bdf8; border-radius: 8px; padding: 8px 12px; font-size: 11px; font-family: var(--font-sans); transform: translate(-50%, -100%); margin-top: -10px; white-space: nowrap; box-shadow: 0 8px 24px rgba(0,0,0,0.3); z-index: 20;"></div>
                 </div>
-            </div>
-y>
-                </table>
             </div>
         </div>
     </div>
@@ -1782,7 +1800,7 @@ y>
             <i class="fas fa-play"></i> Play
         </button>
         <button class="play-btn" id="btn-play-continuous" title="Play Continuous 4D Evolution from Blank Ground to Operational Reality" style="background: rgba(2, 132, 199, 0.25); border-color: rgba(56, 189, 248, 0.4); color: #0284c7;">
-            <i class="fas fa-forward"></i> Auto Evolution
+            <i class="fas fa-forward"></i> <span class="auto-lbl-long">Auto Evolution</span><span class="auto-lbl-short" style="display: none;">Auto</span>
         </button>
 
         <div class="speed-box">
@@ -20417,6 +20435,7 @@ window.DC36_SCHEDULE = {
 
     const SHEETS = ['site', 'l0', 'l1', 'roof'];
 
+    window.DC36_LAYOUT_2D.renderCurrentSheet = function() { renderCurrentSheet(); };
     window.DC36_LAYOUT_2D.init = function(schedData) {
         schedule = schedData;
         bindControls();
@@ -22472,18 +22491,30 @@ window.DC36_SCHEDULE = {
             [tabGantt, tabTable, tabScurve, tabLayout].forEach(t => { if (t) t.classList.remove('active'); });
             [paneGantt, paneTable, paneScurve, paneLayout].forEach(p => { if (p) p.style.display = 'none'; });
 
+            const bottomDock = document.getElementById('bottom-dock');
+
             if (activeTabId === 'gantt' && tabGantt && paneGantt) {
                 tabGantt.classList.add('active');
                 paneGantt.style.display = 'block';
+                if (bottomDock && !isMobileViewport()) bottomDock.style.height = '310px';
             } else if (activeTabId === 'table' && tabTable && paneTable) {
                 tabTable.classList.add('active');
                 paneTable.style.display = 'block';
+                if (bottomDock && !isMobileViewport()) bottomDock.style.height = '310px';
             } else if (activeTabId === 'scurve' && tabScurve && paneScurve) {
                 tabScurve.classList.add('active');
                 paneScurve.style.display = 'block';
+                if (bottomDock && !isMobileViewport()) bottomDock.style.height = '360px';
+                if (window.DC36_SCURVE && window.DC36_SCURVE.render) {
+                    window.DC36_SCURVE.render();
+                }
             } else if (activeTabId === 'layout' && tabLayout && paneLayout) {
                 tabLayout.classList.add('active');
                 paneLayout.style.display = 'block';
+                if (bottomDock && !isMobileViewport()) bottomDock.style.height = '480px';
+                if (window.DC36_LAYOUT_2D && window.DC36_LAYOUT_2D.renderCurrentSheet) {
+                    window.DC36_LAYOUT_2D.renderCurrentSheet();
+                }
             }
         }
 
