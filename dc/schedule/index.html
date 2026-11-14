@@ -1204,37 +1204,67 @@
                 overflow-y: auto; touch-action: pan-y; -webkit-overflow-scrolling: touch; z-index: 52;
             }
             #left-panel.panel-collapsed, #right-panel.panel-collapsed { transform: translateY(-14px); opacity: 0; }
-            #mobile-cam-strip { display: flex !important; }
+            #mobile-cam-strip {
+                display: flex !important;
+                bottom: calc(120px + env(safe-area-inset-bottom)) !important;
+                z-index: 52;
+            }
 
             #bottom-bar {
                 bottom: calc(8px + env(safe-area-inset-bottom));
                 left: 8px; right: 8px; width: auto; max-width: none; transform: none;
-                height: auto; padding: 8px 10px; border-radius: 16px;
-                flex-wrap: wrap; gap: 6px; z-index: 55;
+                height: auto; padding: 6px 10px; border-radius: 16px;
+                flex-wrap: wrap; gap: 4px; z-index: 55;
             }
             .scrubber-badge {
-                order: 0;
+                order: 1;
                 width: 100%;
                 justify-content: space-between;
                 font-size: 10px;
-                padding: 4px 8px;
+                padding: 3px 8px;
             }
             .scrub-day { font-size: 9px; }
             .slider-time-bubble { display: none; }
-            .timeline-slider-container { order: 1; flex: 1 0 100%; width: 100%; margin-bottom: 6px; }
-            .timeline-slider { height: 8px; }
-            .timeline-slider::-webkit-slider-thumb { width: 22px; height: 22px; }
-            #btn-play { order: 2; padding: 7px 11px; min-height: 36px; font-size: 10px; }
-            .speed-box { order: 3; font-size: 10px; }
+            .timeline-slider-container { order: 2; flex: 1 0 100%; width: 100%; margin: 2px 0 4px 0; }
+            .timeline-slider { height: 6px; }
+            .timeline-slider::-webkit-slider-thumb { width: 20px; height: 20px; }
+            #btn-play {
+                order: 3;
+                padding: 6px 10px;
+                min-height: 32px;
+                font-size: 10px;
+                flex-shrink: 0;
+            }
+            #btn-play-continuous {
+                order: 4;
+                padding: 6px 10px;
+                min-height: 32px;
+                font-size: 10px;
+                flex-shrink: 0;
+            }
+            #btn-play-continuous .auto-lbl-long { display: none; }
+            #btn-play-continuous .auto-lbl-short { display: inline !important; }
+            .speed-box {
+                order: 5;
+                font-size: 10px;
+                flex-shrink: 0;
+            }
             .speed-box span { display: none; }
             #btn-cutaway-xray {
-                order: 4; margin-left: auto;
-                padding: 7px 9px !important; min-height: 36px; font-size: 10px !important;
+                order: 6;
+                margin-left: auto;
+                padding: 6px 9px !important;
+                min-height: 32px;
+                font-size: 10px !important;
+                flex-shrink: 0;
             }
             .xray-lbl-long { display: none; }
             #btn-toggle-schedule {
-                order: 5;
-                padding: 7px 9px !important; min-height: 36px; font-size: 10px !important;
+                order: 7;
+                padding: 6px 9px !important;
+                min-height: 32px;
+                font-size: 10px !important;
+                flex-shrink: 0;
             }
 
             #bottom-dock {
@@ -1262,6 +1292,13 @@
 
         @media (max-width: 460px) {
             .brand-text h1 { max-width: 82px; overflow: hidden; text-overflow: ellipsis; }
+            #bottom-bar { gap: 3px; padding: 5px 8px; }
+            #btn-play, #btn-play-continuous, #btn-cutaway-xray, #btn-toggle-schedule {
+                padding: 5px 7px !important;
+                font-size: 9px !important;
+            }
+            #btn-toggle-schedule .sched-lbl-long { display: none; }
+            #btn-toggle-schedule .sched-lbl-short { display: inline !important; }
         }
 
         @media (max-height: 480px) and (orientation: landscape) {
@@ -1834,7 +1871,7 @@
         </button>
 
         <button class="hud-btn" id="btn-toggle-schedule" style="white-space: nowrap; font-size: 11px; padding: 6px 12px; background: rgba(56, 189, 248, 0.15); border-color: rgba(56, 189, 248, 0.35);">
-            <i class="fas fa-calendar-alt"></i> P6 Schedule
+            <i class="fas fa-calendar-alt"></i> <span class="sched-lbl-long">P6 Schedule</span><span class="sched-lbl-short" style="display: none;">P6</span>
         </button>
     </div>
 
